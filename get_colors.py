@@ -7,8 +7,9 @@ import os
 
 
 # File paths
-ss_dir_path = 'data/screen-shots/' # screen shots
-test_file_path = 'data/screen-shots/fred.png' # single example image
+ss_dir_path = 'data/screenshots/' # screen shots
+# ss_dir_path = '/Users/fredhohman/Desktop/temp/' # screen shots
+test_file_path = 'data/screensshots/fred.png' # single example image
 
 def get_colors(infile, outfile, numcolors=10, swatchsize=100, resize=150):
 
