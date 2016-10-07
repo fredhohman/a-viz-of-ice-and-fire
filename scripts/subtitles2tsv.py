@@ -65,6 +65,8 @@ for i, filename in enumerate (sorted (listFiles (dirName))):
     print outFile
     lines = readFile (filename)
     with open (outFile, "w") as fout:
+        fout.write ("\t".join (["frameNo", "startTime", "endTime",
+                                "dialogue"]) + "\n")
         for frameNo, startTime, endTime, dialogue in getStructuredRecord (lines):
             outLine = "\t".join ([str(frameNo), startTime, endTime, dialogue]) + "\n"
             fout.write (outLine)
