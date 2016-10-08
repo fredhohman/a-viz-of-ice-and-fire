@@ -26,18 +26,35 @@ def get_LIWC_counts(tokenized_text,
     LIWC_counts = {str : int}
     """
     # if no LIWC words provided, load from file
+    
     if(len(LIWC_words) == 0):
-        LIWC_words = [l.strip() for l in open(os.path.join(LIWC_dir, category), 'r')]
-    LIWC_matcher = re.compile('|'.join(LIWC_words))
-    all_matches = list(filter(lambda x: LIWC_matcher.search(x),
-                              tokenized_text))
-    LIWC_counts = dict(Counter(all_matches))
+        LIWC_words = ["^" + l.strip() + "$" for l in open(os.path.join(LIWC_dir, category), 'r')]
+    
+    #print "good" in LIWC_words
+    #LIWC_words = map (lambda x:re.compile (x), LIWC_words)
+    LIWC_matches = list ()
+    tokenized_text = map (lambda x:x.lower(), tokenized_text)
+    for token in tokenized_text:
+        for pattern in LIWC_words:
+            matches = re.findall(pattern, token)
+            if len (matches) > 0:
+                if "*" in pattern and not token.startswith(pattern[1:-2]):
+                    continue
+                LIWC_matches.append(token)
+                break
+
+    LIWC_counts = dict(Counter(LIWC_matches))
     return LIWC_counts
 
 if __name__ == '__main__':
     # TODO: test
-    test_text = 'this is me being happy and pleasant'
-    tokenized_text = test_text.split(' ')
+    #test_text = 'this is me being happy and pleasant'
+    #tokenized_text = test_text.split(' ')
+    #tokenized_text = ['What', 'do', 'you', 'expect', '?</', 'i', '>', 'he',
+    #                  "'", 're', 'savages', '.</', 'i', '>']
+    tokenized_text = ['It', "'", 's', 'a', 'good', 'he', 'we', "'", 're',
+                      'not', 'children', '.']
     category = 'positive_affect'
     LIWC_counts = get_LIWC_counts(tokenized_text, category)
-    assert LIWC_counts['happy'] == 1 and LIWC_counts['pleasant'] == 1
+    print LIWC_counts
+    #assert LIWC_counts['happy'] == 1 and LIWC_counts['pleasant'] == 1
