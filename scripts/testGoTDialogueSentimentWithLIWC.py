@@ -26,7 +26,7 @@ LIWC_words = {category: ["^" + l.strip() + "$" for l in open(os.path.join(LIWC_d
 
 jsonList = []
               
-for filename in files[0:1]:
+for filename in files:
     print filename
     with open (filename) as fin:
         categoryCounts = {category:Counter() for category in categories}  
