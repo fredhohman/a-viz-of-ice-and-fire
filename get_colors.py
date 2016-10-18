@@ -9,10 +9,20 @@ import time
 import json
 import matplotlib.pyplot as plt
 import cv2
+
+
 # File paths
 # dir_path = '/Users/fredhohman/Github/cs-7450/data/screenshots/output/'
-episode = 's1e1/'
-dir_path = '/Volumes/SG-1TB/screenshots/' + episode
+
+def make_episode_list():
+    
+    episode_list = []
+
+    for season_num in [1, 2]:
+        for episode_num in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
+            episode = 's' + str(season_num) + 'e' + str(episode_num)
+            episode_list.append(episode)
+    return episode_list
 
 # def get_colors(infile, outfile, numcolors=50, swatchsize=100, resize=150):
 
@@ -49,46 +59,54 @@ dir_path = '/Volumes/SG-1TB/screenshots/' + episode
 
 if __name__ == '__main__':
 
-    images = [img for img in os.listdir(dir_path) if img.endswith('jpeg')]
-    # images = images[0:50]
-    print(str(len(images)) + ' images found in ' + episode[:-1])
+    episode_list = make_episode_list()
+    episode_list = episode_list[5:]
+    print(episode_list)
 
-    color_count = 11
-    swatchsize = 10
-    posx = 0
-    posy = 0
+    for episode in episode_list:
+        episode = episode + '/'
+        dir_path = '/Volumes/SG-1TB/screenshots/' + episode
 
-    palettes = []
+        images = [img for img in os.listdir(dir_path) if img.endswith('jpeg')]
+        # images = images[0:50]
+        print(str(len(images)) + ' images found in ' + episode[:-1])
 
-    for img in images:
-        print(str(img))
-        start = time.time()
-
-        color_thief = ColorThief(dir_path+img)
-        palette = color_thief.get_palette(color_count = color_count, quality = 10)
-        end = time.time() - start
-        print(end)
-
-        # print(palette)
-        # print(len(palette))
-        if len(palette) == color_count:
-            print('COLOR PALETTE FOR IMAGE HAD 11 COLORS NOT 10')
-            break
-
-        palettes.append(palette)
-
-    pal = Image.new('RGB', (swatchsize*len(palettes[0]), swatchsize*len(images)))
-    draw = ImageDraw.Draw(pal)
-
-    for cpal in palettes:
-        for col in cpal:
-            draw.rectangle([posx, posy, posx+swatchsize, posy+swatchsize], fill=col)
-            posx = posx + swatchsize
-        posy = posy + swatchsize
+        color_count = 11
+        swatchsize = 10
         posx = 0
-    del draw
-    pal.save('test.png', "PNG")
+        posy = 0
 
-    # print(palettes)
-    with open('data/color/' + episode[:-1] + '.json', 'w') as outfile:
-        json.dump({'palettes': palettes}, outfile)
+        palettes = []
+
+        for img in images:
+            print(str(img))
+            start = time.time()
+
+            color_thief = ColorThief(dir_path+img)
+            palette = color_thief.get_palette(color_count = color_count, quality = 10)
+            end = time.time() - start
+            print(end)
+
+            # print(palette)
+            # print(len(palette))
+            if len(palette) == color_count:
+                print('COLOR PALETTE FOR IMAGE HAD 11 COLORS NOT 10')
+                break
+
+            palettes.append(palette)
+
+        pal = Image.new('RGB', (swatchsize*len(palettes[0]), swatchsize*len(images)))
+        draw = ImageDraw.Draw(pal)
+
+        for cpal in palettes:
+            for col in cpal:
+                draw.rectangle([posx, posy, posx+swatchsize, posy+swatchsize], fill=col)
+                posx = posx + swatchsize
+            posy = posy + swatchsize
+            posx = 0
+        del draw
+        pal.save(episode[:-1] + '.png', "PNG")
+
+        # print(palettes)
+        with open('data/color/' + episode[:-1] + '.json', 'w') as outfile:
+            json.dump({'palettes': palettes}, outfile)
