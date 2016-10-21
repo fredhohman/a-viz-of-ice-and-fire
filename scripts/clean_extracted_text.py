@@ -23,6 +23,8 @@ def clean_text(text):
    for l in lines:
       for regex in removal_regexes:
          l = regex.sub('', l)
+      # for some reason this is necessary
+      l = l.replace('</i>', '')
       clean_lines.append(l)
    clean_text = '$'.join(clean_lines)
    return clean_text
