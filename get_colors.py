@@ -18,7 +18,7 @@ def make_episode_list():
     
     episode_list = []
 
-    for season_num in [1, 2]:
+    for season_num in [1, 2, 3, 4, 5, 6]:
         for episode_num in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
             episode = 's' + str(season_num) + 'e' + str(episode_num)
             episode_list.append(episode)
@@ -60,7 +60,7 @@ def make_episode_list():
 if __name__ == '__main__':
 
     episode_list = make_episode_list()
-    episode_list = episode_list[5:]
+    episode_list = episode_list[50:]
     print(episode_list)
 
     for episode in episode_list:
