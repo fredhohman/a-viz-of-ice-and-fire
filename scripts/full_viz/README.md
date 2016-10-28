@@ -1,0 +1,1 @@
+Please note, data will be randomised until December 2014. It is based on Ipsos MORI's long term Issues Index survey 1974 - 2014.  
