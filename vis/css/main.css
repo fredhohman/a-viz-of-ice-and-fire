@@ -8,6 +8,20 @@ body {
 }
 .jumbotron h1 {
 	font-size: 42px;
-	/*color: #337ab7;*/
 	font-weight: 600;
+}
+.season-block {
+	width: 16.666%;
+	/*height: 100px;*/
+	float: left;
+}
+.episode-block {
+	width: 10%;
+	/*height: 100px;*/
+	float: left;
+}
+.color {
+	width: 100%;
+	height: 30px;
+	background-color: blue;
 }
