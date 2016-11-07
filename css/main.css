@@ -14,6 +14,12 @@ body {
 	width: 16.666%;
 	/*height: 100px;*/
 	float: left;
+	background-color: blue;
+}
+.season-block:hover {
+	background-color: black;
+	border-left: 3px white solid;
+	border-right: 3px white solid;
 }
 .episode-block {
 	width: 10%;
@@ -23,5 +29,4 @@ body {
 .color {
 	width: 100%;
 	height: 30px;
-	background-color: blue;
 }
