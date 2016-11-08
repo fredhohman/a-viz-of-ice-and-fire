@@ -59,15 +59,21 @@ def make_episode_list():
 
 if __name__ == '__main__':
 
-    episode_list = make_episode_list()
-    episode_list = episode_list[50:]
-    print(episode_list)
+    # for raw images
+    # episode_list = make_episode_list()
+    # episode_list = episode_list[50:]
+    # print(episode_list)
+
+    # for created images
+    episode_list = ['/Users/fredhohman/Github/cs-7450/data/color-palettes']
 
     for episode in episode_list:
         episode = episode + '/'
-        dir_path = '/Volumes/SG-1TB/screenshots/' + episode
+        # dir_path = '/Volumes/SG-1TB/screenshots/' + episode #for raw images
+        dir_path = episode
 
-        images = [img for img in os.listdir(dir_path) if img.endswith('jpeg')]
+        # images = [img for img in os.listdir(dir_path) if img.endswith('jpeg')] #for raw images
+        images = [img for img in os.listdir(dir_path) if img.endswith('png')]
         # images = images[0:50]
         print(str(len(images)) + ' images found in ' + episode[:-1])
 

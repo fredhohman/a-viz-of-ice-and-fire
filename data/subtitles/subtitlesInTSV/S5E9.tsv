@@ -1,485 +1,485 @@
 frameNo	startTime	endTime	dialogue	chunk
-1	00:01:38,376	00:01:48,576		0
-2	00:02:30,942	00:02:34,328	$<i>- Look out!</i>$<i>- Fire! Fire!	1
-3	00:02:59,938	00:03:02,556	$A band of 20$men, maybe less.	1
-4	00:03:02,607	00:03:04,808	$They were in and out$before anyone spotted them.	1
-5	00:03:04,810	00:03:06,777	$Burnt our food stores$to the ground,	1
-6	00:03:06,811	00:03:09,029	$all our siege weapons destroyed.	1
-7	00:03:09,064	00:03:11,398	$- Dozens of tents were--$- Horses?	1
-8	00:03:11,449	00:03:13,567	$We're still getting a count,$but hundreds are dead.	1
-9	00:03:13,618	00:03:17,288	$20 men rode into our camp without a$single guard sounding the alarm?	1
-10	00:03:17,322	00:03:19,823	$The northerners know more about$their land than we ever will.	1
-11	00:03:19,874	00:03:21,492	$Put last night's guards$in chains.	1
-12	00:03:21,494	00:03:23,210	$Either they fell asleep or$they conspired with the enemy.	1
-13	00:03:23,244	00:03:26,830	$- Find out the truth and then hang them.$- Your Grace.	1
-14	00:03:26,832	00:03:30,084	$Unless there's a thaw, we can't$press forward to Winterfell	1
-15	00:03:30,135	00:03:32,720	$and we don't have enough food$to get us back to Castle Black.	1
-16	00:03:32,754	00:03:34,588	$We're not returning$to Castle Black.	1
-17	00:03:34,639	00:03:38,008	$Forgive me, Your Grace, I never claimed$to be an expert in military matters,	1
-18	00:03:38,059	00:03:41,645	$but if we can't march forward$and we won't march back...	1
-19	00:03:54,909	00:03:57,528	$Have the dead horses$butchered for meat.	1
-20	00:04:38,236	00:04:40,404	$<i>Halt!	2
-21	00:04:40,455	00:04:43,374	$<i> Halt!	2
-22	00:04:45,910	00:04:48,579	$<i> There it is!	2
-23	00:05:28,286	00:05:30,421	$Open the gates.	2
-24	00:05:45,970	00:05:48,422	$It was a failure.	2
-25	00:05:48,490	00:05:51,225	$It wasn't.	2
-26	00:05:51,276	00:05:53,477	$I went to save them.$I failed.	2
-27	00:05:55,280	00:05:57,314	$You didn't fail him.	2
-28	00:05:57,365	00:05:58,699	$Or him.	2
-29	00:05:58,733	00:06:01,535	$<i>Or her.	3
-30	00:06:01,569	00:06:05,038	$Every one of them is alive$because of you and no one else.	3
-31	00:06:06,491	00:06:08,992	$I don't think that$fact's lost on them.	3
-32	00:07:03,014	00:07:06,350	$You have a good heart, Jon Snow.	3
-33	00:07:06,384	00:07:08,852	$It'll get us all killed.	3
-34	00:07:14,976	00:07:16,810	$Out of my way.	3
-35	00:07:42,921	00:07:44,421	$You sent for me, Your Grace?	3
-36	00:07:44,472	00:07:46,723	$Find some healthy horses and$a few knights to guard you.	3
-37	00:07:46,758	00:07:48,759	$I'm sending you back$to Castle Black.	3
-38	00:07:48,761	00:07:51,011	$Tell the Lord Commander$his king commands him	3
-39	00:07:51,062	00:07:53,430	$to send food, supplies,$fresh horses.	3
-40	00:07:53,464	00:07:55,232	$In return,$when I take the throne,	3
-41	00:07:55,266	00:07:58,268	$I'll make sure the Night's Watch$has all the men it requires.	3
-42	00:07:58,270	00:08:01,605	$He can guard all 19 castles$on the Wall if he so wishes.	4
-43	00:08:03,908	00:08:06,910	$Your Grace,$you named me your Hand.	4
-44	00:08:06,945	00:08:08,512	$Yes.	4
-45	00:08:08,546	00:08:10,497	$The King's Hand should$never abandon the king,	4
-46	00:08:10,531	00:08:11,949	$especially in time of war.	4
-47	00:08:11,951	00:08:13,800	$You're not abandoning me.$You're obeying a command.	4
-48	00:08:13,835	00:08:16,253	$A boy with a scroll$could deliver this message.	4
-49	00:08:16,287	00:08:18,839	$And if Jon Snow refuses$the boy with the scroll,	4
-50	00:08:18,873	00:08:21,091	$what does the boy say?	4
-51	00:08:21,125	00:08:23,293	$I didn't name you Hand for your$expertise in military matters.	4
-52	00:08:23,295	00:08:25,796	$Ride for Castle Black.$Don't come back empty-handed.	4
-53	00:08:32,553	00:08:34,605	$Your Grace, perhaps Queen Selyse	4
-54	00:08:34,639	00:08:36,523	$and Princess Shireen$could accompany me.	4
-55	00:08:36,557	00:08:38,609	$My family stays with me.	4
-56	00:08:38,643	00:08:40,644	$At least let me take Shireen.	4
-57	00:08:40,695	00:08:43,230	$<i>A siege is no place</i>$<i>for a little girl.	4
-58	00:08:43,281	00:08:45,649	$My family stays with me.	4
-59	00:09:21,736	00:09:23,070	$What's this one now?	4
-60	00:09:23,104	00:09:25,439	"$""The Dance of Dragons:$A True Telling"""	4
-61	00:09:25,490	00:09:26,907	$by Grand Maester Munkun.	4
-62	00:09:26,941	00:09:30,277	$Now that sounds$like a proper story.	4
-63	00:09:30,328	00:09:32,946	$Ser Byron Swann wanted$to kill the dragon Vhagar.	4
-64	00:09:32,997	00:09:35,949	$He polished his shield for a week$so that it was like a mirror.	4
-65	00:09:36,000	00:09:38,035	$And he crouched behind it$and crept forward,	4
-66	00:09:38,037	00:09:40,087	$hoping the dragon would$only see its own reflection.	4
-67	00:09:40,121	00:09:43,206	$But the dragon saw a dumb man$holding a mirrored shield.	4
-68	00:09:43,257	00:09:44,925	$And burnt him to a crisp.	4
-69	00:09:46,177	00:09:48,545	$Thus ending$the dragon-slaying career	4
-70	00:09:48,547	00:09:51,381	$of Ser Byron Swann.	4
-71	00:09:53,718	00:09:56,019	$I made you something, Princess.	4
-72	00:10:02,560	00:10:03,894	$Do you like it?	5
-73	00:10:03,896	00:10:05,812	$He's beautiful.	5
-74	00:10:05,863	00:10:08,565	$- Thank you.$- You're very welcome.	5
-75	00:10:08,567	00:10:11,118	$Will you make me a doe, too?$So that he can have company?	5
-76	00:10:11,152	00:10:12,986	$Of course I will.	5
-77	00:10:14,455	00:10:16,073	$But why am I getting a present?	5
-78	00:10:17,658	00:10:19,159	$Because you deserve it.	5
-79	00:10:20,878	00:10:24,331	$My son was always on me,$trying to teach me to read.	5
-80	00:10:24,382	00:10:26,717	$Gods, I was stubborn about it.	5
-81	00:10:28,052	00:10:29,669	$Made it this far$without reading.	5
-82	00:10:29,721	00:10:32,222	$Seemed to me I could$make it to the grave.	5
-83	00:10:34,475	00:10:36,426	$Wish I'd listened to him.	5
-84	00:10:37,929	00:10:40,263	$This is my own poor way$of saying thank you.	5
-85	00:10:43,901	00:10:46,069	$For teaching me$to be a grown-up.	5
-86	00:10:48,740	00:10:51,525	$I'll be gone for a$few days, Princess.	5
-87	00:10:51,576	00:10:54,244	"$I want to hear all about ""The$Dance of Dragons"" when I'm back."	5
-88	00:10:54,278	00:10:56,530	$You'll read it yourself.	5
-89	00:11:18,052	00:11:19,469	$Prince Doran.	5
-90	00:11:19,520	00:11:22,105	$Forgive us.$We started without you.	5
-91	00:11:22,974	00:11:24,858	$<i>Please, sit.	5
-92	00:11:24,942	00:11:27,394	$Princess Myrcella.	5
-93	00:11:27,478	00:11:29,062	$Uncle.	5
-94	00:11:29,147	00:11:30,947	$What a lovely dress.	5
-95	00:11:30,982	00:11:33,283	$- You don't like it?$- You must be cold.	5
-96	00:11:33,317	00:11:36,953	$Not at all. The Dornish$climate agrees with me.	5
-97	00:11:38,122	00:11:40,824	$Prince Trystane.	5
-98	00:11:42,827	00:11:44,161	$How's your jaw?	5
-99	00:11:45,329	00:11:46,997	$A fleabite.	5
-100	00:11:46,999	00:11:48,632	$What are you doing in Dorne?	5
-101	00:11:48,666	00:11:50,934	$Looking after the safety of my$niece, the Princess Myrcella.	5
-102	00:11:50,968	00:11:54,304	$And rather than send a raven$or speak to me directly,	5
-103	00:11:54,338	00:11:56,673	$you decided to enter$my country in secret	5
-104	00:11:56,675	00:11:58,341	$and abduct our guest by force?	5
-105	00:11:58,343	00:12:01,595	$We received$a threatening message.	6
-106	00:12:01,646	00:12:04,848	$The princess's necklace$in the jaws of a viper.	6
-107	00:12:06,184	00:12:08,185	$That necklace$was stolen from my room.	6
-108	00:12:13,174	00:12:16,943	$Oh, excellent.	6
-109	00:12:16,994	00:12:19,196	$A last meal before$the beheading?	6
-110	00:12:19,198	00:12:20,780	$Oh, I can't behead you.	6
-111	00:12:20,832	00:12:23,250	$Many in Dorne want war.	6
-112	00:12:23,284	00:12:25,268	$But I've seen war.	6
-113	00:12:25,303	00:12:28,038	$I've seen the bodies$piled on the battlefields.	6
-114	00:12:28,040	00:12:31,558	$I've seen the orphans$starving in the cities.	6
-115	00:12:31,592	00:12:33,677	$I don't want to lead$my people into that hell.	6
-116	00:12:33,711	00:12:36,379	$No, you want to break bread$with the Lannisters.	6
-117	00:12:36,430	00:12:39,049	$And that is precisely$what we are doing.	6
-118	00:12:40,885	00:12:44,471	$Let us drink to Tommen,$the First of His Name,	6
-119	00:12:44,522	00:12:47,007	$<i>King of the Andals</i>$<i>and the First Men,	6
-120	00:12:47,041	00:12:49,226	$Lord of the Seven Kingdoms.	6
-121	00:13:06,661	00:13:09,079	$King Tommen insists	6
-122	00:13:09,081	00:13:12,082	$on his sister's return$to the capital?	6
-123	00:13:12,084	00:13:14,251	$I'm afraid he does.	6
-124	00:13:16,254	00:13:19,389	$I cannot disobey$my king's command.	6
-125	00:13:19,423	00:13:21,892	$She will return with you$to King's Landing.	6
-126	00:13:21,926	00:13:25,345	$<i>And my son Prince Trystane</i>$<i>will accompany you both.	6
-127	00:13:25,379	00:13:29,015	$If the alliance between the Iron$Throne and Dorne is to continue,	6
-128	00:13:29,100	00:13:30,517	$their engagement must stand.	6
-129	00:13:30,585	00:13:32,652	$I accept.	6
-130	00:13:32,687	00:13:35,355	$One more thing.$My brother was named	6
-131	00:13:35,406	00:13:38,074	$to the small council$before his death.	6
-132	00:13:38,109	00:13:40,026	$Your father understood$the importance	6
-133	00:13:40,061	00:13:41,895	$<i>of keeping Dorne in the fold.	6
-134	00:13:41,929	00:13:46,499	$With Oberyn gone, Trystane will take$his place on the small council.	6
-135	00:13:46,584	00:13:47,684	$You have my word.	6
-136	00:13:47,752	00:13:50,203	$The word of a kingslayer.	6
-137	00:13:52,256	00:13:56,760	$No wonder you can't stand.$You have no spine.	6
-138	00:13:56,794	00:13:59,045	$You are mother$to four of my nieces,	6
-139	00:13:59,130	00:14:00,847	$girls I love very much.	7
-140	00:14:00,881	00:14:03,683	$For their sake, I hope you$live a long and happy life.	7
-141	00:14:03,718	00:14:06,219	$Speak to me that way$again, and you won't.	7
-142	00:14:13,978	00:14:17,697	$May I inquire as to the$fate of my man Bronn?	7
-143	00:14:17,732	00:14:20,817	$Tell me, Ser Jaime,$in King's Landing,	7
-144	00:14:20,868	00:14:24,154	$how do they punish a commoner$who strikes a prince?	7
-145	00:14:24,188	00:14:25,755	$He said it was just a fleabite.	7
-146	00:14:28,492	00:14:29,909	$The fault is mine.	7
-147	00:14:29,961	00:14:32,195	$Bronn is merely a soldier$following my orders.	7
-148	00:14:32,263	00:14:35,799	$If anyone should$be punished, it's me.	7
-149	00:14:35,833	00:14:38,668	$Prince Trystane must learn$judgment if he is to rule one day.	7
-150	00:14:38,753	00:14:40,470	$I'll let him decide.	7
-151	00:14:45,259	00:14:47,894	$I have learned the value$of mercy from my father.	7
-152	00:14:47,928	00:14:51,331	$- <i> I'll set your man free.</i>$- You're a good man.	7
-153	00:14:51,365	00:14:54,217	$On one condition.	7
-154	00:15:02,026	00:15:04,277	$Why do we play?$I'm better than you.	7
-155	00:15:04,328	00:15:06,663	$I'll always be better than you.	7
-156	00:15:06,697	00:15:09,532	$Have I ever missed once?	7
-157	00:15:09,534	00:15:12,452	$I don't think I have.$I can't recall.	7
-158	00:15:12,503	00:15:15,088	$You must love humiliation.$Or pain.	7
-159	00:15:15,122	00:15:18,792	$Which do you love most,$humiliation or pain?	7
-160	00:15:19,877	00:15:21,761	$That one hurt, didn't it?	7
-161	00:15:21,796	00:15:24,764	$You going to cry?	7
-162	00:15:24,799	00:15:26,716	$Give up, little sister.	7
-163	00:15:26,718	00:15:28,802	$- You're going to miss.$- Oh, I never miss.	7
-164	00:15:28,853	00:15:32,138	$You will.$You're thinking too much.	7
-165	00:15:32,189	00:15:35,225	$Now you're nervous.$What if she's right?	7
-166	00:15:38,646	00:15:41,448	$- Luck.$- Now it's my turn.	7
-167	00:15:41,482	00:15:43,116	$You're too slow.	7
-168	00:15:43,150	00:15:44,984	$You've always been too slow.	7
-169	00:16:01,752	00:16:03,586	$Am I gonna be happy$at the end of this walk?	8
-170	00:16:03,637	00:16:05,672	$You'll find out very soon.	8
-171	00:16:08,592	00:16:10,427	$Say it one more time, handsome.	8
-172	00:16:10,429	00:16:11,895	$Who am I?	8
-173	00:16:13,230	00:16:15,815	$The most beautiful$woman in the world.	8
-174	00:16:15,850	00:16:17,233	$And that's the truth.	8
-175	00:16:17,268	00:16:19,903	$Slut.	8
-176	00:16:19,937	00:16:21,905	$Prince Doran,	8
-177	00:16:21,939	00:16:24,941	$Ser Bronn of the Blackwater.	8
-178	00:16:24,992	00:16:27,360	$I didn't realize there were$knights of the Blackwater.	8
-179	00:16:27,394	00:16:28,995	$Only the one.	8
-180	00:16:29,029	00:16:31,581	$I believe you've already$met Prince Trystane.	8
-181	00:16:31,615	00:16:33,783	$Prince.	8
-182	00:16:33,834	00:16:35,585	$Sorry about the other day.	8
-183	00:16:35,619	00:16:38,088	$<i>Prince Trystane$here is a man of mercy.	8
-184	00:16:38,122	00:16:40,457	$He's agreed to grant$you your freedom.	8
-185	00:16:42,093	00:16:44,127	$I'm glad to hear it.	8
-186	00:16:45,679	00:16:46,963	$Pie looks good.	8
-187	00:16:47,014	00:16:49,632	$There was one condition.	8
-188	00:16:58,726	00:17:01,060	$Perhaps some soup instead.	8
-189	00:17:03,030	00:17:06,449	$Oysters, clams, and cockles.	8
-190	00:17:08,285	00:17:11,404	$Oysters, clams, and cockles.	8
-191	00:17:11,489	00:17:15,291	$Oysters, clams, and cockles.	8
-192	00:17:15,326	00:17:17,494	$Oysters, clams,$and cock--	8
-193	00:17:17,545	00:17:19,212	$How much for your little clam?	8
-194	00:17:27,838	00:17:30,723	$Oysters, clams, and cockles.	8
-195	00:17:33,594	00:17:36,646	$Oysters, clams, and cockles.	8
-196	00:18:04,542	00:18:06,543	$Come on.	9
-197	00:18:08,596	00:18:11,598	$<i>Some oysters, girl!	9
-198	00:18:11,632	00:18:14,300	$<i>I'm talking to you.	9
-199	00:18:14,351	00:18:16,686	$Is, uh...	9
-200	00:18:18,772	00:18:20,023	$- Girl!$<i>-  Tie her up!	9
-201	00:18:20,057	00:18:23,443	$<i>Are you deaf? Girl!	9
-202	00:18:24,728	00:18:26,446	$Girl!	9
-203	00:18:31,619	00:18:33,236	$My lord.	9
-204	00:18:36,824	00:18:38,875	$<i>My lord.	9
-205	00:18:38,909	00:18:40,660	$<i>Lord Tyrell.	9
-206	00:18:40,711	00:18:42,245	$On behalf of the Iron Bank,	9
-207	00:18:42,247	00:18:44,214	$may I be the first$to welcome you	9
-208	00:18:44,248	00:18:45,965	$to the Free City of Braavos.	9
-209	00:18:46,000	00:18:47,967	$I hope your journey$was trouble-free.	9
-210	00:18:48,002	00:18:49,719	$A bit of chop the last few days.	9
-211	00:18:49,753	00:18:51,838	$Nothing too awful.	9
-212	00:18:51,889	00:18:54,307	$Good to see the old chap$still guarding the harbor.	9
-213	00:18:54,341	00:18:56,643	$And how goes the$harvest in the Reach?	9
-214	00:18:56,677	00:18:59,062	$Ah, the vintners say$this might be	9
-215	00:18:59,096	00:19:02,265	$the best year for red$grapes in half a century.	9
-216	00:19:02,316	00:19:05,401	$<i>If we come to a$satisfactory arrangement,	9
-217	00:19:05,436	00:19:10,273	$I'll be sure to send a cask of$the Arbor's finest your way.	9
-218	00:19:10,324	00:19:12,942	$I'm afraid I don't partake.	9
-219	00:19:12,944	00:19:14,994	$Oh.	9
-220	00:19:20,284	00:19:24,704	$Some consider usury$distasteful, dishonorable.	9
-221	00:19:24,755	00:19:26,372	$Pure nonsense, of course.	9
-222	00:19:26,423	00:19:28,708	$I'm glad we see eye to$eye on this matter.	9
-223	00:19:28,759	00:19:31,127	$<i>Did you know that at$one point Maegor the third	9
-224	00:19:31,178	00:19:34,013	$tried to outlaw it$in the Seven Kingdoms?	9
-225	00:19:34,048	00:19:36,182	$Wanted to arrest anyone$caught charging interest	9
-226	00:19:36,216	00:19:38,885	$<i>and cut off both their hands.	9
-227	00:19:38,936	00:19:41,020	$Most unfortunate$for the glovers.	9
-228	00:19:41,055	00:19:43,189	$<i>If a man charges$no interest on a loan,	9
-229	00:19:43,223	00:19:45,341	$<i>then he has nothing to gain</i>$<i>and everything to lose,	9
-230	00:19:45,376	00:19:46,809	$<i>so why chance it?	9
-231	00:19:46,860	00:19:48,611	$<i>Whereas the promise of reward	9
-232	00:19:48,646	00:19:51,197	$<i>makes a man willing to gamble.	9
-233	00:19:51,231	00:19:54,651	$We are not gamblers here at$the Iron Bank, Lord Tyrell.	9
-234	00:19:54,702	00:19:57,120	$You are the world's$best gamblers.	9
-235	00:19:57,154	00:20:00,990	$And all those bets$you won built this.	10
-236	00:20:12,169	00:20:13,586	$We should celebrate.	10
-237	00:20:13,637	00:20:16,139	$I'm afraid I still have$a good deal of work to do.	10
-238	00:20:16,173	00:20:18,257	$<i>Oh, nonsense. Work's over.$Do you sing?	10
-239	00:20:18,309	00:20:20,009	$- I don't have that gift.$- Oh, it's not a gift.	10
-240	00:20:20,011	00:20:21,177	$It's a skill.$Anyone can learn it.	10
-241	00:20:21,228	00:20:25,765	$So give me a kiss$by the Long Canal	10
-242	00:20:25,816	00:20:29,736	$And give me two kisses$in Salty Town	10
-243	00:20:29,770	00:20:34,774	$For we're going$to die tomorrow	10
-244	00:20:34,825	00:20:38,444	$The bareheaded beggar,$the king with his crown...	10
-245	00:20:38,495	00:20:40,580	$<i>Thought that old shit$would never stop singing.	10
-246	00:20:40,614	00:20:42,582	$Wasn't bad, though.	10
-247	00:20:42,616	00:20:45,201	$The Tyrells can all rot in hell.	10
-248	00:20:45,252	00:20:46,919	$Treasonous cunts.	10
-249	00:20:46,954	00:20:49,839	$They were going to make$that boy-fucker Renly king.	10
-250	00:20:51,041	00:20:52,792	$This is the place, lads.	10
-251	00:20:52,843	00:20:55,261	$The sleekest little minks$in Braavos.	10
-252	00:20:55,295	00:20:58,181	$- You buying?$- Oh, I'm buying.	10
-253	00:20:58,215	00:21:00,383	$But I never was good at sharing.	10
-254	00:21:21,238	00:21:23,573	$Sell your fish somewhere else.	10
-255	00:21:23,575	00:21:26,459	$Oh, let her in, Brusco.$I'm hungry.	10
-256	00:21:26,493	00:21:28,411	$Come here, sweetness.	10
-257	00:21:32,716	00:21:35,418	$They say oysters$get the juices flowing.	10
-258	00:21:35,420	00:21:37,670	$We'll take half a dozen.	10
-259	00:21:39,423	00:21:41,340	$Three coppers.	10
-260	00:21:41,392	00:21:44,761	$Here's a silver because$the lady likes you.	10
-261	00:22:10,871	00:22:12,872	$Too old.	11
-262	00:22:16,293	00:22:17,627	$Brea.	11
-263	00:22:32,793	00:22:34,360	$Too old.	11
-264	00:22:36,396	00:22:39,899	$<i>I have just the one.$Anara.	11
-265	00:22:41,368	00:22:43,319	$<i>Our most expensive girl.	11
-266	00:22:44,455	00:22:47,540	$<i>But well worth it, I assure you.	11
-267	00:22:52,546	00:22:54,347	$Too old.	11
-268	00:23:02,306	00:23:04,040	$Do you have what I want or not?	11
-269	00:23:04,074	00:23:07,927	$Of course.$Of course.	11
-270	00:23:13,350	00:23:15,351	$These fresh?	11
-271	00:23:18,989	00:23:21,991	$Come on, the lads are hungry.	11
-272	00:23:25,362	00:23:29,782	$Nothing better for your$cockstand than fresh oysters.	11
-273	00:23:29,833	00:23:31,873	$<i>- Here. Thank you.</i>$<i>- I'll have one.	11
-274	00:23:33,036	00:23:34,904	$<i>Any vinegar?	11
-275	00:23:36,123	00:23:38,191	$Who let this girl in?$Shoo! Shoo!	11
-276	00:23:58,612	00:24:00,730	$Good.	12
-277	00:24:10,240	00:24:11,908	$I'll tell you when we're done.	12
-278	00:24:17,581	00:24:19,582	$You'll have a fresh one$for me tomorrow?	12
-279	00:24:19,633	00:24:21,968	$Of course.	12
-280	00:24:26,423	00:24:28,174	$<i>I'll have$you whipped, girl.	12
-281	00:24:28,225	00:24:30,593	$Go, go on.$Out, out, go.	12
-282	00:24:42,439	00:24:44,357	$Valar morghulis.	12
-283	00:24:44,441	00:24:46,442	$Valar morghulis.	12
-284	00:25:01,875	00:25:03,292	$And?	12
-285	00:25:03,294	00:25:06,045	$The thin man$wasn't hungry today.	12
-286	00:25:06,079	00:25:08,180	$Perhaps that is why$a man is thin.	12
-287	00:25:08,215	00:25:09,966	$Tomorrow.	12
-288	00:25:10,000	00:25:13,135	$Tomorrow.	12
-289	00:25:14,221	00:25:16,255	$A girl has work to do.	12
-290	00:25:29,503	00:25:33,105	$Your rebellion is over.	12
-291	00:25:33,140	00:25:35,941	$You can swear your$allegiance to me now...	12
-292	00:25:37,411	00:25:39,328	$or you can die.	12
-293	00:26:14,531	00:26:16,832	$I believe in second chances.	13
-294	00:26:18,785	00:26:21,537	$I don't believe$in third chances.	13
-295	00:26:49,783	00:26:51,901	$You write like$a seven-year-old.	13
-296	00:26:53,487	00:26:55,738	$Your maester kindly agreed$to copy it over for me.	13
-297	00:26:55,789	00:26:57,289	$<i>He didn't try to make you pay?	13
-298	00:26:57,324	00:26:59,041	$Mm-mmm.	13
-299	00:26:59,076	00:27:01,210	$Maybe he's changed.	13
-300	00:27:01,244	00:27:04,497	$The queen will be thrilled to know$you're bringing her daughter home.	13
-301	00:27:04,581	00:27:05,798	$She will.	13
-302	00:27:05,832	00:27:08,250	$You love her very much,$don't you?	13
-303	00:27:08,301	00:27:10,803	$Of course, she's my niece.	13
-304	00:27:10,837	00:27:12,755	$I wasn't talking about her.	13
-305	00:27:14,891	00:27:16,759	$You think I disapprove?	13
-306	00:27:16,761	00:27:18,427	$Why?	13
-307	00:27:18,429	00:27:21,430	$Because people disapprove of that$sort of thing where you are from?	13
-308	00:27:21,481	00:27:24,650	$They disapproved of Oberyn$and me where you are from.	13
-309	00:27:24,684	00:27:28,404	$Here no one blinked an eye.	13
-310	00:27:29,689	00:27:30,906	$100 years ago,	13
-311	00:27:30,941	00:27:33,609	$no one would have$blinked an eye at you	13
-312	00:27:33,693	00:27:35,444	$if you'd been named Targaryen.	13
-313	00:27:37,297	00:27:41,417	$It's always changing, who we're$supposed to love and who we're not.	13
-314	00:27:42,619	00:27:44,787	$The only thing$that stays the same	13
-315	00:27:44,789	00:27:47,656	$is that we want who we want.	13
-316	00:27:57,384	00:27:59,769	$I know your daughter had no$part in the terrible thing	13
-317	00:27:59,803	00:28:01,937	$that happened to the man I love.	14
-318	00:28:04,624	00:28:07,109	$Perhaps even you$are innocent of that.	14
-319	00:28:25,545	00:28:27,546	$Father.	14
-320	00:28:31,001	00:28:32,334	$Aren't you cold?	14
-321	00:28:34,671	00:28:36,755	$No. What are you reading?	14
-322	00:28:38,225	00:28:40,392	"$- ""The Dance of Dragons.""$- What's it about?"	14
-323	00:28:40,427	00:28:42,912	$It's the story of the fight$between Rhaenyra Targaryen	14
-324	00:28:42,946	00:28:46,232	$and her half-brother Aegon for$control over the Seven Kingdoms.	14
-325	00:28:46,266	00:28:49,068	$Both of them thought they$belonged on the Iron Throne.	14
-326	00:28:49,102	00:28:52,354	$When people started declaring$for one of them or the other,	14
-327	00:28:52,405	00:28:54,657	$their fight divided$the kingdoms in two.	14
-328	00:28:54,691	00:28:58,077	$Brothers fought brothers,$dragons fought dragons.	14
-329	00:28:59,746	00:29:03,699	$By the time it was over,$thousands were dead.	14
-330	00:29:03,750	00:29:06,702	$And it was a disaster$for the Targaryens as well.	14
-331	00:29:06,753	00:29:09,505	$They never truly recovered.	14
-332	00:29:09,539	00:29:11,540	"$""The Dance of Dragons."""	14
-333	00:29:13,293	00:29:15,344	$Why is that a dance?	14
-334	00:29:15,378	00:29:16,846	$It's just what they call it.	14
-335	00:29:16,880	00:29:19,048	$Hmm, doesn't make much sense.	14
-336	00:29:19,132	00:29:21,050	$I think it's poetic.	14
-337	00:29:27,891	00:29:30,442	$If you had to choose	14
-338	00:29:30,477	00:29:33,812	$between Rhaenyra and Aegon...	14
-339	00:29:35,398	00:29:36,899	$who would you have chosen?	14
-340	00:29:36,901	00:29:39,485	$I wouldn't have chosen either.	14
-341	00:29:39,536	00:29:42,705	$It's all the choosing sides that$made everything so horrible.	14
-342	00:29:42,739	00:29:45,040	$Sometimes a person$has to choose.	14
-343	00:29:47,077	00:29:50,379	$Sometimes the world$forces his hand.	14
-344	00:29:52,382	00:29:55,251	$If a man knows what he is...	14
-345	00:29:56,636	00:29:59,471	$and remains true to himself...	14
-346	00:30:02,926	00:30:05,144	$the choice is no choice at all.	15
-347	00:30:05,228	00:30:08,264	$He must fulfill his destiny...	15
-348	00:30:10,483	00:30:13,936	$and become$who he is meant to be.	15
-349	00:30:16,139	00:30:18,490	$However much he may hate it.	15
-350	00:30:19,743	00:30:22,611	$It's all right, Father.	15
-351	00:30:22,662	00:30:25,497	$You don't even know$what I'm talking about.	15
-352	00:30:25,532	00:30:27,283	$It doesn't matter.	15
-353	00:30:27,334	00:30:29,585	$I want to help you.	15
-354	00:30:29,619	00:30:31,287	$Is there any way I can help?	15
-355	00:30:39,129	00:30:40,546	$Yes, there is.	15
-356	00:30:40,597	00:30:42,431	$Good. I want to.	15
-357	00:30:45,251	00:30:47,469	$I'm the Princess Shireen$of House Baratheon.	15
-358	00:30:47,471	00:30:49,772	$And I'm your daughter.	15
-359	00:31:04,054	00:31:05,988	$Forgive me.	15
-360	00:31:47,113	00:31:49,498	$Where's my father?$I want to see my father.	15
-361	00:31:49,532	00:31:52,668	$It will all be over$soon, Princess.	15
-362	00:31:56,639	00:31:58,090	$No.	15
-363	00:32:00,877	00:32:02,928	$Where's my father?	16
-364	00:32:02,962	00:32:05,447	$No, you can't do this.$Father, where are you?	16
-365	00:32:05,482	00:32:07,933	$<i>Please, let me see my father.	16
-366	00:32:07,967	00:32:10,803	$<i>Father, where are you?</i>$<i>Don't let her do this.	16
-367	00:32:11,771	00:32:14,523	$Please let go!	16
-368	00:32:14,557	00:32:17,860	$<i>Let me see my father!</i>$<i>Where are you? Please!	16
-369	00:32:17,894	00:32:20,229	$- It's what the Lord wants.$- No.	16
-370	00:32:20,280	00:32:23,315	$- <i> Please! Let go! No!</i>$- It's a good thing.	16
-371	00:32:23,366	00:32:25,484	$- A great thing.$<i>-  Stop. Stop!	16
-372	00:32:25,535	00:32:27,403	$<i>- Please!</i>$<i>- Hear us now, my Lord.	16
-373	00:32:27,405	00:32:30,205	$<i>- You can't do this!</i>$<i>- For you, we offer up this girl	16
-374	00:32:30,240	00:32:33,042	$- Please!$-<i>...that you may cleanse her with your fire	16
-375	00:32:33,076	00:32:35,044	$and that its light$may lead our way.	16
-376	00:32:35,078	00:32:37,079	$<i> Please! No, please$let me see my father.	16
-377	00:32:37,130	00:32:39,298	$If we don't act,$we'll all starve here.	16
-378	00:32:39,332	00:32:41,300	$<i> All of us.	16
-379	00:32:41,334	00:32:43,001	$But if we make this sacrifice...	16
-380	00:32:43,053	00:32:45,254	$<i>Accept this token$of our faith, my Lord,	16
-381	00:32:45,256	00:32:48,140	$and lead us from the darkness.	16
-382	00:32:48,174	00:32:51,143	$- Lord of Light, show us the way.$- Mother!	16
-383	00:32:51,227	00:32:53,312	$Mother, please!	16
-384	00:32:55,265	00:32:56,765	$Mother, please!$Mother!	16
-385	00:32:56,816	00:32:58,901	$- <i> Mother!</i>$- We can't.	16
-386	00:32:58,935	00:33:00,936	$- There's no other way. She has king's blood.$-<i> Please don't do this!	16
-387	00:33:00,938	00:33:02,938	$<i>Lord of$Light, protect us.	16
-388	00:33:03,022	00:33:06,942	$- Please! Father, please!$-<i> For the night is dark and full of terrors.	16
-389	00:33:07,026	00:33:08,660	$Father!	16
-390	00:33:08,695	00:33:10,696	$Father, don't do this!$Please!	16
-391	00:33:10,747	00:33:14,116	$Mother, no! Please!$Please, help!	16
-392	00:33:14,118	00:33:16,452	$Don't do this!	16
-393	00:33:16,536	00:33:19,171	$Please, Father!$Mother, help!	16
-394	00:33:19,205	00:33:22,541	$- No.$-<i> No, please! Don't do this!	16
-395	00:33:22,592	00:33:25,878	$<i>Don't do this, please, Mother!	16
-396	00:33:25,962	00:33:29,798	$<i>Please, Mother!</i>$<i>Mother, help!	16
-397	00:33:29,800	00:33:32,851	$Mother, help!$Help!	16
-398	00:33:32,886	00:33:35,020	$<i>Please don't do this, Mother!	16
-399	00:33:35,054	00:33:36,472	$<i>Please!	16
-400	00:33:36,523	00:33:38,724	$<i>Please, Mother!</i>$<i>Please!	16
-401	00:33:38,775	00:33:40,859	$<i>Please! No!	16
-402	00:33:40,894	00:33:44,730	$<i>Please! No!	16
-403	00:34:01,831	00:34:04,883	$No!	17
-404	00:34:54,434	00:34:56,051	$Where have you been?	17
-405	00:34:56,053	00:34:58,220	$Just making sure$everything is in order.	17
-406	00:35:18,742	00:35:22,578		17
-407	00:35:22,822	00:35:25,950		17
-408	00:35:26,423	00:35:28,567		17
-409	00:35:29,333	00:35:30,355		17
-410	00:35:30,984	00:35:33,800		17
-411	00:36:28,811	00:36:31,480	$They're waiting for you.	18
-412	00:36:31,482	00:36:33,482	$Clap your hands.	18
-413	00:37:02,846	00:37:04,513	$That one, the smaller man.	18
-414	00:37:04,564	00:37:06,348	$No question, that's where$you should put your money.	18
-415	00:37:06,350	00:37:07,766	$The smaller man it is.	18
-416	00:37:07,817	00:37:09,685	$I'm not putting$my money anywhere.	18
-417	00:37:09,736	00:37:11,853	$Kings and queens$never bet on the games.	18
-418	00:37:11,904	00:37:14,189	$Perhaps you should go$find someone who does.	18
-419	00:37:14,191	00:37:17,159	$People used to bet against me$when I fought in the pits.	18
-420	00:37:17,193	00:37:20,195	$He would have bet against me.$Common novice mistake.	18
-421	00:37:20,246	00:37:22,280	$I've spent much$of my life in this arena.	18
-422	00:37:22,332	00:37:24,333	$And in my experience,$large men do triumph	18
-423	00:37:24,367	00:37:26,668	$over smaller men$far more often than not.	18
-424	00:37:26,703	00:37:29,588	$Has your experience ever$involved any actual fighting?	18
-425	00:37:29,622	00:37:31,256	$You yourself?	18
-426	00:37:31,290	00:37:34,209	$Have you ever tried to kill another$man who was trying to kill you?	18
-427	00:37:36,346	00:37:39,131	$Whenever I got into the pit$against a beast like that one,	18
-428	00:37:39,182	00:37:41,850	$the crowd saw me, all$skin and bone back then,	18
-429	00:37:41,884	00:37:45,187	$then they saw a pile of angry$muscles ready to murder me.	18
-430	00:37:45,221	00:37:47,389	$They couldn't get their$money out fast enough.	18
-431	00:37:47,440	00:37:50,892	$But the pile of angry muscles$never had any muscles here	18
-432	00:37:50,943	00:37:54,312	$or... here.	18
-433	00:37:54,364	00:37:56,064	$And the big men$were always too slow	18
-434	00:37:56,149	00:37:58,984	$to stop my dagger from going$where their muscles weren't.	18
-435	00:37:59,035	00:38:02,871	$Yes, whenever I saw a beast like$that one standing across from me	19
-436	00:38:02,905	00:38:06,992	$making his beast faces,$I knew I could rest easy.	19
-437	00:38:18,838	00:38:20,839	$You don't approve?	19
-438	00:38:20,890	00:38:23,759	$There's always been more than enough$death in the world for my taste.	19
-439	00:38:23,810	00:38:25,761	$I can do without it$in my leisure time.	19
-440	00:38:25,812	00:38:28,263	$Fair enough. Yet it's$an unpleasant question,	19
-441	00:38:28,265	00:38:32,684	$but what great thing has ever been$accomplished without killing or cruelty?	19
-442	00:38:32,769	00:38:36,021	$It's easy to confuse what is$with what ought to be,	19
-443	00:38:36,072	00:38:38,824	$especially when what is$has worked out in your favor.	19
-444	00:38:38,858	00:38:40,358	$I'm not talking about myself.	19
-445	00:38:40,410	00:38:43,028	$I'm talking about the necessary$conditions for greatness.	19
-446	00:38:43,079	00:38:44,996	$That is greatness?	19
-447	00:38:45,031	00:38:48,950	$That is a vital part of the$great city of Meereen,	19
-448	00:38:49,001	00:38:51,453	$which existed$long before you or I	19
-449	00:38:51,504	00:38:55,590	$and will remain standing long after$we have returned to the dirt.	19
-450	00:38:55,625	00:38:57,626	$My father would have liked you.	19
-451	00:39:06,185	00:39:09,938		19
-452	00:39:09,972	00:39:12,274	$One day your great city will$return to the dirt as well.	19
-453	00:39:12,308	00:39:14,559	$- At your command?$- If need be.	19
-454	00:39:14,679	00:39:15,908		19
-455	00:39:19,899	00:39:23,151	$And how many people will die$to make this happen?	19
-456	00:39:23,202	00:39:26,571	$If it comes to that, they will$have died for a good reason.	19
-457	00:39:26,622	00:39:28,707	$Those men think they're$dying for a good reason.	19
-458	00:39:28,741	00:39:30,492	$Someone else's reason.	19
-459	00:39:30,543	00:39:32,878	$So your reasons are true$and theirs are false?	19
-460	00:39:32,912	00:39:35,797	$They don't know their$own minds, but you do?	19
-461	00:39:35,832	00:39:38,834	$Well said.$You're an eloquent man.	19
-462	00:39:38,836	00:39:40,552	$Doesn't mean you're wrong.	19
-463	00:39:40,586	00:39:42,754	$In my experience,$eloquent men are right	19
-464	00:39:42,805	00:39:44,556	$every bit as often as imbeciles.	19
-465	00:39:44,676	00:39:46,403		19
-466	00:39:46,843	00:39:50,562		19
-467	00:39:53,429	00:39:54,937		19
-468	00:40:12,124	00:40:14,503	$- Your Grace--$- Shut your mouth.	20
-469	00:42:40,933	00:42:43,068	$- You can end this.$- She cannot.	21
-470	00:42:43,102	00:42:45,654	$You can.	21
-471	00:44:23,202	00:44:25,703	$Protect your queen!	22
-472	00:44:36,265	00:44:38,016	$Go!	22
-473	00:45:02,124	00:45:04,125	$Your Grace!$Your Grace!	22
-474	00:45:04,160	00:45:05,376	$<i>Come with me.</i>$<i>I know a way out.	22
-475	00:45:05,411	00:45:06,828	$I know a way--	22
-476	00:45:42,665	00:45:43,781	$Stay close.	22
-477	00:45:51,340	00:45:52,757	$This way.	22
-478	00:46:04,136	00:46:05,303	$The other side.	23
-479	00:46:05,354	00:46:07,522	$Follow me.	23
-480	00:46:09,775	00:46:11,893	$Protect your queen!	23
-481	00:49:05,734	00:49:07,568	$Drogon!	24
-482	00:50:09,681	00:50:11,799	$<i>Valahd.	25
-483	00:51:00,566	00:51:10,956		25
+1	00:01:38,376	00:01:48,576		2
+2	00:02:30,942	00:02:34,328	$<i>- Look out!</i>$<i>- Fire! Fire!	3
+3	00:02:59,938	00:03:02,556	$A band of 20$men, maybe less.	3
+4	00:03:02,607	00:03:04,808	$They were in and out$before anyone spotted them.	3
+5	00:03:04,810	00:03:06,777	$Burnt our food stores$to the ground,	3
+6	00:03:06,811	00:03:09,029	$all our siege weapons destroyed.	3
+7	00:03:09,064	00:03:11,398	$- Dozens of tents were--$- Horses?	3
+8	00:03:11,449	00:03:13,567	$We're still getting a count,$but hundreds are dead.	3
+9	00:03:13,618	00:03:17,288	$20 men rode into our camp without a$single guard sounding the alarm?	3
+10	00:03:17,322	00:03:19,823	$The northerners know more about$their land than we ever will.	3
+11	00:03:19,874	00:03:21,492	$Put last night's guards$in chains.	3
+12	00:03:21,494	00:03:23,210	$Either they fell asleep or$they conspired with the enemy.	3
+13	00:03:23,244	00:03:26,830	$- Find out the truth and then hang them.$- Your Grace.	4
+14	00:03:26,832	00:03:30,084	$Unless there's a thaw, we can't$press forward to Winterfell	4
+15	00:03:30,135	00:03:32,720	$and we don't have enough food$to get us back to Castle Black.	4
+16	00:03:32,754	00:03:34,588	$We're not returning$to Castle Black.	4
+17	00:03:34,639	00:03:38,008	$Forgive me, Your Grace, I never claimed$to be an expert in military matters,	4
+18	00:03:38,059	00:03:41,645	$but if we can't march forward$and we won't march back...	4
+19	00:03:54,909	00:03:57,528	$Have the dead horses$butchered for meat.	4
+20	00:04:38,236	00:04:40,404	$<i>Halt!	5
+21	00:04:40,455	00:04:43,374	$<i> Halt!	5
+22	00:04:45,910	00:04:48,579	$<i> There it is!	5
+23	00:05:28,286	00:05:30,421	$Open the gates.	6
+24	00:05:45,970	00:05:48,422	$It was a failure.	6
+25	00:05:48,490	00:05:51,225	$It wasn't.	6
+26	00:05:51,276	00:05:53,477	$I went to save them.$I failed.	6
+27	00:05:55,280	00:05:57,314	$You didn't fail him.	6
+28	00:05:57,365	00:05:58,699	$Or him.	6
+29	00:05:58,733	00:06:01,535	$<i>Or her.	7
+30	00:06:01,569	00:06:05,038	$Every one of them is alive$because of you and no one else.	7
+31	00:06:06,491	00:06:08,992	$I don't think that$fact's lost on them.	7
+32	00:07:03,014	00:07:06,350	$You have a good heart, Jon Snow.	8
+33	00:07:06,384	00:07:08,852	$It'll get us all killed.	8
+34	00:07:14,976	00:07:16,810	$Out of my way.	8
+35	00:07:42,921	00:07:44,421	$You sent for me, Your Grace?	9
+36	00:07:44,472	00:07:46,723	$Find some healthy horses and$a few knights to guard you.	9
+37	00:07:46,758	00:07:48,759	$I'm sending you back$to Castle Black.	9
+38	00:07:48,761	00:07:51,011	$Tell the Lord Commander$his king commands him	9
+39	00:07:51,062	00:07:53,430	$to send food, supplies,$fresh horses.	9
+40	00:07:53,464	00:07:55,232	$In return,$when I take the throne,	9
+41	00:07:55,266	00:07:58,268	$I'll make sure the Night's Watch$has all the men it requires.	9
+42	00:07:58,270	00:08:01,605	$He can guard all 19 castles$on the Wall if he so wishes.	9
+43	00:08:03,908	00:08:06,910	$Your Grace,$you named me your Hand.	9
+44	00:08:06,945	00:08:08,512	$Yes.	9
+45	00:08:08,546	00:08:10,497	$The King's Hand should$never abandon the king,	9
+46	00:08:10,531	00:08:11,949	$especially in time of war.	9
+47	00:08:11,951	00:08:13,800	$You're not abandoning me.$You're obeying a command.	9
+48	00:08:13,835	00:08:16,253	$A boy with a scroll$could deliver this message.	9
+49	00:08:16,287	00:08:18,839	$And if Jon Snow refuses$the boy with the scroll,	9
+50	00:08:18,873	00:08:21,091	$what does the boy say?	9
+51	00:08:21,125	00:08:23,293	$I didn't name you Hand for your$expertise in military matters.	9
+52	00:08:23,295	00:08:25,796	$Ride for Castle Black.$Don't come back empty-handed.	9
+53	00:08:32,553	00:08:34,605	$Your Grace, perhaps Queen Selyse	10
+54	00:08:34,639	00:08:36,523	$and Princess Shireen$could accompany me.	10
+55	00:08:36,557	00:08:38,609	$My family stays with me.	10
+56	00:08:38,643	00:08:40,644	$At least let me take Shireen.	10
+57	00:08:40,695	00:08:43,230	$<i>A siege is no place</i>$<i>for a little girl.	10
+58	00:08:43,281	00:08:45,649	$My family stays with me.	10
+59	00:09:21,736	00:09:23,070	$What's this one now?	11
+60	00:09:23,104	00:09:25,439	"$""The Dance of Dragons:$A True Telling"""	11
+61	00:09:25,490	00:09:26,907	$by Grand Maester Munkun.	11
+62	00:09:26,941	00:09:30,277	$Now that sounds$like a proper story.	11
+63	00:09:30,328	00:09:32,946	$Ser Byron Swann wanted$to kill the dragon Vhagar.	11
+64	00:09:32,997	00:09:35,949	$He polished his shield for a week$so that it was like a mirror.	11
+65	00:09:36,000	00:09:38,035	$And he crouched behind it$and crept forward,	11
+66	00:09:38,037	00:09:40,087	$hoping the dragon would$only see its own reflection.	11
+67	00:09:40,121	00:09:43,206	$But the dragon saw a dumb man$holding a mirrored shield.	11
+68	00:09:43,257	00:09:44,925	$And burnt him to a crisp.	11
+69	00:09:46,177	00:09:48,545	$Thus ending$the dragon-slaying career	11
+70	00:09:48,547	00:09:51,381	$of Ser Byron Swann.	11
+71	00:09:53,718	00:09:56,019	$I made you something, Princess.	11
+72	00:10:02,560	00:10:03,894	$Do you like it?	11
+73	00:10:03,896	00:10:05,812	$He's beautiful.	11
+74	00:10:05,863	00:10:08,565	$- Thank you.$- You're very welcome.	11
+75	00:10:08,567	00:10:11,118	$Will you make me a doe, too?$So that he can have company?	11
+76	00:10:11,152	00:10:12,986	$Of course I will.	11
+77	00:10:14,455	00:10:16,073	$But why am I getting a present?	12
+78	00:10:17,658	00:10:19,159	$Because you deserve it.	12
+79	00:10:20,878	00:10:24,331	$My son was always on me,$trying to teach me to read.	12
+80	00:10:24,382	00:10:26,717	$Gods, I was stubborn about it.	12
+81	00:10:28,052	00:10:29,669	$Made it this far$without reading.	12
+82	00:10:29,721	00:10:32,222	$Seemed to me I could$make it to the grave.	12
+83	00:10:34,475	00:10:36,426	$Wish I'd listened to him.	12
+84	00:10:37,929	00:10:40,263	$This is my own poor way$of saying thank you.	12
+85	00:10:43,901	00:10:46,069	$For teaching me$to be a grown-up.	12
+86	00:10:48,740	00:10:51,525	$I'll be gone for a$few days, Princess.	12
+87	00:10:51,576	00:10:54,244	"$I want to hear all about ""The$Dance of Dragons"" when I'm back."	12
+88	00:10:54,278	00:10:56,530	$You'll read it yourself.	12
+89	00:11:18,052	00:11:19,469	$Prince Doran.	13
+90	00:11:19,520	00:11:22,105	$Forgive us.$We started without you.	13
+91	00:11:22,974	00:11:24,858	$<i>Please, sit.	13
+92	00:11:24,942	00:11:27,394	$Princess Myrcella.	13
+93	00:11:27,478	00:11:29,062	$Uncle.	13
+94	00:11:29,147	00:11:30,947	$What a lovely dress.	13
+95	00:11:30,982	00:11:33,283	$- You don't like it?$- You must be cold.	13
+96	00:11:33,317	00:11:36,953	$Not at all. The Dornish$climate agrees with me.	13
+97	00:11:38,122	00:11:40,824	$Prince Trystane.	13
+98	00:11:42,827	00:11:44,161	$How's your jaw?	13
+99	00:11:45,329	00:11:46,997	$A fleabite.	13
+100	00:11:46,999	00:11:48,632	$What are you doing in Dorne?	13
+101	00:11:48,666	00:11:50,934	$Looking after the safety of my$niece, the Princess Myrcella.	13
+102	00:11:50,968	00:11:54,304	$And rather than send a raven$or speak to me directly,	13
+103	00:11:54,338	00:11:56,673	$you decided to enter$my country in secret	13
+104	00:11:56,675	00:11:58,341	$and abduct our guest by force?	14
+105	00:11:58,343	00:12:01,595	$We received$a threatening message.	14
+106	00:12:01,646	00:12:04,848	$The princess's necklace$in the jaws of a viper.	14
+107	00:12:06,184	00:12:08,185	$That necklace$was stolen from my room.	14
+108	00:12:13,174	00:12:16,943	$Oh, excellent.	14
+109	00:12:16,994	00:12:19,196	$A last meal before$the beheading?	14
+110	00:12:19,198	00:12:20,780	$Oh, I can't behead you.	14
+111	00:12:20,832	00:12:23,250	$Many in Dorne want war.	14
+112	00:12:23,284	00:12:25,268	$But I've seen war.	14
+113	00:12:25,303	00:12:28,038	$I've seen the bodies$piled on the battlefields.	14
+114	00:12:28,040	00:12:31,558	$I've seen the orphans$starving in the cities.	14
+115	00:12:31,592	00:12:33,677	$I don't want to lead$my people into that hell.	14
+116	00:12:33,711	00:12:36,379	$No, you want to break bread$with the Lannisters.	14
+117	00:12:36,430	00:12:39,049	$And that is precisely$what we are doing.	14
+118	00:12:40,885	00:12:44,471	$Let us drink to Tommen,$the First of His Name,	14
+119	00:12:44,522	00:12:47,007	$<i>King of the Andals</i>$<i>and the First Men,	14
+120	00:12:47,041	00:12:49,226	$Lord of the Seven Kingdoms.	15
+121	00:13:06,661	00:13:09,079	$King Tommen insists	15
+122	00:13:09,081	00:13:12,082	$on his sister's return$to the capital?	15
+123	00:13:12,084	00:13:14,251	$I'm afraid he does.	15
+124	00:13:16,254	00:13:19,389	$I cannot disobey$my king's command.	15
+125	00:13:19,423	00:13:21,892	$She will return with you$to King's Landing.	15
+126	00:13:21,926	00:13:25,345	$<i>And my son Prince Trystane</i>$<i>will accompany you both.	15
+127	00:13:25,379	00:13:29,015	$If the alliance between the Iron$Throne and Dorne is to continue,	15
+128	00:13:29,100	00:13:30,517	$their engagement must stand.	15
+129	00:13:30,585	00:13:32,652	$I accept.	15
+130	00:13:32,687	00:13:35,355	$One more thing.$My brother was named	15
+131	00:13:35,406	00:13:38,074	$to the small council$before his death.	15
+132	00:13:38,109	00:13:40,026	$Your father understood$the importance	16
+133	00:13:40,061	00:13:41,895	$<i>of keeping Dorne in the fold.	16
+134	00:13:41,929	00:13:46,499	$With Oberyn gone, Trystane will take$his place on the small council.	16
+135	00:13:46,584	00:13:47,684	$You have my word.	16
+136	00:13:47,752	00:13:50,203	$The word of a kingslayer.	16
+137	00:13:52,256	00:13:56,760	$No wonder you can't stand.$You have no spine.	16
+138	00:13:56,794	00:13:59,045	$You are mother$to four of my nieces,	16
+139	00:13:59,130	00:14:00,847	$girls I love very much.	16
+140	00:14:00,881	00:14:03,683	$For their sake, I hope you$live a long and happy life.	16
+141	00:14:03,718	00:14:06,219	$Speak to me that way$again, and you won't.	16
+142	00:14:13,978	00:14:17,697	$May I inquire as to the$fate of my man Bronn?	16
+143	00:14:17,732	00:14:20,817	$Tell me, Ser Jaime,$in King's Landing,	16
+144	00:14:20,868	00:14:24,154	$how do they punish a commoner$who strikes a prince?	16
+145	00:14:24,188	00:14:25,755	$He said it was just a fleabite.	16
+146	00:14:28,492	00:14:29,909	$The fault is mine.	16
+147	00:14:29,961	00:14:32,195	$Bronn is merely a soldier$following my orders.	17
+148	00:14:32,263	00:14:35,799	$If anyone should$be punished, it's me.	17
+149	00:14:35,833	00:14:38,668	$Prince Trystane must learn$judgment if he is to rule one day.	17
+150	00:14:38,753	00:14:40,470	$I'll let him decide.	17
+151	00:14:45,259	00:14:47,894	$I have learned the value$of mercy from my father.	17
+152	00:14:47,928	00:14:51,331	$- <i> I'll set your man free.</i>$- You're a good man.	17
+153	00:14:51,365	00:14:54,217	$On one condition.	17
+154	00:15:02,026	00:15:04,277	$Why do we play?$I'm better than you.	17
+155	00:15:04,328	00:15:06,663	$I'll always be better than you.	17
+156	00:15:06,697	00:15:09,532	$Have I ever missed once?	17
+157	00:15:09,534	00:15:12,452	$I don't think I have.$I can't recall.	17
+158	00:15:12,503	00:15:15,088	$You must love humiliation.$Or pain.	17
+159	00:15:15,122	00:15:18,792	$Which do you love most,$humiliation or pain?	17
+160	00:15:19,877	00:15:21,761	$That one hurt, didn't it?	18
+161	00:15:21,796	00:15:24,764	$You going to cry?	18
+162	00:15:24,799	00:15:26,716	$Give up, little sister.	18
+163	00:15:26,718	00:15:28,802	$- You're going to miss.$- Oh, I never miss.	18
+164	00:15:28,853	00:15:32,138	$You will.$You're thinking too much.	18
+165	00:15:32,189	00:15:35,225	$Now you're nervous.$What if she's right?	18
+166	00:15:38,646	00:15:41,448	$- Luck.$- Now it's my turn.	18
+167	00:15:41,482	00:15:43,116	$You're too slow.	18
+168	00:15:43,150	00:15:44,984	$You've always been too slow.	18
+169	00:16:01,752	00:16:03,586	$Am I gonna be happy$at the end of this walk?	18
+170	00:16:03,637	00:16:05,672	$You'll find out very soon.	18
+171	00:16:08,592	00:16:10,427	$Say it one more time, handsome.	18
+172	00:16:10,429	00:16:11,895	$Who am I?	18
+173	00:16:13,230	00:16:15,815	$The most beautiful$woman in the world.	19
+174	00:16:15,850	00:16:17,233	$And that's the truth.	19
+175	00:16:17,268	00:16:19,903	$Slut.	19
+176	00:16:19,937	00:16:21,905	$Prince Doran,	19
+177	00:16:21,939	00:16:24,941	$Ser Bronn of the Blackwater.	19
+178	00:16:24,992	00:16:27,360	$I didn't realize there were$knights of the Blackwater.	19
+179	00:16:27,394	00:16:28,995	$Only the one.	19
+180	00:16:29,029	00:16:31,581	$I believe you've already$met Prince Trystane.	19
+181	00:16:31,615	00:16:33,783	$Prince.	19
+182	00:16:33,834	00:16:35,585	$Sorry about the other day.	19
+183	00:16:35,619	00:16:38,088	$<i>Prince Trystane$here is a man of mercy.	19
+184	00:16:38,122	00:16:40,457	$He's agreed to grant$you your freedom.	19
+185	00:16:42,093	00:16:44,127	$I'm glad to hear it.	19
+186	00:16:45,679	00:16:46,963	$Pie looks good.	19
+187	00:16:47,014	00:16:49,632	$There was one condition.	19
+188	00:16:58,726	00:17:01,060	$Perhaps some soup instead.	19
+189	00:17:03,030	00:17:06,449	$Oysters, clams, and cockles.	20
+190	00:17:08,285	00:17:11,404	$Oysters, clams, and cockles.	20
+191	00:17:11,489	00:17:15,291	$Oysters, clams, and cockles.	20
+192	00:17:15,326	00:17:17,494	$Oysters, clams,$and cock--	20
+193	00:17:17,545	00:17:19,212	$How much for your little clam?	20
+194	00:17:27,838	00:17:30,723	$Oysters, clams, and cockles.	20
+195	00:17:33,594	00:17:36,646	$Oysters, clams, and cockles.	20
+196	00:18:04,542	00:18:06,543	$Come on.	21
+197	00:18:08,596	00:18:11,598	$<i>Some oysters, girl!	21
+198	00:18:11,632	00:18:14,300	$<i>I'm talking to you.	21
+199	00:18:14,351	00:18:16,686	$Is, uh...	21
+200	00:18:18,772	00:18:20,023	$- Girl!$<i>-  Tie her up!	21
+201	00:18:20,057	00:18:23,443	$<i>Are you deaf? Girl!	21
+202	00:18:24,728	00:18:26,446	$Girl!	21
+203	00:18:31,619	00:18:33,236	$My lord.	21
+204	00:18:36,824	00:18:38,875	$<i>My lord.	21
+205	00:18:38,909	00:18:40,660	$<i>Lord Tyrell.	21
+206	00:18:40,711	00:18:42,245	$On behalf of the Iron Bank,	21
+207	00:18:42,247	00:18:44,214	$may I be the first$to welcome you	21
+208	00:18:44,248	00:18:45,965	$to the Free City of Braavos.	21
+209	00:18:46,000	00:18:47,967	$I hope your journey$was trouble-free.	22
+210	00:18:48,002	00:18:49,719	$A bit of chop the last few days.	22
+211	00:18:49,753	00:18:51,838	$Nothing too awful.	22
+212	00:18:51,889	00:18:54,307	$Good to see the old chap$still guarding the harbor.	22
+213	00:18:54,341	00:18:56,643	$And how goes the$harvest in the Reach?	22
+214	00:18:56,677	00:18:59,062	$Ah, the vintners say$this might be	22
+215	00:18:59,096	00:19:02,265	$the best year for red$grapes in half a century.	22
+216	00:19:02,316	00:19:05,401	$<i>If we come to a$satisfactory arrangement,	22
+217	00:19:05,436	00:19:10,273	$I'll be sure to send a cask of$the Arbor's finest your way.	22
+218	00:19:10,324	00:19:12,942	$I'm afraid I don't partake.	22
+219	00:19:12,944	00:19:14,994	$Oh.	22
+220	00:19:20,284	00:19:24,704	$Some consider usury$distasteful, dishonorable.	22
+221	00:19:24,755	00:19:26,372	$Pure nonsense, of course.	22
+222	00:19:26,423	00:19:28,708	$I'm glad we see eye to$eye on this matter.	22
+223	00:19:28,759	00:19:31,127	$<i>Did you know that at$one point Maegor the third	22
+224	00:19:31,178	00:19:34,013	$tried to outlaw it$in the Seven Kingdoms?	22
+225	00:19:34,048	00:19:36,182	$Wanted to arrest anyone$caught charging interest	22
+226	00:19:36,216	00:19:38,885	$<i>and cut off both their hands.	23
+227	00:19:38,936	00:19:41,020	$Most unfortunate$for the glovers.	23
+228	00:19:41,055	00:19:43,189	$<i>If a man charges$no interest on a loan,	23
+229	00:19:43,223	00:19:45,341	$<i>then he has nothing to gain</i>$<i>and everything to lose,	23
+230	00:19:45,376	00:19:46,809	$<i>so why chance it?	23
+231	00:19:46,860	00:19:48,611	$<i>Whereas the promise of reward	23
+232	00:19:48,646	00:19:51,197	$<i>makes a man willing to gamble.	23
+233	00:19:51,231	00:19:54,651	$We are not gamblers here at$the Iron Bank, Lord Tyrell.	23
+234	00:19:54,702	00:19:57,120	$You are the world's$best gamblers.	23
+235	00:19:57,154	00:20:00,990	$And all those bets$you won built this.	23
+236	00:20:12,169	00:20:13,586	$We should celebrate.	23
+237	00:20:13,637	00:20:16,139	$I'm afraid I still have$a good deal of work to do.	23
+238	00:20:16,173	00:20:18,257	$<i>Oh, nonsense. Work's over.$Do you sing?	23
+239	00:20:18,309	00:20:20,009	$- I don't have that gift.$- Oh, it's not a gift.	23
+240	00:20:20,011	00:20:21,177	$It's a skill.$Anyone can learn it.	23
+241	00:20:21,228	00:20:25,765	$So give me a kiss$by the Long Canal	23
+242	00:20:25,816	00:20:29,736	$And give me two kisses$in Salty Town	24
+243	00:20:29,770	00:20:34,774	$For we're going$to die tomorrow	24
+244	00:20:34,825	00:20:38,444	$The bareheaded beggar,$the king with his crown...	24
+245	00:20:38,495	00:20:40,580	$<i>Thought that old shit$would never stop singing.	24
+246	00:20:40,614	00:20:42,582	$Wasn't bad, though.	24
+247	00:20:42,616	00:20:45,201	$The Tyrells can all rot in hell.	24
+248	00:20:45,252	00:20:46,919	$Treasonous cunts.	24
+249	00:20:46,954	00:20:49,839	$They were going to make$that boy-fucker Renly king.	24
+250	00:20:51,041	00:20:52,792	$This is the place, lads.	24
+251	00:20:52,843	00:20:55,261	$The sleekest little minks$in Braavos.	24
+252	00:20:55,295	00:20:58,181	$- You buying?$- Oh, I'm buying.	24
+253	00:20:58,215	00:21:00,383	$But I never was good at sharing.	24
+254	00:21:21,238	00:21:23,573	$Sell your fish somewhere else.	25
+255	00:21:23,575	00:21:26,459	$Oh, let her in, Brusco.$I'm hungry.	25
+256	00:21:26,493	00:21:28,411	$Come here, sweetness.	25
+257	00:21:32,716	00:21:35,418	$They say oysters$get the juices flowing.	25
+258	00:21:35,420	00:21:37,670	$We'll take half a dozen.	25
+259	00:21:39,423	00:21:41,340	$Three coppers.	25
+260	00:21:41,392	00:21:44,761	$Here's a silver because$the lady likes you.	25
+261	00:22:10,871	00:22:12,872	$Too old.	26
+262	00:22:16,293	00:22:17,627	$Brea.	26
+263	00:22:32,793	00:22:34,360	$Too old.	26
+264	00:22:36,396	00:22:39,899	$<i>I have just the one.$Anara.	26
+265	00:22:41,368	00:22:43,319	$<i>Our most expensive girl.	26
+266	00:22:44,455	00:22:47,540	$<i>But well worth it, I assure you.	26
+267	00:22:52,546	00:22:54,347	$Too old.	26
+268	00:23:02,306	00:23:04,040	$Do you have what I want or not?	27
+269	00:23:04,074	00:23:07,927	$Of course.$Of course.	27
+270	00:23:13,350	00:23:15,351	$These fresh?	27
+271	00:23:18,989	00:23:21,991	$Come on, the lads are hungry.	27
+272	00:23:25,362	00:23:29,782	$Nothing better for your$cockstand than fresh oysters.	27
+273	00:23:29,833	00:23:31,873	$<i>- Here. Thank you.</i>$<i>- I'll have one.	27
+274	00:23:33,036	00:23:34,904	$<i>Any vinegar?	27
+275	00:23:36,123	00:23:38,191	$Who let this girl in?$Shoo! Shoo!	27
+276	00:23:58,612	00:24:00,730	$Good.	28
+277	00:24:10,240	00:24:11,908	$I'll tell you when we're done.	28
+278	00:24:17,581	00:24:19,582	$You'll have a fresh one$for me tomorrow?	28
+279	00:24:19,633	00:24:21,968	$Of course.	28
+280	00:24:26,423	00:24:28,174	$<i>I'll have$you whipped, girl.	28
+281	00:24:28,225	00:24:30,593	$Go, go on.$Out, out, go.	28
+282	00:24:42,439	00:24:44,357	$Valar morghulis.	29
+283	00:24:44,441	00:24:46,442	$Valar morghulis.	29
+284	00:25:01,875	00:25:03,292	$And?	29
+285	00:25:03,294	00:25:06,045	$The thin man$wasn't hungry today.	29
+286	00:25:06,079	00:25:08,180	$Perhaps that is why$a man is thin.	29
+287	00:25:08,215	00:25:09,966	$Tomorrow.	29
+288	00:25:10,000	00:25:13,135	$Tomorrow.	29
+289	00:25:14,221	00:25:16,255	$A girl has work to do.	29
+290	00:25:29,503	00:25:33,105	$Your rebellion is over.	29
+291	00:25:33,140	00:25:35,941	$You can swear your$allegiance to me now...	30
+292	00:25:37,411	00:25:39,328	$or you can die.	30
+293	00:26:14,531	00:26:16,832	$I believe in second chances.	30
+294	00:26:18,785	00:26:21,537	$I don't believe$in third chances.	30
+295	00:26:49,783	00:26:51,901	$You write like$a seven-year-old.	31
+296	00:26:53,487	00:26:55,738	$Your maester kindly agreed$to copy it over for me.	31
+297	00:26:55,789	00:26:57,289	$<i>He didn't try to make you pay?	31
+298	00:26:57,324	00:26:59,041	$Mm-mmm.	31
+299	00:26:59,076	00:27:01,210	$Maybe he's changed.	31
+300	00:27:01,244	00:27:04,497	$The queen will be thrilled to know$you're bringing her daughter home.	31
+301	00:27:04,581	00:27:05,798	$She will.	31
+302	00:27:05,832	00:27:08,250	$You love her very much,$don't you?	31
+303	00:27:08,301	00:27:10,803	$Of course, she's my niece.	31
+304	00:27:10,837	00:27:12,755	$I wasn't talking about her.	31
+305	00:27:14,891	00:27:16,759	$You think I disapprove?	31
+306	00:27:16,761	00:27:18,427	$Why?	32
+307	00:27:18,429	00:27:21,430	$Because people disapprove of that$sort of thing where you are from?	32
+308	00:27:21,481	00:27:24,650	$They disapproved of Oberyn$and me where you are from.	32
+309	00:27:24,684	00:27:28,404	$Here no one blinked an eye.	32
+310	00:27:29,689	00:27:30,906	$100 years ago,	32
+311	00:27:30,941	00:27:33,609	$no one would have$blinked an eye at you	32
+312	00:27:33,693	00:27:35,444	$if you'd been named Targaryen.	32
+313	00:27:37,297	00:27:41,417	$It's always changing, who we're$supposed to love and who we're not.	32
+314	00:27:42,619	00:27:44,787	$The only thing$that stays the same	32
+315	00:27:44,789	00:27:47,656	$is that we want who we want.	32
+316	00:27:57,384	00:27:59,769	$I know your daughter had no$part in the terrible thing	32
+317	00:27:59,803	00:28:01,937	$that happened to the man I love.	32
+318	00:28:04,624	00:28:07,109	$Perhaps even you$are innocent of that.	32
+319	00:28:25,545	00:28:27,546	$Father.	33
+320	00:28:31,001	00:28:32,334	$Aren't you cold?	33
+321	00:28:34,671	00:28:36,755	$No. What are you reading?	33
+322	00:28:38,225	00:28:40,392	"$- ""The Dance of Dragons.""$- What's it about?"	33
+323	00:28:40,427	00:28:42,912	$It's the story of the fight$between Rhaenyra Targaryen	33
+324	00:28:42,946	00:28:46,232	$and her half-brother Aegon for$control over the Seven Kingdoms.	33
+325	00:28:46,266	00:28:49,068	$Both of them thought they$belonged on the Iron Throne.	33
+326	00:28:49,102	00:28:52,354	$When people started declaring$for one of them or the other,	33
+327	00:28:52,405	00:28:54,657	$their fight divided$the kingdoms in two.	33
+328	00:28:54,691	00:28:58,077	$Brothers fought brothers,$dragons fought dragons.	33
+329	00:28:59,746	00:29:03,699	$By the time it was over,$thousands were dead.	34
+330	00:29:03,750	00:29:06,702	$And it was a disaster$for the Targaryens as well.	34
+331	00:29:06,753	00:29:09,505	$They never truly recovered.	34
+332	00:29:09,539	00:29:11,540	"$""The Dance of Dragons."""	34
+333	00:29:13,293	00:29:15,344	$Why is that a dance?	34
+334	00:29:15,378	00:29:16,846	$It's just what they call it.	34
+335	00:29:16,880	00:29:19,048	$Hmm, doesn't make much sense.	34
+336	00:29:19,132	00:29:21,050	$I think it's poetic.	34
+337	00:29:27,891	00:29:30,442	$If you had to choose	34
+338	00:29:30,477	00:29:33,812	$between Rhaenyra and Aegon...	34
+339	00:29:35,398	00:29:36,899	$who would you have chosen?	34
+340	00:29:36,901	00:29:39,485	$I wouldn't have chosen either.	34
+341	00:29:39,536	00:29:42,705	$It's all the choosing sides that$made everything so horrible.	34
+342	00:29:42,739	00:29:45,040	$Sometimes a person$has to choose.	34
+343	00:29:47,077	00:29:50,379	$Sometimes the world$forces his hand.	34
+344	00:29:52,382	00:29:55,251	$If a man knows what he is...	35
+345	00:29:56,636	00:29:59,471	$and remains true to himself...	35
+346	00:30:02,926	00:30:05,144	$the choice is no choice at all.	35
+347	00:30:05,228	00:30:08,264	$He must fulfill his destiny...	35
+348	00:30:10,483	00:30:13,936	$and become$who he is meant to be.	35
+349	00:30:16,139	00:30:18,490	$However much he may hate it.	35
+350	00:30:19,743	00:30:22,611	$It's all right, Father.	35
+351	00:30:22,662	00:30:25,497	$You don't even know$what I'm talking about.	35
+352	00:30:25,532	00:30:27,283	$It doesn't matter.	35
+353	00:30:27,334	00:30:29,585	$I want to help you.	35
+354	00:30:29,619	00:30:31,287	$Is there any way I can help?	35
+355	00:30:39,129	00:30:40,546	$Yes, there is.	35
+356	00:30:40,597	00:30:42,431	$Good. I want to.	36
+357	00:30:45,251	00:30:47,469	$I'm the Princess Shireen$of House Baratheon.	36
+358	00:30:47,471	00:30:49,772	$And I'm your daughter.	36
+359	00:31:04,054	00:31:05,988	$Forgive me.	36
+360	00:31:47,113	00:31:49,498	$Where's my father?$I want to see my father.	37
+361	00:31:49,532	00:31:52,668	$It will all be over$soon, Princess.	37
+362	00:31:56,639	00:31:58,090	$No.	37
+363	00:32:00,877	00:32:02,928	$Where's my father?	37
+364	00:32:02,962	00:32:05,447	$No, you can't do this.$Father, where are you?	37
+365	00:32:05,482	00:32:07,933	$<i>Please, let me see my father.	37
+366	00:32:07,967	00:32:10,803	$<i>Father, where are you?</i>$<i>Don't let her do this.	37
+367	00:32:11,771	00:32:14,523	$Please let go!	37
+368	00:32:14,557	00:32:17,860	$<i>Let me see my father!</i>$<i>Where are you? Please!	37
+369	00:32:17,894	00:32:20,229	$- It's what the Lord wants.$- No.	37
+370	00:32:20,280	00:32:23,315	$- <i> Please! Let go! No!</i>$- It's a good thing.	37
+371	00:32:23,366	00:32:25,484	$- A great thing.$<i>-  Stop. Stop!	38
+372	00:32:25,535	00:32:27,403	$<i>- Please!</i>$<i>- Hear us now, my Lord.	38
+373	00:32:27,405	00:32:30,205	$<i>- You can't do this!</i>$<i>- For you, we offer up this girl	38
+374	00:32:30,240	00:32:33,042	$- Please!$-<i>...that you may cleanse her with your fire	38
+375	00:32:33,076	00:32:35,044	$and that its light$may lead our way.	38
+376	00:32:35,078	00:32:37,079	$<i> Please! No, please$let me see my father.	38
+377	00:32:37,130	00:32:39,298	$If we don't act,$we'll all starve here.	38
+378	00:32:39,332	00:32:41,300	$<i> All of us.	38
+379	00:32:41,334	00:32:43,001	$But if we make this sacrifice...	38
+380	00:32:43,053	00:32:45,254	$<i>Accept this token$of our faith, my Lord,	38
+381	00:32:45,256	00:32:48,140	$and lead us from the darkness.	38
+382	00:32:48,174	00:32:51,143	$- Lord of Light, show us the way.$- Mother!	38
+383	00:32:51,227	00:32:53,312	$Mother, please!	38
+384	00:32:55,265	00:32:56,765	$Mother, please!$Mother!	38
+385	00:32:56,816	00:32:58,901	$- <i> Mother!</i>$- We can't.	38
+386	00:32:58,935	00:33:00,936	$- There's no other way. She has king's blood.$-<i> Please don't do this!	38
+387	00:33:00,938	00:33:02,938	$<i>Lord of$Light, protect us.	38
+388	00:33:03,022	00:33:06,942	$- Please! Father, please!$-<i> For the night is dark and full of terrors.	38
+389	00:33:07,026	00:33:08,660	$Father!	38
+390	00:33:08,695	00:33:10,696	$Father, don't do this!$Please!	38
+391	00:33:10,747	00:33:14,116	$Mother, no! Please!$Please, help!	38
+392	00:33:14,118	00:33:16,452	$Don't do this!	39
+393	00:33:16,536	00:33:19,171	$Please, Father!$Mother, help!	39
+394	00:33:19,205	00:33:22,541	$- No.$-<i> No, please! Don't do this!	39
+395	00:33:22,592	00:33:25,878	$<i>Don't do this, please, Mother!	39
+396	00:33:25,962	00:33:29,798	$<i>Please, Mother!</i>$<i>Mother, help!	39
+397	00:33:29,800	00:33:32,851	$Mother, help!$Help!	39
+398	00:33:32,886	00:33:35,020	$<i>Please don't do this, Mother!	39
+399	00:33:35,054	00:33:36,472	$<i>Please!	39
+400	00:33:36,523	00:33:38,724	$<i>Please, Mother!</i>$<i>Please!	39
+401	00:33:38,775	00:33:40,859	$<i>Please! No!	39
+402	00:33:40,894	00:33:44,730	$<i>Please! No!	39
+403	00:34:01,831	00:34:04,883	$No!	39
+404	00:34:54,434	00:34:56,051	$Where have you been?	40
+405	00:34:56,053	00:34:58,220	$Just making sure$everything is in order.	41
+406	00:35:18,742	00:35:22,578		41
+407	00:35:22,822	00:35:25,950		41
+408	00:35:26,423	00:35:28,567		41
+409	00:35:29,333	00:35:30,355		41
+410	00:35:30,984	00:35:33,800		41
+411	00:36:28,811	00:36:31,480	$They're waiting for you.	42
+412	00:36:31,482	00:36:33,482	$Clap your hands.	42
+413	00:37:02,846	00:37:04,513	$That one, the smaller man.	43
+414	00:37:04,564	00:37:06,348	$No question, that's where$you should put your money.	43
+415	00:37:06,350	00:37:07,766	$The smaller man it is.	43
+416	00:37:07,817	00:37:09,685	$I'm not putting$my money anywhere.	43
+417	00:37:09,736	00:37:11,853	$Kings and queens$never bet on the games.	43
+418	00:37:11,904	00:37:14,189	$Perhaps you should go$find someone who does.	43
+419	00:37:14,191	00:37:17,159	$People used to bet against me$when I fought in the pits.	43
+420	00:37:17,193	00:37:20,195	$He would have bet against me.$Common novice mistake.	43
+421	00:37:20,246	00:37:22,280	$I've spent much$of my life in this arena.	43
+422	00:37:22,332	00:37:24,333	$And in my experience,$large men do triumph	43
+423	00:37:24,367	00:37:26,668	$over smaller men$far more often than not.	43
+424	00:37:26,703	00:37:29,588	$Has your experience ever$involved any actual fighting?	43
+425	00:37:29,622	00:37:31,256	$You yourself?	43
+426	00:37:31,290	00:37:34,209	$Have you ever tried to kill another$man who was trying to kill you?	44
+427	00:37:36,346	00:37:39,131	$Whenever I got into the pit$against a beast like that one,	44
+428	00:37:39,182	00:37:41,850	$the crowd saw me, all$skin and bone back then,	44
+429	00:37:41,884	00:37:45,187	$then they saw a pile of angry$muscles ready to murder me.	44
+430	00:37:45,221	00:37:47,389	$They couldn't get their$money out fast enough.	44
+431	00:37:47,440	00:37:50,892	$But the pile of angry muscles$never had any muscles here	44
+432	00:37:50,943	00:37:54,312	$or... here.	44
+433	00:37:54,364	00:37:56,064	$And the big men$were always too slow	44
+434	00:37:56,149	00:37:58,984	$to stop my dagger from going$where their muscles weren't.	44
+435	00:37:59,035	00:38:02,871	$Yes, whenever I saw a beast like$that one standing across from me	44
+436	00:38:02,905	00:38:06,992	$making his beast faces,$I knew I could rest easy.	44
+437	00:38:18,838	00:38:20,839	$You don't approve?	44
+438	00:38:20,890	00:38:23,759	$There's always been more than enough$death in the world for my taste.	45
+439	00:38:23,810	00:38:25,761	$I can do without it$in my leisure time.	45
+440	00:38:25,812	00:38:28,263	$Fair enough. Yet it's$an unpleasant question,	45
+441	00:38:28,265	00:38:32,684	$but what great thing has ever been$accomplished without killing or cruelty?	45
+442	00:38:32,769	00:38:36,021	$It's easy to confuse what is$with what ought to be,	45
+443	00:38:36,072	00:38:38,824	$especially when what is$has worked out in your favor.	45
+444	00:38:38,858	00:38:40,358	$I'm not talking about myself.	45
+445	00:38:40,410	00:38:43,028	$I'm talking about the necessary$conditions for greatness.	45
+446	00:38:43,079	00:38:44,996	$That is greatness?	45
+447	00:38:45,031	00:38:48,950	$That is a vital part of the$great city of Meereen,	45
+448	00:38:49,001	00:38:51,453	$which existed$long before you or I	45
+449	00:38:51,504	00:38:55,590	$and will remain standing long after$we have returned to the dirt.	45
+450	00:38:55,625	00:38:57,626	$My father would have liked you.	45
+451	00:39:06,185	00:39:09,938		45
+452	00:39:09,972	00:39:12,274	$One day your great city will$return to the dirt as well.	45
+453	00:39:12,308	00:39:14,559	$- At your command?$- If need be.	46
+454	00:39:14,679	00:39:15,908		46
+455	00:39:19,899	00:39:23,151	$And how many people will die$to make this happen?	46
+456	00:39:23,202	00:39:26,571	$If it comes to that, they will$have died for a good reason.	46
+457	00:39:26,622	00:39:28,707	$Those men think they're$dying for a good reason.	46
+458	00:39:28,741	00:39:30,492	$Someone else's reason.	46
+459	00:39:30,543	00:39:32,878	$So your reasons are true$and theirs are false?	46
+460	00:39:32,912	00:39:35,797	$They don't know their$own minds, but you do?	46
+461	00:39:35,832	00:39:38,834	$Well said.$You're an eloquent man.	46
+462	00:39:38,836	00:39:40,552	$Doesn't mean you're wrong.	46
+463	00:39:40,586	00:39:42,754	$In my experience,$eloquent men are right	46
+464	00:39:42,805	00:39:44,556	$every bit as often as imbeciles.	46
+465	00:39:44,676	00:39:46,403		46
+466	00:39:46,843	00:39:50,562		46
+467	00:39:53,429	00:39:54,937		46
+468	00:40:12,124	00:40:14,503	$- Your Grace--$- Shut your mouth.	47
+469	00:42:40,933	00:42:43,068	$- You can end this.$- She cannot.	50
+470	00:42:43,102	00:42:45,654	$You can.	50
+471	00:44:23,202	00:44:25,703	$Protect your queen!	52
+472	00:44:36,265	00:44:38,016	$Go!	52
+473	00:45:02,124	00:45:04,125	$Your Grace!$Your Grace!	52
+474	00:45:04,160	00:45:05,376	$<i>Come with me.</i>$<i>I know a way out.	52
+475	00:45:05,411	00:45:06,828	$I know a way--	52
+476	00:45:42,665	00:45:43,781	$Stay close.	53
+477	00:45:51,340	00:45:52,757	$This way.	53
+478	00:46:04,136	00:46:05,303	$The other side.	54
+479	00:46:05,354	00:46:07,522	$Follow me.	54
+480	00:46:09,775	00:46:11,893	$Protect your queen!	54
+481	00:49:05,734	00:49:07,568	$Drogon!	57
+482	00:50:09,681	00:50:11,799	$<i>Valahd.	58
+483	00:51:00,566	00:51:10,956		60
 9999	00:00:0,500	00:00:2,00	"$<font color=""#ffff00"" size=14>www.tvsubtitles.net</font>"	0
