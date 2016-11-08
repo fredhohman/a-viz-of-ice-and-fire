@@ -31,6 +31,8 @@ function color_blocks(episode_start, episode_end) {
 
                 // console.log(episode_list[color]);
                 d3.select("#" + episode_list[episode%10*10+color])
+                  .transition()
+                  .duration(250)
                   .style("background-color", "rgb(" + String(palettes[episode][color][0]) + "," 
                                                     + String(palettes[episode][color][1]) + "," 
                                                     + String(palettes[episode][color][2]) + ")");
@@ -40,41 +42,21 @@ function color_blocks(episode_start, episode_end) {
 }
 
 // Initialize blocks with season 1
-// $(document).ready(function() {
-//     color_blocks(0,10)
-// });
+$(document).ready(function() {
+    color_blocks(0,10)
+});
 
+// Color in season blocks
 $(document).ready(function() {
     $("#series").click(function(event) {
         var series_clicked = event.target.id[1];
+        series_clicked = parseInt(series_clicked);
         var episode_start = 0;
         var episode_end = 0;
 
-        if (series_clicked == "1") {
-            episode_start = 0;
-            episode_end = episode_start + 10;
-        };
-        if (series_clicked == "2") {
-            episode_start = 10;
-            episode_end = episode_start + 10;
-        }
-        if (series_clicked == "3") {
-            episode_start = 20;
-            episode_end = episode_start + 10;
-        };
-        if (series_clicked == "4") {
-            episode_start = 30;
-            episode_end = episode_start + 10;
-        };
-        if (series_clicked == "5") {
-            episode_start = 40;
-            episode_end = episode_start + 10;
-        };
-        if (series_clicked == "6") {
-            episode_start = 50;
-            episode_end = episode_start + 10;
-        };
-        
+        episode_start = (series_clicked - 1)*10;
+        episode_end = episode_start + 10;
+
         color_blocks(episode_start, episode_end);
 
     });
