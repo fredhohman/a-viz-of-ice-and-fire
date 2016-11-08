@@ -1,70 +1,3 @@
-<!DOCTYPE html>
-<head>
-<meta charset="utf-8">
-<title>Issues Ratings</title>
-<style>
-
-body {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line, 
-.axis1 path,
-.axis1 line {
-  fill: none;
-  stroke: #E6E7E8;
-  shape-rendering: crispEdges;
-}
-
-.x.axis path, .x.axis1 path {
-  display: none;
-}
-
-.line {
-  fill: none;
-  stroke-width: 1.5px;
-}
-
-.legend-box {
-  cursor: pointer;  
-}
-
-#mouse-tracker {
-  stroke: #E6E7E8;
-  stroke-width: 1px;
-}
-
-.hover-line { 
-  stroke: #E6E7E8;
-  fill: none;
-  stroke-width: 1px;
-  left: 10px;
-  shape-rendering: crispEdges;
-  opacity: 1e-6;
-}
-
-.hover-text {
-  stroke: none;
-  font-size: 30px;
-  font-weight: bold;
-  fill: #000000;
-}
-
-.tooltip {
-  font-weight: normal;
-}
-
-.brush .extent {
-  stroke: #FFF;
-  shape-rendering: crispEdges;
-}
-
-</style>
-</head>
-<body>
-<script src="http://d3js.org/d3.v4.js"></script>
-<script>
 
 var margin = {top: 20, right: 200, bottom: 100, left: 50},
     margin2 = { top: 430, right: 10, bottom: 20, left: 40 },
@@ -105,7 +38,7 @@ var line = d3.line()
 
 var maxY; // Defined later to update yAxis
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#text").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom) //height + margin.top + margin.bottom
   .append("g")
@@ -136,7 +69,7 @@ svg.append("defs")
 
 //end slider part----------------------------------------------------------------------------------- 
 
-d3.tsv("../../data/subtitles/subtitlesInTSV/LIWC_chunk_counts_all_seasons.tsv", function(error, data) { 
+d3.tsv("../data/subtitles/subtitlesInTSV/LIWC_chunk_counts_all_seasons.tsv", function(error, data) { 
   // MODIFIED: removing both date and time from color domain
   color.domain(d3.keys(data[0]).filter(function(key) { // Set the domain of the color ordinal scale to be all the csv headers except "date", matching a color to an issue
     return key !== "time"; // key !== "date" &
@@ -416,6 +349,3 @@ d3.tsv("../../data/subtitles/subtitlesInTSV/LIWC_chunk_counts_all_seasons.tsv", 
     });
     return d3.max(maxYValues);
   }
-
-</script>
-</html>
