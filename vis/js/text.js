@@ -69,7 +69,7 @@ svg.append("defs")
 
 //end slider part----------------------------------------------------------------------------------- 
 
-d3.tsv("../data/subtitles/subtitlesInTSV/LIWC_chunk_counts_all_seasons.tsv", function(error, data) { 
+d3.tsv("data/LIWC_chunk_counts_all_seasons.tsv", function(error, data) { 
   // MODIFIED: removing both date and time from color domain
   color.domain(d3.keys(data[0]).filter(function(key) { // Set the domain of the color ordinal scale to be all the csv headers except "date", matching a color to an issue
     return key !== "time"; // key !== "date" &
