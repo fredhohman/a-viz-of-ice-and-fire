@@ -1,5 +1,5 @@
 """
-
+Extract LIWC counts from dialogue chunks.
 """
 from clean_extracted_text import clean_text
 from get_LIWC_counts import get_LIWC_counts
