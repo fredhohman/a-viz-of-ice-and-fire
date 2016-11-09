@@ -1,26 +1,56 @@
-	anger	death	family	home	humans	negative_affect	positive_affect	religion	sexual	swear
-0	{}	{}	{}	{}	{}	{}	{}	{}	{}	{}
-1	{}	{'die': 1}	{'broken': 1, 'intimate': 1}	{'denying': 1}	{'children': 1, 'women': 1}	{'closest': 1}	{'knowing': 1, 'what': 5, 'love': 2, 'like': 2, 'cares': 1, 'shall': 2, 'had': 3, 'hair': 1, 'broken': 1, 'that': 2, 'have': 5, 'than': 1}	{}	{'forbid': 1, 'how': 1, 'love': 2, 'big': 1}	{}
-2	{}	{'good': 1}	{'person': 2, 'man': 1, 'imagine': 1, 'many': 1}	{}	{'person': 2, 'many': 1, 'man': 1}	{'worst': 1}	{'what': 2, 'already': 1, 'like': 1, 'that': 1, 'had': 1, 'good': 1, 'sharp': 1, 'than': 1}	{}	{'how': 1, 'bit': 1, 'who': 1, 'whole': 1}	{}
-3	{'fucked': 3}	{'good': 1}	{'thinking': 1, 'many': 1, 'maybe': 1}	{}	{'many': 1}	{}	{'what': 3, 'already': 1, 'have': 3, 'that': 1, 'lover': 1, 'good': 1, 'wondering': 1, 'hanging': 1, 'fun': 1, 'than': 1, 'like': 1}	{}	{'fucked': 3, 'lover': 1, 'taste': 1, 'big': 1, 'bits': 1, 'those': 2, 'else': 1}	{'fucked': 3}
-4	{}	{}	{'maester': 3, 'may': 1, 'exactly': 1, 'brought': 1, 'imagine': 1}	{}	{'girl': 1}	{'closest': 1}	{'what': 5, 'love': 4, 'that': 5, 'better': 1, 'wonderful': 1, 'books': 1, 'have': 1, 'true': 1, 'than': 1, 'happened': 1}	{}	{'assure': 1, 'love': 4, 'raids': 1, 'how': 2, 'who': 1, 'thousands': 1, 'else': 2}	{'assure': 1}
-5	{'forward': 1}	{'forward': 1, 'anybody': 1}	{'maester': 1, 'king': 1, 'may': 2, 'many': 1, 'past': 1, 'person': 1, 'manner': 1, 'imagine': 2, 'makes': 1}	{'bed': 1}	{'person': 1, 'manner': 1, 'child': 1, 'many': 1, 'girl': 1, 'girls': 1}	{'forward': 1, 'lost': 1}	{'what': 1, 'like': 2, 'that': 4, 'have': 3, 'win': 1, 'shape': 1, 'loves': 1, 'sweeter': 1, 'than': 2}	{}	{'horrors': 1, 'how': 1, 'who': 3, 'loves': 1, 'thorne': 1}	{}
-6	{'fucking': 1}	{}	{'fucking': 1, 'many': 2, 'make': 1, 'prepare': 1}	{}	{'many': 2, 'women': 1}	{}	{'ready': 2, 'haste': 1, 'having': 1, 'best': 1}	{}	{'fucking': 1, 'how': 2, 'who': 1, 'horrible': 1}	{'fucking': 1}
-7	{'hating': 1}	{}	{'pace': 1, 'next': 1, 'person': 1}	{}	{'boys': 1, 'himself': 1, 'person': 1}	{'guessing': 1}	{'what': 1, 'like': 2, 'that': 3, 'had': 2, 'chance': 1, 'charge': 1, 'either': 1, 'have': 1, 'hating': 1}	{'guessing': 1}	{'however': 1, 'whore': 1, 'should': 1}	{}
-8	{'made': 1}	{'die': 2}	{'matter': 1, 'made': 1, 'brothers': 1, 'man': 1}	{'room': 1}	{'men': 1, 'man': 1}	{'made': 1}	{'what': 2, 'won': 3, 'have': 1, 'that': 2, 'than': 1, 'free': 1}	{}	{'how': 1}	{'check': 1}
-9	{'hells': 1, 'steward': 1}	{'steward': 1}	{'manning': 1, 'reason': 1, 'manage': 1, 'son': 1}	{}	{'manning': 1, 'manage': 1, 'men': 1}	{'steward': 1}	{'what': 1, 'have': 2, 'that': 1, 'had': 2, 'than': 1, 'happened': 1}	{'hells': 1}	{'how': 2, 'choice': 1, 'big': 1}	{'hells': 1}
-10	{'fucking': 2}	{'die': 1, 'good': 1}	{'fucking': 2, 'brothers': 1}	{}	{}	{}	{'good': 1, 'that': 1}	{}	{'fucking': 2, 'hold': 3, 'else': 1}	{'fucking': 2}
-11	{'fucking': 1}	{'die': 1}	{'fucking': 1, 'attacking': 1, 'brothers': 1, 'brother': 1, 'man': 1}	{}	{'man': 1}	{'missing': 1}	{'what': 2, 'have': 2}	{'missing': 1}	{'fucking': 1}	{'fucking': 1}
-12	{}	{}	{'king': 1, 'mammoths': 1, 'experienced': 1, 'commanded': 1, 'brother': 1, 'man': 1}	{}	{'commanded': 1, 'mammoths': 1, 'men': 2, 'children': 1, 'man': 1}	{}	{'that': 2}	{}	{'those': 4}	{}
-13	{'made': 1}	{}	{'made': 1}	{}	{}	{'made': 1}	{'won': 1, 'than': 1, 'that': 2}	{}	{'how': 1, 'hold': 2, 'bigger': 1}	{}
-14	{}	{'dead': 1}	{}	{}	{}	{}	{}	{}	{}	{}
-15	{}	{}	{'maester': 1, 'make': 1}	{}	{'men': 1}	{}	{'won': 1}	{}	{'hold': 2}	{}
-16	{'fucking': 1}	{}	{'fucking': 1, 'make': 1}	{}	{}	{'lazy': 1}	{'won': 1}	{}	{'fucking': 1, 'hold': 3}	{'fucking': 1}
-17	{}	{}	{'command': 1}	{}	{'men': 2, 'command': 1}	{}	{'have': 1}	{}	{'hold': 1}	{}
-18	{'cut': 1, 'fuckers': 1}	{'gods': 1}	{'mammoths': 1, 'commander': 1, 'brothers': 1, 'mother': 1}	{}	{'boys': 1, 'mammoths': 1, 'children': 1, 'commander': 1}	{}	{'save': 2, 'what': 1, 'already': 1, 'won': 1, 'have': 1, 'that': 1, 'shall': 2}	{}	{'how': 1, 'hold': 3, 'fuckers': 1, 'shot': 1}	{'fuckers': 1}
-19	{}	{'die': 1}	{}	{}	{'boy': 1, 'men': 1}	{}	{'won': 1, 'glory': 1, 'that': 1, 'win': 1, 'shall': 2, 'than': 1}	{}	{'honor': 1}	{}
-20	{}	{}	{}	{}	{}	{}	{'ha': 1}	{}	{}	{}
-21	{}	{}	{}	{}	{'boys': 1}	{'hush': 1}	{'had': 1, 'have': 1}	{}	{'hoist': 2, 'should': 1}	{}
-22	{'made': 1}	{}	{'mammoths': 1, 'made': 1, 'mance': 2, 'maybe': 1, 'many': 1, 'man': 1}	{}	{'boy': 1, 'mammoths': 1, 'mance': 2, 'many': 1, 'men': 1, 'man': 1}	{'made': 1}	{'great': 2, 'has': 3, 'chains': 1, 'have': 2, 'that': 1}	{}	{'how': 1, 'testing': 1, 'hold': 1, 'who': 1, 'whoa': 1, 'should': 2}	{}
-23	{'warring': 1}	{'bodies': 1, 'warring': 1}	{'make': 1, 'managed': 1, 'mance': 3, 'brothers': 1}	{'homes': 1, 'yards': 1}	{'managed': 1, 'mance': 3}	{'warring': 1, 'lose': 2}	{'what': 1, 'won': 1}	{}	{'homes': 1, 'without': 2}	{}
-24	{}	{}	{}	{}	{}	{'lose': 1}	{'what': 1, 'original': 1}	{}	{'honeybunny': 1}	{}
+anger	death	family	home	humans	negative_affect	positive_affect	religion	sexual	swear	chunk
+{}	{}	{}	{}	{}	{}	{}	{}	{}	{}	0
+{}	{}	{}	{}	{}	{}	{'what': 1, 'like': 1}	{}	{}	{}	1
+{}	{'die': 1}	{}	{}	{}	{'closest': 1}	{'knowing': 1, 'what': 2, 'love': 2, 'like': 1, 'had': 3, 'hair': 1, 'have': 2, 'than': 1}	{}	{'how': 1, 'love': 2, 'big': 1}	{}	2
+{}	{}	{'broken': 1, 'intimate': 1}	{'denying': 1}	{'children': 1, 'women': 1}	{}	{'broken': 1, 'what': 3, 'like': 1, 'shall': 2, 'that': 2, 'have': 3, 'cares': 1}	{}	{'forbid': 1}	{}	3
+{}	{}	{'person': 2, 'imagine': 1}	{}	{'person': 2}	{'worst': 1}	{'what': 1, 'already': 1, 'than': 1}	{}	{'whole': 1}	{}	4
+{}	{'good': 1}	{}	{}	{}	{}	{'good': 1, 'had': 1, 'that': 1}	{}	{'bit': 1}	{}	5
+{'fucked': 3}	{'good': 1}	{'many': 1, 'man': 1}	{}	{'many': 1, 'man': 1}	{}	{'sharp': 1, 'good': 1, 'have': 1}	{}	{'fucked': 3, 'how': 1, 'who': 1, 'big': 1}	{'fucked': 3}	6
+{}	{}	{'thinking': 1, 'many': 1}	{}	{'many': 1}	{}	{'what': 3, 'already': 1, 'like': 1, 'that': 1, 'hanging': 1, 'wondering': 1, 'lover': 1, 'fun': 1, 'than': 1}	{}	{'taste': 1, 'bits': 1, 'those': 2, 'lover': 1}	{}	7
+{}	{}	{'maester': 1, 'maybe': 1}	{}	{}	{}	{'what': 1, 'have': 2, 'that': 1}	{}	{'else': 1}	{}	8
+{}	{}	{'maester': 2}	{}	{}	{'closest': 1}	{'better': 1, 'what': 1, 'wonderful': 1, 'books': 1, 'that': 2, 'than': 1}	{}	{'how': 1, 'else': 2, 'who': 1, 'thousands': 1, 'assure': 1}	{'assure': 1}	9
+{}	{}	{'may': 1, 'brought': 1, 'exactly': 1, 'imagine': 1}	{}	{'girl': 1}	{}	{'what': 3, 'love': 3, 'have': 1, 'that': 2, 'true': 1, 'happened': 1}	{}	{'love': 3, 'raids': 1}	{}	10
+{'forward': 1}	{'forward': 1}	{'maester': 1, 'king': 1, 'manner': 1, 'person': 1, 'many': 1, 'imagine': 2}	{}	{'person': 1, 'manner': 1, 'child': 1, 'many': 1, 'girl': 1, 'girls': 1}	{'forward': 1}	{'what': 1, 'love': 1, 'like': 2, 'have': 1, 'that': 3, 'win': 1}	{}	{'horrors': 1, 'how': 1, 'who': 1, 'love': 1}	{}	11
+{}	{}	{'past': 1, 'makes': 1}	{'bed': 1}	{}	{'lost': 1}	{'loves': 1, 'shape': 1, 'than': 2, 'sweeter': 1}	{}	{'how': 1, 'who': 2, 'loves': 1}	{}	12
+{'fucking': 1}	{'anybody': 1}	{'may': 2, 'fucking': 1}	{}	{}	{}	{'have': 2, 'best': 1, 'that': 1}	{}	{'fucking': 1, 'thorne': 1}	{'fucking': 1}	13
+{}	{}	{'many': 2, 'make': 1, 'prepare': 1}	{}	{'many': 2, 'women': 1}	{}	{'ready': 2, 'haste': 1, 'having': 1}	{}	{'how': 2, 'who': 1, 'horrible': 1}	{}	14
+{}	{}	{}	{}	{}	{}	{}	{}	{}	{}	15
+{}	{}	{'pace': 1, 'next': 1}	{}	{'boys': 1}	{}	{'that': 1}	{}	{}	{}	16
+{'hating': 1}	{}	{'person': 1}	{}	{'person': 1, 'himself': 1}	{'guessing': 1}	{'what': 1, 'like': 2, 'that': 2, 'had': 1, 'chance': 1, 'charge': 1, 'either': 1, 'have': 1, 'hating': 1}	{'guessing': 1}	{'however': 1, 'should': 1}	{}	17
+{}	{}	{'brothers': 1}	{'room': 1}	{}	{}	{'what': 1, 'had': 1, 'that': 1}	{}	{'how': 1, 'whore': 1}	{'check': 1}	18
+{'made': 1}	{'die': 2}	{'matter': 1, 'made': 1, 'man': 1}	{}	{'men': 1, 'man': 1}	{'made': 1}	{'what': 1, 'won': 3, 'free': 1, 'have': 1, 'that': 1}	{}	{}	{}	19
+{}	{}	{}	{}	{}	{}	{'than': 1}	{}	{}	{}	20
+{'hells': 1, 'steward': 1}	{'steward': 1}	{'reason': 1, 'manage': 1, 'son': 1}	{}	{'manage': 1}	{'steward': 1}	{'had': 2, 'have': 2, 'that': 1}	{'hells': 1}	{'how': 1, 'choice': 1}	{'hells': 1}	21
+{}	{}	{'manning': 1}	{}	{'manning': 1, 'men': 1}	{}	{'what': 1, 'than': 1, 'happened': 1}	{}	{'big': 1, 'how': 1}	{}	22
+{}	{}	{'brothers': 1}	{}	{}	{}	{}	{}	{}	{}	23
+{}	{}	{}	{}	{}	{}	{}	{}	{'hold': 1, 'else': 1}	{}	24
+{'fucking': 2}	{'die': 1, 'good': 1}	{'fucking': 2}	{}	{}	{}	{'good': 1, 'that': 1}	{}	{'fucking': 2, 'hold': 2}	{'fucking': 2}	25
+{'fucking': 1}	{}	{'fucking': 1, 'attacking': 1, 'brother': 1, 'man': 1}	{}	{'man': 1}	{}	{'what': 2, 'have': 1}	{}	{'fucking': 1}	{'fucking': 1}	26
+{}	{'die': 1}	{}	{}	{}	{'missing': 1}	{}	{'missing': 1}	{}	{}	27
+{}	{}	{'brothers': 1}	{}	{'men': 1}	{}	{'have': 1}	{}	{'those': 1}	{}	28
+{}	{}	{}	{}	{}	{}	{'that': 1}	{}	{}	{}	29
+{}	{}	{'king': 1, 'mammoths': 1, 'experienced': 1, 'commanded': 1, 'brother': 1, 'man': 1}	{}	{'commanded': 1, 'mammoths': 1, 'men': 1, 'children': 1, 'man': 1}	{}	{'that': 1}	{}	{'those': 3}	{}	30
+{'made': 1}	{}	{'made': 1}	{}	{}	{'made': 1}	{'won': 1, 'than': 1, 'that': 2}	{}	{'how': 1, 'hold': 2, 'bigger': 1}	{}	31
+{}	{}	{}	{}	{}	{}	{}	{}	{}	{}	32
+{}	{}	{}	{}	{}	{}	{}	{}	{}	{}	33
+{}	{'dead': 1}	{'maester': 1, 'make': 1}	{}	{}	{}	{}	{}	{}	{}	34
+{}	{}	{}	{}	{'men': 1}	{}	{'won': 1}	{}	{'hold': 2}	{}	35
+{}	{}	{'make': 1}	{}	{}	{'lazy': 1}	{'won': 1}	{}	{'hold': 1}	{}	36
+{'fucking': 1}	{}	{'fucking': 1}	{}	{}	{}	{}	{}	{'fucking': 1, 'hold': 2}	{'fucking': 1}	37
+{}	{}	{'command': 1}	{}	{'men': 2, 'command': 1}	{}	{'have': 1}	{}	{'hold': 1}	{}	38
+{}	{}	{}	{}	{}	{}	{}	{}	{}	{}	39
+{'cut': 1}	{}	{}	{}	{}	{}	{}	{}	{}	{}	40
+{}	{}	{'mammoths': 1}	{}	{'mammoths': 1}	{}	{'what': 1, 'won': 1, 'have': 1}	{}	{}	{}	41
+{'fuckers': 1}	{'gods': 1}	{'commander': 1, 'brothers': 1, 'mother': 1}	{}	{'boys': 1, 'commander': 1}	{}	{'already': 1, 'save': 2, 'that': 1}	{}	{'how': 1, 'hold': 2, 'fuckers': 1, 'shot': 1}	{'fuckers': 1}	42
+{}	{'die': 1}	{}	{}	{'men': 1, 'children': 1}	{}	{'won': 1, 'glory': 1, 'that': 1, 'win': 1, 'shall': 4, 'than': 1}	{}	{'hold': 1, 'honor': 1}	{}	43
+{}	{}	{}	{}	{'boy': 1}	{}	{'ha': 1}	{}	{}	{}	44
+{}	{}	{}	{}	{}	{'hush': 1}	{'have': 1}	{}	{'should': 1}	{}	45
+{}	{}	{}	{}	{'boys': 1}	{}	{}	{}	{}	{}	46
+{}	{}	{'man': 1}	{}	{'man': 1}	{}	{'had': 1}	{}	{'how': 1, 'hoist': 2}	{}	47
+{}	{}	{}	{}	{'boy': 1}	{}	{'chains': 1, 'have': 2}	{}	{'whoa': 1, 'should': 2}	{}	48
+{'made': 1}	{}	{'many': 1, 'mammoths': 1, 'made': 1, 'mance': 2, 'maybe': 1}	{}	{'many': 1, 'mammoths': 1, 'men': 1, 'mance': 2}	{'made': 1}	{'great': 2, 'has': 3, 'that': 1}	{}	{'hold': 1, 'testing': 1, 'who': 1}	{}	49
+{'warring': 1}	{'warring': 1}	{'make': 1, 'managed': 1, 'mance': 3}	{'homes': 1, 'yards': 1}	{'managed': 1, 'mance': 3}	{'warring': 1, 'lose': 2}	{'what': 1, 'won': 1}	{}	{'homes': 1, 'without': 2}	{}	50
+{}	{}	{'brothers': 1}	{}	{}	{}	{}	{}	{}	{}	51
+{}	{'bodies': 1}	{}	{}	{}	{'lose': 1}	{'what': 1}	{}	{}	{}	52
+{}	{}	{}	{}	{}	{}	{}	{}	{}	{}	53
+{}	{}	{}	{}	{}	{}	{'original': 1}	{}	{'honeybunny': 1}	{}	54
