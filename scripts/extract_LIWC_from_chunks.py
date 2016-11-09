@@ -33,7 +33,7 @@ if __name__ == '__main__':
         print('processing episode %s'%(e))
         e_data = episode_data[e]
         e_name = e.split('.tsv')[0]
-        e_data.sort_by('chunk', ascending=True)
+        e_data.sort_values('chunk', ascending=True)
         chunk_iter = e_data.groupby('chunk')
         chunk_text = [clean_text(' '.join(map(str, c[1]['dialogue'].tolist()))) 
                       for c in chunk_iter]
@@ -42,8 +42,11 @@ if __name__ == '__main__':
             tokens = TKNZR.tokenize(t)
             for c in LIWC_categories:
                 counts = get_LIWC_counts(tokens, LIWC_words=LIWC_category_wordlists[c])
+                total_counts = sum(counts.values())
+                # TODO: store individual words as well as aggregate counts
                 chunk_LIWC_counts[c].append(counts)
         chunk_LIWC_counts = pd.DataFrame(chunk_LIWC_counts)
+        chunk_LIWC_counts['chunk'] = chunk_LIWC_counts.index
         chunk_fname = os.path.join(subtitle_dir, '%s_LIWC_chunk_counts.tsv'%(e_name))
-        chunk_LIWC_counts.to_csv(chunk_fname, sep='\t')
+        chunk_LIWC_counts.to_csv(chunk_fname, sep='\t', index=None)
         
