@@ -53,10 +53,10 @@ $(document).ready(function() {
     color_blocks(0,10)
 
     var color = d3.scaleOrdinal().range(["#020202", "#3c3c3c", "#4b4a4a", "#5e5d5d", "#727171", "#7e7e7e", "#8d8d8d", "#a19f9f", "#b6b5b5", "#C7C6C6"]);//["#48A36D",  "#56AE7C",  "#64B98C", "#72C39B", "#80CEAA", "#80CCB3", "#7FC9BD", "#7FC7C6", "#7EC4CF", "#7FBBCF", "#7FB1CF", "#80A8CE", "#809ECE", "#8897CE", "#8F90CD", "#9788CD", "#9E81CC", "#AA81C5", "#B681BE", "#C280B7", "#CE80B0", "#D3779F", "#D76D8F", "#DC647E", "#E05A6D", "#E16167", "#E26962", "#E2705C", "#E37756", "#E38457", "#E39158", "#E29D58", "#E2AA59", "#E0B15B", "#DFB95C", "#DDC05E", "#DBC75F", "#E3CF6D", "#EAD67C", "#F2DE8A"]);  
-    d3.tsv("../data/LIWC_chunk_counts_all_seasons.tsv", function(error, data) { 
+    d3.tsv("data/LIWC_chunk_counts_all_seasons.tsv", function(error, data) { 
 	// MODIFIED: removing both date and time from color domain
 	color.domain(d3.keys(data[0]).filter(function(key) { // Set the domain of the color ordinal scale to be all the csv headers except "date", matching a color to an issu
-	    return key !== "time"; // key !== "date" &
+	    return key !== "time" & key != "season" & key != "episode"; // key !== "date" &
 	}));
 	textData = data;
     });
