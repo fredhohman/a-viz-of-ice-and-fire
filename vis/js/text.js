@@ -32,7 +32,7 @@ var yAxis = d3.axisLeft()
 
 var line = d3.line()
     // .interpolateBasis()
-    .x(function(d) { return xScale(d.time); })
+    .x(function(d) { return xScale(d.chunk); })
     .y(function(d) { return yScale(d.rating); })
     .defined(function(d) { return d.rating; });  // Hiding line value defaults of 0 for missing data
 
@@ -72,12 +72,12 @@ svg.append("defs")
 d3.tsv("data/LIWC_chunk_counts_all_seasons.tsv", function(error, data) { 
   // MODIFIED: removing both date and time from color domain
   color.domain(d3.keys(data[0]).filter(function(key) { // Set the domain of the color ordinal scale to be all the csv headers except "date", matching a color to an issue
-    return key !== "time"; // key !== "date" &
+    return key !== "time" & key !== "season" & key !== "episode"; // key !== "date" &
   }));
 
   data.forEach(function(d) { // Make every date in the csv data a javascript date object format
     // d.date = parseDate(d.date);
-    d.time = parseInt(d.time);
+    d.chunk = parseInt(d.chunk);
   });
 
   var categories = color.domain().map(function(name) { // Nest the data into an array of objects with new keys
@@ -86,7 +86,7 @@ d3.tsv("data/LIWC_chunk_counts_all_seasons.tsv", function(error, data) {
       name: name, // "name": the csv headers except date
       values: data.map(function(d) { // "values": which has an array of the dates and ratings
         return {
-          time: d.time, 
+          chunk: d.chunk, 
           rating: +(d[name]),
           };
       }),
@@ -94,7 +94,7 @@ d3.tsv("data/LIWC_chunk_counts_all_seasons.tsv", function(error, data) {
     };
   });
 
-  xScale.domain(d3.extent(data, function(d) { return d.time; })); // extent = highest and lowest points, domain is data, range is bounding box
+  xScale.domain(d3.extent(data, function(d) { return d.chunk; })); // extent = highest and lowest points, domain is data, range is bounding box
 
   yScale.domain([0, 100
     //d3.max(categories, function(c) { return d3.max(c.values, function(v) { return v.rating; }); })
@@ -300,7 +300,7 @@ d3.tsv("data/LIWC_chunk_counts_all_seasons.tsv", function(error, data) {
       d0 = data[i - 1],
       d1 = data[i],
       /*d0 is the combination of date and rating that is in the data array at the index to the left of the cursor and d1 is the combination of date and close that is in the data array at the index to the right of the cursor. In other words we now have two variables that know the value and date above and below the date that corresponds to the position of the cursor.*/
-      d = x0 - d0.time > d1.time - x0 ? d1 : d0;
+      d = x0 - d0.chunk > d1.chunk - x0 ? d1 : d0;
       // d  = d0;
       /*The final line in this segment declares a new array d that is represents the date and close combination that is closest to the cursor. It is using the magic JavaScript short hand for an if statement that is essentially saying if the distance between the mouse cursor and the date and close combination on the left is greater than the distance between the mouse cursor and the date and close combination on the right then d is an array of the date and close on the right of the cursor (d1). Otherwise d is an array of the date and close on the left of the cursor (d0).*/
 
