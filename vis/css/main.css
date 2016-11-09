@@ -17,21 +17,27 @@ body {
 	margin-bottom: 0px;
 }
 .season-block {
+	transition: all 0.4s ease;
+	border-radius: 25px;
 	width: 16.666%;
 	float: left;
 }
 .season-block:hover {
+	background-color: #CCCCCC;
+	color: #FFFFFF;
 	cursor: pointer;
-	background-color: black;
 }
 .episode-block {
+	transition: all 0.4s ease;
+	border-radius: 25px;
 	width: 10%;
 	float: left;
 }
 .episode-block:hover {
-	background-color: black;
-	border-left: 3px white solid;
-	border-right: 3px white solid;
+	background-color: #CCCCCC;
+	color: #FFFFFF;
+	/*border-left: 3px white solid;*/
+	/*border-right: 3px white solid;*/
 	cursor: pointer;
 }
 .chunk-block {
