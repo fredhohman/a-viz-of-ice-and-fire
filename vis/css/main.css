@@ -18,7 +18,6 @@ body {
 }
 .season-block {
 	width: 16.666%;
-	/*height: 100px;*/
 	float: left;
 }
 .season-block:hover {
@@ -27,18 +26,32 @@ body {
 }
 .episode-block {
 	width: 10%;
-	/*height: 100px;*/
 	float: left;
-	cursor: pointer;
 }
 .episode-block:hover {
 	background-color: black;
 	border-left: 3px white solid;
 	border-right: 3px white solid;
+	cursor: pointer;
+}
+.chunk-block {
+	width: 1.666%;
+	float: left;
+	cursor: pointer;
+}
+.chunk-block:hover {
+	background-color: black;
+	border-left: 1px white solid;
+	border-right: 1px white solid;
 }
 .color {
 	width: 100%;
 	height: 15px;
+	background-color: red;
+}
+.ccolor {
+	width: 100%;
+	height: 30px;
 	background-color: red;
 }
 p {
