@@ -19,7 +19,6 @@ var yScale = d3.scaleLinear()
     .range([height, 0]);
 
 // 40 Custom DDV colors 
-var color = d3.scaleOrdinal().range(["#020202", "#3c3c3c", "#4b4a4a", "#5e5d5d", "#727171", "#7e7e7e", "#8d8d8d", "#a19f9f", "#b6b5b5", "#C7C6C6"]);//["#48A36D",  "#56AE7C",  "#64B98C", "#72C39B", "#80CEAA", "#80CCB3", "#7FC9BD", "#7FC7C6", "#7EC4CF", "#7FBBCF", "#7FB1CF", "#80A8CE", "#809ECE", "#8897CE", "#8F90CD", "#9788CD", "#9E81CC", "#AA81C5", "#B681BE", "#C280B7", "#CE80B0", "#D3779F", "#D76D8F", "#DC647E", "#E05A6D", "#E16167", "#E26962", "#E2705C", "#E37756", "#E38457", "#E39158", "#E29D58", "#E2AA59", "#E0B15B", "#DFB95C", "#DDC05E", "#DBC75F", "#E3CF6D", "#EAD67C", "#F2DE8A"]);  
 
 var xAxis = d3.axisBottom()
     .scale(xScale);
@@ -32,11 +31,13 @@ var yAxis = d3.axisLeft()
 
 var line = d3.line()
     // .interpolateBasis()
-    .x(function(d) { return xScale(d.chunk); })
+    .x(function(d) { return xScale(d.time); })
     .y(function(d) { return yScale(d.rating); })
     .defined(function(d) { return d.rating; });  // Hiding line value defaults of 0 for missing data
 
 var maxY; // Defined later to update yAxis
+
+var color = d3.scaleOrdinal().range(["#020202", "#3c3c3c", "#4b4a4a", "#5e5d5d", "#727171", "#7e7e7e", "#8d8d8d", "#a19f9f", "#b6b5b5", "#C7C6C6"]);//["#48A36D",  "#56AE7C",  "#64B98C", "#72C39B", "#80CEAA", "#80CCB3", "#7FC9BD", "#7FC7C6", "#7EC4CF", "#7FBBCF", "#7FB1CF", "#80A8CE", "#809ECE", "#8897CE", "#8F90CD", "#9788CD", "#9E81CC", "#AA81C5", "#B681BE", "#C280B7", "#CE80B0", "#D3779F", "#D76D8F", "#DC647E", "#E05A6D", "#E16167", "#E26962", "#E2705C", "#E37756", "#E38457", "#E39158", "#E29D58", "#E2AA59", "#E0B15B", "#DFB95C", "#DDC05E", "#DBC75F", "#E3CF6D", "#EAD67C", "#F2DE8A"]);  
 
 var svg = d3.select("#text").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -75,9 +76,10 @@ d3.tsv("data/LIWC_chunk_counts_all_seasons.tsv", function(error, data) {
     return key !== "time" & key !== "season" & key !== "episode"; // key !== "date" &
   }));
 
+// function updateTimePlot (data) {
   data.forEach(function(d) { // Make every date in the csv data a javascript date object format
     // d.date = parseDate(d.date);
-    d.chunk = parseInt(d.chunk);
+    d.time = parseInt(d.time);
   });
 
   var categories = color.domain().map(function(name) { // Nest the data into an array of objects with new keys
@@ -86,7 +88,7 @@ d3.tsv("data/LIWC_chunk_counts_all_seasons.tsv", function(error, data) {
       name: name, // "name": the csv headers except date
       values: data.map(function(d) { // "values": which has an array of the dates and ratings
         return {
-          chunk: d.chunk, 
+          time: d.time, 
           rating: +(d[name]),
           };
       }),
@@ -94,7 +96,7 @@ d3.tsv("data/LIWC_chunk_counts_all_seasons.tsv", function(error, data) {
     };
   });
 
-  xScale.domain(d3.extent(data, function(d) { return d.chunk; })); // extent = highest and lowest points, domain is data, range is bounding box
+  xScale.domain(d3.extent(data, function(d) { return d.time; })); // extent = highest and lowest points, domain is data, range is bounding box
 
   yScale.domain([0, 100
     //d3.max(categories, function(c) { return d3.max(c.values, function(v) { return v.rating; }); })
@@ -264,6 +266,8 @@ d3.tsv("data/LIWC_chunk_counts_all_seasons.tsv", function(error, data) {
         .attr("x", width + 20) // position tooltips  
         .attr("y", function (d, i) { return (legendSpace)+i*(legendSpace); }); // (return (11.25/2 =) 5.625) + i * (5.625) // position tooltips       
 
+  issue.exit().remove();
+  focus.exit().remove ();
   // Add mouseover events for hover line.
   d3.select("#mouse-tracker") // select chart plot background rect #mouse-tracker
   .on("mousemove", mousemove) // on mousemove activate mousemove function defined below
@@ -300,7 +304,7 @@ d3.tsv("data/LIWC_chunk_counts_all_seasons.tsv", function(error, data) {
       d0 = data[i - 1],
       d1 = data[i],
       /*d0 is the combination of date and rating that is in the data array at the index to the left of the cursor and d1 is the combination of date and close that is in the data array at the index to the right of the cursor. In other words we now have two variables that know the value and date above and below the date that corresponds to the position of the cursor.*/
-      d = x0 - d0.chunk > d1.chunk - x0 ? d1 : d0;
+      d = x0 - d0.time > d1.time - x0 ? d1 : d0;
       // d  = d0;
       /*The final line in this segment declares a new array d that is represents the date and close combination that is closest to the cursor. It is using the magic JavaScript short hand for an if statement that is essentially saying if the distance between the mouse cursor and the date and close combination on the left is greater than the distance between the mouse cursor and the date and close combination on the right then d is an array of the date and close on the right of the cursor (d1). Otherwise d is an array of the date and close on the left of the cursor (d0).*/
 
