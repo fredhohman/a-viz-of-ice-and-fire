@@ -21,7 +21,7 @@ function make_episode_color_list() {
 }
 
 function color_blocks(episode_start, episode_end) {
-    d3.json("../data/series.json", function(error, data){
+    d3.json("data/series.json", function(error, data){
         console.log("Loaded series.json.");
         palettes = data['palettes'];
         // console.log(palettes);
