@@ -67,7 +67,7 @@ $(document).ready(function() {
     $("#series").click(function(event) {
         var series_clicked = event.target.id[1];
         series_clicked = parseInt(series_clicked);
-	seasonNumber = series_clicked;
+	    seasonNumber = series_clicked;
         var episode_start = 0;
         var episode_end = 0;
 
@@ -78,6 +78,7 @@ $(document).ready(function() {
 
     });
 });
+
 
 function sliceData (seasonNumber, episodeNumber, textData){
     return textData;
