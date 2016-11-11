@@ -68,20 +68,43 @@ svg.append("defs")
     .attr("width", width)
     .attr("height", height); 
 
+
+// draw line graph
+svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("x", -10)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Issues Rating");
+
 //end slider part----------------------------------------------------------------------------------- 
 
-d3.tsv("data/LIWC_chunk_counts_all_seasons.tsv", function(error, data) { 
+//d3.tsv("data/LIWC_chunk_counts_all_seasons.tsv", function(error, data) { 
   // MODIFIED: removing both date and time from color domain
-  color.domain(d3.keys(data[0]).filter(function(key) { // Set the domain of the color ordinal scale to be all the csv headers except "date", matching a color to an issue
-    return key !== "time" & key !== "season" & key !== "episode"; // key !== "date" &
-  }));
+//  color.domain(d3.keys(data[0]).filter(function(key) { // Set the domain of the color ordinal scale to be all the csv headers except "date", matching a color to an issue
+//    return key !== "time" & key !== "season" & key !== "episode"; // key !== "date" &
+//  }));
 
-// function updateTimePlot (data) {
+function updateTimePlot (data) {
+  console.log ("inside update");
   data.forEach(function(d) { // Make every date in the csv data a javascript date object format
     // d.date = parseDate(d.date);
     d.time = parseInt(d.time);
   });
 
+  console.log (color);
+  color.domain(d3.keys(data[0]).filter(function(key) {  
+    return key !== "time" && key !== "season" && key !== "episode";
+  })); // Set the domain of the color ordinal scale to be all the csv headers except "date", matching a color to an issue
   var categories = color.domain().map(function(name) { // Nest the data into an array of objects with new keys
 
     return {
@@ -96,6 +119,7 @@ d3.tsv("data/LIWC_chunk_counts_all_seasons.tsv", function(error, data) {
     };
   });
 
+  console.log (categories);
   xScale.domain(d3.extent(data, function(d) { return d.time; })); // extent = highest and lowest points, domain is data, range is bounding box
 
   yScale.domain([0, 100
@@ -136,27 +160,11 @@ d3.tsv("data/LIWC_chunk_counts_all_seasons.tsv", function(error, data) {
  //      .attr("fill", "#E6E7E8");  
   //end slider part-----------------------------------------------------------------------------------
 
-  // draw line graph
-  svg.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(xAxis);
-
-  svg.append("g")
-      .attr("class", "y axis")
-      .call(yAxis)
-    .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("x", -10)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .text("Issues Rating");
 
   var issue = svg.selectAll(".issue")
       .data(categories) // Select nested data and append to new svg group elements
     .enter().append("g")
-      .attr("class", "issue");   
+      .attr("class", "issue");
 
   issue.append("path")
       .attr("class", "line")
@@ -342,7 +350,7 @@ d3.tsv("data/LIWC_chunk_counts_all_seasons.tsv", function(error, data) {
     
   };      
 
-}); // End Data callback function
+} // End Data callback function
   
 // TODO: finish
 function sliceData (seasonNumber, episodeNumber, textData){
@@ -390,3 +398,25 @@ $(".episode-block").click(function (event) {
     });
     return d3.max(maxYValues);
   }
+
+function sliceData (data, seasonNumber, episodeNumber){
+    var outData = Array ();
+    for (var index = 0; index < data.length; index++){
+	//console.log (data[index]["season"]);
+	if (parseInt(data[index]["season"]) == seasonNumber &&
+	    parseInt (data[index]["episode"]) == episodeNumber){
+		outData.push (data[index]);
+	}
+    }
+
+    return outData;
+}
+
+
+function updatePlot (data){
+    // Put x axis update here
+    // Put y axis update here
+    // update the lines here
+    // bind the data using the enter method
+    // call exit remove
+}
