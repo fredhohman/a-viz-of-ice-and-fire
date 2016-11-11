@@ -344,6 +344,43 @@ d3.tsv("data/LIWC_chunk_counts_all_seasons.tsv", function(error, data) {
 
 }); // End Data callback function
   
+// TODO: finish
+function sliceData (seasonNumber, episodeNumber, textData){
+  var slicedData = Array();
+  for(var index = 0; index < textData.length; index++) {
+    if(textData[index]['season'] == seasonNumber &&
+       textData[index]['episode'] == episodeNumber){
+      slicedData.append(textData[index])  
+    }
+  }
+  return textData;
+}
+
+var seasonNumber = 0, 
+  episodeNumber = 0;
+
+$("#series").click(function(event) {
+    var series_clicked = event.target.id[1];
+    series_clicked = parseInt(series_clicked);
+  seasonNumber = series_clicked;
+  episodeNumber = 1;
+  var slicedData = sliceData (seasonNumber, episodeNumber, textData);
+    updateTimePlot(slicedData);
+
+});
+
+
+// TODO: slice and update text data
+$(".episode-block").click(function (event) {
+   episodeNumber = event.target.id[1];
+   console.log (seasonNumber);
+   console.log (episodeNumber);
+
+   // slice the data and call the update method from here
+   var slicedData = sliceData (seasonNumber, episodeNumber, textData);
+   updateTimePlot (slicedData);
+});
+
   function findMaxY(data){  // Define function "findMaxY"
     var maxYValues = data.map(function(d) { 
       if (d.visible){
