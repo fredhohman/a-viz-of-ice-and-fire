@@ -101,7 +101,7 @@ function updateTimePlot (data) {
     d.time = parseInt(d.time);
   });
 
-  console.log (color);
+  // console.log (color);
   color.domain(d3.keys(data[0]).filter(function(key) {  
     return key !== "time" && key !== "season" && key !== "episode";
   })); // Set the domain of the color ordinal scale to be all the csv headers except "date", matching a color to an issue
@@ -119,7 +119,7 @@ function updateTimePlot (data) {
     };
   });
 
-  console.log (categories);
+  // console.log (categories);
   xScale.domain(d3.extent(data, function(d) { return d.time; })); // extent = highest and lowest points, domain is data, range is bounding box
 
   yScale.domain([0, 100
@@ -175,11 +175,11 @@ function updateTimePlot (data) {
       .attr("d", function(d) { 
         return d.visible ? line(d.values) : null; // If array key "visible" = true then draw line, if not then don't 
       })
-      .attr("clip-path", "url(#clip)")//use clip path to make irrelevant part invisible
+      // .attr("clip-path", "url(#clip)")//use clip path to make irrelevant part invisible
       .style("stroke", function(d) { return color(d.name); });
 
   // draw legend
-  var legendSpace = 450 / categories.length; // 450/number of issues (ex. 40)    
+  var legendSpace = 450 / categories.length; // 450/number of issues (ex. 40)
 
   issue.append("rect")
       .attr("width", 10)
@@ -260,9 +260,9 @@ function updateTimePlot (data) {
             .attr("x", width - 150) // hover date text position
             .style("fill", "#E6E7E8");
 
-  var columnNames = d3.keys(data[0]) //grab the key values from your first data row
-                                     //these are the same as your column names
-                  .slice(2); //remove the first column name (`date`);
+  var columnNames = d3.keys(data[0]).filter(function(key) { 
+   return key !== "time" & key !== "season" & key !== "episode"; 
+   }); //grab the key values from your first data row
 
   var focus = issue.select("g") // create group elements to house tooltip text
       .data(columnNames) // bind each column name date to each g element
@@ -275,7 +275,21 @@ function updateTimePlot (data) {
         .attr("y", function (d, i) { return (legendSpace)+i*(legendSpace); }); // (return (11.25/2 =) 5.625) + i * (5.625) // position tooltips       
 
   issue.exit().remove();
-  focus.exit().remove ();
+  focus.exit().remove();
+
+  // TODO: update graph when changing episode/season and not just clicking
+  // maxY = findMaxY(categories); // Find max Y rating value categories data with "visible"; true
+  // yScale.domain([0,maxY]); // Redefine yAxis domain based on highest y value of categories data with "visible"; true
+  // svg.select(".y.axis")
+  //   .transition()
+  //   .call(yAxis);
+
+  // issue.select("path")
+  //   .transition()
+  //   .attr("d", function(d){
+  //     return d.visible ? line(d.values) : null; // If d.visible is true then draw line for this d selection
+  //   });
+
   // Add mouseover events for hover line.
   d3.select("#mouse-tracker") // select chart plot background rect #mouse-tracker
   .on("mousemove", mousemove) // on mousemove activate mousemove function defined below
