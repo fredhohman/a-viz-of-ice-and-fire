@@ -1,3 +1,5 @@
+// TODO: Put all this inside an init function.
+
 
 var margin = {top: 20, right: 200, bottom: 100, left: 50},
     margin2 = { top: 430, right: 10, bottom: 20, left: 40 },
@@ -8,6 +10,7 @@ var margin = {top: 20, right: 200, bottom: 100, left: 50},
 var parseDate = d3.timeFormat("%Y%m%d").parse;
 var bisectDate = d3.bisector(function(d) { return d.time; }).left;
 
+var visibilities; // declare which categories are visible
 // should be scaleLinear() ;_;
 var xScale = d3.scaleLinear()//.time.scale()
     .range([0, width]),
@@ -115,11 +118,11 @@ function updateTimePlot (data) {
           rating: +(d[name]),
           };
       }),
-      visible: (name === "positive_affect" ? true : false) // "visible": all false except for economy which is true.
+      //visible: (name === "positive_affect" ? true : false) // "visible": all false except for positive_affect which is true.
+      visible: visibilities[name] // "visible": all false except for positive_affect which is true.
     };
   });
-
-  // console.log (categories);
+  
   xScale.domain(d3.extent(data, function(d) { return d.time; })); // extent = highest and lowest points, domain is data, range is bounding box
 
   yScale.domain([0, 100
@@ -181,6 +184,22 @@ function updateTimePlot (data) {
   // draw legend
   var legendSpace = 450 / categories.length; // 450/number of issues (ex. 40)
 
+        // TODO: this seems to be the right code for updating the plot dynamically, but don't know where it is supposed to be placed
+	// Starts below
+        maxY = findMaxY(categories); // Find max Y rating value categories data with "visible"; true
+        yScale.domain([0,maxY]); // Redefine yAxis domain based on highest y value of categories data with "visible"; true
+        svg.select(".y.axis")
+          .transition()
+          .call(yAxis);   
+
+        issue.select("path")
+          .transition()
+          .attr("d", function(d){
+	      //console.log (d);
+            return visibilities[d.name] ? line(d.values) : null; // If d.visible is true then draw line for this d selection
+          });
+	// Ends above
+
   issue.append("rect")
       .attr("width", 10)
       .attr("height", 10)                                    
@@ -192,7 +211,9 @@ function updateTimePlot (data) {
       .attr("class", "legend-box")
 
       .on("click", function(d){ // On click make d.visible 
+	visibilities[d.name] = !d.visible;
         d.visible = !d.visible; // If array key for this data selection is "visible" = true then make it false, if false then make it true
+	//console.log (d);
 
         maxY = findMaxY(categories); // Find max Y rating value categories data with "visible"; true
         yScale.domain([0,maxY]); // Redefine yAxis domain based on highest y value of categories data with "visible"; true
@@ -203,13 +224,17 @@ function updateTimePlot (data) {
         issue.select("path")
           .transition()
           .attr("d", function(d){
-            return d.visible ? line(d.values) : null; // If d.visible is true then draw line for this d selection
+	      //console.log (d);
+            return visibilities[d.name] ? line(d.values) : null; // If d.visible is true then draw line for this d selection
           })
 
         issue.select("rect")
           .transition()
           .attr("fill", function(d) {
-          return d.visible ? color(d.name) : "#F1F1F2";
+	   console.log (d);
+	   console.log (visibilities[d.name]);
+
+          return visibilities[d.name] ? color(d.name) : "#F1F1F2";
         });
       })
 
@@ -229,7 +254,7 @@ function updateTimePlot (data) {
         d3.select(this)
           .transition()
           .attr("fill", function(d) {
-          return d.visible ? color(d.name) : "#F1F1F2";});
+          return visibilities[d.name] ? color(d.name) : "#F1F1F2";});
 
         d3.select("#line-" + d.name.replace(" ", "").replace("/", ""))
           .transition()
@@ -291,15 +316,16 @@ function updateTimePlot (data) {
   //   });
 
   // Add mouseover events for hover line.
-  d3.select("#mouse-tracker") // select chart plot background rect #mouse-tracker
-  .on("mousemove", mousemove) // on mousemove activate mousemove function defined below
-  .on("mouseout", function() {
-      hoverDate
-          .text(null) // on mouseout remove text for hover date
+  // FIXME: later
+  //d3.select("#mouse-tracker") // select chart plot background rect #mouse-tracker
+  //.on("mousemove", mousemove) // on mousemove activate mousemove function defined below
+  //.on("mouseout", function() {
+  //    hoverDate
+  //        .text(null) // on mouseout remove text for hover date
 
-      d3.select("#hover-line")
-          .style("opacity", 1e-6); // On mouse out making line invisible
-  });
+   //   d3.select("#hover-line")
+   //       .style("opacity", 1e-6); // On mouse out making line invisible
+  //});
 
   function mousemove() { 
       var mouse_x = d3.mouse(this)[0]; // Finding mouse x position on rect
@@ -327,6 +353,9 @@ function updateTimePlot (data) {
       d1 = data[i],
       /*d0 is the combination of date and rating that is in the data array at the index to the left of the cursor and d1 is the combination of date and close that is in the data array at the index to the right of the cursor. In other words we now have two variables that know the value and date above and below the date that corresponds to the position of the cursor.*/
       d = x0 - d0.time > d1.time - x0 ? d1 : d0;
+      console.log (x0);
+      console.log (d0);
+      console.log (d1);
       // d  = d0;
       /*The final line in this segment declares a new array d that is represents the date and close combination that is closest to the cursor. It is using the magic JavaScript short hand for an if statement that is essentially saying if the distance between the mouse cursor and the date and close combination on the left is greater than the distance between the mouse cursor and the date and close combination on the right then d is an array of the date and close on the right of the cursor (d1). Otherwise d is an array of the date and close on the left of the cursor (d0).*/
 
