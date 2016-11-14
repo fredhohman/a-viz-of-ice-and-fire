@@ -20,6 +20,8 @@ function make_episode_color_list() {
     return episode_list;
 }
 
+var season_strings = ['Season 1', 'Season 2', 'Season 3', 'Season 4', 'Season 5', 'Season 6'];
+
 function color_blocks(episode_start, episode_end) {
     d3.json("data/series.json", function(error, data){
         console.log("Loaded series.json.");
@@ -73,6 +75,10 @@ $(document).ready(function() {
         var series_clicked = event.target.id[1];
         series_clicked = parseInt(series_clicked);
 	    seasonNumber = series_clicked;
+
+        // update season in left hand side
+        d3.select("#season-title").text(season_strings[series_clicked-1]);
+
         var episode_start = 0;
         var episode_end = 0;
 
