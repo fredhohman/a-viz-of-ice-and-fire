@@ -68,3 +68,6 @@ p {
 .center {
 	text-align: center;
 }
+.metadata-header {
+	font-size: 16px;
+}

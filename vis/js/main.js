@@ -7,7 +7,21 @@ var seasonNumber = 1;
 var episodeNumber = 1;
 var textData;
 
-// this needs to change variable names
+// variable names inside are wrong, just pay attention to function name
+function make_season_color_list() {
+    var episode_list = [];
+
+    for (var season_num = 1; season_num < 7; season_num++) {
+        for (var episode_num = 1; episode_num < 11; episode_num++) {
+            var episode = 's' + String(season_num) + '-' + 'c' + String(episode_num)
+            episode_list.push(episode);
+        }
+    }
+    console.log(episode_list);
+    return episode_list;
+}
+
+// variable names inside are wrong, just pay attention to function name
 function make_episode_color_list() {
     var episode_list = [];
 
@@ -20,8 +34,10 @@ function make_episode_color_list() {
     return episode_list;
 }
 
+var season_strings = ['Season 1', 'Season 2', 'Season 3', 'Season 4', 'Season 5', 'Season 6'];
+
 function color_blocks(episode_start, episode_end) {
-    d3.json("../data/series.json", function(error, data){
+    d3.json("data/color/series.json", function(error, data){
         console.log("Loaded series.json.");
         palettes = data['palettes'];
         // console.log(palettes);
@@ -48,6 +64,29 @@ function color_blocks(episode_start, episode_end) {
     })
 }
 
+$(document).ready(function() {
+    d3.json("data/color/seasons.json", function(error,data){
+        console.log("Loaded seasons.json");
+        palettes = data['palettes'];
+        var season_list = make_season_color_list();
+
+        for (var season = 0; season < 6; season++) {
+            for (var color = 0; color < 10; color++) {
+                // console.log(season_list[season%6*10+color]);
+                // console.log(palettes[season][color]);
+                
+                d3.select('#'+season_list[season%6*10+color])
+                  .style("background-color", "rgb("+ String(palettes[season][color][0]) + ","
+                                                   + String(palettes[season][color][1]) + ","
+                                                   + String(palettes[season][color][2]) + ")");
+            }
+        }
+
+    })
+
+});
+
+
 // Initialize blocks with season 1
 $(document).ready(function() {
     color_blocks(0,10)
@@ -73,6 +112,10 @@ $(document).ready(function() {
         var series_clicked = event.target.id[1];
         series_clicked = parseInt(series_clicked);
 	    seasonNumber = series_clicked;
+
+        // update season in left hand side
+        d3.select("#season-title").text(season_strings[series_clicked-1]);
+
         var episode_start = 0;
         var episode_end = 0;
 
