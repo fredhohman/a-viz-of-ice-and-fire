@@ -17,7 +17,6 @@ function make_season_color_list() {
             episode_list.push(episode);
         }
     }
-    console.log(episode_list);
     return episode_list;
 }
 
@@ -34,9 +33,66 @@ function make_episode_color_list() {
     return episode_list;
 }
 
+// variable names inside are wrong, just pay attention to function name
+function make_chunk_color_list() {
+    var episode_list = [];
+
+    for (var season_num = 1; season_num < 61; season_num++) {
+        for (var episode_num = 1; episode_num < 11; episode_num++) {
+            var episode = 'c' + String(season_num) + '-' + 'c' + String(episode_num)
+            episode_list.push(episode);
+        }
+    }
+    return episode_list;
+}
+
+
+// variable names inside are wrong, just pay attention to function name
+function make_episode_titles() {
+    var episode_list = [];
+
+    for (var season_num = 1; season_num < 7; season_num++) {
+        for (var episode_num = 1; episode_num < 11; episode_num++) {
+            var episode = 'S' + String(season_num) + 'E' + String(episode_num)
+            episode_list.push(episode);
+        }
+    }
+    return episode_list;
+}
+
+
 var season_strings = ['Season 1', 'Season 2', 'Season 3', 'Season 4', 'Season 5', 'Season 6'];
+var episode_strings = make_episode_titles();
 
 function color_blocks(episode_start, episode_end) {
+    d3.json("data/color/series.json", function(error, data){
+        console.log("Loaded series.json.");
+        palettes = data['palettes'];
+        // console.log(palettes);
+        var episode_list = make_episode_color_list();
+        // console.log(episode_list);
+
+        for (var episode = episode_start; episode < episode_end; episode++) {
+            for (var color = 0; color < 10; color++) {
+
+                // console.log(episode); 
+                // console.log(color);
+                // console.log(palettes[episode]);
+                // console.log(palettes[episode][color]);
+
+                // console.log(episode_list[color]);
+                d3.select("#" + episode_list[episode%10*10+color])
+                  .transition()
+                  .duration(250)
+                  .style("background-color", "rgb(" + String(palettes[episode][color][0]) + "," 
+                                                    + String(palettes[episode][color][1]) + "," 
+                                                    + String(palettes[episode][color][2]) + ")");
+            }
+        }
+    })
+}
+
+function color_chunk_blocks(episode_start, episode_end) {
     d3.json("data/color/series.json", function(error, data){
         console.log("Loaded series.json.");
         palettes = data['palettes'];
@@ -74,7 +130,7 @@ $(document).ready(function() {
             for (var color = 0; color < 10; color++) {
                 // console.log(season_list[season%6*10+color]);
                 // console.log(palettes[season][color]);
-                
+
                 d3.select('#'+season_list[season%6*10+color])
                   .style("background-color", "rgb("+ String(palettes[season][color][0]) + ","
                                                    + String(palettes[season][color][1]) + ","
@@ -108,6 +164,8 @@ $(document).ready(function() {
 
 // Color in season blocks
 $(document).ready(function() {
+
+    // update colors for episodes
     $("#series").click(function(event) {
         var series_clicked = event.target.id[1];
         series_clicked = parseInt(series_clicked);
@@ -123,13 +181,31 @@ $(document).ready(function() {
         episode_end = episode_start + 10;
 
         color_blocks(episode_start, episode_end);
-
     });
+
+    //  update colors for episode chunks
+    $("#episodes").click(function(event) {
+        episode_clicked = parseInt(event.target.id[1]);
+        if (episode_clicked == 1 && parseInt(event.target.id[2]) == 0) {
+            episode_clicked = 10; //hacky but works, correctly sets episode_click to 10 instead of 1
+        }
+        episodeNumber = episode_clicked+10*(seasonNumber-1);
+
+        console.log("seasonNumber" + seasonNumber);
+        console.log("episodeNumber" + episodeNumber);
+
+        d3.select("#episode-title").text(episode_strings[episodeNumber]);
+
+
+
+        
+    });
+
 });
 $(".episode-block").click(function (event) {
    episodeNumber = event.target.id[1];
-   console.log (seasonNumber);
-   console.log (episodeNumber);
+   // console.log (seasonNumber);
+   // console.log (episodeNumber);
 
    // slice the data and call the update method from here
    var slicedData = sliceData (textData, parseInt(seasonNumber), parseInt(episodeNumber));
