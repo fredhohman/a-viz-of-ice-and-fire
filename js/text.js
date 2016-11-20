@@ -32,11 +32,13 @@ var xAxis = d3.axisBottom()
 var yAxis = d3.axisLeft()
     .scale(yScale);  
 
+var pointRadius = 8;
+
 var line = d3.line()
     // .interpolateBasis()
     .x(function(d) { return xScale(d.time); })
-    .y(function(d) { return yScale(d.rating); })
-    .defined(function(d) { return d.rating; });  // Hiding line value defaults of 0 for missing data
+    .y(function(d) { return yScale(d.count); })
+    .defined(function(d) { return d.count; });  // Hiding line value defaults of 0 for missing data
 
 var maxY; // Defined later to update yAxis
 
@@ -87,7 +89,7 @@ svg.append("g")
       .attr("x", -10)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Issues Rating");
+      .text("Text counts");
 
 //end slider part----------------------------------------------------------------------------------- 
 
@@ -112,22 +114,32 @@ function updateTimePlot (data) {
 
     return {
       name: name, // "name": the csv headers except date
-      values: data.map(function(d) { // "values": which has an array of the dates and ratings
+      values: data.map(function(d) { // "values": which has an array of the dates and counts
         return {
           time: d.time, 
-          rating: +(d[name]),
+          count: +(d[name]),
+          // shouldn't have to define this extra value but I guess we need it
+          name: name,
           };
       }),
       //visible: (name === "positive_affect" ? true : false) // "visible": all false except for positive_affect which is true.
       visible: visibilities[name] // "visible": all false except for positive_affect which is true.
     };
   });
-  
+  console.log(categories);
+
   xScale.domain(d3.extent(data, function(d) { return d.time; })); // extent = highest and lowest points, domain is data, range is bounding box
 
-  yScale.domain([0, 100
-    //d3.max(categories, function(c) { return d3.max(c.values, function(v) { return v.rating; }); })
-  ]);
+  // yScale.domain([0, 100
+  //   //d3.max(categories, function(c) { return d3.max(c.values, function(v) { return v.count; }); })
+  // ]);
+
+  // Starts below
+  maxY = findMaxY(categories); // Find max Y count value categories data with "visible"; true
+  yScale.domain([0,maxY]); // Redefine yAxis domain based on highest y value of categories data with "visible"; true
+  svg.select(".y.axis")
+    .transition()
+    .call(yAxis);
 
   xScale2.domain(xScale.domain()); // Setting a duplicate xdomain for brushing reference later
  
@@ -169,7 +181,48 @@ function updateTimePlot (data) {
     .enter().append("g")
       .attr("class", "issue");
 
-  issue.append("path")
+// TODO: make scatterplot! 
+  // svg.selectAll("circle")
+  //   .data(data)
+  //   .enter().append("circle")
+  // var circles = issue.selectAll("circle")
+  // .data(data)
+  // .enter().append("circle")
+  // groups 
+  var catG = issue.selectAll("g")
+  .data(categories)
+  .enter().append('g'); // => selection
+  // now you can call function on each group!
+  // need to make 
+  console.log(categories);
+
+  catG.selectAll("circle")
+  .data(function(d) {
+    return d.values;
+  })
+  .enter()
+  .append("circle")
+  .attr("cx", function(d) { return xScale(d.time); })
+  .attr("cy", function(d) { return yScale(d.count); })
+  .attr("r", pointRadius)
+  .attr("id", function(d) { return d.name; })
+  .attr("class", function(d) {return "affect-"+d.name;});
+  ;
+
+  // TODO: why isn't class being assigned correctly?
+  catG.selectAll(".affect-happy");
+  // var circles = issue.selectAll("circle")
+  // .data(categories)
+  // .enter()
+  // .append("circle")
+  // // var circles = issue.append("circle")
+  //   .attr("class", "circles")
+    
+  //   // .attr("d", function(d) { return d.visible; })
+  //   .style("fill", function(d) {return color(d.name); });
+  console.log(catG);
+  
+  var path = issue.append("path")
       .attr("class", "line")
       .style("pointer-events", "none") // Stop line interferring with cursor
       .attr("id", function(d) {
@@ -180,24 +233,27 @@ function updateTimePlot (data) {
       })
       // .attr("clip-path", "url(#clip)")//use clip path to make irrelevant part invisible
       .style("stroke", function(d) { return color(d.name); });
+  console.log(path);
 
   // draw legend
   var legendSpace = 450 / categories.length; // 450/number of issues (ex. 40)
 
-        // TODO: this seems to be the right code for updating the plot dynamically, but don't know where it is supposed to be placed
-	// Starts below
-        maxY = findMaxY(categories); // Find max Y rating value categories data with "visible"; true
-        yScale.domain([0,maxY]); // Redefine yAxis domain based on highest y value of categories data with "visible"; true
-        svg.select(".y.axis")
-          .transition()
-          .call(yAxis);   
+  // TODO: this seems to be the right code for updating the plot dynamically, but don't know where it is supposed to be placed
 
-        issue.select("path")
-          .transition()
-          .attr("d", function(d){
-	      //console.log (d);
-            return visibilities[d.name] ? line(d.values) : null; // If d.visible is true then draw line for this d selection
-          });
+  catG.selectAll("circle")
+    .transition()
+    // TODO: make circle area proportional to value
+    // .attr("d", function(d) {
+    //   return visibilities[d.name] ? d.values : null;
+    // });
+    .attr("display", function(d) {return visibilities[d.name]; });
+
+  issue.select("path")
+    .transition()
+    .attr("d", function(d){
+  //console.log (d);
+      return visibilities[d.name] ? line(d.values) : null; // If d.visible is true then draw line for this d selection
+    });
 	// Ends above
 
   issue.append("rect")
@@ -211,15 +267,23 @@ function updateTimePlot (data) {
       .attr("class", "legend-box")
 
       .on("click", function(d){ // On click make d.visible 
-	visibilities[d.name] = !d.visible;
+	      visibilities[d.name] = !d.visible;
         d.visible = !d.visible; // If array key for this data selection is "visible" = true then make it false, if false then make it true
 	//console.log (d);
 
-        maxY = findMaxY(categories); // Find max Y rating value categories data with "visible"; true
+        maxY = findMaxY(categories); // Find max Y count value categories data with "visible"; true
         yScale.domain([0,maxY]); // Redefine yAxis domain based on highest y value of categories data with "visible"; true
         svg.select(".y.axis")
           .transition()
-          .call(yAxis);   
+          .call(yAxis);
+
+        // filter and display the selected circles
+        circles = issue.selectAll("circle")
+          // .transition()
+          // .filter(function(e) {return d.name == e.id})
+          // TODO: make circle area proportional to value
+          .attr("display", function(d) { return visibilities[d.name] });
+        console.log(circles);
 
         issue.select("path")
           .transition()
@@ -231,8 +295,8 @@ function updateTimePlot (data) {
         issue.select("rect")
           .transition()
           .attr("fill", function(d) {
-	   console.log (d);
-	   console.log (visibilities[d.name]);
+	   // console.log (d);
+	   // console.log (visibilities[d.name]);
 
           return visibilities[d.name] ? color(d.name) : "#F1F1F2";
         });
@@ -303,7 +367,7 @@ function updateTimePlot (data) {
   focus.exit().remove();
 
   // TODO: update graph when changing episode/season and not just clicking
-  // maxY = findMaxY(categories); // Find max Y rating value categories data with "visible"; true
+  // maxY = findMaxY(categories); // Find max Y count value categories data with "visible"; true
   // yScale.domain([0,maxY]); // Redefine yAxis domain based on highest y value of categories data with "visible"; true
   // svg.select(".y.axis")
   //   .transition()
@@ -351,7 +415,7 @@ function updateTimePlot (data) {
       /*It takes our data array and the date corresponding to the position of or mouse cursor and returns the index number of the data array which has a date that is higher than the cursor position.*/
       d0 = data[i - 1],
       d1 = data[i],
-      /*d0 is the combination of date and rating that is in the data array at the index to the left of the cursor and d1 is the combination of date and close that is in the data array at the index to the right of the cursor. In other words we now have two variables that know the value and date above and below the date that corresponds to the position of the cursor.*/
+      /*d0 is the combination of date and count that is in the data array at the index to the left of the cursor and d1 is the combination of date and close that is in the data array at the index to the right of the cursor. In other words we now have two variables that know the value and date above and below the date that corresponds to the position of the cursor.*/
       d = x0 - d0.time > d1.time - x0 ? d1 : d0;
       console.log (x0);
       console.log (d0);
@@ -378,7 +442,7 @@ function updateTimePlot (data) {
           .transition()
           .call(xAxis);
 
-    maxY = findMaxY(categories); // Find max Y rating value categories data with "visible"; true
+    maxY = findMaxY(categories); // Find max Y count value categories data with "visible"; true
     yScale.domain([0,maxY]); // Redefine yAxis domain based on highest y value of categories data with "visible"; true
     
     svg.select(".y.axis") // Redraw yAxis
@@ -438,8 +502,8 @@ $(".episode-block").click(function (event) {
   function findMaxY(data){  // Define function "findMaxY"
     var maxYValues = data.map(function(d) { 
       if (d.visible){
-        return d3.max(d.values, function(value) { // Return max rating value
-          return value.rating; })
+        return d3.max(d.values, function(value) { // Return max count value
+          return value.count; })
       }
     });
     return d3.max(maxYValues);
