@@ -7,6 +7,7 @@ var seasonNumber = 1;
 var episodeNumber = 1;
 var textData;
 var numOfChunks = 60;
+chunk_clicked_old = 0;
 
 ///////////////////////////////////////////////////////////////////////////
 // helper functions that make lists of strings so we can iterate through to update color divs
@@ -89,7 +90,7 @@ var episode_strings_lowercase = make_episode_titles_lowercase();
 
 function color_blocks(episode_start, episode_end) {
     d3.json("data/color/series_sorted.json", function(error, data){
-        palettes = data['palettes'];
+        var palettes = data['palettes'];
         var episode_list = make_episode_color_list();
 
         for (var episode = episode_start; episode < episode_end; episode++) {
@@ -108,7 +109,7 @@ function color_blocks(episode_start, episode_end) {
 
 function color_chunk_blocks(episode_chunk_path) {
     d3.json("data/color/" + episode_chunk_path + "_chunk_sorted.json", function(error, data){
-        palettes = data['palettes'];
+        var palettes = data['palettes'];
         var chunk_list = make_chunk_color_list();
 
         for (var chunk = 0; chunk < numOfChunks; chunk++) {
@@ -131,11 +132,8 @@ function color_chunk_blocks(episode_chunk_path) {
 
 // initialize colors
 $(document).ready(function() {
-    color_blocks(0,10);
-    color_chunk_blocks('s1e1');
-
     d3.json("data/color/seasons_sorted.json", function(error,data){
-        palettes = data['palettes'];
+        var palettes = data['palettes'];
         var season_list = make_season_color_list();
 
         for (var season = 0; season < 6; season++) {
@@ -147,8 +145,10 @@ $(document).ready(function() {
                                                    + String(palettes[season][color][2]) + ")");
             }
         }
-
+        color_blocks(0,10);
+        color_chunk_blocks('s1e1');
     })
+
 
 });
 
@@ -205,7 +205,23 @@ $(document).ready(function() {
         d3.select("#episode-title").text(episode_strings[episodeNumber-1]);
 
         color_chunk_blocks(episode_strings_lowercase[episodeNumber-1]);
-        
+    });
+
+    $("#chunks").click(function(event) {
+        chunk_clicked = parseInt(event.target.id[1]);
+        if (event.target.id[2] != '-') {
+            chunk_clicked = parseInt(event.target.id[1])*10+parseInt(event.target.id[2]);
+        }
+
+        if (chunk_clicked_old == chunk_clicked) {
+            d3.selectAll(".chunk-block").style("width", "1.666%");
+        }
+        else {
+            d3.selectAll(".chunk-block").style("width", "1%");
+            d3.select("#chunk"+String(chunk_clicked)).style("width", "41%");
+        }
+
+        chunk_clicked_old = chunk_clicked;
     });
 
 });
