@@ -9,6 +9,14 @@ var textData;
 var numOfChunks = 60;
 chunk_clicked_old = 0;
 
+d3.csv("data/episode_metadata.csv", function(error, data) {
+    episode_metadata = data;
+});
+
+d3.csv("data/season_metadata.csv", function(error, data) {
+    season_metadata = data;
+});
+
 ///////////////////////////////////////////////////////////////////////////
 // helper functions that make lists of strings so we can iterate through to update color divs
 ///////////////////////////////////////////////////////////////////////////
@@ -183,6 +191,9 @@ $(document).ready(function() {
 
         // update season in left hand side
         d3.select("#season-title").text(season_strings[seasonNumber-1]);
+        d3.select("#first-aired-in").text(season_metadata[seasonNumber-1]["First aired"]);
+        d3.select("#last-aired-in").text(season_metadata[seasonNumber-1]["Last aired"]);
+        d3.select("#average-viewers").text(season_metadata[seasonNumber-1]["Average viewers (millions)"]);
 
         var episode_start = 0;
         var episode_end = 0;
@@ -202,7 +213,12 @@ $(document).ready(function() {
         }
         episodeNumber = episode_clicked+10*(seasonNumber-1);
 
-        d3.select("#episode-title").text(episode_strings[episodeNumber-1]);
+        d3.select("#episode-title-number").text(episode_strings[episodeNumber-1]);
+        d3.select("#episode-title").text(episode_metadata[episodeNumber-1]["Title"]);
+        d3.select("#directed-by").text(episode_metadata[episodeNumber-1]["Directed by"]);
+        d3.select("#written-by").text(episode_metadata[episodeNumber-1]["Written by"]);
+        d3.select("#air-date").text(episode_metadata[episodeNumber-1]["Original air date"]);
+        d3.select("#viewers").text(episode_metadata[episodeNumber-1]["U.S. viewers (millions)"]);
 
         color_chunk_blocks(episode_strings_lowercase[episodeNumber-1]);
     });
