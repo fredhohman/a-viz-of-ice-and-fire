@@ -214,11 +214,13 @@ $(document).ready(function() {
         }
 
         if (chunk_clicked_old == chunk_clicked) {
-            d3.selectAll(".chunk-block").style("width", "1.666%");
+            d3.selectAll(".chunk-block").classed("chunk-block-small", false);
+            d3.select("#chunk"+String(chunk_clicked)).classed("chunk-block-zoomed", false);
         }
         else {
-            d3.selectAll(".chunk-block").style("width", "1%");
-            d3.select("#chunk"+String(chunk_clicked)).style("width", "41%");
+            d3.selectAll(".chunk-block").classed("chunk-block-small", true);
+            d3.select("#chunk"+String(chunk_clicked_old)).classed("chunk-block-zoomed", false);
+            d3.select("#chunk"+String(chunk_clicked)).classed("chunk-block-zoomed", true);
         }
 
         chunk_clicked_old = chunk_clicked;
