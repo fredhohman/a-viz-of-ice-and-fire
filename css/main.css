@@ -3,14 +3,20 @@ body {
 	/*filter: invert(100%);*/
 }
 .jumbotron {
-	color: white;
-	background-color: #2c3e50;
+	color: #E0E0E0;
+	background-color: #212121;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 .jumbotron h1 {
-	font-size: 42px;
-	font-weight: 600;
+	font-size: 70px;
+	font-weight: 800;
+	color: white;  /* Fallback: assume this color ON TOP of image */
+	background: url('../images/intro-title.png') no-repeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	-webkit-text-stroke: 1px rgba(255,255,255,0.6);
 }
 .jumbotron h3 {
 	margin-top: 0px;
@@ -73,4 +79,7 @@ p {
 }
 .metadata-header {
 	font-size: 16px;
+}
+#title-image {
+	width: 100%;
 }
