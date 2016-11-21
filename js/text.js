@@ -189,12 +189,14 @@ function updateTimePlot (data) {
   // .data(data)
   // .enter().append("circle")
   // groups 
-  var catG = issue.selectAll("g")
+  var catG = issue.selectAll(".category")
   .data(categories)
-  .enter().append('g'); // => selection
+  .enter().append('g')
+  .attr("class", "category");
+  // => selection
   // now you can call function on each group!
   // need to make 
-  console.log(categories);
+  console.log(catG);
 
   catG.selectAll("circle")
   .data(function(d) {
