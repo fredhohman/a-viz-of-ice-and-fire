@@ -490,6 +490,9 @@ $("#series").click(function(event) {
 // TODO: slice and update text data
 $(".episode-block").click(function (event) {
    episodeNumber = event.target.id[1];
+   if (parseInt(event.target.id[1]) == 1 && parseInt(event.target.id[2]) == 0) {
+     episodeNumber = 10; //hacky but works, correctly sets episode_click to 10 instead of 1
+   }
    console.log (seasonNumber);
    console.log (episodeNumber);
 
