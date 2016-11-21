@@ -7,6 +7,7 @@ body {
 	background-color: #212121;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	/*box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);*/
 }
 .jumbotron h1 {
 	font-size: 70px;
@@ -48,9 +49,16 @@ body {
 	cursor: pointer;
 	opacity: 0.6;
 }
+/*
+#chunks {
+	font-size: 0px;
+	white-space: nowrap;
+	overflow-x: hidden;
+}*/
 .chunk-block {
 	width: 1.666%;
 	float: left;
+	/*display: inline-block;*/
 	cursor: pointer;
 }
 .chunk-block:hover {
