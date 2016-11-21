@@ -88,7 +88,7 @@ var episode_strings_lowercase = make_episode_titles_lowercase();
 ///////////////////////////////////////////////////////////////////////////
 
 function color_blocks(episode_start, episode_end) {
-    d3.json("data/color/series.json", function(error, data){
+    d3.json("data/color/series_sorted.json", function(error, data){
         palettes = data['palettes'];
         var episode_list = make_episode_color_list();
 
@@ -107,7 +107,7 @@ function color_blocks(episode_start, episode_end) {
 }
 
 function color_chunk_blocks(episode_chunk_path) {
-    d3.json("data/color/" + episode_chunk_path + "_chunk.json", function(error, data){
+    d3.json("data/color/" + episode_chunk_path + "_chunk_sorted.json", function(error, data){
         palettes = data['palettes'];
         var chunk_list = make_chunk_color_list();
 
@@ -134,7 +134,7 @@ $(document).ready(function() {
     color_blocks(0,10);
     color_chunk_blocks('s1e1');
 
-    d3.json("data/color/seasons.json", function(error,data){
+    d3.json("data/color/seasons_sorted.json", function(error,data){
         palettes = data['palettes'];
         var season_list = make_season_color_list();
 
