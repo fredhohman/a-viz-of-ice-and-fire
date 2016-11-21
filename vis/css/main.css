@@ -49,17 +49,17 @@ body {
 	cursor: pointer;
 	opacity: 0.6;
 }
-/*
+
 #chunks {
 	font-size: 0px;
 	white-space: nowrap;
 	overflow-x: hidden;
-}*/
+}
 .chunk-block {
-	transition: all 0.4s ease;
+	transition: all 0.2s ease;
 	width: 1.666%;
-	float: left;
-	/*display: inline-block;*/
+	/*float: left;*/
+	display: inline-block;
 	cursor: pointer;
 }
 .chunk-block:hover {
@@ -97,6 +97,12 @@ p {
 .metadata-header {
 	font-size: 16px;
 }
+.metadata-header.span {
+	margin-bottom: 20px;
+}
 #title-image {
 	width: 100%;
+}
+.small-vspace {
+	height: 5px;
 }
