@@ -23,9 +23,10 @@ body {
 	float: left;
 }
 .season-block:hover {
-	background-color: #CCCCCC;
-	color: #FFFFFF;
+	/*background-color: #CCCCCC;*/
+	/*color: #FFFFFF;*/
 	cursor: pointer;
+	opacity: 0.6;
 }
 .episode-block {
 	transition: all 0.4s ease;
@@ -34,11 +35,12 @@ body {
 	float: left;
 }
 .episode-block:hover {
-	background-color: #CCCCCC;
+	background-color: #000000;
 	color: #FFFFFF;
 	/*border-left: 3px white solid;*/
 	/*border-right: 3px white solid;*/
 	cursor: pointer;
+	opacity: 0.6;
 }
 .chunk-block {
 	width: 1.666%;
@@ -47,8 +49,9 @@ body {
 }
 .chunk-block:hover {
 	background-color: black;
-	border-left: 1px white solid;
-	border-right: 1px white solid;
+	/*border-left: 1px white solid;*/
+	/*border-right: 1px white solid;*/
+	opacity: 0.6;
 }
 .color {
 	width: 100%;
