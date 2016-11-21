@@ -60,20 +60,21 @@ def make_episode_list():
 if __name__ == '__main__':
 
     # for raw images
-    # episode_list = make_episode_list()
+    episode_list = make_episode_list()
     # episode_list = episode_list[50:]
     # print(episode_list)
 
     # for created images
-    episode_list = ['/Users/fredhohman/Github/cs-7450']
+    # episode_list = ['/Users/fredhohman/Github/cs-7450']
 
     for episode in episode_list:
         episode = episode + '/'
-        # # dir_path = '/Volumes/SG-1TB/screenshots/' + episode #for raw images
-        dir_path = episode
+        # dir_path = '/Volumes/SG-1TB/screenshots/' + episode #for raw images
+        dir_path = '/Users/fredhohman/Github/cs-7450/data/color-palettes-chunk-temp/' + episode #for raw images
+        # dir_path = episode
 
         # images = [img for img in os.listdir(dir_path) if img.endswith('jpeg')] #for raw images
-        images = [img for img in os.listdir(dir_path) if img.startswith('season')]
+        images = [img for img in os.listdir(dir_path) if img.endswith('.png')]
         print(images)
         # images = images[0:50]
         print(str(len(images)) + ' images found in ' + episode[:-1])
@@ -112,11 +113,11 @@ if __name__ == '__main__':
             posy = posy + swatchsize
             posx = 0
         del draw
-        # pal.save(episode[:-1] + '.png', "PNG")
+        pal.save(episode[:-1] + '.png', "PNG")
 
         # print(palettes)
         # with open('data/color/' + episode[:-1] + '.json', 'w') as outfile:
         #     json.dump({'palettes': palettes}, outfile)
 
-        with open('data/color/seasons.json', 'w') as outfile:
+        with open('data/color/' + str(episode[:-1]) + '_chunk.json', 'w') as outfile:
             json.dump({'palettes': palettes}, outfile)

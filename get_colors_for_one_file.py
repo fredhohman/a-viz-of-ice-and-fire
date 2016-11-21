@@ -31,7 +31,7 @@ if __name__ == '__main__':
     print(images)
 
     color_count = 11
-    swatchsize = 10
+    swatchsize = 100
     posx = 0
     posy = 0
 
@@ -64,8 +64,8 @@ if __name__ == '__main__':
         posy = posy + swatchsize
         posx = 0
     del draw
-    pal.save('series.png', "PNG")
+    pal.save('series_title.png', "PNG")
 
     # print(palettes)
-    with open('data/color/series.json', 'w') as outfile:
+    with open('data/color/series_title.json', 'w') as outfile:
         json.dump({'palettes': palettes}, outfile)

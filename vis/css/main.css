@@ -3,14 +3,21 @@ body {
 	/*filter: invert(100%);*/
 }
 .jumbotron {
-	color: white;
-	background-color: #2c3e50;
+	color: #E0E0E0;
+	background-color: #212121;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	/*box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);*/
 }
 .jumbotron h1 {
-	font-size: 42px;
-	font-weight: 600;
+	font-size: 70px;
+	font-weight: 800;
+	color: white;  /* Fallback: assume this color ON TOP of image */
+	background: url('../images/intro-title.png') no-repeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	-webkit-text-stroke: 1px rgba(255,255,255,0.6);
 }
 .jumbotron h3 {
 	margin-top: 0px;
@@ -23,9 +30,10 @@ body {
 	float: left;
 }
 .season-block:hover {
-	background-color: #CCCCCC;
-	color: #FFFFFF;
+	/*background-color: #CCCCCC;*/
+	/*color: #FFFFFF;*/
 	cursor: pointer;
+	opacity: 0.6;
 }
 .episode-block {
 	transition: all 0.4s ease;
@@ -34,21 +42,30 @@ body {
 	float: left;
 }
 .episode-block:hover {
-	background-color: #CCCCCC;
+	background-color: #000000;
 	color: #FFFFFF;
 	/*border-left: 3px white solid;*/
 	/*border-right: 3px white solid;*/
 	cursor: pointer;
+	opacity: 0.6;
 }
+/*
+#chunks {
+	font-size: 0px;
+	white-space: nowrap;
+	overflow-x: hidden;
+}*/
 .chunk-block {
 	width: 1.666%;
 	float: left;
+	/*display: inline-block;*/
 	cursor: pointer;
 }
 .chunk-block:hover {
 	background-color: black;
-	border-left: 1px white solid;
-	border-right: 1px white solid;
+	/*border-left: 1px white solid;*/
+	/*border-right: 1px white solid;*/
+	opacity: 0.6;
 }
 .color {
 	width: 100%;
@@ -70,4 +87,7 @@ p {
 }
 .metadata-header {
 	font-size: 16px;
+}
+#title-image {
+	width: 100%;
 }
