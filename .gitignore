@@ -1,2 +1,4 @@
 .DS_Store
 data/.DS_Store
+*~
+scripts/.ipynb_checkpoints/

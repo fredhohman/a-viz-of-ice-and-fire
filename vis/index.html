@@ -26,28 +26,33 @@
 <body>
   <div class="jumbotron">
     <div class="container">
-      <h1 id="title-reload">Game of Thrones Visualization</h1>
-      <h3><i>An interactive visualization summarizing the visual and textual aspects of the hit HBO series.</i></h3>
-      <p>Fred Hohman, Sandeep Soni, Ian Stewart</p>
+      <!-- <h1 class="center">Game of Thrones Visualization</h1> -->
+      <img id="title-image" src="images/title-2.png">
+      <h3 class="center"><i>An interactive visualization summarizing the visual and textual aspects of the hit HBO series.</i></h3>
+      <p class="center">Fred Hohman, Sandeep Soni, Ian Stewart</p>
     </div>
   </div>
 
 <br>
-<div class="container">
+<div id="intro-text" class="container">
   <div class="col-md-3"></div>
   <div class="col-md-6">
+    <h3>The Idea</h3>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam viverra maximus. Ut malesuada ex quis ultrices aliquam. Fusce id nulla et sapien vehicula tristique. Donec gravida eros ut nunc commodo, quis tincidunt elit ornare.
-      </p>
-      <p>
+    </p>
+    <h3>The Data</h3>
+    <p>
       Vivamus sagittis augue id laoreet sollicitudin. Aliquam lacinia dolor a tellus tristique, semper varius augue porta. Proin vulputate, arcu ac semper commodo, sem massa auctor est, tincidunt varius augue est ut ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla condimentum egestas lacus, eu rhoncus leo varius et.
-      </p>
-      <p>
+    </p>
+    <h3>The Visualization</h3>
+    <p>
       Nullam finibus ullamcorper faucibus. Integer neque lacus, fermentum quis bibendum sit amet, bibendum vel mauris. Cras nibh tortor, fringilla sed enim vel, vulputate pharetra enim. Quisque consequat facilisis nibh, eu porttitor sem elementum eu.
     </p>
   </div>
   <div class="col-md-3"></div>
 </div>
+
 
 <br>
 <br>
@@ -56,13 +61,22 @@
   <div class="row">
     
     <div class="col-md-4">
-      <h3>S1E1: Winter is Coming</h3>
-      episode description, reviews, and othe small stats here
+      <h3>Game of Thrones</h3>
+      <div class="metadata-header">
+        <span><b>Aired from: </b>2011-2016</span>
+        <br>
+        <div class="small-vspace"></div>
+        <span>Created by David Benioff and D. B. Weiss</span>
+        <br>
+        <div class="small-vspace"></div>
+        <span>Based on <i>A Song of Ice and Fire</i> by George R. R. Martin</span>
+      </div>
+
     </div>
 
     <div id="series" class="col-md-8">
         <div id="season1" class="season-block">
-          <div><h3>Season 1</h3></div>
+          <!-- <h3 class="center">Season 1</h3> -->
           <div id="s1-c1" class="color"></div>
           <div id="s1-c2" class="color"></div>
           <div id="s1-c3" class="color"></div>
@@ -75,7 +89,7 @@
           <div id="s1-c10" class="color"></div>
         </div>
         <div id="season2" class="season-block">
-          <div><h3>Season 2</h3></div>
+          <!-- <h3 class="center">Season 2</h3> -->
           <div id="s2-c1" class="color"></div>
           <div id="s2-c2" class="color"></div>
           <div id="s2-c3" class="color"></div>
@@ -88,7 +102,7 @@
           <div id="s2-c10" class="color"></div>
         </div>
         <div id="season3" class="season-block">
-          <div><h3>Season 3</h3></div>
+          <!-- <h3 class="center">Season 3</h3> -->
           <div id="s3-c1" class="color"></div>
           <div id="s3-c2" class="color"></div>
           <div id="s3-c3" class="color"></div>
@@ -101,7 +115,7 @@
           <div id="s3-c10" class="color"></div>
         </div>
         <div id="season4" class="season-block">
-          <div><h3>Season 4</h3></div>
+          <!-- <h3 class="center">Season 4</h3> -->
           <div id="s4-c1" class="color"></div>
           <div id="s4-c2" class="color"></div>
           <div id="s4-c3" class="color"></div>
@@ -114,7 +128,7 @@
           <div id="s4-c10" class="color"></div>
         </div>
         <div id="season5" class="season-block">
-          <div><h3>Season 5</h3></div>
+          <!-- <h3 class="center">Season 5</h3> -->
           <div id="s5-c1" class="color"></div>
           <div id="s5-c2" class="color"></div>
           <div id="s5-c3" class="color"></div>
@@ -127,7 +141,7 @@
           <div id="s5-c10" class="color"></div>
         </div>
         <div id="season6" class="season-block">
-          <div><h3>Season 6</h3></div>
+          <!-- <h3 class="center">Season 6</h3> -->
           <div id="s6-c1" class="color"></div>
           <div id="s6-c2" class="color"></div>
           <div id="s6-c3" class="color"></div>
@@ -142,16 +156,29 @@
     </div>
   </div>
 
-  <hr>
+  <br>
 
   <div class="row">
     
     <div class="col-md-4">
-      padded column here for cool things
+      <h3 id="season-title">Season 1</h3>
+      <div class="metadata-header">
+      <span><b>First aired in: </b></span><span id="first-aired-in">April 17, 2011</span>
+      <br>
+      <div class="small-vspace"></div>
+      <span><b>Last aired in: </b></span><span id="last-aired-in">June 19, 2011</span>
+      <br>
+      <div class="small-vspace"></div>
+      <span><b>Average U.S. viewers (millions): </b></span><span id="average-viewers">2.52</span>
+      <br>
+      <div class="small-vspace"></div>
+      </div>
     </div>
 
-    <div class="col-md-8">
+    <div id="episodes" class="col-md-8">
+      <!-- <h3 id="test">click here</h3> -->
       <div id="episode1" class="episode-block">
+        <!-- <h3 class="center">1</h3> -->
         <div id="e1-c1" class="color"></div>
         <div id="e1-c2" class="color"></div>
         <div id="e1-c3" class="color"></div>
@@ -164,6 +191,7 @@
         <div id="e1-c10" class="color"></div>
       </div>
       <div id="episode2" class="episode-block">
+        <!-- <h3 class="center">2</h3> -->
         <div id="e2-c1" class="color"></div>
         <div id="e2-c2" class="color"></div>
         <div id="e2-c3" class="color"></div>
@@ -176,6 +204,7 @@
         <div id="e2-c10" class="color"></div>
       </div>
       <div id="episode3" class="episode-block">
+        <!-- <h3 class="center">3</h3> -->
         <div id="e3-c1" class="color"></div>
         <div id="e3-c2" class="color"></div>
         <div id="e3-c3" class="color"></div>
@@ -188,6 +217,7 @@
         <div id="e3-c10" class="color"></div>
       </div>
       <div id="episode4" class="episode-block">
+        <!-- <h3 class="center">4</h3> -->
         <div id="e4-c1" class="color"></div>
         <div id="e4-c2" class="color"></div>
         <div id="e4-c3" class="color"></div>
@@ -200,6 +230,7 @@
         <div id="e4-c10" class="color"></div>
       </div>
       <div id="episode5" class="episode-block">
+        <!-- <h3 class="center">5</h3> -->
         <div id="e5-c1" class="color"></div>
         <div id="e5-c2" class="color"></div>
         <div id="e5-c3" class="color"></div>
@@ -212,6 +243,7 @@
         <div id="e5-c10" class="color"></div>
       </div>
       <div id="episode6" class="episode-block">
+        <!-- <h3 class="center">6</h3> -->
         <div id="e6-c1" class="color"></div>
         <div id="e6-c2" class="color"></div>
         <div id="e6-c3" class="color"></div>
@@ -224,6 +256,7 @@
         <div id="e6-c10" class="color"></div>
       </div>
       <div id="episode7" class="episode-block">
+        <!-- <h3 class="center">7</h3> -->
         <div id="e7-c1" class="color"></div>
         <div id="e7-c2" class="color"></div>
         <div id="e7-c3" class="color"></div>
@@ -236,6 +269,7 @@
         <div id="e7-c10" class="color"></div>
       </div>
       <div id="episode8" class="episode-block">
+        <!-- <h3 class="center">8</h3> -->
         <div id="e8-c1" class="color"></div>
         <div id="e8-c2" class="color"></div>
         <div id="e8-c3" class="color"></div>
@@ -248,6 +282,7 @@
         <div id="e8-c10" class="color"></div>
       </div>
       <div id="episode9" class="episode-block">
+        <!-- <h3 class="center">9</h3> -->
         <div id="e9-c1" class="color"></div>
         <div id="e9-c2" class="color"></div>
         <div id="e9-c3" class="color"></div>
@@ -260,6 +295,7 @@
         <div id="e9-c10" class="color"></div>
       </div>
       <div id="episode10" class="episode-block">
+        <!-- <h3 class="center">10</h3> -->
         <div id="e10-c1" class="color"></div>
         <div id="e10-c2" class="color"></div>
         <div id="e10-c3" class="color"></div>
@@ -274,13 +310,90 @@
     </div>
   </div>
 
+  <br>
+
+  <div class="row">
+    
+    <div class="col-md-4">
+      <h3><span id="episode-title-number">S1E1</span>: <span id="episode-title">"Winter is Coming"</span></h3>
+      <div class="metadata-header">
+      <span><b>Directed by: </b></span><span id="directed-by">Tim Van Patten</span>
+      <br>
+      <div class="small-vspace"></div>
+      <span><b>Written by: </b></span><span id="written-by">David Benioff & D. B. Weiss</span>
+      <br>
+      <div class="small-vspace"></div>
+      <span><b>Original Air Date: </b></span><span id="air-date">April 17, 2011</span>
+      <br>
+      <div class="small-vspace"></div>
+      <span><b>U.S. viewers (millions): </b></span><span id="viewers">2.22</span>
+      </div>
+    </div>
+
+    <div id="chunks" class="col-md-8">
+      <div id="includedContent"></div>
+    </div>
+  </div>
 
 <!-- end of container -->
 </div>
 
 <div class="container">
-  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <div class="metadata-header">
+      Top words found in <b><span id="text-category">anger</span></b> category:
+      <br>
+      <br>
+      <ol>
+        <li id="top-word1">a</li>
+        <li id="top-word2">a</li>
+        <li id="top-word3">a</li>
+        <li id="top-word4">a</li>
+        <li id="top-word5">a</li>
+      </ol>
+    </div>
+  </div>
   <div id="text" class="col-md-8"></div>
+</div>
+
+
+
+<div class="container">
+  <hr>
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <h3>Case Study: I</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam viverra maximus. Ut malesuada ex quis ultrices aliquam. Fusce id nulla et sapien vehicula tristique. Donec gravida eros ut nunc commodo, quis tincidunt elit ornare.
+    </p>
+    <p>
+      Vivamus sagittis augue id laoreet sollicitudin. Aliquam lacinia dolor a tellus tristique, semper varius augue porta. Proin vulputate, arcu ac semper commodo, sem massa auctor est, tincidunt varius augue est ut ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla condimentum egestas lacus, eu rhoncus leo varius et.
+    </p>
+    <p>
+      Nullam finibus ullamcorper faucibus. Integer neque lacus, fermentum quis bibendum sit amet, bibendum vel mauris. Cras nibh tortor, fringilla sed enim vel, vulputate pharetra enim. Quisque consequat facilisis nibh, eu porttitor sem elementum eu.
+    </p>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+
+
+
+<div class="container">
+  <hr>
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <h3>Case Study: II</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam viverra maximus. Ut malesuada ex quis ultrices aliquam. Fusce id nulla et sapien vehicula tristique. Donec gravida eros ut nunc commodo, quis tincidunt elit ornare.
+    </p>
+    <p>
+      Vivamus sagittis augue id laoreet sollicitudin. Aliquam lacinia dolor a tellus tristique, semper varius augue porta. Proin vulputate, arcu ac semper commodo, sem massa auctor est, tincidunt varius augue est ut ex. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla condimentum egestas lacus, eu rhoncus leo varius et.
+    </p>
+    <p>
+      Nullam finibus ullamcorper faucibus. Integer neque lacus, fermentum quis bibendum sit amet, bibendum vel mauris. Cras nibh tortor, fringilla sed enim vel, vulputate pharetra enim. Quisque consequat facilisis nibh, eu porttitor sem elementum eu.
+    </p>
+  </div>
+  <div class="col-md-3"></div>
 </div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -288,7 +401,14 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="js/main.js"></script>
 <script src="js/text.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+  $(function(){
+    $("#includedContent").load("colors.html");
+  });
+</script>
+
 </body>
 </html>
