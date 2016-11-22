@@ -13,7 +13,7 @@ var legendRects, legendLabels;
 
 var seasonNumber = 1,episodeNumber = 1;
 var pg, catG;
-
+var circles = {};
 
 function sliceData (data, season, episode){
   var slicedData = Array();
@@ -48,32 +48,52 @@ function findMaxY (data){
 }
 
 function updateLayout (data){
-    // Step 1: Plot all the circles within each category group.
-    var catName, grp, circles;
+    var catName, grp;
+    console.log (data.map (function (d){return parseInt(d.time);}));
+    console.log (d3.extent(data, function(d) { return parseInt(d.time); }));
     xScale.domain(d3.extent(data, function(d) { return parseInt(d.time); }));
 
     maxY = findMaxY(data);
     yScale.domain([0,maxY]);
 
+    // Step 1: Redraw both the axes.
+    svg.select(".y.axis")
+        .transition()
+        .call(yAxis);
+
+    svg.select(".x.axis")
+        .transition()
+        .call(xAxis);
+
+    // Step 2: Enter or update the circles based on new data.
     for (var i=0; i < categoryNames.length; i++){
     	catName = categoryNames[i];
     	if (categoryVisibilities[catName]){
     		// Select the group corresponding to this category.
     		grp = svg.selectAll("#spg-"+ catName);
-    		circles = grp.selectAll("circle")
-    		.data (formatData (data, catName))
+    		circles[catName] = grp.selectAll("circle")
+    		.data (formatData(data, catName));
+
+    		circles[catName]
     		.enter()
     		.append ("circle")
-    		.attr ("r", pointRadius);
-
-    		circles.attr ("cx", function (d){
+    		.attr ("r", pointRadius)
+    		.attr ("cx", function (d){
     			return xScale (d.x);
     		})
     		.attr ("cy", function (d){
     			return yScale(d.y);
     		});
 
-    		circles.exit().remove();    		
+    		circles[catName]
+    		.attr ("cx", function (d){
+    			return xScale (d.x);
+    		})
+    		.attr ("cy", function (d){
+    			return yScale(d.y);
+    		});
+
+			circles[catName].exit().remove();    		
     	}
     }
 
@@ -88,7 +108,7 @@ function initLayout (data){
 	margin = {top: 20, right: 200, bottom: 100, left: 50};
 	width = 900 - margin.left - margin.right;
     height = 500 - margin.top - margin.bottom;
-    pointRadius = 4;
+    pointRadius = 2;
     // Define the initial scales and axes
     xScale = d3.scaleLinear()
     .range([0, width]);
@@ -170,7 +190,17 @@ function initLayout (data){
     .attr("fill", function (d, i){
     	return categoryVisibilities[d] ? color(d) : "#F1F1F2";
     })
-    .attr("class", "legend-box");
+    .attr("id", function (d){
+    	return "rect-" + d;
+    })
+    .attr("class", "legend-box")
+    .on("click", function (d){
+    	categoryVisibilities[d] = !categoryVisibilities[d];
+    	d3.selectAll("#rect-" + d).attr("fill", categoryVisibilities[d] ? color(d) : "#F1F1F2");
+    	console.log (episodeNumber);
+    	console.log (seasonNumber);
+    	updateLayout(sliceData (textData, seasonNumber, episodeNumber));
+    });
 
     legendLabels = legendGroup.selectAll ("text")
     .data (categoryNames)
@@ -200,6 +230,5 @@ function init (){
     	updateLayout(sliceData (textData, seasonNumber, episodeNumber));
 	});
 }
-
 
 init();
