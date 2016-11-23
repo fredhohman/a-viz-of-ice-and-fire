@@ -4,7 +4,7 @@
 ///////////////////////////////////////////////////////////////////////////
 
 var seasonNumber = 1;
-var episodeNumber = 1;
+var eNum = 1;
 var textData;
 var numOfChunks = 60;
 chunk_clicked_old = 0;
@@ -160,23 +160,6 @@ $(document).ready(function() {
 
 });
 
-// initializlie text
-$(document).ready(function() {
-    var color = d3.scaleOrdinal().range(["#020202", "#3c3c3c", "#4b4a4a", "#5e5d5d", "#727171", "#7e7e7e", "#8d8d8d", "#a19f9f", "#b6b5b5", "#C7C6C6"]);//["#48A36D",  "#56AE7C",  "#64B98C", "#72C39B", "#80CEAA", "#80CCB3", "#7FC9BD", "#7FC7C6", "#7EC4CF", "#7FBBCF", "#7FB1CF", "#80A8CE", "#809ECE", "#8897CE", "#8F90CD", "#9788CD", "#9E81CC", "#AA81C5", "#B681BE", "#C280B7", "#CE80B0", "#D3779F", "#D76D8F", "#DC647E", "#E05A6D", "#E16167", "#E26962", "#E2705C", "#E37756", "#E38457", "#E39158", "#E29D58", "#E2AA59", "#E0B15B", "#DFB95C", "#DDC05E", "#DBC75F", "#E3CF6D", "#EAD67C", "#F2DE8A"]);  
-    d3.tsv("data/LIWC_chunk_counts_all_seasons.tsv", function(error, data) { 
-    	textData = data;
-    	var slicedData = sliceData (textData, parseInt(seasonNumber), parseInt(episodeNumber));
-    	var columnNames = d3.keys(slicedData[0]).filter(function(key) {  
-            return key !== "time" && key !== "season" && key !== "episode";
-        }); 
-    	visibilities = columnNames.reduce (function (obj, d){
-    	    obj[d] = d=="positive_affect";
-    	    return obj;
-    	    }, {});
-    	updateTimePlot (slicedData);
-    });
-});
-
 ///////////////////////////////////////////////////////////////////////////
 // Main color updating click function
 ///////////////////////////////////////////////////////////////////////////
@@ -211,16 +194,16 @@ $(document).ready(function() {
         if (episode_clicked == 1 && parseInt(event.target.id[2]) == 0) {
             episode_clicked = 10; //hacky but works, correctly sets episode_click to 10 instead of 1
         }
-        episodeNumber = episode_clicked+10*(seasonNumber-1);
+        eNum = episode_clicked+10*(seasonNumber-1);
 
-        d3.select("#episode-title-number").text(episode_strings[episodeNumber-1]);
-        d3.select("#episode-title").text(episode_metadata[episodeNumber-1]["Title"]);
-        d3.select("#directed-by").text(episode_metadata[episodeNumber-1]["Directed by"]);
-        d3.select("#written-by").text(episode_metadata[episodeNumber-1]["Written by"]);
-        d3.select("#air-date").text(episode_metadata[episodeNumber-1]["Original air date"]);
-        d3.select("#viewers").text(episode_metadata[episodeNumber-1]["U.S. viewers (millions)"]);
+        d3.select("#episode-title-number").text(episode_strings[eNum-1]);
+        d3.select("#episode-title").text(episode_metadata[eNum-1]["Title"]);
+        d3.select("#directed-by").text(episode_metadata[eNum-1]["Directed by"]);
+        d3.select("#written-by").text(episode_metadata[eNum-1]["Written by"]);
+        d3.select("#air-date").text(episode_metadata[eNum-1]["Original air date"]);
+        d3.select("#viewers").text(episode_metadata[eNum-1]["U.S. viewers (millions)"]);
 
-        color_chunk_blocks(episode_strings_lowercase[episodeNumber-1]);
+        color_chunk_blocks(episode_strings_lowercase[eNum-1]);
     });
 
     $("#chunks").click(function(event) {
@@ -245,12 +228,11 @@ $(document).ready(function() {
 });
 
 $(".episode-block").click(function (event) {
-   episodeNumber = event.target.id[1];
+   episodeNumber = parseInt (event.target.id[1]);
    // console.log (seasonNumber);
    // console.log (episodeNumber);
 
    // slice the data and call the update method from here
-   var slicedData = sliceData (textData, parseInt(seasonNumber), parseInt(episodeNumber));
-   updateTimePlot (slicedData);
+   updateScatterPlot (sliceData (textData, seasonNumber, episodeNumber));
 });
 
