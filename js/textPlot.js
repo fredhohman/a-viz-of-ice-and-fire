@@ -5,7 +5,8 @@ var svg;
 var xScale, yScale, xAxis, yAxis;  
 
 var textDataFile = "data/LIWC_chunk_counts_all_seasons.tsv",
-textData, categoryNames, categoryVisibilities;
+textMetaDataFile = "data/top_5_category_words_per_episode.tsv",
+textData, textMetaData, categoryNames, categoryVisibilities;
 
 var color = d3.scaleOrdinal().range(["#020202", "#3c3c3c", "#4b4a4a", "#5e5d5d", "#727171", "#7e7e7e", "#8d8d8d", "#a19f9f", "#b6b5b5", "#C7C6C6"]);
 
@@ -13,6 +14,7 @@ var legendRects, legendLabels;
 
 var seasonNumber = 1,episodeNumber = 1;
 var pg, catG;
+var catInFocus;
 var circles = {};
 
 function sliceData (data, season, episode){
@@ -47,7 +49,7 @@ function findMaxY (data){
 	return d3.max (maxYVals);
 }
 
-function updateLayout (data){
+function updateScatterPlot (data){
     var catName, grp;
     console.log (data.map (function (d){return parseInt(d.time);}));
     console.log (d3.extent(data, function(d) { return parseInt(d.time); }));
@@ -103,7 +105,7 @@ function updateLayout (data){
 	});
 }
 
-function initLayout (data){
+function initScatterPlot (data){
 	// Initialize margins
 	margin = {top: 20, right: 200, bottom: 100, left: 50};
 	width = 900 - margin.left - margin.right;
@@ -197,9 +199,11 @@ function initLayout (data){
     .on("click", function (d){
     	categoryVisibilities[d] = !categoryVisibilities[d];
     	d3.selectAll("#rect-" + d).attr("fill", categoryVisibilities[d] ? color(d) : "#F1F1F2");
-    	console.log (episodeNumber);
-    	console.log (seasonNumber);
-    	updateLayout(sliceData (textData, seasonNumber, episodeNumber));
+    	updateScatterPlot(sliceData (textData, seasonNumber, episodeNumber));
+    })
+    .on("mouseover", function (d){
+    	catInFocus = d;
+    	updateBarPlot(textMetaData, seasonNumber, episodeNumber);
     });
 
     legendLabels = legendGroup.selectAll ("text")
@@ -223,12 +227,62 @@ function initLayout (data){
     .attr("class", "spg-cats");
 }
 
+function initBarPlot (data){
+	catInFocus = "positive_affect";
+	var div = d3.select("#text-metadata");
+	div.select ("#text-category")
+	.text(catInFocus);
+}
+
+function updateBarPlot (data, season, episode){
+	//var catInFocus = "positive_affect";
+	var parts, wordCounter;
+	var div = d3.select ("#text-metadata");
+	div.select("#text-category").text(catInFocus);
+
+	for (var i = data.length - 1; i >= 0; i--) {
+		if (parseInt(data[i]["season"]) == season && 
+			parseInt(data[i]["episode"]) == episode) {
+			parts = data[i][catInFocus].split(",")
+			wordCounter = parts.map (function (entry){
+				return {
+					word: entry.split(":")[0],
+					freq: parseInt(entry.split(":")[1])					
+				}
+			});
+			break;
+		}
+	}
+
+	var wordlist = d3.select ("#text-wordlist")
+					.selectAll("li")
+	               .data (wordCounter);
+
+	wordlist.enter()
+	.append("li")
+	.text(function (d){
+		return d.word;
+	});
+
+	wordlist.text(function (d){
+		return d.word;
+	});
+
+	wordlist.exit().remove();
+}
+
 function init (){
 	d3.tsv(textDataFile, function(error, data) { 
     	textData = data;
-    	initLayout(textData);
-    	updateLayout(sliceData (textData, seasonNumber, episodeNumber));
+    	initScatterPlot(textData);
+    	updateScatterPlot(sliceData (textData, seasonNumber, episodeNumber));
 	});
+
+	d3.tsv(textMetaDataFile, function(error, data){
+		textMetaData = data;
+		initBarPlot (textMetaData);
+		updateBarPlot (textMetaData, seasonNumber, episodeNumber);
+	})
 }
 
 init();
