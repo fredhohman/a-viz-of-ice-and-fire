@@ -8,6 +8,7 @@ import os, re
 import pandas as pd
 import argparse
 
+N_CHUNKS=60
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--all_episodes', default=None)
@@ -24,16 +25,29 @@ if __name__ == '__main__':
     sorted_episodes = sorted(all_episodes)
     episode_data = {e : pd.read_csv(os.path.join(subtitle_dir, e), sep='\t') 
                     for e in sorted_episodes}
-    LIWC_categories = ['positive_affect', 'negative_affect', 'anger', 'death', 'family', 'home', 'humans', 'religion', 'swear', 'sexual']
+    LIWC_categories = ['positive_affect', 'negative_affect', 'anger', 'death', 
+                       'family', 'home', 'humans', 'religion', 'swear', 'sexual']
     LIWC_category_wordlists = {c : [l.strip() 
                                     for l in open('/hg191/corpora/LIWC/resources/liwc_lexicons/%s'%(c), 'r')] 
                                for c in LIWC_categories}
     TKNZR = WordPunctTokenizer()
+    full_chunk_list = set(range(N_CHUNKS))
     for e in sorted_episodes:
         print('processing episode %s'%(e))
         e_data = episode_data[e]
         e_name = e.split('.tsv')[0]
         e_data.sort_values('chunk', ascending=True)
+        # TODO: insert dummy values for empty chunks
+        empty_chunks = full_chunk_list - set(e_data['chunk'].unique())
+        if(len(empty_chunks) > 0):
+            print('filling %s with empty chunks %s'%
+                  (e_name, empty_chunks))
+            empty_chunk_rows = pd.DataFrame(
+                [{'chunk' : c, 'dialogue' : ''} 
+                 for c in empty_chunks]
+                )
+            e_data = pd.concat([e_data, empty_chunk_rows], 
+                               axis=0)
         chunk_iter = e_data.groupby('chunk')
         chunk_text = [clean_text(' '.join(map(str, c[1]['dialogue'].tolist()))) 
                       for c in chunk_iter]

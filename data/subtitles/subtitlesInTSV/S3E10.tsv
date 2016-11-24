@@ -72,7 +72,7 @@ frameNo	startTime	endTime	dialogue	chunk
 71	00:06:11,845	00:06:15,314	$Anyone named Desmond$Crakehall must be a pervert.	5
 72	00:06:15,349	00:06:17,783	$I hear that$you're a pervert.	5
 73	00:06:17,817	00:06:19,084	$I am the Imp.	5
-74	00:06:19,118	00:06:20,852	$I have certain standards$to maintain.	6
+74	00:06:19,118	00:06:20,852	$I have certain standards$to maintain.	5
 75	00:06:23,689	00:06:26,357	$We could sheep shift$Lord Desmond's bed.	6
 76	00:06:27,525	00:06:29,193	$You cut a little hole$in his mattress	6
 77	00:06:29,227	00:06:31,061	$and you stuff$sheep dung inside.	6
@@ -93,7 +93,7 @@ frameNo	startTime	endTime	dialogue	chunk
 92	00:07:11,232	00:07:13,132	$Show him.	6
 93	00:07:13,200	00:07:15,134	$Come on, show him.	6
 94	00:07:19,339	00:07:22,407	$Oh, apologies, my lord.	6
-95	00:07:22,441	00:07:24,376	$Old fingers.	7
+95	00:07:22,441	00:07:24,376	$Old fingers.	6
 96	00:07:32,118	00:07:35,553	"$""Roslin caught$a fine fat trout."	7
 97	00:07:35,588	00:07:39,590	$<i>Her brothers gave her</i>$<i>a pair of wolf pelts for her wedding.</i>	7
 98	00:07:39,624	00:07:42,426	"$<i>Signed Walder Frey.""</i>"	7
@@ -112,7 +112,7 @@ frameNo	startTime	endTime	dialogue	chunk
 111	00:08:15,689	00:08:17,222	$<i>No.</i>	7
 112	00:08:17,256	00:08:19,791	$She is no longer$yours to torment.	7
 113	00:08:20,726	00:08:23,594	$Everyone is mine$to torment.	7
-114	00:08:25,063	00:08:27,864	$You'd do well to remember that,$you little monster.	8
+114	00:08:25,063	00:08:27,864	$You'd do well to remember that,$you little monster.	7
 115	00:08:27,932	00:08:29,732	$Oh, I'm a monster.	8
 116	00:08:29,767	00:08:33,301	$Perhaps you should speak$to me more softly, then.	8
 117	00:08:33,336	00:08:35,637	$<i>Monsters are dangerous</i>	8
@@ -166,7 +166,7 @@ frameNo	startTime	endTime	dialogue	chunk
 165	00:11:28,882	00:11:30,783	$Do you disapprove?	10
 166	00:11:30,817	00:11:32,852	$<i>I'm all for cheating.</i>$<i>This is war.</i>	10
 167	00:11:32,886	00:11:35,054	$But to slaughter them$at a wedding...	10
-168	00:11:35,088	00:11:37,789	$Explain to me$why it is more noble	11
+168	00:11:35,088	00:11:37,789	$Explain to me$why it is more noble	10
 169	00:11:37,824	00:11:39,891	$to kill 10,000 men$in battle	11
 170	00:11:39,926	00:11:41,226	$than a dozen at dinner.	11
 171	00:11:41,260	00:11:43,261	$So that's why you did it?	11
@@ -186,7 +186,7 @@ frameNo	startTime	endTime	dialogue	chunk
 185	00:12:20,796	00:12:25,766	$until your son by Sansa$comes of age.	11
 186	00:12:28,736	00:12:32,271	$I believe you still have some$work to do on that score.	11
 187	00:12:33,806	00:12:36,774	$Do you think she'll open$her legs for me	11
-188	00:12:36,808	00:12:40,211	$after I tell her how we murdered$her mother and brother?	12
+188	00:12:36,808	00:12:40,211	$after I tell her how we murdered$her mother and brother?	11
 189	00:12:40,245	00:12:43,580	$One way or another,$you will get that girl pregnant.	12
 190	00:12:43,615	00:12:46,116	$I will not rape her.	12
 191	00:12:47,618	00:12:50,553	$Shall I explain to you in one$easy lesson how the world works?	12
@@ -205,7 +205,7 @@ frameNo	startTime	endTime	dialogue	chunk
 204	00:13:27,651	00:13:30,920	$When have you ever done something$that wasn't in your interest	12
 205	00:13:30,955	00:13:33,288	$but solely for the benefit$of the family?	12
 206	00:13:33,323	00:13:36,157	$The day$that you were born.	12
-207	00:13:40,428	00:13:42,496	$I wanted to carry you$into the sea	13
+207	00:13:40,428	00:13:42,496	$I wanted to carry you$into the sea	12
 208	00:13:42,530	00:13:44,831	$and let the waves$wash you away.	13
 209	00:13:47,067	00:13:49,634	$Instead, I let you live.	13
 210	00:13:50,736	00:13:53,203	$And I brought you up$as my son.	13
@@ -231,7 +231,7 @@ frameNo	startTime	endTime	dialogue	chunk
 230	00:15:41,066	00:15:43,834	$When the king was visiting$the Nightfort,	14
 231	00:15:43,868	00:15:46,369	$the cook killed$the king's son,	14
 232	00:15:46,404	00:15:48,304	$cooked him$into a big pie	14
-233	00:15:48,338	00:15:51,841	$with onions, carrots,$mushrooms and bacon.	15
+233	00:15:48,338	00:15:51,841	$with onions, carrots,$mushrooms and bacon.	14
 234	00:15:51,875	00:15:55,844	$That night he served$the pie to the king.	15
 235	00:15:55,878	00:15:58,580	$He liked the taste$of his son so much,	15
 236	00:15:58,614	00:16:01,015	$he asked for$a second slice.	15
@@ -249,7 +249,7 @@ frameNo	startTime	endTime	dialogue	chunk
 248	00:16:34,278	00:16:36,612	$That's something$the gods can't forgive.	15
 249	00:16:44,219	00:16:47,955	"$""The late Walder Frey,""$old Tully called me"	15
 250	00:16:48,023	00:16:51,658	$because I didn't get my men to$the Trident in time for battle.	15
-251	00:16:51,726	00:16:53,994	$<i>He thought he was witty.</i>	16
+251	00:16:51,726	00:16:53,994	$<i>He thought he was witty.</i>	15
 252	00:16:54,028	00:16:56,229	$<i>Look at us now, Tully.</i>	16
 253	00:16:56,264	00:16:59,266	$<i>You're dead,</i>$<i>your daughter's dead,</i>	16
 254	00:16:59,300	00:17:00,867	$your grandson's dead,	16
@@ -272,7 +272,7 @@ frameNo	startTime	endTime	dialogue	chunk
 271	00:17:46,576	00:17:48,043	$<i>And you,</i>	16
 272	00:17:48,077	00:17:50,245	$the Warden$of the North.	16
 273	00:17:50,279	00:17:53,581	$<i>No more Starks</i>$<i>to bow and scrape to.</i>	16
-274	00:17:53,616	00:17:55,283	$Must have been torture	17
+274	00:17:53,616	00:17:55,283	$Must have been torture	16
 275	00:17:55,317	00:17:57,385	$following that stupid boy$all over the country.	17
 276	00:17:57,419	00:18:00,588	$He ignored my advice$at every turn.	17
 277	00:18:00,622	00:18:02,657	$If he'd been a trifle$less arrogant...	17
@@ -294,7 +294,7 @@ frameNo	startTime	endTime	dialogue	chunk
 293	00:18:49,030	00:18:50,997	$Oh. And?	17
 294	00:18:51,031	00:18:52,598	$<i>Ramsay delivered</i>$<i>the terms.</i>	17
 295	00:18:52,633	00:18:56,768	$The ironborn turned on Theon$as we knew they would.	17
-296	00:18:56,803	00:18:59,971	$<i>They handed him over</i>$<i>trussed and hooded.</i>	18
+296	00:18:56,803	00:18:59,971	$<i>They handed him over</i>$<i>trussed and hooded.</i>	17
 297	00:19:00,005	00:19:04,074	$<i>But Ramsay-- well...</i>	18
 298	00:19:04,109	00:19:06,710	$<i>Ramsay has his own way</i>$<i>of doing things.</i>	18
 299	00:19:07,712	00:19:09,646	$Well, the girls$weren't lying.	18
@@ -307,7 +307,7 @@ frameNo	startTime	endTime	dialogue	chunk
 306	00:19:45,343	00:19:48,678	$<i>An amputee might have an itch</i>$<i>where his foot used to be.</i>	18
 307	00:19:48,713	00:19:51,047	$<i>So I've always wondered...</i>	18
 308	00:19:54,018	00:19:57,520	$do eunuchs$have a phantom cock?	18
-309	00:19:59,422	00:20:01,557	$<i>Next time you think</i>$<i>about naked girls,</i>	19
+309	00:19:59,422	00:20:01,557	$<i>Next time you think</i>$<i>about naked girls,</i>	18
 310	00:20:01,591	00:20:04,126	$would you feel an itch?	19
 311	00:20:12,467	00:20:14,068	$Sorry.	19
 312	00:20:15,203	00:20:17,004	$I shouldn't make jokes.	19
@@ -335,7 +335,7 @@ frameNo	startTime	endTime	dialogue	chunk
 334	00:21:55,391	00:21:57,158	$Th--	20
 335	00:21:57,193	00:21:59,660	$Theon Greyjoy.	20
 336	00:22:06,767	00:22:07,901	$Please.	20
-337	00:22:07,935	00:22:12,939	$What is your name?!	21
+337	00:22:07,935	00:22:12,939	$What is your name?!	20
 338	00:22:14,440	00:22:15,941	$Reek.	21
 339	00:22:19,378	00:22:20,812	$My name is...	21
 340	00:22:22,648	00:22:24,748	$Reek.	21
@@ -355,7 +355,7 @@ frameNo	startTime	endTime	dialogue	chunk
 354	00:24:04,070	00:24:05,937	$Hodor.	22
 355	00:24:07,740	00:24:11,042	$I'd be dead$if it wasn't for Jon.	22
 356	00:24:11,076	00:24:13,110	$If you're his brother,$you're my brother, too.	22
-357	00:24:13,144	00:24:15,479	$And anything I can do$to help you, I will.	23
+357	00:24:13,144	00:24:15,479	$And anything I can do$to help you, I will.	22
 358	00:24:15,514	00:24:17,882	$Take us north$of the Wall.	23
 359	00:24:23,188	00:24:24,522	$What?	23
 360	00:24:24,556	00:24:26,490	$Why in the world$would you want to go--	23
@@ -388,7 +388,7 @@ frameNo	startTime	endTime	dialogue	chunk
 387	00:26:11,846	00:26:14,881	$<i>and back to those</i>$<i>shit-stained rocks</i>	24
 388	00:26:14,915	00:26:17,083	$<i>you call a home.</i>	24
 389	00:26:17,117	00:26:19,985	$<i>On the first night</i>$<i>of the full moon,</i>	24
-390	00:26:20,020	00:26:22,488	$<i>I will hunt down</i>$<i>every islander</i>	25
+390	00:26:20,020	00:26:22,488	$<i>I will hunt down</i>$<i>every islander</i>	24
 391	00:26:22,522	00:26:27,058	$still in our lands$and flay them living	25
 392	00:26:27,093	00:26:30,561	$the way I flayed$the 20 ironborn scum	25
 393	00:26:30,596	00:26:32,396	$I found at Winterfell.	25
@@ -417,7 +417,7 @@ frameNo	startTime	endTime	dialogue	chunk
 416	00:28:09,015	00:28:11,349	$I've made$my decision.	26
 417	00:28:16,287	00:28:18,421	$And I've made mine.	26
 418	00:28:21,325	00:28:24,593	$I'm going to pick the$fastest ship in our fleet.	26
-419	00:28:26,829	00:28:30,197	$<i>I'm going to choose</i>$<i>the 50 best killers on the Iron Islands.</i>	27
+419	00:28:26,829	00:28:30,197	$<i>I'm going to choose</i>$<i>the 50 best killers on the Iron Islands.</i>	26
 420	00:28:30,232	00:28:32,833	$Get those ropes!	27
 421	00:28:32,867	00:28:34,734	$<i>I'm going to sail</i>$<i>up the Narrow Sea</i>	27
 422	00:28:34,768	00:28:37,102	$<i>all the way</i>$<i>to the Weeping Water.</i>	27
@@ -460,7 +460,7 @@ frameNo	startTime	endTime	dialogue	chunk
 459	00:31:21,714	00:31:23,582	$I heard it.	29
 460	00:31:25,451	00:31:28,118	$A recent state$of affairs.	29
 461	00:31:31,622	00:31:35,124	$I was born in Flea Bottom$just like you.	29
-462	00:31:35,158	00:31:37,326	$Sure, you were.	30
+462	00:31:35,158	00:31:37,326	$Sure, you were.	29
 463	00:31:37,360	00:31:39,160	$You're my friend.$You're here to help.	30
 464	00:31:39,195	00:31:41,128	$I lived below$the Street of Flour.	30
 465	00:31:41,163	00:31:42,563	$<i>How far below?</i>	30
@@ -481,7 +481,7 @@ frameNo	startTime	endTime	dialogue	chunk
 480	00:32:30,705	00:32:33,841	$why were you in such a$hurry to trust her?	30
 481	00:32:35,210	00:32:37,611	$You're me.	30
 482	00:32:37,646	00:32:39,079	$Never been with a woman.	30
-483	00:32:39,114	00:32:41,849	$<i>Never talked</i>$<i>to a woman, really.</i>	31
+483	00:32:39,114	00:32:41,849	$<i>Never talked</i>$<i>to a woman, really.</i>	30
 484	00:32:41,883	00:32:43,450	$<i>And then she</i>$<i>comes at you--</i>	31
 485	00:32:43,484	00:32:46,586	$big words, no clothes.	31
 486	00:32:46,620	00:32:48,388	$What would you have done?	31
@@ -500,7 +500,7 @@ frameNo	startTime	endTime	dialogue	chunk
 499	00:33:34,464	00:33:35,898	$Why did you?	31
 500	00:33:35,932	00:33:38,901	$I did it for my son.	31
 501	00:33:38,935	00:33:41,369	$I didn't want him to step$over a river of shit	31
-502	00:33:41,404	00:33:43,904	$every time he stepped$through his front door.	32
+502	00:33:41,404	00:33:43,904	$every time he stepped$through his front door.	31
 503	00:33:45,440	00:33:47,641	$I wanted him to have$a better life.	32
 504	00:33:49,644	00:33:51,211	$Does he?	32
 505	00:33:52,480	00:33:54,181	$He's dead.	32
@@ -517,7 +517,7 @@ frameNo	startTime	endTime	dialogue	chunk
 516	00:34:38,418	00:34:40,018	$visit three brothels$a night,	32
 517	00:34:40,053	00:34:42,587	$gamble away$his father's money.	32
 518	00:34:42,622	00:34:44,589	$Now it's just$the drinking.	32
-519	00:34:44,623	00:34:47,959	$And now$I'm his wife's servant.	33
+519	00:34:44,623	00:34:47,959	$And now$I'm his wife's servant.	32
 520	00:34:47,993	00:34:49,927	$I brush her hair$and clip her nails	33
 521	00:34:49,961	00:34:51,428	$and empty$her chamber pot.	33
 522	00:34:51,463	00:34:52,930	$She is a sweet$young thing.	33
@@ -540,7 +540,7 @@ frameNo	startTime	endTime	dialogue	chunk
 539	00:35:39,240	00:35:41,175	$Diamonds.	33
 540	00:35:41,209	00:35:44,144	$I'd tell you to beware$carrying so much wealth,	33
 541	00:35:44,178	00:35:46,546	$but you know how$to protect yourself.	33
-542	00:35:47,515	00:35:49,215	$Get on one$of those ships.	34
+542	00:35:47,515	00:35:49,215	$Get on one$of those ships.	33
 543	00:35:49,250	00:35:52,018	$Sail to Pentos$or Lys or Myr.	34
 544	00:35:52,052	00:35:55,188	$You can buy a house$with these diamonds,	34
 545	00:35:55,222	00:35:57,190	$a very large house.	34
@@ -576,7 +576,7 @@ frameNo	startTime	endTime	dialogue	chunk
 575	00:37:45,279	00:37:49,848	$An unhappy wife is a wine$merchant's best friend.	35
 576	00:37:49,882	00:37:52,249	$She doesn't$deserve this.	35
 577	00:37:52,284	00:37:53,784	$Deserve?	35
-578	00:37:53,818	00:37:56,720	$Be careful with that.	36
+578	00:37:53,818	00:37:56,720	$Be careful with that.	35
 579	00:37:56,754	00:37:59,956	$Start trying to work out$who deserves what	36
 580	00:37:59,990	00:38:02,391	$and before long you'll spend$the rest of your days	36
 581	00:38:02,425	00:38:05,661	$weeping for each and every$person in the world.	36
@@ -598,7 +598,7 @@ frameNo	startTime	endTime	dialogue	chunk
 597	00:38:49,400	00:38:51,568	$But if it weren't$for my children,	36
 598	00:38:51,603	00:38:54,471	$I'd have thrown myself from the$highest window in the Red Keep.	36
 599	00:38:56,340	00:38:58,875	$They're the reason$I'm alive.	36
-600	00:38:58,909	00:39:00,977	$Even Joffrey?	37
+600	00:38:58,909	00:39:00,977	$Even Joffrey?	36
 601	00:39:02,011	00:39:03,879	$Even Joffrey.	37
 602	00:39:07,516	00:39:09,983	$He was all I had once.	37
 603	00:39:10,018	00:39:12,652	$Before Myrcella was born.	37
@@ -631,7 +631,7 @@ frameNo	startTime	endTime	dialogue	chunk
 630	00:40:56,604	00:40:59,706	$I bet there were 1,000 men$claiming they were the one.	38
 631	00:40:59,740	00:41:01,474	$It was me.	38
 632	00:41:01,508	00:41:04,444	$And Malcolm$and Talbott.	38
-633	00:41:04,478	00:41:07,213	$Well, the thing was so heavy,$it fell off the first time.	39
+633	00:41:04,478	00:41:07,213	$Well, the thing was so heavy,$it fell off the first time.	38
 634	00:41:07,247	00:41:08,814	$Took the skin$right with it.	39
 635	00:41:08,848	00:41:11,817	$<i>What we ended up having to do</i>$<i>was hook the needle</i>	39
 636	00:41:11,852	00:41:13,419	$<i>right under</i>$<i>the collarbone.</i>	39
@@ -646,7 +646,7 @@ frameNo	startTime	endTime	dialogue	chunk
 645	00:41:42,710	00:41:44,010	$Sorry.	39
 646	00:41:44,045	00:41:46,045	$Little shit.	39
 647	00:41:50,751	00:41:52,485	$<i>Fool!</i>	39
-648	00:42:07,400	00:42:09,935	$Where did you$get the knife?	40
+648	00:42:07,400	00:42:09,935	$Where did you$get the knife?	39
 649	00:42:09,969	00:42:11,670	$From you.	40
 650	00:42:15,074	00:42:17,675	$<i>Is that the first man</i>$<i>you've killed?</i>	40
 651	00:42:17,709	00:42:19,810	$The first man.	40
@@ -677,7 +677,7 @@ frameNo	startTime	endTime	dialogue	chunk
 676	00:45:09,028	00:45:11,362	$Yes, my--	42
 677	00:45:13,432	00:45:15,066	$Maester.	42
 678	00:45:16,001	00:45:17,302	$Master.	42
-679	00:45:17,336	00:45:19,804	$Maester.	43
+679	00:45:17,336	00:45:19,804	$Maester.	42
 680	00:45:19,838	00:45:21,806	$And the child?	43
 681	00:45:23,242	00:45:25,443	$She hasn't chosen$a name yet.	43
 682	00:45:25,477	00:45:27,778	$His name is Sam.	43
@@ -693,7 +693,7 @@ frameNo	startTime	endTime	dialogue	chunk
 692	00:46:08,516	00:46:11,318	$That means her$as well as us.	43
 693	00:46:11,352	00:46:14,721	$We didn't build$500 miles of ice walls	43
 694	00:46:14,755	00:46:17,390	$700 feet high$to keep out men.	43
-695	00:46:19,493	00:46:21,728	$The night is gathering,$Maester Aemon.	44
+695	00:46:19,493	00:46:21,728	$The night is gathering,$Maester Aemon.	43
 696	00:46:21,762	00:46:23,830	$I've seen it.	44
 697	00:46:23,864	00:46:26,365	$It's coming$for all of us.	44
 698	00:46:28,969	00:46:32,237	$Gilly, you and your son	44
@@ -730,7 +730,7 @@ frameNo	startTime	endTime	dialogue	chunk
 729	00:48:19,027	00:48:21,061	$Aye, old Balerion's$definitely better	45
 730	00:48:21,095	00:48:24,230	$than anything your cousin$Rylene's got on offer.	45
 731	00:48:24,264	00:48:26,632	$But now that I'm your$father's Hand again,	45
-732	00:48:26,666	00:48:28,933	$I have to keep$him informed.	46
+732	00:48:26,666	00:48:28,933	$I have to keep$him informed.	45
 733	00:48:30,168	00:48:32,502	$The king does not have$time for this drudgery.	46
 734	00:48:34,371	00:48:38,507	"$""To all the lords$and knobble men of Westeros."""	46
 735	00:48:38,541	00:48:41,376	"$- Noblemen.$- <i>""Noblemen of Westeros,</i>"	46
@@ -743,7 +743,7 @@ frameNo	startTime	endTime	dialogue	chunk
 742	00:49:03,363	00:49:05,463	$Bar the door.	46
 743	00:49:23,879	00:49:26,247	$The usurper$Robb Stark is dead.	46
 744	00:49:26,281	00:49:29,716	$Betrayed by his bannerman.	46
-745	00:49:29,750	00:49:33,553	$And you take credit because you$dropped a leech into the fire?	47
+745	00:49:29,750	00:49:33,553	$And you take credit because you$dropped a leech into the fire?	46
 746	00:49:33,587	00:49:35,154	$I take no credit.	47
 747	00:49:35,189	00:49:38,224	$<i>I have faith and my faith</i>$<i>has been rewarded.</i>	47
 748	00:49:41,427	00:49:45,730	$Your Grace, the world$has got so far bent.	47
@@ -765,7 +765,7 @@ frameNo	startTime	endTime	dialogue	chunk
 764	00:50:22,327	00:50:25,762	$My enemies have made$my kingdom bleed.	47
 765	00:50:27,698	00:50:29,732	$<i>I will not forget that.</i>	47
 766	00:50:29,767	00:50:32,402	$I will not forgive that.	47
-767	00:50:33,938	00:50:36,739	$I will punish them$with any arms	48
+767	00:50:33,938	00:50:36,739	$I will punish them$with any arms	47
 768	00:50:36,773	00:50:38,074	$at my disposal.	48
 769	00:50:38,108	00:50:40,977	$You do not need$to burn the boy.	48
 770	00:50:41,011	00:50:44,246	$<i>If what you say is true,</i>	48
@@ -778,7 +778,7 @@ frameNo	startTime	endTime	dialogue	chunk
 777	00:51:20,180	00:51:22,848	$who happens$to be your nephew.	48
 778	00:51:27,953	00:51:31,656	$What is the life of one bastard$boy against a kingdom?	48
 779	00:51:33,425	00:51:35,192	$Everything.	48
-780	00:51:36,127	00:51:38,328	$The boy must die.	49
+780	00:51:36,127	00:51:38,328	$The boy must die.	48
 781	00:51:45,668	00:51:47,635	$- What are you doing?$- You're leaving.	49
 782	00:51:47,670	00:51:50,504	$Is this some kind$of trick?	49
 783	00:51:50,572	00:51:53,206	$Yes, but not on you.	49
@@ -827,7 +827,7 @@ frameNo	startTime	endTime	dialogue	chunk
 826	00:55:41,870	00:55:44,938	$Your mercy$saved the boy's life.	52
 827	00:55:44,972	00:55:46,773	$You feel good$about that?	52
 828	00:55:46,807	00:55:48,174	$Aye, I do.	52
-829	00:55:48,208	00:55:50,776	$<i>You saved one innocent.</i>	53
+829	00:55:48,208	00:55:50,776	$<i>You saved one innocent.</i>	52
 830	00:55:50,844	00:55:54,479	$How many tens of thousands$have you doomed?	53
 831	00:55:57,650	00:56:00,084	$There has got$to be another way.	53
 832	00:56:00,118	00:56:01,552	$What other way?!	53
@@ -847,7 +847,7 @@ frameNo	startTime	endTime	dialogue	chunk
 846	00:56:45,324	00:56:46,958	$<i>Their Lord Commander</i>$<i>is dead.</i>	53
 847	00:56:46,992	00:56:49,660	$<i>Took a ranging party north</i>$<i>and never made it back.</i>	53
 848	00:56:49,694	00:56:51,895	$One lad did, though.	53
-849	00:56:51,929	00:56:54,564	$What he saw$beyond the Wall--	54
+849	00:56:51,929	00:56:54,564	$What he saw$beyond the Wall--	53
 850	00:56:54,598	00:56:57,033	$it's coming$for all of us.	54
 851	00:57:11,178	00:57:13,012	$When did you$learn to read?	54
 852	00:57:13,046	00:57:14,513	$Matthos taught me$before he died	54
@@ -862,7 +862,7 @@ frameNo	startTime	endTime	dialogue	chunk
 861	00:57:45,675	00:57:47,742	$to bring sellswords$and pirates to your side.	54
 862	00:57:47,777	00:57:50,145	$I've made my decision.	54
 863	00:57:51,547	00:57:54,749	$He's right.$You need him.	54
-864	00:57:54,783	00:57:57,419	$He has a part to play$in the war to come.	55
+864	00:57:54,783	00:57:57,419	$He has a part to play$in the war to come.	54
 865	00:58:06,393	00:58:08,860	$You see, Ser Davos?	55
 866	00:58:08,895	00:58:12,263	$You've been saved$by that fire god you like to mock.	55
 867	00:58:15,967	00:58:18,034	$You're in his army now.	55
@@ -881,7 +881,7 @@ frameNo	startTime	endTime	dialogue	chunk
 880	01:00:50,403	01:00:52,804	"$It means ""mother."""	57
 881	01:00:58,108	01:01:00,843	$It's all right.	57
 882	01:01:00,877	01:01:02,578	$These people$won't hurt me.	57
-883	01:01:05,082	01:01:07,750	$Mhysa! Mhysa!	58
+883	01:01:05,082	01:01:07,750	$Mhysa! Mhysa!	57
 884	01:01:56,526	01:01:59,694	$Mhysa.	58
 885	01:02:11,205	01:02:13,806	$Mhysa! Mhysa! Mhysa!	59
 886	01:03:07,945	01:03:12,945	"$== sync, corrected by <font color=""#00ff00"">elderman</font> =="	59

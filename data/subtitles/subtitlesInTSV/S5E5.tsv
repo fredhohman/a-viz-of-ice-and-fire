@@ -15,7 +15,7 @@ frameNo	startTime	endTime	dialogue	chunk
 14	00:00:46,597	00:00:50,613	$Welcome home, Lady Stark.$The North remembers.	0
 15	00:00:52,713	00:00:54,873	$You let a half-wit escape with a cripple,	0
 16	00:00:54,993	00:00:56,911	$and Rickon too, the little one.	0
-17	00:00:57,031	00:00:59,984	$I told you what would happen$if you served me loyally.	1
+17	00:00:57,031	00:00:59,984	$I told you what would happen$if you served me loyally.	0
 18	00:01:00,104	00:01:02,266	$And what would happen if you did not.	1
 19	00:01:09,598	00:01:11,893	$- Who are you?$- Your captor.	1
 20	00:01:12,349	00:01:14,194	$You said you're taking me to the queen.	1
@@ -34,7 +34,7 @@ frameNo	startTime	endTime	dialogue	chunk
 33	00:04:31,431	00:04:33,933	$He was a loyal friend.	4
 34	00:04:35,685	00:04:38,104	$And he died in an alley,	4
 35	00:04:38,155	00:04:41,190	$butchered by cowards$who hide behind masks.	4
-36	00:04:43,827	00:04:46,445	$We could pull back$to the pyramid district,	5
+36	00:04:43,827	00:04:46,445	$We could pull back$to the pyramid district,	4
 37	00:04:46,447	00:04:49,782	$<i>secure it, and use it as a$base from which to operate.</i>	5
 38	00:04:49,784	00:04:52,952	$Then we clean the city out,	5
 39	00:04:53,003	00:04:56,856	$<i>neighborhood by neighborhood,$street by street,</i>	5
@@ -89,7 +89,7 @@ frameNo	startTime	endTime	dialogue	chunk
 88	00:10:17,847	00:10:19,551	$That doesn't matter.	10
 89	00:10:19,586	00:10:20,954	$You do.	10
 90	00:10:23,740	00:10:27,793	$You will find little joy$in your command.	10
-91	00:10:27,827	00:10:30,379	$But with luck,	11
+91	00:10:27,827	00:10:30,379	$But with luck,	10
 92	00:10:30,413	00:10:33,975	$you will find the strength$to do what needs to be done.	11
 93	00:10:35,990	00:10:39,588	$Kill the boy, Jon Snow.	11
 94	00:10:39,639	00:10:43,141	$Winter is almost upon us.	11
@@ -121,7 +121,7 @@ frameNo	startTime	endTime	dialogue	chunk
 120	00:12:11,909	00:12:15,695	$Gather the remaining free folk wherever$they are and bring them back here.	12
 121	00:12:15,746	00:12:19,282	$I'll open the gates for$them and let them through.	12
 122	00:12:19,333	00:12:22,419	$I'll find them lands to$settle south of the Wall.	12
-123	00:12:22,453	00:12:26,039	$They won't kneel for you$and neither will I.	13
+123	00:12:22,453	00:12:26,039	$They won't kneel for you$and neither will I.	12
 124	00:12:26,090	00:12:28,958	$I don't want them$to kneel for me.	13
 125	00:12:28,960	00:12:31,461	$I want them to fight with$me when the time comes.	13
 126	00:12:31,463	00:12:34,264	$The day I ask my people$to fight with the crows	13
@@ -163,7 +163,7 @@ frameNo	startTime	endTime	dialogue	chunk
 162	00:15:04,999	00:15:07,717	$- What?$- Nothing.	15
 163	00:15:07,751	00:15:11,588	$Look, well, there is$good farmland in the Gift.	15
 164	00:15:11,622	00:15:13,957	$Land that no one uses now.	15
-165	00:15:13,959	00:15:16,009	$A dozen abandoned villages.	16
+165	00:15:13,959	00:15:16,009	$A dozen abandoned villages.	15
 166	00:15:16,043	00:15:18,178	$And why do you think the farmers$abandoned those villages?	16
 167	00:15:18,212	00:15:21,491	$<i>Because the wildlings</i>$<i>raided them for years.</i>	16
 168	00:15:21,927	00:15:23,061	$Cut them down!	16
@@ -192,7 +192,7 @@ frameNo	startTime	endTime	dialogue	chunk
 191	00:16:59,164	00:17:01,249	$You don't mean it, do you?	17
 192	00:17:02,885	00:17:05,503	$Telling the wildlings$you want to make peace.	17
 193	00:17:05,554	00:17:07,538	$You're just doing it$to trick them.	17
-194	00:17:07,573	00:17:09,090	$It's not a trick.	18
+194	00:17:07,573	00:17:09,090	$It's not a trick.	17
 195	00:17:09,141	00:17:10,675	$They burned my village.	18
 196	00:17:10,726	00:17:12,760	$They put an arrow$through my father's head	18
 197	00:17:12,762	00:17:13,962	$right in front of me.	18
@@ -228,7 +228,7 @@ frameNo	startTime	endTime	dialogue	chunk
 227	00:19:53,266	00:19:56,356	$Someone who swore$to keep her safe.	20
 228	00:19:56,358	00:19:58,158	$Swore to who?	20
 229	00:19:58,192	00:20:00,360	$Her mother.	20
-230	00:20:00,395	00:20:02,279	$Her mother's dead.	21
+230	00:20:00,395	00:20:02,279	$Her mother's dead.	20
 231	00:20:02,330	00:20:05,082	$That doesn't release me$from an oath.	21
 232	00:20:07,752	00:20:10,704	$I served Lady Catelyn.	21
 233	00:20:10,706	00:20:13,340	$I serve her still.	21
@@ -255,7 +255,7 @@ frameNo	startTime	endTime	dialogue	chunk
 254	00:21:40,094	00:21:43,296	$Who are you going to marry,$the stable keeper's son?	22
 255	00:21:49,520	00:21:51,471	$You're mine.	22
 256	00:21:52,113	00:21:54,524	$You're not going anywhere.	22
-257	00:21:54,559	00:21:56,479	$Unless I have to listen$to more of your jealousy.	23
+257	00:21:54,559	00:21:56,479	$Unless I have to listen$to more of your jealousy.	22
 258	00:21:56,595	00:22:00,113	$Jealousy bores me. You remember$what happens to people who bore me.	23
 259	00:22:02,817	00:22:06,736	$You're not going to bore$me, are you, Myranda?	23
 260	00:22:25,172	00:22:26,756	$Never.	23
@@ -283,7 +283,7 @@ frameNo	startTime	endTime	dialogue	chunk
 282	00:24:37,355	00:24:42,308	$Now every time you wear$something you made,	25
 283	00:24:42,310	00:24:44,144	$you can remember her.	25
 284	00:24:44,146	00:24:45,679	$I'd rather have a mother.	25
-285	00:24:45,713	00:24:49,449	$I know.$It's not the same.	26
+285	00:24:45,713	00:24:49,449	$I know.$It's not the same.	25
 286	00:24:49,483	00:24:52,728	$Still, it's good to remember.	26
 287	00:24:52,952	00:24:55,372	$Remember the way things were.	26
 288	00:24:57,124	00:24:59,626	$I almost forgot.	26
@@ -298,7 +298,7 @@ frameNo	startTime	endTime	dialogue	chunk
 297	00:26:41,979	00:26:44,347	$You shouldn't be here.	28
 298	00:27:04,451	00:27:08,421	$You smell particularly$ripe this evening.	28
 299	00:27:10,744	00:27:13,009	$Pour me some wine.	28
-300	00:27:37,151	00:27:39,319	$Do you have$something to tell me?	29
+300	00:27:37,151	00:27:39,319	$Do you have$something to tell me?	28
 301	00:27:40,654	00:27:41,966	$No, my lord.	29
 302	00:27:42,086	00:27:43,990	$Reek.	29
 303	00:27:47,928	00:27:49,829	$She saw me.	29
@@ -318,7 +318,7 @@ frameNo	startTime	endTime	dialogue	chunk
 317	00:29:12,357	00:29:14,191	$Allow me.	30
 318	00:29:17,995	00:29:19,613	$Mother.	30
 319	00:29:19,664	00:29:21,581	$Thank you, Ramsay.	30
-320	00:29:31,709	00:29:36,346	$My lady, we are all a$family, we northerners.	31
+320	00:29:31,709	00:29:36,346	$My lady, we are all a$family, we northerners.	30
 321	00:29:36,380	00:29:39,800	$Our blood ties go back$thousands of years.	31
 322	00:29:39,851	00:29:42,819	$So I'd like to drink$to our wedding.	31
 323	00:29:42,854	00:29:46,223	$May our happiness$spread from Moat Cailin	31
@@ -332,7 +332,7 @@ frameNo	startTime	endTime	dialogue	chunk
 331	00:30:12,500	00:30:14,050	$Very strange.	31
 332	00:30:17,255	00:30:18,889	$More wine, please.	31
 333	00:30:25,396	00:30:28,115	$<i>I heard you two had reunited.</i>	31
-334	00:30:28,149	00:30:31,184	$A fitting place for it.	32
+334	00:30:28,149	00:30:31,184	$A fitting place for it.	31
 335	00:30:33,104	00:30:36,439	$I like to imagine that$the last time you spoke	32
 336	00:30:36,491	00:30:38,441	$was in this very room.	32
 337	00:30:41,112	00:30:43,780	$<i>Are you still angry with him</i>	32
@@ -350,7 +350,7 @@ frameNo	startTime	endTime	dialogue	chunk
 349	00:31:15,029	00:31:17,197	$That's his$new name-- Reek.	32
 350	00:31:17,231	00:31:19,316	$Why are you doing this?	32
 351	00:31:21,235	00:31:24,454	$Because Reek has$something to say to you.	32
-352	00:31:24,488	00:31:26,089	$Don't you, Reek?	33
+352	00:31:24,488	00:31:26,089	$Don't you, Reek?	32
 353	00:31:36,300	00:31:38,001	$An apology.	33
 354	00:31:43,808	00:31:46,977	$Apologize to Lady Sansa$for what you did.	33
 355	00:31:48,312	00:31:51,314	$Apologize for murdering$her two brothers.	33
@@ -402,7 +402,7 @@ frameNo	startTime	endTime	dialogue	chunk
 401	00:34:53,864	00:34:56,366	$until a better$alternative comes along.	36
 402	00:35:05,626	00:35:07,794	$You've never asked me$about your mother.	36
 403	00:35:12,299	00:35:14,717	$Why would I?	36
-404	00:35:14,719	00:35:17,554	$She had me, she died.	37
+404	00:35:14,719	00:35:17,554	$She had me, she died.	36
 405	00:35:18,722	00:35:21,409	$And here we are.	37
 406	00:35:21,529	00:35:23,766	$She was a peasant girl.	37
 407	00:35:24,175	00:35:26,602	$Pretty in a common sort of way.	37
@@ -433,7 +433,7 @@ frameNo	startTime	endTime	dialogue	chunk
 432	00:36:57,942	00:36:59,693	$Every book there is?	38
 433	00:37:00,828	00:37:03,913	$- In the world.$- Well, no.	38
 434	00:37:03,948	00:37:07,951	$There are thousands and$thousands of books out there.	38
-435	00:37:07,953	00:37:10,203	$This library is rather$small, actually.	39
+435	00:37:07,953	00:37:10,203	$This library is rather$small, actually.	38
 436	00:37:10,254	00:37:11,921	$Where you grew up,$were there more books?	39
 437	00:37:11,956	00:37:14,791	$My father's not$the most literate man.	39
 438	00:37:17,161	00:37:20,797	$They say the Citadel has the$largest library in the world.	39
@@ -450,7 +450,7 @@ frameNo	startTime	endTime	dialogue	chunk
 449	00:37:53,917	00:37:57,052	$<i>It's where they train</i>$<i>the maesters.</i>	39
 450	00:37:57,087	00:37:58,621	$Like Maester Aemon?	39
 451	00:37:58,655	00:38:01,423	$I wanted to be one$when I was young.	39
-452	00:38:03,977	00:38:08,230	$Instead, I became a man$of the Night's Watch.	40
+452	00:38:03,977	00:38:08,230	$Instead, I became a man$of the Night's Watch.	39
 453	00:38:10,771	00:38:13,636	$Far more adventure$up here anyway.	40
 454	00:38:15,190	00:38:17,323	$I wouldn't have met you.	40
 455	00:38:22,432	00:38:25,114	$Ah, Your Grace.	40
@@ -462,7 +462,7 @@ frameNo	startTime	endTime	dialogue	chunk
 461	00:38:50,056	00:38:53,642	$I told him he shouldn't go so far$west so soon, but he never listened.	40
 462	00:38:55,999	00:38:58,864	$<i>Fine soldier, your father.</i>	40
 463	00:38:58,898	00:39:00,983	$You don't look like a soldier.	40
-464	00:39:02,202	00:39:04,987	$But I'm told you killed$a white walker.	41
+464	00:39:02,202	00:39:04,987	$But I'm told you killed$a white walker.	40
 465	00:39:04,989	00:39:06,822	$I did, Your Grace.	41
 466	00:39:06,873	00:39:08,123	$<i>How?</i>	41
 467	00:39:08,158	00:39:10,292	$With a dagger$made of dragonglass.	41
@@ -512,7 +512,7 @@ frameNo	startTime	endTime	dialogue	chunk
 511	00:41:44,110	00:41:45,527	$You'll scare the child.	43
 512	00:41:45,562	00:41:47,980	$<i>Yes, my queen.</i>	43
 513	00:41:50,366	00:41:53,318	$- I'm not scared.$- Well, I am.	43
-514	00:41:53,403	00:41:56,321	$When the battle comes,$promise you'll protect me.	44
+514	00:41:53,403	00:41:56,321	$When the battle comes,$promise you'll protect me.	43
 515	00:41:56,406	00:41:58,457	$I promise.	44
 516	00:42:18,261	00:42:21,680	$I hope you know what you're$doing with these wildlings.	44
 517	00:42:21,731	00:42:24,099	$I need those ships.	44
@@ -534,7 +534,7 @@ frameNo	startTime	endTime	dialogue	chunk
 533	00:44:35,248	00:44:37,129	$_	46
 534	00:44:39,552	00:44:41,787	$<i>Are you ashamed?</i>	46
 535	00:44:43,323	00:44:45,824	$<i>You were ambushed, outnumbered.</i>	46
-536	00:44:45,875	00:44:47,793	$<i>There was no way</i>$<i>you could have known.</i>	47
+536	00:44:45,875	00:44:47,793	$<i>There was no way</i>$<i>you could have known.</i>	46
 537	00:44:47,827	00:44:49,878	$This is not why.	47
 538	00:44:52,332	00:44:54,549	$Wounded in war,	47
 539	00:44:54,584	00:44:57,919	$there is no shame for this.	47
@@ -583,14 +583,14 @@ frameNo	startTime	endTime	dialogue	chunk
 582	00:48:19,872	00:48:21,957	$Yes, my queen.	50
 583	00:48:25,344	00:48:29,297	$And in order to forge a lasting$bond with the Meereenese people,	50
 584	00:48:29,348	00:48:32,133	$I will marry the leader$of an ancient family.	50
-585	00:48:34,387	00:48:37,389	$Thankfully a suitor$is already on his knees.	51
+585	00:48:34,387	00:48:37,389	$Thankfully a suitor$is already on his knees.	50
 586	00:49:05,551	00:49:07,335	$Don't worry.	51
 587	00:49:07,386	00:49:10,839	$I'll be fine. Nothing$broken, I don't think.	51
 588	00:49:13,009	00:49:14,809	$Where are we now?	51
 589	00:49:14,844	00:49:16,928	$Not the Rhoyne.	51
 590	00:49:22,985	00:49:25,654	$Long, sullen silences	51
 591	00:49:25,688	00:49:28,690	$and an occasional$punch in the face.	51
-592	00:49:30,493	00:49:32,611	$The Mormont way.	52
+592	00:49:30,493	00:49:32,611	$The Mormont way.	51
 593	00:49:36,082	00:49:38,833	$Let's start over.	52
 594	00:49:40,036	00:49:42,454	$I apologize for before.	52
 595	00:49:42,456	00:49:45,457	$<i>My mouth sometimes</i>$<i>runs away from me.</i>	52
@@ -604,7 +604,7 @@ frameNo	startTime	endTime	dialogue	chunk
 603	00:50:14,654	00:50:16,988	$People who drink$need to keep drinking.	52
 604	00:50:17,039	00:50:19,074	$<i>Otherwise, they're not...</i>	52
 605	00:50:26,499	00:50:27,999	$I know where we are.	52
-606	00:50:28,050	00:50:30,552	$You're taking us$through Valyria.	53
+606	00:50:28,050	00:50:30,552	$You're taking us$through Valyria.	52
 607	00:50:30,586	00:50:31,970	$I am.	53
 608	00:50:32,004	00:50:34,172	$Have you sailed$this route before?	53
 609	00:50:34,223	00:50:35,757	$No.	53
@@ -674,5 +674,5 @@ frameNo	startTime	endTime	dialogue	chunk
 673	00:56:02,707	00:56:05,842	$I'll get some wood for a fire.	58
 674	00:56:05,876	00:56:08,628	$Try to get some rest, huh?	58
 675	00:56:08,679	00:56:11,414	$That's the best idea$you've had all day.	58
-676	00:56:59,721	00:57:09,964	"$<font color=""#ec14bd"">Sync & corrections by honeybunny</font>$<font color=""#ec14bd"">www.addic7ed.com</font>"	60
+676	00:56:59,721	00:57:09,964	"$<font color=""#ec14bd"">Sync & corrections by honeybunny</font>$<font color=""#ec14bd"">www.addic7ed.com</font>"	59
 9999	00:00:0,500	00:00:2,00	"$<font color=""#ffff00"" size=14>www.tvsubtitles.net</font>"	0

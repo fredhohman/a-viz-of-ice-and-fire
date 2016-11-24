@@ -25,8 +25,8 @@ frameNo	startTime	endTime	dialogue	chunk
 24	00:03:51,742	00:03:53,709	$They even killed the children.	3
 25	00:03:53,744	00:03:56,813	$It's a good thing$we're not children.	3
 26	00:03:58,315	00:04:00,917	$You want to run away south,$run away.	3
-27	00:04:00,952	00:04:03,854	$Of course they will$behead you as a deserter,	4
-28	00:04:03,888	00:04:06,257	$if I don't catch you first.	4
+27	00:04:00,952	00:04:03,854	$Of course they will$behead you as a deserter,	3
+28	00:04:03,888	00:04:06,257	$if I don't catch you first.	3
 29	00:04:08,527	00:04:10,795	$Get back on your horse.	4
 30	00:04:10,829	00:04:12,797	$I won't say it again.	4
 31	00:04:30,950	00:04:33,251	$<i>( Echoing animal call )</i>	4
@@ -56,9 +56,9 @@ frameNo	startTime	endTime	dialogue	chunk
 55	00:09:47,698	00:09:50,767	$Go on, father's watching.	9
 56	00:09:52,804	00:09:54,705	$<i>And your mother.</i>	9
 57	00:10:00,713	00:10:04,083	$Fine work as always.$Well done.	9
-58	00:10:04,117	00:10:05,952	$Thank you.	10
-59	00:10:05,986	00:10:09,955	$I love the detail that you've$managed to get in these corners.	10
-60	00:10:09,990	00:10:11,924	$<i>Quite beautiful.</i>	10
+58	00:10:04,117	00:10:05,952	$Thank you.	9
+59	00:10:05,986	00:10:09,955	$I love the detail that you've$managed to get in these corners.	9
+60	00:10:09,990	00:10:11,924	$<i>Quite beautiful.</i>	9
 61	00:10:11,959	00:10:13,992	$The stitching...	10
 62	00:10:16,329	00:10:18,697	$<i>( Arrows thunk, laughter )</i>	10
 63	00:10:32,781	00:10:34,982	$- ( Sighs )$- ( Laughing )	10
@@ -68,9 +68,9 @@ frameNo	startTime	endTime	dialogue	chunk
 67	00:10:44,494	00:10:47,362	$Don't think too much, Bran.	10
 68	00:10:48,831	00:10:50,898	$Relax your bow arm.	10
 69	00:11:00,842	00:11:02,676	$( Men laugh )	10
-70	00:11:02,710	00:11:05,511	$Quick, Bran!$Faster.	11
-71	00:11:07,014	00:11:09,082	$Lord Stark!	11
-72	00:11:10,117	00:11:12,118	$My lady.	11
+70	00:11:02,710	00:11:05,511	$Quick, Bran!$Faster.	10
+71	00:11:07,014	00:11:09,082	$Lord Stark!	10
+72	00:11:10,117	00:11:12,118	$My lady.	10
 73	00:11:13,287	00:11:15,321	$A guardsman just$rode in from the hills.	11
 74	00:11:15,356	00:11:18,357	$They've captured a deserter$from the Night's Watch.	11
 75	00:11:21,661	00:11:24,030	$Get the lads to saddle$their horses.	11
@@ -82,8 +82,8 @@ frameNo	startTime	endTime	dialogue	chunk
 81	00:11:36,975	00:11:39,309	$10 is too young$to see such things.	11
 82	00:11:39,343	00:11:41,110	$He won't be a boy forever.	11
 83	00:11:43,013	00:11:45,347	$And winter is coming.	11
-84	00:12:03,736	00:12:07,338	$Lad, go run back$and get the rest.	12
-85	00:12:11,911	00:12:13,778	$( Muttering )$White walkers.	12
+84	00:12:03,736	00:12:07,338	$Lad, go run back$and get the rest.	11
+85	00:12:11,911	00:12:13,778	$( Muttering )$White walkers.	11
 86	00:12:13,812	00:12:16,547	$I saw the white walkers.	12
 87	00:12:16,582	00:12:18,516	$White walkers.	12
 88	00:12:18,550	00:12:21,618	$The white walkers, I saw them.	12
@@ -97,7 +97,7 @@ frameNo	startTime	endTime	dialogue	chunk
 96	00:12:49,247	00:12:51,115	$If you can get word$to my family...	12
 97	00:12:51,149	00:12:53,551	$<i>Tell them I'm no coward.</i>	12
 98	00:12:53,585	00:12:55,720	$<i>Tell them I'm sorry.</i>	12
-99	00:13:12,537	00:13:14,305	$( Whispers )$Forgive me, lord.	13
+99	00:13:12,537	00:13:14,305	$( Whispers )$Forgive me, lord.	12
 100	00:13:18,209	00:13:21,011	$In the name of Robert$of the House Baratheon,	13
 101	00:13:21,045	00:13:22,946	$- the first of his name...$- Don't look away.	13
 102	00:13:22,980	00:13:25,849	$- <i>...King of the Andals and the First Men...</i>$- Father will know if you do.	13
@@ -121,7 +121,7 @@ frameNo	startTime	endTime	dialogue	chunk
 120	00:15:27,073	00:15:29,075	$There are no mountain lions$in these woods.	15
 121	00:15:56,272	00:15:58,606	$( Pup whines )	15
 122	00:15:59,809	00:16:02,443	$( Yips )	15
-123	00:16:15,059	00:16:17,060	$It's a freak!	16
+123	00:16:15,059	00:16:17,060	$It's a freak!	15
 124	00:16:17,962	00:16:20,697	$It's a direwolf.	16
 125	00:16:28,540	00:16:31,274	$Tough old beast.	16
 126	00:16:32,710	00:16:35,478	$There are no direwolves$south of the wall.	16
@@ -139,9 +139,9 @@ frameNo	startTime	endTime	dialogue	chunk
 138	00:17:00,604	00:17:03,405	$- Please, father!$- I'm sorry, Bran.	16
 139	00:17:03,440	00:17:05,308	$Lord Stark?	16
 140	00:17:05,342	00:17:07,810	$There are five pups...	16
-141	00:17:09,279	00:17:11,146	$One for each$of the Stark children.	17
-142	00:17:11,181	00:17:13,983	$- <i>( Pup cries )</i>$- The direwolf is the sigil of your house.	17
-143	00:17:15,351	00:17:17,553	$They were meant to have them.	17
+141	00:17:09,279	00:17:11,146	$One for each$of the Stark children.	16
+142	00:17:11,181	00:17:13,983	$- <i>( Pup cries )</i>$- The direwolf is the sigil of your house.	16
+143	00:17:15,351	00:17:17,553	$They were meant to have them.	16
 144	00:17:22,492	00:17:24,927	$You will train them yourselves.	17
 145	00:17:24,961	00:17:26,929	$You will feed them yourselves.	17
 146	00:17:26,963	00:17:29,999	$And if they die, you will$bury them yourselves.	17
@@ -151,11 +151,11 @@ frameNo	startTime	endTime	dialogue	chunk
 150	00:17:51,989	00:17:54,123	$<i>( Whimpers )</i>	17
 151	00:17:54,157	00:17:56,559	$What is it?	17
 152	00:18:00,363	00:18:04,333	$The runt of the litter...$That one's yours, Snow.	17
-153	00:18:13,143	00:18:16,012	$<i>( Bells tolling )</i>	18
+153	00:18:13,143	00:18:16,012	$<i>( Bells tolling )</i>	17
 154	00:19:04,191	00:19:07,627	$As your brother, I feel$it's my duty to warn you:	18
-155	00:19:08,896	00:19:10,930	$you worry too much.	19
-156	00:19:10,965	00:19:14,300	$- It's starting to show.$- And you never worry about anything.	19
-157	00:19:16,003	00:19:19,573	$<i>When we were seven and you jumped$off the cliffs at Casterly Rock,</i>	19
+155	00:19:08,896	00:19:10,930	$you worry too much.	18
+156	00:19:10,965	00:19:14,300	$- It's starting to show.$- And you never worry about anything.	18
+157	00:19:16,003	00:19:19,573	$<i>When we were seven and you jumped$off the cliffs at Casterly Rock,</i>	18
 158	00:19:19,607	00:19:21,942	$100-foot drop into the water,	19
 159	00:19:21,976	00:19:24,044	$and you were never afraid.	19
 160	00:19:24,079	00:19:26,780	$There was nothing to be afraid$of until you told father.	19
@@ -173,8 +173,8 @@ frameNo	startTime	endTime	dialogue	chunk
 172	00:19:59,645	00:20:02,214	$You should be$the Hand of the King.	19
 173	00:20:02,248	00:20:05,083	$That's an honor$I can do without.	19
 174	00:20:05,118	00:20:07,252	$Their days are too long,	19
-175	00:20:07,286	00:20:09,554	$their lives are too short.	20
-176	00:20:13,258	00:20:15,926	$<i>( Thunder rumbles )</i>	20
+175	00:20:07,286	00:20:09,554	$their lives are too short.	19
+176	00:20:13,258	00:20:15,926	$<i>( Thunder rumbles )</i>	19
 177	00:20:21,132	00:20:22,465	$( Caws )	20
 178	00:20:36,682	00:20:39,317	$<i>( Birds chirping )</i>	20
 179	00:20:47,861	00:20:49,528	$All these years	20
@@ -184,8 +184,8 @@ frameNo	startTime	endTime	dialogue	chunk
 183	00:20:56,103	00:20:59,338	$You're not an outsider.	20
 184	00:20:59,373	00:21:02,308	$I wonder if the old gods agree.	20
 185	00:21:03,410	00:21:06,312	$It's your gods with all the rules.	20
-186	00:21:11,453	00:21:14,388	$I am so sorry, my love.	21
-187	00:21:15,791	00:21:19,327	$- Tell me.$- There was a raven from King's Landing.	21
+186	00:21:11,453	00:21:14,388	$I am so sorry, my love.	20
+187	00:21:15,791	00:21:19,327	$- Tell me.$- There was a raven from King's Landing.	20
 188	00:21:21,197	00:21:22,898	$Jon Arryn is dead.	21
 189	00:21:22,932	00:21:25,601	$<i>A fever took him.</i>	21
 190	00:21:28,372	00:21:30,673	$<i>I know he was like</i>$<i>a father to you.</i>	21
@@ -198,8 +198,8 @@ frameNo	startTime	endTime	dialogue	chunk
 197	00:21:58,869	00:22:02,138	$If he's coming$this far north...	21
 198	00:22:03,508	00:22:05,709	$There's only one thing he's after.	21
 199	00:22:05,743	00:22:08,779	$You can always say no, Ned.	21
-200	00:22:17,489	00:22:21,226	$Catelyn: We'll need plenty of$candles for Lord Tyrion's chamber.	22
-201	00:22:21,260	00:22:23,194	$I'm told he reads all night.	22
+200	00:22:17,489	00:22:21,226	$Catelyn: We'll need plenty of$candles for Lord Tyrion's chamber.	21
+201	00:22:21,260	00:22:23,194	$I'm told he reads all night.	21
 202	00:22:23,229	00:22:25,130	$I'm told he drinks all night.	22
 203	00:22:25,164	00:22:28,467	$How much could he possibly drink?$A man of his...	22
 204	00:22:28,501	00:22:30,268	$Stature?	22
@@ -221,23 +221,23 @@ frameNo	startTime	endTime	dialogue	chunk
 220	00:23:50,751	00:23:53,619	$But he's coming right$now... down our road.	23
 221	00:24:00,460	00:24:03,028	$I want you to promise me,	23
 222	00:24:03,063	00:24:04,830	$no more climbing.	23
-223	00:24:09,235	00:24:10,836	$I promise.	24
-224	00:24:13,106	00:24:16,076	$- Do you know what?$- What?	24
-225	00:24:16,110	00:24:18,411	$You always look$at your feet before you lie.	24
-226	00:24:18,446	00:24:21,047	$( Chuckles )	24
-227	00:24:21,082	00:24:24,451	$Run and find your father.$Tell him the king is close.	24
-228	00:25:08,564	00:25:12,267	$Where's Arya?$Sansa, where's your sister?	25
-229	00:25:22,379	00:25:24,013	$- Hey hey hey hey.$- Ohh.	25
-230	00:25:24,047	00:25:26,348	$What are you doing$with that on?	25
+223	00:24:09,235	00:24:10,836	$I promise.	23
+224	00:24:13,106	00:24:16,076	$- Do you know what?$- What?	23
+225	00:24:16,110	00:24:18,411	$You always look$at your feet before you lie.	23
+226	00:24:18,446	00:24:21,047	$( Chuckles )	23
+227	00:24:21,082	00:24:24,451	$Run and find your father.$Tell him the king is close.	23
+228	00:25:08,564	00:25:12,267	$Where's Arya?$Sansa, where's your sister?	24
+229	00:25:22,379	00:25:24,013	$- Hey hey hey hey.$- Ohh.	24
+230	00:25:24,047	00:25:26,348	$What are you doing$with that on?	24
 231	00:25:29,151	00:25:31,287	$- Go on.$- ( Arya groans )	25
 232	00:25:32,589	00:25:34,390	$Move!	25
 233	00:25:51,941	00:25:54,109	$( Neighs )	25
 234	00:26:56,404	00:26:58,405	$Your Grace.	26
 235	00:27:02,411	00:27:04,512	$You've got fat.	26
-236	00:27:11,053	00:27:13,221	$( Laughter )	27
-237	00:27:16,591	00:27:19,226	$- Cat!$- Your Grace.	27
-238	00:27:22,430	00:27:25,498	$Nine years... Why haven't I seen you?$Where the hell have you been?	27
-239	00:27:25,532	00:27:27,433	$Guarding the north$for you, Your Grace.	27
+236	00:27:11,053	00:27:13,221	$( Laughter )	26
+237	00:27:16,591	00:27:19,226	$- Cat!$- Your Grace.	26
+238	00:27:22,430	00:27:25,498	$Nine years... Why haven't I seen you?$Where the hell have you been?	26
+239	00:27:25,532	00:27:27,433	$Guarding the north$for you, Your Grace.	26
 240	00:27:27,468	00:27:30,237	$<i>Winterfell is yours.</i>	27
 241	00:27:33,274	00:27:35,710	$- Where's the Imp?$- Will you shut up?	27
 242	00:27:35,744	00:27:38,446	$Robert: Who have we here?	27
@@ -249,12 +249,12 @@ frameNo	startTime	endTime	dialogue	chunk
 248	00:27:55,999	00:27:57,500	$You'll be a soldier.	27
 249	00:28:00,104	00:28:02,906	$Arya: <i>That's Jaime Lannister,</i>$<i>the queen's twin brother.</i>	27
 250	00:28:02,940	00:28:05,142	$Sansa: <i>Would you please shut up?</i>	27
-251	00:28:14,585	00:28:16,786	$My queen.	28
-252	00:28:16,821	00:28:18,455	$My queen.	28
-253	00:28:18,490	00:28:20,691	$Take me to your crypt.$I want to pay my respects.	28
-254	00:28:20,725	00:28:22,960	$We've been riding$for a month, my love.	28
-255	00:28:22,994	00:28:24,695	$Surely the dead can wait.	28
-256	00:28:24,730	00:28:26,697	$Ned.	28
+251	00:28:14,585	00:28:16,786	$My queen.	27
+252	00:28:16,821	00:28:18,455	$My queen.	27
+253	00:28:18,490	00:28:20,691	$Take me to your crypt.$I want to pay my respects.	27
+254	00:28:20,725	00:28:22,960	$We've been riding$for a month, my love.	27
+255	00:28:22,994	00:28:24,695	$Surely the dead can wait.	27
+256	00:28:24,730	00:28:26,697	$Ned.	27
 257	00:28:35,873	00:28:37,674	$Where's the Imp?	28
 258	00:28:41,044	00:28:43,078	$Where is our brother?	28
 259	00:28:43,112	00:28:45,313	$Go and find the little beast.	28
@@ -267,11 +267,11 @@ frameNo	startTime	endTime	dialogue	chunk
 266	00:29:04,300	00:29:05,534	$You remember me at 16?	28
 267	00:29:05,568	00:29:07,503	$- ( Chuckles )$- All I wanted to do	28
 268	00:29:07,537	00:29:10,172	$was crack skulls and fuck girls.	28
-269	00:29:10,206	00:29:13,108	$- He showed me what was what.$- Aye.	29
-270	00:29:13,142	00:29:16,478	$Don't look at me like that.$It's not his fault I didn't listen.	29
-271	00:29:20,417	00:29:22,751	$I need you, Ned...	29
-272	00:29:22,786	00:29:26,689	$down at King's Landing, not up here$where you're no damn use to anybody.	29
-273	00:29:28,225	00:29:31,093	$Lord Eddard Stark,	29
+269	00:29:10,206	00:29:13,108	$- He showed me what was what.$- Aye.	28
+270	00:29:13,142	00:29:16,478	$Don't look at me like that.$It's not his fault I didn't listen.	28
+271	00:29:20,417	00:29:22,751	$I need you, Ned...	28
+272	00:29:22,786	00:29:26,689	$down at King's Landing, not up here$where you're no damn use to anybody.	28
+273	00:29:28,225	00:29:31,093	$Lord Eddard Stark,	28
 274	00:29:31,128	00:29:33,729	$I would name you$the Hand of the King.	29
 275	00:29:38,168	00:29:40,236	$I'm not worthy of the honor.	29
 276	00:29:40,270	00:29:44,007	$I'm not trying to honor you.$I'm trying to get you to run my kingdom	29
@@ -284,8 +284,8 @@ frameNo	startTime	endTime	dialogue	chunk
 283	00:30:02,459	00:30:04,827	$Well, it's not too late.	29
 284	00:30:06,229	00:30:08,164	$I have a son,$you have a daughter.	29
 285	00:30:09,900	00:30:11,734	$We'll join our houses.	29
-286	00:30:15,906	00:30:18,442	$<i>( Woman moaning )</i>	30
-287	00:30:27,654	00:30:30,722	$( Moaning )	30
+286	00:30:15,906	00:30:18,442	$<i>( Woman moaning )</i>	29
+287	00:30:27,654	00:30:30,722	$( Moaning )	29
 288	00:30:35,728	00:30:39,698	$It is true what they say$about the northern girls.	30
 289	00:30:39,733	00:30:42,268	$( Giggles )	30
 290	00:30:47,974	00:30:50,175	$Did you hear the king's$in Winterfell?	30
@@ -297,13 +297,13 @@ frameNo	startTime	endTime	dialogue	chunk
 296	00:31:02,887	00:31:05,889	$and there's the clever one.	30
 297	00:31:07,758	00:31:10,794	$Mmm, I hear they$call him the Imp.	30
 298	00:31:10,829	00:31:12,896	$I hear he hates that nickname.	30
-299	00:31:12,930	00:31:16,166	$Oh? I hear he's more$than earned it.	31
-300	00:31:16,201	00:31:18,969	$I hear he's a drunken$little lecher,	31
-301	00:31:19,004	00:31:21,439	$prone to all manner$of perversions.	31
-302	00:31:21,473	00:31:23,374	$Clever girl.	31
-303	00:31:24,843	00:31:27,011	$We've been expecting you,$Lord Tyrion.	31
-304	00:31:28,313	00:31:30,214	$Have you?	31
-305	00:31:30,248	00:31:32,116	$- Oh!$- Already?	31
+299	00:31:12,930	00:31:16,166	$Oh? I hear he's more$than earned it.	30
+300	00:31:16,201	00:31:18,969	$I hear he's a drunken$little lecher,	30
+301	00:31:19,004	00:31:21,439	$prone to all manner$of perversions.	30
+302	00:31:21,473	00:31:23,374	$Clever girl.	30
+303	00:31:24,843	00:31:27,011	$We've been expecting you,$Lord Tyrion.	30
+304	00:31:28,313	00:31:30,214	$Have you?	30
+305	00:31:30,248	00:31:32,116	$- Oh!$- Already?	30
 306	00:31:34,186	00:31:36,988	$The gods gave me one blessing.	31
 307	00:31:37,022	00:31:38,923	$( Door opens )	31
 308	00:31:41,793	00:31:44,395	$- Don't get up.$- My lord.	31
@@ -317,11 +317,11 @@ frameNo	startTime	endTime	dialogue	chunk
 316	00:32:03,683	00:32:06,051	$<i>I'm sorry, I've begun</i>$<i>the feast a bit early.</i>	31
 317	00:32:06,085	00:32:09,454	$And this is the first$of many courses.	31
 318	00:32:09,488	00:32:11,690	$I thought you might say that.	31
-319	00:32:11,724	00:32:14,125	$But since we're short on time...	32
-320	00:32:14,159	00:32:16,060	$Come on, girls.	32
-321	00:32:16,095	00:32:18,762	$( Giggling )	32
-322	00:32:21,132	00:32:23,434	$See you at sundown.	32
-323	00:32:23,468	00:32:26,036	$Tyrion: <i>Close the door!</i>	32
+319	00:32:11,724	00:32:14,125	$But since we're short on time...	31
+320	00:32:14,159	00:32:16,060	$Come on, girls.	31
+321	00:32:16,095	00:32:18,762	$( Giggling )	31
+322	00:32:21,132	00:32:23,434	$See you at sundown.	31
+323	00:32:23,468	00:32:26,036	$Tyrion: <i>Close the door!</i>	31
 324	00:32:38,184	00:32:41,186	$Did you have to bury her$in a place like this?	32
 325	00:32:42,923	00:32:45,224	$<i>She should be</i>$<i>on a hill somewhere</i>	32
 326	00:32:45,259	00:32:47,861	$with the sun$and the clouds above her.	32
@@ -331,11 +331,11 @@ frameNo	startTime	endTime	dialogue	chunk
 330	00:33:00,608	00:33:03,877	$In my dreams,$I kill him every night.	32
 331	00:33:05,412	00:33:07,880	$It's done, Your Grace.	32
 332	00:33:07,915	00:33:10,550	$The Targaryens are gone.	32
-333	00:33:12,553	00:33:14,854	$Not all of them.	33
-334	00:33:16,356	00:33:18,291	$<i>( Gull cawing )</i>	33
-335	00:33:25,632	00:33:27,733	$Man: <i>Daenerys!</i>	33
-336	00:33:30,804	00:33:32,671	$Daenerys.	33
-337	00:33:32,706	00:33:34,740	$There's our bride-to-be.	33
+333	00:33:12,553	00:33:14,854	$Not all of them.	32
+334	00:33:16,356	00:33:18,291	$<i>( Gull cawing )</i>	32
+335	00:33:25,632	00:33:27,733	$Man: <i>Daenerys!</i>	32
+336	00:33:30,804	00:33:32,671	$Daenerys.	32
+337	00:33:32,706	00:33:34,740	$There's our bride-to-be.	32
 338	00:33:35,642	00:33:38,777	$Look, a gift from Illyrio.	33
 339	00:33:39,846	00:33:41,613	$Touch it.	33
 340	00:33:41,648	00:33:43,849	$Go on, feel the fabric.	33
@@ -347,27 +347,27 @@ frameNo	startTime	endTime	dialogue	chunk
 346	00:34:02,636	00:34:04,971	$He knows I won't$forget my friends	33
 347	00:34:05,005	00:34:07,040	$when I come into my throne.	33
 348	00:34:11,177	00:34:13,845	$You still slouch.	33
-349	00:34:17,483	00:34:19,884	$Let them see.	34
-350	00:34:22,521	00:34:25,422	$You have a woman's body now.	34
-351	00:34:28,259	00:34:30,060	$( Sighs )	34
+349	00:34:17,483	00:34:19,884	$Let them see.	33
+350	00:34:22,521	00:34:25,422	$You have a woman's body now.	33
+351	00:34:28,259	00:34:30,060	$( Sighs )	33
 352	00:34:42,973	00:34:45,942	$I need you to be perfect today.	34
 353	00:34:47,344	00:34:49,245	$Can you do that for me?	34
 354	00:34:52,650	00:34:55,352	$You don't want to wake$the dragon, do you?	34
 355	00:34:56,789	00:34:58,389	$No.	34
 356	00:35:05,331	00:35:08,400	$When they write the history$of my reign, sweet sister,	34
 357	00:35:08,434	00:35:10,668	$they will say it began today.	34
-358	00:35:33,591	00:35:36,060	$It's too hot, my lady.	35
+358	00:35:33,591	00:35:36,060	$It's too hot, my lady.	34
 359	00:35:46,539	00:35:48,973	$<i>( Gulls cawing )</i>	35
 360	00:35:56,747	00:35:59,049	$Where is he?	35
 361	00:35:59,083	00:36:01,717	$The Dothraki are not known$for their punctuality.	35
-362	00:36:14,932	00:36:19,103	$( Illyrio speaking Dothraki )$Athchomar chomakaan, Khal vezhven.	36
-363	00:36:19,137	00:36:21,072	$May I present$my honored guests?	36
-364	00:36:21,106	00:36:24,810	$<i>Viserys of House Targaryen,</i>	36
-365	00:36:24,844	00:36:26,545	$<i>the third of his name,</i>	36
-366	00:36:26,580	00:36:29,915	$<i>the rightful King of the Andals</i>$<i>and the First Men,</i>	36
-367	00:36:29,949	00:36:31,683	$<i>and his sister</i>	36
-368	00:36:31,718	00:36:34,353	$<i>Daenerys of House Targaryen.</i>	36
-369	00:36:35,355	00:36:37,223	$( Speaking Dothraki )	36
+362	00:36:14,932	00:36:19,103	$( Illyrio speaking Dothraki )$Athchomar chomakaan, Khal vezhven.	35
+363	00:36:19,137	00:36:21,072	$May I present$my honored guests?	35
+364	00:36:21,106	00:36:24,810	$<i>Viserys of House Targaryen,</i>	35
+365	00:36:24,844	00:36:26,545	$<i>the third of his name,</i>	35
+366	00:36:26,580	00:36:29,915	$<i>the rightful King of the Andals</i>$<i>and the First Men,</i>	35
+367	00:36:29,949	00:36:31,683	$<i>and his sister</i>	35
+368	00:36:31,718	00:36:34,353	$<i>Daenerys of House Targaryen.</i>	35
+369	00:36:35,355	00:36:37,223	$( Speaking Dothraki )	35
 370	00:36:37,257	00:36:39,725	$Do you see$how long his hair is?	36
 371	00:36:39,760	00:36:42,461	$<i>When Dothraki are</i>$<i>defeated in combat,</i>	36
 372	00:36:42,495	00:36:46,431	$<i>they cut off their braids so the whole$world can see their shame.</i>	36
@@ -387,16 +387,16 @@ frameNo	startTime	endTime	dialogue	chunk
 386	00:38:03,840	00:38:05,540	$to your health.	37
 387	00:38:05,574	00:38:07,909	$They cry out$for their true king.	37
 388	00:38:11,514	00:38:13,382	$When will they be married?	37
-389	00:38:13,416	00:38:16,953	$Soon. The Dothraki never$stay still for long.	38
-390	00:38:16,987	00:38:19,522	$Is it true they lie$with their horses?	38
-391	00:38:19,557	00:38:22,626	$I wouldn't ask Khal Drogo.	38
-392	00:38:22,661	00:38:24,528	$Do you take me for a fool?	38
-393	00:38:24,562	00:38:26,397	$I take you for a king.	38
-394	00:38:26,431	00:38:29,634	$Kings lack the caution$of common men.	38
-395	00:38:29,668	00:38:32,036	$My apologies if$I've given offense.	38
-396	00:38:32,070	00:38:34,439	$I know how to play$a man like Drogo.	38
-397	00:38:34,473	00:38:37,375	$I give him a queen$and he gives me an army.	38
-398	00:38:37,410	00:38:40,279	$I don't want to be his queen.	38
+389	00:38:13,416	00:38:16,953	$Soon. The Dothraki never$stay still for long.	37
+390	00:38:16,987	00:38:19,522	$Is it true they lie$with their horses?	37
+391	00:38:19,557	00:38:22,626	$I wouldn't ask Khal Drogo.	37
+392	00:38:22,661	00:38:24,528	$Do you take me for a fool?	37
+393	00:38:24,562	00:38:26,397	$I take you for a king.	37
+394	00:38:26,431	00:38:29,634	$Kings lack the caution$of common men.	37
+395	00:38:29,668	00:38:32,036	$My apologies if$I've given offense.	37
+396	00:38:32,070	00:38:34,439	$I know how to play$a man like Drogo.	37
+397	00:38:34,473	00:38:37,375	$I give him a queen$and he gives me an army.	37
+398	00:38:37,410	00:38:40,279	$I don't want to be his queen.	37
 399	00:38:44,652	00:38:46,754	$I want to go home.	38
 400	00:38:47,655	00:38:49,122	$So do I.	38
 401	00:38:49,157	00:38:52,292	$I want us both to go home,	38
@@ -408,10 +408,10 @@ frameNo	startTime	endTime	dialogue	chunk
 407	00:39:06,741	00:39:09,943	$With Khal Drogo's army.	38
 408	00:39:09,978	00:39:12,980	$I would let his whole tribe fuck you...	38
 409	00:39:13,014	00:39:16,217	$All 40,000 men$and their horses too	38
-410	00:39:16,251	00:39:18,119	$if that's what it took.	39
-411	00:39:24,593	00:39:26,827	$( Kisses )	39
-412	00:39:35,235	00:39:37,670	$Do you think Joffrey will like me?	39
-413	00:39:37,704	00:39:40,239	$What if he thinks I'm ugly?	39
+410	00:39:16,251	00:39:18,119	$if that's what it took.	38
+411	00:39:24,593	00:39:26,827	$( Kisses )	38
+412	00:39:35,235	00:39:37,670	$Do you think Joffrey will like me?	38
+413	00:39:37,704	00:39:40,239	$What if he thinks I'm ugly?	38
 414	00:39:40,274	00:39:43,944	$Then he is the stupidest$prince that ever lived.	39
 415	00:39:46,280	00:39:48,848	$He's so handsome.	39
 416	00:39:48,883	00:39:51,584	$When would we be married?$Soon? Or do we have to wait?	39
@@ -424,28 +424,28 @@ frameNo	startTime	endTime	dialogue	chunk
 423	00:40:08,536	00:40:11,137	$You left your home$to come here.	39
 424	00:40:11,172	00:40:13,973	$And I'd be queen someday.	39
 425	00:40:15,042	00:40:16,610	$Please make father say yes!	39
-426	00:40:16,644	00:40:18,511	$- Sansa...$- Please please!	40
-427	00:40:18,545	00:40:21,481	$It's the only thing$I ever wanted.	40
-428	00:40:25,319	00:40:28,121	$<i>( Music playing, people chattering )</i>	40
-429	00:40:31,759	00:40:33,693	$( Laughter )	40
-430	00:40:35,196	00:40:37,464	$Fill that up!$Boys, Rodrik, come on.	40
-431	00:40:37,498	00:40:39,766	$<i>Come on!</i>	40
+426	00:40:16,644	00:40:18,511	$- Sansa...$- Please please!	39
+427	00:40:18,545	00:40:21,481	$It's the only thing$I ever wanted.	39
+428	00:40:25,319	00:40:28,121	$<i>( Music playing, people chattering )</i>	39
+429	00:40:31,759	00:40:33,693	$( Laughter )	39
+430	00:40:35,196	00:40:37,464	$Fill that up!$Boys, Rodrik, come on.	39
+431	00:40:37,498	00:40:39,766	$<i>Come on!</i>	39
 432	00:40:58,252	00:41:01,020	$Is he dead yet?	40
 433	00:41:04,792	00:41:07,260	$Uncle Benjen.	40
 434	00:41:07,295	00:41:09,062	$( Laughs )	40
 435	00:41:09,097	00:41:11,565	$You got bigger.	40
 436	00:41:11,600	00:41:15,503	$Rode all day. Didn't want to leave$you alone with the Lannisters.	40
 437	00:41:15,537	00:41:17,472	$Why aren't you at the feast?	40
-438	00:41:17,507	00:41:20,542	$Lady Stark thought it might$insult the royal family	41
-439	00:41:20,577	00:41:22,778	$to seat a bastard$in their midst.	41
-440	00:41:22,813	00:41:25,515	$Well, you're always$welcome on the wall.	41
-441	00:41:25,549	00:41:27,750	$No bastard was ever$refused a seat there.	41
-442	00:41:27,785	00:41:29,485	$So take me with you$when you go back.	41
-443	00:41:29,520	00:41:32,388	$- Jon...$- Father will let me if you ask him.	41
-444	00:41:32,422	00:41:34,623	$I know he will.	41
-445	00:41:37,093	00:41:39,327	$The wall isn't going anywhere.	41
-446	00:41:39,362	00:41:40,695	$I'm ready	41
-447	00:41:40,729	00:41:42,063	$to swear your oath.	41
+438	00:41:17,507	00:41:20,542	$Lady Stark thought it might$insult the royal family	40
+439	00:41:20,577	00:41:22,778	$to seat a bastard$in their midst.	40
+440	00:41:22,813	00:41:25,515	$Well, you're always$welcome on the wall.	40
+441	00:41:25,549	00:41:27,750	$No bastard was ever$refused a seat there.	40
+442	00:41:27,785	00:41:29,485	$So take me with you$when you go back.	40
+443	00:41:29,520	00:41:32,388	$- Jon...$- Father will let me if you ask him.	40
+444	00:41:32,422	00:41:34,623	$I know he will.	40
+445	00:41:37,093	00:41:39,327	$The wall isn't going anywhere.	40
+446	00:41:39,362	00:41:40,695	$I'm ready	40
+447	00:41:40,729	00:41:42,063	$to swear your oath.	40
 448	00:41:42,097	00:41:44,799	$You don't understand$what you'd be giving up.	41
 449	00:41:44,833	00:41:47,301	$We have no families.	41
 450	00:41:47,335	00:41:50,672	$- None of us will ever father sons...$- I don't care about that!	41
@@ -454,14 +454,14 @@ frameNo	startTime	endTime	dialogue	chunk
 453	00:41:57,647	00:41:59,882	$I'd better get inside,	41
 454	00:41:59,916	00:42:02,585	$rescue your father$from his guests.	41
 455	00:42:05,556	00:42:07,624	$We'll talk later.	41
-456	00:42:15,465	00:42:18,266	$Tyrion: <i>Your uncle's in the Night's Watch.</i>	42
-457	00:42:21,237	00:42:23,571	$What are you doing back there?	42
-458	00:42:23,606	00:42:26,774	$Preparing for a night$with your family.	42
-459	00:42:31,246	00:42:33,347	$I've always wanted$to see the wall.	42
-460	00:42:33,381	00:42:35,116	$You're Tyrion Lannister,	42
-461	00:42:35,150	00:42:36,751	$the queen's brother?	42
-462	00:42:36,785	00:42:38,986	$My greatest accomplishment.	42
-463	00:42:39,021	00:42:42,790	$And you... you're Ned Stark's$bastard, aren't you?	42
+456	00:42:15,465	00:42:18,266	$Tyrion: <i>Your uncle's in the Night's Watch.</i>	41
+457	00:42:21,237	00:42:23,571	$What are you doing back there?	41
+458	00:42:23,606	00:42:26,774	$Preparing for a night$with your family.	41
+459	00:42:31,246	00:42:33,347	$I've always wanted$to see the wall.	41
+460	00:42:33,381	00:42:35,116	$You're Tyrion Lannister,	41
+461	00:42:35,150	00:42:36,751	$the queen's brother?	41
+462	00:42:36,785	00:42:38,986	$My greatest accomplishment.	41
+463	00:42:39,021	00:42:42,790	$And you... you're Ned Stark's$bastard, aren't you?	41
 464	00:42:46,194	00:42:48,429	$Did I offend you?$Sorry.	42
 465	00:42:50,398	00:42:53,000	$You are the bastard though.	42
 466	00:42:54,235	00:42:56,637	$<i>Lord Eddard Stark is my father.</i>	42
@@ -472,9 +472,9 @@ frameNo	startTime	endTime	dialogue	chunk
 471	00:43:10,818	00:43:12,752	$The rest of the world will not.	42
 472	00:43:12,786	00:43:15,355	$Wear it like armor	42
 473	00:43:15,390	00:43:17,925	$and it can never$be used to hurt you.	42
-474	00:43:19,561	00:43:22,564	$What the hell do you know$about being a bastard?	43
-475	00:43:23,866	00:43:27,269	$All dwarves are bastards$in their father's eyes.	43
-476	00:43:42,753	00:43:45,555	$( Music playing, chattering )	43
+474	00:43:19,561	00:43:22,564	$What the hell do you know$about being a bastard?	42
+475	00:43:23,866	00:43:27,269	$All dwarves are bastards$in their father's eyes.	42
+476	00:43:42,753	00:43:45,555	$( Music playing, chattering )	42
 477	00:43:48,759	00:43:53,129	$You at a feast...$It's like a bear in a trap.	43
 478	00:43:54,965	00:43:57,299	$The boy I beheaded...	43
 479	00:43:57,334	00:43:59,902	$- Did you know him?$- Of course I did.	43
@@ -484,17 +484,17 @@ frameNo	startTime	endTime	dialogue	chunk
 483	00:44:05,642	00:44:09,112	$Pfft.$He was talking madness.	43
 484	00:44:10,281	00:44:12,516	$Said the walkers$slaughtered his friends.	43
 485	00:44:12,550	00:44:15,118	$The two he was with$are still missing.	43
-486	00:44:16,787	00:44:19,956	$Hmph.$A wildling ambush.	44
-487	00:44:19,990	00:44:21,624	$Maybe.	44
-488	00:44:21,658	00:44:25,194	$Direwolves south of the wall,	44
-489	00:44:25,229	00:44:27,730	$talk of the walkers,	44
-490	00:44:27,764	00:44:30,366	$and my brother might be$the next Hand of the King.	44
-491	00:44:30,400	00:44:33,669	$Winter <i>is</i> coming.	44
-492	00:44:35,172	00:44:37,072	$Winter is coming.	44
-493	00:44:37,107	00:44:38,574	$( Chuckles )	44
-494	00:44:38,608	00:44:41,543	$- Uncle Benjen.$- Robb boy.	44
-495	00:44:41,577	00:44:43,178	$- How are you?$- I'm good.	44
-496	00:44:43,212	00:44:45,580	$( Laughter )	44
+486	00:44:16,787	00:44:19,956	$Hmph.$A wildling ambush.	43
+487	00:44:19,990	00:44:21,624	$Maybe.	43
+488	00:44:21,658	00:44:25,194	$Direwolves south of the wall,	43
+489	00:44:25,229	00:44:27,730	$talk of the walkers,	43
+490	00:44:27,764	00:44:30,366	$and my brother might be$the next Hand of the King.	43
+491	00:44:30,400	00:44:33,669	$Winter <i>is</i> coming.	43
+492	00:44:35,172	00:44:37,072	$Winter is coming.	43
+493	00:44:37,107	00:44:38,574	$( Chuckles )	43
+494	00:44:38,608	00:44:41,543	$- Uncle Benjen.$- Robb boy.	43
+495	00:44:41,577	00:44:43,178	$- How are you?$- I'm good.	43
+496	00:44:43,212	00:44:45,580	$( Laughter )	43
 497	00:44:46,883	00:44:49,117	$Is this your first time$in the north, Your Grace?	44
 498	00:44:49,152	00:44:52,288	$Yes.$Lovely country.	44
 499	00:44:55,994	00:44:59,396	$I'm sure it's very grim$after King's Landing.	44
@@ -504,14 +504,14 @@ frameNo	startTime	endTime	dialogue	chunk
 503	00:45:10,108	00:45:12,276	$But you are a beauty.	44
 504	00:45:12,310	00:45:14,411	$- How old are you?$- 13, Your Grace.	44
 505	00:45:14,446	00:45:17,180	$You're tall.$Still growing?	44
-506	00:45:17,215	00:45:19,115	$I think so, Your Grace.	45
-507	00:45:19,150	00:45:21,384	$And have you bled yet?	45
-508	00:45:26,256	00:45:27,956	$No, Your Grace.	45
-509	00:45:29,326	00:45:31,494	$Your dress, did you make it?	45
-510	00:45:32,796	00:45:36,132	$Such a talent.$You must make something for me.	45
-511	00:45:37,902	00:45:41,004	$I hear we might share$a grandchild someday.	45
-512	00:45:41,039	00:45:43,274	$I hear the same.	45
-513	00:45:43,308	00:45:45,376	$Your daughter will$do well in the Capital.	45
+506	00:45:17,215	00:45:19,115	$I think so, Your Grace.	44
+507	00:45:19,150	00:45:21,384	$And have you bled yet?	44
+508	00:45:26,256	00:45:27,956	$No, Your Grace.	44
+509	00:45:29,326	00:45:31,494	$Your dress, did you make it?	44
+510	00:45:32,796	00:45:36,132	$Such a talent.$You must make something for me.	44
+511	00:45:37,902	00:45:41,004	$I hear we might share$a grandchild someday.	44
+512	00:45:41,039	00:45:43,274	$I hear the same.	44
+513	00:45:43,308	00:45:45,376	$Your daughter will$do well in the Capital.	44
 514	00:45:45,410	00:45:49,114	$Such a beauty shouldn't stay$hidden up here forever.	45
 515	00:46:05,198	00:46:08,501	$- Your pardon.$- I hear we might be neighbors soon.	45
 516	00:46:08,535	00:46:10,202	$- I hope it's true.$- Yes,	45
@@ -519,17 +519,17 @@ frameNo	startTime	endTime	dialogue	chunk
 518	00:46:12,138	00:46:13,639	$I'm sure we'll have$a tournament	45
 519	00:46:13,674	00:46:15,641	$to celebrate your new$title... if you accept.	45
 520	00:46:15,676	00:46:17,878	$It would be good$to have you on the field.	45
-521	00:46:17,912	00:46:20,080	$The competition$has become a bit stale.	46
-522	00:46:20,114	00:46:22,850	$- I don't fight in tournaments.$- No?	46
-523	00:46:22,884	00:46:24,385	$Getting a little old for it?	46
-524	00:46:24,419	00:46:28,056	$( Chuckles )$I don't fight in tournaments	46
-525	00:46:28,090	00:46:30,591	$because when I fight$a man for real	46
-526	00:46:30,626	00:46:32,860	$I don't want him to know$what I can do.	46
-527	00:46:34,696	00:46:36,496	$Well said.	46
-528	00:46:37,531	00:46:40,466	$- ( Men laughing )$- Arya!	46
-529	00:46:40,500	00:46:43,102	$It's not funny!	46
-530	00:46:43,136	00:46:45,871	$<i>She always does this.</i>	46
-531	00:46:45,905	00:46:47,773	$<i>This was my favorite dress.</i>	46
+521	00:46:17,912	00:46:20,080	$The competition$has become a bit stale.	45
+522	00:46:20,114	00:46:22,850	$- I don't fight in tournaments.$- No?	45
+523	00:46:22,884	00:46:24,385	$Getting a little old for it?	45
+524	00:46:24,419	00:46:28,056	$( Chuckles )$I don't fight in tournaments	45
+525	00:46:28,090	00:46:30,591	$because when I fight$a man for real	45
+526	00:46:30,626	00:46:32,860	$I don't want him to know$what I can do.	45
+527	00:46:34,696	00:46:36,496	$Well said.	45
+528	00:46:37,531	00:46:40,466	$- ( Men laughing )$- Arya!	45
+529	00:46:40,500	00:46:43,102	$It's not funny!	45
+530	00:46:43,136	00:46:45,871	$<i>She always does this.</i>	45
+531	00:46:45,905	00:46:47,773	$<i>This was my favorite dress.</i>	45
 532	00:46:47,807	00:46:51,076	$She always does it$and it's not funny!	46
 533	00:46:51,111	00:46:53,045	$Robb: Time for bed.	46
 534	00:46:54,515	00:46:56,149	$( Groans )	46
@@ -538,15 +538,15 @@ frameNo	startTime	endTime	dialogue	chunk
 537	00:47:09,531	00:47:12,033	$in that rats' nest they call a Capital.	46
 538	00:47:13,068	00:47:15,802	$I <i>won't</i> let him take you.	46
 539	00:47:17,271	00:47:19,739	$The king takes what he wants.	46
-540	00:47:19,773	00:47:22,341	$( Huffs )$That's why he's king.	47
-541	00:47:23,810	00:47:27,245	"$I'll say,$""Listen, fat man."""	47
-542	00:47:27,280	00:47:28,613	$( Laughs )	47
-543	00:47:28,647	00:47:31,149	"$""You are not taking$my husband anywhere."	47
-544	00:47:31,183	00:47:33,585	"$He belongs to me now."""	47
-545	00:47:37,290	00:47:39,291	$How did he get so fat?	47
-546	00:47:39,325	00:47:42,160	$He only stops eating when$it's time for a drink.	47
-547	00:47:43,596	00:47:44,996	$<i>( Knocks )</i>	47
-548	00:47:45,030	00:47:47,799	$Man: <i>It's Maester Luwin, my lord.</i>	47
+540	00:47:19,773	00:47:22,341	$( Huffs )$That's why he's king.	46
+541	00:47:23,810	00:47:27,245	"$I'll say,$""Listen, fat man."""	46
+542	00:47:27,280	00:47:28,613	$( Laughs )	46
+543	00:47:28,647	00:47:31,149	"$""You are not taking$my husband anywhere."	46
+544	00:47:31,183	00:47:33,585	"$He belongs to me now."""	46
+545	00:47:37,290	00:47:39,291	$How did he get so fat?	46
+546	00:47:39,325	00:47:42,160	$He only stops eating when$it's time for a drink.	46
+547	00:47:43,596	00:47:44,996	$<i>( Knocks )</i>	46
+548	00:47:45,030	00:47:47,799	$Man: <i>It's Maester Luwin, my lord.</i>	46
 549	00:47:49,302	00:47:51,704	$Send him in.	47
 550	00:47:53,540	00:47:55,708	$Pardon, my lord, my lady.	47
 551	00:47:55,743	00:47:58,578	$A rider in the night...	47
@@ -554,13 +554,13 @@ frameNo	startTime	endTime	dialogue	chunk
 553	00:48:08,389	00:48:11,058	$- Stay.$- This was sent from the Eyrie.	47
 554	00:48:11,092	00:48:13,627	$( Door closes )	47
 555	00:48:16,931	00:48:19,299	$What's she doing at the Eyrie?	47
-556	00:48:19,333	00:48:21,968	$She hasn't been back there$since her wedding.	48
-557	00:48:30,478	00:48:32,446	$What news?	48
-558	00:48:33,782	00:48:36,551	$<i>She's fled the Capital.</i>	48
-559	00:48:38,687	00:48:41,356	$She says Jon Arryn was murdered.	48
-560	00:48:41,391	00:48:43,359	$By the Lannisters.	48
-561	00:48:43,393	00:48:46,162	$She says the king is in danger.	48
-562	00:48:46,196	00:48:48,465	$She's fresh widowed, Cat.	48
+556	00:48:19,333	00:48:21,968	$She hasn't been back there$since her wedding.	47
+557	00:48:30,478	00:48:32,446	$What news?	47
+558	00:48:33,782	00:48:36,551	$<i>She's fled the Capital.</i>	47
+559	00:48:38,687	00:48:41,356	$She says Jon Arryn was murdered.	47
+560	00:48:41,391	00:48:43,359	$By the Lannisters.	47
+561	00:48:43,393	00:48:46,162	$She says the king is in danger.	47
+562	00:48:46,196	00:48:48,465	$She's fresh widowed, Cat.	47
 563	00:48:48,499	00:48:50,500	$She doesn't know what she's saying.	48
 564	00:48:50,534	00:48:53,036	$Lysa's head would be$on a spike right now	48
 565	00:48:53,070	00:48:55,238	$if the wrong people$had found that letter.	48
@@ -571,21 +571,21 @@ frameNo	startTime	endTime	dialogue	chunk
 570	00:49:12,223	00:49:15,226	$and the Lannisters conspire$against the Throne,	48
 571	00:49:15,260	00:49:18,562	$who but you can$protect the king?	48
 572	00:49:18,597	00:49:20,798	$They murdered the last Hand.	48
-573	00:49:20,832	00:49:23,201	$Now you want Ned$to take the job?	49
-574	00:49:23,235	00:49:25,069	$The king rode for a month	49
-575	00:49:25,104	00:49:27,138	$to ask for Lord Stark's help.	49
-576	00:49:27,172	00:49:29,807	$He's the only one he trusts.	49
-577	00:49:31,276	00:49:34,413	$You swore the king an oath, my lord.	49
-578	00:49:34,447	00:49:37,548	$He's spent half his life$fighting Robert's wars.	49
-579	00:49:37,583	00:49:40,084	$He owes him nothing.	49
-580	00:49:41,920	00:49:45,022	$Your father and brother$rode south once	49
-581	00:49:45,056	00:49:47,924	$on a king's demand.	49
+573	00:49:20,832	00:49:23,201	$Now you want Ned$to take the job?	48
+574	00:49:23,235	00:49:25,069	$The king rode for a month	48
+575	00:49:25,104	00:49:27,138	$to ask for Lord Stark's help.	48
+576	00:49:27,172	00:49:29,807	$He's the only one he trusts.	48
+577	00:49:31,276	00:49:34,413	$You swore the king an oath, my lord.	48
+578	00:49:34,447	00:49:37,548	$He's spent half his life$fighting Robert's wars.	48
+579	00:49:37,583	00:49:40,084	$He owes him nothing.	48
+580	00:49:41,920	00:49:45,022	$Your father and brother$rode south once	48
+581	00:49:45,056	00:49:47,924	$on a king's demand.	48
 582	00:49:49,727	00:49:51,928	$A different time.	49
 583	00:49:53,364	00:49:55,431	$A different king.	49
 584	00:49:58,702	00:50:00,936	$( Drumming, clamoring )	49
-585	00:50:22,158	00:50:24,192	$( Hissing )	50
-586	00:50:29,298	00:50:31,432	$( Gasps )	50
-587	00:50:48,320	00:50:50,921	$<i>( Jeering calls, drumming continues )</i>	50
+585	00:50:22,158	00:50:24,192	$( Hissing )	49
+586	00:50:29,298	00:50:31,432	$( Gasps )	49
+587	00:50:48,320	00:50:50,921	$<i>( Jeering calls, drumming continues )</i>	49
 588	00:50:56,394	00:50:58,195	$When do I meet with the Khal?	50
 589	00:50:58,230	00:51:00,097	$We need to begin$planning the invasion.	50
 590	00:51:00,132	00:51:02,599	$If Khal Drogo has$promised you a crown,	50
@@ -593,72 +593,72 @@ frameNo	startTime	endTime	dialogue	chunk
 592	00:51:04,635	00:51:06,736	$When their omens favor war.	50
 593	00:51:06,770	00:51:10,039	$I piss on Dothraki omens.	50
 594	00:51:10,074	00:51:13,310	$I've waited 17 years$to get my throne back.	50
-595	00:51:22,488	00:51:25,657	$- <i>( Crowd ululating )</i>$- ( Grunting )	51
-596	00:51:40,072	00:51:42,374	$( Cheering )	51
+595	00:51:22,488	00:51:25,657	$- <i>( Crowd ululating )</i>$- ( Grunting )	50
+596	00:51:40,072	00:51:42,374	$( Cheering )	50
 597	00:51:53,019	00:51:54,653	$<i>( Blades clang )</i>	51
 598	00:52:04,096	00:52:05,497	$( Screams )	51
 599	00:52:13,172	00:52:14,639	$A Dothraki wedding	51
 600	00:52:14,674	00:52:18,210	$without at least three deaths$is considered a dull affair.	51
 601	00:52:19,479	00:52:21,847	$( Laughing )	51
-602	00:52:30,756	00:52:32,924	$<i>Jadi, zhey Jorah Andahli!</i>	52
-603	00:52:32,959	00:52:34,826	$<i>Khal vezhven.</i>	52
-604	00:52:40,566	00:52:43,601	$A small gift,$for the new khaleesi...	52
-605	00:52:44,837	00:52:47,139	$Songs and Histories$from the Seven Kingdoms.	52
-606	00:52:48,841	00:52:50,241	$Thank you, ser.	52
-607	00:52:51,844	00:52:54,579	$Are you from my country?	52
+602	00:52:30,756	00:52:32,924	$<i>Jadi, zhey Jorah Andahli!</i>	51
+603	00:52:32,959	00:52:34,826	$<i>Khal vezhven.</i>	51
+604	00:52:40,566	00:52:43,601	$A small gift,$for the new khaleesi...	51
+605	00:52:44,837	00:52:47,139	$Songs and Histories$from the Seven Kingdoms.	51
+606	00:52:48,841	00:52:50,241	$Thank you, ser.	51
+607	00:52:51,844	00:52:54,579	$Are you from my country?	51
 608	00:52:54,613	00:52:56,781	$Ser Jorah Mormont$of Bear Island.	52
 609	00:52:56,816	00:52:59,550	$I served your father for many years.	52
 610	00:52:59,584	00:53:02,686	$Gods be good, I hope to always$serve the rightful king.	52
-611	00:53:25,812	00:53:28,414	$Illyrio: Dragon's eggs, Daenerys,	53
-612	00:53:28,449	00:53:31,418	$from the Shadow Lands$beyond Asshai.	53
-613	00:53:31,452	00:53:34,487	$The ages have$turned them to stone,	53
-614	00:53:34,521	00:53:36,623	$but they will always be beautiful.	53
-615	00:53:38,760	00:53:41,062	$Thank you, magister.	53
-616	00:54:48,864	00:54:51,332	$She's beautiful.	54
+611	00:53:25,812	00:53:28,414	$Illyrio: Dragon's eggs, Daenerys,	52
+612	00:53:28,449	00:53:31,418	$from the Shadow Lands$beyond Asshai.	52
+613	00:53:31,452	00:53:34,487	$The ages have$turned them to stone,	52
+614	00:53:34,521	00:53:36,623	$but they will always be beautiful.	52
+615	00:53:38,760	00:53:41,062	$Thank you, magister.	52
+616	00:54:48,864	00:54:51,332	$She's beautiful.	53
 617	00:54:55,404	00:54:57,772	$Ser Jorah,$I don't know how to say	54
 618	00:54:57,807	00:54:59,641	$thank you in Dothraki.	54
 619	00:54:59,676	00:55:02,611	$There is no word$for thank you in Dothraki.	54
-620	00:55:23,699	00:55:25,700	$Make him happy.	55
-621	00:55:38,147	00:55:40,448	$( Waves crashing )	55
-622	00:56:24,962	00:56:27,163	$- No.$- ( Sobs )	56
-623	00:56:30,200	00:56:32,368	$Do you know the common tongue?	56
-624	00:56:36,807	00:56:38,841	$- <i>( Pin clanks )</i>$- No.	56
-625	00:56:42,713	00:56:45,281	"$Is ""no"" the only word that you know?"	56
-626	00:56:46,383	00:56:48,117	$<i>No.</i>	56
-627	00:56:53,657	00:56:55,825	$( Sobbing continues )	56
+620	00:55:23,699	00:55:25,700	$Make him happy.	54
+621	00:55:38,147	00:55:40,448	$( Waves crashing )	54
+622	00:56:24,962	00:56:27,163	$- No.$- ( Sobs )	55
+623	00:56:30,200	00:56:32,368	$Do you know the common tongue?	55
+624	00:56:36,807	00:56:38,841	$- <i>( Pin clanks )</i>$- No.	55
+625	00:56:42,713	00:56:45,281	"$Is ""no"" the only word that you know?"	55
+626	00:56:46,383	00:56:48,117	$<i>No.</i>	55
+627	00:56:53,657	00:56:55,825	$( Sobbing continues )	55
 628	00:57:16,413	00:57:18,647	$Rough night, Imp?	56
 629	00:57:18,681	00:57:20,749	$If I get through this$without squirting	56
 630	00:57:20,784	00:57:23,185	$from one end or the other$it'll be a miracle.	56
-631	00:57:23,219	00:57:25,587	$I didn't pick you for a hunter.	57
-632	00:57:25,621	00:57:28,723	$The greatest in the land...$my spear never misses.	57
-633	00:57:29,925	00:57:32,494	$It's not hunting$if you pay for it.	57
-634	00:57:40,636	00:57:42,904	$Are you as good with a$spear as you used to be?	57
-635	00:57:42,938	00:57:45,473	$No, but I'm still better than you.	57
-636	00:57:45,508	00:57:47,409	$( Laughs )	57
-637	00:57:48,544	00:57:50,411	$I know what I'm$putting you through.	57
-638	00:57:50,446	00:57:52,447	$Thank you for saying yes.	57
-639	00:57:53,882	00:57:56,317	$I only ask you$because I need you.	57
+631	00:57:23,219	00:57:25,587	$I didn't pick you for a hunter.	56
+632	00:57:25,621	00:57:28,723	$The greatest in the land...$my spear never misses.	56
+633	00:57:29,925	00:57:32,494	$It's not hunting$if you pay for it.	56
+634	00:57:40,636	00:57:42,904	$Are you as good with a$spear as you used to be?	56
+635	00:57:42,938	00:57:45,473	$No, but I'm still better than you.	56
+636	00:57:45,508	00:57:47,409	$( Laughs )	56
+637	00:57:48,544	00:57:50,411	$I know what I'm$putting you through.	56
+638	00:57:50,446	00:57:52,447	$Thank you for saying yes.	56
+639	00:57:53,882	00:57:56,317	$I only ask you$because I need you.	56
 640	00:57:57,519	00:57:59,420	$You're a loyal friend.	57
 641	00:57:59,455	00:58:02,757	$You hear me?$A <i>loyal</i> friend.	57
 642	00:58:02,792	00:58:04,592	$The last one I've got.	57
 643	00:58:06,228	00:58:08,396	$- I hope I'll serve you well.$- You will.	57
 644	00:58:09,931	00:58:12,867	$And I'll make sure you don't look$so fucking grim all the time.	57
 645	00:58:14,135	00:58:16,571	$<i>Come on, boys,</i>$<i>let's go kill some boar!</i>	57
-646	00:58:26,515	00:58:28,683	$Come on, you.	58
-647	00:58:43,233	00:58:45,602	$( Whines )	58
-648	00:58:53,477	00:58:55,144	$( Grunts )	58
+646	00:58:26,515	00:58:28,683	$Come on, you.	57
+647	00:58:43,233	00:58:45,602	$( Whines )	57
+648	00:58:53,477	00:58:55,144	$( Grunts )	57
 649	00:58:59,015	00:59:00,949	$( Soft barks )	58
 650	00:59:07,256	00:59:09,591	$<i>( Woman gasping )</i>	58
 651	00:59:13,229	00:59:15,864	$<i>( Moaning )</i>	58
-652	00:59:25,010	00:59:27,979	$( Grunting, moaning )	59
-653	00:59:42,994	00:59:45,528	$( Gasps )$Stop!	59
-654	00:59:45,563	00:59:47,430	$- Stop.$- ( Gasps )	59
-655	00:59:52,236	00:59:54,505	$Are you completely mad?	59
-656	00:59:54,539	00:59:57,441	$- He saw us.$- It's all right, it's all right.	59
-657	00:59:57,475	00:59:59,343	$- It's all right.$- He saw us!	59
+652	00:59:25,010	00:59:27,979	$( Grunting, moaning )	58
+653	00:59:42,994	00:59:45,528	$( Gasps )$Stop!	58
+654	00:59:45,563	00:59:47,430	$- Stop.$- ( Gasps )	58
+655	00:59:52,236	00:59:54,505	$Are you completely mad?	58
+656	00:59:54,539	00:59:57,441	$- He saw us.$- It's all right, it's all right.	58
+657	00:59:57,475	00:59:59,343	$- It's all right.$- He saw us!	58
 658	00:59:59,377	01:00:01,646	$I heard you the first time.	59
 659	01:00:02,715	01:00:04,416	$( Whimpers )	59
 660	01:00:05,618	01:00:08,053	$Quite the little climber,$aren't you?	59
 661	01:00:09,189	01:00:12,124	$- How old are you, boy?$- 10.	59
 662	01:00:12,158	01:00:13,858	$10.	59
-663	01:00:22,567	01:00:25,069	$The things I do for love.	60
+663	01:00:22,567	01:00:25,069	$The things I do for love.	59

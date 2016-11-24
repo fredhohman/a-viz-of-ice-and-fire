@@ -23,7 +23,7 @@ frameNo	startTime	endTime	dialogue	chunk
 23	00:02:47,513	00:02:50,315	$If you'd rather return$to the fighting pits,	2
 24	00:02:50,349	00:02:52,584	$just say the word.	2
 25	00:02:54,720	00:02:57,255	$When I was a young man,$I heard a story	2
-26	00:02:57,289	00:03:00,758	$about a baby born$during the worst storm in living memory.	3
+26	00:02:57,289	00:03:00,758	$about a baby born$during the worst storm in living memory.	2
 27	00:03:00,793	00:03:02,794	$She had no wealth,$no lands, no army,	3
 28	00:03:02,828	00:03:06,231	$<i>only a name</i>$<i>and a handful of supporters,</i>	3
 29	00:03:06,265	00:03:09,767	$most of whom probably thought they$could use that name to benefit themselves.	3
@@ -46,7 +46,7 @@ frameNo	startTime	endTime	dialogue	chunk
 46	00:03:52,811	00:03:54,812	$The strengths$and weaknesses of the houses	3
 47	00:03:54,847	00:03:56,147	$<i>that will either</i>$<i>join or oppose you.</i>	3
 48	00:03:56,181	00:03:59,183	$I will have$a very large army	3
-49	00:03:59,218	00:04:00,785	$and very large dragons.	4
+49	00:03:59,218	00:04:00,785	$and very large dragons.	3
 50	00:04:00,819	00:04:04,389	$Killing and politics$aren't always the same thing.	4
 51	00:04:04,423	00:04:06,357	$When I served$as Hand of the King,	4
 52	00:04:06,392	00:04:09,027	$I did quite well with the latter$considering the king in question	4
@@ -65,7 +65,7 @@ frameNo	startTime	endTime	dialogue	chunk
 65	00:04:52,338	00:04:54,372	$I can't remember$ever seeing a sane man	4
 66	00:04:54,473	00:04:56,774	$as devoted to anything$as he is to serving you.	4
 67	00:04:56,809	00:04:59,877	$<i>He claims he would kill</i>$<i>for you and die for you</i>	4
-68	00:04:59,912	00:05:02,614	$<i>and nothing I ever witnessed</i>$<i>gives me reason to doubt him.</i>	5
+68	00:04:59,912	00:05:02,614	$<i>and nothing I ever witnessed</i>$<i>gives me reason to doubt him.</i>	4
 69	00:05:06,552	00:05:08,686	$And yet he did$betray you.	5
 70	00:05:21,166	00:05:23,801	$Did he have an opportunity$to confess his betrayal?	5
 71	00:05:23,836	00:05:26,070	$Yes.	5
@@ -79,7 +79,7 @@ frameNo	startTime	endTime	dialogue	chunk
 79	00:05:48,627	00:05:51,062	$<i>but one of great</i>$<i>significance to you.</i>	5
 80	00:05:51,096	00:05:54,232	$<i>He did not trust that you would</i>$<i>be wise >enough to forgive him.</i>	5
 81	00:05:55,367	00:05:57,268	$So I should kill him?	5
-82	00:05:58,570	00:06:00,638	$A ruler who kills$those devoted to her	6
+82	00:05:58,570	00:06:00,638	$A ruler who kills$those devoted to her	5
 83	00:06:00,673	00:06:03,374	$is not a ruler$who inspires devotion.	6
 84	00:06:03,409	00:06:05,576	$And you're going to need$to inspire devotion,	6
 85	00:06:05,611	00:06:09,447	$a lot of it, if you're ever going to rule$across the Narrow Sea.	6
@@ -93,7 +93,7 @@ frameNo	startTime	endTime	dialogue	chunk
 93	00:07:42,474	00:07:44,375	$I meant it.	7
 94	00:07:44,409	00:07:48,179	$My face will be$the last thing you see--	7
 95	00:07:53,886	00:07:56,187	$<i>( door opens )</i>	7
-96	00:07:58,056	00:08:00,625	$( sobbing )	8
+96	00:07:58,056	00:08:00,625	$( sobbing )	7
 97	00:08:02,528	00:08:04,462	$( screams )	8
 98	00:08:04,496	00:08:08,199	$My name is Lanna.$I'm an orphan.	8
 99	00:08:09,802	00:08:11,736	$<i>When I was eight,</i>$<i>I begged enough money</i>	8
@@ -112,7 +112,7 @@ frameNo	startTime	endTime	dialogue	chunk
 112	00:08:52,044	00:08:55,179	$Turn left$onto Ragman Lane	8
 113	00:08:55,214	00:08:56,714	$where I do$most of my trade.	8
 114	00:08:56,748	00:08:58,983	$Lanna is very impressive.	8
-115	00:08:59,017	00:09:01,686	$Very industrious.	9
+115	00:08:59,017	00:09:01,686	$Very industrious.	8
 116	00:09:01,720	00:09:04,422	$She will make a fine servant$for the Many-Faced God.	9
 117	00:09:04,456	00:09:06,457	$How will she serve him?	9
 118	00:09:06,491	00:09:09,927	$She will no longer$turn left onto Ragman Lane.	9
@@ -127,7 +127,7 @@ frameNo	startTime	endTime	dialogue	chunk
 127	00:09:32,584	00:09:33,618	$( laughs )	9
 128	00:09:45,197	00:09:48,266	$Oysters, clams,$and cockles!	9
 129	00:09:56,308	00:09:59,677	$Oysters, clams,$and cockles!	9
-130	00:09:59,711	00:10:02,780	$Your oysters fresh?	10
+130	00:09:59,711	00:10:02,780	$Your oysters fresh?	9
 131	00:10:02,814	00:10:04,448	$Best in the city.	10
 132	00:10:04,483	00:10:06,584	$You wouldn't lie$to an old man, would you?	10
 133	00:10:19,498	00:10:21,532	$Mm.	10
@@ -159,7 +159,7 @@ frameNo	startTime	endTime	dialogue	chunk
 159	00:11:44,516	00:11:48,319	$what can they do to such a man$if he keeps their money for himself?	11
 160	00:11:50,355	00:11:52,957	$To whom can they turn$for recourse?	11
 161	00:11:52,991	00:11:55,292	$( whispering prayer )	11
-162	00:11:58,997	00:12:00,564	$The Many-Faced God.	12
+162	00:11:58,997	00:12:00,564	$The Many-Faced God.	11
 163	00:12:02,501	00:12:05,002	$You said you didn't know$what I would see at the docks.	12
 164	00:12:05,103	00:12:08,072	$A man had no idea what a girl would see$and what she would not.	12
 165	00:12:10,142	00:12:12,910	$A girl named Lanna$will return to the docks.	12
@@ -256,7 +256,7 @@ frameNo	startTime	endTime	dialogue	chunk
 256	00:17:51,316	00:17:52,549	$Tell me$to my face, Theon.	17
 257	00:17:52,584	00:17:54,418	$Tell me that they$weren't your brothers!	17
 258	00:17:54,452	00:17:55,986	$They weren't$Bran and Rickon!	17
-259	00:17:57,989	00:18:00,424	$I couldn't find them.	18
+259	00:17:57,989	00:18:00,424	$I couldn't find them.	17
 260	00:18:06,798	00:18:08,732	$It was two farm boys.	18
 261	00:18:12,737	00:18:15,839	$I killed them and burned them$so no one would know.	18
 262	00:18:20,712	00:18:23,313	$You didn't?	18
@@ -272,8 +272,8 @@ frameNo	startTime	endTime	dialogue	chunk
 272	00:18:47,739	00:18:49,706	$The gates have been$reinforced.	18
 273	00:18:49,741	00:18:52,810	$We have enough food$for six months.	18
 274	00:18:52,844	00:18:56,647	$We are more prepared$for a siege than they could ever be.	18
-275	00:18:56,681	00:18:59,283	$All we have to do$is wait for them to freeze,	19
-276	00:18:59,317	00:19:02,152	$starve, and mutiny.	19
+275	00:18:56,681	00:18:59,283	$All we have to do$is wait for them to freeze,	18
+276	00:18:59,317	00:19:02,152	$starve, and mutiny.	18
 277	00:19:05,190	00:19:06,356	$You disagree?	19
 278	00:19:06,391	00:19:08,725	$Stannis isn't$from the North.	19
 279	00:19:08,760	00:19:10,794	$You are, Father.	19
@@ -294,7 +294,7 @@ frameNo	startTime	endTime	dialogue	chunk
 294	00:19:40,625	00:19:43,126	$I need 20 good men.	19
 295	00:19:50,969	00:19:52,703	$So, have you$decided yet?	19
 296	00:19:52,737	00:19:55,205	$Whether I'm worthy$of your service?	19
-297	00:19:57,242	00:20:00,744	$Have you decided yet$whether you're going to have me killed?	20
+297	00:19:57,242	00:20:00,744	$Have you decided yet$whether you're going to have me killed?	19
 298	00:20:00,778	00:20:02,980	$It's probably$my safest option.	20
 299	00:20:05,850	00:20:08,051	$I can see why$you would think so.	20
 300	00:20:08,086	00:20:10,287	$It's what your father$would have done.	20
@@ -313,7 +313,7 @@ frameNo	startTime	endTime	dialogue	chunk
 313	00:20:50,728	00:20:53,764	$So, here we sit.	20
 314	00:20:53,831	00:20:56,800	$Two terrible children$of two terrible fathers.	20
 315	00:20:56,834	00:20:58,535	$I'm terrible?	20
-316	00:20:58,570	00:21:00,704	$I've heard stories.	21
+316	00:20:58,570	00:21:00,704	$I've heard stories.	20
 317	00:21:00,738	00:21:04,074	$Why did you travel to the far side$of the world to meet someone terrible?	21
 318	00:21:04,075	00:21:06,199	$To see if you were$the right kind of terrible.	21
 319	00:21:06,200	00:21:06,840	$Which kind is that?	21
@@ -332,8 +332,8 @@ frameNo	startTime	endTime	dialogue	chunk
 332	00:21:48,686	00:21:51,855	$Varys?$King Robert's spymaster?	21
 333	00:21:51,923	00:21:55,425	$Yes, he's the one$who convinced me to come find you.	21
 334	00:21:55,460	00:21:57,060	$He was my travelling$companion	21
-335	00:21:57,095	00:21:59,396	$before Ser Jorah seized$that role for himself.	22
-336	00:21:59,430	00:22:02,099	$Jorah sent my secrets$to Varys.	22
+335	00:21:57,095	00:21:59,396	$before Ser Jorah seized$that role for himself.	21
+336	00:21:59,430	00:22:02,099	$Jorah sent my secrets$to Varys.	21
 337	00:22:02,133	00:22:06,480	$For 20 years the Spider oversaw$the campaign to find and kill me.	22
 338	00:22:06,481	00:22:08,673	$He did what he had$to do to survive.	22
 339	00:22:08,706	00:22:11,842	$He did a lot of other things as well,$things he didn't have to do.	22
@@ -352,8 +352,8 @@ frameNo	startTime	endTime	dialogue	chunk
 352	00:22:43,141	00:22:45,175	$my final days$were interesting.	22
 353	00:22:51,349	00:22:53,316	$I'm not$going to kill you.	22
 354	00:22:55,286	00:22:58,121	$No? Banish me?	22
-355	00:22:58,156	00:22:59,890	$No.	23
-356	00:22:59,924	00:23:01,591	$So if I'm not going$to be murdered	23
+355	00:22:58,156	00:22:59,890	$No.	22
+356	00:22:59,924	00:23:01,591	$So if I'm not going$to be murdered	22
 357	00:23:01,626	00:23:03,026	$and I'm not going$to be banished--	23
 358	00:23:03,061	00:23:04,494	$You're going$to advise me.	23
 359	00:23:06,264	00:23:08,632	$While you can still speak$in complete sentences.	23
@@ -374,8 +374,8 @@ frameNo	startTime	endTime	dialogue	chunk
 374	00:23:50,007	00:23:52,743	$When you get back to your home,$who supports you?	23
 375	00:23:52,777	00:23:54,311	$The common people.	23
 376	00:23:54,345	00:23:56,947	$Let's be generous$and assume that's going to happen.	23
-377	00:23:56,981	00:23:59,649	$Here in Slaver's Bay,$you had the support of the common people	24
-378	00:23:59,684	00:24:02,119	$and only$the common people.	24
+377	00:23:56,981	00:23:59,649	$Here in Slaver's Bay,$you had the support of the common people	23
+378	00:23:59,684	00:24:02,119	$and only$the common people.	23
 379	00:24:02,153	00:24:06,022	$What was that like?$Ruling without the rich?	24
 380	00:24:06,057	00:24:08,525	$House Targaryen is gone.	24
 381	00:24:08,559	00:24:11,294	$Not a single person who shares$your blood is alive to support you.	24
@@ -395,7 +395,7 @@ frameNo	startTime	endTime	dialogue	chunk
 395	00:24:46,264	00:24:48,932	$You're not the first person$who's ever dreamt it.	24
 396	00:24:48,966	00:24:51,902	$I'm not going$to stop the wheel.	24
 397	00:24:53,237	00:24:55,672	$I'm going to break$the wheel.	24
-398	00:24:59,177	00:25:00,944	$( grunting )	25
+398	00:24:59,177	00:25:00,944	$( grunting )	24
 399	00:25:09,754	00:25:11,822	$( whistles )	25
 400	00:25:18,196	00:25:22,566	$You said whoever wins will fight$at the Great Pit in front of the queen.	25
 401	00:25:22,600	00:25:24,534	$I won.	25
@@ -409,7 +409,7 @@ frameNo	startTime	endTime	dialogue	chunk
 409	00:25:42,386	00:25:44,054	$Why did you come back?	25
 410	00:25:48,960	00:25:50,894	$Let me fight for her	25
 411	00:25:50,928	00:25:52,963	$and I belong to you.	25
-412	00:25:58,202	00:26:01,037	$Woman:$<i>Thirsty?</i>	26
+412	00:25:58,202	00:26:01,037	$Woman:$<i>Thirsty?</i>	25
 413	00:26:01,105	00:26:02,973	$Confess.	26
 414	00:26:06,544	00:26:09,779	$I'll get out of here,$you realize, before long.	26
 415	00:26:09,814	00:26:11,014	$Confess.	26
@@ -421,7 +421,7 @@ frameNo	startTime	endTime	dialogue	chunk
 421	00:26:28,199	00:26:31,034	$imagining hideous ways$for you to die.	26
 422	00:26:41,379	00:26:43,546	$<i>( door opens )</i>	26
 423	00:26:43,581	00:26:46,683	$<i>( door closes, locks )</i>	26
-424	00:26:56,294	00:26:58,561	$( slurping )	27
+424	00:26:56,294	00:26:58,561	$( slurping )	26
 425	00:27:07,104	00:27:10,006	$<i>( wind howling )</i>	27
 426	00:27:16,380	00:27:18,315	$Does it hurt?	27
 427	00:27:19,750	00:27:21,785	$No.	27
@@ -436,8 +436,8 @@ frameNo	startTime	endTime	dialogue	chunk
 436	00:27:49,347	00:27:51,047	$- Who's there?$- <i>Olly.</i>	27
 437	00:27:51,082	00:27:53,083	$Oh.	27
 438	00:27:53,117	00:27:54,985	$Come in.	27
-439	00:27:57,488	00:27:59,456	$I heard what happened.	28
-440	00:27:59,490	00:28:02,225	$Oh, not to worry.	28
+439	00:27:57,488	00:27:59,456	$I heard what happened.	27
+440	00:27:59,490	00:28:02,225	$Oh, not to worry.	27
 441	00:28:02,259	00:28:05,462	$Men brawl from time to time.$It's only natural.	28
 442	00:28:08,065	00:28:09,632	$Figured you were hungry.	28
 443	00:28:09,667	00:28:13,236	$Oh, you're a good lad.	28
@@ -454,8 +454,8 @@ frameNo	startTime	endTime	dialogue	chunk
 454	00:28:47,271	00:28:48,872	$<i>This wasn't a fight.</i>	28
 455	00:28:48,906	00:28:52,409	$We were farmers$and they slaughtered us.	28
 456	00:28:54,011	00:28:55,745	$So why is he saving them?	28
-457	00:28:56,360	00:28:58,561	$Wildlings are people.	29
-458	00:28:58,595	00:29:01,931	$Just like us, there are good ones$and bad ones.	29
+457	00:28:56,360	00:28:58,561	$Wildlings are people.	28
+458	00:28:58,595	00:29:01,931	$Just like us, there are good ones$and bad ones.	28
 459	00:29:01,965	00:29:05,334	$The one he's travelling with,$the one with the red beard,	29
 460	00:29:05,369	00:29:07,336	$he led the raid$on my village.	29
 461	00:29:07,371	00:29:09,672	$- <i>Oh, Olly.</i>$- How can he trust him?	29
@@ -473,8 +473,8 @@ frameNo	startTime	endTime	dialogue	chunk
 473	00:29:44,041	00:29:46,809	$<i>but you know are right</i>$<i>in the long run.</i>	29
 474	00:29:46,843	00:29:48,544	$You believe that?	29
 475	00:29:48,578	00:29:50,713	$With all my heart.	29
-476	00:29:57,287	00:29:59,555	$<i>Try not to worry, Olly.</i>	30
-477	00:29:59,589	00:30:02,558	$I've been worrying$about Jon for years.	30
+476	00:29:57,287	00:29:59,555	$<i>Try not to worry, Olly.</i>	29
+477	00:29:59,589	00:30:02,558	$I've been worrying$about Jon for years.	29
 478	00:30:02,592	00:30:04,560	$He always comes back.	30
 479	00:30:09,499	00:30:11,567	$( wind howling )	30
 480	00:30:29,820	00:30:32,088	$( men grunting )	30
@@ -488,7 +488,7 @@ frameNo	startTime	endTime	dialogue	chunk
 488	00:31:50,433	00:31:53,302	$Last time I saw you,$the little crow was your prisoner.	31
 489	00:31:53,336	00:31:55,704	$The other way around now.$What happened?	31
 490	00:31:55,739	00:31:57,339	$War.	31
-491	00:31:57,374	00:32:00,276	$War?$You call that a war?	32
+491	00:31:57,374	00:32:00,276	$War?$You call that a war?	31
 492	00:32:00,310	00:32:02,478	$The greatest army$the North has ever seen	32
 493	00:32:02,512	00:32:05,514	$cut to pieces$by some southern king.	32
 494	00:32:05,549	00:32:07,683	$We should gather$the elders,	32
@@ -516,7 +516,7 @@ frameNo	startTime	endTime	dialogue	chunk
 516	00:33:48,351	00:33:50,686	$We're not friends.	33
 517	00:33:50,720	00:33:53,206	$<i>We've never been friends.</i>	33
 518	00:33:54,211	00:33:55,864	$<i>We won't become</i>$<i>friends today.</i>	33
-519	00:33:58,061	00:34:00,162	$<i>This isn't</i>$<i>about friendship.</i>	34
+519	00:33:58,061	00:34:00,162	$<i>This isn't</i>$<i>about friendship.</i>	33
 520	00:34:02,032	00:34:04,199	$This is about$survival.	34
 521	00:34:04,234	00:34:06,268	$This is about putting$a 700-foot wall	34
 522	00:34:06,303	00:34:08,871	$between you$and what's out there.	34
@@ -531,8 +531,8 @@ frameNo	startTime	endTime	dialogue	chunk
 531	00:34:40,203	00:34:42,304	$It's not a trick.	34
 532	00:34:45,075	00:34:48,143	$It's a gift$for those who join us.	34
 533	00:34:53,016	00:34:55,985	$Dragonglass.	34
-534	00:34:56,019	00:34:59,021	$A man of the Night's Watch$used one of these daggers	35
-535	00:34:59,055	00:35:01,123	$<i>to kill a walker.</i>	35
+534	00:34:56,019	00:34:59,021	$A man of the Night's Watch$used one of these daggers	34
+535	00:34:59,055	00:35:01,123	$<i>to kill a walker.</i>	34
 536	00:35:01,157	00:35:03,592	$- You saw this?$- No.	35
 537	00:35:03,660	00:35:05,194	$But I trust the man.	35
 538	00:35:05,228	00:35:07,763	$There are old stories$about dragonglass.	35
@@ -552,8 +552,8 @@ frameNo	startTime	endTime	dialogue	chunk
 552	00:35:38,094	00:35:41,397	$If you swear you'll join us$when the real war begins.	35
 553	00:35:43,833	00:35:45,401	$Where is Mance?	35
 554	00:35:48,738	00:35:51,507	$- He died.$- How?	35
-555	00:35:56,746	00:35:58,747	$I put an arrow$through his heart.	36
-556	00:35:58,782	00:36:01,016	$- ( wildlings shouting )$- Tormund: Hey, hey.	36
+555	00:35:56,746	00:35:58,747	$I put an arrow$through his heart.	35
+556	00:35:58,782	00:36:01,016	$- ( wildlings shouting )$- Tormund: Hey, hey.	35
 557	00:36:01,084	00:36:03,118	$Hey, hey, hey,$hey, hey.	36
 558	00:36:05,288	00:36:06,688	$Hey, hey, hey.	36
 559	00:36:06,723	00:36:08,357	$Loboda: <i>I say we send</i>$<i>the Lord Commander</i>	36
@@ -573,8 +573,8 @@ frameNo	startTime	endTime	dialogue	chunk
 573	00:36:44,127	00:36:47,229	$I'm not asking you$to forget your dead.	36
 574	00:36:47,263	00:36:49,364	$I'll never$forget mine.	36
 575	00:36:51,201	00:36:55,471	$I lost 50 brothers$the night that Mance attacked the Wall.	36
-576	00:36:56,439	00:36:58,740	$But I'm asking you	37
-577	00:36:58,775	00:37:00,843	$to think about$your children now.	37
+576	00:36:56,439	00:36:58,740	$But I'm asking you	36
+577	00:36:58,775	00:37:00,843	$to think about$your children now.	36
 578	00:37:02,712	00:37:04,346	$<i>They'll never have</i>$<i>children of their own</i>	37
 579	00:37:04,380	00:37:06,815	$<i>if we don't band together.</i>	37
 580	00:37:06,883	00:37:09,685	$The Long Night$is coming	37
@@ -589,8 +589,8 @@ frameNo	startTime	endTime	dialogue	chunk
 589	00:37:44,521	00:37:47,089	$You vouch$for this man, Tormund?	37
 590	00:37:49,659	00:37:52,661	$He's prettier$than both my daughters,	37
 591	00:37:52,695	00:37:54,563	$<i>but he knows</i>$<i>how to fight.</i>	37
-592	00:37:54,597	00:37:57,466	$He's young,$but he knows how to lead.	38
-593	00:37:58,968	00:38:00,636	$He didn't have$to come to Hardhome.	38
+592	00:37:54,597	00:37:57,466	$He's young,$but he knows how to lead.	37
+593	00:37:58,968	00:38:00,636	$He didn't have$to come to Hardhome.	37
 594	00:38:00,670	00:38:04,806	$He came because$he needs us	38
 595	00:38:04,841	00:38:06,875	$and we need him.	38
 596	00:38:10,747	00:38:12,781	$My ancestors$would spit on me	38
@@ -604,8 +604,8 @@ frameNo	startTime	endTime	dialogue	chunk
 604	00:38:44,881	00:38:47,482	$- This is the way.$- ( murmuring )	38
 605	00:38:48,518	00:38:50,319	$Elder:$<i>I'm with Tormund.</i>	38
 606	00:38:50,353	00:38:52,688	$We stay here,$we're dead men.	38
-607	00:38:54,390	00:38:57,392	$At least with King Crow,$there's a chance.	39
-608	00:38:57,427	00:39:00,028	$<i>( giant growls )</i>	39
+607	00:38:54,390	00:38:57,392	$At least with King Crow,$there's a chance.	38
+608	00:38:57,427	00:39:00,028	$<i>( giant growls )</i>	38
 609	00:39:00,096	00:39:03,232	$Tormund.	39
 610	00:39:06,269	00:39:09,071	$Keep that new life$you want to give us.	39
 611	00:39:11,808	00:39:14,409	$And keep your glass,$King Crow.	39
@@ -614,7 +614,7 @@ frameNo	startTime	endTime	dialogue	chunk
 614	00:39:25,255	00:39:27,256	$That's our enemy.	39
 615	00:39:28,891	00:39:31,026	$That has always$been our enemy.	39
 616	00:39:46,909	00:39:48,710	$I fucking hate Thenns.	39
-617	00:39:56,953	00:39:59,388	$( chatter )	40
+617	00:39:56,953	00:39:59,388	$( chatter )	39
 618	00:40:08,665	00:40:11,199	$- Man: Move it.$- Woman: Be careful.	40
 619	00:40:11,234	00:40:13,101	$- Man #2: <i>Move 'em along, now.</i>$- Man #3: <i>Cast-off time.</i>	40
 620	00:40:13,136	00:40:15,103	$<i>That's it, come on.</i>	40
@@ -632,8 +632,8 @@ frameNo	startTime	endTime	dialogue	chunk
 632	00:40:48,204	00:40:50,972	$She's in charge.$You listen to her.	40
 633	00:40:52,075	00:40:54,676	$Man: <i>Take her.</i>$<i>There you are.</i>	40
 634	00:40:54,711	00:40:56,044	$I want to go with you.	40
-635	00:40:56,079	00:40:58,714	$I need to get$the old folks on the boats.	41
-636	00:40:58,748	00:41:00,982	$I'm right behind you.$I promise.	41
+635	00:40:56,079	00:40:58,714	$I need to get$the old folks on the boats.	40
+636	00:40:58,748	00:41:00,982	$I'm right behind you.$I promise.	40
 637	00:41:04,887	00:41:06,521	$Go on.	41
 638	00:41:08,925	00:41:10,125	$<i>( overlapping voices )</i>$<i>Another one.</i>	41
 639	00:41:10,159	00:41:13,061	$<i>Keep moving.</i>$<i>We'll meet you out there.</i>	41
@@ -646,15 +646,15 @@ frameNo	startTime	endTime	dialogue	chunk
 646	00:41:39,589	00:41:41,590	$Uh...	41
 647	00:41:41,624	00:41:44,025	$( speaks the Old Tongue )	41
 648	00:41:48,464	00:41:51,133	$<i>( dogs barking, howling )</i>	41
-649	00:41:58,408	00:42:00,542	$- ( wind gusting )$- <i>( barking continues )</i>	42
+649	00:41:58,408	00:42:00,542	$- ( wind gusting )$- <i>( barking continues )</i>	41
 650	00:42:02,979	00:42:05,947	$<i>( thunder rumbling )</i>	42
 651	00:42:10,153	00:42:12,287	$( murmuring )	42
 652	00:42:20,930	00:42:23,031	$( whining )	42
 653	00:42:33,242	00:42:37,078	$- Man: <i>Steady!</i>$- ( rumbling )	42
 654	00:42:39,081	00:42:42,083	$- ( wind howling )$- ( people shouting )	42
 655	00:42:54,831	00:42:56,865	$Shut the gates.	42
-656	00:42:56,933	00:42:58,700	$Man:$<i>Close the gates!</i>	43
-657	00:42:58,734	00:43:01,436	$( shouting, screaming )	43
+656	00:42:56,933	00:42:58,700	$Man:$<i>Close the gates!</i>	42
+657	00:42:58,734	00:43:01,436	$( shouting, screaming )	42
 658	00:43:02,972	00:43:04,806	$Shut the gates!	43
 659	00:43:08,211	00:43:10,345	$- ( shouting )$- Wait!	43
 660	00:43:10,379	00:43:13,114	$- Open the gate!$- Let us in!	43
@@ -663,8 +663,8 @@ frameNo	startTime	endTime	dialogue	chunk
 663	00:43:28,397	00:43:30,932	$- <i>( pounding )</i>$- Man: <i>Open the gate!</i>	43
 664	00:43:31,000	00:43:33,668	$<i>( shouting continues )</i>	43
 665	00:43:35,338	00:43:37,372	$<i>( shouting stops )</i>	43
-666	00:43:57,493	00:43:58,894	$<i>( footsteps )</i>	44
-667	00:43:58,928	00:44:02,898	$<i>( distant screams echoing )</i>	44
+666	00:43:57,493	00:43:58,894	$<i>( footsteps )</i>	43
+667	00:43:58,928	00:44:02,898	$<i>( distant screams echoing )</i>	43
 668	00:44:09,438	00:44:10,939	$( screams )	44
 669	00:44:11,007	00:44:13,441	$( roaring )	44
 670	00:44:13,476	00:44:16,411	$( people screaming )	44
@@ -681,7 +681,7 @@ frameNo	startTime	endTime	dialogue	chunk
 681	00:45:43,532	00:45:46,167	$Man:$Get to the front!	45
 682	00:45:46,202	00:45:48,136	$Man #2:$<i>Go on, shoot it!</i>	45
 683	00:45:50,272	00:45:52,507	$( shouting )	45
-684	00:45:54,677	00:45:58,813	$- Karsi: Wait, wait!$- Jon: <i>Duncan, hold the line! Hold the line!</i>	46
+684	00:45:54,677	00:45:58,813	$- Karsi: Wait, wait!$- Jon: <i>Duncan, hold the line! Hold the line!</i>	45
 685	00:46:03,285	00:46:05,320	$Lord Commander!	46
 686	00:46:05,388	00:46:07,689	$Get them to the ship$and come back for me!	46
 687	00:46:07,723	00:46:09,357	$- But you'll never make--$- Now!	46
@@ -703,8 +703,8 @@ frameNo	startTime	endTime	dialogue	chunk
 703	00:47:52,128	00:47:53,228	$Man:$No, no!	47
 704	00:48:03,105	00:48:05,874	$- Jon: <i>Tormund, the sleigh!</i>$- Tormund: Okay, okay!	48
 705	00:48:54,123	00:48:55,523	$The dragonglass.	48
-706	00:48:55,558	00:48:57,659	$You and me, then!	49
-707	00:48:58,694	00:49:00,295	$Go!	49
+706	00:48:55,558	00:48:57,659	$You and me, then!	48
+707	00:48:58,694	00:49:00,295	$Go!	48
 708	00:49:13,976	00:49:16,077	$<i>( giant growling )</i>	49
 709	00:50:10,332	00:50:12,333	$Get the glass.	50
 710	00:50:16,872	00:50:18,506	$( shouts )	50
@@ -722,12 +722,12 @@ frameNo	startTime	endTime	dialogue	chunk
 722	00:53:19,521	00:53:21,155	$The dragonglass.	53
 723	00:53:21,190	00:53:24,659	$Fuck the glass!$We are gonna die here!	53
 724	00:53:24,726	00:53:28,162	$<i>( screeching )</i>	53
-725	00:53:55,157	00:53:57,725	$Oh, fuck!	54
-726	00:53:59,328	00:54:01,162	$( shouting )	54
+725	00:53:55,157	00:53:57,725	$Oh, fuck!	53
+726	00:53:59,328	00:54:01,162	$( shouting )	53
 727	00:54:03,699	00:54:06,534	$- Man: <i>Tormund, run!</i>$- ( wood creaking )	54
 728	00:54:06,568	00:54:09,437	$( men shouting )	54
 729	00:54:14,743	00:54:17,845	$- Wun Wun, to the sea.$- ( roaring )	54
-730	00:54:58,921	00:55:01,455	$- <i>( woman screaming )</i>$- <i>( overlapping voices )</i> <i>Quickly!</i>	55
+730	00:54:58,921	00:55:01,455	$- <i>( woman screaming )</i>$- <i>( overlapping voices )</i> <i>Quickly!</i>	54
 731	00:55:01,523	00:55:03,958	$- <i>Faster, faster!</i>$- <i>Run, run!</i>	55
 732	00:55:03,992	00:55:05,960	$<i>Quickly!</i>	55
 733	00:55:07,930	00:55:10,932	$- Quickly, row! Row!$- Go, go, come on!	55
@@ -739,5 +739,5 @@ frameNo	startTime	endTime	dialogue	chunk
 739	00:58:34,536	00:58:37,805	$<i>( water sloshing )</i>	58
 740	00:58:37,295	00:58:43,795	$== sync, corrected by <font color=#00FF00>elderman</font> ==$<font color=#00FFFF>@elder_man</font>	58
 741	00:58:43,790	00:58:47,790	$<font color=#FFFF00>♪ Music playing  ♪</font>	58
-742	00:59:50,714	00:59:55,714	$<font color=#FFFF00>♪ Music playing ends  ♪</font>	60
+742	00:59:50,714	00:59:55,714	$<font color=#FFFF00>♪ Music playing ends  ♪</font>	59
 9999	00:00:0,500	00:00:2,00	"$<font color=""#ffff00"" size=14>www.tvsubtitles.net</font>"	0

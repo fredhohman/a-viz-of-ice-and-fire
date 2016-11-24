@@ -19,7 +19,7 @@ frameNo	startTime	endTime	dialogue	chunk
 18	00:00:43,444	00:00:46,113	$- You were sent here to kill me?$- I don't want to.	0
 19	00:00:46,147	00:00:48,148	$What do your captains$have to say about that?	0
 20	00:00:49,550	00:00:50,818	$<i>You should ask them.</i>	0
-21	00:00:50,852	00:00:53,187	$Will you fight for me?	1
+21	00:00:50,852	00:00:53,187	$Will you fight for me?	0
 22	00:00:53,221	00:00:56,257	$The Second Sons are yours$and so is Daario Naharis.	1
 23	00:00:56,291	00:00:58,326	$My sword is yours,$my life is yours,	1
 24	00:00:58,360	00:01:00,094	$my heart is yours.	1
@@ -37,7 +37,7 @@ frameNo	startTime	endTime	dialogue	chunk
 36	00:01:26,657	00:01:27,924	$You stay back!	1
 37	00:01:29,994	00:01:32,495	$No, you can't have him.	1
 38	00:01:32,530	00:01:34,264	$<i>No!</i>	1
-39	00:03:23,728	00:03:34,691	"$<font color=""#ec14bd"">Sync & corrections by honeybunny</font>$<font color=""#ec14bd"">www.addic7ed.com</font>"	4
+39	00:03:23,728	00:03:34,691	"$<font color=""#ec14bd"">Sync & corrections by honeybunny</font>$<font color=""#ec14bd"">www.addic7ed.com</font>"	3
 40	00:03:49,569	00:03:52,871	$<i>Are you sure about this?</i>	4
 41	00:03:52,906	00:03:55,574	$No.	4
 42	00:03:55,608	00:03:57,643	$It's dangerous.	4
@@ -47,7 +47,7 @@ frameNo	startTime	endTime	dialogue	chunk
 46	00:04:07,153	00:04:09,187	$take his gold, take his power.	4
 47	00:04:09,222	00:04:11,323	$Why are you telling me?	4
 48	00:04:15,027	00:04:16,861	$You begged me not to send Theon	4
-49	00:04:16,896	00:04:20,799	$to negotiate with his father$and I ignored your advice.	5
+49	00:04:16,896	00:04:20,799	$to negotiate with his father$and I ignored your advice.	4
 50	00:04:23,002	00:04:25,137	$Now Winterfell is burnt$to the ground,	5
 51	00:04:25,171	00:04:27,339	$the North is overrun$with ironborn,	5
 52	00:04:27,373	00:04:29,441	$and Bran and Rickon are gone.	5
@@ -72,7 +72,7 @@ frameNo	startTime	endTime	dialogue	chunk
 71	00:06:28,560	00:06:30,427	$and to beg your forgiveness.	7
 72	00:06:30,461	00:06:33,830	$Don't beg my forgiveness,$Your Grace.	7
 73	00:06:35,233	00:06:38,368	$It wasn't me you spurned.$It was my girls.	7
-74	00:06:50,381	00:06:53,550	$<i>One of them was supposed</i>$<i>to be queen.</i>	8
+74	00:06:50,381	00:06:53,550	$<i>One of them was supposed</i>$<i>to be queen.</i>	7
 75	00:06:53,584	00:06:55,251	$Now none of them are.	8
 76	00:06:56,387	00:06:59,822	$This is Arwyen my daughter.	8
 77	00:06:59,857	00:07:04,460	$<i>My daughter Walda,</i>$<i>my daughter Derwa,</i>	8
@@ -86,7 +86,7 @@ frameNo	startTime	endTime	dialogue	chunk
 85	00:07:30,620	00:07:33,488	$<i>My granddaughter Freya.</i>	8
 86	00:07:34,924	00:07:37,325	$My granddaughter...	8
 87	00:07:37,359	00:07:38,960	$Wertha.	8
-88	00:07:41,196	00:07:44,264	$<i>Waldra.</i>	9
+88	00:07:41,196	00:07:44,264	$<i>Waldra.</i>	8
 89	00:07:44,332	00:07:46,300	$Waldina.	9
 90	00:07:46,368	00:07:49,136	$- I'm Merry.$- Fine.	9
 91	00:07:49,170	00:07:52,940	$And here's my youngest$daughter Shirei,	9
@@ -103,7 +103,7 @@ frameNo	startTime	endTime	dialogue	chunk
 102	00:08:22,338	00:08:24,372	$<i>the wrong I have done</i>$<i>to you and your house.</i>	9
 103	00:08:24,407	00:08:27,709	$I beg your forgiveness	9
 104	00:08:27,743	00:08:30,845	$and pledge to do$all I can to make amends	9
-105	00:08:30,913	00:08:33,715	$so the Freys of the Crossing$and the Starks of Winterfell	10
+105	00:08:30,913	00:08:33,715	$so the Freys of the Crossing$and the Starks of Winterfell	9
 106	00:08:33,783	00:08:35,683	$may once again be friends.	10
 107	00:08:43,025	00:08:44,893	$<i>Very good.</i>	10
 108	00:08:47,163	00:08:49,030	$There she is.	10
@@ -112,7 +112,7 @@ frameNo	startTime	endTime	dialogue	chunk
 111	00:08:59,741	00:09:02,342	$Still can't see you.	10
 112	00:09:02,376	00:09:04,511	$Old eyes.	10
 113	00:09:19,228	00:09:21,396	$Love.	10
-114	00:09:21,430	00:09:25,301	$<i>That's what the Starks</i>$<i>of Winterfell call it, eh?</i>	11
+114	00:09:21,430	00:09:25,301	$<i>That's what the Starks</i>$<i>of Winterfell call it, eh?</i>	10
 115	00:09:27,404	00:09:29,438	$Very honorable.	11
 116	00:09:29,472	00:09:31,740	$I call it a pretty face.	11
 117	00:09:31,775	00:09:34,844	$Mmm, very pretty.	11
@@ -127,7 +127,7 @@ frameNo	startTime	endTime	dialogue	chunk
 126	00:10:06,511	00:10:09,146	$<i>I bet when you take</i>$<i>that dress off,</i>	11
 127	00:10:09,181	00:10:11,882	$everything stays$right where it is.	11
 128	00:10:11,916	00:10:13,716	$Doesn't drop an inch.	11
-129	00:10:15,686	00:10:19,254	$Your king says he betrayed$me for love.	12
+129	00:10:15,686	00:10:19,254	$Your king says he betrayed$me for love.	11
 130	00:10:19,289	00:10:22,024	$I say he betrayed me$for firm tits	12
 131	00:10:22,058	00:10:24,660	$and a tight fit.	12
 132	00:10:24,694	00:10:27,362	$And I can respect that.	12
@@ -156,7 +156,7 @@ frameNo	startTime	endTime	dialogue	chunk
 155	00:11:48,247	00:11:51,616	$and lead them through the back$streets, which I know well,	13
 156	00:11:51,650	00:11:53,751	$and open the front gates.	13
 157	00:11:53,785	00:11:55,386	$Then comes the army.	13
-158	00:11:55,420	00:11:58,055	$Once the walls are breached,$the city will fall in hours.	14
+158	00:11:55,420	00:11:58,055	$Once the walls are breached,$the city will fall in hours.	13
 159	00:11:58,090	00:12:00,993	$Or perhaps you'll lead Grey$Worm and me to the slaughter,	14
 160	00:12:01,027	00:12:03,495	$cutting the head off our army.	14
 161	00:12:03,530	00:12:06,265	$<i>The masters of Yunkai</i>$<i>will pay you your fee</i>	14
@@ -173,7 +173,7 @@ frameNo	startTime	endTime	dialogue	chunk
 172	00:12:36,096	00:12:38,197	$Very good.	14
 173	00:12:38,231	00:12:40,032	$We'll prepare.	14
 174	00:12:45,104	00:12:46,738	$Ser Jorah.	14
-175	00:12:48,841	00:12:50,442	$You can use an extra sword.	15
+175	00:12:48,841	00:12:50,442	$You can use an extra sword.	14
 176	00:12:50,476	00:12:52,978	$You're the Queensguard,$Ser Barristan.	15
 177	00:12:53,012	00:12:55,047	$Your place is by the queen.	15
 178	00:12:55,081	00:12:57,516	$If we are truly$her loyal servants,	15
@@ -190,7 +190,7 @@ frameNo	startTime	endTime	dialogue	chunk
 189	00:13:30,117	00:13:32,685	$the Black Gate,$as old as the Wall itself.	15
 190	00:13:32,719	00:13:36,455	$No one's used it$in centuries most likely.	15
 191	00:13:36,489	00:13:39,157	$It leads through the Wall	15
-192	00:13:39,192	00:13:41,092	$right down into the Nightfort,	16
+192	00:13:39,192	00:13:41,092	$right down into the Nightfort,	15
 193	00:13:41,127	00:13:42,994	$if one knows how to find it,	16
 194	00:13:43,029	00:13:45,930	$which, it just$so happens, I do.	16
 195	00:13:50,569	00:13:53,270	$How do you know all that?	16
@@ -200,7 +200,7 @@ frameNo	startTime	endTime	dialogue	chunk
 199	00:14:08,352	00:14:10,353	$Yes.	16
 200	00:14:10,421	00:14:13,156	$You're like a wizard.	16
 201	00:14:28,307	00:14:30,342	$Our father used to tell us	16
-202	00:14:30,376	00:14:34,747	$that no wildling ever looked$upon the Wall and lived.	17
+202	00:14:30,376	00:14:34,747	$that no wildling ever looked$upon the Wall and lived.	16
 203	00:14:34,782	00:14:37,283	$Here we are.	17
 204	00:14:37,351	00:14:39,653	$Alive.	17
 205	00:14:55,903	00:14:58,671	$Remember what happens$to children who run.	17
@@ -210,7 +210,7 @@ frameNo	startTime	endTime	dialogue	chunk
 209	00:15:15,990	00:15:17,992	$- Need a hand?$- Need about eight hands.	17
 210	00:15:18,026	00:15:19,960	$Oh!	17
 211	00:15:19,994	00:15:22,162	$Got to get this$salt pork to the Twins	17
-212	00:15:22,197	00:15:24,798	$in time for the wedding.	18
+212	00:15:22,197	00:15:24,798	$in time for the wedding.	17
 213	00:15:24,833	00:15:27,334	$Many thanks.	18
 214	00:15:29,504	00:15:31,071	$Don't!	18
 215	00:15:31,105	00:15:32,406	$Don't kill him.	18
@@ -245,7 +245,7 @@ frameNo	startTime	endTime	dialogue	chunk
 244	00:16:57,124	00:16:59,826	$But they come over$the Wall and raid,	19
 245	00:16:59,893	00:17:01,694	$steal, carry off women.	19
 246	00:17:01,728	00:17:03,929	$Old Nan said they turn$your skull into a cup	19
-247	00:17:03,964	00:17:06,031	$and make you drink$your own blood from it.	20
+247	00:17:03,964	00:17:06,031	$and make you drink$your own blood from it.	19
 248	00:17:08,701	00:17:10,402	$That's what Old Nan said.	20
 249	00:17:10,436	00:17:12,104	$There's a storm coming.	20
 250	00:17:13,473	00:17:15,774	$I don't see any--	20
@@ -258,7 +258,7 @@ frameNo	startTime	endTime	dialogue	chunk
 257	00:17:48,074	00:17:50,042	$How's he keep folks$from stealing them?	20
 258	00:17:50,076	00:17:52,411	$The Watch protects him.	20
 259	00:17:52,446	00:17:54,680	$Not today they don't.	20
-260	00:17:54,715	00:17:57,384	$He's selling horses,$he's got some gold in there.	21
+260	00:17:54,715	00:17:57,384	$He's selling horses,$he's got some gold in there.	20
 261	00:17:57,418	00:18:00,620	$<i>- And proper steel.</i>$- Let's carve him up.	21
 262	00:18:00,655	00:18:02,022	$We just take the horses and go.	21
 263	00:18:02,056	00:18:04,725	$The old man's no threat.	21
@@ -286,7 +286,7 @@ frameNo	startTime	endTime	dialogue	chunk
 285	00:20:22,498	00:20:24,732	$Of course you are.	23
 286	00:20:24,767	00:20:27,068	$You're almost there	23
 287	00:20:27,102	00:20:29,704	$and you're afraid$you won't make it.	23
-288	00:20:29,772	00:20:33,141	$The closer you get,$the worse the fear gets.	24
+288	00:20:29,772	00:20:33,141	$The closer you get,$the worse the fear gets.	23
 289	00:20:33,175	00:20:36,612	$No point in trying to hide$behind that face.	24
 290	00:20:36,646	00:20:39,548	$<i>I know fear when I see it.</i>	24
 291	00:20:39,582	00:20:41,450	$Seen it a lot.	24
@@ -301,7 +301,7 @@ frameNo	startTime	endTime	dialogue	chunk
 300	00:21:12,351	00:21:14,519	$That give you some ideas?	24
 301	00:21:17,356	00:21:20,025	$Might do.	24
 302	00:21:20,059	00:21:22,394	$Go ahead, then.	24
-303	00:21:22,428	00:21:24,796	$You might get away.	25
+303	00:21:22,428	00:21:24,796	$You might get away.	24
 304	00:21:24,831	00:21:27,366	$Might even make it$there on your own.	25
 305	00:21:28,434	00:21:30,669	$They're just over the river.	25
 306	00:21:30,703	00:21:32,838	$The closest you've$been to family	25
@@ -309,7 +309,7 @@ frameNo	startTime	endTime	dialogue	chunk
 308	00:21:39,345	00:21:42,347	$Someday I'm gonna put$a sword through your eye	25
 309	00:21:42,381	00:21:44,015	$and out the back of your skull.	25
 310	00:22:08,739	00:22:12,174	$How are we going$to get past the Wall?	25
-311	00:22:12,209	00:22:14,143	$My uncle said$it's 700 feet high.	26
+311	00:22:12,209	00:22:14,143	$My uncle said$it's 700 feet high.	25
 312	00:22:19,483	00:22:21,050	$How did you get past it?	26
 313	00:22:25,088	00:22:27,823	$Got in a boat and rowed$past the Bay of Seals.	26
 314	00:22:27,858	00:22:31,059	$It would take us two months$to get to the Bay of Seals.	26
@@ -350,7 +350,7 @@ frameNo	startTime	endTime	dialogue	chunk
 349	00:24:38,489	00:24:40,723	$<i>I heard shouting up there.</i>	28
 350	00:24:40,758	00:24:42,892	$Thunder.	28
 351	00:24:42,926	00:24:45,494	$I know the difference$between shouting and thunder.	28
-352	00:24:45,529	00:24:48,663	$Maybe it's ghosts.	29
+352	00:24:45,529	00:24:48,663	$Maybe it's ghosts.	28
 353	00:24:58,574	00:25:00,909	$That won't help you, grandpa.	29
 354	00:25:05,281	00:25:06,948	$Where you riding?	29
 355	00:25:06,982	00:25:08,983	$Doesn't matter now, does it?	29
@@ -385,10 +385,10 @@ frameNo	startTime	endTime	dialogue	chunk
 384	00:27:31,931	00:27:35,233	$You're not gonna die$for one of them.	32
 385	00:27:37,036	00:27:39,538	$Do it.	32
 386	00:27:39,572	00:27:41,406	$They'll find us if you don't.	32
-387	00:28:11,106	00:28:13,074	$You were right the whole time.	33
+387	00:28:11,106	00:28:13,074	$You were right the whole time.	32
 388	00:28:39,066	00:28:40,633	$Hyah!	33
 389	00:28:59,687	00:29:02,322	$<i>When you hear a$songbird's whistle, you come.</i>	33
-390	00:29:02,356	00:29:06,126	$I'm a great whistler.$The greatest in the land.	34
+390	00:29:02,356	00:29:06,126	$I'm a great whistler.$The greatest in the land.	33
 391	00:29:11,004	00:29:14,100	$Daario Naharis.	34
 392	00:29:41,995	00:29:44,363	$<i>That one was quick.</i>	34
 393	00:29:47,133	00:29:49,167	$- There may be others.$- I doubt it.	34
@@ -402,7 +402,7 @@ frameNo	startTime	endTime	dialogue	chunk
 401	00:32:41,444	00:32:43,512	$and bring her under$your protection.	38
 402	00:33:12,576	00:33:14,176	$In the sight of the Seven,	38
 403	00:33:14,211	00:33:17,880	$I hereby seal these two souls,	38
-404	00:33:17,915	00:33:21,517	$binding them as one$for eternity.	39
+404	00:33:17,915	00:33:21,517	$binding them as one$for eternity.	38
 405	00:33:21,552	00:33:24,487	$<i>Look upon each other</i>$<i>and say the words.</i>	39
 406	00:33:27,057	00:33:29,325	$Father, Smith,	39
 407	00:33:29,393	00:33:31,727	$Warrior, Mother,	39
@@ -435,7 +435,7 @@ frameNo	startTime	endTime	dialogue	chunk
 434	00:34:56,779	00:34:58,747	$<i>I have to find</i>$<i>the three-eyed raven.</i>	40
 435	00:34:58,781	00:35:00,349	$Listen to me, little lord.	40
 436	00:35:00,383	00:35:01,616	$Don't worry.	40
-437	00:35:01,650	00:35:04,753	$I'm not asking you$to come with me.	41
+437	00:35:01,650	00:35:04,753	$I'm not asking you$to come with me.	40
 438	00:35:06,690	00:35:08,457	$It won't be safe for Rickon.	41
 439	00:35:08,492	00:35:11,561	$Me?$I'm coming with you.	41
 440	00:35:11,595	00:35:14,097	$No.	41
@@ -453,7 +453,7 @@ frameNo	startTime	endTime	dialogue	chunk
 452	00:35:46,332	00:35:47,966	$You're easy to find.	41
 453	00:35:48,034	00:35:50,736	$We're not southerners.	41
 454	00:35:50,770	00:35:53,839	$And I don't want to leave you.	41
-455	00:35:53,873	00:35:56,675	$Shh, shh.$Come here, little soldier.	42
+455	00:35:53,873	00:35:56,675	$Shh, shh.$Come here, little soldier.	41
 456	00:35:58,144	00:36:01,747	$You and me, we're gonna$have some adventures.	42
 457	00:36:01,782	00:36:04,150	$You don't have to do$any of this.	42
 458	00:36:05,485	00:36:06,952	$Your family took me in	42
@@ -473,7 +473,7 @@ frameNo	startTime	endTime	dialogue	chunk
 472	00:37:20,527	00:37:22,328	$Haven't we?	43
 473	00:37:23,830	00:37:25,264	$I don't know, you tell me.	43
 474	00:37:25,299	00:37:27,500	$How long does it take$to sack a city?	43
-475	00:37:35,742	00:37:37,843	$It was just as you said.	44
+475	00:37:35,742	00:37:37,843	$It was just as you said.	43
 476	00:37:37,877	00:37:41,279	$They did not believe$until it was too late.	44
 477	00:37:41,313	00:37:43,314	$Their slave soldiers	44
 478	00:37:43,349	00:37:46,818	$threw down their spears$and surrendered.	44
@@ -489,7 +489,7 @@ frameNo	startTime	endTime	dialogue	chunk
 488	00:39:04,933	00:39:07,434	$- Uncle.$- What?	45
 489	00:39:07,468	00:39:10,437	$He's my nephew.$I love him.	45
 490	00:39:10,471	00:39:12,473	$And he's a damned fool.	45
-491	00:39:17,845	00:39:20,247	$Don't you drink, Lord Bolton?	46
+491	00:39:17,845	00:39:20,247	$Don't you drink, Lord Bolton?	45
 492	00:39:20,281	00:39:22,583	$Never do, my lady.$Dulls the senses.	46
 493	00:39:22,617	00:39:24,852	$That's the point.	46
 494	00:39:24,886	00:39:26,687	$Didn't you marry$one of these Frey girls?	46
@@ -510,7 +510,7 @@ frameNo	startTime	endTime	dialogue	chunk
 509	00:40:01,957	00:40:03,758	$And I like her.	46
 510	00:40:03,793	00:40:06,995	$But if she had her way,$I would be back in Volantis	46
 511	00:40:07,029	00:40:10,298	$playing my harp and you$would be sitting over there	46
-512	00:40:10,333	00:40:13,335	$<i>eating blackberries</i>$<i>out of Roslin Frey's hand.</i>	47
+512	00:40:10,333	00:40:13,335	$<i>eating blackberries</i>$<i>out of Roslin Frey's hand.</i>	46
 513	00:40:13,369	00:40:15,537	$Perhaps I've made$a terrible mistake.	47
 514	00:40:18,441	00:40:21,343	$Striking your king$is an act of treason.	47
 515	00:40:24,681	00:40:26,449	$No, don't.	47
@@ -541,7 +541,7 @@ frameNo	startTime	endTime	dialogue	chunk
 540	00:42:37,115	00:42:40,216	$That is a very strange custom.	49
 541	00:42:40,251	00:42:42,152	$I suppose it does seem strange	49
 542	00:42:42,186	00:42:43,853	$from a foreigner's perspective.	49
-543	00:42:43,888	00:42:45,689	$It seems normal to you?	50
+543	00:42:43,888	00:42:45,689	$It seems normal to you?	49
 544	00:42:45,756	00:42:48,125	$It's a tradition.	50
 545	00:42:49,961	00:42:52,829	$Without the bedding ceremony,$there's no real proof	50
 546	00:42:52,864	00:42:55,399	$the lord and lady$consummated their marriage.	50
@@ -592,7 +592,7 @@ frameNo	startTime	endTime	dialogue	chunk
 591	00:49:26,222	00:49:28,890	$I swear it by$the old gods and new.	57
 592	00:49:28,924	00:49:30,425	$We will take no vengeance.	57
 593	00:49:30,460	00:49:34,129	$You already swore me one oath$right here in my castle.	57
-594	00:49:34,164	00:49:37,966	$You swore by all the gods your$son would marry my daughter!	58
+594	00:49:34,164	00:49:37,966	$You swore by all the gods your$son would marry my daughter!	57
 595	00:49:38,001	00:49:41,336	$<i>Take me for a$hostage, but let Robb go.</i>	58
 596	00:49:41,371	00:49:43,538	$Robb, get up.	58
 597	00:49:43,573	00:49:45,307	$Get up and walk out.	58
@@ -604,7 +604,7 @@ frameNo	startTime	endTime	dialogue	chunk
 603	00:50:04,261	00:50:07,096	$let him go	58
 604	00:50:07,130	00:50:10,233	$or I will cut$your wife's throat.	58
 605	00:50:18,709	00:50:21,310	$I'll find another.	58
-606	00:50:24,081	00:50:26,549	$Mother.	59
+606	00:50:24,081	00:50:26,549	$Mother.	58
 607	00:50:27,613	00:50:29,318	$The Lannisters send$their regards.	59
-608	00:51:07,148	00:51:17,906	"$<font color=""#ec14bd"">Sync & corrections by honeybunny</font>$<font color=""#ec14bd"">www.addic7ed.com</font>"	60
+608	00:51:07,148	00:51:17,906	"$<font color=""#ec14bd"">Sync & corrections by honeybunny</font>$<font color=""#ec14bd"">www.addic7ed.com</font>"	59
 9999	00:00:0,500	00:00:2,00	"$<font color=""#ffff00"" size=14>www.tvsubtitles.net</font>"	0

@@ -13,6 +13,8 @@ def convert_time(time_):
     new_time = new_time.hour * 60 + new_time.minute + new_time.second / 60
     return new_time
 
+EPISODES=10
+SEASONS=6
 def main():
     subtitle_dir = '../data/subtitles/subtitlesInTSV/'
     metadata_file = '../vis/data/episode_metadata.csv'
@@ -22,26 +24,30 @@ def main():
     episode_data = {e : pd.read_csv(os.path.join(subtitle_dir, e), sep='\t') 
                     for e in sorted_episodes}
     episode_metadata = pd.read_csv(metadata_file)
+    seasons = ((episode_metadata['No. overall'] - 1) / EPISODES).astype(int) + 1
+    print('got seasons %s'%(seasons))
+    episodes = (((episode_metadata['No. overall'] - 1) % EPISODES) + 1)    
+    print('got episodes %s'%(episodes))
     # get lookup 
-    combined_season_episode = ('S' + (episode_metadata['season']).astype(str) + 
-                               'E' + (episode_metadata['episode']).astype(str))
-    runtime_lookup = dict(zip(combined_season_episode, episode_metadata['runtime']))
+    combined_season_episode = ('S' + seasons.astype(str) + 'E' + episodes.astype(str))
+    runtime_lookup = dict(zip(combined_season_episode, episode_metadata['Runtime']))
+    print('got runtime lookup %s'%(runtime_lookup))
     # chunk_length = 2
     n_chunks = 60
     for e in sorted_episodes:
         e_data = episode_data[e]
-        season_episode = re.findall('S[0-9]E[0-9]+')
-        runtime = runtime_lookup[e]
+        season_episode = re.findall('S[1-6]E[0-9]+', e)[0]
+        total = runtime_lookup[season_episode]
         # print('final datum %s'%(e_data.loc[e_data.index[-1]]['endTime']))
         end = e_data['endTime'].max()
-        # end = e_data.loc[e_data.index[-1]]['endTime']#.split(',')[0]
-        total = convert_time(end)
+        end = convert_time(end)
+        total = max(total, end)
         chunk_length = total / n_chunks
         # print('about to convert end time data %s'%(e_data['endTime']))
-        chunks = e_data.apply(lambda r : int(convert_time(r['endTime']) / chunk_length), 
+        chunks = e_data.apply(lambda r : int(convert_time(r['startTime']) / chunk_length), 
                                 axis=1)
         e_data['chunk'] = chunks
-        fname = os.path.join(subtitle_dir, '%s.tsv'%(e.split('.tsv')[0]))
+        fname = os.path.join(subtitle_dir, '%s.tsv'%(season_episode))
         e_data.to_csv(fname, sep='\t', index=False)
 
 if __name__ == '__main__':
