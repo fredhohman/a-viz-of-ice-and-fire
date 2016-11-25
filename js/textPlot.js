@@ -9,6 +9,8 @@ textMetaDataFile = "data/top_5_category_words_per_episode.tsv",
 textData, textMetaData, categoryNames, categoryVisibilities;
 
 var color = d3.scaleOrdinal().range(["#020202", "#3c3c3c", "#4b4a4a", "#5e5d5d", "#727171", "#7e7e7e", "#8d8d8d", "#a19f9f", "#b6b5b5", "#C7C6C6"]);
+var unfocusColor = "#BBBBB9";
+var focusColor = "#020202";
 
 var legendRects, legendLabels;
 
@@ -202,8 +204,20 @@ function initScatterPlot (data){
     	updateScatterPlot(sliceData (textData, seasonNumber, episodeNumber));
     })
     .on("mouseover", function (d){
+        // update formerly focused category
+        if(categoryVisibilities[catInFocus]) {
+            circles[catInFocus].
+            transition().
+            attr("fill", unfocusColor);
+        }
     	catInFocus = d;
     	updateBarPlot(textMetaData, seasonNumber, episodeNumber);
+        // update plot colors if visible
+        if(categoryVisibilities[catInFocus]) {
+            circles[catInFocus].
+            transition().
+            attr("fill", focusColor);   
+        }
     });
 
     legendLabels = legendGroup.selectAll ("text")
