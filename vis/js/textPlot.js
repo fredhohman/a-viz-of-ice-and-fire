@@ -11,6 +11,7 @@ textData, textMetaData, categoryNames, categoryVisibilities;
 var color = d3.scaleOrdinal().range(["#020202", "#3c3c3c", "#4b4a4a", "#5e5d5d", "#727171", "#7e7e7e", "#8d8d8d", "#a19f9f", "#b6b5b5", "#C7C6C6"]);
 var unfocusColor = "#BBBBB9";
 var focusColor = "#020202";
+var invisibleColor = "#F1F1F2";
 
 var legendRects, legendLabels;
 
@@ -192,7 +193,18 @@ function initScatterPlot (data){
     .attr("x", width + (margin.right/3) - 15) 
     .attr("y", function (d, i) { return (legendSpace)+i*(legendSpace) - 8; })
     .attr("fill", function (d, i){
-    	return categoryVisibilities[d] ? color(d) : "#F1F1F2";
+        if(categoryVisibilities[d]) {
+            if(d.name == catInFocus) {
+                return focusColor;
+            }
+            else {
+                return unfocusColor;
+            }
+        }
+        else {
+            return invisibleColor;
+        }
+    	//return categoryVisibilities[d] ? color(d) : invisibleColor;
     })
     .attr("id", function (d){
     	return "rect-" + d;
@@ -200,23 +212,136 @@ function initScatterPlot (data){
     .attr("class", "legend-box")
     .on("click", function (d){
     	categoryVisibilities[d] = !categoryVisibilities[d];
-    	d3.selectAll("#rect-" + d).attr("fill", categoryVisibilities[d] ? color(d) : "#F1F1F2");
+    	d3.selectAll("#rect-" + d).attr("fill", categoryVisibilities[d] ? color(d) : invisibleColor);
     	updateScatterPlot(sliceData (textData, seasonNumber, episodeNumber));
+        // update circle/legend colors of 
+        // clicked category for focus
+        if(categoryVisibilities[d]){
+            legendRects
+            .transition()
+            .attr("fill", function(d) {
+                if(categoryVisibilities[d]) {
+                    if(d == catInFocus){
+                        return focusColor;
+                    }
+                    else{
+                        return unfocusColor;    
+                    }
+                }
+                else {
+                    return invisibleColor;
+                }
+            })
+            var visibleCategories = categoryNames.filter(function(d) {return categoryVisibilities[d];});
+            visibleCategories.forEach(function(d) {
+                circles[d]
+                .transition()
+                .attr("fill", unfocusColor);
+            });
+            circles[d]
+            .transition()
+            .attr("fill", focusColor);
+        }
+        // if clicked rectangle is no longer visible
+        // we need to pass off focus to another category!
+        else{
+            var visibleCategories = categoryNames.filter(function(d) {return categoryVisibilities[d];});
+            if(visibleCategories.length > 0){
+                // assign focus to nearest category
+                var idx = categoryNames.indexOf(d);
+                var nearestCategory = visibleCategories[0];
+                var nearestDist = categoryNames.length;
+                for(var i = 0; i < visibleCategories.length; i++){
+                    var category = visibleCategories[i];
+                    var dist = Math.abs(idx - categoryNames.indexOf(category));
+                    console.log(category);
+                    console.log(dist);
+                    if(dist < nearestDist){
+                        nearestCategory = category;
+                        nearestDist = dist;
+                        console.log(nearestCategory);
+                    }
+                }
+                console.log(nearestCategory);
+                catInFocus = nearestCategory;
+            }
+            // TODO: package focus code into function
+            // update legend rectangles
+            legendRects
+            .transition()
+            .attr("fill", function(d) {
+                if(categoryVisibilities[d]) {
+                    if(d == catInFocus) {
+                        return focusColor;
+                    }
+                    else {
+                        return unfocusColor;
+                    }
+                }
+                else {
+                    return invisibleColor;
+                }
+            });
+            // update circles
+            circles[catInFocus]
+            .transition()
+            .attr("fill", focusColor);
+            // update bar chart
+            updateBarPlot(textMetaData, seasonNumber, episodeNumber);
+        }
     })
     .on("mouseover", function (d){
         // update formerly focused category
-        if(categoryVisibilities[catInFocus]) {
-            circles[catInFocus].
-            transition().
-            attr("fill", unfocusColor);
+        // ONLY if new category is actually visible!
+        if(categoryVisibilities[d]) {
+            if(categoryVisibilities[catInFocus]) {
+                var visibleCategories = categoryNames.filter(function(d) {return categoryVisibilities[d];});
+                visibleCategories.forEach(function(d) {
+                    circles[d]
+                    .transition()
+                    .attr("fill", unfocusColor);
+                });
+                // also update unfocused rectangle
+                legendRects
+                .transition()
+                .attr("fill", function(d) {
+                    if(categoryVisibilities[d]) {
+                        return unfocusColor;
+                    }
+                    else {
+                        return invisibleColor;
+                    }
+                })
+            }
         }
     	catInFocus = d;
     	updateBarPlot(textMetaData, seasonNumber, episodeNumber);
         // update plot colors if visible
         if(categoryVisibilities[catInFocus]) {
-            circles[catInFocus].
-            transition().
-            attr("fill", focusColor);   
+            circles[catInFocus]
+            .transition()
+            .attr("fill", focusColor);
+            // also update focused rectangle
+            legendRects
+            .transition()
+            .attr("fill", function(d) {
+                if(categoryVisibilities[d]) {
+                    if(d == catInFocus) {
+                        return focusColor;
+                    }
+                    else {
+                        return unfocusColor;
+                    }
+                }
+                else {
+                    return invisibleColor;
+                }
+            })
+            // var testRects = legendRects.selectAll("rect")
+            //     .filter(function(d) { return d.id == "rect-"+catInFocus;});
+            // console.log(legendRects);
+            // testRects
+            // .attr("fill", focusColor);
         }
     });
 
