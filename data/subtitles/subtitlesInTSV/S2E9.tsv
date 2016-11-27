@@ -21,7 +21,7 @@ frameNo	startTime	endTime	dialogue	chunk
 20	00:00:46,860	00:00:50,530	$Stannis two days from the capital$and the wolf at my doorstep.	0
 21	00:00:50,564	00:00:52,832	$Scouts assure us Robb Stark$won't risk	0
 22	00:00:52,867	00:00:55,735	$marching on Casterly Rock$until he's at full force.	0
-23	00:00:55,769	00:00:57,603	$He'll risk anything$at any time.	1
+23	00:00:55,769	00:00:57,603	$He'll risk anything$at any time.	0
 24	00:00:57,637	00:00:59,505	$<i>We'll ride at nightfall.</i>	1
 25	00:00:59,539	00:01:02,774	$The Stark forces are distracted.$Now is the time to strike.	1
 26	00:01:02,809	00:01:04,969	$My dear nephew,$you do understand Stannis	1
@@ -38,7 +38,7 @@ frameNo	startTime	endTime	dialogue	chunk
 37	00:01:41,748	00:01:43,915	$<i>( Theme music playing )</i>	1
 38	00:01:43,940	00:01:47,940	$<font color=#00FF00>♪ Game of Thrones 2x09 ♪</font>$<font color=#00FFFF>Blackwater</font>$Original Air Date on May 27, 2012	1
 39	00:01:47,965	00:01:51,965	"$== sync, corrected by <font color=""#00ff00"">elderman</font> =="	1
-40	00:01:51,990	00:03:25,150	$♪	3
+40	00:01:51,990	00:03:25,150	$♪	1
 41	00:03:45,939	00:03:48,007	$<i>That's it.</i>	4
 42	00:05:02,614	00:05:04,649	$The tide's against us.	5
 43	00:05:04,683	00:05:06,251	$Aye, but we have$the wind.	5
@@ -52,7 +52,7 @@ frameNo	startTime	endTime	dialogue	chunk
 51	00:05:27,507	00:05:30,742	$Of course there are several$Royal Fleets at the moment.	5
 52	00:05:30,776	00:05:33,345	$Not after tonight.$When the sun rises,	5
 53	00:05:33,379	00:05:35,413	$Stannis will sit$on the Iron Throne	5
-54	00:05:35,448	00:05:36,848	$and you will be his Hand.	6
+54	00:05:35,448	00:05:36,848	$and you will be his Hand.	5
 55	00:05:36,883	00:05:39,184	$- Gods be good.$- God.	6
 56	00:05:39,218	00:05:41,286	$Father, there is only one$and he watches over us.	6
 57	00:05:41,321	00:05:44,022	$- But not over them?$- Over all of us.	6
@@ -88,7 +88,7 @@ frameNo	startTime	endTime	dialogue	chunk
 87	00:08:14,805	00:08:17,574	$but also to offer guidance	8
 88	00:08:17,608	00:08:20,844	$and counsel$in times of war.	8
 89	00:08:20,878	00:08:23,280	$Your words are always$wise and measured.	8
-90	00:08:23,314	00:08:25,783	$- If you could--$- If anything,	9
+90	00:08:23,314	00:08:25,783	$- If you could--$- If anything,	8
 91	00:08:25,817	00:08:29,888	$a Maester's duties$become more urgent	9
 92	00:08:29,922	00:08:34,425	$in times of war$and turmoil.	9
 93	00:08:34,460	00:08:37,796	$I remember back$in the days of king--	9
@@ -104,7 +104,7 @@ frameNo	startTime	endTime	dialogue	chunk
 103	00:09:06,592	00:09:08,826	$I know what 10 drops$will bring.	9
 104	00:09:08,860	00:09:12,896	$- Your Grace, if I may ask--$- You may not.	9
 105	00:09:14,699	00:09:16,867	$You must have$a lot of work to do.	9
-106	00:09:16,901	00:09:19,903	$I'm sure many brave men$will need your wisdom soon.	10
+106	00:09:16,901	00:09:19,903	$I'm sure many brave men$will need your wisdom soon.	9
 107	00:09:21,172	00:09:24,208	$Yes.$A siege is very--	10
 108	00:09:24,242	00:09:26,810	$Be careful on the stairs, Grand Maester.$There are so many.	10
 109	00:09:29,013	00:09:31,415	$Your Grace.	10
@@ -120,7 +120,7 @@ frameNo	startTime	endTime	dialogue	chunk
 119	00:10:06,118	00:10:08,352	$Where'd you learn$the Lannister song?	10
 120	00:10:08,387	00:10:10,822	$Drunk Lannisters.	10
 121	00:10:12,157	00:10:13,858	$You've got$a pretty voice.	10
-122	00:10:13,892	00:10:15,726	$Thank you very much.	11
+122	00:10:13,892	00:10:15,726	$Thank you very much.	10
 123	00:10:15,761	00:10:17,228	$And I like$your nose.	11
 124	00:10:17,262	00:10:20,197	$How many times$you break it?	11
 125	00:10:21,967	00:10:23,768	$Well, now let's see.	11
@@ -145,7 +145,7 @@ frameNo	startTime	endTime	dialogue	chunk
 144	00:11:55,663	00:11:59,166	$I know it.	12
 145	00:12:02,403	00:12:04,604	$It's warm in here.	12
 146	00:12:04,639	00:12:06,640	$We've got beautiful women	12
-147	00:12:06,674	00:12:08,308	$and good brown ale.	13
+147	00:12:06,674	00:12:08,308	$and good brown ale.	12
 148	00:12:08,342	00:12:11,311	$Plenty for everyone.	13
 149	00:12:11,345	00:12:13,046	$And all you want	13
 150	00:12:13,080	00:12:16,082	$is to put one of us$in the cold ground	13
@@ -172,7 +172,7 @@ frameNo	startTime	endTime	dialogue	chunk
 171	00:13:47,971	00:13:50,640	$a dead king,$a city under siege.	14
 172	00:13:50,674	00:13:52,876	$- A wedding.$- Exactly.	14
 173	00:13:55,013	00:13:56,915	$Podrick, is that it?	14
-174	00:13:56,949	00:13:59,284	"$""Is that it?""$Nice touch."	15
+174	00:13:56,949	00:13:59,284	"$""Is that it?""$Nice touch."	14
 175	00:13:59,318	00:14:02,788	$As if you don't know the name$of every boy in town.	15
 176	00:14:02,822	00:14:05,525	$I'm not entirely sure$what you're suggesting.	15
 177	00:14:05,559	00:14:08,995	$I'm entirely sure you're entirely$sure what I'm suggesting.	15
@@ -189,7 +189,7 @@ frameNo	startTime	endTime	dialogue	chunk
 188	00:14:47,267	00:14:48,935	$And if the ship goes down,$I go with her.	15
 189	00:14:48,969	00:14:50,804	$That is good to hear.	15
 190	00:14:50,838	00:14:52,972	$Though I'm sure many$captains say the same	15
-191	00:14:53,007	00:14:56,476	$while their ship$is afloat.	16
+191	00:14:53,007	00:14:56,476	$while their ship$is afloat.	15
 192	00:14:56,510	00:14:59,245	$You look well suited$for battle, My Lord.	16
 193	00:14:59,279	00:15:00,647	$Well, I'm not.	16
 194	00:15:00,681	00:15:03,616	$For all our sakes,$I hope you are wrong.	16
@@ -228,7 +228,7 @@ frameNo	startTime	endTime	dialogue	chunk
 227	00:17:34,635	00:17:36,502	$I saw you kill a man$with a shield.	18
 228	00:17:36,537	00:17:38,438	$You'll be unstoppable$with an axe.	18
 229	00:17:39,740	00:17:42,275	$- Don't get killed.$- Nor you, my friend.	18
-230	00:17:42,310	00:17:45,679	$- Oh, are we friends now?$- Of course we are.	19
+230	00:17:42,310	00:17:45,679	$- Oh, are we friends now?$- Of course we are.	18
 231	00:17:45,713	00:17:47,419	$Just because I pay you$for your services doesn't	19
 232	00:17:47,444	00:17:48,748	$diminish our friendship.	19
 233	00:17:48,749	00:17:50,216	$Enhances it, really.	19
@@ -262,7 +262,7 @@ frameNo	startTime	endTime	dialogue	chunk
 261	00:19:24,975	00:19:27,710	$A king doesn't discuss	20
 262	00:19:27,745	00:19:30,146	$battle plans$with stupid girls.	20
 263	00:19:30,180	00:19:33,116	$I'm sorry, Your Grace.$You're right, I'm stupid.	20
-264	00:19:33,150	00:19:35,352	$Of course you'll be$in the Vanguard.	21
+264	00:19:33,150	00:19:35,352	$Of course you'll be$in the Vanguard.	20
 265	00:19:35,386	00:19:37,354	$They say my brother$Robb always goes	21
 266	00:19:37,389	00:19:39,056	$where the fighting$is thickest.	21
 267	00:19:39,091	00:19:40,891	$And he is only$a pretender.	21
@@ -284,7 +284,7 @@ frameNo	startTime	endTime	dialogue	chunk
 283	00:21:18,627	00:21:20,161	$he'll do it without$a second thought.	22
 284	00:21:20,196	00:21:21,996	$That would make me$the Quarterman.	22
 285	00:21:22,030	00:21:25,065	$It just doesn't have$the same ring to it.	22
-286	00:21:25,100	00:21:27,901	$Cut me in half and I won't$be able to give the signal.	23
+286	00:21:25,100	00:21:27,901	$Cut me in half and I won't$be able to give the signal.	22
 287	00:21:27,935	00:21:29,569	$<i>No signal, no plan.</i>	23
 288	00:21:29,603	00:21:31,643	$No plan and Stannis$Baratheon sacks this city,	23
 289	00:21:31,668	00:21:34,516	$takes the Iron Throne,$puts your pinched	23
@@ -301,7 +301,7 @@ frameNo	startTime	endTime	dialogue	chunk
 300	00:21:59,702	00:22:01,870	$maybe their sailors$have mutinied.	23
 301	00:22:01,904	00:22:04,006	$Maybe.	23
 302	00:22:19,755	00:22:21,789	$I don't know why$she wants me here.	23
-303	00:22:21,823	00:22:24,759	$She's always saying$how stupid I am. She hates me.	24
+303	00:22:21,823	00:22:24,759	$She's always saying$how stupid I am. She hates me.	23
 304	00:22:24,793	00:22:28,996	$Maybe she hates you less than$she hates everyone else.	24
 305	00:22:29,031	00:22:30,999	$I doubt it.	24
 306	00:22:31,033	00:22:33,935	$Maybe she's$jealous of you.	24
@@ -320,7 +320,7 @@ frameNo	startTime	endTime	dialogue	chunk
 319	00:23:10,842	00:23:13,210	$Ser Ilyn?	24
 320	00:23:13,244	00:23:15,846	$<i>He's here to defend us.</i>	24
 321	00:23:15,880	00:23:17,581	$When the axes smash$down those doors,	24
-322	00:23:17,615	00:23:19,016	$you may be glad$to have him.	25
+322	00:23:17,615	00:23:19,016	$you may be glad$to have him.	24
 323	00:23:19,050	00:23:21,318	$But we have guards$to defend us.	25
 324	00:23:21,353	00:23:22,986	$Guards we have paid.	25
 325	00:23:23,021	00:23:24,951	$Should the city fall,$they'll be the first ones	25
@@ -348,7 +348,7 @@ frameNo	startTime	endTime	dialogue	chunk
 347	00:24:55,115	00:24:57,416	$<i>Hold fast!</i>	26
 348	00:24:58,852	00:25:02,054	$There's only one ship.$Where are the rest of them?	26
 349	00:25:02,989	00:25:05,057	$Where are$the rest of them?!	26
-350	00:25:09,429	00:25:10,929	$There's only one ship.	27
+350	00:25:09,429	00:25:10,929	$There's only one ship.	26
 351	00:25:14,602	00:25:16,703	$Archers, stand to!	27
 352	00:25:16,737	00:25:18,138	$<i>Man the below!</i>	27
 353	00:25:18,172	00:25:20,707	$- Nock!$<i>- Nock and set!</i>	27
@@ -368,7 +368,7 @@ frameNo	startTime	endTime	dialogue	chunk
 367	00:28:29,931	00:28:32,733	$The fire,$their archers--	30
 368	00:28:32,767	00:28:35,602	$hundreds will die.	30
 369	00:28:35,636	00:28:37,771	$Thousands.	30
-370	00:28:50,952	00:28:53,052	$Come with me$and take this city!	31
+370	00:28:50,952	00:28:53,052	$Come with me$and take this city!	30
 371	00:29:11,805	00:29:13,605	$Sansa, come here,$little dove.	31
 372	00:29:20,013	00:29:22,014	$My queen.	31
 373	00:29:22,048	00:29:24,115	$What are you doing?	31
@@ -381,7 +381,7 @@ frameNo	startTime	endTime	dialogue	chunk
 380	00:29:37,862	00:29:40,463	$- Yes, Your Grace.$- Even me?	31
 381	00:29:40,498	00:29:42,398	$Of course,$Your Grace.	31
 382	00:29:42,433	00:29:44,100	$Even Joffrey?	31
-383	00:29:46,036	00:29:49,538	$- Joffrey is my--$- Oh, shut up, you little fool.	32
+383	00:29:46,036	00:29:49,538	$- Joffrey is my--$- Oh, shut up, you little fool.	31
 384	00:29:49,572	00:29:52,608	$Praying to the Gods$to have mercy on us all.	32
 385	00:29:52,642	00:29:55,111	$The Gods have no mercy.$That's why they're Gods.	32
 386	00:29:56,447	00:29:59,449	$<i>My father told me that</i>$<i>when he caught me praying.</i>	32
@@ -397,7 +397,7 @@ frameNo	startTime	endTime	dialogue	chunk
 396	00:30:31,047	00:30:32,414	$Sit.	32
 397	00:30:32,448	00:30:34,450	$Drink.	32
 398	00:30:37,288	00:30:39,823	$Not like that.$Drink, girl.	32
-399	00:30:42,960	00:30:45,162	$I should have been$born a man.	33
+399	00:30:42,960	00:30:45,162	$I should have been$born a man.	32
 400	00:30:45,196	00:30:48,366	$I'd rather face 1,000 swords$than be shut up inside	33
 401	00:30:48,400	00:30:50,935	$with this flock$of frightened hens.	33
 402	00:30:50,969	00:30:53,305	$They are your guests$under your protection.	33
@@ -434,7 +434,7 @@ frameNo	startTime	endTime	dialogue	chunk
 433	00:32:27,033	00:32:28,667	$A precious thing like you	34
 434	00:32:28,702	00:32:32,671	$will look very, very good.	34
 435	00:32:32,705	00:32:34,940	$A slice of cake	34
-436	00:32:34,974	00:32:37,210	$just waiting to be eaten.	35
+436	00:32:34,974	00:32:37,210	$just waiting to be eaten.	34
 437	00:32:39,580	00:32:42,782	$More pressure!	35
 438	00:32:52,260	00:32:55,262	$- Pull! Pull!$- That's it, men!	35
 439	00:32:55,296	00:32:58,498	$<i>Pull! Pull!</i>	35
@@ -450,7 +450,7 @@ frameNo	startTime	endTime	dialogue	chunk
 449	00:33:24,023	00:33:25,757	$Bring any men$guarding it here now.	35
 450	00:33:25,792	00:33:27,826	$Yes, My Lord.	35
 451	00:33:29,128	00:33:31,729	$Let's go. Stannis is sending$us fresh meat.	35
-452	00:33:31,764	00:33:33,698	$You, too.	36
+452	00:33:31,764	00:33:33,698	$You, too.	35
 453	00:33:35,101	00:33:37,803	$Any of these flaming$fucking arrows come near me,	36
 454	00:33:37,837	00:33:40,240	$I'll strangle you$with your own guts.	36
 455	00:33:44,779	00:33:47,381	$Pull, pull! Go!	36
@@ -479,7 +479,7 @@ frameNo	startTime	endTime	dialogue	chunk
 478	00:36:11,694	00:36:13,595	$<i>and sing and please.</i>	38
 479	00:36:13,629	00:36:16,632	$He was heir$to Casterly Rock	38
 480	00:36:16,666	00:36:19,234	$and I was sold to some$stranger like a horse	38
-481	00:36:19,268	00:36:21,503	$to be ridden$whenever he desired.	39
+481	00:36:19,268	00:36:21,503	$to be ridden$whenever he desired.	38
 482	00:36:21,537	00:36:24,238	$You were Robert's queen.	39
 483	00:36:24,272	00:36:26,240	$And you will be$Joffrey's. Enjoy.	39
 484	00:36:30,244	00:36:31,878	$I don't think$I know this one.	39
@@ -508,7 +508,7 @@ frameNo	startTime	endTime	dialogue	chunk
 507	00:38:03,270	00:38:05,337	$The Imp has set$the river afire.	40
 508	00:38:05,372	00:38:07,906	$Hundreds of ships$are burning, maybe more.	40
 509	00:38:07,941	00:38:11,410	$Stannis's fleet$destroyed, but...	40
-510	00:38:11,444	00:38:14,646	$But-- but his troops	41
+510	00:38:11,444	00:38:14,646	$But-- but his troops	40
 511	00:38:14,681	00:38:17,181	$have landed outside$the city walls.	41
 512	00:38:17,216	00:38:19,317	$Where is Joffrey?	41
 513	00:38:19,351	00:38:21,619	$On the battlements$with Lord Tyrion.	41
@@ -532,7 +532,7 @@ frameNo	startTime	endTime	dialogue	chunk
 531	00:40:43,132	00:40:46,301	$Faster, you bastards!$Faster!	43
 532	00:40:46,335	00:40:48,370	$Come on, kill the scum!	43
 533	00:40:50,239	00:40:52,541	$Someone bring me a drink.	43
-534	00:40:58,748	00:41:01,783	$Fuck the water.$Bring me wine.	44
+534	00:40:58,748	00:41:01,783	$Fuck the water.$Bring me wine.	43
 535	00:41:12,129	00:41:14,230	$Can I get you$some iced milk	44
 536	00:41:14,265	00:41:16,666	$and a nice bowl$of raspberries, too?	44
 537	00:41:16,701	00:41:18,335	$Eat shit, dwarf.	44
@@ -554,7 +554,7 @@ frameNo	startTime	endTime	dialogue	chunk
 553	00:42:18,800	00:42:21,869	$Forward!	45
 554	00:42:21,904	00:42:23,972	$Loose!	45
 555	00:42:35,185	00:42:37,786	$Forward ladders!	45
-556	00:42:51,232	00:42:54,334	$<i>They're coming</i>$<i>up the wall!</i>	46
+556	00:42:51,232	00:42:54,334	$<i>They're coming</i>$<i>up the wall!</i>	45
 557	00:42:54,368	00:42:56,769	$<i>Archers on the north wall!</i>	46
 558	00:42:56,804	00:42:58,404	$<i>- Heave!</i>	46
 559	00:42:58,439	00:43:00,172	$<i>- Heave!</i>	46
@@ -593,7 +593,7 @@ frameNo	startTime	endTime	dialogue	chunk
 592	00:44:35,938	00:44:38,640	$But what does that make$the lot of you?	47
 593	00:44:38,674	00:44:41,209	$The only way out$is through the gates.	47
 594	00:44:41,243	00:44:42,977	$And they're at the gates.	47
-595	00:44:43,011	00:44:45,512	$There's another way out.$I'm going to show you.	48
+595	00:44:43,011	00:44:45,512	$There's another way out.$I'm going to show you.	47
 596	00:44:45,547	00:44:48,416	$We'll come out behind them$and fuck them in their asses.	48
 597	00:44:50,519	00:44:53,420	$<i>Heave!</i>	48
 598	00:44:53,454	00:44:55,555	$<i>Heave!</i>	48
@@ -623,7 +623,7 @@ frameNo	startTime	endTime	dialogue	chunk
 622	00:46:27,812	00:46:30,814	$Joffrey's not hurt.$He's fighting bravely.	49
 623	00:46:30,848	00:46:32,716	$<i>His knights have</i>$<i>rallied behind him.</i>	49
 624	00:46:32,750	00:46:34,284	$<i>They will save the city.</i>	49
-625	00:46:34,318	00:46:36,853	$Shall we sing a hymn?	50
+625	00:46:34,318	00:46:36,853	$Shall we sing a hymn?	49
 626	00:46:36,888	00:46:40,024	$<i>♪ Gentle mother ♪</i>	50
 627	00:46:40,058	00:46:42,726	$♪ font of mercy ♪	50
 628	00:46:42,760	00:46:47,098	$♪ save our sons$from war, we pray ♪	50
@@ -679,7 +679,7 @@ frameNo	startTime	endTime	dialogue	chunk
 678	00:52:00,514	00:52:02,782	$Yes, my love.	55
 679	00:52:02,817	00:52:06,253	$In the Kingswood there lived$a mother and her cub.	55
 680	00:52:06,287	00:52:08,388	$She loved him very much.	55
-681	00:52:08,422	00:52:12,059	$But there were other things$that lived in the woods.	56
+681	00:52:08,422	00:52:12,059	$But there were other things$that lived in the woods.	55
 682	00:52:12,093	00:52:15,029	$- Evil things.$- Like what?	56
 683	00:52:16,965	00:52:18,733	$Like stags.	56
 684	00:52:18,767	00:52:20,869	$Stags aren't evil.	56
@@ -694,7 +694,7 @@ frameNo	startTime	endTime	dialogue	chunk
 693	00:52:51,801	00:52:53,801	$You will be king.	56
 694	00:52:55,572	00:52:59,508	$<i>All the stags will bow.</i>Ts$<i>all the wolves will bow.</i>	56
 695	00:52:59,542	00:53:03,813	$The bears in the north$and the foxes of the south,	56
-696	00:53:03,848	00:53:08,385	$<i>all the birds in the sky</i>$<i>and the beasts in the sea--</i>	57
+696	00:53:03,848	00:53:08,385	$<i>all the birds in the sky</i>$<i>and the beasts in the sea--</i>	56
 697	00:53:09,987	00:53:12,522	$they will all come$to you, little lion...	57
 698	00:53:13,792	00:53:15,525	"$to rest a crown$upon your head."""	57
 699	00:53:21,832	00:53:23,233	$And the cub said,	57
@@ -713,7 +713,7 @@ frameNo	startTime	endTime	dialogue	chunk
 712	00:54:40,441	00:54:45,645	"$<i>♪ ""And who are you,""</i>$<i>the proud lord said ♪</i>"	58
 713	00:54:45,679	00:54:50,851	"$<i>♪ ""that I must bow</i>$<i>so low? ♪</i>"	58
 714	00:54:50,885	00:54:55,723	$<i>♪ only a cat</i>$<i>of a different coat ♪</i>	58
-715	00:54:55,757	00:55:00,762	$<i>♪ that's all the truth</i>$<i>I know ♪</i>	59
+715	00:54:55,757	00:55:00,762	$<i>♪ that's all the truth</i>$<i>I know ♪</i>	58
 716	00:55:00,796	00:55:05,901	$<i>♪ in a coat of gold</i>$<i>or a coat of red ♪</i>	59
 717	00:55:05,936	00:55:10,906	$<i>♪ a lion still</i>$<i>has claws ♪</i>	59
 718	00:55:10,940	00:55:16,110	$<i>♪ and mine are long</i>$<i>and sharp, My Lord ♪</i>	59
@@ -723,4 +723,4 @@ frameNo	startTime	endTime	dialogue	chunk
 722	00:55:33,627	00:55:38,665	$<i>♪ but now the rains weep</i>$<i>o'ver his hall ♪</i>	59
 723	00:55:38,699	00:55:43,337	$<i>♪ with no one there</i>$<i>to hear ♪</i>	59
 724	00:55:43,371	00:55:48,610	$<i>♪ yes, now the rains weep</i>$<i>o'er his hall ♪</i>	59
-725	00:55:48,644	00:55:54,016	$<i>♪ and not a soul</i>$<i>to hear. ♪</i>	60
+725	00:55:48,644	00:55:54,016	$<i>♪ and not a soul</i>$<i>to hear. ♪</i>	59

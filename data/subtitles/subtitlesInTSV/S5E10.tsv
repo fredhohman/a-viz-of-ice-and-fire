@@ -2,7 +2,7 @@ frameNo	startTime	endTime	dialogue	chunk
 -1	00:00:05,905	00:00:09,905	$﻿1$<i><font color=#FFFF00>♪ Theme music playing  ♪</font></i>	0
 2	00:00:09,929	00:00:13,929	$<font color=#00FF00>♪ Game of Thrones 5x10 ♪</font>$<font color=#00FFFF>Mother's Mercy</font>$Original Air Date on June 14, 2015	0
 3	00:00:13,953	00:00:20,453	$== sync, corrected by <font color=#00FF00>elderman</font> ==$<font color=#00FFFF>@elder_man</font>	0
-4	00:00:20,477	00:01:46,528	$♪  ♪	1
+4	00:00:20,477	00:01:46,528	$♪  ♪	0
 5	00:01:46,530	00:01:51,530	$<font color=#FFFF00>♪ Music playing ends  ♪</font>	1
 6	00:02:06,526	00:02:09,059	$<i>Brace the wind.</i>	2
 7	00:02:11,230	00:02:13,781	$The Lord of Light has made good$on his promise, my king.	2
@@ -16,13 +16,13 @@ frameNo	startTime	endTime	dialogue	chunk
 15	00:02:51,771	00:02:53,270	$Prepare to form up.	2
 16	00:02:53,322	00:02:55,072	$Your Grace.	2
 17	00:02:58,444	00:02:59,693	$Tell me.	2
-18	00:02:59,745	00:03:03,414	$The men, many deserted$before dawn.	3
+18	00:02:59,745	00:03:03,414	$The men, many deserted$before dawn.	2
 19	00:03:05,952	00:03:07,618	$<i>How many?</i>	3
 20	00:03:07,670	00:03:09,670	$<i>Nearly half.</i>	3
 21	00:03:09,705	00:03:12,590	$All the sellswords$with all the horses.	3
 22	00:03:23,352	00:03:25,469	$Your Grace.	3
 23	00:03:27,223	00:03:30,858	$Speak up.$Can't be worse than mutiny.	3
-24	00:04:01,340	00:04:03,340	$Cut her down.	4
+24	00:04:01,340	00:04:03,340	$Cut her down.	3
 25	00:04:16,439	00:04:18,322	$<i>Your Grace.</i>	4
 26	00:04:18,357	00:04:21,325	$The Lady Melisandre$was just seen riding out of camp.	4
 27	00:04:33,539	00:04:35,706	$Get the men$into marching formation.	4
@@ -31,8 +31,8 @@ frameNo	startTime	endTime	dialogue	chunk
 30	00:04:47,353	00:04:49,637	$and they all stood up$at once.	4
 31	00:04:52,358	00:04:56,026	$Tens of thousands of them.$The biggest army in the world.	4
 32	00:04:56,062	00:04:57,695	$So what are you$gonna do?	4
-33	00:05:00,566	00:05:03,734	$I'm gonna hope they don't$learn how to climb the Wall.	5
-34	00:05:03,786	00:05:06,570	$But the dragonglass...	5
+33	00:05:00,566	00:05:03,734	$I'm gonna hope they don't$learn how to climb the Wall.	4
+34	00:05:03,786	00:05:06,570	$But the dragonglass...	4
 35	00:05:07,907	00:05:09,406	$No one's ever$getting that back now.	5
 36	00:05:09,408	00:05:12,042	$<i>It wouldn't have</i>$<i>mattered anyway.</i>	5
 37	00:05:12,078	00:05:13,494	$<i>Not unless we had</i>$<i>a mountain of it.</i>	5
@@ -50,8 +50,8 @@ frameNo	startTime	endTime	dialogue	chunk
 49	00:05:46,412	00:05:48,495	$And I wasn't winning$any elections back then.	5
 50	00:05:48,531	00:05:51,582	$Here's to us, then.	5
 51	00:05:51,617	00:05:53,283	$Long may they sneer.	5
-52	00:06:01,711	00:06:03,510	$What?	6
-53	00:06:05,848	00:06:07,681	$I wanted to ask$you something.	6
+52	00:06:01,711	00:06:03,510	$What?	5
+53	00:06:05,848	00:06:07,681	$I wanted to ask$you something.	5
 54	00:06:09,301	00:06:11,268	$To ask something of you.	6
 55	00:06:14,223	00:06:17,057	$Send me, Gilly,$and the baby to Oldtown	6
 56	00:06:17,109	00:06:19,276	$so I can become a maester.	6
@@ -67,9 +67,9 @@ frameNo	startTime	endTime	dialogue	chunk
 66	00:06:49,175	00:06:50,841	$And other things,	6
 67	00:06:50,893	00:06:53,844	$things that will$help when--	6
 68	00:06:53,896	00:06:55,479	$when they come.	6
-69	00:06:58,517	00:07:01,185	$If Gilly stays here,$then she'll die.	7
-70	00:07:02,655	00:07:06,023	$And the baby that she named$after me will die.	7
-71	00:07:06,025	00:07:09,276	$And I'll end up dying, too,$trying to protect them.	7
+69	00:06:58,517	00:07:01,185	$If Gilly stays here,$then she'll die.	6
+70	00:07:02,655	00:07:06,023	$And the baby that she named$after me will die.	6
+71	00:07:06,025	00:07:09,276	$And I'll end up dying, too,$trying to protect them.	6
 72	00:07:11,497	00:07:14,248	$Which means that the last thing that$I'll see in this world	7
 73	00:07:14,283	00:07:17,251	$will be the look in her eyes$when I fail them.	7
 74	00:07:22,041	00:07:25,175	$And I'd rather see$a thousand white walkers than see that.	7
@@ -78,14 +78,14 @@ frameNo	startTime	endTime	dialogue	chunk
 77	00:07:45,447	00:07:47,731	$Oh, they'll bloody try.	7
 78	00:07:51,453	00:07:53,787	$- Sam.$- What?	7
 79	00:07:55,407	00:07:57,407	$Sam.	7
-80	00:07:58,911	00:08:01,245	$You had just been$beaten half to death. How did you--	8
-81	00:08:01,247	00:08:03,881	$Oh, very carefully.	8
-82	00:08:05,751	00:08:07,000	$I'm glad$the end of the world's	8
-83	00:08:07,086	00:08:08,752	$working out well$for someone.	8
+80	00:07:58,911	00:08:01,245	$You had just been$beaten half to death. How did you--	7
+81	00:08:01,247	00:08:03,881	$Oh, very carefully.	7
+82	00:08:05,751	00:08:07,000	$I'm glad$the end of the world's	7
+83	00:08:07,086	00:08:08,752	$working out well$for someone.	7
 84	00:08:13,592	00:08:15,642	$I'll come back.	8
 85	00:08:17,263	00:08:19,096	$To your return.	8
 86	00:08:19,148	00:08:21,765	$To my return.	8
-87	00:10:00,366	00:10:03,700	$<i>Aye, this way.</i>	10
+87	00:10:00,366	00:10:03,700	$<i>Aye, this way.</i>	9
 88	00:10:38,070	00:10:39,736	$<i>My lady!</i>	10
 89	00:10:41,991	00:10:43,457	$Stannis.	10
 90	00:10:43,492	00:10:45,625	$Stannis Baratheon is coming.$His whole army.	10
@@ -108,8 +108,8 @@ frameNo	startTime	endTime	dialogue	chunk
 107	00:14:43,198	00:14:45,315	$I don't fight$for the Boltons.	14
 108	00:14:46,652	00:14:48,702	$I'm Brienne of Tarth.	14
 109	00:14:50,822	00:14:53,657	$I was Kingsguard$to Renly Baratheon.	14
-110	00:14:59,798	00:15:03,500	$I was there when he was$murdered by a shadow with your face.	15
-111	00:15:06,338	00:15:09,673	$<i>You murdered him</i>$<i>with blood magic?</i>	15
+110	00:14:59,798	00:15:03,500	$I was there when he was$murdered by a shadow with your face.	14
+111	00:15:06,338	00:15:09,673	$<i>You murdered him</i>$<i>with blood magic?</i>	14
 112	00:15:15,180	00:15:17,013	$I did.	15
 113	00:15:25,941	00:15:28,441	$In the name of Renly$of House Baratheon,	15
 114	00:15:28,493	00:15:30,193	$First of His Name,	15
@@ -132,12 +132,12 @@ frameNo	startTime	endTime	dialogue	chunk
 131	00:17:51,336	00:17:54,838	$let it happen while there's$still some of me left.	17
 132	00:17:56,892	00:17:58,558	$Die?	17
 133	00:17:59,594	00:18:01,010	$Who said anything$about dying?	17
-134	00:18:01,062	00:18:02,729	$You can't die.	18
-135	00:18:02,764	00:18:04,514	$Your father was$Warden of the North.	18
-136	00:18:04,516	00:18:06,516	$Ramsay needs you.	18
-137	00:18:08,820	00:18:11,938	$Though I suppose$he doesn't need all of you.	18
-138	00:18:11,990	00:18:14,657	$Just the parts he'll use$to make his heir,	18
-139	00:18:14,693	00:18:17,827	$until you've given him a boy or two$and he's finished using them.	18
+134	00:18:01,062	00:18:02,729	$You can't die.	17
+135	00:18:02,764	00:18:04,514	$Your father was$Warden of the North.	17
+136	00:18:04,516	00:18:06,516	$Ramsay needs you.	17
+137	00:18:08,820	00:18:11,938	$Though I suppose$he doesn't need all of you.	17
+138	00:18:11,990	00:18:14,657	$Just the parts he'll use$to make his heir,	17
+139	00:18:14,693	00:18:17,827	$until you've given him a boy or two$and he's finished using them.	17
 140	00:18:19,414	00:18:24,451	$Then he's got incredible$plans for those parts.	18
 141	00:18:25,787	00:18:27,704	$So, shall we wait$for him to come back	18
 142	00:18:27,706	00:18:29,706	$or should we begin now?	18
@@ -147,7 +147,7 @@ frameNo	startTime	endTime	dialogue	chunk
 146	00:18:39,684	00:18:41,885	$Reek-- stop!	18
 147	00:18:41,887	00:18:43,770	$Stop!	18
 148	00:18:50,395	00:18:53,563	$<i>-  Open the gate!</i>	18
-149	00:19:00,572	00:19:02,572	$He's coming back.	19
+149	00:19:00,572	00:19:02,572	$He's coming back.	18
 150	00:20:37,669	00:20:41,254	$I can see I have$my work cut out for me.	20
 151	00:20:41,339	00:20:43,506	$You two, out.	20
 152	00:21:37,896	00:21:41,648	$You were the first person$on my list, you know.	21
@@ -156,10 +156,10 @@ frameNo	startTime	endTime	dialogue	chunk
 155	00:21:49,074	00:21:52,208	$I've gotten a few$of the others.	21
 156	00:21:52,243	00:21:55,411	$The Many-Faced God stole$a few more from me.	21
 157	00:21:55,413	00:21:57,964	$But I'm glad$he left me you.	21
-158	00:22:01,720	00:22:03,636	$Do you know who I am?	22
-159	00:22:07,809	00:22:10,093	$I can't hear you.	22
-160	00:22:18,486	00:22:20,820	$You know who I am.	22
-161	00:22:20,855	00:22:22,939	$I'm Arya Stark.	22
+158	00:22:01,720	00:22:03,636	$Do you know who I am?	21
+159	00:22:07,809	00:22:10,093	$I can't hear you.	21
+160	00:22:18,486	00:22:20,820	$You know who I am.	21
+161	00:22:20,855	00:22:22,939	$I'm Arya Stark.	21
 162	00:22:32,000	00:22:34,500	$Do you know$who you are?	22
 163	00:22:36,921	00:22:38,671	$You're no one.	22
 164	00:22:39,708	00:22:41,791	$You're nothing.	22
@@ -172,9 +172,9 @@ frameNo	startTime	endTime	dialogue	chunk
 171	00:23:46,107	00:23:48,908	$That man's life$was not yours to take.	23
 172	00:23:50,411	00:23:52,528	$A girl stole from$the Many-Faced God.	23
 173	00:23:54,199	00:23:56,415	$Now a debt is owed.	23
-174	00:24:02,540	00:24:04,373	$Only death$can pay for life.	24
-175	00:24:17,522	00:24:19,806	$No! No!	24
-176	00:24:19,891	00:24:23,276	$No, you-- don't die!$Don't die!	24
+174	00:24:02,540	00:24:04,373	$Only death$can pay for life.	23
+175	00:24:17,522	00:24:19,806	$No! No!	23
+176	00:24:19,891	00:24:23,276	$No, you-- don't die!$Don't die!	23
 177	00:24:28,900	00:24:30,616	$Why are you crying?	24
 178	00:24:32,120	00:24:33,820	$He was my friend.	24
 179	00:24:33,872	00:24:36,572	$No, he wasn't.$Didn't you listen to him?	24
@@ -183,36 +183,36 @@ frameNo	startTime	endTime	dialogue	chunk
 182	00:24:47,752	00:24:49,135	$who's this?	24
 183	00:24:49,220	00:24:51,087	$<i>No one at all.</i>	24
 184	00:24:51,139	00:24:54,841	$Just as a girl should have been$before she took a face from the hall.	24
-185	00:25:00,982	00:25:03,649	$<i>The faces are for no one.</i>	25
-186	00:25:03,685	00:25:05,268	$You are still someone.	25
-187	00:25:08,273	00:25:10,690	$And to someone,	25
-188	00:25:10,742	00:25:12,275	$the faces are as good$as poison.	25
+185	00:25:00,982	00:25:03,649	$<i>The faces are for no one.</i>	24
+186	00:25:03,685	00:25:05,268	$You are still someone.	24
+187	00:25:08,273	00:25:10,690	$And to someone,	24
+188	00:25:10,742	00:25:12,275	$the faces are as good$as poison.	24
 189	00:25:25,590	00:25:27,123	$I can't see.	25
 190	00:25:33,131	00:25:35,882	$What's happening?	25
 191	00:25:35,934	00:25:38,017	$What's happening?!	25
 192	00:25:47,812	00:25:50,980	$<i>- I wish you a safe journey home.</i>$- Thank you.	25
 193	00:25:56,037	00:25:58,487	$Forgive me, child.	25
-194	00:25:58,539	00:26:02,375	$I wish you all the happiness$in the world.	26
-195	00:26:19,677	00:26:21,894	$Maybe I'll come$visit you sometime.	26
-196	00:26:21,930	00:26:23,846	$Maybe I'll come$visit you.	26
-197	00:26:23,898	00:26:25,514	$Don't wait too long.	26
-198	00:26:25,566	00:26:27,266	$Got a noblewoman$to marry back home.	26
+194	00:25:58,539	00:26:02,375	$I wish you all the happiness$in the world.	25
+195	00:26:19,677	00:26:21,894	$Maybe I'll come$visit you sometime.	25
+196	00:26:21,930	00:26:23,846	$Maybe I'll come$visit you.	25
+197	00:26:23,898	00:26:25,514	$Don't wait too long.	25
+198	00:26:25,566	00:26:27,266	$Got a noblewoman$to marry back home.	25
 199	00:26:28,353	00:26:30,019	$You want a good girl,	26
 200	00:26:30,021	00:26:32,321	$but you need$the bad pussy.	26
 201	00:26:35,410	00:26:37,660	$<i>Whenever you're</i>$<i>ready, my lord.</i>	26
 202	00:26:53,344	00:26:55,711	$Try not to lose it$this time.	26
 203	00:26:57,715	00:27:00,599	$I'll never$take it off again.	26
-204	00:27:00,635	00:27:03,636	$I know you didn't$want to leave Dorne,	27
-205	00:27:03,721	00:27:05,855	$but I'm glad$you're coming home.	27
-206	00:27:05,890	00:27:07,606	$Your mother's desperate$to see you.	27
-207	00:27:07,642	00:27:10,026	$I'm glad Trystane$is coming with us.	27
-208	00:27:10,061	00:27:11,861	$He seems like a nice boy.	27
-209	00:27:11,896	00:27:13,646	$You're lucky.	27
-210	00:27:13,698	00:27:17,033	$Arranged marriages$are rarely so--	27
-211	00:27:17,068	00:27:19,235	$so well arranged.	27
-212	00:27:19,287	00:27:20,987	$Do you think Mother$will like him?	27
-213	00:27:22,457	00:27:25,875	$If she sees you're happy,$I'm sure she will.	27
-214	00:27:25,910	00:27:27,243	$You really believe that?	27
+204	00:27:00,635	00:27:03,636	$I know you didn't$want to leave Dorne,	26
+205	00:27:03,721	00:27:05,855	$but I'm glad$you're coming home.	26
+206	00:27:05,890	00:27:07,606	$Your mother's desperate$to see you.	26
+207	00:27:07,642	00:27:10,026	$I'm glad Trystane$is coming with us.	26
+208	00:27:10,061	00:27:11,861	$He seems like a nice boy.	26
+209	00:27:11,896	00:27:13,646	$You're lucky.	26
+210	00:27:13,698	00:27:17,033	$Arranged marriages$are rarely so--	26
+211	00:27:17,068	00:27:19,235	$so well arranged.	26
+212	00:27:19,287	00:27:20,987	$Do you think Mother$will like him?	26
+213	00:27:22,457	00:27:25,875	$If she sees you're happy,$I'm sure she will.	26
+214	00:27:25,910	00:27:27,243	$You really believe that?	26
 215	00:27:27,245	00:27:30,046	$Have you ever known$your mother to like anyone	27
 216	00:27:30,081	00:27:32,415	$aside from her children?	27
 217	00:27:32,417	00:27:34,250	$She likes you.	27
@@ -224,16 +224,16 @@ frameNo	startTime	endTime	dialogue	chunk
 223	00:27:51,652	00:27:54,270	$now that you've seen$more of the world,	27
 224	00:27:54,322	00:27:57,990	$you've learned how complicated$things can be,	27
 225	00:27:58,026	00:28:00,109	$people can be.	27
-226	00:28:00,161	00:28:03,446	$The Lannisters and the Martells have$hated each other for years,	28
-227	00:28:03,448	00:28:05,698	$but you've fallen$in love with Trystane.	28
-228	00:28:05,750	00:28:08,451	$It was an accident, really.$I mean, what were the chances?	28
-229	00:28:08,503	00:28:10,286	$You happen to fall$in love with the man	28
-230	00:28:10,338	00:28:12,455	$you were assigned$to marry?	28
-231	00:28:12,457	00:28:14,206	$My point is...	28
-232	00:28:16,427	00:28:19,462	$we don't choose$whom we love.	28
-233	00:28:19,464	00:28:21,764	$It just, well--	28
-234	00:28:23,885	00:28:26,385	$it's beyond our control.	28
-235	00:28:26,437	00:28:28,304	$- I sound like an idiot.$- No, you don't.	28
+226	00:28:00,161	00:28:03,446	$The Lannisters and the Martells have$hated each other for years,	27
+227	00:28:03,448	00:28:05,698	$but you've fallen$in love with Trystane.	27
+228	00:28:05,750	00:28:08,451	$It was an accident, really.$I mean, what were the chances?	27
+229	00:28:08,503	00:28:10,286	$You happen to fall$in love with the man	27
+230	00:28:10,338	00:28:12,455	$you were assigned$to marry?	27
+231	00:28:12,457	00:28:14,206	$My point is...	27
+232	00:28:16,427	00:28:19,462	$we don't choose$whom we love.	27
+233	00:28:19,464	00:28:21,764	$It just, well--	27
+234	00:28:23,885	00:28:26,385	$it's beyond our control.	27
+235	00:28:26,437	00:28:28,304	$- I sound like an idiot.$- No, you don't.	27
 236	00:28:28,356	00:28:30,890	$What I'm trying to say--$what I'm trying	28
 237	00:28:30,942	00:28:32,224	$and failing to say--	28
 238	00:28:32,276	00:28:33,642	$I know what$you're trying to say.	28
@@ -247,12 +247,12 @@ frameNo	startTime	endTime	dialogue	chunk
 246	00:29:35,289	00:29:37,206	$Myrcella?	29
 247	00:29:39,544	00:29:41,844	$Myrcella?	29
 248	00:29:48,186	00:29:51,103	$Myrcella?$Myrcella?	29
-249	00:31:09,300	00:31:11,467	$You love her,$don't you?	31
-250	00:31:15,473	00:31:17,606	$How could you not?	31
-251	00:31:17,642	00:31:21,060	$Of course it's hopeless$for the both of you.	31
-252	00:31:21,112	00:31:24,647	$A sellsword from the fighting pits,$a disgraced knight.	31
-253	00:31:24,649	00:31:26,782	$Neither one of you$is fit consort for a queen.	31
-254	00:31:28,986	00:31:33,072	$But we always want$the wrong woman.	31
+249	00:31:09,300	00:31:11,467	$You love her,$don't you?	30
+250	00:31:15,473	00:31:17,606	$How could you not?	30
+251	00:31:17,642	00:31:21,060	$Of course it's hopeless$for the both of you.	30
+252	00:31:21,112	00:31:24,647	$A sellsword from the fighting pits,$a disgraced knight.	30
+253	00:31:24,649	00:31:26,782	$Neither one of you$is fit consort for a queen.	30
+254	00:31:28,986	00:31:33,072	$But we always want$the wrong woman.	30
 255	00:31:33,124	00:31:35,207	$Does he always$talk so much?	31
 256	00:31:38,045	00:31:40,296	$Jorah the Andal.	31
 257	00:31:40,331	00:31:42,498	$Torgo Nudho.	31
@@ -260,15 +260,15 @@ frameNo	startTime	endTime	dialogue	chunk
 259	00:31:44,085	00:31:45,417	$No, but he is.	31
 260	00:31:45,469	00:31:48,137	$Our queen ordered him$exiled from city.	31
 261	00:31:48,172	00:31:50,422	$Our queen would be dead$if not for him.	31
-262	00:32:12,947	00:32:15,698	$<i>Puñila.</i>$Thank you.	32
-263	00:32:15,750	00:32:18,500	$I am sorry.	32
-264	00:32:18,536	00:32:21,036	$Sorry I not there$to fight for our queen.	32
-265	00:32:21,038	00:32:23,038	$You missed a good scrap.	32
-266	00:32:23,040	00:32:24,040	$None of that matters now.	32
-267	00:32:24,125	00:32:25,507	$The longer we sit$here bantering,	32
-268	00:32:25,543	00:32:28,093	$the longer Daenerys is out there$in the wilderness.	32
-269	00:32:28,129	00:32:30,512	$He's right.$The dragon headed north.	32
-270	00:32:30,548	00:32:32,548	$If we're going to find her,$that's where we'll have to go.	32
+262	00:32:12,947	00:32:15,698	$<i>Puñila.</i>$Thank you.	31
+263	00:32:15,750	00:32:18,500	$I am sorry.	31
+264	00:32:18,536	00:32:21,036	$Sorry I not there$to fight for our queen.	31
+265	00:32:21,038	00:32:23,038	$You missed a good scrap.	31
+266	00:32:23,040	00:32:24,040	$None of that matters now.	31
+267	00:32:24,125	00:32:25,507	$The longer we sit$here bantering,	31
+268	00:32:25,543	00:32:28,093	$the longer Daenerys is out there$in the wilderness.	31
+269	00:32:28,129	00:32:30,512	$He's right.$The dragon headed north.	31
+270	00:32:30,548	00:32:32,548	$If we're going to find her,$that's where we'll have to go.	31
 271	00:32:32,600	00:32:33,682	$We?	32
 272	00:32:33,718	00:32:35,601	$You're a Lannister.	32
 273	00:32:35,636	00:32:38,554	$The queen intends to remove$your family from power.	32
@@ -283,19 +283,19 @@ frameNo	startTime	endTime	dialogue	chunk
 282	00:32:54,905	00:32:57,623	$He's right.$Our queen exiled Jorah.	32
 283	00:32:57,658	00:33:00,659	$And he's right.$Jorah saved her life.	32
 284	00:33:00,711	00:33:02,711	$Perhaps she feels$differently about him now.	32
-285	00:33:02,747	00:33:05,247	$Perhaps not. The only way$we'll know is if we ask her.	33
-286	00:33:05,299	00:33:08,967	$<i>Fine, fine.</i>$<i>I suppose he can join us.</i>	33
-287	00:33:09,003	00:33:11,553	$Just as long as he promises$not to kill me in my sleep.	33
-288	00:33:11,589	00:33:14,807	$If I ever kill you,$your eyes will be wide open.	33
-289	00:33:14,842	00:33:17,593	$Forgive me, but why would$we bring you?	33
-290	00:33:19,096	00:33:20,429	$Pardon me?	33
-291	00:33:20,431	00:33:22,564	$Have you ever tracked$animals in the wilderness?	33
-292	00:33:22,600	00:33:25,434	$Not precisely, but I have other skills$that would be useful.	33
-293	00:33:25,486	00:33:27,486	$Can you fight?	33
-294	00:33:27,571	00:33:28,937	$I have fought.	33
-295	00:33:28,939	00:33:30,773	$I don't claim to be$a great warrior.	33
-296	00:33:30,775	00:33:32,858	$Are you good$on a horse?	33
-297	00:33:32,910	00:33:34,276	$Middling.	33
+285	00:33:02,747	00:33:05,247	$Perhaps not. The only way$we'll know is if we ask her.	32
+286	00:33:05,299	00:33:08,967	$<i>Fine, fine.</i>$<i>I suppose he can join us.</i>	32
+287	00:33:09,003	00:33:11,553	$Just as long as he promises$not to kill me in my sleep.	32
+288	00:33:11,589	00:33:14,807	$If I ever kill you,$your eyes will be wide open.	32
+289	00:33:14,842	00:33:17,593	$Forgive me, but why would$we bring you?	32
+290	00:33:19,096	00:33:20,429	$Pardon me?	32
+291	00:33:20,431	00:33:22,564	$Have you ever tracked$animals in the wilderness?	32
+292	00:33:22,600	00:33:25,434	$Not precisely, but I have other skills$that would be useful.	32
+293	00:33:25,486	00:33:27,486	$Can you fight?	32
+294	00:33:27,571	00:33:28,937	$I have fought.	32
+295	00:33:28,939	00:33:30,773	$I don't claim to be$a great warrior.	32
+296	00:33:30,775	00:33:32,858	$Are you good$on a horse?	32
+297	00:33:32,910	00:33:34,276	$Middling.	32
 298	00:33:34,278	00:33:36,412	$So mainly you talk.	33
 299	00:33:36,447	00:33:38,614	$And drink.$I've survived so far.	33
 300	00:33:38,666	00:33:42,034	$Which I respect, but you would$not help us on this expedition.	33
@@ -308,20 +308,20 @@ frameNo	startTime	endTime	dialogue	chunk
 307	00:33:56,384	00:33:57,850	$Why would the Meereenese$listen to him?	33
 308	00:33:57,885	00:33:59,768	$They wouldn't.	33
 309	00:33:59,804	00:34:01,687	$They will listen$to Grey Worm.	33
-310	00:34:01,722	00:34:03,355	$I'll come with you.	34
-311	00:34:03,391	00:34:05,441	$I'll find our queen.	34
-312	00:34:05,476	00:34:07,893	$- You are not strong enough to go anywhere.$- I am.	34
-313	00:34:07,945	00:34:10,195	$He is. He's the toughest man$with no balls I ever met.	34
-314	00:34:10,231	00:34:13,365	$But you still can't go.	34
-315	00:34:13,451	00:34:15,117	$The people believe in you.	34
-316	00:34:15,152	00:34:16,952	$They know you speak$for the queen.	34
-317	00:34:16,987	00:34:18,904	$It's true.	34
-318	00:34:18,956	00:34:20,989	$Only the Unsullied can keep$the peace in Meereen.	34
-319	00:34:21,041	00:34:24,326	$If you leave, half this city will$consume the other half.	34
-320	00:34:24,328	00:34:26,578	$And Missandei.	34
-321	00:34:26,630	00:34:29,548	$Our queen trusts no one$more than Missandei.	34
-322	00:34:29,583	00:34:32,334	$Certainly not me.	34
-323	00:34:32,386	00:34:34,503	$The queen's$closest confidante,	34
+310	00:34:01,722	00:34:03,355	$I'll come with you.	33
+311	00:34:03,391	00:34:05,441	$I'll find our queen.	33
+312	00:34:05,476	00:34:07,893	$- You are not strong enough to go anywhere.$- I am.	33
+313	00:34:07,945	00:34:10,195	$He is. He's the toughest man$with no balls I ever met.	33
+314	00:34:10,231	00:34:13,365	$But you still can't go.	33
+315	00:34:13,451	00:34:15,117	$The people believe in you.	33
+316	00:34:15,152	00:34:16,952	$They know you speak$for the queen.	33
+317	00:34:16,987	00:34:18,904	$It's true.	33
+318	00:34:18,956	00:34:20,989	$Only the Unsullied can keep$the peace in Meereen.	33
+319	00:34:21,041	00:34:24,326	$If you leave, half this city will$consume the other half.	33
+320	00:34:24,328	00:34:26,578	$And Missandei.	33
+321	00:34:26,630	00:34:29,548	$Our queen trusts no one$more than Missandei.	33
+322	00:34:29,583	00:34:32,334	$Certainly not me.	33
+323	00:34:32,386	00:34:34,503	$The queen's$closest confidante,	33
 324	00:34:34,505	00:34:37,172	$the commander$of the Unsullied,	34
 325	00:34:37,224	00:34:39,975	$and a foreign dwarf$with a scarred face.	34
 326	00:34:41,178	00:34:42,644	$Good fortune,$my friends.	34
@@ -330,8 +330,8 @@ frameNo	startTime	endTime	dialogue	chunk
 329	00:34:48,352	00:34:50,185	$Looks like it's you and me,$Jorah the Andal.	34
 330	00:34:50,187	00:34:52,271	$Let's find$some good horses.	34
 331	00:34:52,323	00:34:54,690	$We have so much$to talk about.	34
-332	00:35:27,641	00:35:29,641	$Hello, old friend.	35
-333	00:35:31,395	00:35:35,197	$I thought we were so happy together$until you abandoned me.	35
+332	00:35:27,641	00:35:29,641	$Hello, old friend.	34
+333	00:35:31,395	00:35:35,197	$I thought we were so happy together$until you abandoned me.	34
 334	00:35:37,067	00:35:39,868	$I suppose there's no point$asking how you found me.	35
 335	00:35:39,904	00:35:42,237	$The birds sing in the west,$the birds sing in the east,	35
 336	00:35:42,289	00:35:44,540	$if one knows$how to listen.	35
@@ -341,56 +341,56 @@ frameNo	startTime	endTime	dialogue	chunk
 340	00:35:52,383	00:35:55,717	$so that's$a promising start.	35
 341	00:35:55,753	00:35:57,836	$Now the heroes$are off to find her	35
 342	00:35:57,888	00:36:00,055	$and I'm stuck here	35
-343	00:36:00,090	00:36:03,675	$trying to placate a city$on the brink of civil war.	36
-344	00:36:03,727	00:36:05,477	$Any advice$for an old comrade?	36
-345	00:36:05,513	00:36:07,012	$Information is the key.	36
-346	00:36:07,064	00:36:09,598	$You need to learn$your enemy's strengths and strategies.	36
-347	00:36:09,650	00:36:14,152	$You need to learn which of your friends$are not your friends.	36
-348	00:36:14,188	00:36:17,489	$If only I knew someone$with a vast network of spies.	36
-349	00:36:17,525	00:36:19,575	$If only.	36
-350	00:36:21,278	00:36:24,363	$A grand old city	36
-351	00:36:24,415	00:36:27,115	$choking on violence,$corruption, and deceit.	36
-352	00:36:27,167	00:36:30,118	$Who could possibly$have any experience	36
-353	00:36:30,204	00:36:33,005	$managing such a massive,$ungainly beast?	36
+343	00:36:00,090	00:36:03,675	$trying to placate a city$on the brink of civil war.	35
+344	00:36:03,727	00:36:05,477	$Any advice$for an old comrade?	35
+345	00:36:05,513	00:36:07,012	$Information is the key.	35
+346	00:36:07,064	00:36:09,598	$You need to learn$your enemy's strengths and strategies.	35
+347	00:36:09,650	00:36:14,152	$You need to learn which of your friends$are not your friends.	35
+348	00:36:14,188	00:36:17,489	$If only I knew someone$with a vast network of spies.	35
+349	00:36:17,525	00:36:19,575	$If only.	35
+350	00:36:21,278	00:36:24,363	$A grand old city	35
+351	00:36:24,415	00:36:27,115	$choking on violence,$corruption, and deceit.	35
+352	00:36:27,167	00:36:30,118	$Who could possibly$have any experience	35
+353	00:36:30,204	00:36:33,005	$managing such a massive,$ungainly beast?	35
 354	00:36:38,679	00:36:40,963	$I did miss you.	36
 355	00:36:42,132	00:36:43,849	$Oh, I know.	36
-356	00:37:05,489	00:37:07,322	$We have to go home.	37
-357	00:37:13,664	00:37:16,832	$Oh, my poor,$sweet thing.	37
-358	00:37:16,884	00:37:19,001	$Does it hurt?	37
-359	00:37:21,672	00:37:23,672	$We have to go home.	37
-360	00:37:26,844	00:37:28,260	$Drogon.	37
-361	00:37:28,312	00:37:30,512	$Can you take me$back to Meereen?	37
-362	00:37:34,685	00:37:37,185	$How far$did you carry me?	37
+356	00:37:05,489	00:37:07,322	$We have to go home.	36
+357	00:37:13,664	00:37:16,832	$Oh, my poor,$sweet thing.	36
+358	00:37:16,884	00:37:19,001	$Does it hurt?	36
+359	00:37:21,672	00:37:23,672	$We have to go home.	36
+360	00:37:26,844	00:37:28,260	$Drogon.	36
+361	00:37:28,312	00:37:30,512	$Can you take me$back to Meereen?	36
+362	00:37:34,685	00:37:37,185	$How far$did you carry me?	36
 363	00:37:45,245	00:37:47,696	$Drogon, we need$to return.	37
 364	00:37:47,748	00:37:49,498	$My people need me.	37
-365	00:38:21,732	00:38:23,782	$Well, there's no food.	38
-366	00:38:23,817	00:38:26,902	$At the very least,$you could hunt us some supper.	38
-367	00:41:04,394	00:41:05,861	$Confess.	41
-368	00:41:09,650	00:41:11,867	$Confess.	41
-369	00:41:23,247	00:41:25,247	$I have sinned.	41
-370	00:41:25,249	00:41:28,083	$I see that now.	41
-371	00:41:28,085	00:41:30,802	$How can I have been$so blind for so long?	41
-372	00:41:32,723	00:41:35,006	$I want to be clean again.	41
-373	00:41:36,226	00:41:38,426	$I want absolution.	41
-374	00:41:40,430	00:41:44,232	$The Crone came to me$with her lamp raised high.	41
+365	00:38:21,732	00:38:23,782	$Well, there's no food.	37
+366	00:38:23,817	00:38:26,902	$At the very least,$you could hunt us some supper.	37
+367	00:41:04,394	00:41:05,861	$Confess.	40
+368	00:41:09,650	00:41:11,867	$Confess.	40
+369	00:41:23,247	00:41:25,247	$I have sinned.	40
+370	00:41:25,249	00:41:28,083	$I see that now.	40
+371	00:41:28,085	00:41:30,802	$How can I have been$so blind for so long?	40
+372	00:41:32,723	00:41:35,006	$I want to be clean again.	40
+373	00:41:36,226	00:41:38,426	$I want absolution.	40
+374	00:41:40,430	00:41:44,232	$The Crone came to me$with her lamp raised high.	40
 375	00:41:44,268	00:41:45,934	$And by its holy light--	41
 376	00:41:45,986	00:41:48,520	$You wish to make$a confession?	41
 377	00:41:51,775	00:41:54,192	$Once I've confessed,$will I be free?	41
 378	00:41:54,278	00:41:57,279	$Your Grace will be$dealt with according to her sins.	41
 379	00:41:59,616	00:42:01,833	$The Mother have$mercy, then.	41
-380	00:42:04,288	00:42:06,955	$I lay with a man outside$the bonds of marriage. I confess.	42
-381	00:42:06,957	00:42:08,707	$Name him.	42
-382	00:42:12,880	00:42:14,296	$Lancel Lannister.	42
-383	00:42:14,298	00:42:17,549	$Your cousin$and the king's squire.	42
-384	00:42:17,601	00:42:20,468	$- I was lonely and afraid.$- You had a husband.	42
-385	00:42:20,520	00:42:22,470	$A husband off whoring$every chance he--	42
-386	00:42:22,522	00:42:25,440	$His sins do not$pardon your own.	42
-387	00:42:27,477	00:42:29,527	$May the gods forgive me.	42
-388	00:42:31,698	00:42:33,398	$Other men?	42
-389	00:42:34,484	00:42:35,784	$No.	42
-390	00:42:35,819	00:42:37,986	$No others?	42
-391	00:42:39,406	00:42:41,239	$No.	42
-392	00:42:41,291	00:42:44,826	$<i>Speaking falsehoods</i>$<i>before the gods is a great crime.</i>	42
+380	00:42:04,288	00:42:06,955	$I lay with a man outside$the bonds of marriage. I confess.	41
+381	00:42:06,957	00:42:08,707	$Name him.	41
+382	00:42:12,880	00:42:14,296	$Lancel Lannister.	41
+383	00:42:14,298	00:42:17,549	$Your cousin$and the king's squire.	41
+384	00:42:17,601	00:42:20,468	$- I was lonely and afraid.$- You had a husband.	41
+385	00:42:20,520	00:42:22,470	$A husband off whoring$every chance he--	41
+386	00:42:22,522	00:42:25,440	$His sins do not$pardon your own.	41
+387	00:42:27,477	00:42:29,527	$May the gods forgive me.	41
+388	00:42:31,698	00:42:33,398	$Other men?	41
+389	00:42:34,484	00:42:35,784	$No.	41
+390	00:42:35,819	00:42:37,986	$No others?	41
+391	00:42:39,406	00:42:41,239	$No.	41
+392	00:42:41,291	00:42:44,826	$<i>Speaking falsehoods</i>$<i>before the gods is a great crime.</i>	41
 393	00:42:44,828	00:42:46,378	$<i>You understand this?</i>	42
 394	00:42:46,413	00:42:48,079	$I do.	42
 395	00:42:50,334	00:42:52,217	$There are those$that say your children	42
@@ -398,176 +398,176 @@ frameNo	startTime	endTime	dialogue	chunk
 397	00:42:55,138	00:42:58,723	$that they are bastards$born of incest and adultery.	42
 398	00:42:58,759	00:43:00,675	$A lie.	42
 399	00:43:00,677	00:43:02,978	$A lie from the lips$of Stannis Baratheon.	42
-400	00:43:03,013	00:43:05,680	$He wants the throne, but his brother's$4 children stand in his way.	43
-401	00:43:05,732	00:43:09,017	$So he claims they are$not his brother's.	43
-402	00:43:09,019	00:43:11,019	$That filth.	43
-403	00:43:12,356	00:43:14,606	$There is not one shred$of truth to it.	43
-404	00:43:14,691	00:43:16,775	$I deny it.	43
-405	00:43:18,362	00:43:20,278	$Good.	43
-406	00:43:21,415	00:43:24,866	$But these$are terrible charges.	43
-407	00:43:24,868	00:43:27,535	$And the realm must know$the truth of them.	43
-408	00:43:27,537	00:43:30,005	$If Your Grace has given$honest testimony,	43
-409	00:43:30,040	00:43:32,207	$your trial will prove$your innocence.	43
-410	00:43:32,259	00:43:34,709	$Trial?$I have confessed.	43
-411	00:43:34,761	00:43:36,378	$To a single sin.	43
-412	00:43:36,430	00:43:38,380	$Others you have denied.	43
-413	00:43:38,382	00:43:42,183	$Your trial will separate the truths$from the falsehoods.	43
+400	00:43:03,013	00:43:05,680	$He wants the throne, but his brother's$4 children stand in his way.	42
+401	00:43:05,732	00:43:09,017	$So he claims they are$not his brother's.	42
+402	00:43:09,019	00:43:11,019	$That filth.	42
+403	00:43:12,356	00:43:14,606	$There is not one shred$of truth to it.	42
+404	00:43:14,691	00:43:16,775	$I deny it.	42
+405	00:43:18,362	00:43:20,278	$Good.	42
+406	00:43:21,415	00:43:24,866	$But these$are terrible charges.	42
+407	00:43:24,868	00:43:27,535	$And the realm must know$the truth of them.	42
+408	00:43:27,537	00:43:30,005	$If Your Grace has given$honest testimony,	42
+409	00:43:30,040	00:43:32,207	$your trial will prove$your innocence.	42
+410	00:43:32,259	00:43:34,709	$Trial?$I have confessed.	42
+411	00:43:34,761	00:43:36,378	$To a single sin.	42
+412	00:43:36,430	00:43:38,380	$Others you have denied.	42
+413	00:43:38,382	00:43:42,183	$Your trial will separate the truths$from the falsehoods.	42
 414	00:43:44,388	00:43:47,722	$I bow to the wisdom$of Your High Holiness.	43
 415	00:43:49,726	00:43:52,027	$But if I might beg	43
 416	00:43:52,062	00:43:54,646	$for just one drop$of the Mother's mercy.	43
 417	00:43:56,733	00:43:59,701	$I haven't seen my son--	43
 418	00:43:59,736	00:44:02,487	$I don't know$how long it's been.	43
-419	00:44:02,572	00:44:04,406	$I need to see him, please.	44
-420	00:44:04,408	00:44:08,243	$You have taken the first step on the path$back to righteousness.	44
-421	00:44:10,380	00:44:12,080	$In light of this,	44
-422	00:44:12,132	00:44:14,833	$I will permit you$to return to the Red Keep.	44
-423	00:44:17,087	00:44:19,054	$Thank you.	44
-424	00:44:19,089	00:44:21,089	$Thank you.	44
-425	00:44:21,091	00:44:22,557	$The Mother is merciful.	44
-426	00:44:22,592	00:44:24,843	$It is her$you should thank.	44
-427	00:44:24,895	00:44:26,895	$I will. I will.	44
-428	00:44:26,930	00:44:29,180	$I swear it,$day and night.	44
-429	00:44:31,268	00:44:33,234	$Good.	44
-430	00:44:35,939	00:44:38,773	$Am I free to go?	44
-431	00:44:38,775	00:44:41,109	$After your atonement.	44
-432	00:44:43,697	00:44:45,613	$My atonement?	44
+419	00:44:02,572	00:44:04,406	$I need to see him, please.	43
+420	00:44:04,408	00:44:08,243	$You have taken the first step on the path$back to righteousness.	43
+421	00:44:10,380	00:44:12,080	$In light of this,	43
+422	00:44:12,132	00:44:14,833	$I will permit you$to return to the Red Keep.	43
+423	00:44:17,087	00:44:19,054	$Thank you.	43
+424	00:44:19,089	00:44:21,089	$Thank you.	43
+425	00:44:21,091	00:44:22,557	$The Mother is merciful.	43
+426	00:44:22,592	00:44:24,843	$It is her$you should thank.	43
+427	00:44:24,895	00:44:26,895	$I will. I will.	43
+428	00:44:26,930	00:44:29,180	$I swear it,$day and night.	43
+429	00:44:31,268	00:44:33,234	$Good.	43
+430	00:44:35,939	00:44:38,773	$Am I free to go?	43
+431	00:44:38,775	00:44:41,109	$After your atonement.	43
+432	00:44:43,697	00:44:45,613	$My atonement?	43
 433	00:47:00,217	00:47:03,501	$A sinner$comes before you.	46
-434	00:47:03,553	00:47:06,754	$Cersei of House Lannister.	47
-435	00:47:08,008	00:47:09,924	$Mother to His Grace$King Tommen.	47
-436	00:47:09,926	00:47:13,261	$Widow of His Grace$King Robert.	47
-437	00:47:13,263	00:47:17,398	$She has committed$the acts of falsehood	47
-438	00:47:17,484	00:47:19,684	$and fornication.	47
-439	00:47:19,736	00:47:22,353	$<i>She has confessed</i>$<i>her sins</i>	47
-440	00:47:22,439	00:47:24,272	$<i>and begged</i>$<i>for forgiveness.</i>	47
-441	00:47:24,324	00:47:26,991	$<i>To demonstrate</i>$<i>her repentance,</i>	47
-442	00:47:27,027	00:47:31,246	$<i>she will cast aside</i>$<i>all pride, all artifice,</i>	47
-443	00:47:31,281	00:47:34,616	$<i>and present herself</i>$<i>as the gods made her</i>	47
-444	00:47:34,668	00:47:37,118	$to you,	47
-445	00:47:37,120	00:47:39,754	$the good people$of the city.	47
-446	00:47:39,789	00:47:43,174	$She comes before you$with a solemn heart,	47
-447	00:47:43,210	00:47:45,960	$shorn of secrets,	47
-448	00:47:46,012	00:47:49,964	$<i>naked before the eyes</i>$<i>of gods and men...</i>	47
+434	00:47:03,553	00:47:06,754	$Cersei of House Lannister.	46
+435	00:47:08,008	00:47:09,924	$Mother to His Grace$King Tommen.	46
+436	00:47:09,926	00:47:13,261	$Widow of His Grace$King Robert.	46
+437	00:47:13,263	00:47:17,398	$She has committed$the acts of falsehood	46
+438	00:47:17,484	00:47:19,684	$and fornication.	46
+439	00:47:19,736	00:47:22,353	$<i>She has confessed</i>$<i>her sins</i>	46
+440	00:47:22,439	00:47:24,272	$<i>and begged</i>$<i>for forgiveness.</i>	46
+441	00:47:24,324	00:47:26,991	$<i>To demonstrate</i>$<i>her repentance,</i>	46
+442	00:47:27,027	00:47:31,246	$<i>she will cast aside</i>$<i>all pride, all artifice,</i>	46
+443	00:47:31,281	00:47:34,616	$<i>and present herself</i>$<i>as the gods made her</i>	46
+444	00:47:34,668	00:47:37,118	$to you,	46
+445	00:47:37,120	00:47:39,754	$the good people$of the city.	46
+446	00:47:39,789	00:47:43,174	$She comes before you$with a solemn heart,	46
+447	00:47:43,210	00:47:45,960	$shorn of secrets,	46
+448	00:47:46,012	00:47:49,964	$<i>naked before the eyes</i>$<i>of gods and men...</i>	46
 449	00:47:51,468	00:47:54,636	$to make her walk$of atonement.	47
-450	00:48:15,242	00:48:18,326	$Shame.$Shame.	48
-451	00:48:18,378	00:48:20,545	$<i>Shame.</i>	48
-452	00:48:22,048	00:48:23,414	$Shame.	48
-453	00:48:23,466	00:48:27,669	$Shame. Shame.	48
-454	00:48:29,589	00:48:31,339	$Shame.	48
-455	00:48:31,341	00:48:34,509	$<i>Shame. Shame.</i>	48
-456	00:48:36,229	00:48:38,179	$Shame.	48
-457	00:48:38,181	00:48:41,899	$Shame. Shame.	48
-458	00:48:43,737	00:48:48,523	$- <i> Shame. Shame.</i>	48
+450	00:48:15,242	00:48:18,326	$Shame.$Shame.	47
+451	00:48:18,378	00:48:20,545	$<i>Shame.</i>	47
+452	00:48:22,048	00:48:23,414	$Shame.	47
+453	00:48:23,466	00:48:27,669	$Shame. Shame.	47
+454	00:48:29,589	00:48:31,339	$Shame.	47
+455	00:48:31,341	00:48:34,509	$<i>Shame. Shame.</i>	47
+456	00:48:36,229	00:48:38,179	$Shame.	47
+457	00:48:38,181	00:48:41,899	$Shame. Shame.	47
+458	00:48:43,737	00:48:48,523	$- <i> Shame. Shame.</i>	47
 459	00:48:48,525	00:48:51,159	$Shame.	48
 460	00:48:51,194	00:48:53,027	$Shame.	48
 461	00:48:53,029	00:48:55,863	$Shame. Shame.	48
 462	00:48:57,534	00:49:01,202	$Shame. Shame.	48
 463	00:49:01,254	00:49:02,420	$Shame.	48
-464	00:49:04,424	00:49:05,923	$Shame.	49
-465	00:49:05,959	00:49:07,125	$- Cunt!$- Shame.	49
-466	00:49:07,177	00:49:08,537	$<i>- Sinner!</i>$<i>- Whore!</i>	49
-467	00:49:08,545	00:49:09,711	$- Shame.$<i>-  Whore!</i>	49
-468	00:49:09,713	00:49:11,379	$Shame.	49
-469	00:49:11,431	00:49:14,549	$- Whore! Whore!$-<i> Shame.</i>	49
-470	00:49:15,935	00:49:19,554	$- -<i> Shame.</i>	49
-471	00:49:19,606	00:49:21,889	$<i>Shame.</i>	49
-472	00:49:21,891	00:49:23,725	$Whore! Sinner!	49
-473	00:49:23,777	00:49:26,194	$- Shame.$- Bitch! Brother fucker!	49
-474	00:49:26,229	00:49:28,896	$- Whore!$- Shame.	49
-475	00:49:29,949	00:49:31,899	$- Fuck off!$- Shame.	49
-476	00:49:31,951	00:49:33,401	$Shame.	49
-477	00:49:33,403	00:49:36,120	$- All hail the royal tits.$<i>-  You're a bitch!</i>	49
-478	00:49:36,156	00:49:37,405	$Shame.	49
-479	00:49:37,457	00:49:38,906	$- Get her!$- Whore!	49
-480	00:49:38,908	00:49:40,408	$- Bitch!$- Fucker!	49
-481	00:49:40,410	00:49:41,959	$- Fucker!$- You bitch!	49
-482	00:49:41,995	00:49:43,578	$-<i> Shame.</i>$- Cunt!	49
-483	00:49:43,580	00:49:45,330	$- <i> Shame.</i>	49
-484	00:49:45,382	00:49:47,665	$Shame. Shame.	49
-485	00:49:47,717	00:49:50,635	$- Brother fucker!$- Bitch!	49
+464	00:49:04,424	00:49:05,923	$Shame.	48
+465	00:49:05,959	00:49:07,125	$- Cunt!$- Shame.	48
+466	00:49:07,177	00:49:08,537	$<i>- Sinner!</i>$<i>- Whore!</i>	48
+467	00:49:08,545	00:49:09,711	$- Shame.$<i>-  Whore!</i>	48
+468	00:49:09,713	00:49:11,379	$Shame.	48
+469	00:49:11,431	00:49:14,549	$- Whore! Whore!$-<i> Shame.</i>	48
+470	00:49:15,935	00:49:19,554	$- -<i> Shame.</i>	48
+471	00:49:19,606	00:49:21,889	$<i>Shame.</i>	48
+472	00:49:21,891	00:49:23,725	$Whore! Sinner!	48
+473	00:49:23,777	00:49:26,194	$- Shame.$- Bitch! Brother fucker!	48
+474	00:49:26,229	00:49:28,896	$- Whore!$- Shame.	48
+475	00:49:29,949	00:49:31,899	$- Fuck off!$- Shame.	48
+476	00:49:31,951	00:49:33,401	$Shame.	48
+477	00:49:33,403	00:49:36,120	$- All hail the royal tits.$<i>-  You're a bitch!</i>	48
+478	00:49:36,156	00:49:37,405	$Shame.	48
+479	00:49:37,457	00:49:38,906	$- Get her!$- Whore!	48
+480	00:49:38,908	00:49:40,408	$- Bitch!$- Fucker!	48
+481	00:49:40,410	00:49:41,959	$- Fucker!$- You bitch!	48
+482	00:49:41,995	00:49:43,578	$-<i> Shame.</i>$- Cunt!	48
+483	00:49:43,580	00:49:45,330	$- <i> Shame.</i>	48
+484	00:49:45,382	00:49:47,665	$Shame. Shame.	48
+485	00:49:47,717	00:49:50,635	$- Brother fucker!$- Bitch!	48
 486	00:49:50,720	00:49:53,755	$I've had half as many$cocks as the queen.	49
 487	00:49:53,757	00:49:56,140	$- Bitch!$- Shame.	49
 488	00:49:56,176	00:49:58,296	$- Shame.$- Sinner! Whore! Slut!	49
 489	00:50:00,063	00:50:01,896	$Shame.	49
-490	00:50:03,433	00:50:06,401	$Shame. Shame.	50
-491	00:50:06,436	00:50:09,821	$- Whore!$- Whore, whore.	50
-492	00:50:09,856	00:50:11,939	$I'm a Lannister.$Suck me off!	50
-493	00:50:11,941	00:50:13,825	$- Suck me off, you bitch!$- Back!	50
-494	00:50:13,860	00:50:15,109	$- Whore!$- Shame.	50
-495	00:50:15,161	00:50:17,612	$Shame.	50
-496	00:50:17,664	00:50:20,998	$Whore!	50
-497	00:50:21,034	00:50:24,285	$Whore! Whore! Whore!	50
-498	00:50:24,337	00:50:29,374	$- <i> Shame. Shame.</i>	50
-499	00:50:30,343	00:50:32,260	$Shame.	50
-500	00:50:32,295	00:50:34,962	$- <i> Shame.</i>	50
-501	00:50:35,014	00:50:37,765	$Shame.	50
-502	00:50:37,801	00:50:39,851	$Shame.	50
-503	00:50:39,886	00:50:42,887	$<i>- Bitch! Bitch!</i>$<i>- Shame.</i>	50
+490	00:50:03,433	00:50:06,401	$Shame. Shame.	49
+491	00:50:06,436	00:50:09,821	$- Whore!$- Whore, whore.	49
+492	00:50:09,856	00:50:11,939	$I'm a Lannister.$Suck me off!	49
+493	00:50:11,941	00:50:13,825	$- Suck me off, you bitch!$- Back!	49
+494	00:50:13,860	00:50:15,109	$- Whore!$- Shame.	49
+495	00:50:15,161	00:50:17,612	$Shame.	49
+496	00:50:17,664	00:50:20,998	$Whore!	49
+497	00:50:21,034	00:50:24,285	$Whore! Whore! Whore!	49
+498	00:50:24,337	00:50:29,374	$- <i> Shame. Shame.</i>	49
+499	00:50:30,343	00:50:32,260	$Shame.	49
+500	00:50:32,295	00:50:34,962	$- <i> Shame.</i>	49
+501	00:50:35,014	00:50:37,765	$Shame.	49
+502	00:50:37,801	00:50:39,851	$Shame.	49
+503	00:50:39,886	00:50:42,887	$<i>- Bitch! Bitch!</i>$<i>- Shame.</i>	49
 504	00:50:50,397	00:50:52,814	$Brother fucker!	50
 505	00:50:52,866	00:50:56,818	$Shame. Shame.	50
 506	00:50:56,820	00:50:58,820	$Shame.	50
 507	00:50:58,822	00:51:01,572	$- Whore!$- Brother fucker!	50
 508	00:51:01,624	00:51:03,991	$- Whore!$- Shame.	50
-509	00:51:03,993	00:51:06,744	$Shame.$Shame.	51
-510	00:51:08,665	00:51:11,833	$Shame.	51
-511	00:51:11,835	00:51:14,001	$Shame.	51
-512	00:51:14,053	00:51:15,420	$Shame.	51
-513	00:51:16,423	00:51:17,755	$Shame.	51
-514	00:51:21,895	00:51:24,979	$- -<i> Shame.</i>	51
-515	00:51:25,732	00:51:28,182	$- <i> Shame.</i>$<i>- Fucker!</i>	51
-516	00:51:31,020	00:51:34,405	$Shame. Shame.	51
-517	00:51:34,441	00:51:37,492	$Shame.	51
-518	00:51:37,527	00:51:40,912	$Shame.$Shame.	51
-519	00:51:40,947	00:51:44,832	$- <i> Shame. Shame.</i>	51
-520	00:51:44,868	00:51:47,418	$Shame.	51
-521	00:51:47,454	00:51:50,421	$<i>Shame. Shame.</i>	51
+509	00:51:03,993	00:51:06,744	$Shame.$Shame.	50
+510	00:51:08,665	00:51:11,833	$Shame.	50
+511	00:51:11,835	00:51:14,001	$Shame.	50
+512	00:51:14,053	00:51:15,420	$Shame.	50
+513	00:51:16,423	00:51:17,755	$Shame.	50
+514	00:51:21,895	00:51:24,979	$- -<i> Shame.</i>	50
+515	00:51:25,732	00:51:28,182	$- <i> Shame.</i>$<i>- Fucker!</i>	50
+516	00:51:31,020	00:51:34,405	$Shame. Shame.	50
+517	00:51:34,441	00:51:37,492	$Shame.	50
+518	00:51:37,527	00:51:40,912	$Shame.$Shame.	50
+519	00:51:40,947	00:51:44,832	$- <i> Shame. Shame.</i>	50
+520	00:51:44,868	00:51:47,418	$Shame.	50
+521	00:51:47,454	00:51:50,421	$<i>Shame. Shame.</i>	50
 522	00:51:52,459	00:51:55,510	$Shame. Shame.	51
 523	00:51:55,545	00:51:58,212	$Shame.	51
 524	00:51:58,214	00:52:01,182	$Shame.$Shame.	51
 525	00:52:01,217	00:52:03,351	$Shame.	51
-526	00:52:08,558	00:52:12,560	$Shame. Shame.	52
-527	00:52:12,612	00:52:15,446	$Shame. Shame.	52
-528	00:52:17,700	00:52:19,066	$Shame.	52
+526	00:52:08,558	00:52:12,560	$Shame. Shame.	51
+527	00:52:12,612	00:52:15,446	$Shame. Shame.	51
+528	00:52:17,700	00:52:19,066	$Shame.	51
 529	00:52:57,273	00:52:59,240	$Your Grace.	52
-530	00:53:04,998	00:53:07,248	$It's good$to have you back.	53
-531	00:53:09,786	00:53:11,452	$Come.	53
-532	00:53:11,454	00:53:13,170	$We'll take you inside.	53
-533	00:53:13,206	00:53:14,922	$I need to have a look$at those feet.	53
-534	00:53:20,129	00:53:24,966	$May I have the honor of presenting$the newest member of the Kingsguard?	53
-535	00:53:40,533	00:53:44,368	$If it please Your Grace,$he has taken a holy vow of silence.	53
-536	00:53:44,404	00:53:46,821	$He has sworn$that he will not speak	53
-537	00:53:46,873	00:53:49,657	$until all His Grace's$enemies are dead	53
-538	00:53:49,709	00:53:52,577	$and evil has been$driven from the realm.	53
+530	00:53:04,998	00:53:07,248	$It's good$to have you back.	52
+531	00:53:09,786	00:53:11,452	$Come.	52
+532	00:53:11,454	00:53:13,170	$We'll take you inside.	52
+533	00:53:13,206	00:53:14,922	$I need to have a look$at those feet.	52
+534	00:53:20,129	00:53:24,966	$May I have the honor of presenting$the newest member of the Kingsguard?	52
+535	00:53:40,533	00:53:44,368	$If it please Your Grace,$he has taken a holy vow of silence.	52
+536	00:53:44,404	00:53:46,821	$He has sworn$that he will not speak	52
+537	00:53:46,873	00:53:49,657	$until all His Grace's$enemies are dead	52
+538	00:53:49,709	00:53:52,577	$and evil has been$driven from the realm.	52
 539	00:53:59,302	00:54:01,752	$Who came to your aid?$Stannis.	53
 540	00:54:01,804	00:54:02,970	$Now he needs you.	53
-541	00:54:03,006	00:54:04,639	$We don't have enough men$to make any difference.	54
-542	00:54:04,674	00:54:06,390	$The wildlings will make$a difference.	54
-543	00:54:06,426	00:54:07,842	$The wildlings will never$fight for Stannis.	54
-544	00:54:07,844	00:54:11,262	$- I told him before.$- You saved their bloody lives.	54
-545	00:54:11,314	00:54:13,180	$If they're gonna live$in the Seven Kingdoms,	54
-546	00:54:13,232	00:54:17,018	$safe behind<i> our</i> Wall,$they ought to fight for the damn place.	54
-547	00:54:17,070	00:54:20,021	$- It's not their fight.$<i>-  Open the gates!</i>	54
-548	00:54:39,342	00:54:40,758	$Stannis?	54
-549	00:54:46,849	00:54:49,800	$Shireen?$The princess?	54
-550	00:55:44,407	00:55:45,606	$Lord Commander.	55
-551	00:55:45,658	00:55:47,775	$<i>It's one of the wildlings</i>$<i>you brought back.</i>	55
-552	00:55:47,827	00:55:49,443	$<i>Says he knows</i>$<i>your Uncle Benjen.</i>	55
-553	00:55:49,529	00:55:51,162	$Says he's still alive.	55
-554	00:55:52,782	00:55:54,832	$Are you sure$he's talking about Benjen?	55
-555	00:55:54,867	00:55:56,784	$Said he was$First Ranger.	55
+541	00:54:03,006	00:54:04,639	$We don't have enough men$to make any difference.	53
+542	00:54:04,674	00:54:06,390	$The wildlings will make$a difference.	53
+543	00:54:06,426	00:54:07,842	$The wildlings will never$fight for Stannis.	53
+544	00:54:07,844	00:54:11,262	$- I told him before.$- You saved their bloody lives.	53
+545	00:54:11,314	00:54:13,180	$If they're gonna live$in the Seven Kingdoms,	53
+546	00:54:13,232	00:54:17,018	$safe behind<i> our</i> Wall,$they ought to fight for the damn place.	53
+547	00:54:17,070	00:54:20,021	$- It's not their fight.$<i>-  Open the gates!</i>	53
+548	00:54:39,342	00:54:40,758	$Stannis?	53
+549	00:54:46,849	00:54:49,800	$Shireen?$The princess?	53
+550	00:55:44,407	00:55:45,606	$Lord Commander.	54
+551	00:55:45,658	00:55:47,775	$<i>It's one of the wildlings</i>$<i>you brought back.</i>	54
+552	00:55:47,827	00:55:49,443	$<i>Says he knows</i>$<i>your Uncle Benjen.</i>	54
+553	00:55:49,529	00:55:51,162	$Says he's still alive.	54
+554	00:55:52,782	00:55:54,832	$Are you sure$he's talking about Benjen?	54
+555	00:55:54,867	00:55:56,784	$Said he was$First Ranger.	54
 556	00:55:58,921	00:56:00,871	$Said he knows$where to find him.	55
-557	00:56:07,630	00:56:09,714	$Man says he saw$your uncle at Hardhome	56
-558	00:56:09,766	00:56:11,348	$at the last full moon.	56
-559	00:56:11,384	00:56:13,434	$- Could be lying.$- Could be.	56
-560	00:56:13,469	00:56:14,802	$There are ways$to find out.	56
-561	00:56:14,804	00:56:16,804	$- Where is he?$- Over there.	56
-562	00:56:33,456	00:56:35,489	$For the Watch.	56
-563	00:56:40,213	00:56:41,662	$For the Watch.	56
-564	00:56:44,417	00:56:45,800	$For the Watch.	56
-565	00:56:47,503	00:56:49,420	$For the Watch.	56
-566	00:56:50,757	00:56:53,224	$For the Watch.	56
-567	00:57:37,019	00:57:38,435	$Olly...	57
-568	00:57:46,395	00:57:48,395	$For the Watch.	57
-569	00:58:52,962	00:58:59,462	$== sync, corrected by <font color=#00FF00>elderman</font> ==$<font color=#00FFFF>@elder_man</font>	58
+557	00:56:07,630	00:56:09,714	$Man says he saw$your uncle at Hardhome	55
+558	00:56:09,766	00:56:11,348	$at the last full moon.	55
+559	00:56:11,384	00:56:13,434	$- Could be lying.$- Could be.	55
+560	00:56:13,469	00:56:14,802	$There are ways$to find out.	55
+561	00:56:14,804	00:56:16,804	$- Where is he?$- Over there.	55
+562	00:56:33,456	00:56:35,489	$For the Watch.	55
+563	00:56:40,213	00:56:41,662	$For the Watch.	55
+564	00:56:44,417	00:56:45,800	$For the Watch.	55
+565	00:56:47,503	00:56:49,420	$For the Watch.	55
+566	00:56:50,757	00:56:53,224	$For the Watch.	55
+567	00:57:37,019	00:57:38,435	$Olly...	56
+568	00:57:46,395	00:57:48,395	$For the Watch.	56
+569	00:58:52,962	00:58:59,462	$== sync, corrected by <font color=#00FF00>elderman</font> ==$<font color=#00FFFF>@elder_man</font>	57
 570	00:58:59,486	00:59:03,486	$<font color=#FFFF00>♪ Music playing  ♪</font>	58
-571	00:59:59,608	01:00:04,608	$<font color=#FFFF00>♪ Music playing ends  ♪</font>	60
+571	00:59:59,608	01:00:04,608	$<font color=#FFFF00>♪ Music playing ends  ♪</font>	59
 9999	00:00:0,500	00:00:2,00	"$<font color=""#ffff00"" size=14>www.tvsubtitles.net</font>"	0

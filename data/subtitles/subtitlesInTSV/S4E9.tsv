@@ -1,6 +1,6 @@
 frameNo	startTime	endTime	dialogue	chunk
 1	00:02:24,686	00:02:26,938	$What was she like?	2
-2	00:02:29,358	00:02:31,275	$She...	3
+2	00:02:29,358	00:02:31,275	$She...	2
 3	00:02:33,111	00:02:35,580	$She had red hair.	3
 4	00:02:37,199	00:02:39,250	$Oh?	3
 5	00:02:39,284	00:02:41,702	$- How big were her feet?$- What do you want me to say?	3
@@ -14,8 +14,8 @@ frameNo	startTime	endTime	dialogue	chunk
 13	00:03:06,528	00:03:08,813	$She just had a baby.	3
 14	00:03:11,533	00:03:12,984	$And she never offered.	3
 15	00:03:13,035	00:03:15,486	$But if she had,	3
-16	00:03:15,688	00:03:18,155	$you would have?	4
-17	00:03:18,207	00:03:20,992	$You'd have broken your vows?	4
+16	00:03:15,688	00:03:18,155	$you would have?	3
+17	00:03:18,207	00:03:20,992	$You'd have broken your vows?	3
 18	00:03:24,913	00:03:26,998	$The interesting thing is,	4
 19	00:03:27,000	00:03:30,084	$our vows never$specifically forbid	4
 20	00:03:30,135	00:03:32,136	$intimate relations with women.	4
@@ -28,7 +28,7 @@ frameNo	startTime	endTime	dialogue	chunk
 27	00:03:55,527	00:03:58,696	$Anyway, there's nothing$for him to interpret.	4
 28	00:03:58,698	00:04:00,698	$We didn't.	4
 29	00:04:04,119	00:04:06,087	$So what's it like?	4
-30	00:04:07,839	00:04:09,674	$It's...	5
+30	00:04:07,839	00:04:09,674	$It's...	4
 31	00:04:10,959	00:04:14,712	$there's this person,$this whole other person.	5
 32	00:04:14,714	00:04:18,132	$And you're wrapped up in them$and they're wrapped up in you.	5
 33	00:04:18,183	00:04:20,351	$And you...	5
@@ -47,8 +47,8 @@ frameNo	startTime	endTime	dialogue	chunk
 46	00:05:36,712	00:05:39,797	$- My Sheila?$- Yes.	6
 47	00:05:39,799	00:05:42,133	$That was a night to remember.	6
 48	00:05:42,184	00:05:45,636	$Of course,$I'd had a good bit to drink.	6
-49	00:05:47,389	00:05:48,856	$Her fangs were sharp,	7
-50	00:05:48,890	00:05:51,108	$but she knew how to use them.	7
+49	00:05:47,389	00:05:48,856	$Her fangs were sharp,	6
+50	00:05:48,890	00:05:51,108	$but she knew how to use them.	6
 51	00:05:51,143	00:05:54,895	$And she was nice$and soft down below.	7
 52	00:05:54,946	00:05:57,531	$No, she was no ordinary beast.	7
 53	00:05:57,566	00:05:59,450	$Many is the man who...	7
@@ -63,7 +63,7 @@ frameNo	startTime	endTime	dialogue	chunk
 62	00:06:25,010	00:06:28,229	$But they came up here to our land	7
 63	00:06:28,263	00:06:30,815	$and put up a big wall$and said it was theirs.	7
 64	00:06:30,849	00:06:33,234	$Then they started$hunting us down.	7
-65	00:06:35,020	00:06:38,572	$This time, we're the ones$doing the hunting.	8
+65	00:06:35,020	00:06:38,572	$This time, we're the ones$doing the hunting.	7
 66	00:06:40,275	00:06:43,077	$You've got a lot$to say about killing.	8
 67	00:06:43,111	00:06:45,196	$Even more words than arrows.	8
 68	00:06:46,265	00:06:49,600	$Back in those villages, I killed$just as many of them as you did.	8
@@ -78,17 +78,17 @@ frameNo	startTime	endTime	dialogue	chunk
 77	00:07:09,304	00:07:13,140	$Serve him up a nice$juicy slice of ginger minge.	8
 78	00:07:16,744	00:07:19,530	$What, you've been thinking$about that ginger minge?	8
 79	00:07:20,555	00:07:22,555	$Wondering what I taste like?	8
-80	00:07:25,836	00:07:28,421	$Maybe I have.	9
-81	00:07:28,455	00:07:30,957	$Jon Snow is mine.	9
+80	00:07:25,836	00:07:28,421	$Maybe I have.	8
+81	00:07:28,455	00:07:30,957	$Jon Snow is mine.	8
 82	00:07:32,793	00:07:34,913	$Anyone else tries to kill him,	9
 83	00:07:34,928	00:07:37,680	$I'll have an arrow for them.	9
 84	00:07:40,133	00:07:44,136	$And not one of your bald friends$is fast enough to stop me.	9
 85	00:08:05,242	00:08:10,129	$And what is it that couldn't wait$until morning, Tarly?	9
 86	00:08:10,163	00:08:12,298	$Maester Aemon.	9
-87	00:08:12,332	00:08:14,834	$- How did you know...$- That it was you?	10
-88	00:08:14,885	00:08:17,470	$Who else but Samwell Tarly	10
-89	00:08:17,504	00:08:19,088	$would be wasting candles	10
-90	00:08:19,123	00:08:21,858	$to read in the middle$of the night?	10
+87	00:08:12,332	00:08:14,834	$- How did you know...$- That it was you?	9
+88	00:08:14,885	00:08:17,470	$Who else but Samwell Tarly	9
+89	00:08:17,504	00:08:19,088	$would be wasting candles	9
+90	00:08:19,123	00:08:21,858	$to read in the middle$of the night?	9
 91	00:08:25,646	00:08:28,180	$- Let me help you.$- Oh, no need.	10
 92	00:08:29,483	00:08:31,267	$I know my way$around this library	10
 93	00:08:31,302	00:08:34,186	$better than any other$place in Castle Black.	10
@@ -102,10 +102,10 @@ frameNo	startTime	endTime	dialogue	chunk
 101	00:08:51,706	00:08:54,707	$Ah, the wildlings.	10
 102	00:08:54,709	00:08:58,294	$I can assure you that$the closest Maester Faull	10
 103	00:08:58,345	00:09:01,714	$ever got to a wildling$was this very library.	10
-104	00:09:01,716	00:09:04,684	$But what he says$about what they do,	11
-105	00:09:04,718	00:09:06,185	$it's all true.	11
-106	00:09:06,219	00:09:09,889	$It's exactly what the survivors$of their raids report.	11
-107	00:09:09,940	00:09:14,777	$Yes, imagine the stories$wildlings tell about us.	11
+104	00:09:01,716	00:09:04,684	$But what he says$about what they do,	10
+105	00:09:04,718	00:09:06,185	$it's all true.	10
+106	00:09:06,219	00:09:09,889	$It's exactly what the survivors$of their raids report.	10
+107	00:09:09,940	00:09:14,777	$Yes, imagine the stories$wildlings tell about us.	10
 108	00:09:16,313	00:09:19,231	$Love is the death of duty.	11
 109	00:09:20,484	00:09:22,985	$I told that to your friend$Jon Snow once.	11
 110	00:09:23,036	00:09:27,239	$He didn't listen$and neither did you.	11
@@ -116,10 +116,10 @@ frameNo	startTime	endTime	dialogue	chunk
 115	00:09:42,172	00:09:44,123	$- Yes, you do.$- No.	11
 116	00:09:44,125	00:09:46,142	$Yes, you do.	11
 117	00:09:46,176	00:09:50,346	$Heard it in your voice$when you first brought her to me.	11
-118	00:09:50,397	00:09:52,598	$I remember how it sounds.	12
-119	00:09:52,649	00:09:54,600	$I was in love once.	12
-120	00:09:54,651	00:09:55,935	$You were?	12
-121	00:09:56,337	00:10:00,072	$You can imagine$all manner of horrors	12
+118	00:09:50,397	00:09:52,598	$I remember how it sounds.	11
+119	00:09:52,649	00:09:54,600	$I was in love once.	11
+120	00:09:54,651	00:09:55,935	$You were?	11
+121	00:09:56,337	00:10:00,072	$You can imagine$all manner of horrors	11
 122	00:10:00,074	00:10:02,942	$befalling that poor$girl and her child.	12
 123	00:10:02,993	00:10:07,663	$Is it so difficult to imagine$that an old person was once,	12
 124	00:10:07,698	00:10:09,865	$more or less, like you?	12
@@ -132,10 +132,10 @@ frameNo	startTime	endTime	dialogue	chunk
 131	00:10:29,436	00:10:33,305	$A future king always does.	12
 132	00:10:34,307	00:10:36,942	$Some of them were quite forward	12
 133	00:10:36,977	00:10:39,645	$in their attempts$to win my affections.	12
-134	00:10:40,814	00:10:43,115	$One of them succeeded.	13
-135	00:10:44,117	00:10:46,035	$I was very young.	13
-136	00:10:46,669	00:10:48,687	$Who was she?	13
-137	00:10:48,722	00:10:50,656	$Ah.	13
+134	00:10:40,814	00:10:43,115	$One of them succeeded.	12
+135	00:10:44,117	00:10:46,035	$I was very young.	12
+136	00:10:46,669	00:10:48,687	$Who was she?	12
+137	00:10:48,722	00:10:50,656	$Ah.	12
 138	00:10:50,658	00:10:53,242	$I could tell you$everything about her.	13
 139	00:10:53,293	00:10:55,161	$Who she was,	13
 140	00:10:55,195	00:10:56,962	$how we met,	13
@@ -148,8 +148,8 @@ frameNo	startTime	endTime	dialogue	chunk
 147	00:11:21,738	00:11:24,523	$Nothing makes the past$a sweeter place to visit	13
 148	00:11:24,574	00:11:27,726	$than the prospect$of imminent death.	13
 149	00:11:27,761	00:11:30,079	$Go to bed, Tarly.	13
-150	00:11:36,086	00:11:38,671	$<i> Sorry, I can't open the$gate for anybody. Orders.</i>	14
-151	00:11:38,705	00:11:40,956	$<i> You don't understand.$They killed everyone.</i>	14
+150	00:11:36,086	00:11:38,671	$<i> Sorry, I can't open the$gate for anybody. Orders.</i>	13
+151	00:11:38,705	00:11:40,956	$<i> You don't understand.$They killed everyone.</i>	13
 152	00:11:41,007	00:11:43,042	$<i>Everyone but me and my baby.</i>	14
 153	00:11:43,093	00:11:45,461	$<i>They're out there.</i>$<i>I saw them on my way here.</i>	14
 154	00:11:45,512	00:11:47,753	$<i>They may have seen me.$They may have followed me. Please.</i>	14
@@ -164,11 +164,11 @@ frameNo	startTime	endTime	dialogue	chunk
 163	00:12:05,115	00:12:07,199	$Yes, well, best get used to it.	14
 164	00:12:13,240	00:12:15,124	$Are you all right?	14
 165	00:12:17,078	00:12:19,062	$Shh, you're all right.	14
-166	00:12:19,113	00:12:23,582	$Yeah. Of course you are,$my brave little fella.	15
-167	00:12:23,633	00:12:26,302	$- It was horrible.$- I'm so, so sorry.	15
-168	00:12:26,336	00:12:28,137	$I didn't know until I got back.	15
-169	00:12:28,171	00:12:29,638	$Don't let them$send me away, Sam.	15
-170	00:12:29,673	00:12:31,557	$- Never.$- I know there's no women allowed.	15
+166	00:12:19,113	00:12:23,582	$Yeah. Of course you are,$my brave little fella.	14
+167	00:12:23,633	00:12:26,302	$- It was horrible.$- I'm so, so sorry.	14
+168	00:12:26,336	00:12:28,137	$I didn't know until I got back.	14
+169	00:12:28,171	00:12:29,638	$Don't let them$send me away, Sam.	14
+170	00:12:29,673	00:12:31,557	$- Never.$- I know there's no women allowed.	14
 171	00:12:31,591	00:12:35,060	$Anyone who tries to throw you out$will be having words with me.	15
 172	00:12:35,095	00:12:38,097	$From now on, wherever you go,	15
 173	00:12:38,499	00:12:40,999	$I go, too.	15
@@ -179,8 +179,8 @@ frameNo	startTime	endTime	dialogue	chunk
 178	00:12:59,002	00:13:00,563	$<i>Quickly!$Up! Up!</i>	15
 179	00:13:00,587	00:13:03,789	$<i>How many?$How many are there?</i>	15
 180	00:13:06,126	00:13:07,960	$Beyond the trees!	15
-181	00:13:11,798	00:13:13,933	$It's time.	16
-182	00:14:01,181	00:14:03,599	$Light them up!$Light them all!	17
+181	00:13:11,798	00:13:13,933	$It's time.	15
+182	00:14:01,181	00:14:03,599	$Light them up!$Light them all!	16
 183	00:14:12,943	00:14:14,827	$Move!	17
 184	00:14:17,297	00:14:18,831	$Pick up the pace!	17
 185	00:14:19,033	00:14:21,083	$<i>Come on, come on.</i>	17
@@ -188,11 +188,11 @@ frameNo	startTime	endTime	dialogue	chunk
 187	00:14:30,577	00:14:33,545	$Let's go.$There's two.	17
 188	00:14:36,033	00:14:38,034	$Let's get the next load.	17
 189	00:14:41,554	00:14:44,056	$That's the last$of the oil, Ser Alliser.	17
-190	00:14:45,392	00:14:48,193	$100,000 you say?	18
-191	00:14:48,228	00:14:50,396	$Yes, Ser.	18
-192	00:14:50,398	00:14:52,731	$You can say it if you like.	18
-193	00:14:53,133	00:14:56,618	$We should have sealed the$tunnel while we had the chance,	18
-194	00:14:56,653	00:15:00,039	$like you suggested.	18
+190	00:14:45,392	00:14:48,193	$100,000 you say?	17
+191	00:14:48,228	00:14:50,396	$Yes, Ser.	17
+192	00:14:50,398	00:14:52,731	$You can say it if you like.	17
+193	00:14:53,133	00:14:56,618	$We should have sealed the$tunnel while we had the chance,	17
+194	00:14:56,653	00:15:00,039	$like you suggested.	17
 195	00:15:00,073	00:15:03,292	$It was a difficult$decision either way, Ser.	18
 196	00:15:05,462	00:15:09,081	$Do you know what leadership$means, Lord Snow?	18
 197	00:15:09,132	00:15:12,217	$It means that the person in$charge gets second-guessed	18
@@ -205,8 +205,8 @@ frameNo	startTime	endTime	dialogue	chunk
 204	00:15:27,350	00:15:29,085	$Not if you lot do your duty	18
 205	00:15:29,119	00:15:32,071	$for however long it takes$to beat them back.	18
 206	00:15:33,523	00:15:36,775	$And then you get$to go on hating me	18
-207	00:15:36,777	00:15:38,244	$and I get to go on wishing	19
-208	00:15:38,246	00:15:40,946	$your wildling whore$had finished the job.	19
+207	00:15:36,777	00:15:38,244	$and I get to go on wishing	18
+208	00:15:38,246	00:15:40,946	$your wildling whore$had finished the job.	18
 209	00:16:04,137	00:16:05,771	$<i>You'll be safe down here.</i>	19
 210	00:16:05,805	00:16:07,689	$I'll check on you$as soon as I can.	19
 211	00:16:08,124	00:16:10,642	$You're leaving me again?	19
@@ -216,11 +216,11 @@ frameNo	startTime	endTime	dialogue	chunk
 215	00:16:18,618	00:16:21,620	$I... I didn't mean in the same room.	19
 216	00:16:21,654	00:16:22,988	$What are you going$to do out there?	19
 217	00:16:22,990	00:16:24,470	$- Help my brothers.$- How?	19
-218	00:16:25,825	00:16:28,043	$You're going to fight the$free folk when they come?	20
-219	00:16:28,078	00:16:30,913	$They'll kill you. In Mole's Town,$they killed everyone.	20
-220	00:16:30,964	00:16:34,550	$I can't just hide here with you$while they're fighting out there.	20
-221	00:16:34,584	00:16:37,419	$Why not? You won't$matter up there.	20
-222	00:16:37,470	00:16:39,088	$You will down here.	20
+218	00:16:25,825	00:16:28,043	$You're going to fight the$free folk when they come?	19
+219	00:16:28,078	00:16:30,913	$They'll kill you. In Mole's Town,$they killed everyone.	19
+220	00:16:30,964	00:16:34,550	$I can't just hide here with you$while they're fighting out there.	19
+221	00:16:34,584	00:16:37,419	$Why not? You won't$matter up there.	19
+222	00:16:37,470	00:16:39,088	$You will down here.	19
 223	00:16:40,340	00:16:43,342	$I am a man of$the Night's Watch, Gilly.	20
 224	00:16:43,393	00:16:45,677	$I made a promise$to defend the Wall	20
 225	00:16:45,679	00:16:47,513	$and I have to keep it...	20
@@ -234,11 +234,11 @@ frameNo	startTime	endTime	dialogue	chunk
 233	00:17:55,749	00:17:58,634	$I've never held a sword$with a proper edge.	21
 234	00:17:58,668	00:18:01,336	$This is no place for me to be.	21
 235	00:18:03,256	00:18:04,723	$You're not afraid?	21
-236	00:18:04,757	00:18:07,226	$Of course I'm afraid.	22
-237	00:18:07,260	00:18:09,761	$There's a band of wildlings$coming to kill us.	22
-238	00:18:09,763	00:18:11,230	$If you're afraid$of a band of wildlings,	22
-239	00:18:11,264	00:18:14,516	$how in seven hells did you$manage to kill a white walker?	22
-240	00:18:19,989	00:18:22,658	$I didn't know$I was going to kill it.	22
+236	00:18:04,757	00:18:07,226	$Of course I'm afraid.	21
+237	00:18:07,260	00:18:09,761	$There's a band of wildlings$coming to kill us.	21
+238	00:18:09,763	00:18:11,230	$If you're afraid$of a band of wildlings,	21
+239	00:18:11,264	00:18:14,516	$how in seven hells did you$manage to kill a white walker?	21
+240	00:18:19,989	00:18:22,658	$I didn't know$I was going to kill it.	21
 241	00:18:22,692	00:18:25,444	$But I had to do something.$I didn't have any choice.	22
 242	00:18:25,446	00:18:27,446	$It was going to kill Gilly$and take the baby.	22
 243	00:18:29,449	00:18:32,751	$If someone had asked$me my name right then,	22
@@ -249,9 +249,9 @@ frameNo	startTime	endTime	dialogue	chunk
 248	00:18:45,965	00:18:48,050	$I was nothing at all.	22
 249	00:18:49,936	00:18:51,887	$And when you're nothing at all,	22
 250	00:18:51,938	00:18:54,556	$there's no more reason$to be afraid.	22
-251	00:18:56,359	00:18:58,360	$But you're afraid now?	23
-252	00:18:59,229	00:19:00,862	$Yes, well...	23
-253	00:19:02,732	00:19:04,816	$I'm not nothing anymore.	23
+251	00:18:56,359	00:18:58,360	$But you're afraid now?	22
+252	00:18:59,229	00:19:00,862	$Yes, well...	22
+253	00:19:02,732	00:19:04,816	$I'm not nothing anymore.	22
 254	00:19:24,087	00:19:25,504	$Most of their men are up top.	23
 255	00:19:25,506	00:19:28,840	$Didn't count more than 20 down here.$Leftovers.	23
 256	00:19:28,891	00:19:30,976	$They got a big fat one and a$little bony one manning the front.	23
@@ -262,61 +262,61 @@ frameNo	startTime	endTime	dialogue	chunk
 261	00:20:00,206	00:20:02,791	$<i>Come on, brothers!</i>	24
 262	00:21:17,699	00:21:19,584	$Archers nock.	25
 263	00:21:19,619	00:21:21,782	$Everyone else hold.	25
-264	00:21:21,833	00:21:24,284	$Grenn, no!	26
-265	00:21:27,205	00:21:30,123	$I said nock and hold, you cunts!	26
-266	00:21:30,174	00:21:33,210	$- Does nock mean draw?$- No, Ser!	26
-267	00:21:33,261	00:21:36,513	$- Does fucking hold mean fucking drop?$- No, Ser!	26
-268	00:21:36,547	00:21:39,766	$- You all plan to die here tonight?$- No, Ser!	26
-269	00:21:39,801	00:21:42,269	$That's very good to hear.$Draw!	26
+264	00:21:21,833	00:21:24,284	$Grenn, no!	25
+265	00:21:27,205	00:21:30,123	$I said nock and hold, you cunts!	25
+266	00:21:30,174	00:21:33,210	$- Does nock mean draw?$- No, Ser!	25
+267	00:21:33,261	00:21:36,513	$- Does fucking hold mean fucking drop?$- No, Ser!	25
+268	00:21:36,547	00:21:39,766	$- You all plan to die here tonight?$- No, Ser!	25
+269	00:21:39,801	00:21:42,269	$That's very good to hear.$Draw!	25
 270	00:21:46,524	00:21:48,558	$No, down below!	26
 271	00:21:58,236	00:22:00,704	$Draw!$Light them up.	26
-272	00:22:15,169	00:22:17,838	$Come on, get up!	27
-273	00:22:17,889	00:22:19,723	$They're attacking$the southern gate!	27
-274	00:22:19,757	00:22:21,892	$- Now?$- Now.	27
-275	00:22:25,229	00:22:28,982	$I'm going down there.$Brother Slynt, you have the Wall.	27
-276	00:22:29,016	00:22:31,518	$What?	27
+272	00:22:15,169	00:22:17,838	$Come on, get up!	26
+273	00:22:17,889	00:22:19,723	$They're attacking$the southern gate!	26
+274	00:22:19,757	00:22:21,892	$- Now?$- Now.	26
+275	00:22:25,229	00:22:28,982	$I'm going down there.$Brother Slynt, you have the Wall.	26
+276	00:22:29,016	00:22:31,518	$What?	26
 277	00:22:31,569	00:22:34,771	$What are you fucking waiting for?$Loose!	27
 278	00:22:34,822	00:22:38,275	$You heard the man.$Loose!	27
-279	00:23:15,446	00:23:16,980	$You, over there.	28
+279	00:23:15,446	00:23:16,980	$You, over there.	27
 280	00:23:21,903	00:23:24,037	$- Did you get one?$- No.	28
 281	00:23:25,540	00:23:27,707	$Ah, shit, Pyp!$Shit.	28
 282	00:23:27,742	00:23:29,376	$- Sam.$- Yeah?	28
 283	00:23:29,410	00:23:31,211	$I think we're gonna die.	28
 284	00:23:31,245	00:23:33,246	$If you keep missing, we will.	28
 285	00:23:43,090	00:23:45,225	$Come on!$Come on!	28
-286	00:23:49,897	00:23:51,598	$Brothers!	29
-287	00:23:51,600	00:23:55,185	$100 generations$have defended this castle.	29
-288	00:23:55,236	00:23:57,588	$She's never fallen before.	29
-289	00:23:57,622	00:23:59,439	$She will not fall tonight.	29
-290	00:23:59,490	00:24:02,609	$Those are Thenns at our walls.	29
-291	00:24:02,660	00:24:04,945	$They eat the flesh$of the men they kill.	29
-292	00:24:04,996	00:24:08,164	$Do you want to fill$the belly of a Thenn tonight?	29
-293	00:24:08,199	00:24:09,499	$No!	29
-294	00:24:09,534	00:24:11,034	$Tonight we fight.	29
+286	00:23:49,897	00:23:51,598	$Brothers!	28
+287	00:23:51,600	00:23:55,185	$100 generations$have defended this castle.	28
+288	00:23:55,236	00:23:57,588	$She's never fallen before.	28
+289	00:23:57,622	00:23:59,439	$She will not fall tonight.	28
+290	00:23:59,490	00:24:02,609	$Those are Thenns at our walls.	28
+291	00:24:02,660	00:24:04,945	$They eat the flesh$of the men they kill.	28
+292	00:24:04,996	00:24:08,164	$Do you want to fill$the belly of a Thenn tonight?	28
+293	00:24:08,199	00:24:09,499	$No!	28
+294	00:24:09,534	00:24:11,034	$Tonight we fight.	28
 295	00:24:11,085	00:24:13,453	$And when the sun rises,$I promise you,	29
 296	00:24:13,504	00:24:15,422	$Castle Black will stand!	29
 297	00:24:16,541	00:24:18,758	$The Night's Watch will stand.	29
 298	00:24:22,129	00:24:25,599	$With me now!$Now with me!	29
 299	00:25:21,656	00:25:24,274	$No discipline.$No training.	30
 300	00:25:24,325	00:25:27,110	$Gang of thieves,$that's all this is.	30
-301	00:25:27,161	00:25:29,669	$I commanded the City Watch$of King's Landing.	31
-302	00:25:29,789	00:25:31,353	$Those men obeyed orders.	31
-303	00:25:31,473	00:25:33,549	$We can't just let them attack the gate!	31
-304	00:25:33,669	00:25:37,004	$The bars of those gates are$four inches of cold-rolled steel.	31
-305	00:25:37,006	00:25:39,507	$Those are giants riding$mammoths down there!	31
-306	00:25:39,509	00:25:42,009	$Do you think your cold-rolled$steel is gonna stop them?	31
-307	00:25:42,011	00:25:43,311	$No such thing as giants.	31
-308	00:25:43,345	00:25:46,013	$A story for the children.	31
-309	00:25:47,933	00:25:49,817	$Brother Slynt.	31
-310	00:25:49,851	00:25:52,653	$We just got word that Ser Alliser$needs you below.	31
+301	00:25:27,161	00:25:29,669	$I commanded the City Watch$of King's Landing.	30
+302	00:25:29,789	00:25:31,353	$Those men obeyed orders.	30
+303	00:25:31,473	00:25:33,549	$We can't just let them attack the gate!	30
+304	00:25:33,669	00:25:37,004	$The bars of those gates are$four inches of cold-rolled steel.	30
+305	00:25:37,006	00:25:39,507	$Those are giants riding$mammoths down there!	30
+306	00:25:39,509	00:25:42,009	$Do you think your cold-rolled$steel is gonna stop them?	30
+307	00:25:42,011	00:25:43,311	$No such thing as giants.	30
+308	00:25:43,345	00:25:46,013	$A story for the children.	30
+309	00:25:47,933	00:25:49,817	$Brother Slynt.	30
+310	00:25:49,851	00:25:52,653	$We just got word that Ser Alliser$needs you below.	30
 311	00:25:54,523	00:25:57,724	$You're the most experienced man$he's got, Ser, and he needs you.	31
 312	00:25:58,610	00:26:00,361	$Needed below?	31
 313	00:26:00,412	00:26:02,580	$Yes. Yes.	31
 314	00:26:11,757	00:26:15,259	$Archers, nock your arrows!	31
 315	00:26:15,294	00:26:17,795	$<i>Nock arrows!</i>	31
-316	00:26:17,846	00:26:19,547	$Draw!	32
-317	00:26:21,016	00:26:23,184	$Loose!	32
-318	00:26:37,065	00:26:40,315	$- They won't summit before dawn.$- How do you know that?	32
+316	00:26:17,846	00:26:19,547	$Draw!	31
+317	00:26:21,016	00:26:23,184	$Loose!	31
+318	00:26:37,065	00:26:40,315	$- They won't summit before dawn.$- How do you know that?	31
 319	00:26:40,366	00:26:42,401	$Because I've made that climb.	32
 320	00:26:42,452	00:26:45,571	$I think they're in a bigger$hurry than you were.	32
 321	00:26:48,291	00:26:50,158	$<i>Hold the bridge!</i>	32
@@ -324,16 +324,16 @@ frameNo	startTime	endTime	dialogue	chunk
 323	00:26:52,378	00:26:55,214	$<i>Come on with the rocks!</i>	32
 324	00:27:00,837	00:27:02,304	$Nock!	32
 325	00:27:04,224	00:27:05,674	$Draw!	32
-326	00:27:09,345	00:27:10,646	$Loose!	33
-327	00:27:29,616	00:27:31,617	$Down!	33
-328	00:28:05,735	00:28:08,236	$No! No!	34
+326	00:27:09,345	00:27:10,646	$Loose!	32
+327	00:27:29,616	00:27:31,617	$Down!	32
+328	00:28:05,735	00:28:08,236	$No! No!	33
 329	00:28:27,256	00:28:28,840	$To the gate.$Come on, let's move.	34
 330	00:28:32,895	00:28:34,179	$It's gonna open.	34
-331	00:29:38,995	00:29:41,363	$I got one, right through the heart.$He's dead.	36
-332	00:29:41,414	00:29:43,782	$- Oh, is it over?$- No.	36
-333	00:29:43,833	00:29:45,701	$Well, then...	36
-334	00:29:53,209	00:29:56,295	$You're all right.$You're all right.	36
-335	00:29:58,598	00:29:59,966	$I'll get help.	36
+331	00:29:38,995	00:29:41,363	$I got one, right through the heart.$He's dead.	35
+332	00:29:41,414	00:29:43,782	$- Oh, is it over?$- No.	35
+333	00:29:43,833	00:29:45,701	$Well, then...	35
+334	00:29:53,209	00:29:56,295	$You're all right.$You're all right.	35
+335	00:29:58,598	00:29:59,966	$I'll get help.	35
 336	00:30:00,000	00:30:02,317	$Shh. Shh.	36
 337	00:30:02,552	00:30:04,853	$Maester Aemon is coming.	36
 338	00:30:04,887	00:30:06,805	$He's gonna make it all right.	36
@@ -342,137 +342,137 @@ frameNo	startTime	endTime	dialogue	chunk
 341	00:31:53,979	00:31:55,730	$The outer gate won't hold.	38
 342	00:31:55,732	00:31:58,400	$Take five men,$hold the inner gate.	38
 343	00:31:58,434	00:31:59,818	$Aye.	38
-344	00:32:02,621	00:32:04,455	$Hold the gate.	39
-345	00:32:04,490	00:32:06,791	$If they make it through...	39
-346	00:32:09,078	00:32:10,962	$They won't.	39
-347	00:32:12,998	00:32:15,667	$Come on, Hill.$And you, Cooper.	39
-348	00:32:15,718	00:32:18,887	$You three, on me.	39
-349	00:32:18,921	00:32:21,222	$Come on, you lazy bastards.	39
-350	00:32:25,094	00:32:27,095	$Oil.	39
-351	00:32:28,097	00:32:30,231	$Oil on the ramp!	39
+344	00:32:02,621	00:32:04,455	$Hold the gate.	38
+345	00:32:04,490	00:32:06,791	$If they make it through...	38
+346	00:32:09,078	00:32:10,962	$They won't.	38
+347	00:32:12,998	00:32:15,667	$Come on, Hill.$And you, Cooper.	38
+348	00:32:15,718	00:32:18,887	$You three, on me.	38
+349	00:32:18,921	00:32:21,222	$Come on, you lazy bastards.	38
+350	00:32:25,094	00:32:27,095	$Oil.	38
+351	00:32:28,097	00:32:30,231	$Oil on the ramp!	38
 352	00:32:39,358	00:32:41,609	$Protect the gate!	39
-353	00:33:14,643	00:33:16,527	$Get him inside.	40
+353	00:33:14,643	00:33:16,527	$Get him inside.	39
 354	00:33:20,649	00:33:22,734	$Hold the fucking gate!	40
 355	00:33:22,785	00:33:24,903	$Hold it!	40
 356	00:34:23,379	00:34:24,879	$We need more men down here.	41
 357	00:34:24,930	00:34:27,432	$- We have to hold the gate.$- But we need men here.	41
 358	00:34:27,466	00:34:29,717	$Tell Jon.$He's in command.	41
-359	00:34:29,768	00:34:32,186	$Let's go.	42
-360	00:34:39,812	00:34:42,981	$Get me to the top!$You hear me?!	42
-361	00:34:47,486	00:34:49,904	$Your name's Olly, right?	42
-362	00:34:49,906	00:34:53,157	$Listen to me, Olly.$Get me to the top.	42
-363	00:34:53,208	00:34:56,488	$And when we give the signal,$bring us back down.	42
-364	00:34:57,379	00:34:58,963	$You hear me?	42
+359	00:34:29,768	00:34:32,186	$Let's go.	41
+360	00:34:39,812	00:34:42,981	$Get me to the top!$You hear me?!	41
+361	00:34:47,486	00:34:49,904	$Your name's Olly, right?	41
+362	00:34:49,906	00:34:53,157	$Listen to me, Olly.$Get me to the top.	41
+363	00:34:53,208	00:34:56,488	$And when we give the signal,$bring us back down.	41
+364	00:34:57,379	00:34:58,963	$You hear me?	41
 365	00:35:03,552	00:35:06,220	$Find a weapon, Olly.$Fight them.	42
-366	00:35:38,604	00:35:41,155	$Clear the way!$Let's go!	43
-367	00:35:41,190	00:35:43,291	$- Out of the way!$- Get out of here!	43
+366	00:35:38,604	00:35:41,155	$Clear the way!$Let's go!	42
+367	00:35:41,190	00:35:43,291	$- Out of the way!$- Get out of here!	42
 368	00:36:00,726	00:36:03,144	$Cut the rope!	43
-369	00:36:09,318	00:36:11,819	$Wait! No!	44
-370	00:36:25,834	00:36:27,885	$<i>- We need more archers.$- Here I am.</i>	44
-371	00:36:27,920	00:36:30,254	$<i>- Come on.$- Quickly.</i>	44
-372	00:36:32,474	00:36:34,392	$What are you doing up here?	44
-373	00:36:34,426	00:36:36,928	$The wildlings$are over the walls.	44
-374	00:36:36,979	00:36:38,763	$Ser Alliser's fallen.	44
-375	00:36:38,814	00:36:41,482	$The castle won't stand$much longer.	44
+369	00:36:09,318	00:36:11,819	$Wait! No!	43
+370	00:36:25,834	00:36:27,885	$<i>- We need more archers.$- Here I am.</i>	43
+371	00:36:27,920	00:36:30,254	$<i>- Come on.$- Quickly.</i>	43
+372	00:36:32,474	00:36:34,392	$What are you doing up here?	43
+373	00:36:34,426	00:36:36,928	$The wildlings$are over the walls.	43
+374	00:36:36,979	00:36:38,763	$Ser Alliser's fallen.	43
+375	00:36:38,814	00:36:41,482	$The castle won't stand$much longer.	43
 376	00:36:43,185	00:36:46,154	$Edd, you have the Wall.	44
 377	00:36:48,407	00:36:50,858	$If they try the mammoths again,$drop fire on them.	44
 378	00:36:50,909	00:36:53,694	$If the climbers get too high,$drop the scythe on them.	44
-379	00:36:59,201	00:37:02,370	$Come, brothers.$Now fight with me!	45
-380	00:37:02,421	00:37:06,257	$Might as well enjoy$our last night, right, boys?	45
-381	00:37:06,341	00:37:08,259	$Light the fuckers up!	45
-382	00:37:08,293	00:37:11,462	$Nock! Draw!	45
-383	00:37:12,381	00:37:14,632	$Loose!	45
-384	00:37:23,225	00:37:24,392	$How are we gonna stop that?	45
-385	00:37:24,394	00:37:25,726	$Shot 20 arrows in him already.	45
-386	00:37:25,728	00:37:27,195	$You heard Jon.$We hold the gate.	45
-387	00:37:27,229	00:37:28,646	$Jon Snow's not Lord Commander.	45
-388	00:37:28,697	00:37:30,364	$We hold the gate!	45
+379	00:36:59,201	00:37:02,370	$Come, brothers.$Now fight with me!	44
+380	00:37:02,421	00:37:06,257	$Might as well enjoy$our last night, right, boys?	44
+381	00:37:06,341	00:37:08,259	$Light the fuckers up!	44
+382	00:37:08,293	00:37:11,462	$Nock! Draw!	44
+383	00:37:12,381	00:37:14,632	$Loose!	44
+384	00:37:23,225	00:37:24,392	$How are we gonna stop that?	44
+385	00:37:24,394	00:37:25,726	$Shot 20 arrows in him already.	44
+386	00:37:25,728	00:37:27,195	$You heard Jon.$We hold the gate.	44
+387	00:37:27,229	00:37:28,646	$Jon Snow's not Lord Commander.	44
+388	00:37:28,697	00:37:30,364	$We hold the gate!	44
 389	00:37:39,241	00:37:41,742	$Mother, save me.$Father, save me.	45
 390	00:37:41,744	00:37:42,960	$The gods aren't down here.	45
 391	00:37:42,995	00:37:44,836	$It's the six of us.$You hear me?	45
-392	00:37:49,760	00:37:51,060	$No, please.	46
-393	00:37:51,086	00:37:53,154	$Night gathers$and now my watch begins.	46
-394	00:37:53,305	00:37:55,723	$It shall not end until my death.	46
-395	00:37:55,757	00:37:58,226	$I shall take no wife,$hold no lands,	46
-396	00:37:58,260	00:37:59,844	$father no children.	46
-397	00:37:59,895	00:38:02,430	$I shall wear no crown$and win no glory.	46
-398	00:38:02,432	00:38:04,649	$I shall live and die at my post.	46
-399	00:38:04,683	00:38:06,567	$I am the sword$in the darkness.	46
-400	00:38:06,602	00:38:08,403	$I am the watcher on the walls.	46
-401	00:38:08,437	00:38:11,439	$I am the shield that guards$the realms of men.	46
-402	00:38:11,441	00:38:15,493	$I pledge my life and honor$to the Night's Watch	46
-403	00:38:15,527	00:38:18,196	$for this night$and all the nights to come!	46
+392	00:37:49,760	00:37:51,060	$No, please.	45
+393	00:37:51,086	00:37:53,154	$Night gathers$and now my watch begins.	45
+394	00:37:53,305	00:37:55,723	$It shall not end until my death.	45
+395	00:37:55,757	00:37:58,226	$I shall take no wife,$hold no lands,	45
+396	00:37:58,260	00:37:59,844	$father no children.	45
+397	00:37:59,895	00:38:02,430	$I shall wear no crown$and win no glory.	45
+398	00:38:02,432	00:38:04,649	$I shall live and die at my post.	45
+399	00:38:04,683	00:38:06,567	$I am the sword$in the darkness.	45
+400	00:38:06,602	00:38:08,403	$I am the watcher on the walls.	45
+401	00:38:08,437	00:38:11,439	$I am the shield that guards$the realms of men.	45
+402	00:38:11,441	00:38:15,493	$I pledge my life and honor$to the Night's Watch	45
+403	00:38:15,527	00:38:18,196	$for this night$and all the nights to come!	45
 404	00:38:23,952	00:38:25,419	$I don't want you out there.	46
 405	00:38:25,454	00:38:27,672	$You can't protect me forever.	46
 406	00:38:27,706	00:38:30,291	$There won't be anywhere$to hide if the castle falls.	46
 407	00:38:33,128	00:38:35,680	$I need him more than I need you.	46
-408	00:39:49,171	00:39:51,706	$We need you, boy.	48
+408	00:39:49,171	00:39:51,706	$We need you, boy.	47
 409	00:40:13,812	00:40:15,529	$Ha!	48
-410	00:42:10,595	00:42:12,146	$Jon Snow.	51
-411	00:42:12,180	00:42:15,433	$Hush.$Don't talk.	51
-412	00:42:19,521	00:42:22,022	$Do you remember the cave?	51
-413	00:42:26,445	00:42:29,246	$We should have$stayed in the cave.	51
+410	00:42:10,595	00:42:12,146	$Jon Snow.	50
+411	00:42:12,180	00:42:15,433	$Hush.$Don't talk.	50
+412	00:42:19,521	00:42:22,022	$Do you remember the cave?	50
+413	00:42:26,445	00:42:29,246	$We should have$stayed in the cave.	50
 414	00:42:33,201	00:42:35,202	$We'll go back there.	51
 415	00:42:41,293	00:42:44,628	$You know nothing, Jon Snow.	51
-416	00:43:19,881	00:43:22,299	$Drop the scythe, boys!	52
-417	00:43:44,439	00:43:46,941	$- Hoist her up.$<i>- Hoist her up!</i>	53
-418	00:43:52,864	00:43:54,949	$They've had enough$for one night.	53
-419	00:43:59,120	00:44:01,455	$Don't cheer too loud.	53
-420	00:44:02,841	00:44:05,876	$They still outnumber us$1,000 to one.	53
+416	00:43:19,881	00:43:22,299	$Drop the scythe, boys!	51
+417	00:43:44,439	00:43:46,941	$- Hoist her up.$<i>- Hoist her up!</i>	52
+418	00:43:52,864	00:43:54,949	$They've had enough$for one night.	52
+419	00:43:59,120	00:44:01,455	$Don't cheer too loud.	52
+420	00:44:02,841	00:44:05,876	$They still outnumber us$1,000 to one.	52
 421	00:44:14,185	00:44:15,936	$Tormund.	53
 422	00:44:15,971	00:44:18,522	$It's over.	53
 423	00:44:18,557	00:44:19,890	$Let it end.	53
 424	00:44:19,941	00:44:22,226	$This is how a man ends.	53
-425	00:44:30,201	00:44:31,735	$Put him in chains.	54
-426	00:44:32,821	00:44:34,655	$We'll question him later.	54
-427	00:44:37,375	00:44:39,793	$I should have thrown you...	54
-428	00:44:39,828	00:44:42,830	$from the top of the Wall, boy!	54
-429	00:44:42,832	00:44:44,882	$Aye.	54
-430	00:44:44,916	00:44:46,967	$You should have.	54
-431	00:44:54,092	00:44:56,760	$Whoa, it's me.$It's me.	54
+425	00:44:30,201	00:44:31,735	$Put him in chains.	53
+426	00:44:32,821	00:44:34,655	$We'll question him later.	53
+427	00:44:37,375	00:44:39,793	$I should have thrown you...	53
+428	00:44:39,828	00:44:42,830	$from the top of the Wall, boy!	53
+429	00:44:42,832	00:44:44,882	$Aye.	53
+430	00:44:44,916	00:44:46,967	$You should have.	53
+431	00:44:54,092	00:44:56,760	$Whoa, it's me.$It's me.	53
 432	00:45:00,599	00:45:02,433	$I promised you, didn't I?	54
-433	00:45:17,415	00:45:19,116	$We held them off.	55
-434	00:45:19,167	00:45:21,118	$For one night.	55
-435	00:45:21,169	00:45:23,504	$This is a great victory.	55
-436	00:45:23,538	00:45:25,706	$A great victory?	55
-437	00:45:27,258	00:45:29,510	$Mance was testing our defenses.	55
-438	00:45:29,544	00:45:31,128	$He almost made it through.	55
-439	00:45:31,179	00:45:33,964	$And he has more giants.$He has more mammoths.	55
-440	00:45:34,015	00:45:36,717	$He has 1,000 times as many men.	55
-441	00:45:40,055	00:45:42,640	$They'll hit us again tonight.	55
-442	00:45:42,691	00:45:45,109	$Maybe we can hold them$off for a day or two,	55
-443	00:45:45,143	00:45:47,183	$but we'll never beat them.	55
-444	00:45:48,113	00:45:49,480	$Where are we going?	55
-445	00:45:49,531	00:45:51,198	$Going to find Mance.	55
+433	00:45:17,415	00:45:19,116	$We held them off.	54
+434	00:45:19,167	00:45:21,118	$For one night.	54
+435	00:45:21,169	00:45:23,504	$This is a great victory.	54
+436	00:45:23,538	00:45:25,706	$A great victory?	54
+437	00:45:27,258	00:45:29,510	$Mance was testing our defenses.	54
+438	00:45:29,544	00:45:31,128	$He almost made it through.	54
+439	00:45:31,179	00:45:33,964	$And he has more giants.$He has more mammoths.	54
+440	00:45:34,015	00:45:36,717	$He has 1,000 times as many men.	54
+441	00:45:40,055	00:45:42,640	$They'll hit us again tonight.	54
+442	00:45:42,691	00:45:45,109	$Maybe we can hold them$off for a day or two,	54
+443	00:45:45,143	00:45:47,183	$but we'll never beat them.	54
+444	00:45:48,113	00:45:49,480	$Where are we going?	54
+445	00:45:49,531	00:45:51,198	$Going to find Mance.	54
 446	00:45:51,232	00:45:53,934	$To fi...$you can't do that.	55
 447	00:45:53,969	00:45:55,819	$No one gave you any orders.	55
 448	00:45:57,572	00:45:59,957	$Who's left to give orders?	55
-449	00:45:59,991	00:46:02,743	$The wildling army's only$an army because of Mance.	56
-450	00:46:02,745	00:46:05,496	$He united 100 warring tribes.	56
-451	00:46:05,547	00:46:07,581	$Without Mance,$they lose their leader.	56
-452	00:46:07,583	00:46:10,300	$They lose their purpose.$They go back to fighting each other.	56
-453	00:46:10,335	00:46:12,136	$Scatter back to their homes.	56
-454	00:46:12,170	00:46:14,338	$Without Mance?	56
-455	00:46:14,389	00:46:15,806	$You're going to kill him?	56
-456	00:46:15,840	00:46:17,141	$I'm gonna try.	56
-457	00:46:17,175	00:46:19,009	$They'll never let you$within 100 yards of him.	56
-458	00:46:19,060	00:46:21,261	$And even if they did, even$if you managed to kill him...	56
-459	00:46:21,263	00:46:23,847	$They'll kill me? If I don't$go, they'll kill me anyway.	56
-460	00:46:23,898	00:46:25,315	$They'll kill$the rest of us, too.	56
-461	00:46:25,350	00:46:27,901	$They won't just kill you.	56
-462	00:46:27,936	00:46:29,770	$They'll boil you.$They'll flay you.	56
-463	00:46:29,821	00:46:31,321	$They'll make it last days.	56
-464	00:46:34,109	00:46:37,661	$You're right.$It's a bad plan.	56
-465	00:46:39,664	00:46:41,699	$What's your plan?	56
-466	00:47:24,993	00:47:27,161	$They held the gate.	57
+449	00:45:59,991	00:46:02,743	$The wildling army's only$an army because of Mance.	55
+450	00:46:02,745	00:46:05,496	$He united 100 warring tribes.	55
+451	00:46:05,547	00:46:07,581	$Without Mance,$they lose their leader.	55
+452	00:46:07,583	00:46:10,300	$They lose their purpose.$They go back to fighting each other.	55
+453	00:46:10,335	00:46:12,136	$Scatter back to their homes.	55
+454	00:46:12,170	00:46:14,338	$Without Mance?	55
+455	00:46:14,389	00:46:15,806	$You're going to kill him?	55
+456	00:46:15,840	00:46:17,141	$I'm gonna try.	55
+457	00:46:17,175	00:46:19,009	$They'll never let you$within 100 yards of him.	55
+458	00:46:19,060	00:46:21,261	$And even if they did, even$if you managed to kill him...	55
+459	00:46:21,263	00:46:23,847	$They'll kill me? If I don't$go, they'll kill me anyway.	55
+460	00:46:23,898	00:46:25,315	$They'll kill$the rest of us, too.	55
+461	00:46:25,350	00:46:27,901	$They won't just kill you.	55
+462	00:46:27,936	00:46:29,770	$They'll boil you.$They'll flay you.	55
+463	00:46:29,821	00:46:31,321	$They'll make it last days.	55
+464	00:46:34,109	00:46:37,661	$You're right.$It's a bad plan.	55
+465	00:46:39,664	00:46:41,699	$What's your plan?	55
+466	00:47:24,993	00:47:27,161	$They held the gate.	56
 467	00:47:36,387	00:47:38,972	$Get some brothers$down here to help you.	57
-468	00:47:41,092	00:47:43,393	$We need to burn the bodies.	58
-469	00:48:04,199	00:48:07,201	$Raise the outer gate.	58
-470	00:48:07,252	00:48:09,787	$Then lower it again$as soon as I'm out.	58
+468	00:47:41,092	00:47:43,393	$We need to burn the bodies.	57
+469	00:48:04,199	00:48:07,201	$Raise the outer gate.	57
+470	00:48:07,252	00:48:09,787	$Then lower it again$as soon as I'm out.	57
 471	00:48:21,216	00:48:22,716	$What are you doing?	58
 472	00:48:22,718	00:48:25,435	$I promised Mormont$I'd never lose it again.	58
-473	00:48:29,774	00:48:31,942	$In case I don't come back.	59
-474	00:48:39,734	00:48:41,785	$Jon.	59
-475	00:48:46,457	00:48:48,242	$Come back.	59
-476	00:49:11,327	00:49:19,327	"$<font color=""#ec14bd"">Original sub by honeybunny</font>$<font color=""#ec14bd"">www.addic7ed.com</font>"	60
+473	00:48:29,774	00:48:31,942	$In case I don't come back.	58
+474	00:48:39,734	00:48:41,785	$Jon.	58
+475	00:48:46,457	00:48:48,242	$Come back.	58
+476	00:49:11,327	00:49:19,327	"$<font color=""#ec14bd"">Original sub by honeybunny</font>$<font color=""#ec14bd"">www.addic7ed.com</font>"	59
 9999	00:00:0,500	00:00:2,00	"$<font color=""#ffff00"" size=14>www.tvsubtitles.net</font>"	0
