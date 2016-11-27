@@ -214,37 +214,9 @@ function initScatterPlot (data){
     	categoryVisibilities[d] = !categoryVisibilities[d];
     	d3.selectAll("#rect-" + d).attr("fill", categoryVisibilities[d] ? color(d) : invisibleColor);
     	updateScatterPlot(sliceData (textData, seasonNumber, episodeNumber));
-        // update circle/legend colors of 
-        // clicked category for focus
-        if(categoryVisibilities[d]){
-            legendRects
-            .transition()
-            .attr("fill", function(d) {
-                if(categoryVisibilities[d]) {
-                    if(d == catInFocus){
-                        return focusColor;
-                    }
-                    else{
-                        return unfocusColor;    
-                    }
-                }
-                else {
-                    return invisibleColor;
-                }
-            })
-            var visibleCategories = categoryNames.filter(function(d) {return categoryVisibilities[d];});
-            visibleCategories.forEach(function(d) {
-                circles[d]
-                .transition()
-                .attr("fill", unfocusColor);
-            });
-            circles[d]
-            .transition()
-            .attr("fill", focusColor);
-        }
-        // if clicked rectangle is no longer visible
-        // we need to pass off focus to another category!
-        else{
+        newCategory = d;
+        if(!categoryVisibilities[d])
+        {
             var visibleCategories = categoryNames.filter(function(d) {return categoryVisibilities[d];});
             if(visibleCategories.length > 0){
                 // assign focus to nearest category
@@ -263,86 +235,14 @@ function initScatterPlot (data){
                     }
                 }
                 console.log(nearestCategory);
-                catInFocus = nearestCategory;
+                newCategory = nearestCategory;
             }
-            // TODO: package focus code into function
-            // update legend rectangles
-            legendRects
-            .transition()
-            .attr("fill", function(d) {
-                if(categoryVisibilities[d]) {
-                    if(d == catInFocus) {
-                        return focusColor;
-                    }
-                    else {
-                        return unfocusColor;
-                    }
-                }
-                else {
-                    return invisibleColor;
-                }
-            });
-            // update circles
-            circles[catInFocus]
-            .transition()
-            .attr("fill", focusColor);
-            // update bar chart
-            updateBarPlot(textMetaData, seasonNumber, episodeNumber);
+            
         }
+        updateFocus(newCategory);
     })
     .on("mouseover", function (d){
-        // update formerly focused category
-        // ONLY if new category is actually visible!
-        if(categoryVisibilities[d]) {
-            if(categoryVisibilities[catInFocus]) {
-                var visibleCategories = categoryNames.filter(function(d) {return categoryVisibilities[d];});
-                visibleCategories.forEach(function(d) {
-                    circles[d]
-                    .transition()
-                    .attr("fill", unfocusColor);
-                });
-                // also update unfocused rectangle
-                legendRects
-                .transition()
-                .attr("fill", function(d) {
-                    if(categoryVisibilities[d]) {
-                        return unfocusColor;
-                    }
-                    else {
-                        return invisibleColor;
-                    }
-                })
-            }
-        }
-    	catInFocus = d;
-    	updateBarPlot(textMetaData, seasonNumber, episodeNumber);
-        // update plot colors if visible
-        if(categoryVisibilities[catInFocus]) {
-            circles[catInFocus]
-            .transition()
-            .attr("fill", focusColor);
-            // also update focused rectangle
-            legendRects
-            .transition()
-            .attr("fill", function(d) {
-                if(categoryVisibilities[d]) {
-                    if(d == catInFocus) {
-                        return focusColor;
-                    }
-                    else {
-                        return unfocusColor;
-                    }
-                }
-                else {
-                    return invisibleColor;
-                }
-            })
-            // var testRects = legendRects.selectAll("rect")
-            //     .filter(function(d) { return d.id == "rect-"+catInFocus;});
-            // console.log(legendRects);
-            // testRects
-            // .attr("fill", focusColor);
-        }
+        updateFocus(d);    
     });
 
     legendLabels = legendGroup.selectAll ("text")
@@ -408,6 +308,41 @@ function updateBarPlot (data, season, episode){
 	});
 
 	wordlist.exit().remove();
+}
+
+function updateFocus(newFocusCat) {
+    // TODO: put this anywhere we need focus
+    catInFocus = newFocusCat;
+    // update legend rectangles
+    legendRects
+    .transition()
+    .attr("fill", function(d) {
+        if(categoryVisibilities[d]) {
+            if(d == catInFocus) {
+                return focusColor;
+            }
+            else {
+                return unfocusColor;
+            }
+        }
+        else {
+            return invisibleColor;
+        }
+    });
+    // update circles
+    var visibleCategories = categoryNames.filter(function(d) {return categoryVisibilities[d];});
+    visibleCategories.forEach(function(d) {
+        circles[d]
+        .transition()
+        .attr("fill", unfocusColor);
+    });
+    if(categoryVisibilities[catInFocus]){
+        circles[catInFocus]
+        .transition()
+        .attr("fill", focusColor);
+    }
+    // update bar chart
+    updateBarPlot(textMetaData, seasonNumber, episodeNumber);
 }
 
 function init (){
