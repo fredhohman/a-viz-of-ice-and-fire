@@ -2,7 +2,11 @@
 var margin, width, height, pointRadius;    
 var svg;
 
-var xScale, yScale, xAxis, yAxis;  
+var xScale, yScale, xAxis, yAxis;
+// for word list bar chart
+var wordlistBarWeight, wordlistBarHeight,
+    wordlistBarScale, wordlistBarSpace,
+    wordlistBarColor;
 
 var textDataFile = "data/LIWC_chunk_counts_all_seasons.tsv",
 textMetaDataFile = "data/top_5_category_words_per_episode.tsv",
@@ -189,8 +193,8 @@ function initScatterPlot (data){
 	.enter()
 	.append("rect")
 	.attr("width", 10)
-    .attr("height", 10)                                    
-    .attr("x", width + (margin.right/3) - 15) 
+    .attr("height", 10)
+    .attr("x", width + (margin.right/3) - 15)
     .attr("y", function (d, i) { return (legendSpace)+i*(legendSpace) - 8; })
     .attr("fill", function (d, i){
         if(categoryVisibilities[d]) {
@@ -215,11 +219,13 @@ function initScatterPlot (data){
     	d3.selectAll("#rect-" + d).attr("fill", categoryVisibilities[d] ? color(d) : invisibleColor);
     	updateScatterPlot(sliceData (textData, seasonNumber, episodeNumber));
         newCategory = d;
+        // if new category is no longer visible,
+        // assign focus to nearest category
         if(!categoryVisibilities[d])
         {
             var visibleCategories = categoryNames.filter(function(d) {return categoryVisibilities[d];});
             if(visibleCategories.length > 0){
-                // assign focus to nearest category
+                
                 var idx = categoryNames.indexOf(d);
                 var nearestCategory = visibleCategories[0];
                 var nearestDist = categoryNames.length;
@@ -242,7 +248,7 @@ function initScatterPlot (data){
         updateFocus(newCategory);
     })
     .on("mouseover", function (d){
-        updateFocus(d);    
+        updateFocus(d);
     });
 
     legendLabels = legendGroup.selectAll ("text")
@@ -267,6 +273,12 @@ function initScatterPlot (data){
 }
 
 function initBarPlot (data){
+    wordlistBarWeight = 10,
+    wordlistBarHeight = 20,
+    wordlistBarScale = d3.scaleLinear()
+                        .range([0, wordlistBarHeight]),
+    wordlistBarSpace = 10;
+    wordlistBarColor = "#B0B0B0";
 	catInFocus = "positive_affect";
 	var div = d3.select("#text-metadata");
 	div.select ("#text-category")
@@ -303,15 +315,51 @@ function updateBarPlot (data, season, episode){
 		return d.word;
 	});
 
+    // why is this called twice??
+    // turns out that the functions chained to enter()
+    // are only called once
 	wordlist.text(function (d){
 		return d.word;
 	});
 
 	wordlist.exit().remove();
+
+    // now attempt to add some bars to measure frequency
+    var wordlistBoundingRect = d3.select("#text-wordlist")
+                                ._groups[0][0]
+                                .getBoundingClientRect();
+    console.log(wordlistBoundingRect);
+    
+    var wordlistX = wordlistBoundingRect["left"],
+        wordlistY = 0;
+    //     wordlistY = wordlistBoundingRect["bottom"];
+    // make some bars!!
+    var wordBars = d3.select("#text-metadata")
+                    .selectAll("rect")
+                    .data(wordCounter);
+    // TODO: make these actually appear!
+    wordBars.enter()
+    .append("rect")
+    .attr("height", wordlistBarWeight)
+    .attr("width", function(d) {
+        return wordlistBarScale(d.freq); 
+    })
+    .attr("x", wordlistX)
+    .attr("y", function (d, i) { return wordlistY +i*(wordlistBarSpace); })
+    .attr("fill", wordlistBarColor);
+
+    // need this separate call to update
+    // existing bars
+    wordBars
+    .attr("width", function(d) { return wordlistBarScale(d.freq); });
+
+    console.log(wordBars);
+
+    wordBars.exit().remove();
+
 }
 
 function updateFocus(newFocusCat) {
-    // TODO: put this anywhere we need focus
     catInFocus = newFocusCat;
     // update legend rectangles
     legendRects
