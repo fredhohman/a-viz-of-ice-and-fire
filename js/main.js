@@ -201,6 +201,7 @@ $(document).ready(function() {
         d3.select("#directed-by").text(episode_metadata[eNum-1]["Directed by"]);
         d3.select("#written-by").text(episode_metadata[eNum-1]["Written by"]);
         d3.select("#air-date").text(episode_metadata[eNum-1]["Original air date"]);
+        d3.select("#runtime").text(episode_metadata[eNum-1]["Runtime"]);
         d3.select("#viewers").text(episode_metadata[eNum-1]["U.S. viewers (millions)"]);
 
         color_chunk_blocks(episode_strings_lowercase[eNum-1]);
@@ -232,7 +233,7 @@ $(".episode-block").click(function (event) {
    // console.log (seasonNumber);
    // console.log (episodeNumber);
 
-   // slice the data and call the update method from here
-   updateScatterPlot (sliceData (textData, seasonNumber, episodeNumber));
+   // update scatterplot and accompanying bar plot
+   updateAll(seasonNumber, episodeNumber)
 });
 
