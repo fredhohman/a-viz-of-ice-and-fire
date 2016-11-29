@@ -4,9 +4,13 @@ var svg;
 
 var xScale, yScale, xAxis, yAxis;
 // for word list bar chart
-var wordlistBarWeight, wordlistBarHeight,
-    wordlistBarScale, wordlistBarSpace,
+var wordlistBarWidth, wordlistBarHeight,
+    wordlistBarScaleX, wordlistBarSpace,
     wordlistBarColor;
+
+var wordBarArea, wordBarOffsetX, 
+    wordBarOffsetY, 
+    maxBars;
 
 var textDataFile = "data/LIWC_chunk_counts_all_seasons.tsv",
 textMetaDataFile = "data/top_5_category_words_per_episode.tsv",
@@ -273,16 +277,29 @@ function initScatterPlot (data){
 }
 
 function initBarPlot (data){
-    wordlistBarWeight = 10,
-    wordlistBarHeight = 20,
-    wordlistBarScale = d3.scaleLinear()
-                        .range([0, wordlistBarHeight]),
+    wordlistBarWidth = 150;
+    wordlistBarHeight = 15;
+    wordlistBarScaleX = d3.scaleLinear()
+                        .range([0, 10]);
     wordlistBarSpace = 10;
     wordlistBarColor = "#B0B0B0";
 	catInFocus = "positive_affect";
 	var div = d3.select("#text-metadata");
 	div.select ("#text-category")
 	.text(catInFocus);
+    // now build bar chart
+    wordBarOffsetX = 50;
+    wordBarOffsetY = 20;
+    maxBars = 5;
+    wordBarArea = d3.select("#text-metadata")
+               .append("svg")
+               .attr("class", "wordBarArea")
+               .attr ("width", wordBarOffsetX + wordlistBarWidth)
+               .attr ("height", wordBarOffsetY + (wordlistBarHeight + wordlistBarSpace) * maxBars);
+    // make axis
+    wordBarArea.append("g")
+                .attr("class", "axis")
+                .attr("transform", "translate(" + wordBarOffsetX + ",0)");
 }
 
 function updateBarPlot (data, season, episode){
@@ -324,39 +341,57 @@ function updateBarPlot (data, season, episode){
 
 	wordlist.exit().remove();
 
+    var wordlistBarScaleY = d3.scaleLinear()
+                            .domain([0, wordCounter.length])
+                            .range([wordBarOffsetY, 
+                                    wordBarOffsetY + (wordlistBarHeight + wordlistBarSpace) * wordCounter.length])
     // now attempt to add some bars to measure frequency
-    var wordlistBoundingRect = d3.select("#text-wordlist")
-                                ._groups[0][0]
-                                .getBoundingClientRect();
-    console.log(wordlistBoundingRect);
+    // var wordlistBoundingRect = d3.select("#text-wordlist")
+    //                             ._groups[0][0]
+    //                             .getBoundingClientRect();
+    // console.log(wordlistBoundingRect);
     
-    var wordlistX = wordlistBoundingRect["left"],
-        wordlistY = 0;
+    // var wordlistX = wordlistBoundingRect["left"],
+    //     wordlistY = 0;
     //     wordlistY = wordlistBoundingRect["bottom"];
     // make some bars!!
-    var wordBars = d3.select("#text-metadata")
-                    .selectAll("rect")
+    
+    // first build axis
+    var wordBarAxis = d3.axisLeft()
+                        .scale(wordlistBarScaleY)
+                        //.ticksize(2)
+                        .tickFormat(function(d, i) { return wordCounter[i].word; })
+                        .tickValues(d3.range(wordCounter.length));
+    
+    var wordBar_xis = wordBarArea.selectAll("g.axis")
+                        .call(wordBarAxis)
+                        ;
+    var wordBars = wordBarArea.selectAll("rect")
                     .data(wordCounter);
-    // TODO: make these actually appear!
     wordBars.enter()
-    .append("rect")
-    .attr("height", wordlistBarWeight)
-    .attr("width", function(d) {
-        return wordlistBarScale(d.freq); 
-    })
-    .attr("x", wordlistX)
-    .attr("y", function (d, i) { return wordlistY +i*(wordlistBarSpace); })
-    .attr("fill", wordlistBarColor);
+        .append("rect")
+        .attr("x", wordBarOffsetX)
+        .attr("y", function(d, i) { return wordlistBarScaleY(i) - wordBarOffsetY / 2;})
+        .style("fill", wordlistBarColor)
+        .attr("height", wordlistBarHeight)
+        .attr("width", function(d) { return wordlistBarScaleX(d.freq);} );
 
-    // need this separate call to update
-    // existing bars
-    wordBars
-    .attr("width", function(d) { return wordlistBarScale(d.freq); });
-
-    console.log(wordBars);
-
+    // add text for frequencies!
+    var wordBarText = wordBarArea.selectAll("text#wordFreq")
+                        .data(wordCounter);
+    wordBarText.enter()
+        .append("text")
+        .attr("class", "wordFreq")
+        .attr("x", function(d) {return wordBarOffsetX + wordlistBarScaleX(d.freq); })
+        .attr("y", function(d, i) { return wordlistBarScaleY(i) + wordlistBarHeight / 4;})
+        .text(function(d) { return d.freq + ""; })
+        .style("fill", "#000000");
+    console.log(wordBarText);
+    // TODO: make the bars and text
+    // update properly instead of overwriting!
+    wordBar_xis.exit().remove();
     wordBars.exit().remove();
-
+    wordBarText.exit().remove();
 }
 
 function updateFocus(newFocusCat) {
