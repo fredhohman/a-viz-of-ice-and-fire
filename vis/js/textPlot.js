@@ -14,13 +14,17 @@ var wordBarArea, wordBarOffsetX,
 
 var textDataFile = "data/LIWC_chunk_counts_all_seasons.tsv",
 textMetaDataFile = "data/top_5_category_words_per_episode.tsv",
-textData, textMetaData, categoryNames, categoryVisibilities;
+textDTMFile = "data/all_episode_dtm.tsv",
+textTokenDataFile = "data/LIWC_chunk_token_counts_all_episodes.tsv",
+textData, textMetaData, categoryNames, categoryVisibilities,
+textDTM, textTokenData;
 
 var color = d3.scaleOrdinal().range(["#020202", "#3c3c3c", "#4b4a4a", "#5e5d5d", "#727171", "#7e7e7e", "#8d8d8d", "#a19f9f", "#b6b5b5", "#C7C6C6"]);
 var unfocusColor = "#BBBBB9";
 var focusColor = "#020202";
 var invisibleColor = "#F1F1F2";
 var defaultCategory = "positive_affect";
+var tooltipTransition, tooltipOffset;
 
 var legendRects, legendLabels;
 
@@ -43,7 +47,9 @@ function sliceData (data, season, episode){
 function formatData (data, catName){
 	return data.map(function (d){
 		return {"x":parseInt(d.time),
-				"y":parseInt(d[catName])};
+				"y":parseInt(d[catName]),
+                "name" : catName,
+                "time" : d.time};
 	});
 }
 
@@ -97,7 +103,71 @@ function updateScatterPlot (data){
     		})
     		.attr ("cy", function (d){
     			return yScale(d.y);
-    		});
+    		})
+            // show relevant words at given timestep
+            .on("mouseover", function(d) {
+                if(d.y > 0) {
+                    if(d.name == catInFocus) {
+                        time = d.time;
+                        // filter data
+                        var relevantData = textTokenData.filter(function(d) {
+                            return d.season == seasonNumber && d.episode == episodeNumber && d.time == time;
+                        })[0];
+
+                        // process data
+                        var parts = relevantData[catInFocus].split(",");
+                        var wordCounter = parts.map (function (entry){
+                            return {
+                                word: entry.split(":")[0],
+                                freq: parseInt(entry.split(":")[1])                 
+                            }
+                        });
+
+                        // TODO: make text actually appear
+                        var tooltip = svg.select("rect.tooltip");
+                        var tooltipWordHeight = 10;
+                        var tooltipWordBuffer = 5;
+                        var xPos = xScale(d.x);
+                        var yPos = yScale(d.y);
+                        tooltip.transition()
+                                .duration(tooltipTransition)
+                                .style("opacity", .9)
+                                .attr("x", xPos)
+                                .attr("y", yPos)
+                                .attr("height", (tooltipWordHeight + tooltipWordBuffer) * wordCounter.length);
+                        // add text
+                        var tooltipText = svg.selectAll("text.tooltip")
+                                            .data(wordCounter);
+                        tooltipText.enter()
+                                    .append("text")
+                                    .attr("class", "tooltip")
+                                    .attr("x", xScale(d.x))
+                                    .attr("y", function(d, i) {
+                                        return yPos + tooltipWordBuffer * 2 + (tooltipWordHeight + tooltipWordBuffer) * i;
+                                    })
+                                    .text(function(d) { return d.word; })
+                                    .style("fill", unfocusColor);
+
+                        tooltipText.attr("x", xScale(d.x))
+                                    .attr("y", function(d, i) {
+                                        return yPos + tooltipWordBuffer * 2 + (tooltipWordHeight + tooltipWordBuffer) * i;
+                                    })
+                                    .text(function(d) { return d.word; })
+                                    .style("fill", unfocusColor);
+                    }
+
+                }
+            })
+            .on("mouseout", function(d) {
+                var tooltip = svg.select("rect.tooltip");
+                tooltip.transition()
+                        .duration(tooltipTransition)
+                        .style("opacity", 0);
+                var tooltipText = svg.selectAll("text.tooltip");
+                // console.log(tooltipText);
+                tooltipText.exit().remove();
+                // tooltip.exit.remove();
+            });
 
     		circles[catName]
     		.attr ("cx", function (d){
@@ -194,6 +264,8 @@ function initScatterPlot (data){
 	var legendSpace = 450 / categoryNames.length;
 	var legendGroup = svg.append("g")
 	   .attr("class", "legend");
+    var tooltipTransition = 500;
+    var tooltipOffset = 30;
 
 	legendRects = legendGroup.selectAll ("rect")
 	.data (categoryNames)
@@ -278,6 +350,11 @@ function initScatterPlot (data){
     	return "spg-" + d;
     })
     .attr("class", "spg-cats");
+
+    // make tooltip?
+    svg.append("rect")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
 }
 
 function initBarPlot (data){
@@ -474,7 +551,22 @@ function init (){
 		textMetaData = data;
 		initBarPlot (textMetaData);
 		updateBarPlot (textMetaData, seasonNumber, episodeNumber);
-	})
+	});
+
+    d3.tsv(textTokenDataFile, function(error, data) {
+        textTokenData = data;
+        textTokenData.forEach(function(d) {
+            d["time"] = parseInt(d["time"]);
+            d["episode"] = parseInt(d["episode"]);
+            d["season"] = parseInt(d["season"]);
+        });
+
+    })
+
+    // d3.tsv(textDTMFile, function(error, data) {
+    //     textDTM = data;
+    //     console.log(textDTM[0]);
+    // });
 }
 
 init();
