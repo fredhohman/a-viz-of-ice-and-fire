@@ -24,6 +24,10 @@ body {
   cursor: pointer;  
 }
 
+.tick text {
+  font : 12pt 'Open Sans';
+}
+
 #mouse-tracker {
   stroke: #E6E7E8;
   stroke-width: 1px;
@@ -52,4 +56,21 @@ body {
 .brush .extent {
   stroke: #FFF;
   shape-rendering: crispEdges;
+}
+
+div.tooltip {   
+  position: absolute;           
+  text-align: center;           
+  width: 60px;                  
+  height: 28px;                 
+  padding: 2px;             
+  font: 12px sans-serif;        
+  background: lightsteelblue;   
+  border: 0px;      
+  border-radius: 8px;           
+  pointer-events: none;         
+}
+
+text.tooltip {
+  font: 12px 'Open Sans';
 }
