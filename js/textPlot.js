@@ -124,48 +124,62 @@ function updateScatterPlot (data){
                         });
 
                         // TODO: make text actually appear
-                        var tooltip = svg.select("rect.tooltip");
-                        var tooltipWordHeight = 10;
-                        var tooltipWordBuffer = 5;
-                        var xPos = xScale(d.x);
-                        var yPos = yScale(d.y);
-                        tooltip.transition()
-                                .duration(tooltipTransition)
-                                .style("opacity", .9)
-                                .attr("x", xPos)
-                                .attr("y", yPos)
-                                .attr("height", (tooltipWordHeight + tooltipWordBuffer) * wordCounter.length);
-                        // add text
-                        var tooltipText = svg.selectAll("text.tooltip")
-                                            .data(wordCounter);
-                        tooltipText.enter()
-                                    .append("text")
-                                    .attr("class", "tooltip")
-                                    .attr("x", xScale(d.x))
-                                    .attr("y", function(d, i) {
-                                        return yPos + tooltipWordBuffer * 2 + (tooltipWordHeight + tooltipWordBuffer) * i;
-                                    })
-                                    .text(function(d) { return d.word; })
-                                    .style("fill", unfocusColor);
+                        tip.transition()
+                            .duration(tooltipTransition)
+                            .style("opacity", 0.9);
+                        tip.html("test </br>")
+                            .style("left", xScale(d.x) + "px")
+                            .style("top", yScale(d.y - tooltipOffset) + "px");
+                        // var tooltip = svg.select("div.tooltip");
+                        // var tooltipWordHeight = 10;
+                        // var tooltipWordBuffer = 5;
+                        // var xPos = xScale(d.x);
+                        // var yPos = yScale(d.y);
+                        // tooltip.transition()
+                        //         .duration(tooltipTransition)
+                        //         .style("opacity", .9)
+                        //         .attr("height", (tooltipWordHeight + tooltipWordBuffer) * wordCounter.length);
+                        // tooltip
+                        // .html(wordCounter.forEach(function(d) { return d.word + "<br/>"; }))
+                        //     .style("left", xPos + "px")
+                        //     .style("top", yPos + "px");
+                            // .attr("z-index", 1000);
 
-                        tooltipText.attr("x", xScale(d.x))
-                                    .attr("y", function(d, i) {
-                                        return yPos + tooltipWordBuffer * 2 + (tooltipWordHeight + tooltipWordBuffer) * i;
-                                    })
-                                    .text(function(d) { return d.word; })
-                                    .style("fill", unfocusColor);
+                        console.log(wordCounter);
+                        // add text
+                        // var tooltipText = tooltip.selectAll("text.tooltip")
+                        //                     .data(wordCounter);
+                        // tooltipText.enter()
+                        //             .append("text")
+                        //             .attr("class", "tooltip")
+                        //             .attr("x", xPos)
+                        //             .attr("y", function(d, i) {
+                        //                 return yPos + tooltipWordBuffer * 2 + (tooltipWordHeight + tooltipWordBuffer) * i;
+                        //             })
+                        //             .text(function(d) { return d.word; })
+                        //             .style("fill", unfocusColor);
+
+                        // tooltipText.attr("x", xScale(d.x))
+                        //             .attr("y", function(d, i) {
+                        //                 return yPos + tooltipWordBuffer * 2 + (tooltipWordHeight + tooltipWordBuffer) * i;
+                        //             })
+                        //             .text(function(d) { return d.word; })
+                        //             .style("fill", unfocusColor);
                     }
 
                 }
             })
             .on("mouseout", function(d) {
-                var tooltip = svg.select("rect.tooltip");
-                tooltip.transition()
-                        .duration(tooltipTransition)
-                        .style("opacity", 0);
-                var tooltipText = svg.selectAll("text.tooltip");
-                // console.log(tooltipText);
-                tooltipText.exit().remove();
+                tip.transition()
+                    .duration(tooltipTransition)
+                    .style("opacity", 0);
+                // var tooltip = svg.select("div.tooltip");
+                // tooltip.transition()
+                //         .duration(tooltipTransition)
+                //         .style("opacity", 0);
+                // var tooltipText = tooltip.selectAll("text.tooltip");
+                // // console.log(tooltipText);
+                // tooltipText.exit().remove();
                 // tooltip.exit.remove();
             });
 
@@ -186,6 +200,8 @@ function updateScatterPlot (data){
 	      return categoryVisibilities[d] ? "visible" : "hidden";
 	});
 }
+
+var tip;
 
 function initScatterPlot (data){
 	// Initialize margins
@@ -352,9 +368,13 @@ function initScatterPlot (data){
     .attr("class", "spg-cats");
 
     // make tooltip?
-    svg.append("rect")
-        .attr("class", "tooltip")
-        .style("opacity", 0);
+    tip = svg.append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
+    // svg.append("rect")
+    //     .attr("class", "tooltip")
+    //     .style("opacity", 0);
 }
 
 function initBarPlot (data){
