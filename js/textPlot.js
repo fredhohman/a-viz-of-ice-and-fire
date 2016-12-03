@@ -33,6 +33,7 @@ var pg, catG;
 var catInFocus;
 var circles = {};
 
+/*
 function sliceData (data, season, episode){
   var slicedData = Array();
   for(var index = 0; index < data.length; index++) {
@@ -43,6 +44,7 @@ function sliceData (data, season, episode){
   }
   return slicedData;
 }
+*/
 
 function formatData (data, catName){
 	return data.map(function (d){
@@ -66,7 +68,7 @@ function findMaxY (data){
 
 	return d3.max (maxYVals);
 }
-
+/*
 function updateScatterPlot (data){
     var catName, grp;
     console.log (data.map (function (d){return parseInt(d.time);}));
@@ -204,7 +206,133 @@ function updateScatterPlot (data){
 }
 
 var tip;
+*/
+function initBubblePlot (data){
+    margin = {top: 20, right: 200, bottom: 100, left: 120};
+    width = 900 - margin.left - margin.right;
+    height = 500 - margin.top - margin.bottom;
 
+    // Define the initial scales and axes
+    xScale = d3.scaleLinear()
+    .range([0, width]);
+
+    yScale = d3.scaleBand()
+    .range([height, 0]);
+
+    xAxis = d3.axisBottom()
+    .scale(xScale);
+
+    yAxis = d3.axisLeft()
+    .scale(yScale);
+
+    // Define the div for the tooltip
+    tooltip = d3.select("body").append("div")   
+    .attr("class", "tooltip")               
+    .style("opacity", 0);
+
+
+    svg = d3.select("#text")
+    .append("svg")
+    .attr ("width", width + margin.left + margin.right)
+    .attr ("height", height + margin.top + margin.bottom)
+    .append ("g")
+    .attr ("id", "textPlot")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    // Step 2: add an invisible rectange. This is not really required, 
+    // but is useful for mouse-tracking.
+    svg.append("rect")
+    .attr("width", width)
+    .attr("height", height)                                    
+    .attr("x", 0) 
+    .attr("y", 0)
+    .attr("id", "mouse-tracker")
+    .style("fill", "white")
+    .style("stroke-width", "0");
+
+    // Step 3: Draw the x and the y axis
+        // draw line graph
+    svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+    
+    svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+      .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("x", -10)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Text counts");
+
+    yScale.domain(categories);
+
+    // Step 1: Redraw both the axes.
+    svg.select(".y.axis")
+        .transition()
+        .call(yAxis);
+
+    pg = svg.append ("g")
+         .attr ("id", "spg");
+}
+
+function updateBubblePlot (data){
+    console.log (data);
+
+    // Step 1 - Make the axis depend on the data.
+    xScale.domain(d3.extent(data, function(d) { return parseInt(d.time); }));
+    svg.select(".x.axis")
+        .transition()
+        .call(xAxis);
+
+    console.log (data2DotPlotRepresentation(data, categories));
+    grp = svg.selectAll ("#spg");
+    circles = grp.selectAll ("circle")
+    .data (data2DotPlotRepresentation(data, categories));
+
+    circles.enter()
+    .append ("circle")
+    .attr ("r", function (d){
+        return d.count;
+    })
+    .attr ("cx", function (d){
+        return xScale(d.time);
+    })
+    .attr("cy", function (d){
+        return yScale(d.cat) + 20; // TODO: check why this 20 needs to be done.
+    })
+    .on("mouseover", function(d) {      
+        tooltip.transition()        
+                .duration(200)      
+                .style("opacity", .9);      
+        tooltip.html( d.words + "<br/>"  + d.close)  
+                .style("left", (d3.event.pageX) + "px")     
+                .style("top", (d3.event.pageY - 28) + "px");    
+            })                  
+    .on("mouseout", function(d) {       
+            tooltip.transition()        
+                .duration(500)      
+                .style("opacity", 0);   
+    });
+
+    circles
+    .attr ("r", function (d){
+        return d.count;
+    })
+    .attr ("cx", function (d){
+        return xScale (d.time);
+    })
+    .attr ("cy", function (d){
+        return yScale(d.cat) + 20;
+    });
+
+    circles.exit().remove();
+}
+
+/*
 function initScatterPlot (data){
 	// Initialize margins
 	margin = {top: 20, right: 200, bottom: 100, left: 50};
@@ -379,7 +507,9 @@ function initScatterPlot (data){
     //     .attr("class", "tooltip")
     //     .style("opacity", 0);
 }
+*/
 
+/*
 function initBarPlot (data){
     wordlistBarWidth = 150;
     wordlistBarHeight = 15;
@@ -407,12 +537,14 @@ function initBarPlot (data){
                 .attr("class", "axis")
                 .attr("transform", "translate(" + wordBarOffsetX + ",0)");
 }
+*/
 
 function updateAll (season, episode) {
-    updateScatterPlot (sliceData (textData, seasonNumber, episodeNumber));
-   updateBarPlot (textMetaData, seasonNumber, episodeNumber);
+    //updateScatterPlot (sliceData (textData, seasonNumber, episodeNumber));
+    //updateBarPlot (textMetaData, seasonNumber, episodeNumber);
+    updateBubblePlot (sliceData (textTokenData, seasonNumber, episodeNumber));
 }
-
+/*
 function updateBarPlot (data, season, episode){
 	var parts, wordCounter;
 	var div = d3.select ("#text-metadata");
@@ -563,33 +695,4 @@ function updateFocus(newFocusCat) {
     updateBarPlot(textMetaData, seasonNumber, episodeNumber);
 }
 
-function init (){
-	d3.tsv(textDataFile, function(error, data) { 
-    	textData = data;
-    	initScatterPlot(textData);
-    	updateScatterPlot(sliceData (textData, seasonNumber, episodeNumber));
-	});
-
-	d3.tsv(textMetaDataFile, function(error, data){
-		textMetaData = data;
-		initBarPlot (textMetaData);
-		updateBarPlot (textMetaData, seasonNumber, episodeNumber);
-	});
-
-    d3.tsv(textTokenDataFile, function(error, data) {
-        textTokenData = data;
-        textTokenData.forEach(function(d) {
-            d["time"] = parseInt(d["time"]);
-            d["episode"] = parseInt(d["episode"]);
-            d["season"] = parseInt(d["season"]);
-        });
-
-    })
-
-    // d3.tsv(textDTMFile, function(error, data) {
-    //     textDTM = data;
-    //     console.log(textDTM[0]);
-    // });
-}
-
-init();
+*/
