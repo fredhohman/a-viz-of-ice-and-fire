@@ -1,5 +1,6 @@
 """
-Extract LIWC counts from chunked dialogue files.
+Extract LIWC counts from chunked dialogue files
+and store individual word counts.
 """
 from clean_extracted_text import clean_text
 from get_LIWC_counts import get_LIWC_counts
@@ -27,7 +28,7 @@ if __name__ == '__main__':
                     for e in sorted_episodes}
     LIWC_categories = ['positive_affect', 'negative_affect', 'anger', 'death', 
                        'family', 'home', 'humans', 'religion', 'swear', 'sexual']
-    LIWC_category_wordlists = {c : ['^' + l.strip()  + '$'
+    LIWC_category_wordlists = {c : [re.compile(l.strip())
                                     for l in open('/hg191/corpora/LIWC/resources/liwc_lexicons/%s'%(c), 'r')] 
                                for c in LIWC_categories}
     TKNZR = WordPunctTokenizer()
@@ -49,18 +50,28 @@ if __name__ == '__main__':
             e_data = pd.concat([e_data, empty_chunk_rows], 
                                axis=0)
         chunk_iter = e_data.groupby('chunk')
-        chunk_text = [clean_text(' '.join(map(str, c[1]['dialogue'].tolist()))) 
-                      for c in chunk_iter]
-        chunk_LIWC_counts = {c : [] for c in LIWC_categories}
-        for t in chunk_text:
+        chunk_text_pairs = [(c[0], clean_text(' '.join(map(str, c[1]['dialogue'].tolist()))))
+                           for c in chunk_iter]
+        all_chunk_LIWC_counts = []
+        for chunk, t in chunk_text_pairs:
             tokens = TKNZR.tokenize(t)
-            for c in LIWC_categories:
-                counts = get_LIWC_counts(tokens, LIWC_words=LIWC_category_wordlists[c])
-                total_counts = sum(counts.values())
-                # TODO: store individual words as well as aggregate counts
-                chunk_LIWC_counts[c].append(counts)
-        chunk_LIWC_counts = pd.DataFrame(chunk_LIWC_counts)
+            chunk_LIWC_counts = {}
+            if(len(tokens) > 0):
+                for c in LIWC_categories:
+                    counts = get_LIWC_counts(tokens, LIWC_words=LIWC_category_wordlists[c])
+                    if(len(counts) > 0):
+                        counts = sorted(counts.items(), key=lambda x: x[1], reverse=True)
+                        counts_formatted = ','.join(['%s:%d'%(word, count) 
+                                                     for word, count in counts])
+                    # TODO: store individual words as well as aggregate counts
+                    else:
+                        counts_formatted = ''
+                    chunk_LIWC_counts[c] = counts_formatted
+            else:
+                chunk_LIWC_counts = {c : '' for c in LIWC_categories}
+            all_chunk_LIWC_counts.append(chunk_LIWC_counts)
+        chunk_LIWC_counts = pd.DataFrame(all_chunk_LIWC_counts)
         chunk_LIWC_counts['chunk'] = chunk_LIWC_counts.index
-        chunk_fname = os.path.join(subtitle_dir, '%s_LIWC_chunk_counts.tsv'%(e_name))
+        chunk_fname = os.path.join(subtitle_dir, '%s_LIWC_chunk_token_counts.tsv'%(e_name))
         chunk_LIWC_counts.to_csv(chunk_fname, sep='\t', index=None)
         

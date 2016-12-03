@@ -28,20 +28,23 @@ def get_LIWC_counts(tokenized_text,
     # if no LIWC words provided, load from file
     
     if(len(LIWC_words) == 0):
-        LIWC_words = ["^" + l.strip() + "$" for l in open(os.path.join(LIWC_dir, category), 'r')]
-    
+        LIWC_words = [re.compile("^" + l.strip() + "$") for l in open(os.path.join(LIWC_dir, category), 'r')]    
     #print "good" in LIWC_words
     #LIWC_words = map (lambda x:re.compile (x), LIWC_words)
-    LIWC_matches = list ()
-    tokenized_text = map (lambda x:x.lower(), tokenized_text)
+    LIWC_matches = []
+    tokenized_text = map (lambda x: x.lower(), tokenized_text)
     for token in tokenized_text:
         for pattern in LIWC_words:
-            matches = re.findall(pattern, token)
-            if len (matches) > 0:
-                if "*" in pattern and not token.startswith(pattern[1:-2]):
-                    continue
+            match = pattern.match(token)
+            if(match is not None):
                 LIWC_matches.append(token)
                 break
+            # matches = pattern.findall(token)
+            # if len (matches) > 0:
+            #     if "*" in pattern and not token.startswith(pattern[1:-2]):
+            #         continue
+            #     LIWC_matches.append(token)
+            #     break
 
     LIWC_counts = dict(Counter(LIWC_matches))
     return LIWC_counts
