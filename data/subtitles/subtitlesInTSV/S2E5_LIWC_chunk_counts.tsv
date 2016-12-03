@@ -1,60 +1,61 @@
 anger	death	family	home	humans	negative_affect	positive_affect	religion	sexual	swear	chunk
-{}	{}	{'king': 1, 'reason': 1, 'mother': 1, 'son': 2}	{}	{'himself': 1}	{}	{'has': 1, 'have': 1}	{}	{'hostility': 1}	{}	0
-{}	{'return': 1}	{'many': 1, 'brother': 2, 'kingdoms': 1, 'son': 2}	{}	{'many': 1}	{'close': 1}	{'better': 1, 'that': 1, 'have': 3, 'wind': 1, 'luck': 1}	{}	{'houses': 1}	{}	1
-{'allies': 1, 'war': 1}	{'die': 1, 'war': 1}	{}	{}	{}	{'allies': 1, 'war': 1}	{'hope': 1}	{}	{'hope': 1}	{}	2
-{}	{'dead': 1}	{'king': 1}	{}	{}	{}	{'won': 1, 'hang': 1, 'that': 1}	{}	{}	{}	3
-{'privilege': 2}	{}	{'king': 1, 'sister': 1, 'companions': 1, 'talking': 1}	{'home': 1, 'highgarden': 1}	{'bannermen': 1, 'lady': 1, 'yourself': 1}	{'privilege': 2}	{'that': 2}	{}	{'home': 1, 'hour': 1}	{}	4
-{'cut': 1}	{'good': 1, 'today': 1}	{'king': 3, 'smart': 1}	{}	{'desire': 1}	{}	{'what': 1, 'good': 1, 'won': 1, 'have': 3, 'that': 4, 'true': 1, 'chance': 1}	{}	{'horses': 1, 'who': 1}	{}	5
-{}	{}	{'king': 2, 'make': 1}	{}	{'yourself': 1}	{}	{'grace': 2, 'handsome': 1}	{}	{}	{}	6
-{}	{}	{'kingsguard': 1, 'flocking': 1}	{'whomever': 1}	{'himself': 1}	{}	{'what': 1, 'superiority': 1, 'like': 1, 'have': 2, 'respect': 1, 'support': 1, 'than': 1}	{}	{'thought': 1, 'how': 1, 'whom': 1, 'who': 2, 'whomever': 1, 'should': 1}	{}	7
-{}	{}	{'king': 3, 'may': 3, 'information': 1, 'personal': 1, 'taking': 1, 'preparations': 1}	{}	{'personal': 1, 'girl': 1, 'yourself': 1}	{}	{'happens': 1, 'what': 1, 'that': 2, 'ready': 1, 'sweet': 1, 'has': 1, 'charge': 1}	{}	{'withhold': 1}	{}	8
-{'fucking': 1, 'vile': 1}	{}	{'sympathy': 1, 'sister': 1, 'fucking': 1, 'making': 1, 'make': 1, 'brother': 1, 'smart': 1}	{}	{}	{'cousin': 1, 'vile': 1}	{'likely': 3, 'already': 1, 'have': 1, 'that': 1, 'perhaps': 1, 'true': 1}	{'cousin': 1}	{'fucking': 1, 'thousands': 1}	{'fucking': 1}	9
-{}	{}	{'talking': 1, 'pyromancer': 1, 'bronn': 1}	{}	{'pyromancer': 1}	{}	{'what': 1, 'care': 1, 'happen': 2, 'that': 1}	{'holy': 1}	{'holy': 1, 'should': 2}	{}	10
-{'cowards': 1, 'made': 1}	{'cowards': 1}	{'resist': 1, 'matter': 1, 'made': 1, 'man': 1, 'except': 1, 'brother': 2}	{}	{'boy': 1, 'bannermen': 1, 'man': 1}	{'cowards': 1, 'made': 1}	{'what': 4, 'love': 1, 'like': 1, 'that': 3, 'shall': 1, 'won': 1, 'have': 1, 'grace': 6}	{}	{'thought': 1, 'who': 1, 'love': 1}	{}	11
-{}	{}	{'king': 2, 'reason': 1, 'company': 1, 'make': 1}	{}	{'men': 1, 'lady': 1}	{}	{'what': 2, 'hard': 2, 'have': 1, 'that': 1}	{}	{'thought': 1, 'short': 1}	{}	12
-{'cut': 1}	{}	{'king': 1, 'attacking': 1, 'treason': 1}	{}	{'bannermen': 1, 'lady': 1}	{'lose': 1}	{'happy': 1, 'won': 2, 'hard': 1, 'hang': 1, 'lucky': 1, 'grace': 1}	{}	{'without': 1, 'honored': 1, 'those': 2, 'should': 1}	{}	13
-{}	{'good': 1}	{'kings': 1, 'sister': 1, 'brother': 1}	{'bed': 1}	{'infantry': 1}	{}	{'what': 2, 'good': 1, 'won': 1, 'have': 1, 'that': 2, 'has': 1, 'hasn': 1}	{}	{'horses': 1, 'hold': 1, 'holding': 1}	{}	14
-{}	{'bloodstained': 1}	{'imagination': 1, 'talking': 1, 'king': 4}	{}	{'assessment': 1}	{'rotten': 2, 'lost': 1}	{'what': 2, 'save': 1, 'hard': 1, 'halls': 1, 'have': 1}	{}	{'birthday': 1, 'assessment': 1, 'twisted': 1}	{'assessment': 1}	15
-{}	{}	{'commands': 1, 'commander': 1}	{}	{'commands': 1, 'commander': 1, 'women': 1}	{}	{}	{}	{'shore': 1, 'bitch': 1}	{}	16
-{'raping': 1}	{}	{'thinking': 1}	{}	{'myself': 2}	{'since': 1}	{'chains': 1, 'hang': 1, 'have': 1, 'that': 1}	{'since': 1}	{'how': 1, 'who': 1, 'raping': 1}	{}	17
-{}	{'good': 1}	{'kind': 1, 'mate': 1, 'command': 1}	{}	{'command': 1}	{}	{'kind': 1, 'good': 1, 'thank': 1, 'that': 2, 'harbor': 1, 'better': 1, 'happen': 1, 'halfway': 1}	{}	{'shore': 1, 'without': 1, 'who': 1, 'though': 1}	{}	18
-{}	{}	{}	{}	{'fishermen': 1, 'myself': 1, 'men': 1, 'yourself': 1}	{}	{'what': 1, 'like': 1, 'that': 3, 'tallhart': 1, 'respect': 1, 'winterfell': 1, 'has': 1, 'true': 1, 'than': 2}	{}	{'how': 1, 'shore': 1, 'hold': 1, 'house': 1}	{}	19
-{'war': 1, 'warfare': 1}	{'good': 1, 'return': 1, 'war': 1, 'warfare': 1}	{'overextended': 1, 'underestimated': 1, 'king': 1}	{'home': 1}	{'boy': 1, 'men': 2, 'encampments': 1}	{'war': 1, 'warfare': 1}	{'good': 1, 'winter': 1, 'that': 1, 'hard': 1, 'winning': 1, 'better': 1, 'won': 1, 'have': 2, 'growing': 2, 'has': 1, 'harvest': 1, 'than': 1}	{}	{'horses': 1, 'home': 1, 'those': 1}	{}	20
-{}	{}	{}	{}	{}	{'cousin': 1}	{'better': 1, 'cook': 1, 'that': 1, 'perhaps': 1, 'change': 1, 'wine': 1}	{'cousin': 1}	{'how': 1, 'without': 1, 'scrubbing': 1}	{}	21
-{}	{'good': 1}	{'maidenpool': 3}	{'maidenpool': 3}	{'girl': 2}	{}	{'what': 2, 'good': 1, 'that': 1}	{}	{'house': 2, 'who': 1}	{}	22
-{}	{}	{}	{}	{'himself': 1}	{}	{'that': 1}	{}	{}	{}	23
-{'aware': 1}	{'aware': 1}	{'may': 1, 'man': 1}	{}	{'boy': 1, 'girl': 5, 'man': 1}	{'closed': 1, 'aware': 1}	{}	{}	{}	{}	24
-{}	{'god': 2}	{'may': 1, 'pays': 1, 'man': 2, 'pay': 1}	{}	{'girl': 1, 'man': 2}	{}	{'what': 2, 'lovely': 1, 'saved': 1, 'have': 3}	{}	{'should': 1, 'lovely': 1, 'choice': 1}	{}	25
-{}	{}	{'master': 1, 'man': 3}	{}	{'girl': 1, 'man': 3}	{}	{'has': 1, 'have': 1, 'that': 1}	{}	{'who': 1, 'thirsty': 1, 'horn': 1}	{}	26
-{}	{}	{'pass': 1, 'uncle': 1, 'man': 1}	{}	{'man': 1}	{}	{'halfhand': 3, 'thaw': 1, 'winter': 2, 'had': 1, 'half': 1, 'love': 2, 'true': 1, 'than': 1}	{}	{'whole': 1, 'love': 2, 'pass': 1}	{'pass': 1}	27
-{'warm': 1}	{'die': 1, 'warm': 1, 'stood': 1}	{'andals': 1, 'smart': 1, 'talking': 1}	{}	{'men': 4}	{'warm': 1}	{'what': 1, 'took': 1, 'like': 2}	{}	{'how': 1, 'thousands': 2}	{}	28
-{}	{'returning': 1}	{}	{}	{}	{}	{'book': 1, 'halfhand': 1, 'look': 1, 'wondering': 1, 'that': 1}	{}	{'how': 1, 'qhorin': 1, 'horn': 1}	{}	29
-{}	{'wood': 1, 'died': 1}	{'experiment': 1, 'companion': 1}	{}	{'experiment': 1}	{}	{'true': 1, 'like': 1, 'have': 1, 'care': 1}	{}	{'hot': 2, 'cock': 1}	{'cock': 1}	30
-{}	{'soldiers': 2, 'die': 1}	{'making': 1, 'many': 1, 'maegor': 1, 'man': 3, 'maybe': 1}	{}	{'many': 1, 'men': 4, 'man': 3}	{'since': 1}	{'what': 1, 'have': 2, 'grand': 1}	{'since': 1}	{'how': 2, 'bit': 1}	{}	31
-{'wars': 1}	{'wars': 1}	{'remains': 1, 'commanded': 1, 'sister': 1, 'magic': 1, 'working': 1}	{}	{'commanded': 1, 'men': 1}	{'since': 1, 'wars': 1}	{'win': 1, 'have': 1}	{'since': 1}	{}	{}	32
-{}	{}	{'king': 1, 'sister': 1, 'making': 2}	{'room': 1}	{}	{}	{'hallyne': 1, 'won': 1, 'have': 1, 'wisdom': 1}	{}	{}	{}	33
-{'made': 1}	{}	{'made': 1, 'man': 2}	{}	{'himself': 1, 'man': 2}	{'made': 1}	{'loves': 1, 'khaleesi': 1, 'had': 1, 'thank': 1, 'khal': 1}	{}	{'loves': 1}	{}	34
-{}	{}	{}	{}	{'men': 2}	{}	{'happy': 1, 'khaleesi': 2, 'look': 1, 'like': 2}	{}	{'host': 1, 'should': 1}	{}	35
-{}	{}	{'excuse': 1, 'moment': 1, 'market': 4, 'malakko': 2}	{}	{'myself': 1, 'moment': 1}	{'idiot': 1}	{'what': 1, 'wonderful': 1, 'like': 1, 'have': 1, 'that': 1}	{}	{'chop': 1, 'excuse': 1}	{}	36
-{'warlocks': 1}	{'good': 1, 'warlocks': 1}	{'many': 1, 'kind': 1, 'brother': 1, 'mother': 1}	{}	{'many': 1, 'men': 2, 'yourself': 1}	{'warlocks': 1, 'closely': 1}	{'better': 2, 'kind': 1, 'good': 1, 'look': 2, 'have': 1, 'that': 1, 'behalf': 1}	{}	{'how': 1}	{}	37
-{'warlocks': 1}	{'die': 1, 'undying': 2, 'warlocks': 1}	{'customary': 1, 'parlor': 1, 'magic': 1, 'extend': 1, 'mother': 1}	{}	{}	{'warlocks': 1}	{'what': 1, 'books': 1, 'than': 1, 'shade': 1}	{}	{'house': 2, 'host': 1, 'honor': 1, 'should': 1}	{}	38
-{'made': 1}	{}	{'made': 1, 'mother': 1}	{}	{}	{'made': 1}	{'looked': 2, 'like': 2, 'shall': 2, 'true': 1, 'than': 1, 'wonder': 1}	{}	{'who': 1}	{}	39
-{}	{'died': 1, 'bloody': 1}	{'mother': 2, 'man': 1, 'son': 1}	{'bed': 1}	{'lady': 1, 'man': 1}	{'business': 1}	{'what': 1, 'shadow': 1, 'have': 1, 'that': 1, 'winterfell': 1, 'shape': 2}	{'business': 1}	{'birthing': 1, 'should': 1}	{'bloody': 1}	40
-{}	{'good': 1, 'dying': 1}	{}	{}	{'lady': 1}	{}	{'what': 1, 'good': 1, 'that': 1, 'harder': 1, 'great': 1, 'have': 1, 'following': 1, 'has': 1}	{}	{'should': 1}	{}	41
-{}	{}	{'kind': 1, 'woman': 1, 'son': 1}	{}	{'woman': 1, 'lady': 2}	{}	{'perhaps': 1, 'kind': 1, 'have': 2, 'that': 3}	{}	{'hold': 3}	{}	42
-{}	{'gods': 2}	{'sons': 1, 'brother': 1, 'man': 1}	{'home': 2}	{'man': 1}	{}	{'that': 3, 'than': 1, 'have': 2, 'shall': 2}	{}	{'home': 2, 'dishonor': 1}	{}	43
-{}	{'gods': 1, 'good': 1, 'hodor': 2}	{'may': 1, 'party': 1, 'paid': 1, 'many': 1}	{'home': 1, 'room': 1}	{'boys': 1, 'bannermen': 1, 'children': 1, 'men': 2, 'many': 1}	{}	{'good': 1, 'look': 1, 'that': 1, 'tywin': 1, 'orphan': 1, 'have': 1, 'winterstown': 1, 'thank': 1}	{}	{'home': 1, 'hodor': 2, 'how': 1, 'should': 1}	{}	44
-{'lying': 1}	{'rodrik': 1, 'godswood': 1, 'studying': 1}	{'maester': 1}	{}	{'men': 1}	{'lying': 1}	{'what': 2, 'books': 1, 'luwin': 1, 'won': 1, 'that': 1}	{}	{'studying': 1, 'who': 1, 'honest': 1}	{}	45
-{}	{'flooded': 1, 'rodrik': 1}	{}	{'yard': 1}	{'boy': 1, 'men': 1}	{}	{'what': 1, 'that': 1, 'winterfell': 1, 'flowing': 1}	{}	{}	{}	46
-{}	{}	{'party': 1, 'mance': 1, 'many': 1}	{}	{'many': 1, 'mance': 1}	{}	{'better': 1, 'what': 1, 'osha': 1, 'have': 2, 'that': 2, 'chains': 1, 'than': 1}	{}	{'how': 1, 'honor': 1}	{}	47
-{}	{}	{'make': 1, 'march': 1, 'mance': 2}	{}	{'mance': 2}	{}	{'what': 1, 'won': 1, 'like': 3, 'ready': 1, 'has': 1, 'than': 1}	{}	{'should': 1}	{}	48
-{'fought': 1, 'steward': 1}	{'steward': 1, 'bloody': 1}	{'many': 1, 'commander': 1, 'march': 1, 'mance': 1, 'man': 1}	{}	{'boy': 1, 'mance': 1, 'man': 1, 'many': 1, 'men': 1, 'commander': 1}	{'steward': 1}	{'winds': 1, 'harker': 1, 'like': 1, 'lookouts': 1, 'that': 4}	{}	{'how': 1, 'qhorin': 2, 'those': 1}	{'bloody': 1}	49
-{'steward': 1}	{'steward': 1}	{'manservant': 2, 'make': 1, 'woman': 1, 'man': 1}	{}	{'manservant': 2, 'woman': 1, 'man': 1}	{'steward': 1}	{'better': 1, 'what': 3, 'love': 2, 'unlikely': 1, 'has': 1, 'than': 1, 'hope': 1}	{}	{'how': 1, 'love': 2, 'hope': 1}	{}	50
-{}	{}	{'normally': 1, 'example': 1, 'kingdoms': 1, 'except': 1}	{'home': 1}	{}	{}	{'happens': 1, 'what': 3, 'khalasar': 1, 'like': 1, 'cares': 1, 'had': 1, 'took': 1, 'than': 1}	{}	{'home': 1, 'how': 1, 'ambitious': 1, 'zhoan': 1}	{}	51
-{'made': 2}	{}	{'make': 1, 'made': 2, 'marry': 1, 'mark': 1}	{'home': 2}	{}	{'made': 2}	{'hardest': 1, 'greatest': 2, 'have': 1, 'that': 1, 'half': 1, 'than': 1, 'handed': 1}	{}	{'horses': 1, 'home': 2, 'show': 1}	{}	52
-{'war': 1}	{'gods': 1, 'war': 1, 'dead': 1}	{'romantic': 1, 'mother': 1, 'pair': 1, 'kings': 1, 'marry': 1, 'married': 1, 'kingdoms': 2}	{}	{'romantic': 1, 'children': 1}	{'war': 1}	{'already': 1, 'love': 1, 'than': 1, 'have': 1, 'that': 1}	{}	{'thought': 1, 'love': 1, 'shoes': 1, 'ambition': 1}	{}	53
-{'cutting': 1}	{'soldiers': 1, 'good': 1, 'dead': 2}	{}	{}	{'men': 1, 'child': 1}	{}	{'what': 1, 'good': 1, 'like': 2, 'that': 1, 'giving': 1, 'win': 1, 'support': 1, 'hard': 1, 'hand': 1, 'have': 2, 'carefully': 1, 'than': 1}	{}	{'birthright': 1, 'trust': 1, 'who': 1, 'title': 1}	{'title': 1}	54
-{'allies': 1}	{}	{'may': 1, 'person': 1, 'make': 1}	{'deny': 1}	{'person': 1}	{'allies': 1}	{'loved': 1, 'what': 1, 'like': 1, 'that': 2, 'respected': 1, 'gentle': 1, 'have': 3, 'than': 1, 'look': 1}	{}	{'loved': 1, 'without': 1, 'who': 1, 'should': 1}	{}	55
-{'forward': 1}	{'forward': 1, 'good': 1}	{}	{}	{}	{'forward': 1}	{'good': 1, 'khaleesi': 1, 'look': 1}	{}	{'how': 1, 'should': 1}	{}	56
-{}	{}	{'smaller': 1}	{}	{}	{}	{'that': 1}	{}	{'should': 1}	{}	57
-{}	{'dead': 1}	{}	{}	{}	{}	{}	{}	{}	{}	58
+0	0	0	0	0	0	0	0	0	0	0
+0	0	0	0	0	0	0	0	0	0	1
+1	0	3	0	0	0	2	0	0	0	2
+5	1	4	1	0	3	6	0	0	0	3
+0	1	0	0	0	0	0	0	0	0	4
+0	1	0	0	0	0	1	0	0	0	5
+2	2	1	1	1	0	2	1	0	0	6
+2	1	0	0	0	1	5	0	0	0	7
+1	1	0	0	0	1	3	0	0	0	8
+2	0	2	0	1	0	12	0	0	0	9
+1	0	3	0	0	1	2	0	0	0	10
+2	1	0	0	0	1	4	1	1	1	11
+3	4	2	0	3	2	14	1	1	0	12
+0	0	0	1	2	2	7	0	0	0	13
+1	0	0	0	1	1	8	4	0	0	14
+3	1	1	0	1	1	3	1	0	0	15
+3	0	2	1	1	4	4	4	1	0	16
+1	0	0	0	0	0	2	2	0	1	17
+1	0	0	0	1	0	3	0	1	0	18
+0	0	0	0	0	0	4	0	0	0	19
+2	0	2	1	1	1	7	0	0	1	20
+3	1	0	1	3	2	6	3	0	0	21
+0	0	3	0	0	0	4	1	0	0	22
+1	0	0	5	2	0	1	4	0	0	23
+2	2	0	0	0	2	0	1	0	0	24
+0	0	0	0	7	0	1	0	0	0	25
+0	2	0	0	4	1	1	0	0	0	26
+2	1	1	0	3	1	1	0	0	0	27
+0	0	0	0	2	1	5	0	2	0	28
+1	1	0	0	4	0	4	0	0	0	29
+2	0	0	0	0	0	4	1	1	2	30
+4	1	0	0	1	3	5	0	0	2	31
+7	1	1	0	7	4	3	1	0	2	32
+1	0	2	1	0	2	2	0	0	1	33
+0	0	0	0	0	0	1	0	1	0	34
+0	0	0	0	4	0	8	0	0	0	35
+2	0	0	0	0	2	3	0	0	0	36
+1	1	2	0	2	1	5	1	0	0	37
+0	2	1	2	0	0	2	0	0	0	38
+1	0	1	0	0	0	1	1	1	0	39
+0	1	3	1	2	0	2	0	0	0	40
+1	3	0	0	2	1	5	0	0	1	41
+3	0	1	0	3	2	6	0	0	0	42
+4	1	2	2	1	1	0	2	0	0	43
+1	0	1	2	4	0	4	4	0	0	44
+4	0	0	0	1	4	4	2	0	0	45
+1	1	0	3	2	0	0	0	0	0	46
+0	0	0	0	1	0	4	0	0	0	47
+1	1	0	0	0	1	6	0	0	0	48
+4	2	0	0	3	3	1	4	0	1	49
+0	0	0	1	2	0	8	0	2	0	50
+0	0	0	2	0	0	2	0	0	0	51
+0	0	3	4	0	1	2	0	1	0	52
+4	3	0	0	2	2	7	0	0	0	53
+0	1	0	1	2	0	8	0	1	0	54
+0	0	0	0	0	0	1	0	0	0	55
+2	0	0	0	0	0	0	0	0	0	56
+0	1	0	0	0	0	0	0	0	0	57
+0	0	0	0	0	0	0	0	0	0	58
+0	0	0	0	0	0	0	0	0	0	59
