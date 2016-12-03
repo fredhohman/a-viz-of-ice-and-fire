@@ -124,17 +124,21 @@ function updateScatterPlot (data){
                         });
 
                         // TODO: make text actually appear
+                        var xPos = xScale(d.x);
+                        var yPos = yScale(d.y);
                         tip.transition()
                             .duration(tooltipTransition)
                             .style("opacity", 0.9);
                         tip.html("test </br>")
-                            .style("left", xScale(d.x) + "px")
-                            .style("top", yScale(d.y - tooltipOffset) + "px");
+                            // .style("left", d3.event.pageX + "px")
+                            // .style("top", (d3.event.pageY - 20) + "px")
+                            .style("left", parseInt(xPos) + "px")
+                            .style("top", parseInt(yPos) + "px");
+
                         // var tooltip = svg.select("div.tooltip");
                         // var tooltipWordHeight = 10;
                         // var tooltipWordBuffer = 5;
-                        // var xPos = xScale(d.x);
-                        // var yPos = yScale(d.y);
+                        
                         // tooltip.transition()
                         //         .duration(tooltipTransition)
                         //         .style("opacity", .9)
@@ -144,8 +148,6 @@ function updateScatterPlot (data){
                         //     .style("left", xPos + "px")
                         //     .style("top", yPos + "px");
                             // .attr("z-index", 1000);
-
-                        console.log(wordCounter);
                         // add text
                         // var tooltipText = tooltip.selectAll("text.tooltip")
                         //                     .data(wordCounter);
@@ -368,6 +370,7 @@ function initScatterPlot (data){
     .attr("class", "spg-cats");
 
     // make tooltip?
+    //tip = d3.select("g#spg")
     tip = svg.append("div")
             .attr("class", "tooltip")
             .style("opacity", 0);
