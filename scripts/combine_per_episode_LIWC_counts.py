@@ -1,5 +1,5 @@
 """
-Combine the separate per-episode LIWC token 
+Combine the separate per-episode LIWC chunk
 count files into a horrible mega-file.
 """
 import os, re
@@ -12,7 +12,7 @@ def main():
     args = parser.parse_args()
     data_dir = args.data_dir
     token_count_files = [f for f in os.listdir(data_dir)
-                         if 'LIWC_chunk_token_counts.tsv' in f]
+                         if 'LIWC_chunk_counts.tsv' in f]
     # print('got %d token count files %s'%
     #       (len(token_count_files), str(token_count_files)))
     # sort files by episode order
@@ -32,7 +32,7 @@ def main():
         all_token_counts.append(token_counts)
     all_token_counts = pd.concat(all_token_counts, axis=0)
     out_dir = data_dir
-    out_file = os.path.join(out_dir, 'LIWC_chunk_token_counts_all_episodes.tsv')
+    out_file = os.path.join(out_dir, 'LIWC_chunk_counts_all_episodes.tsv')
     print('writing all counts to file %s'%(out_file))
     all_token_counts.to_csv(out_file, sep='\t', index=None)
 
