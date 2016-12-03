@@ -234,6 +234,6 @@ $(".episode-block").click(function (event) {
    // console.log (episodeNumber);
 
    // update scatterplot and accompanying bar plot
-   updateAll(seasonNumber, episodeNumber)
+   updateAll(seasonNumber, episodeNumber);
 });
 
