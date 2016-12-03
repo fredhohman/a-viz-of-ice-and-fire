@@ -1,0 +1,61 @@
+anger	death	family	home	humans	negative_affect	positive_affect	religion	sexual	swear	chunk
+kill:1,killer:1,fights:1,fight:1,attacked:1	killer:1,kill:1,slaughtered:1	sister:1,sons:1,brother:1,mother:1		baby:1,boy:1,men:1,lady:1	killer:1,kill:1	friend:1,like:1,free:1	lord:1			0
+		mother:1	home:1			important:1,please:1	lord:1			1
+										2
+										3
+kill:1	kill:1	father:1			kill:1	relax:1				4
+kill:1	kill:1,alive:1			boy:1	worries:1,kill:1	good:1	lord:2			5
+		mother:1	beds:1	people:1		grace:1				6
+bastard:1	funeral:1,massacred:1	father:1				good:1	lord:2		bastard:1	7
+										8
+		daughters:1		lady:3,woman:1,people:1	dull:2	loyal:1,sure:1,trust:1,enjoys:1,humorless:1,fine:1,honest:1				9
+				boy:1,lady:1		better:1,good:1,well:1,important:1				10
+blame:2				girls:1,man:1	shame:1,worst:1	like:2,wonderful:1,love:1,true:1,interested:1,trusted:1		love:1,cocks:1	cocks:1	11
+offense:1		daughters:1		lady:2,man:1		innocent:2,win:1,safe:1,like:1,blessings:1	blessings:1			12
+rebelling:1					wrong:1	better:1,ideal:1,like:1,strongholds:1,strong:1,grace:1	lords:1		bloody:1	13
+		married:2		people:1,women:1		like:2,intelligent:2,beautiful:1,good:1,interesting:1,well:1				14
+		mother:1		girl:1,men:1		better:2,love:2,loved:1,interest:1,pretty:1		love:2,loved:1		15
+		grandmother:1,sister:1	gardens:1	lady:4		beautiful:1,kind:1				16
+	death:1	grandmother:1	house:1	lady:4,child:1	losses:1	thank:2,favor:1,good:1,kiss:1,dear:1,honor:1	lord:1	kiss:1		17
+ugly:1	death:1	grandmother:2,father:2,sons:1,brother:1	clean:1	men:1		liked:1,brave:1,wise:1,well:1,favorite:1,charming:1,gentle:1,good:1,smile:1				18
+		son:2,father:1,husband:1		boy:1		pleasure:2,better:1,great:1,well:1,truth:1	lord:2			19
+		wife:1		boy:1,lady:1,child:1		kind:1,brave:1,like:1,clever:1,gentle:1,good:1,truth:1,grace:1,handsome:1				20
+cut:1		father:3,grandmother:1,brother:1		women:1,child:1		truth:2,confidence:1,promised:1,freely:1,please:1,well:1	mercy:1,merciful:1			21
+battle:1,war:1	funeral:1,war:1	uncle:1,grandfather:1		men:1	distraction:3,war:1	determined:1,please:1,thank:1,truth:1	lord:1			22
+revenge:1,war:1	war:1	married:1		men:1	lost:2,revenge:1,war:1	faith:2,grace:2,win:1	faith:2,lord:1			23
+		mother:2,son:1		boys:1,lady:1,children:1			prayed:1			24
+murderer:1,war:1	die:1,murderer:1,war:1	husband:1	home:1	baby:1,boy:1,woman:1	worst:1,war:1		prayed:1			25
+jealous:1	death:1	mother:2,husband:1,family:1	family:1	boy:1,woman:1,child:1	jealous:1	promise:1,true:1,innocent:1,love:1	prayed:1	love:1		26
+kill:2,hate:2,hates:1,insult:1	kill:2,massacre:1			people:3,child:1	kill:2,insult:1	liked:1,won:1,love:1,like:1,well:1,playing:1		love:1		27
+	die:1				wrong:1	worshippers:1,truth:1	worshippers:1			28
+killed:1	dead:2,killed:1	brothers:1		men:2	killed:1					29
+fighting:1	die:2					care:2				30
+	die:3					well:1,like:1				31
+	alive:1,dying:1					sure:1				32
+weapons:1	drown:1	sister:1		boy:1	weapons:1					33
+kill:1	kill:1	sister:1			kill:1	better:1				34
+kill:1,war:1,kills:1	kill:1,kills:1,dead:1,war:1	mother:1,grandfather:1		people:1	kill:1,war:1,kills:1	please:1	lord:1			35
+					weep:1		lord:1			36
+dangerous:2,kill:1	kill:1			person:1,girl:1,people:1	shy:1,kill:1	friends:2,generous:1,won:1,like:1				37
+dangerous:1,fight:1		brotherhood:2,son:1		boys:1,girl:1,boy:1		save:1	lords:1			38
+threats:1		father:1				sure:1				39
+fucked:2,killed:1	killed:1			lady:1,people:1	killed:1,whore:1,worried:1	certain:1,friends:1,please:1,well:1,friend:1	lord:1	fucked:2,whore:1	fucked:2	40
+idiot:1,torturing:1				women:1,men:1,people:1	idiot:1	great:3,beauty:3,like:2,good:1,trust:1,pleasing:1,trusts:1		pervert:1		41
+dangerous:3,cruel:3,cruelly:1,cruelty:1				people:2,child:1						42
+				lady:2		grace:2,good:2,thoughtful:1,sure:1,welcome:1				43
+	dead:1	wife:2,husband:1		lady:1,children:1,women:1	lost:1	grace:2,interested:1,kindly:1				44
+war:1,punishable:1	death:1,war:1			children:1,child:1	war:1	relief:1,grace:1		perversion:1		45
+weapons:1					weapons:1	beautiful:1,like:1,easier:1				46
+kill:1	die:1,kill:1	father:1		woman:1	kill:1	grace:2,exciting:1,please:1,forgive:1				47
+		father:1	house:1		vulnerable:1	truth:3,good:2,like:1,glory:1				48
+hated:2		sister:1			hurt:1	please:3				49
+						please:10				50
+	died:1	sister:1,father:1,brother:1		boy:1,people:1	shame:1	helping:1				51
+rebellion:2		father:5				better:1,liked:1,good:1,like:1,won:1				52
+weapons:1,fought:1,war:1	war:1	brothers:1		children:2,persons:1	weapons:1,war:1	good:1				53
+		brothers:1		person:2,man:1		free:1				54
+fuck:1,bitch:1				girl:1,man:1	risk:1	great:1,good:1,prize:1,pretty:1	hells:1	fuck:1	fuck:1,bitch:1	55
+shit:1					shit:1,ruined:1	good:1,wonderful:1,like:1,luck:1			shit:1	56
+kill:1	kill:1			woman:1,lady:1	kill:1	great:1,well:1				57
+kill:2	kill:2				kill:2,hurt:1	good:2				58
+fight:2		father:1	house:1	woman:2,man:2		better:1,enjoy:1,good:1,like:1,sure:1				59

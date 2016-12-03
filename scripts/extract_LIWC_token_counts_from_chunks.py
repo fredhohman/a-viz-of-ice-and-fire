@@ -28,7 +28,7 @@ if __name__ == '__main__':
                     for e in sorted_episodes}
     LIWC_categories = ['positive_affect', 'negative_affect', 'anger', 'death', 
                        'family', 'home', 'humans', 'religion', 'swear', 'sexual']
-    LIWC_category_wordlists = {c : [re.compile(l.strip())
+    LIWC_category_wordlists = {c : [re.compile('^' + l.strip() + '$')
                                     for l in open('/hg191/corpora/LIWC/resources/liwc_lexicons/%s'%(c), 'r')] 
                                for c in LIWC_categories}
     TKNZR = WordPunctTokenizer()

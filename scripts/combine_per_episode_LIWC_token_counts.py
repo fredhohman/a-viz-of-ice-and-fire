@@ -12,8 +12,9 @@ def main():
     args = parser.parse_args()
     data_dir = args.data_dir
     token_count_files = [f for f in os.listdir(data_dir)
-                         if 'LIWC_chunk_token_counts' in f]
-    print('got %d token count files'%(len(token_count_files)))
+                         if 'LIWC_chunk_token_counts.tsv' in f]
+    # print('got %d token count files %s'%
+    #       (len(token_count_files), str(token_count_files)))
     # sort files by episode order
     token_count_files = sorted(token_count_files,
                                key=lambda x: 
