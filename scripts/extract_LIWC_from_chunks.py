@@ -27,11 +27,15 @@ if __name__ == '__main__':
                     for e in sorted_episodes}
     LIWC_categories = ['positive_affect', 'negative_affect', 'anger', 'death', 
                        'family', 'home', 'humans', 'religion', 'swear', 'sexual']
-    LIWC_category_wordlists = {c : [l.strip() 
+    LIWC_category_wordlists = {c : [re.compile('^' + l.strip()  + '$')
                                     for l in open('/hg191/corpora/LIWC/resources/liwc_lexicons/%s'%(c), 'r')] 
                                for c in LIWC_categories}
     TKNZR = WordPunctTokenizer()
     full_chunk_list = set(range(N_CHUNKS))
+    # we count either the total number of tokens
+    # or the number of unique tokens
+    count_option = 'total'
+    # count_option = 'unique'
     for e in sorted_episodes:
         print('processing episode %s'%(e))
         e_data = episode_data[e]
@@ -56,9 +60,12 @@ if __name__ == '__main__':
             tokens = TKNZR.tokenize(t)
             for c in LIWC_categories:
                 counts = get_LIWC_counts(tokens, LIWC_words=LIWC_category_wordlists[c])
-                total_counts = sum(counts.values())
+                if(count_option == 'total'):
+                    total_counts = sum(counts.values())
+                elif(count_option == 'unique'):
+                    total_counts = len(counts)
                 # TODO: store individual words as well as aggregate counts
-                chunk_LIWC_counts[c].append(counts)
+                chunk_LIWC_counts[c].append(total_counts)
         chunk_LIWC_counts = pd.DataFrame(chunk_LIWC_counts)
         chunk_LIWC_counts['chunk'] = chunk_LIWC_counts.index
         chunk_fname = os.path.join(subtitle_dir, '%s_LIWC_chunk_counts.tsv'%(e_name))

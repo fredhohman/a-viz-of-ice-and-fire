@@ -4,6 +4,7 @@ Preprocess the text extracted from subtitle
 files by stripping unnecessary characters.
 """
 import re
+from nltk.tokenize import WordPunctTokenizer
 
 removal_strings = ['\(.*\)', '<i>', '</i>'
                       # 
@@ -14,6 +15,7 @@ removal_regexes = list(map(lambda r: re.compile(r),
                            removal_strings))
 line_break_delim = '$'
 
+TKNZR = WordPunctTokenizer()
 def clean_text(text):
    """
    Strip all the bad stuff out of the text.
@@ -25,7 +27,9 @@ def clean_text(text):
          l = regex.sub('', l)
       # for some reason this is necessary
       l = l.replace('</i>', '')
+      # we only want alphanumeric stuff
+      l = ' '.join(list(filter(lambda w: w.isalpha(), TKNZR.tokenize(l))))
       clean_lines.append(l)
-   clean_text = '$'.join(clean_lines)
+   clean_text = ' '.join(clean_lines)
    return clean_text
 
