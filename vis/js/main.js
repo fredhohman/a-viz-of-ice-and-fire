@@ -151,6 +151,7 @@ $(document).ready(function() {
                   .style("background-color", "rgb("+ String(palettes[season][color][0]) + ","
                                                    + String(palettes[season][color][1]) + ","
                                                    + String(palettes[season][color][2]) + ")");
+                  // .text(String(palettes[season][color]));
             }
         }
         color_blocks(0,10);
@@ -207,6 +208,7 @@ $(document).ready(function() {
         color_chunk_blocks(episode_strings_lowercase[eNum-1]);
     });
 
+    // zoom in color chunks
     $("#chunks").click(function(event) {
         chunk_clicked = parseInt(event.target.id[1]);
         if (event.target.id[2] != '-') {
@@ -220,7 +222,7 @@ $(document).ready(function() {
         else {
             d3.selectAll(".chunk-block").classed("chunk-block-small", true);
             d3.select("#chunk"+String(chunk_clicked_old)).classed("chunk-block-zoomed", false);
-            d3.select("#chunk"+String(chunk_clicked)).classed("chunk-block-zoomed", true);
+            d3.select("#chunk"+String(chunk_clicked)).classed("chunk-block-zoomed", true)
         }
 
         chunk_clicked_old = chunk_clicked;
@@ -236,4 +238,5 @@ $(".episode-block").click(function (event) {
    // update scatterplot and accompanying bar plot
    updateAll(seasonNumber, episodeNumber);
 });
+
 

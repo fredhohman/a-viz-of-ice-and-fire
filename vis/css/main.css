@@ -1,13 +1,21 @@
+html {
+	/*background-color: white;*/
+	height: 100%;
+	width: 100%;
+}
 body {
 	font-family: 'Open Sans', sans-serif;
 	/*filter: invert(100%);*/
 }
 .jumbotron {
 	color: #E0E0E0;
-	background-color: #212121;
+	/*background-color: #212121;*/
+	background-color: transparent;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	/*box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);*/
+	height: 100vh;
+
 }
 .jumbotron h1 {
 	font-size: 70px;
@@ -24,10 +32,11 @@ body {
 	margin-bottom: 0px;
 }
 .season-block {
-	transition: all 0.4s ease;
+	/*transition: all 0.4s ease;*/
 	border-radius: 25px;
 	width: 16.666%;
 	float: left;
+	background-color: black;
 }
 .season-block:hover {
 	/*background-color: #CCCCCC;*/
@@ -36,7 +45,7 @@ body {
 	opacity: 0.6;
 }
 .episode-block {
-	transition: all 0.4s ease;
+	/*transition: all 0.4s ease;*/
 	border-radius: 25px;
 	width: 10%;
 	float: left;
@@ -56,7 +65,7 @@ body {
 	overflow-x: hidden;
 }
 .chunk-block {
-	transition: all 0.2s ease;
+	/*transition: all 0.2s ease;*/
 	width: 1.666%;
 	/*float: left;*/
 	display: inline-block;
@@ -69,11 +78,11 @@ body {
 	opacity: 0.6;
 }
 .chunk-block-small {
-	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
 	width: 1%;
 }
 .chunk-block-zoomed {
-	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
 	width: 41%;
 }
 .color {
@@ -94,7 +103,7 @@ p {
 .center {
 	text-align: center;
 }
-.metadata-header {
+.metadata-content {
 	font-size: 16px;
 }
 .metadata-header.span {
@@ -105,4 +114,55 @@ p {
 }
 .small-vspace {
 	height: 5px;
+}
+.large-vspace {
+	height: 100px;
+}
+.metadata-header {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+
+
+/*video*/
+.parent-element-to-video {
+    overflow: hidden;
+    text-align: center;
+}
+
+video {
+    height: 100%;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;    
+    min-height: 56.25vw; /* 100 * 9 / 16 */
+
+}
+.video-overlay-title {
+    position: absolute;
+    /*left: 0px;*/
+    top: 250px;
+    margin: 0 auto;
+    color: #FFF;
+}
+.video-overlay-text {
+    position: absolute;
+    left: 50%;
+    top: 525px;
+    margin: 0 auto;
+    color: #FFF;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+}
+.video-overlay-subheader {
+    position: absolute;
+    left: 50%;
+    top: 450px;
+    margin: 0 auto;
+    color: #FFF;
+    transform: translate(-50%, -50%);
+	font-weight: 300;
+	font-size: 28px;
+	color: white;
 }
