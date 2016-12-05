@@ -46,7 +46,11 @@
       Our visualization highlights the high-level aspects of each Game of Thrones episode, separating the data into (1) visual and (2) textual components. We process over 60 hours of video data and its subtitles (dialogue only) into nominal and quantitative variables of color and text frequencies as follows.
       <ol>
         <li>
-           We segment the video data into screenshots at the rate of one shot per second to produce 3600 images for a 60-minute episode. Next, we divide the episode into 60 time slices of equal size and combine the images from each slice into a single image. 
+           We segment the video data into screenshots at the rate of one shot per second to produce 3600 images for a 60-minute episode. Next, we divide each episode into 60 time slices of equal size and combine the images from each slice into a single image. 
+
+           ...
+
+           Our color extraction technique highlights the most visually salient colors within the data, which are often different from the most frequent colors 
         </li>
         <li>
           
@@ -403,7 +407,7 @@
     <p>
       Fans of Game of Thrones will also recognize the "white walkers" as a major plot point throughout the series, as they represent a major threat to all citizens of Westeros. These creatures are characterized by bright blue eyes and skin that corresponds with their habitat in the frozen North.
 
-      // insert representative Night King picture
+      // insert representative walker picture
 
       The walkers appear periodically throughout the series to terrorize the main characters, and we provide visual evidence of their key appearances in three episodes.
 
@@ -414,7 +418,7 @@
       S6E5 - "The Door" (escape scene)
 
       // this is filler - update once chart is in place!
-      Although the walkers do not speak, their presence on-screen is often the most prominent color combination in the episodes during which they appear.
+      Although the walkers do not speak, their presence on-screen is often the most prominent color combination in the episodes during which they appear. Furthermore, exploring the interactive color plot above reveals that their blue/white colors occur more frequently toward the end of the series, which could be the producers' method of foreshadowing their increased promimence in the upcoming winter-themed season.
       
     </p>
   </div>
@@ -431,10 +435,10 @@
 
       We first compute the frequency of character names mentioned in each episode (restricted to main characters), then group the characters by their representative House. For instance, if Arya and Jon Snow are mentioned once each, then House Stark gets a count of 2. We then plot these frequencies using the same bubble plot as above to compare the relative importance of Houses over time.
 
-      // insert frequency chart here with hover-over for details
+      // insert frequency chart here with mouseover for details
 
       // this is filler - update once the chart is in place!
-      As expected, the Baratheons suffer a major setback after the death of Robert Baratheon in season 1 and don't regain their popularity until the later rise of Stannis Baratheon. Furthermore, the Starks and Lannisters stay consistent throughout, with the Starks gaining ground after season 4 due to the increased presence of Jon Snow.
+      As expected, the Baratheons suffer a major setback after the death of Robert Baratheon in season 1 and don't regain their popularity until the later rise of Stannis Baratheon. Furthermore, the Starks and Lannisters stay consistent throughout, with the Starks gaining ground after season 4 due to the increased presence of Jon Snow. The curious user may go back and re-investigate the later episodes where Jon Snow rose to prominence and explore the more limited color palette as Jon gets more screentime in the frozen North.
       
     </p>
   </div>
