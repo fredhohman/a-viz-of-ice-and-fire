@@ -122,8 +122,9 @@ p {
 	padding-bottom: 5px;
 	border-bottom: 1px solid #DDDDDD;
 }
-
-
+footer {
+	color: #9E9E9E;
+}
 
 /*video*/
 .parent-element-to-video {
