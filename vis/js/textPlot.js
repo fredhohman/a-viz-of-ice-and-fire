@@ -208,7 +208,7 @@ function updateScatterPlot (data){
 var tip;
 */
 function initBubblePlot (data){
-    margin = {top: 20, right: 200, bottom: 100, left: 120};
+    margin = {top: 20, right: 50, bottom: 100, left: 80};
     width = 900 - margin.left - margin.right;
     height = 500 - margin.top - margin.bottom;
 
@@ -226,8 +226,8 @@ function initBubblePlot (data){
     .scale(yScale);
 
     // Define the div for the tooltip
-    tooltip = d3.select("body").append("div")   
-    .attr("class", "tooltip")               
+    tooltip = d3.select("body").append("div")
+    .attr("class", "tooltip")
     .style("opacity", 0);
 
 
