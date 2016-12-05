@@ -115,6 +115,9 @@ p {
 .small-vspace {
 	height: 5px;
 }
+.medium-vspace {
+	height: 50px;
+}
 .large-vspace {
 	height: 100px;
 }
