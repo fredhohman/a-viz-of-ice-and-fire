@@ -23,7 +23,7 @@ var color = d3.scaleOrdinal().range(["#020202", "#3c3c3c", "#4b4a4a", "#5e5d5d",
 var unfocusColor = "#BBBBB9";
 var focusColor = "#020202";
 var invisibleColor = "#F1F1F2";
-var defaultCategory = "positive_affect";
+var defaultCategory = "positive";
 var tooltipTransition, tooltipOffset;
 
 var legendRects, legendLabels;
@@ -208,8 +208,8 @@ function updateScatterPlot (data){
 var tip;
 */
 function initBubblePlot (data){
-    margin = {top: 20, right: 160, bottom: 100, left: 90};
-    width = 900 - margin.left - margin.right;
+    margin = {top: 20, right: 210, bottom: 100, left: 70};
+    width = 850 - margin.left - margin.right;
     height = 500 - margin.top - margin.bottom;
 
     // Define the initial scales and axes
@@ -682,7 +682,7 @@ function updateFocus(newFocusCat) {
         }
     });
 
-    // circles["positive_affect"]
+    // circles["positive"]
     // .transition()
     // .attr("fill", unfocusColor);
     // if(categoryVisibilities[catInFocus]){
