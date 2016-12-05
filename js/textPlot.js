@@ -509,7 +509,7 @@ function initScatterPlot (data){
 }
 */
 
-/*
+
 function initBarPlot (data){
     wordlistBarWidth = 150;
     wordlistBarHeight = 15;
@@ -526,7 +526,10 @@ function initBarPlot (data){
     // now build bar chart
     wordBarOffsetX = 60;
     wordBarOffsetY = 20;
-    maxBars = 5;
+    maxBars = 10;
+
+    // episode-level word summary
+
     wordBarArea = d3.select("#text-metadata")
                .append("svg")
                .attr("class", "wordBarArea")
@@ -537,32 +540,63 @@ function initBarPlot (data){
                 .attr("class", "axis")
                 .attr("transform", "translate(" + wordBarOffsetX + ",0)");
 }
-*/
+
+function initAll(textDTM, textTokenData) {
+    initBubblePlot(textTokenData);
+    initBarPlot(textDTM);
+}
 
 function updateAll (season, episode) {
     //updateScatterPlot (sliceData (textData, seasonNumber, episodeNumber));
-    //updateBarPlot (textMetaData, seasonNumber, episodeNumber);
+    updateBarPlot (textDTM, seasonNumber, episodeNumber);
     updateBubblePlot (sliceData (textTokenData, seasonNumber, episodeNumber));
 }
-/*
+
+var tmp;
 function updateBarPlot (data, season, episode){
 	var parts, wordCounter;
 	var div = d3.select ("#text-metadata");
-	div.select("#text-category").text(catInFocus);
+	// div.select("#text-category").text(catInFocus);
 
-	for (var i = data.length - 1; i >= 0; i--) {
-		if (parseInt(data[i]["season"]) == season && 
-			parseInt(data[i]["episode"]) == episode) {
-			parts = data[i][catInFocus].split(",")
-			wordCounter = parts.map (function (entry){
-				return {
-					word: entry.split(":")[0],
-					freq: parseInt(entry.split(":")[1])					
-				}
-			});
-			break;
-		}
-	}
+    // slice DTM data!
+    var slicedData = sliceData(data, season, episode)[0];
+    tmp = slicedData;
+    // console.log(slicedData);
+    // now sort!
+    var allWords = d3.keys(slicedData).filter(function(d) {
+        return d != "season" && d != "episode";
+    });
+    console.log(allWords);
+    allWords.sort(function(a, b) {
+        return slicedData[a] < slicedData[b];
+    })
+    console.log(allWords);
+    
+    var wordCounter = []; 
+    for(var i = 0; i < maxBars; i++) {
+        var word = allWords[i];
+        wordCounter[wordCounter.length] = {
+            word: word,
+            freq: slicedData[word]
+        };
+    }
+    console.log(wordCounter);
+
+
+
+	// for (var i = data.length - 1; i >= 0; i--) {
+	// 	if (parseInt(data[i]["season"]) == season && 
+	// 		parseInt(data[i]["episode"]) == episode) {
+	// 		parts = data[i][catInFocus].split(",")
+	// 		wordCounter = parts.map (function (entry){
+	// 			return {
+	// 				word: entry.split(":")[0],
+	// 				freq: parseInt(entry.split(":")[1])					
+	// 			}
+	// 		});
+	// 		break;
+	// 	}
+	// }
 
 	// var wordlist = d3.select ("#text-wordlist")
 	// 				.selectAll("li")
@@ -574,9 +608,9 @@ function updateBarPlot (data, season, episode){
 	// 	return d.word;
 	// });
 
-    // why is this called twice??
-    // turns out that the functions chained to enter()
-    // are only called once
+ //    // why is this called twice??
+ //    // turns out that the functions chained to enter()
+ //    // are only called once
 	// wordlist.text(function (d){
 	// 	return d.word;
 	// });
@@ -645,7 +679,7 @@ function updateBarPlot (data, season, episode){
     wordBarText.exit().remove();
 }
 
-function updateFocus(newFocusCat) {
+/*function updateFocus(newFocusCat) {
     catInFocus = newFocusCat;
     // update legend rectangles
     legendRects
@@ -693,6 +727,5 @@ function updateFocus(newFocusCat) {
     // }
     // update bar chart
     updateBarPlot(textMetaData, seasonNumber, episodeNumber);
-}
+}*/
 
-*/

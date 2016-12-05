@@ -44,6 +44,16 @@ function init (){
 
 	d3.tsv(textDTMFile, function(error, data) {
 		textDTM = data;
+        // convert to counts
+        textDTM.forEach(function(d) { 
+            var allKeys = d3.keys(d); 
+            for(var i = 0; i < allKeys.length; i++) { 
+                d[allKeys[i]] = parseInt(d[allKeys[i]]); 
+            } 
+            return d;
+        })
+        initBarPlot(textDTM);
+        updateBarPlot(textDTM, seasonNumber, episodeNumber);
 	});
 }
 
