@@ -15,7 +15,6 @@ body {
 	padding-bottom: 10px;
 	/*box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);*/
 	height: 100vh;
-
 }
 .jumbotron h1 {
 	font-size: 70px;
@@ -24,7 +23,6 @@ body {
 	background: url('../images/intro-title.png') no-repeat;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-
 	-webkit-text-stroke: 1px rgba(255,255,255,0.6);
 }
 .jumbotron h3 {
@@ -37,13 +35,17 @@ body {
 	width: 16.666%;
 	float: left;
 	/*background-color: black;*/
+	/*font-weight: 300;*/
 }
 .season-block:hover {
-	/*background-color: #CCCCCC;*/
 	/*color: #FFFFFF;*/
 	font-weight: 700;
 	cursor: pointer;
-	opacity: 0.6;
+	/*opacity: 0.6;*/
+}
+.season-block:hover > .color-header {
+	font-weight: 700;
+	color: #333333;
 }
 .episode-block {
 	/*transition: all 0.4s ease;*/
@@ -56,16 +58,19 @@ body {
 	/*border-left: 3px white solid;*/
 	/*border-right: 3px white solid;*/
 	cursor: pointer;
-	opacity: 0.6;
+	/*opacity: 0.6;*/
 }
-
+.episode-block:hover > .color-header {
+	font-weight: 700;
+	color: #333333;
+}
 #chunks {
 	font-size: 0px;
 	white-space: nowrap;
 	overflow-x: hidden;
 }
 .chunk-block {
-	transition: all 0.2s ease;
+	transition: all 0.4s ease;
 	width: 1.666%;
 	/*float: left;*/
 	display: inline-block;
@@ -75,7 +80,7 @@ body {
 	/*background-color: black;*/
 	/*border-left: 1px white solid;*/
 	/*border-right: 1px white solid;*/
-	opacity: 0.6;
+	/*opacity: 0.6;*/
 }
 .chunk-block-small {
 	-webkit-transition: all 0.4s ease;
@@ -135,16 +140,14 @@ footer {
 	margin-bottom: 5px;
 	padding-top: 0px;
 	font-size: 20px;
-	color: white;
-	font-weight: 300;
+	color: #CCCCCC;
+	/*font-weight: 300;*/
 }
-.color-header:hover {
-	font-weight: 700;
-	color: #333333;
-}
+
 
 
 /*video*/
+
 .parent-element-to-video {
     overflow: hidden;
     text-align: center;
@@ -175,7 +178,7 @@ video {
     color: white;
 }
 .video-overlay-subheader {
-    position: absolute;
+	position: absolute;
     left: 50%;
     top: 450px;
     margin: 0 auto;
@@ -186,59 +189,62 @@ video {
 	color: white;
 }
 
+
+
 /*bouncing arrow*/
 
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
  
 .fa {
- width: 60px;
- display: block;
- text-align: center;
- /*color:#990000;*/
- font:normal 45px 'FontAwesome';
- line-height:125px;
- text-rendering: auto;
- -webkit-font-smoothing: antialiased;
+	width: 60px;
+	display: block;
+	text-align: center;
+	color: #CCCCCC;
+	font: normal 50px 'FontAwesome';
+	line-height: 60px;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
 }
-.fa-angle-down:before {content: "\f063";}
+.fa-arrow-down:before {content: "\f063";}
+.fa-angle-down:before {content: "\f107";}
  
 .bounce {
- position: absolute;
- bottom: 30px;
- left: 50% ;
- width: 60px;
- height: 60px ;
- margin-left:-30px;
- /*border: 2px solid #990000;*/
- -webkit-border-radius:50%;
- -moz-border-radius:50%;
- -ms-border-radius:50%;
- border-radius:50%;
- animation: bounce 2s infinite;
- -webkit-animation: bounce 2s infinite;
- -moz-animation: bounce 2s infinite;
- -o-animation: bounce 2s infinite;
+	position: absolute;
+	bottom: 0px;
+	left: 50% ;
+	width: 60px;
+	height: 60px ;
+	margin-left:-30px;
+	/*border: 2px solid #990000;*/
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-ms-border-radius:50%;
+	border-radius:50%;
+	animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	-moz-animation: bounce 2s infinite;
+	-o-animation: bounce 2s infinite;
 }
  
 @-webkit-keyframes bounce {
- 0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
- 40% {-webkit-transform: translateY(-30px);}
- 60% {-webkit-transform: translateY(-15px);}
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
 }
  
 @-moz-keyframes bounce {
- 0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
- 40% {-moz-transform: translateY(-30px);}
- 60% {-moz-transform: translateY(-15px);}
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
 }
  
 @-o-keyframes bounce {
- 0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
- 40% {-o-transform: translateY(-30px);}
- 60% {-o-transform: translateY(-15px);}
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
 }
 @keyframes bounce {
- 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
- 40% {transform: translateY(-30px);}
- 60% {transform: translateY(-15px);}
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
 }
