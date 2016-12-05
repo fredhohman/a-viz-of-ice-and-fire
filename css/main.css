@@ -65,14 +65,14 @@ body {
 	overflow-x: hidden;
 }
 .chunk-block {
-	/*transition: all 0.2s ease;*/
+	transition: all 0.2s ease;
 	width: 1.666%;
 	/*float: left;*/
 	display: inline-block;
 	cursor: pointer;
 }
 .chunk-block:hover {
-	background-color: black;
+	/*background-color: black;*/
 	/*border-left: 1px white solid;*/
 	/*border-right: 1px white solid;*/
 	opacity: 0.6;
@@ -123,11 +123,26 @@ p {
 }
 .metadata-header {
 	padding-bottom: 5px;
-	border-bottom: 1px solid #DDDDDD;
+	border-bottom: 1px solid #EEEEEE;
+	margin-top: 0px; /*aligns horizontal line with top of color blocks*/
 }
 footer {
 	color: #9E9E9E;
 }
+.color-header {
+	/*height: 10px;*/
+	margin-top: 0px;
+	margin-bottom: 5px;
+	padding-top: 0px;
+	font-size: 20px;
+	color: white;
+	font-weight: 300;
+}
+.color-header:hover {
+	font-weight: 700;
+	color: #333333;
+}
+
 
 /*video*/
 .parent-element-to-video {
@@ -169,4 +184,61 @@ video {
 	font-weight: 300;
 	font-size: 28px;
 	color: white;
+}
+
+/*bouncing arrow*/
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+ 
+.fa {
+ width: 60px;
+ display: block;
+ text-align: center;
+ /*color:#990000;*/
+ font:normal 45px 'FontAwesome';
+ line-height:125px;
+ text-rendering: auto;
+ -webkit-font-smoothing: antialiased;
+}
+.fa-angle-down:before {content: "\f063";}
+ 
+.bounce {
+ position: absolute;
+ bottom: 30px;
+ left: 50% ;
+ width: 60px;
+ height: 60px ;
+ margin-left:-30px;
+ /*border: 2px solid #990000;*/
+ -webkit-border-radius:50%;
+ -moz-border-radius:50%;
+ -ms-border-radius:50%;
+ border-radius:50%;
+ animation: bounce 2s infinite;
+ -webkit-animation: bounce 2s infinite;
+ -moz-animation: bounce 2s infinite;
+ -o-animation: bounce 2s infinite;
+}
+ 
+@-webkit-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+ 40% {-webkit-transform: translateY(-30px);}
+ 60% {-webkit-transform: translateY(-15px);}
+}
+ 
+@-moz-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+ 40% {-moz-transform: translateY(-30px);}
+ 60% {-moz-transform: translateY(-15px);}
+}
+ 
+@-o-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+ 40% {-o-transform: translateY(-30px);}
+ 60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 40% {transform: translateY(-30px);}
+ 60% {transform: translateY(-15px);}
 }
