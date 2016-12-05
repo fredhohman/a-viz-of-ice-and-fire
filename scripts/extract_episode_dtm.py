@@ -4,6 +4,7 @@ unigrams and bigrams.
 """
 from clean_extracted_text import clean_text
 from sklearn.feature_extraction.text import CountVectorizer
+from stopwords import get_stopwords
 import pandas as pd
 import argparse, os, re
 
@@ -17,6 +18,7 @@ def main():
                       if re.findall('S[1-9]E[0-9]+.tsv', f)]
     dialogue_files = [os.path.join(data_dir, f) 
                       for f in dialogue_files]
+    stops = get_stopwords('en')
     all_docs = {}
     for f in dialogue_files:
         ep_name = re.findall('S[1-9]E[0-9]+', f)[0]
@@ -47,7 +49,7 @@ def main():
     ngram_range = (1,2)
     # need tokenizer? probs not
     cv = CountVectorizer(min_df=min_df, ngram_range=ngram_range,
-                         encoding='utf-8')
+                         encoding='utf-8', stop_words=stops)
     counts = cv.fit_transform(sorted_docs)
     counts = counts.todense()
     print('got final counts with shape %s'%
