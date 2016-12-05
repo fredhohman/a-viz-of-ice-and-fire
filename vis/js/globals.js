@@ -27,6 +27,6 @@ Array.prototype.remove = function(from, to) {
 };
 
 /* Define all the categories */
-var categories = ["anger", "death", "family", "home", "humans", "negative_affect", "positive_affect", "religion", "sexual", "swear"];
+var categories = ["anger", "death", "family", "home", "humans", "negative", "positive", "religion", "sexual", "swear"];
 
 var tooltip;
