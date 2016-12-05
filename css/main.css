@@ -39,13 +39,18 @@ body {
 }
 .season-block:hover {
 	/*color: #FFFFFF;*/
-	font-weight: 700;
+	font-weight: 800;
 	cursor: pointer;
 	/*opacity: 0.6;*/
 }
 .season-block:hover > .color-header {
-	font-weight: 700;
-	color: #333333;
+	font-weight: 800;
+	color: #9E9E9E;
+}
+.color-header-selected {
+	/*when clicked, toggle this class in js*/
+	font-weight: 800;
+	color: #333333 !important;
 }
 .episode-block {
 	/*transition: all 0.4s ease;*/
@@ -61,8 +66,8 @@ body {
 	/*opacity: 0.6;*/
 }
 .episode-block:hover > .color-header {
-	font-weight: 700;
-	color: #333333;
+	font-weight: 800;
+	color: #9E9E9E;
 }
 #chunks {
 	font-size: 0px;
@@ -127,7 +132,7 @@ p {
 	height: 100px;
 }
 .metadata-header {
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 	border-bottom: 1px solid #EEEEEE;
 	margin-top: 0px; /*aligns horizontal line with top of color blocks*/
 }
@@ -135,13 +140,11 @@ footer {
 	color: #9E9E9E;
 }
 .color-header {
-	/*height: 10px;*/
 	margin-top: 0px;
 	margin-bottom: 5px;
 	padding-top: 0px;
 	font-size: 20px;
 	color: #CCCCCC;
-	/*font-weight: 300;*/
 }
 
 
