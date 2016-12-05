@@ -39,20 +39,19 @@ body {
 }
 .season-block:hover {
 	/*color: #FFFFFF;*/
-	font-weight: 700;
+	font-weight: 800;
 	cursor: pointer;
 	/*opacity: 0.6;*/
 }
 .season-block:hover > .color-header {
-	font-weight: 700;
-	color: #333333;
+	font-weight: 800;
+	color: #9E9E9E;
 }
-
-.season-block:focus > .color-header {
-	font-weight: 700;
-	color: #333333;
+.color-header-selected {
+	/*when clicked, toggle this class in js*/
+	font-weight: 800;
+	color: #333333 !important;
 }
-
 .episode-block {
 	/*transition: all 0.4s ease;*/
 	width: 10%;
@@ -67,8 +66,8 @@ body {
 	/*opacity: 0.6;*/
 }
 .episode-block:hover > .color-header {
-	font-weight: 700;
-	color: #333333;
+	font-weight: 800;
+	color: #9E9E9E;
 }
 #chunks {
 	font-size: 0px;

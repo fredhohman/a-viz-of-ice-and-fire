@@ -4,7 +4,11 @@
 ///////////////////////////////////////////////////////////////////////////
 
 var seasonNumber = 1;
+seasonNumberOld = 1;
+
 var eNum = 1;
+eNumOld = 1;
+
 var textData;
 var numOfChunks = 60;
 chunk_clicked_old = 0;
@@ -154,8 +158,13 @@ $(document).ready(function() {
                   // .text(String(palettes[season][color]));
             }
         }
+
         color_blocks(0,10);
         color_chunk_blocks('s1e1');
+        
+        // color header selected
+        d3.select('#season1' + ' > h3').classed('color-header-selected', true);
+        d3.select('#episode1' + ' > h3').classed('color-header-selected', true);
     })
 
 
@@ -184,8 +193,6 @@ $(document).ready(function() {
         episode_start = (series_clicked - 1)*10;
         episode_end = episode_start + 10;
 
-        // d3.select("#test").transition().duration(5000).style("opacity","0").each("end", );
-
         color_blocks(episode_start, episode_end);
 
         // go back to episode 1 on whatever season was clicked
@@ -202,6 +209,17 @@ $(document).ready(function() {
         color_chunk_blocks(episode_strings_lowercase[eNum]);
         // and update text
         updateAll(seasonNumber, 1);
+
+        // color header selected
+        d3.select('#season' + String(seasonNumberOld) + ' > h3').classed('color-header-selected', false);
+        d3.select('#season' + String(seasonNumber) + ' > h3').classed('color-header-selected', true);
+
+        d3.select('#episode' + String(eNumOld%10) + ' > h3').classed('color-header-selected', false);
+        d3.select('#episode1' + ' > h3').classed('color-header-selected', true);
+        
+        seasonNumberOld = seasonNumber;
+        eNumOld = 1;
+
     });
 
     //  update colors for episode chunks
@@ -221,6 +239,12 @@ $(document).ready(function() {
         d3.select("#viewers").text(episode_metadata[eNum-1]["U.S. viewers (millions)"]);
 
         color_chunk_blocks(episode_strings_lowercase[eNum-1]);
+
+        // color header selected
+        d3.select('#episode' + String(eNumOld%10) + ' > h3').classed('color-header-selected', false);
+        d3.select('#episode' + String(eNum%10) + ' > h3').classed('color-header-selected', true);
+        eNumOld = eNum;
+
     });
 
     // zoom in color chunks
