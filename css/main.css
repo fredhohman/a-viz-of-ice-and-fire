@@ -47,6 +47,12 @@ body {
 	font-weight: 700;
 	color: #333333;
 }
+
+.season-block:focus > .color-header {
+	font-weight: 700;
+	color: #333333;
+}
+
 .episode-block {
 	/*transition: all 0.4s ease;*/
 	width: 10%;
@@ -127,7 +133,7 @@ p {
 	height: 100px;
 }
 .metadata-header {
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 	border-bottom: 1px solid #EEEEEE;
 	margin-top: 0px; /*aligns horizontal line with top of color blocks*/
 }
@@ -135,13 +141,11 @@ footer {
 	color: #9E9E9E;
 }
 .color-header {
-	/*height: 10px;*/
 	margin-top: 0px;
 	margin-bottom: 5px;
 	padding-top: 0px;
 	font-size: 20px;
 	color: #CCCCCC;
-	/*font-weight: 300;*/
 }
 
 

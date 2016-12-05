@@ -187,6 +187,21 @@ $(document).ready(function() {
         // d3.select("#test").transition().duration(5000).style("opacity","0").each("end", );
 
         color_blocks(episode_start, episode_end);
+
+        // go back to episode 1 on whatever season was clicked
+        eNum = 0+10*series_clicked-10;
+
+        d3.select("#episode-title-number").text(episode_strings[eNum]);
+        d3.select("#episode-title").text(episode_metadata[eNum]["Title"]);
+        d3.select("#directed-by").text(episode_metadata[eNum]["Directed by"]);
+        d3.select("#written-by").text(episode_metadata[eNum]["Written by"]);
+        d3.select("#air-date").text(episode_metadata[eNum]["Original air date"]);
+        d3.select("#runtime").text(episode_metadata[eNum]["Runtime"]);
+        d3.select("#viewers").text(episode_metadata[eNum]["U.S. viewers (millions)"]);
+
+        color_chunk_blocks(episode_strings_lowercase[eNum]);
+        // and update text
+        updateAll(seasonNumber, 1);
     });
 
     //  update colors for episode chunks
