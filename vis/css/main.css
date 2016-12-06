@@ -146,8 +146,24 @@ footer {
 	font-size: 20px;
 	color: #CCCCCC;
 }
-
-
+#intro-text p, 
+#cs1 p, 
+#cs2 p, 
+#cs3 p{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+ 
+#cs1 h3, 
+#cs2 h3, 
+#cs3 h3{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+.intro-color-numbers {
+	font-size: 20px;
+	font-weight: 600;
+}
 
 /*video*/
 
