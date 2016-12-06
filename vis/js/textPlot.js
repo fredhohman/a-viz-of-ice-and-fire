@@ -255,11 +255,13 @@ function initBubblePlot (data){
     svg.append("g")
       .attr("class", "x axis")
       // .attr("transform", "translate(0," + height + ")")
-      .attr("transform", "translate(0," + margin.top + ")" )
+      .attr("transform", "translate(0," + (margin.top - 10) + ")" )
+      .style("stroke-width", "0")
       .call(xAxis);
     
     svg.append("g")
       .attr("class", "y axis")
+      .style("stroke-width", "0")
       .call(yAxis)
       .append("text")
       .attr("transform", "rotate(-90)")
@@ -267,7 +269,8 @@ function initBubblePlot (data){
       .attr("x", -10)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Text counts");
+      .text("Text counts")
+      ;
 
     yScale.domain(categories);
 
