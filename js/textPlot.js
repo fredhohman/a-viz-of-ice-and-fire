@@ -219,7 +219,7 @@ function initBubblePlot (data){
     yScale = d3.scaleBand()
     .range([height, 0]);
 
-    xAxis = d3.axisBottom()
+    xAxis = d3.axisTop()
     .scale(xScale);
 
     yAxis = d3.axisLeft()
@@ -254,11 +254,14 @@ function initBubblePlot (data){
         // draw line graph
     svg.append("g")
       .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
+      // .attr("transform", "translate(0," + height + ")")
+      .attr("transform", "translate(0," + (margin.top - 10) + ")" )
+      .style("stroke-width", "0")
       .call(xAxis);
     
     svg.append("g")
       .attr("class", "y axis")
+      .style("stroke-width", "0")
       .call(yAxis)
       .append("text")
       .attr("transform", "rotate(-90)")
@@ -266,7 +269,8 @@ function initBubblePlot (data){
       .attr("x", -10)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Text counts");
+      .text("Text counts")
+      ;
 
     yScale.domain(categories);
 
@@ -552,7 +556,7 @@ function updateAll (season, episode) {
     updateBubblePlot (sliceData (textTokenData, seasonNumber, episodeNumber));
 }
 
-var tmp;
+var tmp;1
 function updateBarPlot (data, season, episode){
 	var parts, wordCounter;
 	var div = d3.select ("#text-metadata");
@@ -568,7 +572,7 @@ function updateBarPlot (data, season, episode){
     });
     console.log(allWords);
     allWords.sort(function(a, b) {
-        return slicedData[a] < slicedData[b];
+        return slicedData[b] - slicedData[a];
     })
     console.log(allWords);
     
