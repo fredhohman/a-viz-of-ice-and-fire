@@ -271,6 +271,9 @@ $(document).ready(function() {
 
 $(".episode-block").click(function (event) {
    episodeNumber = parseInt (event.target.id[1]);
+   if (event.target.id[2] != '-') {
+    episodeNumber = 10;
+}
    // console.log (seasonNumber);
    // console.log (episodeNumber);
 
