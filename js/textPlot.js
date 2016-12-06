@@ -208,8 +208,8 @@ function updateScatterPlot (data){
 var tip;
 */
 function initBubblePlot (data){
-    margin = {top: 20, right: 210, bottom: 100, left: 70};
-    width = 850 - margin.left - margin.right;
+    margin = {top: 20, right: 160, bottom: 100, left: 90};
+    width = 900 - margin.left - margin.right;
     height = 500 - margin.top - margin.bottom;
 
     // Define the initial scales and axes
