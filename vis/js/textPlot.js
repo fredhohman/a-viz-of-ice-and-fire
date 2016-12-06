@@ -20,8 +20,8 @@ textData, textMetaData, categoryNames, categoryVisibilities,
 textDTM, textTokenData;
 
 var color = d3.scaleOrdinal().range(["#020202", "#3c3c3c", "#4b4a4a", "#5e5d5d", "#727171", "#7e7e7e", "#8d8d8d", "#a19f9f", "#b6b5b5", "#C7C6C6"]);
-var unfocusColor = "#BBBBB9";
-var focusColor = "#020202";
+var focusColor = "#ff0000";
+var unfocusColor = "#020202";
 var invisibleColor = "#F1F1F2";
 var defaultCategory = "positive";
 var tooltipTransition, tooltipOffset;
@@ -308,6 +308,9 @@ function updateBubblePlot (data){
     .attr("cy", function (d){
         return yScale(d.cat) + 20; // TODO: check why this 20 needs to be done.
     })
+    .attr("class", function (d){
+        return "category" + "-" + d.cat;
+    })
     .on("mouseover", function(d) {      
         tooltip.transition()        
                 .duration(200)      
@@ -331,6 +334,21 @@ function updateBubblePlot (data){
     })
     .attr ("cy", function (d){
         return yScale(d.cat) + 20;
+    });
+
+    var ticks = d3.selectAll (".y.axis")
+    .selectAll (".tick").selectAll("text")
+    .on("mouseover", function (z){
+
+        d3.selectAll("circle")
+        .attr("fill", unfocusColor);
+
+        d3.selectAll(".category-" + z)
+        .attr ("fill", focusColor);
+    })
+    .on ("mouseout", function (z){
+        d3.selectAll("circle")
+        .attr("fill", unfocusColor);        
     });
 
     circles.exit().remove();
@@ -574,7 +592,6 @@ function updateBarPlot (data, season, episode){
     allWords.sort(function(a, b) {
         return slicedData[b] - slicedData[a];
     })
-    console.log(allWords);
     
     var wordCounter = []; 
     for(var i = 0; i < maxBars; i++) {
@@ -584,7 +601,6 @@ function updateBarPlot (data, season, episode){
             freq: slicedData[word]
         };
     }
-    console.log(wordCounter);
 
 
 
