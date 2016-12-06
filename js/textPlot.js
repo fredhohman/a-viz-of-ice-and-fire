@@ -552,7 +552,7 @@ function updateAll (season, episode) {
     updateBubblePlot (sliceData (textTokenData, seasonNumber, episodeNumber));
 }
 
-var tmp;
+var tmp;1
 function updateBarPlot (data, season, episode){
 	var parts, wordCounter;
 	var div = d3.select ("#text-metadata");
@@ -568,7 +568,7 @@ function updateBarPlot (data, season, episode){
     });
     console.log(allWords);
     allWords.sort(function(a, b) {
-        return slicedData[a] < slicedData[b];
+        return slicedData[b] - slicedData[a];
     })
     console.log(allWords);
     
