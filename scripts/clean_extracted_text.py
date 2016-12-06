@@ -6,8 +6,7 @@ files by stripping unnecessary characters.
 import re
 from nltk.tokenize import WordPunctTokenizer
 
-removal_strings = ['\(.*\)', '<i>', '</i>'
-                      # 
+removal_strings = ['\(.*\)', '<i>', '</i>',
                    '.*font color.*', u'♪ ♪', 
                    '^- ', '^[a-zA-Z ]*:', '--', 
                    '.*[Ss]ync.*', '.*www.*']
