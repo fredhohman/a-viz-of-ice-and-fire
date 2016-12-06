@@ -214,7 +214,11 @@ $(document).ready(function() {
         d3.select('#season' + String(seasonNumberOld) + ' > h3').classed('color-header-selected', false);
         d3.select('#season' + String(seasonNumber) + ' > h3').classed('color-header-selected', true);
 
-        d3.select('#episode' + String(eNumOld%10) + ' > h3').classed('color-header-selected', false);
+        if (eNumOld%10==0) {
+            d3.select('#episode' + String(eNumOld%10+10) + ' > h3').classed('color-header-selected', false);
+        } else {
+            d3.select('#episode' + String(eNumOld%10) + ' > h3').classed('color-header-selected', false);
+        }
         d3.select('#episode1' + ' > h3').classed('color-header-selected', true);
         
         seasonNumberOld = seasonNumber;
@@ -241,8 +245,15 @@ $(document).ready(function() {
         color_chunk_blocks(episode_strings_lowercase[eNum-1]);
 
         // color header selected
-        d3.select('#episode' + String(eNumOld%10) + ' > h3').classed('color-header-selected', false);
-        d3.select('#episode' + String(eNum%10) + ' > h3').classed('color-header-selected', true);
+        console.log(eNum);
+        if (eNum%10==0) {
+            d3.select('#episode' + String(eNumOld%10) + ' > h3').classed('color-header-selected', false);
+            d3.select('#episode' + String(10) + ' > h3').classed('color-header-selected', true);
+        } else {
+            d3.select('#episode' + String(10) + ' > h3').classed('color-header-selected', false);
+            d3.select('#episode' + String(eNumOld%10) + ' > h3').classed('color-header-selected', false);
+            d3.select('#episode' + String(eNum%10) + ' > h3').classed('color-header-selected', true);
+        }
         eNumOld = eNum;
 
     });
