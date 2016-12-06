@@ -18,7 +18,7 @@ def main():
                       if re.findall('S[1-9]E[0-9]+.tsv', f)]
     dialogue_files = [os.path.join(data_dir, f) 
                       for f in dialogue_files]
-    stops = get_stopwords('en')
+    stops = get_stopwords('en') + ['will', 'don', 've', ]
     all_docs = {}
     for f in dialogue_files:
         ep_name = re.findall('S[1-9]E[0-9]+', f)[0]
@@ -45,10 +45,12 @@ def main():
                                                key=lambda i: i[0]))
     print('sorted ep names %s'%
           (str(sorted_ep_names)))
-    min_df = 5
-    ngram_range = (1,2)
+    min_df = 0.05
+    ngram_range = (1,1)
     # need tokenizer? probs not
-    cv = CountVectorizer(min_df=min_df, ngram_range=ngram_range,
+    # TODO: normal tokenizer
+    cv = CountVectorizer(min_df=min_df, max_df=0.9, 
+                         ngram_range=ngram_range,
                          encoding='utf-8', stop_words=stops)
     counts = cv.fit_transform(sorted_docs)
     counts = counts.todense()
