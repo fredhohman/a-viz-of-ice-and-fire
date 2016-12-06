@@ -234,7 +234,7 @@ $(document).ready(function() {
         }
         eNum = episode_clicked+10*(seasonNumber-1);
 
-        d3.select("#episode-title-number").text(episode_strings[eNum-1]);
+        d3.selectAll("#episode-title-number").text(episode_strings[eNum-1]);
         d3.select("#episode-title").text(episode_metadata[eNum-1]["Title"]);
         d3.select("#directed-by").text(episode_metadata[eNum-1]["Directed by"]);
         d3.select("#written-by").text(episode_metadata[eNum-1]["Written by"]);
