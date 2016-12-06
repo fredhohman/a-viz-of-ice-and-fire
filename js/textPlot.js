@@ -284,7 +284,7 @@ function initBubblePlot (data){
 }
 
 function updateBubblePlot (data){
-    console.log (data);
+    // console.log (data);
 
     // Step 1 - Make the axis depend on the data.
     xScale.domain(d3.extent(data, function(d) { return parseInt(d.time); }));
@@ -292,7 +292,7 @@ function updateBubblePlot (data){
         .transition()
         .call(xAxis);
 
-    console.log (data2DotPlotRepresentation(data, categories));
+    // console.log (data2DotPlotRepresentation(data, categories));
     grp = svg.selectAll ("#spg");
     circles = grp.selectAll ("circle")
     .data (data2DotPlotRepresentation(data, categories));
@@ -574,8 +574,10 @@ function updateAll (season, episode) {
     updateBubblePlot (sliceData (textTokenData, seasonNumber, episodeNumber));
 }
 
-var tmp;1
+var tmp;
 function updateBarPlot (data, season, episode){
+    console.log(season);
+    console.log(episode);
 	var parts, wordCounter;
 	var div = d3.select ("#text-metadata");
 	// div.select("#text-category").text(catInFocus);
@@ -588,20 +590,29 @@ function updateBarPlot (data, season, episode){
     var allWords = d3.keys(slicedData).filter(function(d) {
         return d != "season" && d != "episode";
     });
-    console.log(allWords);
-    allWords.sort(function(a, b) {
-        return slicedData[b] - slicedData[a];
-    })
-    
+    // allWords.sort(function(a, b) {
+    //     return slicedData[b] - slicedData[a];
+    // })
+    // console.log(allWords);
+
+    var sortable = [];
+    for (var w in allWords)
+        sortable.push([allWords[w], slicedData[allWords[w]]])
+    console.log(sortable);
+
+    sortable = sortable.sort(function(a, b) {
+        return b[1] - a[1];
+    });
+    console.log(sortable);
+
     var wordCounter = []; 
     for(var i = 0; i < maxBars; i++) {
-        var word = allWords[i];
+        // var word = allWords[i];
         wordCounter[wordCounter.length] = {
-            word: word,
-            freq: slicedData[word]
+            word: sortable[i][0],
+            freq: sortable[i][1],
         };
     }
-
 
 
 	// for (var i = data.length - 1; i >= 0; i--) {
