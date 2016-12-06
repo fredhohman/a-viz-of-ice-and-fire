@@ -578,7 +578,6 @@ function updateAll (season, episode) {
     updateBubblePlot (sliceData (textTokenData, seasonNumber, episodeNumber));
 }
 
-var tmp;
 function updateBarPlot (data, season, episode){
     console.log(season);
     console.log(episode);
@@ -588,7 +587,7 @@ function updateBarPlot (data, season, episode){
 
     // slice DTM data!
     var slicedData = sliceData(data, season, episode)[0];
-    tmp = slicedData;
+
     // console.log(slicedData);
     // now sort!
     var allWords = d3.keys(slicedData).filter(function(d) {
@@ -602,12 +601,16 @@ function updateBarPlot (data, season, episode){
     var sortable = [];
     for (var w in allWords)
         sortable.push([allWords[w], slicedData[allWords[w]]])
-    console.log(sortable);
+    // console.log(sortable);
+    // apparently we're getting some functions instead of strings
+    sortable = sortable.filter(function(d) {
+        return typeof(d[0]) == "string" && typeof(d[1]) == "number";
+    });
 
     sortable = sortable.sort(function(a, b) {
         return b[1] - a[1];
     });
-    console.log(sortable);
+    // console.log(sortable);
 
     var wordCounter = []; 
     for(var i = 0; i < maxBars; i++) {
@@ -617,6 +620,7 @@ function updateBarPlot (data, season, episode){
             freq: sortable[i][1],
         };
     }
+    // console.log(wordCounter);
 
 
 	// for (var i = data.length - 1; i >= 0; i--) {
