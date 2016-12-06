@@ -198,7 +198,7 @@ $(document).ready(function() {
         // go back to episode 1 on whatever season was clicked
         eNum = 0+10*series_clicked-10;
 
-        d3.select("#episode-title-number").text(episode_strings[eNum]);
+        d3.selectAll("#episode-title-number").text(episode_strings[eNum]);
         d3.select("#episode-title").text(episode_metadata[eNum]["Title"]);
         d3.select("#directed-by").text(episode_metadata[eNum]["Directed by"]);
         d3.select("#written-by").text(episode_metadata[eNum]["Written by"]);
