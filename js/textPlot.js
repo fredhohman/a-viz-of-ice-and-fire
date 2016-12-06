@@ -556,7 +556,7 @@ function updateAll (season, episode) {
     updateBubblePlot (sliceData (textTokenData, seasonNumber, episodeNumber));
 }
 
-var tmp;1
+var tmp;
 function updateBarPlot (data, season, episode){
 	var parts, wordCounter;
 	var div = d3.select ("#text-metadata");
