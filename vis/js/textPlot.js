@@ -548,7 +548,9 @@ function initBarPlot (data){
 	div.select ("#text-category")
 	.text(catInFocus);
     // now build bar chart
-    wordBarOffsetX = 80;
+    // offset x should be at least as wide
+    // as the longest word, in order to fit it
+    wordBarOffsetX = 85;
     wordBarOffsetY = 15;
     maxBars = 10;
 
