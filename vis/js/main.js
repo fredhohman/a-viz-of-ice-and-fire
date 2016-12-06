@@ -248,8 +248,9 @@ $(document).ready(function() {
         console.log(eNum);
         if (eNum%10==0) {
             d3.select('#episode' + String(eNumOld%10) + ' > h3').classed('color-header-selected', false);
-            d3.select('#episode' + String(eNum%10+10) + ' > h3').classed('color-header-selected', true);
+            d3.select('#episode' + String(10) + ' > h3').classed('color-header-selected', true);
         } else {
+            d3.select('#episode' + String(10) + ' > h3').classed('color-header-selected', false);
             d3.select('#episode' + String(eNumOld%10) + ' > h3').classed('color-header-selected', false);
             d3.select('#episode' + String(eNum%10) + ' > h3').classed('color-header-selected', true);
         }
