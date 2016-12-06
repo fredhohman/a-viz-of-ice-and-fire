@@ -10,7 +10,8 @@ var wordlistBarWidth, wordlistBarHeight,
 
 var wordBarArea, wordBarOffsetX, 
     wordBarOffsetY, 
-    maxBars;
+    maxBars,
+    wordBarMaxWidth;
 
 var textDataFile = "data/LIWC_chunk_counts_all_seasons.tsv",
 textMetaDataFile = "data/top_5_category_words_per_episode.tsv",
@@ -515,12 +516,13 @@ function initScatterPlot (data){
 
 
 function initBarPlot (data){
-    wordlistBarWidth = 150;
+    wordlistBarWidth = 200;
     wordlistBarHeight = 15;
     wordlistBarScaleX = d3.scaleLinear()
                         .range([0, 10])
                         .domain([0, 2.5]);
-    wordlistBarSpace = 10;
+    wordlistBarSpace = 5;
+    wordBarMaxWidth = 150;
     wordlistBarColor = "#B0B0B0";
     catInFocus = defaultCategory;
 	// catInFocus = "defaultCategory";
@@ -528,8 +530,8 @@ function initBarPlot (data){
 	div.select ("#text-category")
 	.text(catInFocus);
     // now build bar chart
-    wordBarOffsetX = 60;
-    wordBarOffsetY = 20;
+    wordBarOffsetX = 80;
+    wordBarOffsetY = 15;
     maxBars = 10;
 
     // episode-level word summary
@@ -542,7 +544,9 @@ function initBarPlot (data){
     // make axis
     wordBarArea.append("g")
                 .attr("class", "axis")
-                .attr("transform", "translate(" + wordBarOffsetX + ",0)");
+                .attr("transform", "translate(" + wordBarOffsetX + ",0)")
+                .style("stroke-width", "0");
+
 }
 
 function initAll(textDTM, textTokenData) {
@@ -596,8 +600,6 @@ function updateBarPlot (data, season, episode){
             freq: sortable[i][1],
         };
     }
-    console.log(wordCounter);
-    // console.log(wordCounter);
 
 
 
@@ -634,6 +636,10 @@ function updateBarPlot (data, season, episode){
 
 	// wordlist.exit().remove();
 
+    var wordlistBarScaleX = d3.scaleLinear()
+                                .domain([0, d3.max(wordCounter, function(d) { return d.freq; })])
+                                .range([0, wordBarMaxWidth]);
+
     var wordlistBarScaleY = d3.scaleLinear()
                             .domain([0, wordCounter.length])
                             .range([wordBarOffsetY, 
@@ -661,6 +667,7 @@ function updateBarPlot (data, season, episode){
                         ;
     var wordBars = wordBarArea.selectAll("rect")
                     .data(wordCounter);
+
     wordBars.enter()
         .append("rect")
         .attr("x", wordBarOffsetX)
@@ -677,14 +684,14 @@ function updateBarPlot (data, season, episode){
     wordBarText.enter()
         .append("text")
         .attr("class", "wordFreq")
-        .attr("x", function(d) {return wordBarOffsetX + wordlistBarScaleX(d.freq); })
+        .attr("x", function(d) {return wordBarOffsetX + 5 + wordlistBarScaleX(d.freq); })
         .attr("y", function(d, i) { return wordlistBarScaleY(i) + wordlistBarHeight / 4;})
         .text(function(d) { return d.freq + ""; })
         .style("fill", "#000000");
         // .style("font-size", "12px");
 
     wordBarText
-    .attr("x", function(d) {return wordBarOffsetX + wordlistBarScaleX(d.freq); })
+    .attr("x", function(d) {return wordBarOffsetX + 5 + wordlistBarScaleX(d.freq); })
     .text(function(d) {
         return d.freq + "";
     });
