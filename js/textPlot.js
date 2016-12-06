@@ -8,7 +8,7 @@ var wordlistBarWidth, wordlistBarHeight,
     wordlistBarScaleX, wordlistBarSpace,
     wordlistBarColor;
 
-var wordBarArea, wordBarOffsetX, 
+var wordBarArea, categoryWordBarArea, wordBarOffsetX, 
     wordBarOffsetY, 
     maxBars;
 
@@ -311,18 +311,23 @@ function updateBubblePlot (data){
     .attr("class", function (d){
         return "category" + "-" + d.cat;
     })
-    .on("mouseover", function(d) {      
-        tooltip.transition()        
-                .duration(200)      
-                .style("opacity", .9);      
-        tooltip.html( d.words + "<br/>"  + d.close)  
-                .style("left", (d3.event.pageX) + "px")     
-                .style("top", (d3.event.pageY - 28) + "px");    
-            })                  
+    .on("mouseover", function(d, i) {      
+        //tooltip.transition()        
+        //        .duration(200)      
+        //        .style("opacity", .9);      
+        //tooltip.html( d.words + "<br/>"  + d.close)  
+        //        .style("left", (d3.event.pageX) + "px")     
+        //        .style("top", (d3.event.pageY - 28) + "px");  
+        //d3.selectAll(".category-" + d.cat)  
+         d3.select(this).attr ("fill", focusColor);
+         updateCategoryBarPlot (textTokenData, season, episode, i);
+    })
+     
     .on("mouseout", function(d) {       
-            tooltip.transition()        
-                .duration(500)      
-                .style("opacity", 0);   
+            //tooltip.transition()        
+            //    .duration(500)      
+            //    .style("opacity", 0); 
+            d3.select(this).attr ("fill", unfocusColor);  
     });
 
     circles
@@ -557,10 +562,22 @@ function initBarPlot (data){
                .attr("class", "wordBarArea")
                .attr ("width", wordBarOffsetX + wordlistBarWidth + wordBarOffsetX)
                .attr ("height", wordBarOffsetY + (wordlistBarHeight + wordlistBarSpace) * maxBars);
+
+    // time chunk level category summary
+    categoryWordBarArea = d3.select("#text-metadata")
+               .append("svg")
+               .attr("class", "categoryWordBarArea")
+               .attr ("width", wordBarOffsetX + wordlistBarWidth + wordBarOffsetX)
+               .attr ("height", wordBarOffsetY + (wordlistBarHeight + wordlistBarSpace) * maxBars);
     // make axis
     wordBarArea.append("g")
                 .attr("class", "axis")
                 .attr("transform", "translate(" + wordBarOffsetX + ",0)");
+
+    // make axis
+    categoryWordBarArea.append ("g")
+    .attr("class", "axis")
+    .attr("transform", "translate(" + wordBarOffsetX + ",0)");
 }
 
 function initAll(textDTM, textTokenData) {
@@ -575,6 +592,11 @@ function updateAll (season, episode) {
 }
 
 var tmp;
+
+function updateCategoryBarPlot (data, season, episode, time){
+
+}
+
 function updateBarPlot (data, season, episode){
     console.log(season);
     console.log(episode);
