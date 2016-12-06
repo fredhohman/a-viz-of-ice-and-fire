@@ -219,7 +219,7 @@ function initBubblePlot (data){
     yScale = d3.scaleBand()
     .range([height, 0]);
 
-    xAxis = d3.axisBottom()
+    xAxis = d3.axisTop()
     .scale(xScale);
 
     yAxis = d3.axisLeft()
@@ -254,7 +254,8 @@ function initBubblePlot (data){
         // draw line graph
     svg.append("g")
       .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
+      // .attr("transform", "translate(0," + height + ")")
+      .attr("transform", "translate(0," + margin.top + ")" )
       .call(xAxis);
     
     svg.append("g")
