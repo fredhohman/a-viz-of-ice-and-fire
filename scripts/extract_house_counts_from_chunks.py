@@ -3,7 +3,7 @@ Extract counts of House member mentions
 from raw text.
 """
 from clean_extracted_text import clean_text
-from get_LIWC_counts import get_LIWC_counts
+from get_LIWC_counts import get_category_counts
 from nltk.tokenize import WordPunctTokenizer
 import os, re
 import pandas as pd
@@ -30,9 +30,11 @@ if __name__ == '__main__':
                     for e in sorted_episodes}
     house_dir = args.house_dir
     houses = sorted(os.listdir(house_dir))
-    house_wordlists = {h : [re.compile('^' + l.strip()  + '$')
+    house_wordlists = {h : [re.compile(l.strip())
                             for l in open(os.path.join(house_dir, h), 'r')] 
                        for h in houses}
+#     print('got house wordlists %s'%
+#           (str([p.pattern for patterns in house_wordlists.values() for p in patterns])))
     TKNZR = WordPunctTokenizer()
     full_chunk_list = set(range(N_CHUNKS))
     # we count either the total number of tokens
@@ -67,9 +69,9 @@ if __name__ == '__main__':
                               for h in houses}
         house_counts = {h : 0 for h in houses}
         for t in chunk_text:
-            tokens = TKNZR.tokenize(t)
+            # tokens = TKNZR.tokenize(t)
             for h in houses:
-                counts = get_LIWC_counts(tokens, LIWC_words=house_wordlists[h])
+                counts = get_category_counts(t, house_wordlists[h])
                 house_token_counts[h].update(counts)
                 if(count_option == 'total'):
                     total_counts = sum(counts.values())

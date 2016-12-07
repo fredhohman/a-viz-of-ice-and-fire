@@ -5,6 +5,30 @@ for a specified category.
 import os, re
 from collections import Counter
 
+def get_category_counts(text_string, category_patterns):
+    """
+    Compute category counts (from words) in raw
+    text string. Assumes that tokenization is 
+    not needed!
+    
+    Parameters:
+    -----------
+    text_string : str
+    category_patterns : [re.Pattern]
+    
+    Returns:
+    --------
+    category_counts : {str : int}
+    """
+    category_counts = []
+    text_string = text_string.lower()
+    for pattern in category_patterns:
+        find = pattern.findall(text_string)
+        if(len(find) > 0):
+            category_counts.append(find[0])
+    category_counts = dict(Counter(category_counts))
+    return category_counts
+
 def get_LIWC_counts(tokenized_text, 
                     category='positive_affect',
                     LIWC_dir='/hg191/corpora/LIWC/resources/liwc_lexicons/',
