@@ -322,11 +322,14 @@ function updateBubblePlot (data){
         //        .style("left", (d3.event.pageX) + "px")     
         //        .style("top", (d3.event.pageY - 28) + "px");  
         //d3.selectAll(".category-" + d.cat)  
+        console.log(d);
          d3.selectAll("circle").attr("z-index", "1");
          d3.select(this).attr ("fill", focusColor).style("z-index", "2");
          d3.select("#perSliceTitle").style("visibility", "visible");
          d3.select("#categoryWordBarArea").style ("visibility", "visible");
-         d3.select("#perSliceTitle").select("span").text(d.time);
+         d3.select("#text-metadata").select("span.category").text(d.cat);
+         console.log(d3.select("#perSliceTitle").select("span.category"))
+         d3.select("#perSliceTitle").select("span.time").text(d.time);
          updateCategoryBarPlot (textTokenData, seasonNumber, episodeNumber, d.time, d.cat);
     })
      
@@ -581,13 +584,25 @@ function initBarPlot (data){
                .append ("g")
                .attr ("id", "wordBarArea");
 
-    d3.select ("#text-metadata")
-            .append ("h4")
-            .attr ("id", "perSliceTitle")
-            .text ("Histogram for words in slice ")
-            .style("visibility", "hidden");
+    // TODO: how to add category name??
+    // d3.select("#text-metadata")
+    //     .append("b")
+    //     .append("span")
+    //     .attr("class", "category");
 
-    d3.select ("#perSliceTitle").append ("b").append("span");
+    var perSliceTitle = d3.select ("#text-metadata")
+                        .append ("h4")
+                        .attr ("id", "perSliceTitle")
+                        .text ("Words in slice ")
+                        .style("visibility", "hidden");
+
+    // var tmp = perSliceTitle.append ("b").append("span").attr("class", "category");
+    // console.log(tmp);
+
+    // perSliceTitle.text ("Words in slice ")
+    //             .style("visibility", "hidden");
+
+    d3.select('#perSliceTitle').append ("b").append("span").attr("class", "time");
     // time chunk level category summary
     categoryWordBarArea = d3.select("#text-metadata")
                .append("svg")
