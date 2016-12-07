@@ -737,6 +737,7 @@ function initHouseBubblePlot(houseCountData) {
     .attr("class", function (d){
         return "category" + "-" + d.cat;
     })
+    .attr("fill", unfocusColor)
     .on("mouseover", function(d, i) {      
         //tooltip.transition()        
         //        .duration(200)      
