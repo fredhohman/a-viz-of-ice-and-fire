@@ -109,6 +109,7 @@ p {
 	font-size: 18px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	text-align: justify;
 }
 .center {
 	text-align: center;
