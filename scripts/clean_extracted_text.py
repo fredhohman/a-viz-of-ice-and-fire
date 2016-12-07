@@ -12,6 +12,14 @@ removal_strings = ['\(.*\)', '<i>', '</i>',
                    '.*[Ss]ync.*', '.*www.*']
 removal_regexes = list(map(lambda r: re.compile(r),
                            removal_strings))
+substitute_strings = {'don\'t' : 'dont',
+                      'didn\'t' : 'didnt',
+                      'doesn\'t' : 'doesnt',
+                      'can\'t': 'cant', 
+                      'wouldn\'t': 'wouldnt',
+                      'couldn\'t': 'couldnt',
+                      'shouldn\'t': 'shouldnt'}
+substitute_regexes = {k : re.compile(k) for k in substitute_strings.keys()}
 line_break_delim = '$'
 
 TKNZR = WordPunctTokenizer()
@@ -26,6 +34,9 @@ def clean_text(text):
          l = regex.sub('', l)
       # for some reason this is necessary
       l = l.replace('</i>', '')
+      for s, regex in substitute_regexes.items():
+         if(regex.findall(l)):
+            l = l.replace(s, substitute_strings[s])
       # we only want alphanumeric stuff
       l = ' '.join(list(filter(lambda w: w.isalpha(), TKNZR.tokenize(l))))
       clean_lines.append(l)
