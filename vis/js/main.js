@@ -12,6 +12,7 @@ eNumOld = 1;
 var textData;
 var numOfChunks = 60;
 chunk_clicked_old = 0;
+is_something_zoomed = false;
 
 d3.csv("data/episode_metadata.csv", function(error, data) {
     episode_metadata = data;
@@ -198,7 +199,7 @@ $(document).ready(function() {
         // go back to episode 1 on whatever season was clicked
         eNum = 0+10*series_clicked-10;
 
-        d3.select("#episode-title-number").text(episode_strings[eNum]);
+        d3.selectAll("#episode-title-number").text(episode_strings[eNum]);
         d3.select("#episode-title").text(episode_metadata[eNum]["Title"]);
         d3.select("#directed-by").text(episode_metadata[eNum]["Directed by"]);
         d3.select("#written-by").text(episode_metadata[eNum]["Written by"]);
@@ -264,15 +265,25 @@ $(document).ready(function() {
         if (event.target.id[2] != '-') {
             chunk_clicked = parseInt(event.target.id[1])*10+parseInt(event.target.id[2]);
         }
+        
+        // edge case to click on chunk that was just clicked on
+        if (chunk_clicked_old == chunk_clicked && is_something_zoomed == false) {
+            // console.log('yay');
+            d3.selectAll(".chunk-block").classed("chunk-block-small", true);
+            d3.select("#chunk"+String(chunk_clicked)).classed("chunk-block-zoomed", true);
+            is_something_zoomed = true;
+        }
 
-        if (chunk_clicked_old == chunk_clicked) {
+        else if (chunk_clicked_old == chunk_clicked) {
             d3.selectAll(".chunk-block").classed("chunk-block-small", false);
             d3.select("#chunk"+String(chunk_clicked)).classed("chunk-block-zoomed", false);
+            is_something_zoomed = false;
         }
         else {
             d3.selectAll(".chunk-block").classed("chunk-block-small", true);
             d3.select("#chunk"+String(chunk_clicked_old)).classed("chunk-block-zoomed", false);
-            d3.select("#chunk"+String(chunk_clicked)).classed("chunk-block-zoomed", true)
+            d3.select("#chunk"+String(chunk_clicked)).classed("chunk-block-zoomed", true);
+            is_something_zoomed = true;
         }
 
         chunk_clicked_old = chunk_clicked;

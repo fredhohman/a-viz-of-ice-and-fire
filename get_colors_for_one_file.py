@@ -23,13 +23,14 @@ def make_episode_list():
 
 if __name__ == '__main__':
 
-    dir_path = '/Users/fredhohman/Github/cs-7450/data/color-palettes/'
+    dir_path = '/Users/fredhohman/Github/cs-7450/'
 
     images = make_episode_list()
     images = [image + '.png' for image in images]
+    images = ['intro.jpg']
     print(len(images))
     print(images)
-
+    
     color_count = 11
     swatchsize = 100
     posx = 0
@@ -42,7 +43,7 @@ if __name__ == '__main__':
         start = time.time()
 
         color_thief = ColorThief(dir_path+img)
-        palette = color_thief.get_palette(color_count = color_count, quality = 10)
+        palette = color_thief.get_palette(color_count = color_count, quality = 1)
         end = time.time() - start
         print(end)
 
@@ -67,5 +68,5 @@ if __name__ == '__main__':
     pal.save('series_title.png', "PNG")
 
     # print(palettes)
-    with open('data/color/series_title.json', 'w') as outfile:
+    with open('data/color/intro.json', 'w') as outfile:
         json.dump({'palettes': palettes}, outfile)
