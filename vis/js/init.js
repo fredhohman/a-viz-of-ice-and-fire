@@ -40,7 +40,7 @@ function init (){
         initBubblePlot (textTokenData);
         updateBubblePlot (sliceData (textTokenData, seasonNumber, episodeNumber));
 
-    })
+    });
 
 	d3.tsv(textDTMFile, function(error, data) {
 		textDTM = data;
@@ -55,6 +55,20 @@ function init (){
         initBarPlot(textDTM);
         updateBarPlot(textDTM, seasonNumber, episodeNumber);
 	});
+
+    // now house plot
+
+    d3.tsv(houseDataFile, function(error, data) {
+        houseData = data;
+        houseData.forEach(function(d) { 
+            var allKeys = d3.keys(d); 
+            for(var i = 0; i < allKeys.length; i++) { 
+                d[allKeys[i]] = parseInt(d[allKeys[i]]); 
+            }
+            return d;
+        });
+        initHouseBubblePlot(houseData);
+    })
 }
 
 init();

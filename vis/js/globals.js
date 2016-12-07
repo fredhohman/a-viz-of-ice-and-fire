@@ -4,11 +4,13 @@
 var textDataFile = "data/LIWC_chunk_counts_all_seasons.tsv",
 textMetaDataFile = "data/top_5_category_words_per_episode.tsv",
 textDTMFile = "data/all_episode_dtm.tsv",
-textTokenDataFile = "data/LIWC_chunk_token_counts_all_episodes.tsv";
+textTokenDataFile = "data/LIWC_chunk_token_counts_all_episodes.tsv",
+houseDataFile = "data/house_counts_all_seasons.tsv",
+houseTokenDataFile = "data/house_token_counts_all_seasons.tsv";
 
 /* The variables in which data for the above files should be 
 loaded respectively */
-var textData, textMetadata, textDTM, textTokenData;
+var textData, textMetadata, textDTM, textTokenData, houseData, houseTokenData;
 
 /* Definition of a trim function for strings -- removes whitespace */
 if(typeof(String.prototype.trim) === "undefined")
@@ -28,5 +30,8 @@ Array.prototype.remove = function(from, to) {
 
 /* Define all the categories */
 var categories = ["anger", "death", "family", "home", "humans", "negative", "positive", "religion", "sexual", "swear"];
+
+/*Define all the houses*/
+var houses = ["baratheon", "greyjoy", "lannister", "martell", "stark", "targaryen", "tyrell"]
 
 var tooltip;
