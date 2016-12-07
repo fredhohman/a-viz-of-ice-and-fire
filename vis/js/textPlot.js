@@ -21,9 +21,11 @@ textData, textMetaData, categoryNames, categoryVisibilities,
 textDTM, textTokenData;
 
 var color = d3.scaleOrdinal().range(["#020202", "#3c3c3c", "#4b4a4a", "#5e5d5d", "#727171", "#7e7e7e", "#8d8d8d", "#a19f9f", "#b6b5b5", "#C7C6C6"]);
-var focusColor = "#ff0000";
-var unfocusColor = "#020202";
+var focusColor = "#CCCCCC";
+var unfocusColor = "#333333";
 var invisibleColor = "#F1F1F2";
+var focusBorderColor = "#333333";
+var unfocusBorderColor = "#333333";
 var defaultCategory = "positive";
 var tooltipTransition, tooltipOffset;
 
@@ -323,7 +325,8 @@ function updateBubblePlot (data){
         //        .style("top", (d3.event.pageY - 28) + "px");  
         //d3.selectAll(".category-" + d.cat)  
          d3.selectAll("circle").attr("z-index", "1");
-         d3.select(this).attr ("fill", focusColor).style("z-index", "2");
+         d3.select(this).attr ("fill", focusColor).style("z-index", "2")
+                        .attr("stroke", focusBorderColor);
          d3.select("#perSliceTitle").style("visibility", "visible");
          d3.select("#categoryWordBarArea").style ("visibility", "visible");
          d3.select("#perSliceTitle").select("span").text(d.time);
@@ -337,7 +340,7 @@ function updateBubblePlot (data){
 
             d3.select("#perSliceTitle").style ("visibility", "hidden");
             d3.select("#categoryWordBarArea").style ("visibility", "hidden");
-            d3.select(this).attr ("fill", unfocusColor); 
+            d3.select(this).attr ("fill", unfocusColor).attr("stroke", unfocusBorderColor); 
             d3.select(this).style("z-index", "1");  // Does not work; should take a look.
     });
 
@@ -359,14 +362,17 @@ function updateBubblePlot (data){
     .on("mouseover", function (z){
 
         d3.selectAll("circle")
-        .attr("fill", unfocusColor);
+        .attr("fill", unfocusColor)
+        .attr("stroke", unfocusBorderColor);
 
         d3.selectAll(".category-" + z)
-        .attr ("fill", focusColor);
+        .attr ("fill", focusColor)
+        .attr("stroke", focusBorderColor);
     })
     .on ("mouseout", function (z){
         d3.selectAll("circle")
-        .attr("fill", unfocusColor);        
+        .attr("fill", unfocusColor)
+        .attr("stroke", unfocusBorderColor);        
     });
 
     circles.exit().remove();
@@ -558,7 +564,7 @@ function initBarPlot (data){
                         .domain([0, 2.5]);
     wordlistBarSpace = 5;
     wordBarMaxWidth = 150;
-    wordlistBarColor = "#B0B0B0";
+    wordlistBarColor = "#CCCCCC";
     catInFocus = defaultCategory;
 	// catInFocus = "defaultCategory";
 	var div = d3.select("#text-metadata");
