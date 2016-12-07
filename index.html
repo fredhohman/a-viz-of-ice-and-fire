@@ -50,34 +50,57 @@
     <div class="col-md-2"></div>
   </div> -->
 
-  <div class="col-md-3"></div>
-  <div class="col-md-6">
-    <h2>The Idea</h2>
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <h2 class="center">Data is Coming</h2>
     <p>
-    The hit TV show Game of Thrones has won critical acclaim and the attention of millions of fans with its inspiring cinematography and brilliant dialogue. Dedicated fans of the show can recall critical scenes and key quotes with ease, but can they pick out high-level trends that emerge over the course of the series? For instance, in which season was the frozen North the focus of the plot? With all the violent twists in the plot, how often does the show's dialogue tend toward the topic of death? Our system seeks to highlight these large-scale patterns that might otherwise be missed.
+      The hit TV show Game of Thrones has won critical acclaim and the attention of millions of fans with its inspiring cinematography and brilliant dialogue. Dedicated fans of the show can recall critical scenes and key quotes with ease, but can they pick out high-level trends that emerge over the course of the series? For instance, in which season was the frozen North the focus of the plot? With all the violent twists in the plot, how often does the show's dialogue tend toward the topic of death? Our system seeks to highlight these large-scale patterns that might otherwise be missed.
     </p>
-    <h2>The Color</h2>
+
     <p>
-      Our visualization highlights the high-level aspects of each Game of Thrones episode, separating the data into (1) visual and (2) textual components. We process over 60 hours of video data and its subtitles (dialogue only) into nominal and quantitative variables of color and text frequencies as follows.
-      <ol>
-        <li>
-           We segment the video data into screenshots at the rate of one shot per second to produce 3600 images for a 60-minute episode. Next, we divide each episode into 60 time slices of equal size and combine the images from each slice into a single image. 
-
-           ...
-
-           Our color extraction technique highlights the most visually salient colors within the data, which are often different from the most frequent colors 
-        </li>
-        <li>
-          
-        </li>
-      </ol>
+      Our visualization highlights the high-level aspects of each Game of Thrones episode, separating the data into <b><i>visual</i></b> and <b><i>textual</i></b> components. We process over 60 hours of video data and its subtitles (dialogue only) into nominal and quantitative variables of color and text frequencies as follows.
     </p>
-    <h2>The Text</h2>
+
+    <hr>
+
+    <h2 class="center">The Color</h2>
+    <p>
+      <i>Color quantization</i> is a process that reduces the number of distinct colors used in an image, usually with the intention that the new image should be as visually similar as possible to the original image. We use the well-studied median cut quantization clustering algorithm from computer graphics on our data in order to extract the top ten most dominant colors in an image. Here's an example of color quantization applied to the title screen:
+    </p>
+    
+    <br>
+    <img src="images/color-1.png" width="100%">
+    <br>
+    <br>
+
+    <p>
+      Since this technique requires stills, we segment the video data into frames at a rate of one frame per second, producing on average 3,600 images for a 60-minute episode. Now we divide each episode into 60 time slices of equal size and extract the top ten colors from each slice to get one color palette. For six seasons of ten episodes each, that means our color data distillation looks like:
+
+    </p>
+    <p class="center intro-color-numbers">
+      <i>60 video hours &#x2192; 216,000 images &#x2192; 3600 color palettes</i>
+    </p>
+    <p>
+      In total we are crunching approximately 75GB of video data into 0.7MB of RGB color values. Our color extraction technique highlights the most visually salient colors within the data, which are often different from the most frequent colors. An example of this is seen below in the 2nd time slice of Episode 1 of Season 1 (S1E2), "Winter is Coming":
+    </p>
+
+    <br>
+    <img src="images/color-2.png" width="100%">
+    <br>
+    <br>
+
+    <!-- <p>
+      The color palette extracted for this one-minute scene highlights the different shades of blue found in the scene, as well as picking up the torch's dim flame.
+    </p> -->
+    
+    <hr>
+
+    <h2 class="center">The Text</h2>
     <p>
       Similar to the color extraction, we first segment each episode into 60 equal-sized time slices
     </p>
   </div>
-  <div class="col-md-3"></div>
+  <div class="col-md-2"></div>
 </div>
 
 
@@ -380,10 +403,8 @@
   <div class="col-md-4">
     <div id="text-metadata" class="metadata-content">
       <!-- Top words found in <b><span id="text-category"></span></b> episode: -->
-      <h4>Top words in <b><span id="episode-title-number"></span></b></h4>
-      <br>
-      <br>
-      <ol id="text-wordlist">
+      <h4>Histogram of top words in <b><span id="episode-title-number">S1E1</span></b>:</h4>
+      <!-- <ol id="text-wordlist"> -->
       </ol>
     </div>
   </div>
@@ -394,7 +415,7 @@
 
 
 
-<div class="container">
+<div id="cs1" class="container">
   <hr>
   <div class="col-md-2"></div>
   <div class="col-md-8">
@@ -432,7 +453,7 @@
 
 
 
-<div class="container">
+<div id="cs2" class="container">
   <hr>
   <div class="col-md-2"></div>
   <div class="col-md-8">
@@ -469,7 +490,7 @@
 
 
 
-<div class="container">
+<div id="cs3" class="container">
   <hr>
   <div class="col-md-2"></div>
   <div class="col-md-8">
