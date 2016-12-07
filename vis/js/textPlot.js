@@ -581,8 +581,8 @@ function updateAll (season, episode) {
 }
 
 function updateBarPlot (data, season, episode){
-    console.log(season);
-    console.log(episode);
+    // console.log(season);
+    // console.log(episode);
 	var parts, wordCounter;
 	var div = d3.select ("#text-metadata");
 	// div.select("#text-category").text(catInFocus);
@@ -657,6 +657,151 @@ function updateBarPlot (data, season, episode){
 	// });
 
 	// wordlist.exit().remove();
+
+    var wordlistBarScaleX = d3.scaleLinear()
+                                .domain([0, d3.max(wordCounter, function(d) { return d.freq; })])
+                                .range([0, wordBarMaxWidth]);
+
+    var wordlistBarScaleY = d3.scaleLinear()
+                            .domain([0, wordCounter.length])
+                            .range([wordBarOffsetY, 
+                                    wordBarOffsetY + (wordlistBarHeight + wordlistBarSpace) * wordCounter.length]);
+    // now attempt to add some bars to measure frequency
+    // var wordlistBoundingRect = d3.select("#text-wordlist")
+    //                             ._groups[0][0]
+    //                             .getBoundingClientRect();
+    // console.log(wordlistBoundingRect);
+    
+    // var wordlistX = wordlistBoundingRect["left"],
+    //     wordlistY = 0;
+    //     wordlistY = wordlistBoundingRect["bottom"];
+    // make some bars!!
+    
+    // first build axis
+    var wordBarAxis = d3.axisLeft()
+                        .scale(wordlistBarScaleY)
+                        .tickSize(5)
+                        .tickFormat(function(d, i) { return wordCounter[i].word; })
+                        .tickValues(d3.range(wordCounter.length));
+    
+    var wordBar_xis = wordBarArea.selectAll("g.axis")
+                        .call(wordBarAxis)
+                        ;
+    var wordBars = wordBarArea.selectAll("rect")
+                    .data(wordCounter);
+
+    wordBars.enter()
+        .append("rect")
+        .attr("x", wordBarOffsetX)
+        .attr("y", function(d, i) { return wordlistBarScaleY(i) - wordBarOffsetY / 2;})
+        .style("fill", wordlistBarColor)
+        .attr("height", wordlistBarHeight)
+        .attr("width", function(d) { return wordlistBarScaleX(d.freq);} );
+
+    wordBars.attr("width", function(d) { return wordlistBarScaleX(d.freq);} );
+
+    // add text for frequencies!
+    var wordBarText = wordBarArea.selectAll("text.wordFreq")
+                        .data(wordCounter);
+    wordBarText.enter()
+        .append("text")
+        .attr("class", "wordFreq")
+        .attr("x", function(d) {return wordBarOffsetX + 5 + wordlistBarScaleX(d.freq); })
+        .attr("y", function(d, i) { return wordlistBarScaleY(i) + wordlistBarHeight / 4;})
+        .text(function(d) { return d.freq + ""; })
+        .style("fill", "#000000");
+        // .style("font-size", "12px");
+
+    wordBarText
+    .attr("x", function(d) {return wordBarOffsetX + 5 + wordlistBarScaleX(d.freq); })
+    .text(function(d) {
+        return d.freq + "";
+    });
+    // console.log(wordBarText);
+    // TODO: make the bars and text
+    // update properly instead of overwriting!
+    wordBar_xis.exit().remove();
+    wordBars.exit().remove();
+    wordBarText.exit().remove();
+}
+
+function updateCategoryBarPlot (data, season, episode, time){
+    // console.log(season);
+    // console.log(episode);
+    var parts, wordCounter;
+    var div = d3.select ("#text-metadata");
+    // div.select("#text-category").text(catInFocus);
+
+    // slice DTM data!
+    var slicedData = sliceData(data, season, episode)[0];
+
+    // console.log(slicedData);
+    // now sort!
+    var allWords = d3.keys(slicedData).filter(function(d) {
+        return d != "season" && d != "episode";
+    });
+    // allWords.sort(function(a, b) {
+    //     return slicedData[b] - slicedData[a];
+    // })
+    // console.log(allWords);
+
+    var sortable = [];
+    for (var w in allWords)
+        sortable.push([allWords[w], slicedData[allWords[w]]])
+    // console.log(sortable);
+    // apparently we're getting some functions instead of strings
+    sortable = sortable.filter(function(d) {
+        return typeof(d[0]) == "string" && typeof(d[1]) == "number";
+    });
+
+    sortable = sortable.sort(function(a, b) {
+        return b[1] - a[1];
+    });
+    // console.log(sortable);
+
+    var wordCounter = []; 
+    for(var i = 0; i < maxBars; i++) {
+        // var word = allWords[i];
+        wordCounter[wordCounter.length] = {
+            word: sortable[i][0],
+            freq: sortable[i][1],
+        };
+    }
+    // console.log(wordCounter);
+
+
+    // for (var i = data.length - 1; i >= 0; i--) {
+    //  if (parseInt(data[i]["season"]) == season && 
+    //      parseInt(data[i]["episode"]) == episode) {
+    //      parts = data[i][catInFocus].split(",")
+    //      wordCounter = parts.map (function (entry){
+    //          return {
+    //              word: entry.split(":")[0],
+    //              freq: parseInt(entry.split(":")[1])                 
+    //          }
+    //      });
+    //      break;
+    //  }
+    // }
+
+    // var wordlist = d3.select ("#text-wordlist")
+    //              .selectAll("li")
+    //                .data (wordCounter);
+
+    // wordlist.enter()
+    // .append("li")
+    // .text(function (d){
+    //  return d.word;
+    // });
+
+ //    // why is this called twice??
+ //    // turns out that the functions chained to enter()
+ //    // are only called once
+    // wordlist.text(function (d){
+    //  return d.word;
+    // });
+
+    // wordlist.exit().remove();
 
     var wordlistBarScaleX = d3.scaleLinear()
                                 .domain([0, d3.max(wordCounter, function(d) { return d.freq; })])
