@@ -88,11 +88,13 @@ if __name__ == '__main__':
             )
         house_token_counts['episode'] = episode
         house_token_counts['season'] = season
+        house_token_counts['time'] = (season - 1) * 10 + episode
         all_token_counts.append(house_token_counts)
         house_counts = pd.DataFrame({h : [c] for h,c, in house_counts.items()})
         # house_counts['time'] = house_counts.index
         house_counts['episode'] = episode
         house_counts['season'] = season
+        house_counts['time'] = (season - 1) * 10 + episode
         all_counts.append(house_counts)
     all_token_counts = pd.concat(all_token_counts)
     token_fname = os.path.join(subtitle_dir, 'house_token_counts_all_seasons.tsv')
