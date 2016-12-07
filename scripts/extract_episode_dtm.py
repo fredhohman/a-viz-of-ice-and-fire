@@ -46,7 +46,7 @@ def main():
     print('sorted ep names %s'%
           (str(sorted_ep_names)))
     min_df = 0.05
-    ngram_range = (1,1)
+    ngram_range = (1,2)
     # need tokenizer? probs not
     # TODO: normal tokenizer
     cv = CountVectorizer(min_df=min_df, max_df=0.9, 
