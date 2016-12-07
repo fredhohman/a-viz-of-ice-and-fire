@@ -273,31 +273,38 @@ $(document).ready(function() {
     // zoom in color chunks
     $("#chunks").click(function(event) {
         chunk_clicked = parseInt(event.target.id[1]);
-        if (event.target.id[2] != '-') {
-            chunk_clicked = parseInt(event.target.id[1])*10+parseInt(event.target.id[2]);
-        }
-        
-        // edge case to click on chunk that was just clicked on
-        if (chunk_clicked_old == chunk_clicked && is_something_zoomed == false) {
-            // console.log('yay');
-            d3.selectAll(".chunk-block").classed("chunk-block-small", true);
-            d3.select("#chunk"+String(chunk_clicked)).classed("chunk-block-zoomed", true);
-            is_something_zoomed = true;
-        }
 
-        else if (chunk_clicked_old == chunk_clicked) {
-            d3.selectAll(".chunk-block").classed("chunk-block-small", false);
-            d3.select("#chunk"+String(chunk_clicked)).classed("chunk-block-zoomed", false);
-            is_something_zoomed = false;
-        }
-        else {
-            d3.selectAll(".chunk-block").classed("chunk-block-small", true);
-            d3.select("#chunk"+String(chunk_clicked_old)).classed("chunk-block-zoomed", false);
-            d3.select("#chunk"+String(chunk_clicked)).classed("chunk-block-zoomed", true);
-            is_something_zoomed = true;
-        }
+        if (isNaN(chunk_clicked) == true) {
+            
+        } else {
 
-        chunk_clicked_old = chunk_clicked;
+            if (event.target.id[2] != '-') {
+                chunk_clicked = parseInt(event.target.id[1])*10+parseInt(event.target.id[2]);
+            }
+            
+            // edge case to click on chunk that was just clicked on
+            if (chunk_clicked_old == chunk_clicked && is_something_zoomed == false) {
+                // console.log('yay');
+                d3.selectAll(".chunk-block").classed("chunk-block-small", true);
+                d3.select("#chunk"+String(chunk_clicked)).classed("chunk-block-zoomed", true);
+                is_something_zoomed = true;
+            }
+
+            else if (chunk_clicked_old == chunk_clicked) {
+                d3.selectAll(".chunk-block").classed("chunk-block-small", false);
+                d3.select("#chunk"+String(chunk_clicked)).classed("chunk-block-zoomed", false);
+                is_something_zoomed = false;
+            }
+            else {
+                d3.selectAll(".chunk-block").classed("chunk-block-small", true);
+                d3.select("#chunk"+String(chunk_clicked_old)).classed("chunk-block-zoomed", false);
+                d3.select("#chunk"+String(chunk_clicked)).classed("chunk-block-zoomed", true);
+                is_something_zoomed = true;
+            }
+
+            chunk_clicked_old = chunk_clicked;
+    }
+
     });
 
 });
