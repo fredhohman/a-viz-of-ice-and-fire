@@ -207,7 +207,12 @@ video {
 	font-size: 28px;
 	color: white;
 }
-
+figcaption {
+	padding-top: 10px;
+	color: #BBBBBB;
+	text-align: center;
+	font-size: 16px;
+}
 
 
 /*bouncing arrow*/
