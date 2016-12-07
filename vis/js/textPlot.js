@@ -301,7 +301,9 @@ function updateBubblePlot (data){
     circles.enter()
     .append ("circle")
     .attr ("r", function (d){
-        return d.count;
+        if (d.count == 0)
+            return d.count
+        return 4 * Math.log (d.count);
     })
     .attr ("cx", function (d){
         return xScale(d.time);
@@ -320,7 +322,8 @@ function updateBubblePlot (data){
         //        .style("left", (d3.event.pageX) + "px")     
         //        .style("top", (d3.event.pageY - 28) + "px");  
         //d3.selectAll(".category-" + d.cat)  
-         d3.select(this).attr ("fill", focusColor);
+         d3.selectAll("circle").attr("z-index", "1");
+         d3.select(this).attr ("fill", focusColor).style("z-index", "2");
          d3.select("#perSliceTitle").style("visibility", "visible");
          d3.select("#categoryWordBarArea").style ("visibility", "visible");
          d3.select("#perSliceTitle").select("span").text(d.time);
@@ -330,15 +333,19 @@ function updateBubblePlot (data){
     .on("mouseout", function(d) {       
             //tooltip.transition()        
             //    .duration(500)      
-            //    .style("opacity", 0); 
+            //    .style("opacity", 0);
+
             d3.select("#perSliceTitle").style ("visibility", "hidden");
             d3.select("#categoryWordBarArea").style ("visibility", "hidden");
-            d3.select(this).attr ("fill", unfocusColor);  
+            d3.select(this).attr ("fill", unfocusColor); 
+            d3.select(this).style("z-index", "1");  // Does not work; should take a look.
     });
 
     circles
     .attr ("r", function (d){
-        return d.count;
+        if (d.count == 0)
+            return d.count;
+        return 4 * Math.log (d.count);
     })
     .attr ("cx", function (d){
         return xScale (d.time);
