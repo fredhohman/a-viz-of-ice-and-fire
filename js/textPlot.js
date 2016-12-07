@@ -27,6 +27,7 @@ var invisibleColor = "#F1F1F2";
 var focusBorderColor = "#333333";
 var unfocusBorderColor = "#333333";
 var defaultCategory = "positive";
+var defaultHouse = "stark";
 var tooltipTransition, tooltipOffset;
 
 var legendRects, legendLabels;
@@ -630,6 +631,247 @@ function initBarPlot (data){
     .attr("transform", "translate(" + wordBarOffsetX + ",0)");
 }
 
+function initHouseBubblePlot(houseCountData) {
+    var margin = {top: 20, right: 160, bottom: 100, left: 150};
+    var width = 900 - margin.left - margin.right;
+    var height = 500 - margin.top - margin.bottom;
+
+    // Define the initial scales and axes
+    var xScale = d3.scaleLinear()
+    .range([0, width])
+    .domain(d3.extent(houseCountData.map(function(d) { return d.time; })));
+    // console.log(d3.extent(function(d) { return d.time; }));
+
+    var yScale = d3.scaleBand()
+    .range([height, 0]);
+
+    var xAxis = d3.axisTop()
+    .scale(xScale);
+
+    var yAxis = d3.axisLeft()
+    .scale(yScale);
+
+    var div = d3.select("div#cs3");
+
+    svgHouses = d3.select(".col-md-8#houses")
+    .select("svg#house-bubble-plot")
+    // .append("svg")
+    .attr ("width", width + margin.left + margin.right)
+    .attr ("height", height + margin.top + margin.bottom)
+    .append ("g")
+    .attr ("id", "textPlot")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    // Step 2: add an invisible rectange. This is not really required, 
+    // but is useful for mouse-tracking.
+    svgHouses.append("rect")
+    .attr("width", width)
+    .attr("height", height)                                    
+    .attr("x", 0) 
+    .attr("y", 0)
+    .attr("id", "mouse-tracker")
+    .style("fill", "white")
+    .style("stroke-width", "0");
+
+    // Step 3: Draw the x and the y axis
+        // draw line graph
+    svgHouses.append("g")
+      .attr("class", "x axis")
+      // .attr("transform", "translate(0," + height + ")")
+      .attr("transform", "translate(0," + (margin.top - 10) + ")" )
+      .style("stroke-width", "0")
+      .call(xAxis);
+    
+    svgHouses.append("g")
+      .attr("class", "y axis")
+      .style("stroke-width", "0")
+      .call(yAxis)
+      .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("x", -10)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Text counts")
+      ;
+
+    // var allHouses = d3.keys(houseCountData[0]).filter(function(d) {
+    //     return d != "season" && d != "episode" && d != "time";
+    // });
+    // console.log(allHouses);
+
+    yScale.domain(houses);
+
+    // Step 1: Redraw both the axes.
+    svgHouses.select(".y.axis")
+        .transition()
+        .call(yAxis);
+
+    svgHouses.append ("g")
+            .attr ("id", "spg");
+
+    // console.log(houseCountData);
+    var houseDataDots = data2DotPlotRepresentationBasic(houseCountData, houses);
+    console.log(houseDataDots.length);
+    // houseDataDots = houseDataDots.filter(function(d) { 
+    //     return typeof(d.time) == "number";
+    // });
+    // console.log(houseDataDots.length);
+    grp = svgHouses.selectAll ("#spg");
+    circles = grp.selectAll ("circle")
+    .data (houseDataDots);
+
+    circles.enter()
+    .append ("circle")
+    .attr ("r", function (d){
+        if (d.count == 0)
+            return d.count;
+        return 4 * Math.log (d.count);
+    })
+    .attr ("cx", function (d){
+        return xScale(d.time);
+    })
+    .attr("cy", function (d){
+        return yScale(d.cat) + 20; // TODO: check why this 20 needs to be done.
+    })
+    .attr("class", function (d){
+        return "category" + "-" + d.cat;
+    })
+    .on("mouseover", function(d, i) {      
+        //tooltip.transition()        
+        //        .duration(200)      
+        //        .style("opacity", .9);      
+        //tooltip.html( d.words + "<br/>"  + d.close)  
+        //        .style("left", (d3.event.pageX) + "px")     
+        //        .style("top", (d3.event.pageY - 28) + "px");  
+        //d3.selectAll(".category-" + d.cat)  
+         grp.selectAll("circle").attr("z-index", "1");
+         d3.select(this).attr ("fill", focusColor).style("z-index", "2")
+                        .attr("stroke", focusBorderColor);
+         // d3.select("#perSliceTitle").style("visibility", "visible");
+         // d3.select("#categoryWordBarArea").style ("visibility", "visible");
+         // d3.select("#text-metadata").select("span.category").text(d.cat);
+         // console.log(d3.select("#perSliceTitle").select("span.category"))
+         // d3.select("#perSliceTitle").select("span.time").text(d.time);
+         // updateCategoryBarPlot (textTokenData, seasonNumber, episodeNumber, d.time, d.cat);
+    })
+     
+    .on("mouseout", function(d) {       
+            //tooltip.transition()        
+            //    .duration(500)      
+            //    .style("opacity", 0);
+
+            d3.select("#perSliceTitle").style ("visibility", "hidden");
+            d3.select("#categoryWordBarArea").style ("visibility", "hidden");
+            d3.select(this).attr ("fill", unfocusColor).attr("stroke", unfocusBorderColor); 
+            d3.select(this).style("z-index", "1");  // Does not work; should take a look.
+    });
+
+    circles
+    .attr ("r", function (d){
+        if (d.count == 0)
+            return d.count;
+        return 4 * Math.log (d.count);
+    })
+    .attr ("cx", function (d){
+        return xScale (d.time);
+    })
+    .attr ("cy", function (d){
+        return yScale(d.cat) + 20;
+    });
+
+    var ticks = d3.selectAll (".y.axis")
+    .selectAll (".tick").selectAll("text")
+    .on("mouseover", function (z){
+
+        d3.selectAll("circle")
+        .attr("fill", unfocusColor)
+        .attr("stroke", unfocusBorderColor);
+
+        d3.selectAll(".category-" + z)
+        .attr ("fill", focusColor)
+        .attr("stroke", focusBorderColor);
+    })
+    .on ("mouseout", function (z){
+        d3.selectAll("circle")
+        .attr("fill", unfocusColor)
+        .attr("stroke", unfocusBorderColor);        
+    });
+
+    // circles.exit().remove();
+    var wordlistBarWidth = 100;
+    var wordlistBarHeight = 15;
+    var wordlistBarScaleX = d3.scaleLinear()
+                            .range([0, 10])
+                            .domain([0, 2.5]);
+    var wordlistBarSpace = 5;
+    var wordBarMaxWidth = 150;
+    wordlistBarColor = "#CCCCCC";
+    houseInFocus = defaultHouse;
+    
+    div.select("#text-metadata")
+            .select ("#text-category")
+            .text(houseInFocus);
+    // now build bar chart
+    // offset x should be at least as wide
+    // as the longest word, in order to fit it
+    var wordBarOffsetX = 0;
+    var wordBarOffsetY = 15;
+    var maxBars = 5;
+
+    // episode-level word summary
+
+    wordBarArea = svgHouses.select("#text-metadata")
+               .append("svg")
+               .attr("class", "wordBarArea")
+               .attr ("width", wordBarOffsetX + wordlistBarWidth + wordBarOffsetX)
+               .attr ("height", wordBarOffsetY + (wordlistBarHeight + wordlistBarSpace) * maxBars)
+               .append ("g")
+               .attr ("id", "wordBarArea");
+
+    // TODO: how to add category name??
+    // d3.select("#text-metadata")
+    //     .append("b")
+    //     .append("span")
+    //     .attr("class", "category");
+
+    // var perSliceTitle = d3.select ("#text-metadata")
+    //                     .append ("h4")
+    //                     .attr ("id", "perSliceTitle")
+    //                     .text ("Words in slice ")
+    //                     .style("visibility", "hidden");
+
+    // var tmp = perSliceTitle.append ("b").append("span").attr("class", "category");
+    // console.log(tmp);
+
+    // perSliceTitle.text ("Words in slice ")
+    //             .style("visibility", "hidden");
+
+    d3.select('#perSliceTitle').append ("b").append("span").attr("class", "time");
+    // time chunk level category summary
+    var houseWordBarArea = div.select("#text-metadata")
+               .append("svg")
+               .attr("class", "categoryWordBarArea")
+               .attr ("width", wordBarOffsetX + wordlistBarWidth + wordBarOffsetX)
+               .attr ("height", wordBarOffsetY + (wordlistBarHeight + wordlistBarSpace) * maxBars)
+               .append ("g")
+               .attr ("id", "categoryWordBarArea");
+
+    // make axis
+    houseWordBarArea.append("g")
+                .attr("class", "axis")
+                .attr("transform", "translate(" + wordBarOffsetX + ",0)");
+
+    // make axis
+    houseWordBarArea.append ("g")
+    .attr("class", "axis")
+    .attr("transform", "translate(" + wordBarOffsetX + ",0)");
+}
+
+function updateHouseBarChart(data, house, time) {
+    
+}
+
 function initAll(textDTM, textTokenData) {
     initBubblePlot(textTokenData);
     initBarPlot(textDTM);
@@ -640,8 +882,6 @@ function updateAll (season, episode) {
     updateBarPlot (textDTM, seasonNumber, episodeNumber);
     updateBubblePlot (sliceData (textTokenData, seasonNumber, episodeNumber));
 }
-
-var tmp;
 
 function updateCategoryBarPlot (data, season, episode, time, cat){
     //console.log (data);
