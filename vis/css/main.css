@@ -160,6 +160,13 @@ footer {
 	margin-left: 100px;
 	margin-right: 100px;
 }
+
+#cs1 h4, 
+#cs2 h4, 
+#cs3 h4{
+	margin-left: 100px;
+	margin-right: 100px;
+}
 .intro-color-numbers {
 	font-size: 20px;
 	font-weight: 600;
@@ -207,8 +214,16 @@ video {
 	font-size: 28px;
 	color: white;
 }
-
-
+figcaption {
+	padding-top: 10px;
+	color: #BBBBBB;
+	text-align: center;
+	font-size: 16px;
+}
+.vis-screenshot {
+	border: 1px #CCCCCC solid; 
+	padding: 20px;
+}
 
 /*bouncing arrow*/
 
