@@ -822,7 +822,7 @@ function initHouseBubblePlot(houseCountData) {
 
     // episode-level word summary
 
-    wordBarArea = svgHouses.select("#text-metadata")
+    var wordBarArea = svgHouses.select("#text-metadata")
                .append("svg")
                .attr("class", "wordBarArea")
                .attr ("width", wordBarOffsetX + wordlistBarWidth + wordBarOffsetX)
@@ -870,7 +870,7 @@ function initHouseBubblePlot(houseCountData) {
 }
 
 function updateHouseBarChart(data, house, time) {
-    
+    // TOOD:
 }
 
 function initAll(textDTM, textTokenData) {
