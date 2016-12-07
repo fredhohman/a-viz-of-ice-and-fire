@@ -2,3 +2,9 @@
 data/.DS_Store
 *~
 scripts/.ipynb_checkpoints/
+*.pxm
+data/color/*_sorted.json
+data/color/*_chunk.json
+misc/
+data/color-palettes-chunked-temp/
+data/color-palettes-chunked/
