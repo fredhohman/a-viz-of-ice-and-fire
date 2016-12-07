@@ -8,6 +8,7 @@ from nltk.tokenize import WordPunctTokenizer
 import os, re
 import pandas as pd
 import argparse
+from collections import Counter
 
 N_CHUNKS=60
 if __name__ == '__main__':
@@ -39,6 +40,7 @@ if __name__ == '__main__':
     count_option = 'total'
     # count_option = 'unique'
     all_counts = []
+    all_token_counts = []
     for e in sorted_episodes:
         print('processing episode %s'%(e))
         e_data = episode_data[e]
@@ -60,23 +62,40 @@ if __name__ == '__main__':
         chunk_iter = e_data.groupby('chunk')
         chunk_text = [clean_text(' '.join(map(str, c[1]['dialogue'].tolist()))) 
                       for c in chunk_iter]
-        house_counts = {h : [] for h in houses}
+        #house_counts = {h : [] for h in houses}
+        house_token_counts = {h : Counter()
+                              for h in houses}
+        house_counts = {h : 0 for h in houses}
         for t in chunk_text:
             tokens = TKNZR.tokenize(t)
             for h in houses:
                 counts = get_LIWC_counts(tokens, LIWC_words=house_wordlists[h])
+                house_token_counts[h].update(counts)
                 if(count_option == 'total'):
                     total_counts = sum(counts.values())
                 elif(count_option == 'unique'):
                     total_counts = len(counts)
                 # TODO: store individual words as well as aggregate counts
-                house_counts[h].append(total_counts)
-        house_counts = pd.DataFrame(house_counts)
-        house_counts['time'] = house_counts.index
+                # house_counts[h].append(total_counts)
+                house_counts[h] += total_counts
+        house_token_counts = pd.DataFrame(
+            {
+                h : [','.join(['%s:%d'%(k,v) for k,v in token_counter.items()])]
+                for h, token_counter in house_token_counts.items()
+                }
+            )
+        house_token_counts['episode'] = episode
+        house_token_counts['season'] = season
+        all_token_counts.append(house_token_counts)
+        house_counts = pd.DataFrame({h : [c] for h,c, in house_counts.items()})
+        # house_counts['time'] = house_counts.index
         house_counts['episode'] = episode
         house_counts['season'] = season
         all_counts.append(house_counts)
+    all_token_counts = pd.concat(all_token_counts)
+    token_fname = os.path.join(subtitle_dir, 'house_token_counts_all_seasons.tsv')
+    all_token_counts.to_csv(token_fname, sep='\t', index=None)
     all_counts = pd.concat(all_counts, axis=0)
-    chunk_fname = os.path.join(subtitle_dir, 'house_chunk_counts_all_seasons.tsv')
-    all_counts.to_csv(chunk_fname, sep='\t', index=None)
+    count_fname = os.path.join(subtitle_dir, 'house_counts_all_seasons.tsv')
+    all_counts.to_csv(count_fname, sep='\t', index=None)
         

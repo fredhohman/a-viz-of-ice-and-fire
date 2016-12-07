@@ -1,0 +1,61 @@
+baratheon	greyjoy	lannister	martell	stark	targaryen	tyrell	episode	season
+robert:3		jaime:1,joffrey:1,tyrion:3		benjen:2,eddard:3,ned:9,brandon:1,bran:5,arya:3,robb:2	khaleesi:1,viserys:1		1	1
+stannis:5,robert:8,renly:7		jaime:2,joffrey:4		benjen:1,eddard:1,ned:1,robb:5,lyanna:1,arya:1,rickon:1,bran:3	khaleesi:2,aerys:2,rhaegar:2		10	1
+robert:4		joffrey:2,tyrion:1		benjen:1,eddard:1,ned:7,arya:15,rickon:1,bran:7	khaleesi:8,viserys:1,rhaegar:1		2	1
+robert:4,renly:1		lancel:2,tywin:2,cersei:1,jaime:2,joffrey:4,tyrion:3,myrcella:1		benjen:2,ned:7,brandon:1,catelyn:2,arya:3,bran:4	khaleesi:9,aerys:3,aemon:1		3	1
+robert:3	theon:1,balon:1	joffrey:2,tyrion:1		eddard:1,robb:2,brandon:1,bran:4,catelyn:1,arya:1,ned:1	viserys:1,aegon:2,khaleesi:5,aerys:1,rhaegar:1		4	1
+stannis:3,robert:13,renly:1		tommen:1,jaime:2,joffrey:1,cersei:2,tyrion:2		benjen:2,lyanna:1,ned:5,arya:3,bran:1	viserys:3	loras:5	5	1
+robert:5		tywin:5,jaime:8,joffrey:3,tyrion:3		benjen:1,brandon:1,robb:3,catelyn:1,bran:3	viserys:1,khaleesi:4		6	1
+stannis:10,robert:13,renly:3	theon:1,balon:1	tywin:1,tommen:1,cersei:2,jaime:6,joffrey:11,tyrion:1		benjen:1,ned:6,bran:1,catelyn:3,lyanna:1,eddard:3	aegon:1,khaleesi:7	loras:1	7	1
+stannis:1,robert:5,renly:1	theon:1	tywin:11,jaime:7,joffrey:10,cersei:1,tyrion:7		benjen:1,eddard:6,robb:8,catelyn:3,arya:4,ned:3	khaleesi:2,aemon:3		8	1
+stannis:2,robert:2		tywin:2,jaime:5,joffrey:4,cersei:3		eddard:2,arya:1,robb:4	aegon:1,khaleesi:8,aemon:3,aerys:1		9	1
+stannis:6,robert:3,renly:8	balon:1	tommen:2,cersei:1,jaime:9,joffrey:10,tyrion:1,myrcella:2		benjen:1,eddard:1,ned:4,bran:1,arya:5,rickon:1,robb:8	khaleesi:3,aerys:1		1	2
+stannis:1	theon:4	tywin:3,jaime:2,joffrey:3,cersei:1		ned:1,arya:2,catelyn:2	khaleesi:7	margaery:4,loras:2	10	2
+stannis:10,robert:3	yara:1,balon:2	jaime:4,joffrey:6,cersei:3,tyrion:2		ned:4,arya:1,robb:2	khaleesi:1		2	2
+robert:3,renly:2	yara:2,theon:6	tywin:2,jaime:1,joffrey:6,myrcella:10,cersei:1		ned:3,robb:6,bran:3,catelyn:3,rickon:1,eddard:1		margaery:2,loras:3	3	2
+stannis:1,renly:5		lancel:1,tywin:3,cersei:9,jaime:3,joffrey:11,tyrion:1		ned:2,arya:2,robb:3,eddard:1	khaleesi:3	loras:2	4	2
+stannis:20,robert:2,renly:7	balon:1	lancel:2,tywin:1,jaime:1,joffrey:1,tyrion:1,myrcella:1		ned:1,bran:1,catelyn:1,robb:5	khaleesi:4,aerys:1	loras:2	5	2
+stannis:2,renly:3	theon:18	tywin:4,jaime:3,joffrey:1,tyrion:1		catelyn:1,ned:1,rickon:1,robb:6,bran:2	khaleesi:3	margaery:1,loras:1	6	2
+stannis:1,robert:4	balon:1,theon:4	tommen:1,jaime:4,joffrey:6,myrcella:1,cersei:1		ned:6,rickon:1,robb:2,eddard:1	aegon:3,khaleesi:4,aerys:1		7	2
+stannis:12,robert:4,renly:3	theon:4	tywin:3,jaime:4,joffrey:5,cersei:1		ned:3,arya:1,rickon:1,robb:5,bran:2	khaleesi:2		8	2
+stannis:26,robert:1		jaime:2,joffrey:9,lancel:1,tyrion:1		robb:2			9	2
+stannis:7,robert:2		tywin:1,jaime:3,joffrey:4,tyrion:3		ned:1,arya:1	khaleesi:1	margaery:3,loras:3	1	3
+stannis:3	balon:1,theon:8	tywin:2,cersei:1,joffrey:6,myrcella:1,tyrion:2		ned:2,rickon:1,bran:1,robb:9	aegon:3,khaleesi:1,rhaegar:1,aemon:3	loras:2	10	3
+stannis:1,robert:1,renly:10	yara:1,theon:2	tywin:1,joffrey:6		brandon:1,rickon:3,catelyn:1,bran:3		olenna:2,margaery:6,loras:7	2	3
+renly:2	yara:1	tywin:4,jaime:4,joffrey:1		catelyn:2,ned:1,rickon:1,robb:6,bran:1	aegon:1,khaleesi:4,rhaegar:4		3	3
+stannis:2,robert:3	yara:2,balon:1	jaime:2,joffrey:11,tyrion:4		catelyn:1,ned:4,robb:2,bran:1,brandon:2	aegon:1	margaery:9,loras:1	4	3
+stannis:3,robert:6,shireen:1,renly:2	theon:1	tywin:4,jaime:3,joffrey:7,cersei:1,tyrion:2		ned:3,arya:2,robb:1	aegon:4,khaleesi:2,aerys:1	olenna:2,margaery:1,loras:5	5	3
+stannis:1	theon:1	tywin:2,jaime:5,joffrey:6,cersei:3,tyrion:3		robb:5	aegon:2	margaery:2,loras:5	6	3
+robert:1		tywin:2,jaime:1,joffrey:2,tyrion:3		bran:1,catelyn:1,robb:1	khaleesi:4	loras:3	7	3
+robert:4,renly:4	balon:1	joffrey:4,cersei:1,tyrion:4		robb:1	aegon:1,khaleesi:1	loras:1	8	3
+	theon:1	tywin:2		eddard:1,robb:4,bran:3,brandon:1,rickon:2,ned:2			9	3
+stannis:5,renly:1		tywin:1,tommen:1,jaime:2,joffrey:7,tyrion:4	elia:3,oberyn:10,ellaria:1	ned:1,arya:1,robb:3	khaleesi:1,rhaegar:2,aemon:1	margaery:3,loras:1	1	4
+stannis:2		tywin:4,tommen:3,jaime:6,joffrey:2,tyrion:3		ned:1,arya:8,bran:1,brandon:2		margaery:2,loras:4	10	4
+stannis:3,robert:1,renly:4	theon:3,balon:3	tywin:5,cersei:5,jaime:2,joffrey:11,tyrion:1,myrcella:1	oberyn:3,ellaria:2	ned:1,bran:5,catelyn:1,brandon:1,rickon:2,robb:3	aegon:1	margaery:2,loras:1	2	4
+stannis:1,robert:1,renly:2		tywin:3,tommen:1,cersei:1,jaime:4,joffrey:7,tyrion:4	oberyn:3,elia:2		aegon:1,khaleesi:1		3	4
+robert:1		tommen:4,jaime:1,joffrey:9,cersei:4,tyrion:2		ned:2,robb:1,brandon:2,catelyn:4,arya:1,bran:6	khaleesi:1,aerys:1		4	4
+robert:2		tywin:1,tommen:4,cersei:1,jaime:1,joffrey:5,tyrion:11,myrcella:1	oberyn:1,elia:1	brandon:3		margaery:1,loras:1	5	4
+stannis:6	yara:1,theon:10	lancel:1,tywin:6,tommen:2,cersei:2,jaime:1,joffrey:14,tyrion:15	oberyn:3,ellaria:1	ned:1,robb:1			6	4
+stannis:2,shireen:1		tywin:1,joffrey:1,cersei:4,tyrion:1	elia:1	ned:1,arya:5,catelyn:2	khaleesi:4		7	4
+robert:3	balon:2,theon:3	tywin:3,tommen:1,joffrey:3,cersei:1,tyrion:2	oberyn:2,elia:4	eddard:1,robb:1,ned:2,arya:1,catelyn:1	khaleesi:2,viserys:1		8	4
+					aemon:3		9	4
+stannis:4,robert:1		lancel:1,tywin:4,tommen:1,cersei:4,jaime:1,tyrion:1		arya:1,robb:1			1	5
+stannis:7,robert:2,shireen:1,renly:2		cersei:1,tommen:1,myrcella:4,lancel:1		benjen:2,arya:1	aemon:1		10	5
+stannis:2,robert:1,renly:3		jaime:2,joffrey:1,cersei:8,myrcella:1	oberyn:4	lyanna:1,catelyn:1	aemon:1		2	5
+stannis:3,renly:4		tywin:5,tommen:4,jaime:1,cersei:3,tyrion:4		ned:1,arya:6,catelyn:1,robb:1	aemon:1	margaery:5	3	5
+stannis:6,robert:2,shireen:1		jaime:3,cersei:2,myrcella:1	elia:1,oberyn:3	lyanna:3,ned:1	viserys:1,rhaegar:3	margaery:1,loras:5	4	5
+stannis:2,robert:1	theon:2	tyrion:4		eddard:1,rickon:1,catelyn:1,bran:1	aerys:1,aemon:4		5	5
+stannis:3,robert:1,renly:7	theon:1	lancel:3,tommen:6,cersei:5,jaime:5,joffrey:2,tyrion:2,myrcella:2	oberyn:3	eddard:1,arya:2		olenna:1,margaery:4,loras:10	6	5
+stannis:1,robert:2	balon:1,theon:7	lancel:1,tommen:2,cersei:3,joffrey:2,tyrion:1,myrcella:1		robb:1	aegon:1,khaleesi:1,aemon:1	olenna:3,margaery:3,loras:2	7	5
+stannis:5,robert:2	theon:8	tywin:1,jaime:1,tyrion:1		rickon:4,robb:1,bran:4		margaery:1	8	5
+shireen:3,renly:1		tommen:2,jaime:1,myrcella:2	oberyn:2		aegon:2		9	5
+stannis:1		myrcella:3	oberyn:4,elia:1			loras:1	1	6
+stannis:1,robert:1,shireen:1,renly:1		tommen:1,cersei:4,tyrion:1		benjen:1,ned:6,catelyn:1,lyanna:1,arya:1,robb:2	aemon:1	olenna:1,loras:4	10	6
+	balon:1,theon:1	tommen:1,jaime:1,cersei:1		benjen:2,ned:3,brandon:1,bran:1,lyanna:2,rickon:1,robb:2	aegon:1	margaery:2	2	6
+stannis:1,robert:1		cersei:2,myrcella:3,tyrion:1		eddard:1,robb:3,catelyn:1,arya:9,rickon:3,bran:1	aemon:1,rhaegar:1	margaery:1	3	6
+stannis:5,shireen:1,renly:2	theon:2	tommen:1,cersei:1,lancel:1		arya:1,rickon:5,bran:2	khaleesi:1	margaery:9,loras:3	4	6
+stannis:4	yara:5,euron:14,theon:2,balon:3	tywin:1,joffrey:1,cersei:1,tyrion:1		ned:4,rickon:1,bran:20,brandon:1	khaleesi:1		5	6
+		tywin:1,tommen:2,jaime:1,joffrey:1		benjen:1,ned:1,robb:1		margaery:7,loras:2	6	6
+stannis:5	euron:1,theon:3	tommen:1,jaime:2,cersei:1		lyanna:2,arya:1,rickon:1,robb:4		loras:2	7	6
+		tywin:1,jaime:5,joffrey:1,lancel:1,cersei:5		arya:1,catelyn:5,robb:1		loras:2	8	6
+stannis:5	yara:1,euron:3	jaime:2,tyrion:1		ned:1,rickon:2			9	6
