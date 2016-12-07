@@ -647,6 +647,7 @@ function initHouseBubblePlot(houseCountData) {
 
     var xAxis = d3.axisTop()
     .scale(xScale);
+    //.tickValues(d3.range (1, 11));
 
     var yAxis = d3.axisLeft()
     .scale(yScale);
@@ -726,13 +727,13 @@ function initHouseBubblePlot(houseCountData) {
     .attr ("r", function (d){
         if (d.count == 0)
             return d.count;
-        return 4 * Math.log (d.count);
+        return 2 * Math.log (d.count);
     })
     .attr ("cx", function (d){
         return xScale(d.time);
     })
     .attr("cy", function (d){
-        return yScale(d.cat) + 20; // TODO: check why this 20 needs to be done.
+        return yScale(d.cat) + 28; // TODO: check why this 20 needs to be done.
     })
     .attr("class", function (d){
         return "category" + "-" + d.cat;
