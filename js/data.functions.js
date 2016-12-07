@@ -42,3 +42,19 @@ function data2DotPlotRepresentation (data, categories){
 
 	return newRepresentation;
 }
+
+function data2DotPlotRepresentationBasic (data, categories){
+	var newRepresentation = [];
+	for (var i = 0; i < data.length; i++) {
+		for (var j=0; j < categories.length; j++){
+			newRepresentation.push (
+			{
+				"cat": categories[j],
+				"time": data[i]["time"],
+				"count": data[i][categories[j]],
+			});
+		}
+	}
+
+	return newRepresentation;
+}
