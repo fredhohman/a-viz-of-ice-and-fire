@@ -275,7 +275,7 @@ $(document).ready(function() {
         chunk_clicked = parseInt(event.target.id[1]);
 
         if (isNaN(chunk_clicked) == true) {
-            
+
         } else {
 
             if (event.target.id[2] != '-') {
@@ -310,15 +310,20 @@ $(document).ready(function() {
 });
 
 $(".episode-block").click(function (event) {
-   episodeNumber = parseInt (event.target.id[1]);
-   if (event.target.id[2] != '-') {
-    episodeNumber = 10;
-}
+    episodeNumber = parseInt (event.target.id[1]);
+    
+    // update scatterplot and accompanying bar plot
+    if (isNaN(episodeNumber) == true) {
+
+    } else if (event.target.id[2] != '-') {
+        episodeNumber = 10;
+        updateAll(seasonNumber, episodeNumber);
+
+    } else {
+       updateAll(seasonNumber, episodeNumber);
+    }
    // console.log (seasonNumber);
    // console.log (episodeNumber);
-
-   // update scatterplot and accompanying bar plot
-   updateAll(seasonNumber, episodeNumber);
 });
 
 
