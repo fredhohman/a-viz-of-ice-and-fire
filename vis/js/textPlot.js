@@ -321,6 +321,9 @@ function updateBubblePlot (data){
         //        .style("top", (d3.event.pageY - 28) + "px");  
         //d3.selectAll(".category-" + d.cat)  
          d3.select(this).attr ("fill", focusColor);
+         d3.select("#perSliceTitle").style("visibility", "visible");
+         d3.select("#categoryWordBarArea").style ("visibility", "visible");
+         d3.select("#perSliceTitle").select("span").text(d.time);
          updateCategoryBarPlot (textTokenData, seasonNumber, episodeNumber, d.time, d.cat);
     })
      
@@ -328,6 +331,8 @@ function updateBubblePlot (data){
             //tooltip.transition()        
             //    .duration(500)      
             //    .style("opacity", 0); 
+            d3.select("#perSliceTitle").style ("visibility", "hidden");
+            d3.select("#categoryWordBarArea").style ("visibility", "hidden");
             d3.select(this).attr ("fill", unfocusColor);  
     });
 
@@ -565,14 +570,26 @@ function initBarPlot (data){
                .append("svg")
                .attr("class", "wordBarArea")
                .attr ("width", wordBarOffsetX + wordlistBarWidth + wordBarOffsetX)
-               .attr ("height", wordBarOffsetY + (wordlistBarHeight + wordlistBarSpace) * maxBars);
+               .attr ("height", wordBarOffsetY + (wordlistBarHeight + wordlistBarSpace) * maxBars)
+               .append ("g")
+               .attr ("id", "wordBarArea");
 
+    d3.select ("#text-metadata")
+            .append ("h4")
+            .attr ("id", "perSliceTitle")
+            .text ("Histogram for words in slice ")
+            .style("visibility", "hidden");
+
+    d3.select ("#perSliceTitle").append ("b").append("span");
     // time chunk level category summary
     categoryWordBarArea = d3.select("#text-metadata")
                .append("svg")
                .attr("class", "categoryWordBarArea")
                .attr ("width", wordBarOffsetX + wordlistBarWidth + wordBarOffsetX)
-               .attr ("height", wordBarOffsetY + (wordlistBarHeight + wordlistBarSpace) * maxBars);
+               .attr ("height", wordBarOffsetY + (wordlistBarHeight + wordlistBarSpace) * maxBars)
+               .append ("g")
+               .attr ("id", "categoryWordBarArea");
+
     // make axis
     wordBarArea.append("g")
                 .attr("class", "axis")
@@ -691,8 +708,8 @@ function updateCategoryBarPlot (data, season, episode, time, cat){
 }
 
 function updateBarPlot (data, season, episode){
-    console.log(season);
-    console.log(episode);
+    // console.log(season);
+    // console.log(episode);
 	var parts, wordCounter;
 	var div = d3.select ("#text-metadata");
 	// div.select("#text-category").text(catInFocus);
