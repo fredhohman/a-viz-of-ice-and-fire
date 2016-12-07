@@ -183,47 +183,52 @@ $(document).ready(function() {
         series_clicked = parseInt(series_clicked);
 	    seasonNumber = series_clicked;
 
-        // update season in left hand side
-        d3.select("#season-title").text(season_strings[seasonNumber-1]);
-        d3.select("#first-aired-in").text(season_metadata[seasonNumber-1]["First aired"]);
-        d3.select("#last-aired-in").text(season_metadata[seasonNumber-1]["Last aired"]);
-        d3.select("#average-viewers").text(season_metadata[seasonNumber-1]["Average viewers (millions)"]);
+        if (isNaN(seasonNumber) == true) {
 
-        var episode_start = 0;
-        var episode_end = 0;
-        episode_start = (series_clicked - 1)*10;
-        episode_end = episode_start + 10;
-
-        color_blocks(episode_start, episode_end);
-
-        // go back to episode 1 on whatever season was clicked
-        eNum = 0+10*series_clicked-10;
-
-        d3.selectAll("#episode-title-number").text(episode_strings[eNum]);
-        d3.select("#episode-title").text(episode_metadata[eNum]["Title"]);
-        d3.select("#directed-by").text(episode_metadata[eNum]["Directed by"]);
-        d3.select("#written-by").text(episode_metadata[eNum]["Written by"]);
-        d3.select("#air-date").text(episode_metadata[eNum]["Original air date"]);
-        d3.select("#runtime").text(episode_metadata[eNum]["Runtime"]);
-        d3.select("#viewers").text(episode_metadata[eNum]["U.S. viewers (millions)"]);
-
-        color_chunk_blocks(episode_strings_lowercase[eNum]);
-        // and update text
-        updateAll(seasonNumber, 1);
-
-        // color header selected
-        d3.select('#season' + String(seasonNumberOld) + ' > h3').classed('color-header-selected', false);
-        d3.select('#season' + String(seasonNumber) + ' > h3').classed('color-header-selected', true);
-
-        if (eNumOld%10==0) {
-            d3.select('#episode' + String(eNumOld%10+10) + ' > h3').classed('color-header-selected', false);
         } else {
-            d3.select('#episode' + String(eNumOld%10) + ' > h3').classed('color-header-selected', false);
-        }
-        d3.select('#episode1' + ' > h3').classed('color-header-selected', true);
-        
-        seasonNumberOld = seasonNumber;
-        eNumOld = 1;
+
+            // update season in left hand side
+            d3.select("#season-title").text(season_strings[seasonNumber-1]);
+            d3.select("#first-aired-in").text(season_metadata[seasonNumber-1]["First aired"]);
+            d3.select("#last-aired-in").text(season_metadata[seasonNumber-1]["Last aired"]);
+            d3.select("#average-viewers").text(season_metadata[seasonNumber-1]["Average viewers (millions)"]);
+
+            var episode_start = 0;
+            var episode_end = 0;
+            episode_start = (series_clicked - 1)*10;
+            episode_end = episode_start + 10;
+
+            color_blocks(episode_start, episode_end);
+
+            // go back to episode 1 on whatever season was clicked
+            eNum = 0+10*series_clicked-10;
+
+            d3.selectAll("#episode-title-number").text(episode_strings[eNum]);
+            d3.select("#episode-title").text(episode_metadata[eNum]["Title"]);
+            d3.select("#directed-by").text(episode_metadata[eNum]["Directed by"]);
+            d3.select("#written-by").text(episode_metadata[eNum]["Written by"]);
+            d3.select("#air-date").text(episode_metadata[eNum]["Original air date"]);
+            d3.select("#runtime").text(episode_metadata[eNum]["Runtime"]);
+            d3.select("#viewers").text(episode_metadata[eNum]["U.S. viewers (millions)"]);
+
+            color_chunk_blocks(episode_strings_lowercase[eNum]);
+            // and update text
+            updateAll(seasonNumber, 1);
+
+            // color header selected
+            d3.select('#season' + String(seasonNumberOld) + ' > h3').classed('color-header-selected', false);
+            d3.select('#season' + String(seasonNumber) + ' > h3').classed('color-header-selected', true);
+
+            if (eNumOld%10==0) {
+                d3.select('#episode' + String(eNumOld%10+10) + ' > h3').classed('color-header-selected', false);
+            } else {
+                d3.select('#episode' + String(eNumOld%10) + ' > h3').classed('color-header-selected', false);
+            }
+            d3.select('#episode1' + ' > h3').classed('color-header-selected', true);
+            
+            seasonNumberOld = seasonNumber;
+            eNumOld = 1;
+    }
 
     });
 
@@ -233,29 +238,35 @@ $(document).ready(function() {
         if (episode_clicked == 1 && parseInt(event.target.id[2]) == 0) {
             episode_clicked = 10; //hacky but works, correctly sets episode_click to 10 instead of 1
         }
-        eNum = episode_clicked+10*(seasonNumber-1);
 
-        d3.selectAll("#episode-title-number").text(episode_strings[eNum-1]);
-        d3.select("#episode-title").text(episode_metadata[eNum-1]["Title"]);
-        d3.select("#directed-by").text(episode_metadata[eNum-1]["Directed by"]);
-        d3.select("#written-by").text(episode_metadata[eNum-1]["Written by"]);
-        d3.select("#air-date").text(episode_metadata[eNum-1]["Original air date"]);
-        d3.select("#runtime").text(episode_metadata[eNum-1]["Runtime"]);
-        d3.select("#viewers").text(episode_metadata[eNum-1]["U.S. viewers (millions)"]);
+        if (isNaN(episode_clicked) == true) {
 
-        color_chunk_blocks(episode_strings_lowercase[eNum-1]);
-
-        // color header selected
-        // console.log(eNum);
-        if (eNum%10==0) {
-            d3.select('#episode' + String(eNumOld%10) + ' > h3').classed('color-header-selected', false);
-            d3.select('#episode' + String(10) + ' > h3').classed('color-header-selected', true);
         } else {
-            d3.select('#episode' + String(10) + ' > h3').classed('color-header-selected', false);
-            d3.select('#episode' + String(eNumOld%10) + ' > h3').classed('color-header-selected', false);
-            d3.select('#episode' + String(eNum%10) + ' > h3').classed('color-header-selected', true);
-        }
-        eNumOld = eNum;
+
+            eNum = episode_clicked+10*(seasonNumber-1);
+
+            d3.selectAll("#episode-title-number").text(episode_strings[eNum-1]);
+            d3.select("#episode-title").text(episode_metadata[eNum-1]["Title"]);
+            d3.select("#directed-by").text(episode_metadata[eNum-1]["Directed by"]);
+            d3.select("#written-by").text(episode_metadata[eNum-1]["Written by"]);
+            d3.select("#air-date").text(episode_metadata[eNum-1]["Original air date"]);
+            d3.select("#runtime").text(episode_metadata[eNum-1]["Runtime"]);
+            d3.select("#viewers").text(episode_metadata[eNum-1]["U.S. viewers (millions)"]);
+
+            color_chunk_blocks(episode_strings_lowercase[eNum-1]);
+
+            // color header selected
+            // console.log(eNum);
+            if (eNum%10==0) {
+                d3.select('#episode' + String(eNumOld%10) + ' > h3').classed('color-header-selected', false);
+                d3.select('#episode' + String(10) + ' > h3').classed('color-header-selected', true);
+            } else {
+                d3.select('#episode' + String(10) + ' > h3').classed('color-header-selected', false);
+                d3.select('#episode' + String(eNumOld%10) + ' > h3').classed('color-header-selected', false);
+                d3.select('#episode' + String(eNum%10) + ' > h3').classed('color-header-selected', true);
+            }
+            eNumOld = eNum;
+    }
 
     });
 

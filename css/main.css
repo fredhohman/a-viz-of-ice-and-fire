@@ -40,8 +40,11 @@ body {
 .season-block:hover {
 	/*color: #FFFFFF;*/
 	font-weight: 800;
-	cursor: pointer;
+	/*cursor: pointer;*/
 	/*opacity: 0.6;*/
+}
+.color:hover {
+	cursor: pointer;
 }
 .season-block:hover > .color-header {
 	font-weight: 800;
@@ -62,7 +65,7 @@ body {
 	/*color: #FFFFFF;*/
 	/*border-left: 3px white solid;*/
 	/*border-right: 3px white solid;*/
-	cursor: pointer;
+	/*cursor: pointer;*/
 	/*opacity: 0.6;*/
 }
 .episode-block:hover > .color-header {
@@ -79,6 +82,9 @@ body {
 	width: 1.666%;
 	/*float: left;*/
 	display: inline-block;
+	/*cursor: pointer;*/
+}
+.ccolor {
 	cursor: pointer;
 }
 .chunk-block:hover {
