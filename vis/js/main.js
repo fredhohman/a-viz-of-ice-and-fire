@@ -245,7 +245,7 @@ $(document).ready(function() {
         color_chunk_blocks(episode_strings_lowercase[eNum-1]);
 
         // color header selected
-        console.log(eNum);
+        // console.log(eNum);
         if (eNum%10==0) {
             d3.select('#episode' + String(eNumOld%10) + ' > h3').classed('color-header-selected', false);
             d3.select('#episode' + String(10) + ' > h3').classed('color-header-selected', true);
