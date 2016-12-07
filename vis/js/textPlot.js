@@ -708,8 +708,8 @@ function updateCategoryBarPlot (data, season, episode, time, cat){
 }
 
 function updateBarPlot (data, season, episode){
-    console.log(season);
-    console.log(episode);
+    // console.log(season);
+    // console.log(episode);
 	var parts, wordCounter;
 	var div = d3.select ("#text-metadata");
 	// div.select("#text-category").text(catInFocus);
