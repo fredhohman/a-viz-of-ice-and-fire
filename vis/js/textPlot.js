@@ -810,7 +810,7 @@ function updateCategoryBarPlot (data, season, episode, time){
     // slice DTM data!
     var slicedData = sliceData(data, season, episode)[0];
 
-    // console.log(slicedData);
+    console.log(slicedData);
     // now sort!
     var allWords = d3.keys(slicedData).filter(function(d) {
         return d != "season" && d != "episode";
