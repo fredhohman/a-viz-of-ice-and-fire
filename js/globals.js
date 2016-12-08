@@ -33,6 +33,6 @@ var categories = ["swear", "sexual", "religion", "positive", "negative", "humans
 
 /*Define all the houses*/
 //var houses = ["baratheon", "greyjoy", "lannister", "martell", "stark", "targaryen", "tyrell"];
-var houses = ["tyrell", "targaryen", "stark", "martell", "lannister", "greyjoy", "baratheon"]
+var houses = ["Tyrell", "Targaryen", "Stark", "Martell", "Lannister", "Greyjoy", "Baratheon"]
 
 var tooltip;

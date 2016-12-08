@@ -507,8 +507,8 @@ function initHousePlots(houseCountData) {
     houseBarColor = "#CCCCCC";
     houseBarWidth = 150;
     houseBarHeight = 10;
-    houseBarOffsetY = 15;
-    houseBarSpace = 5;
+    houseBarOffsetY = 30;
+    houseBarSpace = 10;
 
     // episode-level word summary
 
@@ -644,8 +644,8 @@ function updateHouseBarPlot(data, house, time) {
 
     // replace house name, episode number
     // console.log(house);
-    var capHouse = house.charAt(0).toUpperCase() + house.slice(1);
-    d3.select('span#house-name').text(capHouse);
+    // var capHouse = house.charAt(0).toUpperCase() + house.slice(1);
+    d3.select('span#house-name').text(house);
     var seasonNumber = parseInt((time - 1) / 10) + 1;
     var episodeNumber = (time - 1) % 10 + 1;
     var seasonEpisode = "S" + seasonNumber + "E" + episodeNumber;
