@@ -73,7 +73,8 @@ if __name__ == '__main__':
             for h in houses:
                 counts = get_category_counts(t, house_wordlists[h])
                 # upper-case the names!
-                counts = {n.capitalize() : c for n, c in counts.items()}
+                counts = {' '.join(map(str.capitalize, n.split(' '))) : c 
+                          for n, c in counts.items()}
                 house_token_counts[h].update(counts)
                 if(count_option == 'total'):
                     total_counts = sum(counts.values())
