@@ -155,17 +155,16 @@ footer {
 }
 #intro-text p, 
 #cs1 p, 
-#cs2 p, 
-#outro p,
-#cs3 p{
+#cs2 p,
+#cs3 p,
+#outro p{
 	margin-left: 100px;
 	margin-right: 100px;
-}, 
+}
  
 #cs1 h3, 
 #cs2 h3, 
-#cs3 h3,
-#outro p{
+#cs3 h3 {
 	margin-left: 100px;
 	margin-right: 100px;
 }
