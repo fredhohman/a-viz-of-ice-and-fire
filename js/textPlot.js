@@ -507,7 +507,7 @@ function initHousePlots(houseCountData) {
     houseBarColor = "#CCCCCC";
     houseBarWidth = 150;
     houseBarHeight = 10;
-    houseBarOffsetY = 30;
+    houseBarOffsetY = 20;
     houseBarSpace = 10;
 
     // episode-level word summary
@@ -516,7 +516,7 @@ function initHousePlots(houseCountData) {
                .append("svg")
                .attr("class", "houseBarArea")
                .attr ("width", houseBarOffsetX + houseBarWidth + houseBarOffsetX)
-               .attr ("height", (houseBarHeight + houseBarSpace) * maxBars + houseBarOffsetY);
+               .attr ("height", (houseBarHeight + houseBarSpace) * maxBars + houseBarOffsetY * 2.5);
     // houseBarArea.append ("g")
     //             .attr ("id", "houseBarPlot");
     console.log(houseBarArea);
@@ -613,7 +613,7 @@ function updateHouseBarPlot(data, house, time) {
     houseBars.enter()
         .append("rect")
         .attr("x", houseBarOffsetX)
-        .attr("y", function(d, i) { return houseBarScaleY(i) - houseBarOffsetY / 2;})
+        .attr("y", function(d, i) { return houseBarScaleY(i) -5 ;})
         .style("fill", houseBarColor)
         .attr("height", houseBarHeight)
         .attr("width", function(d) { return houseBarScaleX(d.freq);} );
@@ -627,7 +627,7 @@ function updateHouseBarPlot(data, house, time) {
         .append("text")
         .attr("class", "wordFreq")
         .attr("x", function(d) {return houseBarOffsetX + 5 + houseBarScaleX(d.freq); })
-        .attr("y", function(d, i) { return houseBarScaleY(i) + houseBarHeight / 4;})
+        .attr("y", function(d, i) { return houseBarScaleY(i) + 6;})
         .text(function(d) { return d.freq + ""; })
         .style("fill", "#000000");
         // .style("font-size", "12px");
