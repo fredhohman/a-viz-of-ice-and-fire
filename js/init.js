@@ -67,7 +67,19 @@ function init (){
             }
             return d;
         });
-        initHouseBubblePlot(houseData);
+        initHousePlots(houseData);
+    })
+
+    d3.tsv(houseTokenDataFile, function(error, data) {
+        houseTokenData = data;
+        houseTokenData.forEach(function(d) {
+            d["time"] = parseInt(d["time"]);
+            for (var i = 0; i < houses.length; i++){
+                d[houses[i]] = string2Dict (d[houses[i]]);
+            }
+            return d;
+        });
+        // updateHouseBarPlot(houseTokenData, defaultHouse, 1)
     })
 }
 
