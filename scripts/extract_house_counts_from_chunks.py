@@ -29,7 +29,7 @@ if __name__ == '__main__':
     episode_data = {e : pd.read_csv(os.path.join(subtitle_dir, e), sep='\t') 
                     for e in sorted_episodes}
     house_dir = args.house_dir
-    houses = sorted(os.listdir(house_dir))
+    houses = list(map(str.capitalize, sorted(os.listdir(house_dir))))
     house_wordlists = {h : [re.compile(l.strip())
                             for l in open(os.path.join(house_dir, h), 'r')] 
                        for h in houses}
@@ -72,6 +72,8 @@ if __name__ == '__main__':
             # tokens = TKNZR.tokenize(t)
             for h in houses:
                 counts = get_category_counts(t, house_wordlists[h])
+                # upper-case the names!
+                counts = {n.capitalize() : c for n, c in counts.items()}
                 house_token_counts[h].update(counts)
                 if(count_option == 'total'):
                     total_counts = sum(counts.values())
