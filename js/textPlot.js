@@ -311,7 +311,7 @@ function initBarPlot (data){
 }
 
 function initHousePlots(houseCountData) {
-    var margin = {top: 30, right: 160, bottom: 100, left: 150};
+    var margin = {top: 30, right: 160, bottom: 30, left: 90};
     var width = 900 - margin.left - margin.right;
     var height = 500 - margin.top - margin.bottom;
 
@@ -498,6 +498,7 @@ function initHousePlots(houseCountData) {
     div.select("#text-metadata")
             .select ("#text-category")
             .text(houseInFocus);
+
     // now build bar chart
     // offset x should be at least as wide
     // as the longest word, in order to fit it
@@ -516,6 +517,7 @@ function initHousePlots(houseCountData) {
                .append("svg")
                .attr("class", "houseBarArea")
                .attr ("width", houseBarOffsetX + houseBarWidth + houseBarOffsetX)
+               .attr("transform", "translate(" + margin.left + ", 0)")
                .attr ("height", (houseBarHeight + houseBarSpace) * maxBars + houseBarOffsetY * 2.5);
     // houseBarArea.append ("g")
     //             .attr ("id", "houseBarPlot");
@@ -552,7 +554,8 @@ function initHousePlots(houseCountData) {
     // make axis
     houseBarArea.append("g")
                 .attr("class", "axis")
-                .attr("transform", "translate(" + houseBarOffsetX + ",0)");
+                .attr("transform", "translate(" + houseBarOffsetX + ",0)")
+                .style("stroke-width", 0);
 }
 
 function updateHouseBarPlot(data, house, time) {
