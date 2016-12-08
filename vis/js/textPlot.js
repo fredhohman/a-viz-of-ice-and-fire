@@ -709,7 +709,8 @@ function updateCategoryBarPlot (data, season, episode, time, cat){
                         .tickValues(d3.range(wordCounter.length));
     
     var wordBar_xis = categoryWordBarArea.selectAll("g.axis")
-                        .call(wordBarAxis);
+                        .call(wordBarAxis)
+                        .style("stroke-width", "0");
 
 
     var wordBars = categoryWordBarArea.selectAll("rect")
