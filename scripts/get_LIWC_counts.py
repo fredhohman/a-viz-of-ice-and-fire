@@ -4,7 +4,9 @@ for a specified category.
 """
 import os, re
 from collections import Counter
+from nltk.tokenize import WordPunctTokenizer
 
+TKNZR = WordPunctTokenizer()
 def get_category_counts(text_string, category_patterns):
     """
     Compute category counts (from words) in raw
@@ -22,10 +24,11 @@ def get_category_counts(text_string, category_patterns):
     """
     category_counts = []
     text_string = text_string.lower()
-    for pattern in category_patterns:
-        find = pattern.findall(text_string)
-        if(len(find) > 0):
-            category_counts.append(find[0])
+    for t in TKNZR.tokenize(text_string):
+        for pattern in category_patterns:
+            find = pattern.match(t.lower())
+            if(find is not None):
+                category_counts.append(find.group())
     category_counts = dict(Counter(category_counts))
     return category_counts
 
