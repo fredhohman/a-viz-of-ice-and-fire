@@ -156,10 +156,11 @@ footer {
 #intro-text p, 
 #cs1 p, 
 #cs2 p, 
+#outro p,
 #cs3 p{
 	margin-left: 100px;
 	margin-right: 100px;
-}
+}, 
  
 #cs1 h3, 
 #cs2 h3, 
