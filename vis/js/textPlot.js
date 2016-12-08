@@ -204,9 +204,12 @@ function updateBubblePlot (data){
             d3.select("#categoryWordBarArea").style ("visibility", "hidden");
             d3.select(this).attr ("fill", unfocusColor).attr("stroke", unfocusBorderColor); 
             d3.select(this).style("z-index", "1");  // Does not work; should take a look.
-    });
+    })
+    ;
 
     circles
+    .transition()
+    .duration(400)
     .attr ("r", function (d){
         if (d.count == 0)
             return d.count;
@@ -834,7 +837,11 @@ function updateBarPlot (data, season, episode){
         .attr("height", wordlistBarHeight)
         .attr("width", function(d) { return wordlistBarScaleX(d.freq);} );
 
-    wordBars.attr("width", function(d) { return wordlistBarScaleX(d.freq);} );
+    wordBars
+    .transition()
+    .duration(400)
+    .attr("width", function(d) { 
+        return wordlistBarScaleX(d.freq);} );
 
     // add text for frequencies!
     var wordBarText = wordBarArea.selectAll("text.wordFreq")
@@ -849,6 +856,8 @@ function updateBarPlot (data, season, episode){
         // .style("font-size", "12px");
 
     wordBarText
+    .transition()
+    .duration(400)
     .attr("x", function(d) {return wordBarOffsetX + 5 + wordlistBarScaleX(d.freq); })
     .text(function(d) {
         return d.freq + "";
