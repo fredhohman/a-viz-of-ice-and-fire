@@ -142,7 +142,7 @@ function initBubblePlot (data){
     svg.append ("text")
     .attr ("transform", "translate (" + (width/2) + ", -15)")
     .style("text-anchor", "middle")
-    .text("Slices (typically one minute each)");
+    .text("Time slices (~one minute each)");
 }
 
 function updateBubblePlot (data){
@@ -289,7 +289,7 @@ function initBarPlot (data){
     //             .style("visibility", "hidden");
 
 
-    d3.select ("#perSliceTitle").html('Words in slice <b><span class="time"></span></b> for category <b><span class="category"></span></b>');
+    d3.select ("#perSliceTitle").html('Words in slice <b><span class="time"></span></b> for <b><span class="category"></span></b> category');
 
     categoryWordBarArea = d3.select("#text-metadata")
                .append("svg")

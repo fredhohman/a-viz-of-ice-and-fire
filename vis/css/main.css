@@ -163,7 +163,8 @@ footer {
  
 #cs1 h3, 
 #cs2 h3, 
-#cs3 h3{
+#cs3 h3,
+#outro p{
 	margin-left: 100px;
 	margin-right: 100px;
 }
@@ -231,7 +232,9 @@ figcaption {
 	border: 1px #CCCCCC solid; 
 	padding: 20px;
 }
-
+#text {
+	padding-top: 10px;
+}
 /*bouncing arrow*/
 
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
