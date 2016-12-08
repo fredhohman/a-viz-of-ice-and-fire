@@ -181,14 +181,13 @@ function updateBubblePlot (data){
         //        .style("left", (d3.event.pageX) + "px")     
         //        .style("top", (d3.event.pageY - 28) + "px");  
         //d3.selectAll(".category-" + d.cat)  
-        console.log(d);
+        
          d3.selectAll("circle").attr("z-index", "1");
          d3.select(this).attr ("fill", focusColor).style("z-index", "2")
                         .attr("stroke", focusBorderColor);
          d3.select("#perSliceTitle").style("visibility", "visible");
          d3.select("#categoryWordBarArea").style ("visibility", "visible");
          d3.select("#text-metadata").select("span.category").text(d.cat);
-         console.log(d3.select("#perSliceTitle").select("span.category"))
          d3.select("#perSliceTitle").select("span.time").text(d.time);
          updateCategoryBarPlot (textTokenData, seasonNumber, episodeNumber, d.time, d.cat);
     })
@@ -278,7 +277,6 @@ function initBarPlot (data){
     var perSliceTitle = d3.select ("#text-metadata")
                         .append ("h4")
                         .attr ("id", "perSliceTitle")
-                        .text ("Words in slice ")
                         .style("visibility", "hidden");
 
     // var tmp = perSliceTitle.append ("b").append("span").attr("class", "category");
@@ -287,8 +285,9 @@ function initBarPlot (data){
     // perSliceTitle.text ("Words in slice ")
     //             .style("visibility", "hidden");
 
-    d3.select('#perSliceTitle').append ("b").append("span").attr("class", "time");
-    // time chunk level category summary
+
+    d3.select ("#perSliceTitle").html('Words in slice <b><span class="time"></span></b> for category <b><span class="category"></span></b>');
+
     categoryWordBarArea = d3.select("#text-metadata")
                .append("svg")
                .attr("class", "categoryWordBarArea")
@@ -800,16 +799,6 @@ function updateBarPlot (data, season, episode){
                             .domain([0, wordCounter.length])
                             .range([wordBarOffsetY, 
                                     wordBarOffsetY + (wordlistBarHeight + wordlistBarSpace) * wordCounter.length]);
-    // now attempt to add some bars to measure frequency
-    // var wordlistBoundingRect = d3.select("#text-wordlist")
-    //                             ._groups[0][0]
-    //                             .getBoundingClientRect();
-    // console.log(wordlistBoundingRect);
-    
-    // var wordlistX = wordlistBoundingRect["left"],
-    //     wordlistY = 0;
-    //     wordlistY = wordlistBoundingRect["bottom"];
-    // make some bars!!
     
     // first build axis
     var wordBarAxis = d3.axisLeft()
@@ -821,7 +810,7 @@ function updateBarPlot (data, season, episode){
     var wordBar_xis = wordBarArea.selectAll("g.axis")
                         .call(wordBarAxis)
                         .style("stroke-width", "0");
-                        
+
     var wordBars = wordBarArea.selectAll("rect")
                     .data(wordCounter);
 
@@ -859,54 +848,4 @@ function updateBarPlot (data, season, episode){
     wordBars.exit().remove();
     wordBarText.exit().remove();
 }
-
-/*function updateFocus(newFocusCat) {
-    catInFocus = newFocusCat;
-    // update legend rectangles
-    legendRects
-    .transition()
-    .attr("fill", function(d) {
-        if(categoryVisibilities[d]) {
-            if(d == catInFocus) {
-                return focusColor;
-            }
-            else {
-                return unfocusColor;
-            }
-        }
-        else {
-            return invisibleColor;
-        }
-    });
-    // update circles
-    var visibleCategories = categoryNames.filter(function(d) {return categoryVisibilities[d];});
-    // TODO: make circles unfocus when focus
-    // shifts to invisible category!
-    visibleCategories.forEach(function(d) {
-        if(d == catInFocus){
-            console.log(d);
-            circles[d]
-            .transition()
-            .attr("fill", focusColor);
-        }
-        else {
-            console.log(d);
-            circles[d]
-            .transition()
-            .attr("fill", unfocusColor);    
-        }
-    });
-
-    // circles["positive"]
-    // .transition()
-    // .attr("fill", unfocusColor);
-    // if(categoryVisibilities[catInFocus]){
-    //     console.log(catInFocus);
-    //     circles[catInFocus]
-    //     .transition()
-    //     .attr("fill", focusColor);
-    // }
-    // update bar chart
-    updateBarPlot(textMetaData, seasonNumber, episodeNumber);
-}*/
 
