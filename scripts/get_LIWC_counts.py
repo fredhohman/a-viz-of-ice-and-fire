@@ -24,13 +24,16 @@ def get_category_counts(text_string, category_patterns):
     """
     category_counts = []
     text_string = text_string.lower()
-    for t in TKNZR.tokenize(text_string):
-        for pattern in category_patterns:
-            find = pattern.match(t.lower())
-            if(find is not None):
-                category_counts.append(find.group())
+    #for t in TKNZR.tokenize(text_string):
+    for pattern in category_patterns:
+        p = r'\b' + pattern + r'\b';
+        matches = re.findall (p, text_string)
+        #find = pattern.match(text_string)
+        if len (matches) > 0:
+            category_counts.extend(matches)
     category_counts = dict(Counter(category_counts))
     return category_counts
+
 
 def get_LIWC_counts(tokenized_text, 
                     category='positive_affect',
