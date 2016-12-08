@@ -506,13 +506,13 @@ function initHouseBubblePlot(houseCountData) {
 
     // episode-level word summary
 
-    var wordBarArea = svgHouses.select("#text-metadata")
+    var houseWordBarArea = svgHouses.select("#house-bar-plot")
                .append("svg")
                .attr("class", "wordBarArea")
                .attr ("width", wordBarOffsetX + wordlistBarWidth + wordBarOffsetX)
                .attr ("height", wordBarOffsetY + (wordlistBarHeight + wordlistBarSpace) * maxBars)
                .append ("g")
-               .attr ("id", "wordBarArea");
+               .attr ("id", "houseBarPlot");
 
     // TODO: how to add category name??
     // d3.select("#text-metadata")
@@ -532,15 +532,15 @@ function initHouseBubblePlot(houseCountData) {
     // perSliceTitle.text ("Words in slice ")
     //             .style("visibility", "hidden");
 
-    d3.select('#perSliceTitle').append ("b").append("span").attr("class", "time");
+    // svgHouses.select('#perEpisodeTitle').append ("b").append("span").attr("class", "time");
     // time chunk level category summary
-    var houseWordBarArea = div.select("#text-metadata")
-               .append("svg")
-               .attr("class", "categoryWordBarArea")
-               .attr ("width", wordBarOffsetX + wordlistBarWidth + wordBarOffsetX)
-               .attr ("height", wordBarOffsetY + (wordlistBarHeight + wordlistBarSpace) * maxBars)
-               .append ("g")
-               .attr ("id", "categoryWordBarArea");
+    // var houseWordBarArea = div.select("#text-metadata")
+    //            .append("svg")
+    //            .attr("class", "categoryWordBarArea")
+    //            .attr ("width", wordBarOffsetX + wordlistBarWidth + wordBarOffsetX)
+    //            .attr ("height", wordBarOffsetY + (wordlistBarHeight + wordlistBarSpace) * maxBars)
+    //            .append ("g")
+    //            .attr ("id", "categoryWordBarArea");
 
     // make axis
     houseWordBarArea.append("g")
@@ -553,8 +553,95 @@ function initHouseBubblePlot(houseCountData) {
     .attr("transform", "translate(" + wordBarOffsetX + ",0)");
 }
 
-function updateHouseBarChart(data, house, time) {
-    // TOOD:
+function updateHouseBarPlot(data, house, time) {
+    // TODO:
+    var timeSlice = data.filter(function(elem) {  
+        return elem.time == time;
+    })[0][house];
+    
+    var sortable = [];
+    //console.log (timeSlice);
+
+    for (var i = 0; i < timeSlice.length; i++)
+        sortable.push([timeSlice[i].word, timeSlice[i].freq]);
+     //console.log(sortable);
+    // apparently we're getting some functions instead of strings
+    sortable = sortable.filter(function(d) {
+        return typeof(d[0]) == "string" && typeof(d[1]) == "number";
+    });
+
+    sortable = sortable.sort(function(a, b) {
+        return b[1] - a[1];
+    });
+    //console.log(sortable);
+
+    var wordCounter = []; 
+    for(var i = 0; i < Math.min(sortable.length, maxBars); i++) {
+        // var word = allWords[i];
+        wordCounter[wordCounter.length] = {
+            word: sortable[i][0],
+            freq: sortable[i][1],
+        };
+    }
+
+    //console.log (wordCounter);
+
+    var wordlistBarScaleX = d3.scaleLinear()
+                                .domain([0, d3.max(wordCounter, function(d) { return d.freq; })])
+                                .range([0, wordBarMaxWidth]);
+
+    //var offSetY = 
+    var wordlistBarScaleY = d3.scaleLinear()
+                            .domain([0, wordCounter.length])
+                            .range([wordBarOffsetY, 
+                                    wordBarOffsetY + (wordlistBarHeight + wordlistBarSpace) * wordCounter.length]);
+    
+    // first build axis
+    var wordBarAxis = d3.axisLeft()
+                        .scale(wordlistBarScaleY)
+                        .tickSize(5)
+                        .tickFormat(function(d, i) { return wordCounter[i].word; })
+                        .tickValues(d3.range(wordCounter.length));
+    
+    var houseWordBarArea = svgHouses.select("#houseBarPlot");
+
+    var wordBar_xis = houseWordBarArea.selectAll("g.axis")
+                        .call(wordBarAxis);
+
+    var wordBars = houseWordBarArea.selectAll("rect")
+                    .data(wordCounter);
+
+    wordBars.enter()
+        .append("rect")
+        .attr("x", wordBarOffsetX)
+        .attr("y", function(d, i) { return wordlistBarScaleY(i) - wordBarOffsetY / 2;})
+        .style("fill", wordlistBarColor)
+        .attr("height", wordlistBarHeight)
+        .attr("width", function(d) { return wordlistBarScaleX(d.freq);} );
+
+    wordBars.attr("width", function(d) { return wordlistBarScaleX(d.freq);} );
+
+    // add text for frequencies!
+    var wordBarText = houseWordBarArea.selectAll("text.wordFreq")
+                        .data(wordCounter);
+    wordBarText.enter()
+        .append("text")
+        .attr("class", "wordFreq")
+        .attr("x", function(d) {return wordBarOffsetX + 5 + wordlistBarScaleX(d.freq); })
+        .attr("y", function(d, i) { return wordlistBarScaleY(i) + wordlistBarHeight / 4;})
+        .text(function(d) { return d.freq + ""; })
+        .style("fill", "#000000");
+        // .style("font-size", "12px");
+
+    wordBarText
+    .attr("x", function(d) {return wordBarOffsetX + 5 + wordlistBarScaleX(d.freq); })
+    .text(function(d) {
+        return d.freq + "";
+    });
+
+    wordBar_xis.exit().remove();
+    wordBars.exit().remove();
+    wordBarText.exit().remove();
 }
 
 function initAll(textDTM, textTokenData) {
