@@ -67,7 +67,8 @@ function initBubblePlot (data){
 
     // Define the initial scales and axes
     xScale = d3.scaleLinear()
-    .range([0, width]);
+    .range([0, width])
+    .nice();
 
     yScale = d3.scaleBand()
     .range([height, 0]);
@@ -819,7 +820,8 @@ function updateBarPlot (data, season, episode){
     
     var wordBar_xis = wordBarArea.selectAll("g.axis")
                         .call(wordBarAxis)
-                        ;
+                        .style("stroke-width", "0");
+                        
     var wordBars = wordBarArea.selectAll("rect")
                     .data(wordCounter);
 
