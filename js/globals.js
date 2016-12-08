@@ -30,6 +30,7 @@ Array.prototype.remove = function(from, to) {
 
 /* Define all the categories */
 var categories = ["anger", "death", "family", "home", "humans", "negative", "positive", "religion", "sexual", "swear"];
+//var categories = ["swear", "sexual", "religion", "positive", "negative", "humans", "home", "family", "death", "anger"];
 
 /*Define all the houses*/
 var houses = ["baratheon", "greyjoy", "lannister", "martell", "stark", "targaryen", "tyrell"]
