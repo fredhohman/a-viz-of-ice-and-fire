@@ -12,6 +12,9 @@ var wordBarArea, categoryWordBarArea, wordBarOffsetX,
     wordBarOffsetY, 
     maxBars,
     wordBarMaxWidth;
+var houseBarOffsetX, houseBarColor, 
+houseBarWidth, houseBarHeight,
+houseBarOffsetY, houseBarSpace;
 
 var textDataFile = "data/LIWC_chunk_counts_all_seasons.tsv",
 textMetaDataFile = "data/top_5_category_words_per_episode.tsv",
@@ -307,7 +310,7 @@ function initBarPlot (data){
     .attr("transform", "translate(" + wordBarOffsetX + ",0)");
 }
 
-function initHouseBubblePlot(houseCountData) {
+function initHousePlots(houseCountData) {
     var margin = {top: 30, right: 160, bottom: 100, left: 150};
     var width = 900 - margin.left - margin.right;
     var height = 500 - margin.top - margin.bottom;
@@ -393,9 +396,9 @@ function initHouseBubblePlot(houseCountData) {
     .text("Episodes");
 
     // 
-    console.log(houseCountData);
+    // console.log(houseCountData);
     var houseDataDots = data2DotPlotRepresentationBasic(houseCountData, houses);
-    console.log(houseDataDots.length);
+    // console.log(houseDataDots.length);
     // houseDataDots = houseDataDots.filter(function(d) { 
     //     return typeof(d.time) == "number";
     // });
@@ -437,7 +440,7 @@ function initHouseBubblePlot(houseCountData) {
          // d3.select("#text-metadata").select("span.category").text(d.cat);
          // console.log(d3.select("#perSliceTitle").select("span.category"))
          // d3.select("#perSliceTitle").select("span.time").text(d.time);
-         // updateCategoryBarPlot (textTokenData, seasonNumber, episodeNumber, d.time, d.cat);
+         updateHouseBarPlot(houseTokenData, d.cat, d.time);
     })
      
     .on("mouseout", function(d) {       
@@ -480,18 +483,16 @@ function initHouseBubblePlot(houseCountData) {
     .on ("mouseout", function (z){
         d3.selectAll("circle")
         .attr("fill", unfocusColor)
-        .attr("stroke", unfocusBorderColor);        
+        .attr("stroke", unfocusBorderColor);
+        // updateHouseBarPlot(houseToken, house, time); 
     });
 
     // circles.exit().remove();
-    var wordlistBarWidth = 100;
-    var wordlistBarHeight = 15;
     var wordlistBarScaleX = d3.scaleLinear()
                             .range([0, 10])
                             .domain([0, 2.5]);
-    var wordlistBarSpace = 5;
-    var wordBarMaxWidth = 150;
-    wordlistBarColor = "#CCCCCC";
+    
+    
     houseInFocus = defaultHouse;
     
     div.select("#text-metadata")
@@ -500,19 +501,25 @@ function initHouseBubblePlot(houseCountData) {
     // now build bar chart
     // offset x should be at least as wide
     // as the longest word, in order to fit it
-    var wordBarOffsetX = 0;
-    var wordBarOffsetY = 15;
+
     var maxBars = 5;
+    houseBarOffsetX = 100;
+    houseBarColor = "#CCCCCC";
+    houseBarWidth = 150;
+    houseBarHeight = 10;
+    houseBarOffsetY = 15;
+    houseBarSpace = 5;
 
     // episode-level word summary
 
-    var houseWordBarArea = svgHouses.select("#house-bar-plot")
+    var houseBarArea = d3.select("#house-bar-plot")
                .append("svg")
-               .attr("class", "wordBarArea")
-               .attr ("width", wordBarOffsetX + wordlistBarWidth + wordBarOffsetX)
-               .attr ("height", wordBarOffsetY + (wordlistBarHeight + wordlistBarSpace) * maxBars)
-               .append ("g")
-               .attr ("id", "houseBarPlot");
+               .attr("class", "houseBarArea")
+               .attr ("width", houseBarOffsetX + houseBarWidth + houseBarOffsetX)
+               .attr ("height", (houseBarHeight + houseBarSpace) * maxBars + houseBarOffsetY);
+    // houseBarArea.append ("g")
+    //             .attr ("id", "houseBarPlot");
+    console.log(houseBarArea);
 
     // TODO: how to add category name??
     // d3.select("#text-metadata")
@@ -534,7 +541,7 @@ function initHouseBubblePlot(houseCountData) {
 
     // svgHouses.select('#perEpisodeTitle').append ("b").append("span").attr("class", "time");
     // time chunk level category summary
-    // var houseWordBarArea = div.select("#text-metadata")
+    // var houseBarArea = div.select("#text-metadata")
     //            .append("svg")
     //            .attr("class", "categoryWordBarArea")
     //            .attr ("width", wordBarOffsetX + wordlistBarWidth + wordBarOffsetX)
@@ -543,14 +550,9 @@ function initHouseBubblePlot(houseCountData) {
     //            .attr ("id", "categoryWordBarArea");
 
     // make axis
-    houseWordBarArea.append("g")
+    houseBarArea.append("g")
                 .attr("class", "axis")
-                .attr("transform", "translate(" + wordBarOffsetX + ",0)");
-
-    // make axis
-    houseWordBarArea.append ("g")
-    .attr("class", "axis")
-    .attr("transform", "translate(" + wordBarOffsetX + ",0)");
+                .attr("transform", "translate(" + houseBarOffsetX + ",0)");
 }
 
 function updateHouseBarPlot(data, house, time) {
@@ -584,64 +586,70 @@ function updateHouseBarPlot(data, house, time) {
         };
     }
 
-    //console.log (wordCounter);
-
-    var wordlistBarScaleX = d3.scaleLinear()
+    var houseBarScaleX = d3.scaleLinear()
                                 .domain([0, d3.max(wordCounter, function(d) { return d.freq; })])
-                                .range([0, wordBarMaxWidth]);
+                                .range([0, houseBarWidth]);
 
-    //var offSetY = 
-    var wordlistBarScaleY = d3.scaleLinear()
+    var houseBarScaleY = d3.scaleLinear()
                             .domain([0, wordCounter.length])
-                            .range([wordBarOffsetY, 
-                                    wordBarOffsetY + (wordlistBarHeight + wordlistBarSpace) * wordCounter.length]);
+                            .range([houseBarOffsetY, 
+                                    houseBarOffsetY + (houseBarHeight + houseBarSpace) * wordCounter.length]);
     
     // first build axis
-    var wordBarAxis = d3.axisLeft()
-                        .scale(wordlistBarScaleY)
+    var houseBarAxis = d3.axisLeft()
+                        .scale(houseBarScaleY)
                         .tickSize(5)
                         .tickFormat(function(d, i) { return wordCounter[i].word; })
                         .tickValues(d3.range(wordCounter.length));
     
-    var houseWordBarArea = svgHouses.select("#houseBarPlot");
+    var houseBarArea = d3.select("#house-bar-plot").select("svg.houseBarArea");
 
-    var wordBar_xis = houseWordBarArea.selectAll("g.axis")
-                        .call(wordBarAxis);
+    var houseBar_xis = houseBarArea.selectAll("g.axis")
+                        .call(houseBarAxis);
 
-    var wordBars = houseWordBarArea.selectAll("rect")
+    var houseBars = houseBarArea.selectAll("rect")
                     .data(wordCounter);
 
-    wordBars.enter()
+    houseBars.enter()
         .append("rect")
-        .attr("x", wordBarOffsetX)
-        .attr("y", function(d, i) { return wordlistBarScaleY(i) - wordBarOffsetY / 2;})
-        .style("fill", wordlistBarColor)
-        .attr("height", wordlistBarHeight)
-        .attr("width", function(d) { return wordlistBarScaleX(d.freq);} );
+        .attr("x", houseBarOffsetX)
+        .attr("y", function(d, i) { return houseBarScaleY(i) - houseBarOffsetY / 2;})
+        .style("fill", houseBarColor)
+        .attr("height", houseBarHeight)
+        .attr("width", function(d) { return houseBarScaleX(d.freq);} );
 
-    wordBars.attr("width", function(d) { return wordlistBarScaleX(d.freq);} );
+    houseBars.attr("width", function(d) { return houseBarScaleX(d.freq);} );
 
     // add text for frequencies!
-    var wordBarText = houseWordBarArea.selectAll("text.wordFreq")
+    var houseBarText = houseBarArea.selectAll("text.wordFreq")
                         .data(wordCounter);
-    wordBarText.enter()
+    houseBarText.enter()
         .append("text")
         .attr("class", "wordFreq")
-        .attr("x", function(d) {return wordBarOffsetX + 5 + wordlistBarScaleX(d.freq); })
-        .attr("y", function(d, i) { return wordlistBarScaleY(i) + wordlistBarHeight / 4;})
+        .attr("x", function(d) {return houseBarOffsetX + 5 + houseBarScaleX(d.freq); })
+        .attr("y", function(d, i) { return houseBarScaleY(i) + houseBarHeight / 4;})
         .text(function(d) { return d.freq + ""; })
         .style("fill", "#000000");
         // .style("font-size", "12px");
 
-    wordBarText
-    .attr("x", function(d) {return wordBarOffsetX + 5 + wordlistBarScaleX(d.freq); })
+    houseBarText
+    .attr("x", function(d) {return houseBarOffsetX + 5 + houseBarScaleX(d.freq); })
     .text(function(d) {
         return d.freq + "";
     });
 
-    wordBar_xis.exit().remove();
-    wordBars.exit().remove();
-    wordBarText.exit().remove();
+    houseBar_xis.exit().remove();
+    houseBars.exit().remove();
+    houseBarText.exit().remove();
+
+    // replace house name, episode number
+    // console.log(house);
+    var capHouse = house.charAt(0).toUpperCase() + house.slice(1);
+    d3.select('span#house-name').text(capHouse);
+    var seasonNumber = parseInt((time - 1) / 10) + 1;
+    var episodeNumber = (time - 1) % 10 + 1;
+    var seasonEpisode = "S" + seasonNumber + "E" + episodeNumber;
+    d3.select('span#house-episode').text(seasonEpisode);
 }
 
 function initAll(textDTM, textTokenData) {
@@ -709,7 +717,8 @@ function updateCategoryBarPlot (data, season, episode, time, cat){
                         .tickValues(d3.range(wordCounter.length));
     
     var wordBar_xis = categoryWordBarArea.selectAll("g.axis")
-                        .call(wordBarAxis);
+                        .call(wordBarAxis)
+                        .style("stroke-width", "0");
 
 
     var wordBars = categoryWordBarArea.selectAll("rect")
