@@ -18,7 +18,9 @@ substitute_strings = {'don\'t' : 'dont',
                       'can\'t': 'cant', 
                       'wouldn\'t': 'wouldnt',
                       'couldn\'t': 'couldnt',
-                      'shouldn\'t': 'shouldnt'}
+                      'shouldn\'t': 'shouldnt',
+                      'weren\'t' : 'werent',
+                      'won\'t' : 'wont'}
 substitute_regexes = {k : re.compile(k) for k in substitute_strings.keys()}
 line_break_delim = '$'
 

@@ -26,7 +26,7 @@ def get_category_counts(text_string, category_patterns):
     text_string = text_string.lower()
     #for t in TKNZR.tokenize(text_string):
     for pattern in category_patterns:
-        p = r'\b' + pattern + r'\b';
+        p = r'\b' + pattern.pattern + r'\b';
         matches = re.findall (p, text_string)
         #find = pattern.match(text_string)
         if len (matches) > 0:
