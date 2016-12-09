@@ -260,7 +260,7 @@ function initBarPlot (data){
     // now build bar chart
     // offset x should be at least as wide
     // as the longest word, in order to fit it
-    wordBarOffsetX = 85;
+    wordBarOffsetX = 100;
     wordBarOffsetY = 15;
     maxBars = 10;
 
@@ -507,7 +507,7 @@ function initHousePlots(houseCountData) {
     // as the longest word, in order to fit it
 
     var maxBars = 5;
-    houseBarOffsetX = 100;
+    houseBarOffsetX = 160;
     houseBarColor = "#CCCCCC";
     houseBarWidth = 150;
     houseBarHeight = 10;
