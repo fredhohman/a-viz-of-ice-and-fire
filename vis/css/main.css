@@ -127,7 +127,6 @@ p {
 	margin-bottom: 20px;
 }
 #title-image {
-	width: 100%;
 }
 .small-vspace {
 	height: 5px;
@@ -185,42 +184,49 @@ footer {
 .parent-element-to-video {
     overflow: hidden;
     text-align: center;
+    width: 100%;
+    margin-top: -250px;	
 }
-
 video {
     height: 100%;
     width: 177.77777778vh; /* 100 * 16 / 9 */
     min-width: 100%;    
     min-height: 56.25vw; /* 100 * 9 / 16 */
-
 }
 .video-overlay-title {
-    position: absolute;
-    /*left: 0px;*/
-    top: 250px;
+    position: relative;
     margin: 0 auto;
     color: #FFF;
+    top: 525px;
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 100%;
 }
 .video-overlay-text {
     position: absolute;
     left: 50%;
     top: 525px;
     margin: 0 auto;
-    color: #FFF;
     transform: translate(-50%, -50%);
+
+    color: #FFF;
     font-size: 20px;
     color: white;
+    white-space: nowrap;
 }
 .video-overlay-subheader {
 	position: absolute;
     left: 50%;
     top: 450px;
     margin: 0 auto;
-    color: #FFF;
     transform: translate(-50%, -50%);
+    
+    color: #FFF;
 	font-weight: 300;
 	font-size: 28px;
 	color: white;
+	white-space: nowrap;
+
 }
 figcaption {
 	padding-top: 10px;
