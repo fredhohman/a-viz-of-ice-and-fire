@@ -244,12 +244,13 @@ figcaption {
 /*bouncing arrow*/
 
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
- 
+
 .fa {
 	width: 60px;
 	display: block;
 	text-align: center;
 	color: #CCCCCC;
+	font-family: 'FontAwesome';
 	font: normal 50px 'FontAwesome';
 	line-height: 60px;
 	text-rendering: auto;
@@ -275,7 +276,11 @@ figcaption {
 	-moz-animation: bounce 2s infinite;
 	-o-animation: bounce 2s infinite;
 }
- 
+
+i.fa.fa-angle-down { 
+	font: normal 50px 'FontAwesome';
+}
+
 @-webkit-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
 	40% {-webkit-transform: translateY(-30px);}
