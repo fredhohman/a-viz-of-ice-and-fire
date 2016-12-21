@@ -2,7 +2,7 @@
 
 *An interactive, narrative visualization summarizing the visual and textual aspects of the hit HBO series Game of Thrones.*
 
-By [Fred Hohman][fred], [Ian Stewert][ian], and [Sandeep Soni][sandeep]
+By [Fred Hohman][fred], [Sandeep Soni][sandeep], and [Ian Stewert][ian].
 
 This is the public repo for our CS 7450 Information Visualization final project, titled "A Viz of Ice and Fire." You can view the web visualization [here](http://fredhohman.com/a-viz-of-ice-and-fire/).
 
