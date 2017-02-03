@@ -1,3 +1,5 @@
+
+
 ///////////////////////////////////////////////////////////////////////////
 // These have to be global variables that preserve the state
 // (basically which season and episode the user is currently trying to see)
@@ -272,6 +274,7 @@ $(document).ready(function() {
 
     // zoom in color chunks
     $("#chunks").click(function(event) {
+
         chunk_clicked = parseInt(event.target.id[1]);
 
         if (isNaN(chunk_clicked) == true) {
@@ -282,6 +285,8 @@ $(document).ready(function() {
                 chunk_clicked = parseInt(event.target.id[1])*10+parseInt(event.target.id[2]);
             }
             
+
+
             // edge case to click on chunk that was just clicked on
             if (chunk_clicked_old == chunk_clicked && is_something_zoomed == false) {
                 // console.log('yay');
@@ -301,9 +306,20 @@ $(document).ready(function() {
                 d3.select("#chunk"+String(chunk_clicked)).classed("chunk-block-zoomed", true);
                 is_something_zoomed = true;
             }
-
             chunk_clicked_old = chunk_clicked;
-    }
+        }
+
+        // show screenshot chunk image on cursor
+        if (is_something_zoomed == true) {
+
+            $(document).mousemove(function(e){
+                $("#chunkimage").attr("src","data/chunk-montages/s1e1/chunk"+String(chunk_clicked)+".png").css({"left":e.pageX + 10, "top":e.pageY + 10, "display": "inline"});
+            });
+        } else {
+            $(document).mousemove(function(e){
+                $("#chunkimage").css({"left":e.pageX + 10, "top":e.pageY + 10, "display": "none"});
+            });
+        }
 
     });
 
