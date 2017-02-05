@@ -1,5 +1,5 @@
 # `vis`
-The code for the web visualzation.
+The code for the web visualization.
 
 This is the public repo for our CS 7450 Information Visualization final project, titled "A Viz of Ice and Fire." You can view the web visualization [here](http://fredhohman.com/a-viz-of-ice-and-fire/).
 
@@ -14,6 +14,6 @@ This is the public repo for our CS 7450 Information Visualization final project,
 
 `index.html`: The main page of the viz.
 
-`js/`: The Javascript code for the interactive components of the viz .
+`js/`: The JavaScript code for the interactive components of the viz .
 
 `text.html`: The main textual interactive plot.
