@@ -313,7 +313,7 @@ $(document).ready(function() {
         if (is_something_zoomed == true) {
 
             $(document).mousemove(function(e){
-                $("#chunkimage").attr("src","data/chunk-montages/s1e1/chunk"+String(chunk_clicked)+".png").css({"left":e.pageX + 10, "top":e.pageY + 10, "display": "inline"});
+                $("#chunkimage").attr("src","data/chunk-montages/s" + String(seasonNumber) + "e" + String(episodeNumber) + "/chunk"+String(chunk_clicked)+".png").css({"left":e.pageX + 10, "top":e.pageY + 10, "display": "inline"});
             });
         } else {
             $(document).mousemove(function(e){
