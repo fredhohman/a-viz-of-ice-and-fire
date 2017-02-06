@@ -9,7 +9,8 @@ import time
 import json
 import matplotlib.pyplot as plt
 import cv2
-
+import math
+import colorsys
 
 # File paths
 # dir_path = '/Users/fredhohman/Github/cs-7450/data/screenshots/output/'
@@ -56,6 +57,21 @@ def make_episode_list():
 #     del draw
 #     pal.save(outfile, "PNG")
 
+# this is for sorting colors
+def step (r,g,b, repetitions=1):
+    lum = math.sqrt( .241 * r + .691 * g + .068 * b )
+
+    h, s, v = colorsys.rgb_to_hsv(r,g,b)
+
+    h2 = int(h * repetitions)
+    lum2 = int(lum * repetitions)
+    v2 = int(v * repetitions)
+
+    if h2 % 2 == 1:
+        v2 = repetitions - v2
+        lum = repetitions - lum
+
+    return (h2, lum, v2)
 
 if __name__ == '__main__':
 
@@ -69,13 +85,13 @@ if __name__ == '__main__':
 
 
     # episode = episode + '/'
-    dir_path = '/Volumes/SG-1TB/avatar/screenshots/'  #for raw images
-    # dir_path = '/Users/fredhohman/Github/cs-7450/data/color-palettes-chunk-temp/' + episode #for raw images
+    # dir_path = '/Volumes/SG-1TB/avatar/screenshots/'  #for raw images
+    dir_path = '/Users/fredhohman/Github/a-viz-of-ice-and-fire/data/avatar/color-palettes-chunk-temp/' #for chunked pngs
     # dir_path = episode
 
-    images = [img for img in os.listdir(dir_path) if img.endswith('jpeg')] #for raw images
-    # images = [img for img in os.listdir(dir_path) if img.endswith('.png')]
-    # images = images[0:100]
+    # images = [img for img in os.listdir(dir_path) if img.endswith('jpeg')] #for raw images
+    images = [img for img in os.listdir(dir_path) if img.endswith('.png')] #for chunk png
+    # images = images[0:10]
     print(images)
     print(str(len(images)) + ' images found')
 
@@ -101,7 +117,21 @@ if __name__ == '__main__':
             print('COLOR PALETTE FOR IMAGE HAD 11 COLORS NOT 10')
             break
 
+        # sort colors
+        # print(palette) #checking format
+        temp = palette
+        temp_np = np.array(temp)
+        temp_np = temp_np / 255.0
+        temp_list = np.ndarray.tolist(temp_np)
+        temp_list.sort(key=lambda rgb: step(rgb[0],rgb[1],rgb[2],8))
+        sorted_np = np.round(np.array(temp_list)*255.0).astype(int)
+        sorted_list = np.ndarray.tolist(sorted_np)
+        palette = sorted_list
+        palette = [tuple(x) for x in palette] #convert to list of tuples
+        # print(palette) #checking format
         palettes.append(palette)
+
+
 
     pal = Image.new('RGB', (swatchsize*len(palettes[0]), swatchsize*len(images)))
     draw = ImageDraw.Draw(pal)
@@ -113,11 +143,11 @@ if __name__ == '__main__':
         posy = posy + swatchsize
         posx = 0
     del draw
-    pal.save('../data/avatar/avatar.png', "PNG")
+    pal.save('../data/avatar/avatar_chunked_inline_sorted.png', "PNG")
 
     # print(palettes)
     # with open('data/color/' + episode[:-1] + '.json', 'w') as outfile:
     #     json.dump({'palettes': palettes}, outfile)
 
-    with open('../data/avatar/avatar.json', 'w') as outfile:
+    with open('../data/avatar/avatar_chunked_inline_sorted.json', 'w') as outfile:
         json.dump({'palettes': palettes}, outfile)
