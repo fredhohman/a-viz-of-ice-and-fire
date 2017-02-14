@@ -312,9 +312,9 @@ $(document).ready(function() {
         // show screenshot chunk image on cursor
         if (is_something_zoomed == true) {
 
-            // $(document).mousemove(function(e){
+            $(document).mousemove(function(e){
                 $("#chunkimage").attr("src","data/chunk-montages/s" + String(seasonNumber) + "e" + String(episodeNumber) + "/chunk"+String(chunk_clicked)+".png");
-            // });
+            });
         } 
         // else {
             // $(document).mousemove(function(e){
