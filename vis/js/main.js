@@ -312,14 +312,16 @@ $(document).ready(function() {
         // show screenshot chunk image on cursor
         if (is_something_zoomed == true) {
 
-            $(document).mousemove(function(e){
-                $("#chunkimage").attr("src","data/chunk-montages/s" + String(seasonNumber) + "e" + String(episodeNumber) + "/chunk"+String(chunk_clicked)+".png").css({"left":e.pageX + 10, "top":e.pageY + 10, "display": "inline"});
-            });
-        } else {
-            $(document).mousemove(function(e){
-                $("#chunkimage").css({"left":e.pageX + 10, "top":e.pageY + 10, "display": "none"});
-            });
-        }
+            // $(document).mousemove(function(e){
+                $("#chunkimage").attr("src","data/chunk-montages/s" + String(seasonNumber) + "e" + String(episodeNumber) + "/chunk"+String(chunk_clicked)+".png");
+            // });
+        } 
+        // else {
+            // $(document).mousemove(function(e){
+                // $("#chunkimage").css({"left":e.pageX + 10, "top":e.pageY + 10});
+            // });
+            // continue;
+        // }
 
     });
 
