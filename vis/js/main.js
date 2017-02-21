@@ -34,7 +34,7 @@ function make_season_color_list() {
 
     for (var season_num = 1; season_num < 7; season_num++) {
         for (var episode_num = 1; episode_num < 11; episode_num++) {
-            var episode = 's' + String(season_num) + '-' + 'c' + String(episode_num)
+            var episode = 's' + String(season_num) + '-' + 'c' + String(episode_num);
             episode_list.push(episode);
         }
     }
@@ -47,7 +47,7 @@ function make_episode_color_list() {
 
     for (var season_num = 1; season_num < 11; season_num++) {
         for (var episode_num = 1; episode_num < 11; episode_num++) {
-            var episode = 'e' + String(season_num) + '-' + 'c' + String(episode_num)
+            var episode = 'e' + String(season_num) + '-' + 'c' + String(episode_num);
             episode_list.push(episode);
         }
     }
@@ -60,7 +60,7 @@ function make_chunk_color_list() {
 
     for (var season_num = 1; season_num < 61; season_num++) {
         for (var episode_num = 1; episode_num < 11; episode_num++) {
-            var episode = 'c' + String(season_num) + '-' + 'c' + String(episode_num)
+            var episode = 'c' + String(season_num) + '-' + 'c' + String(episode_num);
             episode_list.push(episode);
         }
     }
@@ -74,7 +74,7 @@ function make_episode_titles() {
 
     for (var season_num = 1; season_num < 7; season_num++) {
         for (var episode_num = 1; episode_num < 11; episode_num++) {
-            var episode = 'S' + String(season_num) + 'E' + String(episode_num)
+            var episode = 'S' + String(season_num) + 'E' + String(episode_num);
             episode_list.push(episode);
         }
     }
@@ -87,7 +87,7 @@ function make_episode_titles_lowercase() {
 
     for (var season_num = 1; season_num < 7; season_num++) {
         for (var episode_num = 1; episode_num < 11; episode_num++) {
-            var episode = 's' + String(season_num) + 'e' + String(episode_num)
+            var episode = 's' + String(season_num) + 'e' + String(episode_num);
             episode_list.push(episode);
         }
     }
@@ -119,7 +119,7 @@ function color_blocks(episode_start, episode_end) {
                                                     + String(palettes[episode][color][2]) + ")");
             }
         }
-    })
+    });
 }
 
 function color_chunk_blocks(episode_chunk_path) {
@@ -138,7 +138,7 @@ function color_chunk_blocks(episode_chunk_path) {
                                                     + String(palettes[chunk][color][2]) + ")");
             }
         }
-    })
+    });
 }
 
 ///////////////////////////////////////////////////////////////////////////
@@ -168,7 +168,7 @@ $(document).ready(function() {
         // color header selected
         d3.select('#season1' + ' > h3').classed('color-header-selected', true);
         d3.select('#episode1' + ' > h3').classed('color-header-selected', true);
-    })
+    });
 
 
 });
@@ -185,7 +185,7 @@ $(document).ready(function() {
         series_clicked = parseInt(series_clicked);
 	    seasonNumber = series_clicked;
 
-        if (isNaN(seasonNumber) == true) {
+        if (isNaN(seasonNumber) === true) {
 
         } else {
 
@@ -237,11 +237,11 @@ $(document).ready(function() {
     //  update colors for episode chunks
     $("#episodes").click(function(event) {
         episode_clicked = parseInt(event.target.id[1]);
-        if (episode_clicked == 1 && parseInt(event.target.id[2]) == 0) {
+        if (episode_clicked === 1 && parseInt(event.target.id[2]) === 0) {
             episode_clicked = 10; //hacky but works, correctly sets episode_click to 10 instead of 1
         }
 
-        if (isNaN(episode_clicked) == true) {
+        if (isNaN(episode_clicked) === true) {
 
         } else {
 
@@ -259,7 +259,7 @@ $(document).ready(function() {
 
             // color header selected
             // console.log(eNum);
-            if (eNum%10==0) {
+            if (eNum%10===0) {
                 d3.select('#episode' + String(eNumOld%10) + ' > h3').classed('color-header-selected', false);
                 d3.select('#episode' + String(10) + ' > h3').classed('color-header-selected', true);
             } else {
@@ -277,7 +277,7 @@ $(document).ready(function() {
 
         chunk_clicked = parseInt(event.target.id[1]);
 
-        if (isNaN(chunk_clicked) == true) {
+        if (isNaN(chunk_clicked) === true) {
 
         } else {
 
@@ -288,7 +288,7 @@ $(document).ready(function() {
 
 
             // edge case to click on chunk that was just clicked on
-            if (chunk_clicked_old == chunk_clicked && is_something_zoomed == false) {
+            if (chunk_clicked_old === chunk_clicked && is_something_zoomed === false) {
                 // console.log('yay');
                 d3.selectAll(".chunk-block").classed("chunk-block-small", true);
                 d3.select("#chunk"+String(chunk_clicked)).classed("chunk-block-zoomed", true);
@@ -310,7 +310,7 @@ $(document).ready(function() {
         }
 
         // show screenshot chunk image on cursor
-        if (is_something_zoomed == true) {
+        if (is_something_zoomed === true) {
 
             $(document).mousemove(function(e){
                 $("#chunkimage").attr("src","data/chunk-montages/s" + String(seasonNumber) + "e" + String(episodeNumber) + "/chunk"+String(chunk_clicked)+".png");
@@ -331,7 +331,7 @@ $(".episode-block").click(function (event) {
     episodeNumber = parseInt (event.target.id[1]);
     
     // update scatterplot and accompanying bar plot
-    if (isNaN(episodeNumber) == true) {
+    if (isNaN(episodeNumber) === true) {
 
     } else if (event.target.id[2] != '-') {
         episodeNumber = 10;
@@ -345,3 +345,24 @@ $(".episode-block").click(function (event) {
 });
 
 
+// vertical highlight
+$("#chunks").mouseover(function(event) {
+    chunk_hovered = parseInt(event.target.id[1]);
+
+    if (event.target.id[2] != '-') {
+        chunk_hovered = parseInt(event.target.id[1])*10+parseInt(event.target.id[2]);
+    }
+
+    highlightSlice(chunk_hovered-1);
+});
+
+//  vertical unhighlight
+$("#chunks").mouseout(function(event) {
+    chunk_hovered = parseInt(event.target.id[1]);
+
+    if (event.target.id[2] != '-') {
+        chunk_hovered = parseInt(event.target.id[1])*10+parseInt(event.target.id[2]);
+    }
+
+    unhighlightSlice(chunk_hovered-1);
+});
