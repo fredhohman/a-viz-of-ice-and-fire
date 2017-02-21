@@ -24,11 +24,11 @@ textData, textMetaData, categoryNames, categoryVisibilities,
 textDTM, textTokenData;
 
 var color = d3.scaleOrdinal().range(["#020202", "#3c3c3c", "#4b4a4a", "#5e5d5d", "#727171", "#7e7e7e", "#8d8d8d", "#a19f9f", "#b6b5b5", "#C7C6C6"]);
-var focusColor = "#CCCCCC";
-var unfocusColor = "#333333";
+var focusColor = "#757575";
+var unfocusColor = "#212121";
 var invisibleColor = "#F1F1F2";
-var focusBorderColor = "#333333";
-var unfocusBorderColor = "#333333";
+var focusBorderColor = focusColor;
+var unfocusBorderColor = unfocusColor;
 var defaultCategory = "positive";
 var defaultHouse = "stark";
 var tooltipTransition, tooltipOffset;
@@ -112,7 +112,7 @@ function initBubblePlot (data){
     svg.append("g")
       .attr("class", "x axis")
       // .attr("transform", "translate(0," + height + ")")
-      .attr("transform", "translate(0," + (margin.top - 10) + ")" )
+      .attr("transform", "translate(0," + (margin.top - 30) + ")" )
       .style("stroke-width", "0")
       .call(xAxis);
     
@@ -140,7 +140,7 @@ function initBubblePlot (data){
          .attr ("id", "spg");
 
     svg.append ("text")
-    .attr ("transform", "translate (" + (width/2) + ", -15)")
+    .attr ("transform", "translate (" + (width/2) + "," + (height + 15) + ")")
     .style("text-anchor", "middle")
     .text("Time slices (~one minute each)");
 }
@@ -164,7 +164,7 @@ function updateBubblePlot (data){
     .attr ("r", function (d){
         if (d.count == 0)
             return d.count
-        return 4 * Math.log (d.count);
+        return 5.5 * Math.log (d.count);
     })
     .attr ("cx", function (d){
         return xScale(d.time);
@@ -176,6 +176,7 @@ function updateBubblePlot (data){
         return "category" + "-" + d.cat;
     })
     .attr("fill", unfocusColor)
+    .attr("fill-opacity", "0.6")
     .on("mouseover", function(d, i) {      
         //tooltip.transition()        
         //        .duration(200)      
@@ -185,9 +186,9 @@ function updateBubblePlot (data){
         //        .style("top", (d3.event.pageY - 28) + "px");  
         //d3.selectAll(".category-" + d.cat)  
         
-         d3.selectAll("circle").attr("z-index", "1");
-         d3.select(this).attr ("fill", focusColor).style("z-index", "2")
-                        .attr("stroke", focusBorderColor);
+         d3.selectAll("circle");
+         d3.select(this).attr ("fill", focusColor);
+                        //.attr("stroke", focusColor);
          d3.select("#perSliceTitle").style("visibility", "visible");
          d3.select("#categoryWordBarArea").style ("visibility", "visible");
          d3.select("#text-metadata").select("span.category").text(d.cat);
@@ -202,8 +203,7 @@ function updateBubblePlot (data){
 
             d3.select("#perSliceTitle").style ("visibility", "hidden");
             d3.select("#categoryWordBarArea").style ("visibility", "hidden");
-            d3.select(this).attr ("fill", unfocusColor).attr("stroke", unfocusBorderColor); 
-            d3.select(this).style("z-index", "1");  // Does not work; should take a look.
+            d3.select(this).attr ("fill", unfocusColor);//.attr("stroke", unfocusColor); 
     })
     ;
 
@@ -213,7 +213,7 @@ function updateBubblePlot (data){
     .attr ("r", function (d){
         if (d.count == 0)
             return d.count;
-        return 4 * Math.log (d.count);
+        return 5.5 * Math.log (d.count);
     })
     .attr ("cx", function (d){
         return xScale (d.time);
@@ -224,20 +224,20 @@ function updateBubblePlot (data){
 
     var ticks = d3.selectAll (".y.axis")
     .selectAll (".tick").selectAll("text")
-    .on("mouseover", function (z){
+    .on("mouseover", function (z    ){
 
         d3.selectAll("circle")
-        .attr("fill", unfocusColor)
-        .attr("stroke", unfocusBorderColor);
+        .attr("fill", focusColor);
+        //.attr("stroke", focusBorderColor);
 
         d3.selectAll(".category-" + z)
-        .attr ("fill", focusColor)
-        .attr("stroke", focusBorderColor);
+        .attr ("fill", focusColor);
+        //.attr("stroke", focusBorderColor);
     })
     .on ("mouseout", function (z){
         d3.selectAll("circle")
-        .attr("fill", unfocusColor)
-        .attr("stroke", unfocusBorderColor);        
+        .attr("fill", unfocusColor);
+        //.attr("stroke", unfocusBorderColor);        
     });
 
     circles.exit().remove();
@@ -435,8 +435,8 @@ function initHousePlots(houseCountData) {
         //        .style("left", (d3.event.pageX) + "px")     
         //        .style("top", (d3.event.pageY - 28) + "px");  
         //d3.selectAll(".category-" + d.cat)  
-         grp.selectAll("circle").attr("z-index", "1");
-         d3.select(this).attr ("fill", focusColor).style("z-index", "2")
+         grp.selectAll("circle");
+         d3.select(this).attr ("fill", focusColor)
                         .attr("stroke", focusBorderColor);
          // d3.select("#perSliceTitle").style("visibility", "visible");
          // d3.select("#categoryWordBarArea").style ("visibility", "visible");
@@ -453,8 +453,7 @@ function initHousePlots(houseCountData) {
 
             d3.select("#perSliceTitle").style ("visibility", "hidden");
             d3.select("#categoryWordBarArea").style ("visibility", "hidden");
-            d3.select(this).attr ("fill", unfocusColor).attr("stroke", unfocusBorderColor); 
-            d3.select(this).style("z-index", "1");  // Does not work; should take a look.
+            d3.select(this).attr ("fill", unfocusColor).attr("stroke", unfocusBorderColor);
     });
 
 
@@ -476,8 +475,8 @@ function initHousePlots(houseCountData) {
     .on("mouseover", function (z){
 
         d3.selectAll("circle")
-        .attr("fill", unfocusColor)
-        .attr("stroke", unfocusBorderColor);
+        .attr("fill", focusColor)
+        .attr("stroke", focusBorderColor);
 
         d3.selectAll(".category-" + z)
         .attr ("fill", focusColor)
