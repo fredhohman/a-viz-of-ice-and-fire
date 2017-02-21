@@ -66,7 +66,7 @@ function findMaxY (data){
 function initBubblePlot (data){
     margin = {top: 30, right: 160, bottom: 100, left: 90};
     width = 900 - margin.left - margin.right;
-    height = 500 - margin.top - margin.bottom;
+    height = 450 - margin.top - margin.bottom;
 
     // Define the initial scales and axes
     xScale = d3.scaleLinear()
@@ -124,7 +124,7 @@ function initBubblePlot (data){
       .attr("transform", "rotate(-90)")
       .attr("y", 6)
       .attr("x", -10)
-      .attr("dy", ".71em")
+      .attr("dy", ".5em")
       .style("text-anchor", "end")
       .text("Text counts")
       ;
