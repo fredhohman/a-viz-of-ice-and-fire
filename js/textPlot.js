@@ -64,8 +64,8 @@ function findMaxY (data){
 }
 
 function initBubblePlot (data){
-    margin = {top: 30, right: 160, bottom: 100, left: 90};
-    width = 900 - margin.left - margin.right;
+    margin = {top: 30, right: 60, bottom: 100, left: 90};
+    width = 800 - margin.left - margin.right;
     height = 450 - margin.top - margin.bottom;
 
     // Define the initial scales and axes
@@ -188,7 +188,6 @@ function updateBubblePlot (data){
         
          d3.selectAll("circle");
          d3.select(this).attr ("fill", focusColor);
-                        //.attr("stroke", focusColor);
          d3.select("#perSliceTitle").style("visibility", "visible");
          d3.select("#categoryWordBarArea").style ("visibility", "visible");
          d3.select("#text-metadata").select("span.category").text(d.cat);
@@ -196,16 +195,11 @@ function updateBubblePlot (data){
          updateCategoryBarPlot (textTokenData, seasonNumber, episodeNumber, d.time, d.cat);
     })
      
-    .on("mouseout", function(d) {       
-            //tooltip.transition()        
-            //    .duration(500)      
-            //    .style("opacity", 0);
-
+    .on("mouseout", function(d) {
             d3.select("#perSliceTitle").style ("visibility", "hidden");
             d3.select("#categoryWordBarArea").style ("visibility", "hidden");
-            d3.select(this).attr ("fill", unfocusColor);//.attr("stroke", unfocusColor); 
-    })
-    ;
+            d3.select(this).attr ("fill", unfocusColor); 
+    });
 
     circles
     .transition()
@@ -224,22 +218,18 @@ function updateBubblePlot (data){
 
     var ticks = d3.selectAll (".y.axis")
     .selectAll (".tick").selectAll("text")
-    .on("mouseover", function (z    ){
+    .on("mouseover", function (z){
 
         d3.selectAll("circle")
-        .attr("fill", focusColor);
-        //.attr("stroke", focusBorderColor);
+        .attr("fill", unfocusColor);
 
         d3.selectAll(".category-" + z)
         .attr ("fill", focusColor);
-        //.attr("stroke", focusBorderColor);
     })
     .on ("mouseout", function (z){
         d3.selectAll("circle")
-        .attr("fill", unfocusColor);
-        //.attr("stroke", unfocusBorderColor);        
+        .attr("fill", unfocusColor);        
     });
-
     circles.exit().remove();
 }
 
