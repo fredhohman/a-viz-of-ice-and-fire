@@ -173,7 +173,7 @@ function updateBubblePlot (data){
         return yScale(d.cat) + 20; // TODO: check why this 20 needs to be done.
     })
     .attr("class", function (d){
-        return "category" + "-" + d.cat;
+        return "category-" + d.cat + " " + "slice-" + d.time;
     })
     .attr("fill", unfocusColor)
     .attr("fill-opacity", "0.6")
@@ -231,6 +231,16 @@ function updateBubblePlot (data){
         .attr("fill", unfocusColor);        
     });
     circles.exit().remove();
+}
+
+function highlightSlice (number){
+    d3.selectAll(".slice-" + number)
+    .attr("fill", focusColor);
+}
+
+function unhighlightSlice (number){
+    d3.selectAll(".slice-" + number)
+    .attr("fill", unfocusColor);
 }
 
 function initBarPlot (data){
