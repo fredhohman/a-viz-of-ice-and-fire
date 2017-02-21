@@ -80,6 +80,11 @@ div.tooltip {
   font: 12px sans-serif;
 }
 
+
 text.tooltip {
   font: 12px 'Open Sans';
+}
+
+#text{
+  left:-100px;
 }
