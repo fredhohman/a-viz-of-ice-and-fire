@@ -65,7 +65,7 @@ function findMaxY (data){
 
 function initBubblePlot (data){
     margin = {top: 30, right: 60, bottom: 100, left: 90};
-    width = 800 - margin.left - margin.right;
+    width = 791 - margin.left - margin.right;
     height = 450 - margin.top - margin.bottom;
 
     // Define the initial scales and axes
@@ -162,8 +162,8 @@ function updateBubblePlot (data){
     circles.enter()
     .append ("circle")
     .attr ("r", function (d){
-        if (d.count == 0)
-            return d.count
+        if (d.count === 0)
+            return d.count;
         return 5.5 * Math.log (d.count);
     })
     .attr ("cx", function (d){
@@ -205,7 +205,7 @@ function updateBubblePlot (data){
     .transition()
     .duration(400)
     .attr ("r", function (d){
-        if (d.count == 0)
+        if (d.count === 0)
             return d.count;
         return 5.5 * Math.log (d.count);
     })
@@ -234,13 +234,21 @@ function updateBubblePlot (data){
 }
 
 function highlightSlice (number){
+    d3.selectAll("circle")
+    .attr("fill-opacity", "0.3");
+
     d3.selectAll(".slice-" + number)
-    .attr("fill", focusColor);
+    .attr("fill", focusColor)
+    .attr("fill-opacity", "0.9");
 }
 
 function unhighlightSlice (number){
+    d3.selectAll("circle")
+    .attr("fill-opacity", "0.6");
+
     d3.selectAll(".slice-" + number)
-    .attr("fill", unfocusColor);
+    .attr("fill", unfocusColor)
+    .attr("fill-opacity", "0.6");
 }
 
 function initBarPlot (data){
@@ -413,7 +421,7 @@ function initHousePlots(houseCountData) {
     circles.enter()
     .append ("circle")
     .attr ("r", function (d){
-        if (d.count == 0)
+        if (d.count === 0)
             return d.count;
         return 2 * Math.log (d.count);
     })
@@ -459,7 +467,7 @@ function initHousePlots(houseCountData) {
 
     circles
     .attr ("r", function (d){
-        if (d.count == 0)
+        if (d.count === 0)
             return d.count;
         return 4 * Math.log (d.count);
     })
