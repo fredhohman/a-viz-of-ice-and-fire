@@ -356,6 +356,7 @@ $("#chunks").mouseover(function(event) {
     if (!isNaN(chunk_hovered)) {
         $("#chunkimage").attr("src","data/chunk-montages/s" + String(seasonNumber) + "e" + String(episodeNumber) + "/chunk"+String(chunk_hovered)+".png");
             highlightSlice(chunk_hovered-1);
+            updateDialogue (chunk_hovered-1);
         }
 });
 

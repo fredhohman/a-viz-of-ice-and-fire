@@ -13,6 +13,16 @@ function string2Dict (string, itemDelim=",", keyValDelim=":"){
 	return counter;
 }
 
+function array2String (array, sep){
+
+	dialogues = array.map(function (d){
+		return d["dialogue"];
+	});
+
+	return dialogues.join (sep);
+
+}
+
 function sliceData (data, season, episode){
   var slicedData = Array();
   for(var index = 0; index < data.length; index++) {
@@ -22,6 +32,18 @@ function sliceData (data, season, episode){
     }
   }
   return slicedData;
+}
+
+function sliceDialogue (data, season, episode, timeSlice){
+  var slicedData = Array();
+  for(var index = 0; index < data.length; index++) {
+    if(data[index]['season'] == season &&
+       data[index]['episode'] == episode &&
+       data[index]['chunk'] == timeSlice){
+      slicedData.push(data[index]);
+    }
+  }
+  return slicedData;	
 }
 
 function data2DotPlotRepresentation (data, categories){
