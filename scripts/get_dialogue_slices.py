@@ -37,12 +37,10 @@ def main():
             # print('processing %s'%(d))
             clean_dialogue = clean_txt(d)
             all_dialogue.append(clean_dialogue)
-        # print('got all dialogue %d'%(len(all_dialogue)))
-        # print('got clean dialogue %s'%(clean_dialogue))
         relevant_data['dialogue'] = all_dialogue
         relevant_data['season'] = season
         relevant_data['episode'] = episode
-        relevant_data.rename({'chunk' : 'slice'}, inplace=True)
+        relevant_data.rename(columns={u'chunk' : u'slice'}, inplace=True)
         all_data.append(relevant_data)
     all_data = pd.concat(all_data, axis=0)
     all_data.to_csv(os.path.join(data_dir, 'dialogue_all_seasons.tsv'), sep='\t')
