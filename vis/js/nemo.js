@@ -123,7 +123,7 @@ function color_blocks(episode_start, episode_end) {
 }
 
 function color_chunk_blocks(episode_chunk_path) {
-    d3.json("data/color/" + episode_chunk_path + "_chunk_sorted.json", function(error, data){
+    d3.json("data/color/nemo_chunked60_inline_sort.json", function(error, data){
         var palettes = data['palettes'];
         var chunk_list = make_chunk_color_list();
 
