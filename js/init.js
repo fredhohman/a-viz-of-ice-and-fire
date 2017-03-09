@@ -56,6 +56,11 @@ function init (){
         updateBarPlot(textDTM, seasonNumber, episodeNumber);
 	});
 
+
+	d3.tsv (textDialogueFile, function (error, data){
+		textDialogueData = data;
+	});
+
     // now house plot
 
     d3.tsv(houseDataFile, function(error, data) {

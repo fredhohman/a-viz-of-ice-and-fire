@@ -23,6 +23,8 @@ textTokenDataFile = "data/LIWC_chunk_token_counts_all_episodes.tsv",
 textData, textMetaData, categoryNames, categoryVisibilities,
 textDTM, textTokenData;
 
+var textDialogueFile = "data/dialogue_all_seasons.tsv", textDialogueData;
+
 var color = d3.scaleOrdinal().range(["#020202", "#3c3c3c", "#4b4a4a", "#5e5d5d", "#727171", "#7e7e7e", "#8d8d8d", "#a19f9f", "#b6b5b5", "#C7C6C6"]);
 var focusColor = "#757575";
 var unfocusColor = "#212121";
@@ -249,6 +251,13 @@ function unhighlightSlice (number){
     d3.selectAll(".slice-" + number)
     .attr("fill", unfocusColor)
     .attr("fill-opacity", "0.6");
+}
+
+function updateDialogue (sliceNumber){
+    //document.getElementById('textarea').value = seasonNumber + " " + episodeNumber + " " + number;
+    dialogues = sliceDialogue (textDialogueData, seasonNumber, episodeNumber, sliceNumber); 
+    dialogueString = array2String (dialogues, "\n");
+    document.getElementById('textarea').value = dialogueString;
 }
 
 function initBarPlot (data){
