@@ -39,7 +39,7 @@ function sliceDialogue (data, season, episode, timeSlice){
   for(var index = 0; index < data.length; index++) {
     if(data[index]['season'] == season &&
        data[index]['episode'] == episode &&
-       data[index]['chunk'] == timeSlice){
+       data[index]['slice'] == timeSlice){
       slicedData.push(data[index]);
     }
   }
