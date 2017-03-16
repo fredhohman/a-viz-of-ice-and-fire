@@ -1,6 +1,6 @@
 /* converts a string separated by delimiters into a dict */
 function string2Dict (string, itemDelim=",", keyValDelim=":"){
-	if (string.trim().length == 0)
+	if (string.trim().length === 0)
 		return [];
 	var items = string.split(itemDelim);
 	var counter = items.map (function (entry){
