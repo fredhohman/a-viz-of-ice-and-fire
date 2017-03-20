@@ -40,7 +40,7 @@ def clean_text(text):
          if(regex.findall(l)):
             l = l.replace(s, substitute_strings[s])
       # we only want alphanumeric stuff
-      l = ' '.join(list(filter(lambda w: w.isalpha(), TKNZR.tokenize(l))))
+      # l = ' '.join(list(filter(lambda w: w.isalnum(), TKNZR.tokenize(l))))
       clean_lines.append(l)
    clean_text = ' '.join(clean_lines)
    return clean_text
