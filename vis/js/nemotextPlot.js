@@ -16,14 +16,14 @@ var houseBarOffsetX, houseBarColor,
 houseBarWidth, houseBarHeight,
 houseBarOffsetY, houseBarSpace;
 
-var textDataFile = "data/LIWC_chunk_counts_all_seasons.tsv",
+var textDataFile = "data/finding_nemo_clean_LIWC_slice_counts.tsv",
 textMetaDataFile = "data/top_5_category_words_per_episode.tsv",
-textDTMFile = "data/all_episode_dtm.tsv",
-textTokenDataFile = "data/LIWC_chunk_token_counts_all_episodes.tsv",
+textDTMFile = "data/finding_nemo_clean_dtm.tsv",
+textTokenDataFile = "data/finding_nemo_clean_LIWC_slice_token_counts.tsv",
 textData, textMetaData, categoryNames, categoryVisibilities,
 textDTM, textTokenData;
 
-var textDialogueFile = "data/dialogue_all_seasons.tsv", textDialogueData;
+var textDialogueFile = "data/finding_nemo_clean.tsv", textDialogueData;
 
 var color = d3.scaleOrdinal().range(["#020202", "#3c3c3c", "#4b4a4a", "#5e5d5d", "#727171", "#7e7e7e", "#8d8d8d", "#a19f9f", "#b6b5b5", "#C7C6C6"]);
 var focusColor = "#757575";
@@ -173,7 +173,7 @@ function updateBubblePlot (data){
     .attr ("r", function (d){
         if (d.count === 0)
             return d.count;
-        return 5.5 * Math.log (d.count);
+        return 3.5 * Math.log (d.count);
     })
     .attr ("cx", function (d){
         return xScale(d.time) + 0.5;
@@ -216,7 +216,7 @@ function updateBubblePlot (data){
     .attr ("r", function (d){
         if (d.count === 0)
             return d.count;
-        return 5.5 * Math.log (d.count);
+        return 3.5 * Math.log (d.count);
     })
     .attr ("cx", function (d){
         return xScale (d.time) + 0.5;
@@ -794,7 +794,8 @@ function updateBarPlot (data, season, episode){
 	// div.select("#text-category").text(catInFocus);
 
     // slice DTM data!
-    var slicedData = sliceData(data, season, episode)[0];
+    // var slicedData = sliceData(data, season, episode)[0];
+    var slicedData = data[0];
 
     // console.log(slicedData);
     // now sort!
