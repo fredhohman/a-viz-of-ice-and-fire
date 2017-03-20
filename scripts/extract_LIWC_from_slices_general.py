@@ -63,14 +63,21 @@ if __name__ == '__main__':
             slice_LIWC_words[c].append(' '.join(slice_words))
             slice_LIWC_count_dicts[c].append(counts)
     slice_LIWC_counts = pd.DataFrame(slice_LIWC_counts)
-    slice_LIWC_counts['slice'] = slice_LIWC_counts.index
+    slice_LIWC_counts['time'] = slice_LIWC_counts.index
     counts_fname = os.path.join(out_dir, '%s_LIWC_slice_counts.tsv'%(fname))
     slice_LIWC_counts.to_csv(counts_fname, sep='\t', index=None)
     slice_LIWC_words = pd.DataFrame(slice_LIWC_words)
-    slice_LIWC_words['slice'] = slice_LIWC_words.index
+    slice_LIWC_words['time'] = slice_LIWC_words.index
     word_fname = os.path.join(out_dir, '%s_LIWC_slice_words.tsv'%(fname))
     slice_LIWC_words.to_csv(word_fname, sep='\t', index=None)
     slice_LIWC_count_dicts = pd.DataFrame(slice_LIWC_count_dicts)
-    slice_LIWC_count_dicts['slice'] = slice_LIWC_count_dicts.index
+    slice_LIWC_count_dicts['time'] = slice_LIWC_count_dicts.index
     counts_fname = os.path.join(out_dir, '%s_LIWC_slice_token_counts.tsv'%(fname))
+    # convert dictionaries to string values
+    def dict_to_str(d):
+        if(len(d) == 0):
+            return ''
+        else:
+            return ','.join(['%s:%d'%(k,v) for k,v in d.iteritems()])
+    slice_LIWC_count_dicts[LIWC_categories] = slice_LIWC_count_dicts[LIWC_categories].applymap(dict_to_str)
     slice_LIWC_count_dicts.to_csv(counts_fname, sep='\t', index=None)
