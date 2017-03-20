@@ -48,6 +48,7 @@ if __name__ == '__main__':
     slice_LIWC_counts = {c : [] for c in LIWC_categories}
     # also store words cuz yolo
     slice_LIWC_words = {c : [] for c in LIWC_categories}
+    slice_LIWC_count_dicts = {c : [] for c in LIWC_categories}
     for t in slice_text:
         tokens = TKNZR.tokenize(t)
         for c in LIWC_categories:
@@ -60,6 +61,7 @@ if __name__ == '__main__':
             slice_LIWC_counts[c].append(total_counts)
             slice_words = sorted(counts.keys())
             slice_LIWC_words[c].append(' '.join(slice_words))
+            slice_LIWC_count_dicts[c].append(counts)
     slice_LIWC_counts = pd.DataFrame(slice_LIWC_counts)
     slice_LIWC_counts['slice'] = slice_LIWC_counts.index
     counts_fname = os.path.join(out_dir, '%s_LIWC_slice_counts.tsv'%(fname))
@@ -68,3 +70,7 @@ if __name__ == '__main__':
     slice_LIWC_words['slice'] = slice_LIWC_words.index
     word_fname = os.path.join(out_dir, '%s_LIWC_slice_words.tsv'%(fname))
     slice_LIWC_words.to_csv(word_fname, sep='\t', index=None)
+    slice_LIWC_count_dicts = pd.DataFrame(slice_LIWC_count_dicts)
+    slice_LIWC_count_dicts['slice'] = slice_LIWC_count_dicts.index
+    counts_fname = os.path.join(out_dir, '%s_LIWC_slice_token_counts.tsv'%(fname))
+    slice_LIWC_count_dicts.to_csv(counts_fname, sep='\t', index=None)
