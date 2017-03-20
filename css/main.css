@@ -49,11 +49,19 @@ body {
 .season-block:hover > .color-header {
 	font-weight: 800;
 	color: #9E9E9E;
+	border: 1px #9E9E9E solid;
+	margin-bottom: 3px !important;
+	/*margin-left: 10px;*/
+	/*margin-right: 10px;*/
 }
 .color-header-selected {
 	/*when clicked, toggle this class in js*/
 	font-weight: 800;
 	color: #333333 !important;
+	border: 1px #333333 solid;
+	margin-bottom: 3px !important;
+	/*margin-left: 10px;*/
+	/*margin-right: 10px;*/
 }
 .episode-block {
 	/*transition: all 0.4s ease;*/
@@ -71,6 +79,8 @@ body {
 .episode-block:hover > .color-header {
 	font-weight: 800;
 	color: #9E9E9E;
+	border: 1px #9E9E9E solid;
+	margin-bottom: 3px !important;
 }
 #chunks {
 	font-size: 0px;
@@ -83,6 +93,12 @@ body {
 	/*float: left;*/
 	display: inline-block;
 	/*cursor: pointer;*/
+}
+.chunk-block:hover > .color-header {
+	background-image: url('../images/angle-arrow-down.png');
+	background-size: 10px 10px;
+	background-repeat: no-repeat;
+	background-position: bottom;
 }
 .ccolor {
 	cursor: pointer;

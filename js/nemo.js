@@ -354,7 +354,7 @@ $("#chunks").mouseover(function(event) {
     }
 
     if (!isNaN(chunk_hovered)) {
-        $("#chunkimage").attr("src","data/chunk-montages/s" + String(seasonNumber) + "e" + String(episodeNumber) + "/chunk"+String(chunk_hovered)+".png");
+        $("#chunkimage").attr("src","data/chunk-montages/nemo" + "/chunk"+String(chunk_hovered)+".png");
             highlightSlice(chunk_hovered-1);
             updateDialogue (chunk_hovered-1);
         }
@@ -369,4 +369,16 @@ $("#chunks").mouseout(function(event) {
     }
 
     unhighlightSlice(chunk_hovered-1);
+});
+
+
+$(window).load(function() {
+    // hacks
+
+    $('.x.axis > .tick > line')[0].setAttribute('stroke-width','0px');
+    $('.y.axis .tick text').attr('x', '-10');
+    $('.x.axis .tick text').attr('y', '-10');
+
+    // $('.y.axis > .tick > line').attr('x2','650').attr('stroke-width','1px');
+    // $('.x.axis > .tick > line').attr('y1','325').attr('stroke-width','1px');
 });
