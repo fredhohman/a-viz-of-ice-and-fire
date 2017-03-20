@@ -2,6 +2,7 @@
 data/.DS_Store
 *~
 scripts/.ipynb_checkpoints/
+scripts/*.pyc
 *.pxm
 data/color/*_sorted.json
 data/color/*_chunk.json
