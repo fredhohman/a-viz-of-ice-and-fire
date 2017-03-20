@@ -172,7 +172,7 @@ function updateBubblePlot (data){
         return xScale(d.time);
     })
     .attr("cy", function (d){
-        return yScale(d.cat) + 20; // TODO: check why this 20 needs to be done.
+        return yScale(d.cat) + 16.5; // TODO: check why this 20 needs to be done.
     })
     .attr("class", function (d){
         return "category-" + d.cat + " " + "slice-" + d.time;
