@@ -65,6 +65,8 @@ function findMaxY (data){
 	return d3.max (maxYVals);
 }
 
+// function to draw the grid lines
+
 function initBubblePlot (data){
     margin = {top: 30, right: 60, bottom: 100, left: 90};
     width = 791 - margin.left - margin.right;
@@ -79,10 +81,13 @@ function initBubblePlot (data){
     .range([height, 0]);
 
     xAxis = d3.axisTop()
-    .scale(xScale);
+    .scale(xScale)
+    .ticks(10)
+    .tickSize(-height);
 
     yAxis = d3.axisLeft()
-    .scale(yScale);
+    .scale(yScale)
+    .tickSize(-width);
 
     // Define the div for the tooltip
     tooltip = d3.select("body").append("div")
@@ -115,12 +120,12 @@ function initBubblePlot (data){
       .attr("class", "x axis")
       // .attr("transform", "translate(0," + height + ")")
       .attr("transform", "translate(0," + (margin.top - 30) + ")" )
-      .style("stroke-width", "0")
+      .style("stroke-width", "1")
       .call(xAxis);
     
     svg.append("g")
       .attr("class", "y axis")
-      .style("stroke-width", "0")
+      .style("stroke-width", "1")
       .call(yAxis)
       .append("text")
       .attr("transform", "rotate(-90)")
@@ -156,10 +161,12 @@ function updateBubblePlot (data){
         .transition()
         .call(xAxis);
 
+    D = data2DotPlotRepresentation (data, categories);
+
     // console.log (data2DotPlotRepresentation(data, categories));
     grp = svg.selectAll ("#spg");
     circles = grp.selectAll ("circle")
-    .data (data2DotPlotRepresentation(data, categories));
+    .data (D);
 
     circles.enter()
     .append ("circle")
@@ -379,12 +386,12 @@ function initHousePlots(houseCountData) {
       .attr("class", "x axis")
       // .attr("transform", "translate(0," + height + ")")
       .attr("transform", "translate(0," + (margin.top - 10) + ")" )
-      .style("stroke-width", "0")
+      .style("stroke-width", "1px")
       .call(xAxis);
     
     svgHouses.append("g")
       .attr("class", "y axis")
-      .style("stroke-width", "0")
+      .style("stroke-width", "1px")
       .call(yAxis)
       .append("text")
       .attr("transform", "rotate(-90)")
