@@ -7,6 +7,7 @@ from nltk.tokenize import WordPunctTokenizer
 import os, re
 import pandas as pd
 import argparse
+from stopwords import get_stopwords
 
 N_SLICES=60
 if __name__ == '__main__':
@@ -19,9 +20,18 @@ if __name__ == '__main__':
     LIWC_categories = ['positive_affect', 'negative_affect', 'anger', 'death', 
                        'family', 'home', 'humans', 'social',
                        'percept', 'insight']
+    stopwords = get_stopwords('en')
     LIWC_category_wordlists = {c : [re.compile('^' + l.strip()  + '$')
-                                    for l in open(os.path.join(LIWC_dir, '%s'%(c)), 'r')] 
+                                    for l in open(os.path.join(LIWC_dir, '%s'%(c)), 'r')
+                                    if l.strip() not in stopwords] 
                                for c in LIWC_categories}
+    # replace positive/negative affect
+    LIWC_categories += ['positive', 'negative']
+    LIWC_categories.remove('positive_affect')
+    LIWC_categories.remove('negative_affect')
+    LIWC_category_wordlists['positive'] = LIWC_category_wordlists.pop('positive_affect')
+    LIWC_category_wordlists['negative'] = LIWC_category_wordlists.pop('negative_affect')
+    
     TKNZR = WordPunctTokenizer()
     full_slice_list = set(range(N_SLICES))
     # we count either the total number of tokens

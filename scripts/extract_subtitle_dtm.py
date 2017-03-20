@@ -17,7 +17,8 @@ def main():
     data_dir = args.data_dir
     sub_name = os.path.basename(dialogue_file).replace('.tsv', '')
     print(sub_name)
-    stops = get_stopwords('en') + ['will', 'don', 've', ]
+    custom_words = ['will', 'don', 've', 're', 'oh', 'hey', 'ha', 'aah', 'll', 'can', 'dont', 'just']
+    stops = get_stopwords('en') + custom_words
     data = pd.read_csv(dialogue_file, sep='\t')
     all_docs = {}
     for slice_, data_group in data.groupby('slice'):
@@ -38,7 +39,8 @@ def main():
     ngram_range = (1,1)
     # need tokenizer? probs not
     # TODO: normal tokenizer
-    cv = CountVectorizer(min_df=min_df, # max_df=0.9, 
+    cv = CountVectorizer(min_df=min_df, 
+                         # max_df=0.9,
                          ngram_range=ngram_range,
                          encoding='utf-8', stop_words=stops)
     counts = cv.fit_transform(all_text)
