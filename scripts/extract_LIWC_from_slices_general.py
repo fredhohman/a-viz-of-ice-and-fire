@@ -17,8 +17,8 @@ if __name__ == '__main__':
     sub_file = args.sub_file
     LIWC_dir = args.LIWC_dir
     LIWC_categories = ['positive_affect', 'negative_affect', 'anger', 'death', 
-                       'family', 'home', 'humans', 'social', 'sadness', 
-                       'first_person_singular', 'first_person_plural', 'percept', 'insight']
+                       'family', 'home', 'humans', 'social',
+                       'percept', 'insight']
     LIWC_category_wordlists = {c : [re.compile('^' + l.strip()  + '$')
                                     for l in open(os.path.join(LIWC_dir, '%s'%(c)), 'r')] 
                                for c in LIWC_categories}
