@@ -15,23 +15,29 @@ div.tooltip {
     pointer-events: none;     
 }
 
-.axis path,
-.axis line, 
-.axis1 path,
-.axis1 line {
-  fill: none;
-  stroke: #E6E7E8;
-  shape-rendering: crispEdges;
+.x.axis line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;  
 }
 
-.x.axis path, .x.axis1 path {
-  /*display: none;*/
+.y.axis line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;  
+}
+
+
+.axis path {
+  stroke-width: 0;
 }
 
 .line {
   fill: none;
-  stroke-width: 1.5px;
+  stroke: steelblue;
+  stroke-width: 2px;
 }
+
 
 .legend-box {
   cursor: pointer;  
