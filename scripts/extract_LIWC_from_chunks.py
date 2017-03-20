@@ -12,8 +12,10 @@ N_CHUNKS=60
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--all_episodes', default=None)
+    parser.add_argument('--LIWC_dir', default='/hg191/corpora/LIWC/resources/liwc_lexicons/')
     args = parser.parse_args()
     all_episodes = args.all_episodes
+    LIWC_dir = args.LIWC_dir
     if(all_episodes is None):
         subtitle_dir = '../data/subtitles/subtitlesInTSV/'
         all_episodes = [f for f in os.listdir(subtitle_dir) 
@@ -28,7 +30,7 @@ if __name__ == '__main__':
     LIWC_categories = ['positive_affect', 'negative_affect', 'anger', 'death', 
                        'family', 'home', 'humans', 'religion', 'swear', 'sexual']
     LIWC_category_wordlists = {c : [re.compile('^' + l.strip()  + '$')
-                                    for l in open('/hg191/corpora/LIWC/resources/liwc_lexicons/%s'%(c), 'r')] 
+                                    for l in open(os.path.join(LIWC_dir, '%s'%(c)), 'r')] 
                                for c in LIWC_categories}
     TKNZR = WordPunctTokenizer()
     full_chunk_list = set(range(N_CHUNKS))

@@ -25,7 +25,7 @@ def main():
     for filename in filenames:
         print('processing file %s'%(filename))
         data = pd.read_csv(filename, sep='\t')
-        season, episode = re.findall('S([0-9])E([0-9])+', filename)[0]
+        season, episode = re.findall('S([0-9])E([0-9]+)', filename)[0]
         season = int(season)
         episode = int(episode)
         relevant_data = data[['dialogue', 'chunk']]
