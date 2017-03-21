@@ -70,7 +70,7 @@ if __name__ == '__main__':
     for episode in episode_list:
         episode = episode + '/'
         # dir_path = '/Volumes/SG-1TB/screenshots/' + episode #for raw images
-        dir_path = '/Users/fredhohman/Github/cs-7450/data/color-palettes-chunk-temp/' + episode #for raw images
+        dir_path = '/Users/fredhohman/Github/cs-7450/data/color-palettes-chunk-temp/' + episode  # for raw images
         # dir_path = episode
 
         # images = [img for img in os.listdir(dir_path) if img.endswith('jpeg')] #for raw images
@@ -91,7 +91,7 @@ if __name__ == '__main__':
             start = time.time()
 
             color_thief = ColorThief(dir_path+img)
-            palette = color_thief.get_palette(color_count = color_count, quality = 10)
+            palette = color_thief.get_palette(color_count=color_count, quality=10)
             end = time.time() - start
             print(end)
 
