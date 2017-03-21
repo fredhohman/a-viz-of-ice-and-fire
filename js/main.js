@@ -340,6 +340,7 @@ $(".episode-block").click(function (event) {
     } else {
        updateAll(seasonNumber, episodeNumber);
     }
+
    // console.log (seasonNumber);
    // console.log (episodeNumber);
 });
@@ -373,7 +374,6 @@ $("#chunks").mouseout(function(event) {
 
 $(window).load(function() {
     // hacks
-
     $('.x.axis > .tick > line')[0].setAttribute('stroke-width','0px');
     $('.y.axis .tick text').attr('x', '-10');
     $('.x.axis .tick text').attr('y', '-10');
