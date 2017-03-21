@@ -9,7 +9,7 @@
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/nemo.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
   <link href="css/text.css" rel="stylesheet">
 
   <!-- Google Fonts -->
@@ -384,7 +384,7 @@
       <div id="includedContent"></div>
     </div>
 
-    <div class="col-md-5">
+    <div class="col-md-5" style="padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;">
       <p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;"><i>Image Frames</i></p>
       <img id="chunkimage" src="data/chunk-montages/nemo/chunk1.png" style="max-height: 300px; margin-top: 2px;">
     </div>
@@ -399,8 +399,9 @@
   
   <div id="text" class="col-md-7"></div>
 
-  <div class="col-md-5">
-    <p style="margin-top: 0px; margin-bottom: 0px; padding-top: 12px; padding-bottom: 0px;"><i>Text Dialogue</i></p>
+  <div class="col-md-5" style="padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;">
+    <div class="col-md-7" style="padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;">
+    <p style="margin-bottom: 0px; padding-top: 10px; padding-bottom: 0px;"><i>Dialogue Text</i></p>
     <div id="dialogues">
       <textarea id="textarea" readonly>  Wow. Mmm.
  Wow. Mm-hmm.
@@ -424,12 +425,14 @@
  They deserve the best. Look, look, look.
       </textarea>
     </div>
-    <div id="text-metadata" class="metadata-content">
-      <!-- Top words found in <b><span id="text-category"></span></b> episode: -->
-      <h4><i>Histogram of top words in <b><span id="episode-title-number">Finding Nemo</span></b></i></h4>
+    </div>
+    <div class="col-md-5" style="padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;"> 
+      <div id="text-metadata" class="metadata-content">
+        <h4><i>Top words in <b><span id="episode-title-number">Finding Nemo</span></b></i></h4>
       <!-- <ol id="text-wordlist"> --> 
     </div>
   </div>
+</div>
 
 </div>
 
