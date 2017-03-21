@@ -83,7 +83,7 @@ function initBubblePlot (data){
     xAxis = d3.axisTop()
     .scale(xScale)
     .ticks(10)
-    .tickSize(-height);
+    .tickSize(-height); 
 
     yAxis = d3.axisLeft()
     .scale(yScale)
@@ -143,6 +143,16 @@ function initBubblePlot (data){
         .transition()
         .call(yAxis);
 
+
+/////
+// hacky, check hack function at bottom of main.js for hardcoded value to match, this was making xaxis labels move down when updated
+// now defining xScale twice, once here and once in update BubblePlot
+    xScale.domain(d3.extent(data, function(d) { return parseInt(d.time); }));
+
+    svg.select(".x.axis")
+        .transition()
+        .call(xAxis);
+/////
     pg = svg.append ("g")
          .attr ("id", "spg");
 
@@ -150,6 +160,7 @@ function initBubblePlot (data){
     .attr ("transform", "translate (" + (width/2) + "," + (height + 15) + ")")
     .style("text-anchor", "middle")
     .text("Time slices (~one minute each)");
+    console.log('init loaded');
 }
 
 function updateBubblePlot (data){
@@ -157,9 +168,11 @@ function updateBubblePlot (data){
 
     // Step 1 - Make the axis depend on the data.
     xScale.domain(d3.extent(data, function(d) { return parseInt(d.time); }));
-    svg.select(".x.axis")
-        .transition()
-        .call(xAxis);
+    // svg.select(".x.axis")
+    //     .transition()
+    //     .call(xAxis);
+            // $('.x.axis .tick text').attr('y', '-10');
+
 
     D = data2DotPlotRepresentation (data, categories);
 
@@ -225,8 +238,8 @@ function updateBubblePlot (data){
         return yScale(d.cat) + 16.5;
     });
 
-    var ticks = d3.selectAll (".y.axis")
-    .selectAll (".tick").selectAll("text")
+    var ticks = d3.selectAll(".y.axis")
+    .selectAll(".tick").selectAll("text")
     .on("mouseover", function (z){
 
         d3.selectAll("circle")
