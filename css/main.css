@@ -95,7 +95,7 @@ body {
 	/*cursor: pointer;*/
 }
 .chunk-block:hover > .color-header {
-	background-image: url('../images/angle-arrow-down.png');
+	/*background-image: url('../images/angle-arrow-down.png');*/ /*now doing this in js*/
 	background-size: 10px 10px;
 	background-repeat: no-repeat;
 	background-position: bottom;
