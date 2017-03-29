@@ -217,6 +217,13 @@ $(document).ready(function() {
             // and update text
             updateAll(seasonNumber, 1);
 
+            // update frames and dialogue hack
+            chunk_hovered = 1;
+            $("#chunkimage").attr("src","data/chunk-montages/s" + String(seasonNumber) + "e" + String(episodeNumber) + "/chunk"+String(chunk_hovered)+".png");
+                highlightSlice(chunk_hovered-1);
+                updateDialogue(chunk_hovered-1);
+            // 
+
             // color header selected
             d3.select('#season' + String(seasonNumberOld) + ' > h3').classed('color-header-selected', false);
             d3.select('#season' + String(seasonNumber) + ' > h3').classed('color-header-selected', true);
@@ -337,8 +344,23 @@ $(".episode-block").click(function (event) {
         episodeNumber = 10;
         updateAll(seasonNumber, episodeNumber);
 
+        // update frames and dialogue hack
+        chunk_hovered = 1;
+        $("#chunkimage").attr("src","data/chunk-montages/s" + String(seasonNumber) + "e" + String(episodeNumber) + "/chunk"+String(chunk_hovered)+".png");
+            highlightSlice(chunk_hovered-1);
+            updateDialogue(chunk_hovered-1);
+        // 
+
     } else {
        updateAll(seasonNumber, episodeNumber);
+
+        // update frames and dialogue hack
+        chunk_hovered = 1;
+        $("#chunkimage").attr("src","data/chunk-montages/s" + String(seasonNumber) + "e" + String(episodeNumber) + "/chunk"+String(chunk_hovered)+".png");
+            highlightSlice(chunk_hovered-1);
+            updateDialogue(chunk_hovered-1);
+        // 
+
     }
 
    // console.log (seasonNumber);
@@ -357,7 +379,7 @@ $("#chunks").mouseover(function(event) {
     if (!isNaN(chunk_hovered)) {
         $("#chunkimage").attr("src","data/chunk-montages/s" + String(seasonNumber) + "e" + String(episodeNumber) + "/chunk"+String(chunk_hovered)+".png");
             highlightSlice(chunk_hovered-1);
-            updateDialogue (chunk_hovered-1);
+            updateDialogue(chunk_hovered-1);
         }
         
     // update small arrow above chunk
