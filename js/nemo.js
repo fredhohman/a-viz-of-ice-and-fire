@@ -358,6 +358,10 @@ $("#chunks").mouseover(function(event) {
             highlightSlice(chunk_hovered-1);
             updateDialogue (chunk_hovered-1);
         }
+        
+    // update small arrow above chunk
+    $('#chunk'+ String(chunk_hovered) +'> .color-header').attr('style', 'background-image: url("../images/angle-arrow-down.png")');
+
 });
 
 //  vertical unhighlight
