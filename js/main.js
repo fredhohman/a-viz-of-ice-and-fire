@@ -383,7 +383,7 @@ $("#chunks").mouseover(function(event) {
         }
         
     // update small arrow above chunk
-    $('#chunk'+ String(chunk_hovered) +'> .color-header').attr('style', 'background-image: url("../images/angle-arrow-down.png")');
+    $('#chunk'+ String(chunk_hovered) +'> .color-header').attr('style', 'background-image: url("images/angle-arrow-down.png")');
 
 });
 
