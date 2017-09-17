@@ -1,10 +1,9 @@
 # A Viz of Ice and Fire
+*Summarizing Entertainment Video Using Color and Dialogue*  
 
-*An interactive, narrative visualization summarizing the visual and textual aspects of the hit HBO series Game of Thrones.*
+An interactive, narrative visualization summarizing the visual and textual aspects of the hit HBO series Game of Thrones.
 
-By [Fred Hohman][fred], [Sandeep Soni][sandeep], and [Ian Stewert][ian].
-
-This is the public repo for our CS 7450 Information Visualization final project, titled "A Viz of Ice and Fire." You can view the web visualization [here](http://fredhohman.com/a-viz-of-ice-and-fire/).
+Code and data documentation, plus hosted visualization coming soon!
 
 ![cover.png](cover.png)
 
@@ -15,6 +14,14 @@ This is the public repo for our CS 7450 Information Visualization final project,
 
 `data/`: Extra data that didn't make it into the final visualization.
 
+## Citation
+[A Viz of Ice and Fire: Exploring Entertainment Video Using Color and Dialogue][17-got-vis4dh]  
+[Fred Hohman][fred], [Sandeep Soni][sandeep], [Ian Stewart][ian], [John Stasko][stasko]  
+2nd Workshop on Visualization for the Digital Humanities at IEEE VIS. Oct 1-6, 2017. Phoenix, USA.
+
+
 [fred]: http://fredhohman.com
 [ian]: http://ianbstewart.github.io/
 [sandeep]: http://sandeepsoni.github.io
+[stasko]: https://www.cc.gatech.edu/~stasko/
+[17-got-vis4dh]: http://fredhohman.com/papers/17-got-vis4dh.pdf
