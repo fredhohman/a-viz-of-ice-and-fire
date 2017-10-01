@@ -1,7 +1,6 @@
-![title.png](title.png)
+![a-viz-of-ice-an-fire.png](a-viz-of-ice-an-fire.png)
 
 *Summarizing Entertainment Video Using Color and Dialogue*  
-
 
 ## Directory Structure
 `vis/`: The web visualization, including code and the raw data.
