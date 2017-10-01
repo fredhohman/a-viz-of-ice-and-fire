@@ -5,7 +5,7 @@ An interactive, narrative visualization summarizing the visual and textual aspec
 
 Code and data documentation, plus hosted visualization coming soon!
 
-![cover.png](cover.png)
+![title.png](title.png)
 
 ## Directory Structure
 `vis/`: The web visualization, including Javascript scripts and the raw data.
