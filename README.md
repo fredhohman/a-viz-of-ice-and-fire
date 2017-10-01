@@ -1,9 +1,9 @@
 ![title.png](title.png)
+
 *Summarizing Entertainment Video Using Color and Dialogue*  
 
-An interactive, narrative visualization summarizing the visual and textual aspects of the hit HBO series Game of Thrones.
+An interactive visualization summarizing the visual and textual aspects of the hit HBO series Game of Thrones.
 
-Code and data documentation, plus hosted visualization coming soon!
 
 ## Directory Structure
 `vis/`: The web visualization, including Javascript scripts and the raw data.
