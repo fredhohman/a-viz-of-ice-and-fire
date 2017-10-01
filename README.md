@@ -1,4 +1,4 @@
-![a-viz-of-ice-an-fire.png](a-viz-of-ice-an-fire.png)
+![a-viz-of-ice-and-fire.png](a-viz-of-ice-and-fire.png)
 
 *Summarizing Entertainment Video Using Color and Dialogue*  
 
