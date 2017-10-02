@@ -19,4 +19,4 @@
 [ian]: http://ianbstewart.github.io/
 [sandeep]: http://sandeepsoni.github.io
 [stasko]: https://www.cc.gatech.edu/~stasko/
-[17-got-vis4dh]: http://fredhohman.com/papers/17-got-vis4dh.pdf
+[17-got-vis4dh]: http://fredhohman.com/papers/got
