@@ -2,6 +2,8 @@
 
 *Summarizing Entertainment Video Using Color and Dialogue*  
 
+> NOTE: Public link for visualization will be available by the end of the week!
+
 ## Directory Structure
 `vis/`: The web visualization, including code and the raw data.
 
