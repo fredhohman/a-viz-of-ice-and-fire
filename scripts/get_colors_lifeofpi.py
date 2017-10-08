@@ -129,6 +129,14 @@ if __name__ == '__main__':
         # palette = sorted_list
         # palette = [tuple(x) for x in palette] #convert to list of tuples
         # print(palette)  #checking format
+
+        # sort colors by RGB
+        palette_as_lists = [list(pal) for pal in palette ]
+        # print(palette_as_lists)
+        palette_as_lists.sort()
+        # print(palette_as_lists)
+        palette = [tuple(x) for x in palette_as_lists] #convert to list of tuples
+
         palettes.append(palette)
 
 
@@ -143,7 +151,7 @@ if __name__ == '__main__':
         posy = posy + swatchsize
         posx = 0
     del draw
-    pal.save('../data/lifeofpi/lifeofpi-chunked-highqual.png', "PNG")
+    pal.save('../data/lifeofpi/lifeofpi_rgb.png', "PNG")
 
-    with open('../data/lifeofpi/lifeofpi-chunked-highqual.json', 'w') as outfile:
+    with open('../data/lifeofpi/lifeofpi_rgb.json', 'w') as outfile:
         json.dump({'palettes': palettes}, outfile)
