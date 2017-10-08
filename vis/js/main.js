@@ -219,7 +219,7 @@ $(document).ready(function() {
 
             // update frames and dialogue hack
             chunk_hovered = 1;
-            $("#chunkimage").attr("src","data/chunk-montages/s" + String(seasonNumber) + "e" + String(episodeNumber) + "/chunk"+String(chunk_hovered)+".png");
+            $("#chunkimage").attr("src","data/chunk-montages/s" + String(seasonNumber) + "e" + String(episodeNumber) + "/compressed-chunk"+String(chunk_hovered)+".png");
                 highlightSlice(chunk_hovered-1);
                 updateDialogue(chunk_hovered-1);
             // 
@@ -346,7 +346,7 @@ $(".episode-block").click(function (event) {
 
         // update frames and dialogue hack
         chunk_hovered = 1;
-        $("#chunkimage").attr("src","data/chunk-montages/s" + String(seasonNumber) + "e" + String(episodeNumber) + "/chunk"+String(chunk_hovered)+".png");
+        $("#chunkimage").attr("src","data/chunk-montages/s" + String(seasonNumber) + "e" + String(episodeNumber) + "/compressed-chunk"+String(chunk_hovered)+".png");
             highlightSlice(chunk_hovered-1);
             updateDialogue(chunk_hovered-1);
         // 
@@ -356,7 +356,7 @@ $(".episode-block").click(function (event) {
 
         // update frames and dialogue hack
         chunk_hovered = 1;
-        $("#chunkimage").attr("src","data/chunk-montages/s" + String(seasonNumber) + "e" + String(episodeNumber) + "/chunk"+String(chunk_hovered)+".png");
+        $("#chunkimage").attr("src","data/chunk-montages/s" + String(seasonNumber) + "e" + String(episodeNumber) + "/compressed-chunk"+String(chunk_hovered)+".png");
             highlightSlice(chunk_hovered-1);
             updateDialogue(chunk_hovered-1);
         // 
@@ -377,7 +377,7 @@ $("#chunks").mouseover(function(event) {
     }
 
     if (!isNaN(chunk_hovered)) {
-        $("#chunkimage").attr("src","data/chunk-montages/s" + String(seasonNumber) + "e" + String(episodeNumber) + "/chunk"+String(chunk_hovered)+".png");
+        $("#chunkimage").attr("src","data/chunk-montages/s" + String(seasonNumber) + "e" + String(episodeNumber) + "/compressed-chunk"+String(chunk_hovered)+".png");
             highlightSlice(chunk_hovered-1);
             updateDialogue(chunk_hovered-1);
         }

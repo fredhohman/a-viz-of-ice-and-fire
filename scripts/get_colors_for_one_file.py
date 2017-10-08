@@ -48,7 +48,7 @@ if __name__ == '__main__':
     print(images)
     
     color_count = 11
-    swatchsize = 100
+    swatchsize = 10
     posx = 0
     posy = 0
 
