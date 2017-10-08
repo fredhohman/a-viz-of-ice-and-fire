@@ -1,3 +1,0 @@
-vis/data/chunk-montages/s1e2/compressed-chunk* filter=lfs diff=lfs merge=lfs -text
-vis/data/chunk-montages/s1e3/compressed-chunk* filter=lfs diff=lfs merge=lfs -text
-vis/data/chunk-montages/s1e4/compressed-chunk* filter=lfs diff=lfs merge=lfs -text

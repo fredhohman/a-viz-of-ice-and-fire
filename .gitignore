@@ -11,3 +11,4 @@ data/color-palettes-chunked-temp/
 data/color-palettes-chunked/
 data/chunk-montages/*
 vis/data/chunk-montages/nemo
+vis/data/chunk-montages/*/chunk*
